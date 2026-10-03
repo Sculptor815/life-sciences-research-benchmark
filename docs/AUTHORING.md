@@ -10,13 +10,13 @@ Assign at least two reviewers and one independent adjudicator per domain. Use re
 
 ## Inspect the pilot first
 
-Each line of `data/public/items.jsonl` contains one public question. The private `draft-keys.json` stores answers, evidence locations, five-dimension rubrics, scoring anchors and acceptable alternatives by question ID. All 20 pilot questions were drafted with AI assistance and have not received human expert approval.
+Each line of `data/public/items.jsonl` contains one public question. The private `draft-keys-v0.3.json` stores answers, evidence locations, five-dimension rubrics, scoring anchors and acceptable alternatives by question ID. All 20 pilot questions were drafted with AI assistance and have not received human expert approval.
 
 The draft rubrics provide 0–4 anchors and error guidance. Experts should check whether adjacent scores are distinguishable, reasonable alternative methods are accepted, and the same error is not penalized repeatedly without justification. These drafts are not validated measurement scales.
 
 ## Expand the question bank
 
-Use `templates/item.json` for candidate-visible content. Use `templates/open-key.json` for private answers and open-response rubrics. Reference answers must not enter the question JSONL. `data/coverage-plan.csv` lists 320 target slots; it does not represent 320 completed questions.
+Use `templates/item.json` for candidate-visible content. Use `templates/open-key.json` for private answers and open-response rubrics. Reference answers must not enter the question JSONL. `data/coverage-plan.csv` lists 240 target slots; it does not represent 240 completed questions.
 
 For each question, record:
 
@@ -53,37 +53,39 @@ Two reviewers independently check sources, attempt each question, inspect the ru
 
 This is a format example, not an approval record. Change an item's `status` to `reviewed` only after actual review.
 
-Train raters using all 64 final public questions and prepared responses. Preserve paired ratings for open responses; check objective keys and units too. The private calibration file must contain `completed_public_ids`, `records` (each with `item_id`, `ability` and `ratings`), `accepted_by`, `acceptance_rationale` and `unresolved_systematic_disagreement: false`. Set the last field only after systematic disagreements have actually been resolved.
+Train raters using all 48 final public questions and prepared responses. Preserve paired ratings for open responses; check calculations, units and all five reasoning samples too. The private calibration file must contain `completed_public_ids`, `records` (each with `item_id`, `ability` and `ratings`), `accepted_by`, `acceptance_rationale` and `unresolved_systematic_disagreement: false`. Set the last field only after systematic disagreements have actually been resolved.
 
 ```console
 lsrw calibrate --records PRIVATE/pairs.json --output PRIVATE/calibration-summary.json
 lsrw lock --dataset PRIVATE/full-bank/items.jsonl --keys PRIVATE/keys.json --approvals PRIVATE/approvals.json --calibration PRIVATE/calibration.json --output PRIVATE/bank-lock.json
 ```
 
-The complete bank requires 320 questions with the specified 16-cell allocation and no source or case-family overlap between public and held-out splits. After locking, changes to questions or rubrics require review and a new version. Do not selectively rerun model responses already collected.
+The complete bank requires 240 questions with the specified 12-cell allocation and no source or case-family overlap between public and held-out splits. After locking, changes to questions or rubrics require review and a new version. Do not selectively rerun model responses already collected.
 
 ## Rating and adjudication
 
 Each rater receives only their own queue. The interface hides model configuration and the other rater's scores. There is no account system: the coordinator must control file access, and separate local folders are not a security boundary. Record any loss of blinding when a response reveals its model identity.
 
-Open responses receive 0–4 points on each of five dimensions, with a written rationale. Apply a critical error to its relevant dimension; do not penalize multiple dimensions without distinct reasons. Request adjudication when any dimension differs by at least 2 points, or totals differ by more than 10 percentage points. At exactly 10 percentage points, average the ratings if every dimension differs by less than 2. Disagreement about source correctness, conclusion correctness or refusal classification also requires adjudication.
+Each response receives five primary user-service ratings and five technical diagnostic ratings, all on 0–4 scales, with a written rationale. Use the separate weights in METHOD.md. Keyword matches alone cannot establish correct contextual use or complete logic. Apply an error to the dimensions it actually affects and explain distinct consequences. Request adjudication for a gap of at least 2 in either set, a weighted-total gap greater than 10 percentage points in either total, disagreement about a fatal accuracy error, or any source/conclusion/refusal/historical-match disagreement. Exactly 10 points alone does not trigger adjudication; otherwise average paired dimension ratings. The primary score assesses usefulness, while technical and historical outcomes remain separate.
 
-The third expert supplies a separate JSON file indexed by the original question ID. For example, an experimental-design item uses:
+The third expert supplies a separate JSON file indexed by response ID (the question ID for sample one; append `--sample-2` through `--sample-5` for the other reasoning samples). For example, an experimental-design item uses:
 
 ```json
 {
   "EXAMPLE-ID": {
     "reviewer": "mol-c",
-    "scores": {"hypothesis_measurement": 3, "controls": 2, "replication_statistics": 3, "confounds_feasibility": 2, "interpretation": 3},
+    "scores": {"concept_coverage": 3, "logic_chain": 2, "task_detail": 3, "controls_uncertainty": 2, "conclusion_alignment": 3},
     "rationale": "Replace with the third expert's rationale based on the response, rubric and original disagreement.",
     "source_correct": null,
     "conclusion_correct": null,
-    "refusal": false
+    "refusal": false,
+    "user_service": {"scientific_accuracy": 3, "decision_value": 3, "actionability": 3, "verifiability": 3, "communication": 3},
+    "followup_match": null
   }
 }
 ```
 
-For paper appraisal, `source_correct` and `conclusion_correct` must each be `true` or `false`. They record the expert's assessment of whether the model's respective judgments were correct. The adjudicator must use the five dimensions for the item's ability and differ from both original raters.
+For evidence-appraisal essays, `source_correct` and `conclusion_correct` must each be `true` or `false`. They record the expert's assessment of whether the model's respective judgments were correct. The adjudicator must use the five dimensions for the item's ability and differ from both original raters.
 
 ```console
 lsrw score --run RUN_DIRECTORY --keys PRIVATE/keys.json --reviews PRIVATE/reviews/round-1 --adjudications PRIVATE/adjudications.json
@@ -96,3 +98,5 @@ Original ratings are preserved. Revised rubrics require a new scoring round and 
 Write all public materials in English, including documentation, interface text, questions, rubrics, and contribution descriptions.
 
 Check completeness, formal-ranking eligibility, question counts and confidence intervals. Mock responses, draft-question results and incomplete ratings do not support formal model rankings. Package only the release inventory. Held-out questions, credentials, answers, expert identities and unpublished responses remain private.
+
+Research-reasoning ratings require `followup_match` booleans for `biological_question`, `mechanism`, `intervention`, `readout` and `predicted_outcome`; all other tasks use null. Formal design/reasoning keys require `protocol_readiness: reviewed_and_operational`. Formal reasoning also requires a certified earliest-public-disclosure chronology audit. These gates cannot be replaced by word counts or AI review.

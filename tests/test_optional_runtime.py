@@ -53,7 +53,7 @@ class StreamlitIntegrationTests(unittest.TestCase):
         script="import sys\nsys.argv=['review', "+repr(str(work/"queue.json"))+"]\nfrom lsrw.review_app import main\nmain()\n"
         app=AppTest.from_string(script).run()
         self.assertFalse(app.exception)
-        self.assertEqual(len(app.selectbox),7)
+        self.assertEqual(len(app.selectbox),12)
 
 
 if __name__=="__main__": unittest.main()

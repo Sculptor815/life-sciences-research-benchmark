@@ -6,6 +6,8 @@ import streamlit as st
 
 from lsrw.review import save_rating
 from lsrw.storage import read_json, within
+from lsrw.taxonomy import FOLLOWUP_FIELDS
+from lsrw.service import DIMENSIONS as SERVICE_DIMENSIONS
 
 
 def main():
@@ -31,23 +33,33 @@ def main():
         st.subheader("Response to score")
         st.text(item["answer"])
     with right:
+        st.subheader("The researcher's goal")
+        st.write(item["rubric"].get("user_goal",item["question"]["prompt"]))
         st.subheader("Item-specific scoring rubric")
         for name, dim in item["rubric"]["dimensions"].items():
             with st.expander(name):
                 st.json(dim)
         with st.expander("Reference answer and sources"):
-            st.json({k:v for k,v in item["rubric"].items() if k != "dimensions"})
+            st.markdown(item["rubric"].get("reference_answer","Reference answer unavailable"))
+            st.json(item["rubric"].get("references",[]))
+        with st.expander("User-service criteria and anchors"):
+            st.json({k:item["rubric"].get(k) for k in ("service_criteria","service_anchors","limitations","followup_target")})
+        with st.expander("Concept matches to verify in context (not automatic scores)"):
+            st.json(item.get("concept_screening", {}))
         with st.form("rating-"+item["blind_id"]):
-            scores = {name:st.selectbox(name, [None, 0, 1, 2, 3, 4], key=item["blind_id"]+name) for name in item["rubric"]["dimensions"]}
+            st.caption("Primary score: how reliably this answer helps the user make progress. Technical task scores are supporting diagnostics.")
+            user_service={name:st.selectbox("User service: "+name.replace('_',' '),[None,0,1,2,3,4],key=item["blind_id"]+'service-'+name) for name in SERVICE_DIMENSIONS}
+            scores = {name:st.selectbox(name.replace('_',' '), [None, 0, 1, 2, 3, 4], key=item["blind_id"]+name) for name in item["rubric"]["dimensions"]}
             refusal = st.selectbox("Is this an irrelevant refusal?", [None, False, True])
-            paper = item["question"]["ability"] == "paper_appraisal"
+            paper = item["question"]["ability"] == "essay" and "source_state" in item["rubric"]
             source_correct = st.selectbox("Is the source judgment correct?", [None, False, True]) if paper else None
             conclusion_correct = st.selectbox("Is the judgment of evidential support for the conclusion correct?", [None, False, True]) if paper else None
+            followup = {field:st.selectbox("Follow-up match: "+field, [None, False, True], key=item["blind_id"]+field) for field in FOLLOWUP_FIELDS} if item["question"]["ability"] == "research_reasoning" else None
             rationale = st.text_area("Scoring rationale: cite the response and the corresponding rubric criteria")
             if st.form_submit_button("Submit independent rating"):
                 try:
                     save_rating(queue_path, item["blind_id"], {"reviewer":queue["reviewer"], "scores":scores,
-                                "rationale":rationale, "source_correct":source_correct, "conclusion_correct":conclusion_correct, "refusal":refusal})
+                                "rationale":rationale, "source_correct":source_correct, "conclusion_correct":conclusion_correct, "refusal":refusal,"followup_match":followup,"user_service":user_service})
                     st.rerun()
                 except (ValueError, FileExistsError) as exc:
                     st.error(str(exc))

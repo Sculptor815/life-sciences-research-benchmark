@@ -2,8 +2,8 @@ import random
 import uuid
 from pathlib import Path
 
-from .grading import validate_key, validate_rating
-from .runner import verify_run
+from .grading import validate_key, validate_rating, concept_diagnostics
+from .runner import verify_run, response_slots
 from .storage import digest, read_json, write_new
 
 
@@ -11,24 +11,26 @@ def prepare_review(run, keys_path, output, reviewers, seed=419):
     """Output belongs in a private directory; each rater receives only their queue."""
     if len(reviewers) != 2 or len(set(reviewers)) != 2:
         raise ValueError("Provide two different reviewer pseudonyms")
-    _, items, _ = verify_run(run)
+    manifest, items, _ = verify_run(run)
+    if not manifest.get("sampling_policy"):
+        raise ValueError("Historical review queues require their original software version")
     keys = read_json(keys_path)
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     assignments, mapping = {r:[] for r in reviewers}, {}
-    for item in items:
+    for item, response_id in [(i,s) for i in items for s,_ in response_slots(i)]:
         if item["response_type"] != "open":
             continue
-        record = read_json(Path(run) / "responses" / (item["id"]+".json"))
+        record = read_json(Path(run) / "responses" / (response_id+".json"))
         if record["status"] != "completed":
             continue
         key = keys[item["id"]]
         validate_key(item, key)
         opaque = uuid.uuid4().hex
-        mapping[opaque] = item["id"]
+        mapping[opaque] = response_id
         for reviewer in reviewers:
             assignments[reviewer].append({"blind_id": opaque, "question": item, "answer": record["response"]["text"],
-                                         "rubric": key, "asset_root": str((Path(run)/"dataset").resolve())})
+                                         "rubric": key, "concept_screening":concept_diagnostics(record["response"]["text"], key), "asset_root": str((Path(run)/"dataset").resolve())})
     rng = random.Random(seed)
     for index, reviewer in enumerate(reviewers):
         rng.shuffle(assignments[reviewer])

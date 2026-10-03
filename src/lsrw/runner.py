@@ -11,6 +11,11 @@ from .adapters import InspectAdapter, MockAdapter, RunError
 from .dataset import load_dataset, verify_lock
 from .prompts import visible_request
 from .storage import digest, file_hash, number, read_json, within, write_new
+from .taxonomy import SAMPLES
+
+
+def response_slots(item):
+    return [(item["id"] if n == 1 else item["id"]+f"--sample-{n}", n) for n in range(1, SAMPLES[item["ability"]]+1)]
 
 REQUIRED = {"dataset", "output_root", "backend", "model", "track", "split", "formal", "supports_images", "max_output_tokens", "timeout_seconds", "generation", "budget_usd", "input_usd_per_million", "output_usd_per_million", "input_token_ceiling"}
 OPTIONAL = {"mock_events", "lock", "keys", "dataset_version", "pricing_date", "pricing_source", "evidence_mode"}
@@ -38,6 +43,8 @@ def load_config(path):
     allowed_generation = {"temperature", "top_p", "seed", "reasoning_effort", "reasoning_tokens"}
     if not isinstance(config["generation"], dict) or set(config["generation"]) - allowed_generation:
         raise ValueError("Unsupported generation parameter; tool/retry overrides prohibited")
+    if "seed" in config["generation"] and type(config["generation"]["seed"]) is not int:
+        raise ValueError("A configured seed must be an integer")
     if config["backend"] == "inspect" and (config["budget_usd"] <= 0 or config["input_usd_per_million"] <= 0 or config["output_usd_per_million"] <= 0 or not config.get("pricing_date") or not config.get("pricing_source")):
         raise ValueError("Paid runs require a budget and dated input/output price estimates")
     if config["formal"] and (config["backend"] == "mock" or config["model"].split("/")[0] in ("mock", "mockllm") or config["split"] != "heldout" or not config.get("lock") or not config.get("keys")):
@@ -70,9 +77,11 @@ def prepare(config):
 
 def dry_run(config):
     items, _, reservation = prepare(config)
-    return {"questions": len(items), "initial_requests": len(items), "maximum_attempts": len(items)*3,
-            "per_attempt_reserved_usd": reservation, "one_pass_estimate_usd": reservation*len(items),
-            "including_two_retries_estimate_usd": reservation*len(items)*3,
+    requests = sum(SAMPLES[i["ability"]] for i in items)
+    return {"questions": len(items), "initial_requests": requests, "maximum_attempts": requests*3,
+            "independent_samples_by_ability":SAMPLES,
+            "per_attempt_reserved_usd": reservation, "one_pass_estimate_usd": reservation*requests,
+            "including_two_retries_estimate_usd": reservation*requests*3,
             "budget_usd": config["budget_usd"], "backend": config["backend"], "model": config["model"],
             "notice": "Estimates and maximum_attempts cover workbench-visible calls, not a guaranteed provider billing cap. Provider internal calls are not observable. Configure provider billing limits; image token ceilings must cover provider image accounting."}
 
@@ -98,6 +107,7 @@ def execute(config, adapter=None, sleep=time.sleep):
                 "lock_sha256": file_hash(config["lock"]) if config.get("lock") else None,
                 "keys_sha256": file_hash(config["keys"]) if config.get("keys") else None,
                 "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "questions": len(items),
+                "sampling_policy":{"samples_by_ability":SAMPLES,"feedback_between_samples":False,"selection":"best complete answer; never merge partial answers","transport_retries_per_sample":2},
                 "evidence_policy": {"mode":"fixed_packet", "model_tools":[], "tool_choice":"none",
                                     "external_retrieval":False, "answer_keys_in_request":False,
                                     "enforcement_scope":"client request and tool response validation; remote provider internals are not observable"}}
@@ -114,8 +124,13 @@ def execute(config, adapter=None, sleep=time.sleep):
     charged = 0.0
     statuses = []
     billing_uncertain = False
-    for item, request in zip(items, requests):
-        record = {"id": item["id"], "request_sha256": digest(request), "attempts": [], "response": None, "status": "not_started"}
+    scheduled = [(item, request, response_id, sample) for item,request in zip(items,requests) for response_id,sample in response_slots(item)]
+    for item, request, response_id, sample in scheduled:
+        record = {"id": response_id, "item_id":item["id"], "sample_number":sample, "request_sha256": digest(request), "attempts": [], "response": None, "status": "not_started"}
+        sample_config = {**config, "generation":dict(config["generation"])}
+        if "seed" in sample_config["generation"]:
+            sample_config["generation"]["seed"] += sample-1
+        record["generation"] = sample_config["generation"]
         start = time.monotonic()
         if item["modality"] == "image" and not config["supports_images"]:
             record["status"] = "unsupported_image"
@@ -128,7 +143,7 @@ def execute(config, adapter=None, sleep=time.sleep):
                     break
                 charged += reservation  # Keep reservation for failed calls too.
                 try:
-                    output = adapter.generate(request, config)
+                    output = adapter.generate(request, sample_config)
                     record["response"] = output
                     record["status"] = "completed"
                     record["attempts"].append({"number": attempt+1, "status": "completed", "reserved_usd": reservation})
@@ -149,11 +164,11 @@ def execute(config, adapter=None, sleep=time.sleep):
                         break
                     sleep(2**attempt)
         record["elapsed_seconds"] = time.monotonic() - start
-        write_new(root / "responses" / (item["id"] + ".json"), record)
+        write_new(root / "responses" / (response_id + ".json"), record)
         statuses.append(record["status"])
     files = {str(p.relative_to(root)).replace("\\", "/"): file_hash(p) for p in sorted(root.rglob("*")) if p.is_file()}
     write_new(root / "completion.json", {"files": files, "adapter_version": adapter.version, "reserved_usd": charged,
-               "billing_uncertain": billing_uncertain, "completed": statuses.count("completed"), "total": len(items),
+               "billing_uncertain": billing_uncertain, "completed": statuses.count("completed"), "total": len(scheduled), "questions":len(items),
                "finished_utc": dt.datetime.now(dt.timezone.utc).isoformat()})
     if hasattr(adapter, "close"):
         adapter.close()

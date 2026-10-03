@@ -5,7 +5,7 @@
 'use strict';
 const D=JSON.parse(document.getElementById('data').textContent), key='lsrw-review-'+D.sha256;
 const names={molecular_biology:'Molecular biology',biochemistry:'Biochemistry',neuroscience:'Neuroscience',bioinformatics:'Bioinformatics'};
-const abilities={knowledge:'Knowledge',experimental_design:'Experimental design',research_reasoning:'Research reasoning',paper_appraisal:'Paper appraisal'};
+const abilities={essay:'Essay',knowledge:'Knowledge',experimental_design:'Experimental design',research_reasoning:'Research reasoning',paper_appraisal:'Paper appraisal'};
 const depths={full_text:'Main text read',full_text_sections:'Selected full-text sections',abstract_and_captions:'Abstract and selected figure captions',abstract_or_secondary:'Abstract or secondary sources'};
 const checks={source_read:'I have checked the original sources',question_fair:'The question and materials allow a fair answer',answer_checked:'I have checked the reference answer',rights_checked:'Material usage rights have been checked'};
 let saved={reviewer:'',decisions:{}};try{const value=JSON.parse(localStorage.getItem(key));if(value&&typeof value.reviewer==='string'&&value.decisions&&typeof value.decisions==='object'&&!Array.isArray(value.decisions))saved=value;}catch(e){}

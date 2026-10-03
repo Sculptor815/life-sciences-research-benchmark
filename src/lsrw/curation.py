@@ -3,16 +3,17 @@ from pathlib import Path
 from statistics import mean
 
 from .dataset import load_dataset
-from .grading import resolve_ratings, validate_key
+from .grading import resolve_ratings, validate_key, weighted_score
 from .storage import digest, file_hash, read_json, write_new
-from .taxonomy import DIMENSIONS, DOMAINS
+from .taxonomy import DIMENSIONS, DOMAINS, ABILITIES, CELL_COUNTS
+from . import service
 
 
 def calibration(records):
     """Records are actual independent human scores, never model-generated ratings."""
     if not records:
         raise ValueError("Calibration records required")
-    differences, exact, within_one, totals = [], [], [], []
+    differences, exact, within_one, totals, service_differences, service_totals = [], [], [], [], [], []
     for record in records:
         pair = record["ratings"]
         resolve_ratings(pair, record["ability"])
@@ -22,9 +23,12 @@ def calibration(records):
             differences.append({"dimension":dim,"difference":diff})
             exact.append(diff==0)
             within_one.append(diff<=1)
-        totals.append(abs(sum(a["scores"].values())-sum(b["scores"].values()))*5)
+        totals.append(abs(weighted_score(a["scores"],record["ability"])-weighted_score(b["scores"],record["ability"])))
+        service_differences.extend(abs(a['user_service'][d]-b['user_service'][d]) for d in service.DIMENSIONS)
+        service_totals.append(abs(service.score(a['user_service'])-service.score(b['user_service'])))
     dims = sorted({d["dimension"] for d in differences})
     return {"pairs":len(records), "dimension_exact_agreement":mean(exact), "dimension_within_one_agreement":mean(within_one),
+            "primary_user_service":{"exact_agreement":mean(d==0 for d in service_differences),"within_one_agreement":mean(d<=1 for d in service_differences),"total_mean_absolute_difference":mean(service_totals)},
             "total_mean_absolute_difference_percentage_points":mean(totals),
             "dimensions":{d:{"exact_agreement":mean(x["difference"]==0 for x in differences if x["dimension"]==d), "n":sum(x["dimension"]==d for x in differences)} for d in dims},
             "records_sha256":digest(records)}
@@ -43,6 +47,11 @@ def lock_dataset(dataset, keys_path, approvals_path, calibration_path, output):
     checks = ("source_checked", "independent_trial_answer", "rubric_checked", "material_rights_checked")
     for item in items:
         validate_key(item, keys[item["id"]])
+        key = keys[item["id"]]
+        if item["ability"] != "essay" and key.get("protocol_readiness") != "reviewed_and_operational":
+            raise ValueError("Formal design/reasoning keys require reviewed operational protocols with resolved blocking parameters")
+        if item["ability"] == "research_reasoning" and key["followup_target"].get("chronology_audit",{}).get("earliest_public_disclosure_certified") is not True:
+            raise ValueError("Formal historical targets require a certified earliest-disclosure chronology audit")
         entry = approvals["items"][item["id"]]
         if len(entry) != 2 or len({x["reviewer"] for x in entry}) != 2:
             raise ValueError("Every item requires two independent approvals")
@@ -50,9 +59,10 @@ def lock_dataset(dataset, keys_path, approvals_path, calibration_path, output):
             if approval["reviewer"] not in roster[item["domain"]]["reviewers"] or not all(approval.get(k) is True for k in checks) or not approval.get("date"):
                 raise ValueError("Incomplete expert approval")
     public_ids = {i["id"] for i in items if i["split"]=="public"}
-    if set(training["completed_public_ids"]) != public_ids or len(public_ids) != 64:
-        raise ValueError("Calibration must cover all 64 public items")
-    expected_open = {i["id"] for i in items if i["split"]=="public" and i["ability"]!="knowledge"}
+    expected_public = sum(v for (split,_),v in CELL_COUNTS.items() if split=="public")*len(DOMAINS)*len(ABILITIES)
+    if set(training["completed_public_ids"]) != public_ids or len(public_ids) != expected_public:
+        raise ValueError(f"Calibration must cover all {expected_public} public items")
+    expected_open = public_ids
     if {r["item_id"] for r in training["records"]} != expected_open:
         raise ValueError("Calibration needs actual paired ratings for all public open items")
     stats = calibration(training["records"])

@@ -62,9 +62,17 @@ def main(argv=None):
     cmd = commands.add_parser("question-quality", help="Summarize six-dimension research-question ratings")
     cmd.add_argument("--record", required=True)
     cmd.add_argument("--output")
+    cmd = commands.add_parser("reproduction-check", help="Check raw-data hashes, artifacts and frozen numerical targets")
+    for flag in ("spec", "submission", "root", "output"):
+        cmd.add_argument("--"+flag, required=True)
     args = parser.parse_args(argv)
     try:
-        if args.command == "question-quality":
+        if args.command == "reproduction-check":
+            from .reproduction import check_reproduction
+            result=check_reproduction(read_json(args.spec),read_json(args.submission),Path(args.root))
+            write_new(args.output,result)
+            print(json.dumps(result,indent=2))
+        elif args.command == "question-quality":
             from .question_quality import summarize
             result=summarize(read_json(args.record))
             if args.output:

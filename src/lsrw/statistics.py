@@ -27,7 +27,7 @@ def family_interval(rows, draws=2000, seed=20261003):
     for row in rows:
         if row.get("score") is not None:
             by_cell[row["domain"], row["ability"]].add(row["family_id"])
-    if macro(rows) is None or len(by_cell) != 16 or any(len(v)<2 for v in by_cell.values()):
+    if macro(rows) is None or len(by_cell) != len(DOMAINS)*len(ABILITIES) or any(len(v)<2 for v in by_cell.values()):
         return {"interval": None, "valid_draws": 0, "reason": "Need scored observations and at least two case families in every cell."}
     membership = defaultdict(set)
     for row in rows:

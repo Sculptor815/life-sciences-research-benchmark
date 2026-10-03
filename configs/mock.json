@@ -7,12 +7,12 @@
   "split": "public",
   "formal": false,
   "supports_images": true,
-  "max_output_tokens": 1200,
-  "timeout_seconds": 90,
+  "max_output_tokens": 9000,
+  "timeout_seconds": 300,
   "generation": {},
   "budget_usd": 0,
   "input_usd_per_million": 0,
   "output_usd_per_million": 0,
-  "input_token_ceiling": 16000,
-  "dataset_version": "pilot-0.1"
+  "input_token_ceiling": 32000,
+  "dataset_version": "pilot-0.3"
 }

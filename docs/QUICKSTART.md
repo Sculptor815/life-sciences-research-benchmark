@@ -10,7 +10,7 @@ The current Windows checkout uses this layout:
 D:\life sciences research workbench\
   life-sciences-research-workbench\          # Public code and public questions
   life-sciences-research-workbench-private\  # Do not upload to GitHub
-    draft-keys.json                          # Draft answers and rubrics
+    draft-keys-v0.3.json                          # Draft answers and rubrics
     heldout\                                # Future held-out questions
     runs\                                   # Model responses
     reviews\                                # Ratings and reviewer identities
@@ -50,7 +50,7 @@ Expect 20 questions and `valid: true`. This checks structure, tags and asset has
 .\.venv\Scripts\lsrw.exe validate --formal
 ```
 
-Formal validation currently fails by design: the 320-question bank is incomplete and the pilot remains a draft.
+Formal validation currently fails by design: the 240-question bank is incomplete and the pilot remains a draft.
 
 ## 4. Run a free mock evaluation
 
@@ -83,7 +83,7 @@ Results are versioned. If rescoring produces another artifact, select it with `-
 .\.venv\Scripts\lsrw.exe review --queue '../life-sciences-research-workbench-private/reviews/round-1/rater-1/queue.json'
 ```
 
-The interface listens on `127.0.0.1` only. The second expert uses the `rater-2` queue. Choose 0–4 for every dimension and provide a rationale. Scores have no preselected default; submitted records are preserved.
+The interface listens on `127.0.0.1` only. The second expert uses the `rater-2` queue. Choose 0–4 for every dimension using the task-specific weights and provide an evidence-linked rationale. Reasoning adds five explicit historical-match judgments for each independent sample. Scores have no preselected default; submitted records are preserved.
 
 ```powershell
 .\.venv\Scripts\lsrw.exe score --run 'RUN_DIRECTORY' --keys 'KEY_FILE' --reviews '../life-sciences-research-workbench-private/reviews/round-1'

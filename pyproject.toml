@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "life-sciences-research-workbench"
-version = "0.2.0"
+version = "0.3.0"
 description = "Reproducible evaluations of biological knowledge and research judgment"
 requires-python = ">=3.11"
 license = {text = "MIT"}

@@ -23,8 +23,8 @@ class DiscoveryTests(unittest.TestCase):
         self.work.mkdir(parents=True)
         self.corpus={'cases':[{'id':'test-case','domain':'biochemistry','paper':{'title':'Test-only fictional paper','url':'https://example.invalid','read_depth':'abstract'},
             'original_question':'Can the two mechanisms be distinguished?','experimental_design':'Independent controlled perturbations.',
-            'questions':[{'ability':'knowledge','prompt':'Which claim follows?','choices':{'A':'Bounded support','B':'All contexts','C':'Fraud','D':'Certainty'},'answer':'A','reference_answer':'PRIVATE-CANARY','scoring_points':['bounded inference']},
-                         {'ability':'research_reasoning','prompt':'Propose a discriminating test.','reference_answer':'PRIVATE-REASONING-CANARY','scoring_points':['opposing predictions']}]}]}
+            'questions':[{'ability':'essay','prompt':'Explain the supported inference.','reference_answer':'PRIVATE-CANARY '+('fixture '*350),'scoring_points':['bounded inference']},
+                         {'ability':'research_reasoning','prompt':'Propose a discriminating test.','reference_answer':'PRIVATE-REASONING-CANARY '+('fixture '*1300),'scoring_points':['opposing predictions']}]}]}
     def payload(self):
         c=self.corpus['cases'][0]
         return {'corpus_sha256':digest(self.corpus),'reviewer':'test-human',
@@ -61,10 +61,10 @@ class DiscoveryTests(unittest.TestCase):
         self.assertNotIn('</script><script>alert',page)
         self.assertIn('\\u003c/script>',page)
     def test_invalid_knowledge_answer_is_a_validation_error(self):
-        self.corpus['cases'][0]['questions'][0].pop('answer')
+        self.corpus['cases'][0]['questions'][0]['ability']='knowledge'
         self.assertTrue(validate_corpus(self.corpus))
     def test_question_variants_keep_distinct_answers(self):
-        q=copy.deepcopy(self.corpus['cases'][0]['questions'][1]);q['id']='variant-two';q['reference_answer']='OTHER-ANSWER'
+        q=copy.deepcopy(self.corpus['cases'][0]['questions'][1]);q['id']='variant-two';q['reference_answer']='OTHER-ANSWER '+('fixture '*1300)
         self.corpus['cases'][0]['questions'].append(q)
         export_drafts(self.corpus,self.work/'variants')
         self.assertEqual(len(read_json(self.work/'variants/reference-answers.json')),3)
@@ -73,6 +73,7 @@ class DiscoveryTests(unittest.TestCase):
     def test_malformed_corpora_report_errors_without_crashing(self):
         for bad in [None,{}, {'cases':[None]}, {'cases':[{'id':False,'questions':None}]}]:
             self.assertFalse(audit(bad)['valid'])
+        self.corpus['cases'][0]['questions'][0]['ability']='knowledge'
         self.corpus['cases'][0]['questions'][0]['choices']=None
         self.assertFalse(audit(self.corpus)['valid'])
         p=self.payload();p['decisions']=[None]

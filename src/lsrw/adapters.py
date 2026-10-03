@@ -42,12 +42,15 @@ class InspectAdapter:
     def generate(self, request, config):
         from inspect_ai.model import ChatMessageSystem, ChatMessageUser
         from inspect_ai.model import ContentImage, ContentText
+        generation = self.generation
+        if "seed" in config.get("generation", {}):
+            generation = generation.model_copy(update={"seed":config["generation"]["seed"]})
         async def call():
             content = [ContentText(text=request["text"])]
             content.extend(ContentImage(image=url) for url in request["images"])
             output = await self.model.generate(
                 [ChatMessageSystem(content=request["system"]), ChatMessageUser(content=content)],
-                tools=[], tool_choice="none", config=self.generation, cache=False,
+                tools=[], tool_choice="none", config=generation, cache=False,
             )
             if any(getattr(getattr(choice, "message", None), "tool_calls", None) for choice in output.choices):
                 raise RunError("forbidden_tool_request")

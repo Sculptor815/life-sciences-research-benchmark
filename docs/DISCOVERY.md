@@ -1,6 +1,6 @@
 # From original discoveries to candidate questions
 
-Open `research/REVIEW.html` in the private directory to review the current candidates. It contains source papers, reading depth, original questions, experimental designs, inference limits, artifact hypotheses, candidate questions, draft reference answers and scoring points. Every case awaits human review. The page does not upload comments. It contains answers and must not be given to an evaluated model.
+For the revised 30-question answer review, open `research/OPEN-QUESTIONS-v0.3.html`. The older discovery collection remains an archive and has not all been upgraded to the new open-response/reference-length rules. Open `research/REVIEW.html` in the private directory to review the current candidates. It contains source papers, reading depth, original questions, experimental designs, inference limits, artifact hypotheses, candidate questions, draft reference answers and scoring points. Every case awaits human review. The page does not upload comments. It contains answers and must not be given to an evaluated model.
 
 ## Select and trace textbooks
 
@@ -29,7 +29,7 @@ Run these commands from the public project directory. Use new output paths to pr
 .\.venv\Scripts\lsrw.exe research import-decisions --corpus '../life-sciences-research-workbench-private/research/corpus-v0.2.json' --decisions 'EXPORTED-REVIEW.json' --output '../life-sciences-research-workbench-private/candidate-reviews'
 ```
 
-Import checks corpus and case hashes, rejecting stale versions, duplicate decisions and missing rationale. `research export` separates candidate prompts and packets from private answers. These exports remain drafts, not a formal 320-question bank.
+Import checks corpus and case hashes, rejecting stale versions, duplicate decisions and missing rationale. `research export` separates candidate prompts and packets from private answers only after checking the current task types and minimum reference-answer lengths; the older 178-candidate archive will require revision before export. These exports remain drafts, not a formal 240-question bank.
 
 ## Build questions from disputed literature
 

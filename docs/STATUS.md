@@ -1,46 +1,32 @@
 # Implementation status — 2026-10-03
 
-This is a development pilot. It is not a completed or expert-validated 320-question benchmark.
+Version 0.3 is a development workbench. No completed expert-validated bank, paid-model leaderboard, laboratory-validated protocol or full-paper raw-data reproduction is claimed.
 
-## Delivered
+## Current implementation
 
-- Four-domain taxonomy and 16 domain/ability cells, including the added bioinformatics domain.
-- A 320-slot coverage plan with separate public/held-out and text/image counts.
-- Twenty independently authored draft cases: 16 text and 4 visual knowledge questions. All 16 cells have one text exemplar.
-- Separate private draft keys: objective answers, per-item five-dimension rubrics, 0–4 anchors, alternative responses, critical-error guidance, and source/evidence references.
-- Four original synthetic figures with reusable plotting source and material hashes.
-- Standard-library validator, mock runner, immutable run inventories, deterministic objective scoring, blind review queues, third-rater resolution, and content-addressed score artifacts.
-- An Inspect AI model adapter and an optional native Inspect public-pilot task. The main Workbench runner uses Inspect's model API and its own audit records; it does not yet export native `.eval` logs for that path.
-- A local Streamlit review form, paired-rating calibration summaries and a formal-bank lock command.
-- Separate modality reports in HTML/CSV/JSON, equal-cell aggregation, family-cluster bootstrap and same-item paired comparisons.
-- English documentation, review interfaces, and question-quality scoring rubric, including installation, authoring, and expert-review instructions.
-- Explicit public release inventory, deterministic archive builder, and a Windows/Linux CI workflow.
+- Four domains and three open-response tasks: essay, experimental design and research reasoning. The active public pilot has 20 questions across 12 cells, including four visual essays. The revised blueprint has 240 unfilled target slots (48 public, 192 held out).
+- Primary scoring evaluates service to the researcher: scientific accuracy, decision value, actionability, verifiability and communication. Concept/logic/protocol quality and historical matching remain separate diagnostics. This proposed rubric needs expert calibration and user-outcome validation.
+- All 20 active reference answers were expanded and revised privately. Essay answers are 421–636 words, design 949–1,082 words, and reasoning 1,279–1,341 words. Validators enforce more than 300/900/1,200 words respectively and require concepts, directed logic links and protocol records.
+- Four retrospective original-to-later research pairs, one per domain, with private target articles and author overlap. Each reasoning task schedules five independent samples without feedback. First-sample utility, best utility, technical scores and historical hit-at-1/hit-at-5 are preserved separately. Exact earliest-disclosure and complete source-method audits remain incomplete and block formal admission.
+- Ten real disputed-paper essay drafts in nine families, each with a private 502–539 word answer and an explicit evidence-to-error chain. The public selection lists original papers, notices and audit focus. These are paraphrased candidate packets; original raw forensic data were not independently reanalyzed for all ten.
+- A private 30-question readable answer book and a separate review page with exported human decisions. Twenty questions are runnable in the public pilot; the ten disputed-paper essays are separately reviewed candidates.
+- Raw-data submission checks for input/artifact hashes, complete prespecified metrics and numerical tolerances. These checks do not execute submitted code or certify offline agent capability.
+- English public documentation, UI and rubrics; explicit public-file release inventory. Private answers, future targets, raw harness logs and reviewer records remain outside GitHub.
 
-## Verification completed locally
+## Verification
 
-- 51 automated checks pass on Python 3.12.9 / Windows, including the installed Inspect AI and Streamlit integration checks, candidate answer isolation, review version binding, malformed research records, source/case split isolation and forbidden model tool requests. Tests ran with Python UTF-8 mode; Streamlit's temporary test page required filesystem permission outside the sandbox. [GitHub Actions passed for the initial public commit 000ce71](https://github.com/Sculptor815/life-sciences-research-workbench/actions/runs/37097201796), including the configured Windows/Linux core matrix and optional integration job.
-- Seven author-side synthetic workflow checks passed in the recorded scientific Python environment: ORA, paired CCA, donor aggregation/exploratory DE, covariate-adjusted quantitative-trait association, Scanpy clustering, diffusion pseudotime and miniature VCF QC. These are not agent capability scores, real-data validations, or full GATK/DESeq2/MOFA executions.
-- A 20-item mock run completed; eight objective items were scored and twelve open items await human review. No expert ratings were fabricated. No paid model calls were made.
-- Current public materials pass draft validation. Formal validation correctly rejects this pilot because counts and expert approvals are incomplete.
-- Migration verified on 2026-10-03: both project directories were copied to `D:/life sciences research workbench` and all 1,772 copied files matched their source SHA-256 hashes before path updates. C-drive originals are retained. A D-drive virtual environment was created with `--system-site-packages` to reuse the existing Python build tools; offline editable installation and the installed CLI passed validation and dry-run checks. A new mock evaluation, scores, report and review queues were generated on D. Historical records retain their original bytes and paths. See the private `verification-migration.json` for the current verification record.
+- 58 automated tests passed locally, including real installed Inspect/Streamlit integrations, answer isolation, five independent samples, per-sample seed records, no cross-answer merging of historical matches, user-service scoring, fatal-premise handling and reproduction-check rejection of processed or modified inputs.
+- The current 20-question mock run completed 36 samples and produced a report plus two blinded 36-response review queues. Every scientific score remains pending; no human ratings or paid model evaluations were fabricated.
+- Dataset draft validation and request/cost preflight passed. Formal validation remains blocked by incomplete bank coverage and expert approval.
+- Seven earlier synthetic analysis checks passed in the recorded scientific environment. These do not certify raw biological-data reproduction.
+- The earlier migration verified 1,772 copied files by SHA-256, retained the C-drive originals and established the D-drive runtime. Historical records retain their bytes. Use the original software version when rescoring historical runs.
 
-## Remaining gates
+## Remaining scientific and execution gates
 
-1. Validate at least one paid evaluation provider adapter with a configured budget before considering the API path production-ready. DeepSeek Harness was used for authoring and static review; that is separate from a Workbench evaluation-provider integration.
-2. Recruit domain experts, independently trial the pilot and revise scientific content, adjacent scoring anchors, references and acceptable alternatives. Paper teaching archives need review for whether the available evidence makes each source judgment fair.
-3. Build and review the final 320 questions. The 320-slot CSV is a blueprint; it is not a generated question bank. The pilot is not yet assigned to formal slots. Add image-based design, reasoning and appraisal cases.
-4. Calibrate with the final 64 public items, resolve systematic disagreement and lock the 256 held-out items/rubrics.
-5. Select exact model versions, provider-supported settings and budget; execute once per item; complete independent scoring and adjudication.
-6. Review future public-question releases and publish actual scores only after the preceding gates. The code and 20-question draft pilot are already in the public repository; private draft answers and research material are excluded.
-
-## Current limits
-
-- No online identity system or authenticated expert portal. The local coordinator controls review-file separation and expert credentials.
-- Hash inventories detect changes but are not signed audit trails. Formal releases should archive manifests externally.
-- Refusal classification is human-reviewed for open answers. Objective answers expose format/empty status; a complete all-item refusal audit is not automated.
-- Cost control is reservation-based and depends on configured pricing/ceilings. Provider-side budgets remain necessary.
-- The current visual pilot and case count are too small for scientific claims about model rankings.
-- Public code is published at [Sculptor815/life-sciences-research-workbench](https://github.com/Sculptor815/life-sciences-research-workbench). No formal scientific release, leaderboard, completed hidden question bank, or actual model score is claimed. Private research records and answers are excluded from the release inventory.
-- Private discovery collection: 46 cases / 178 questions, including DNA damage response, pyroptosis, glycolysis/TCA discovery, neural circuits, analytical methods and four disputed-paper families. Only three original papers have a recorded complete main-text reading in this pass. Other source depths remain visible. Candidate selection does not count as formal expert approval.
-- Textbook inventories distinguish official university adoption, publisher edition/TOC verification, actual chapter bibliography retrieval and paper-level reading. No claim of retrieving all references from all core textbooks is made. The 80-concept inventory is a coverage proposal, not 80 completed evidence dossiers.
-- A separate question-generation rubric provides six dimensions and 30 behavioral anchors. Missing novelty evidence leaves the total unscored. The quality-summary command checks completeness and arithmetic; it does not authenticate reviewers or validate scientific merit. Twelve private proposed research directions have AI draft ratings, not expert scores.
+1. Review all current scientific answers, their full sources and supplements, parameter provenance, alternative designs and item-specific anchors with independent domain experts. Long answers alone are not complete protocols.
+2. Resolve exact protocol inputs and review readiness for design/reasoning questions; certify chronology using earliest public disclosures, including preprints and code.
+3. Upgrade the earlier 46-case/178-question discovery archive. It remains readable, but its old task types and shorter answers do not satisfy the new contract; current export rejects unupgraded records. It is not included in the 30 revised answers.
+4. Acquire and independently analyze licensed raw artifacts for the ten integrity cases, include author responses and matched reliable controls, and measure false accusations as well as detection.
+5. Complete real raw-data paper-to-figure reproductions and an OS-isolated agent execution harness. Validate numerical targets and confirm that outputs actually derive from submitted code and original data.
+6. Build the 240-slot bank, including visual design/reasoning, then calibrate and lock it. Assess usefulness with blinded researchers attempting to act on the answers, rather than relying only on reference matching.
+7. Validate a paid evaluation-provider integration before production use. DeepSeek Harness assisted authoring; that is separate from running it as an evaluated Workbench provider.

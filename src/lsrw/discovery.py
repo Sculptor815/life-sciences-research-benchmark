@@ -9,7 +9,8 @@ import json
 from pathlib import Path
 
 from .storage import digest, read_json, write_new
-from .taxonomy import ABILITIES, DOMAINS
+from .taxonomy import ABILITIES, DOMAINS, LEGACY_ABILITIES, REFERENCE_MIN_WORDS
+from .grading import word_count
 
 
 def validate_corpus(corpus):
@@ -38,7 +39,7 @@ def validate_corpus(corpus):
             errors.append(f"{name}: candidate questions required")
             continue
         for q in questions:
-            if not isinstance(q, dict) or q.get("ability") not in ABILITIES:
+            if not isinstance(q, dict) or q.get("ability") not in ABILITIES + LEGACY_ABILITIES:
                 errors.append(f"{name}: invalid question ability")
                 continue
             question_id = q.get("id", str(name)+"-"+q["ability"])
@@ -76,11 +77,15 @@ def audit(corpus):
             reasons.append("fixed evidence packet needs drafting")
         if any(q.get("ability") != "knowledge" and not q.get("dimensions") for q in case.get("questions", [])):
             reasons.append("item-specific 0-4 dimension anchors pending")
+        if any(q.get("ability") not in ABILITIES for q in case.get("questions", [])):
+            reasons.append("legacy question type requires migration to the three-open-task contract")
+        if any(not isinstance(q.get("reference_answer"),str) or word_count(q["reference_answer"]) < REFERENCE_MIN_WORDS.get(q.get("ability"),301) for q in case.get("questions",[])):
+            reasons.append("reference answers require substantive expansion to the current minimum")
         reasons.append("independent human review and calibration required")
         gaps.append({"id":case.get("id"), "reasons":reasons})
     return {"schema_version":"1.0", "corpus_sha256":digest(corpus), "valid":not errors, "errors":errors,
             "cases":len(cases), "questions":sum(cells.values()), "domains":dict(counts),
-            "cells":{f"{d}/{a}":cells[d,a] for d in DOMAINS for a in ABILITIES},
+            "cells":{f"{d}/{a}":cells[d,a] for d in DOMAINS for a in ABILITIES + LEGACY_ABILITIES},
             "read_depth":dict(depths), "formal_ready":False, "readiness_gaps":gaps,
             "scope":"Discovery candidates for human review; not a completed benchmark or exhaustive bibliography"}
 
@@ -127,6 +132,10 @@ def export_drafts(corpus, output):
     errors = validate_corpus(corpus)
     if errors:
         raise ValueError("Invalid research corpus: " + "; ".join(errors))
+    for case in corpus["cases"]:
+        for question in case["questions"]:
+            if question["ability"] not in ABILITIES or question.get("choices") or not isinstance(question.get("reference_answer"),str) or word_count(question["reference_answer"]) < REFERENCE_MIN_WORDS[question["ability"]]:
+                raise ValueError("Migrate legacy candidates and expand reference answers before exporting current open-response drafts")
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     candidates, answers = [], {}

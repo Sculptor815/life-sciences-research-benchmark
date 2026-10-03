@@ -1,63 +1,75 @@
 # Evaluation method
 
-## Scope and taxonomy
+Version 0.3 uses four domains and exactly three open-response tasks: **essay, experimental design, and research reasoning**. Disputed-paper appraisal is an essay task. The active pilot has no multiple-choice or numeric-only items.
 
-Version 1 targets four domains and four abilities. Every item has one primary domain/ability pair, topic and technique tags, a research context, an undergraduate/graduate difficulty label, and a case/source family. Disease names are contexts, not separate primary domains.
+## The primary outcome: helping the researcher
 
-Bioinformatics emphasizes the validity of analysis choices and biological conclusions. Integration requires sample alignment, assay-specific QC, pairing, batch assessment and validation. Enrichment requires a defensible tested universe, gene-set version, null and multiplicity control. Pseudotime requires direction/topology assumptions and independent validation. GWAS separates association, causal variants and effector genes. Whole-genome sequencing includes callability, variant QC, ancestry, relatedness and compatible analysis pipelines. The first version does not measure software execution skill.
+The benchmark asks whether the assistant helps a researcher make a better decision and carry out reliable work. Before authoring, specify the user's goal, current evidence, constraints, decision and observable success condition. A task should answer a real need: clarify a mechanism, choose a discriminating experiment, diagnose a failed assay, reproduce an analysis, assess a questionable claim, or decide what evidence to collect next.
 
-## Bank and split
+The **primary reported score** is user service, rated independently on five 0–4 dimensions: scientific accuracy (35%), decision value (25%), actionability (20%), verifiability (15%) and communication (5%). A fatal factual premise receiving accuracy zero caps the primary total at 20/100; disagreement about that judgment requires adjudication. This is a proposed design requiring expert calibration, not a validated utility scale.
 
-Each of 16 cells has 16 text and 4 image items. Public/held-out counts per cell are 3/13 text and 1/3 image, respectively. Totals are 320 items: 64 public and 256 held out. Formal text and image tracks contain 208 and 48 items. The image sample size remains limited and uncertainty must be displayed.
+An excellent answer identifies the most consequential uncertainty, gives a feasible prioritized next action, explains how possible outcomes change the decision, and separates established facts from assumptions. It gives the essential recommendation first and detailed protocols where they support execution. If an indispensable input is unknown, it asks for or specifies that input; it does not fabricate precision. An honest, useful bounded answer can outperform a confident, exhaustive-looking answer.
 
-Split by both case family and source-paper family before authoring variants. No family crosses the split. Global family identifiers should be retained across domain boundaries. Images use original synthetic or appropriately licensed materials, with hashes, provenance and processing records. The current visual pilot covers knowledge only; all four abilities need visual items before a formal release.
+Technical concept coverage, logic completeness, procedural depth and historical matching remain **diagnostic scores**, not substitutes for user benefit. A valid new direction can receive full service credit even when it differs from the author's later work. Best-of-five selection uses the primary service score, preserves every sample's technical scores, and reports historical hits separately. Two independent reviewers judge both score sets; a gap of at least 2 in either set or over 10 weighted percentage points in either total requires adjudication.
 
-## Evidence conditions
+Validation should include blinded researchers attempting the next step from each answer, checking reproducibility, recording consequential errors and missing inputs, and measuring time and effort saved against an appropriate baseline. User satisfaction alone is insufficient if the advice is scientifically wrong. No such prospective user-outcome study has yet been completed.
 
-Knowledge questions are closed book apart from their stimulus. Other questions use only supplied packets. All model requests contain an allowlisted system instruction, prompt, packet, options if relevant, answer-length requirement, and image bytes when applicable. Administrative metadata, keys, dimension anchors and expert records are not included.
+## Answer depth
 
-Paper appraisal records source identity separately from conclusion support. Source states: real and matching, citation mismatch, known fabrication, insufficient to verify. Notice state is recorded separately. Conclusion states: supported, partially supported, unsupported, insufficient evidence. Some pilot cases use explicit teaching archives; matching within such an archive is not a claim that a real external article exists. Final questions need expert checks of packet sufficiency and provenance.
+The 20-question public pilot contains 12 essays, four design questions and four reasoning questions; all four visual items are essays. Private reference answers themselves must contain at least 301, 901 and 1,201 English words respectively, excluding rubric annotations. Candidate limits are 1,500, 3,500 and 5,000 words. Length is an authoring completeness gate, not a score: shorter correct model answers can earn full credit if all substantive requirements are met.
 
-Unsuccessful retrieval alone does not establish fabrication. Retraction status and truth of individual claims are different judgments. Image anomalies require investigation before claims about cause or intent.
+Essays connect concepts, observations, alternative explanations and bounded conclusions. Design answers require an operational ordered protocol: identity/QC, independent units, allocation/blinding, preparation, intervention, sampling schedule, calibration, measurements, controls, analysis, troubleshooting and decision rules. Reasoning answers add a valid unresolved biological question, competing predictions and especially detailed positive, negative and ambiguous interpretations.
 
-## Scoring
+Each procedural detail must be labeled as source-reported, proposed or unknown. Unreported concentrations, coordinates, sequences, timings and power inputs require calibration or a missing-input statement, never invented historical precision. Draft keys are not laboratory-validated SOPs. Claiming greater completeness than published Methods requires a full Methods/supplement audit.
 
-Knowledge uses exact labelled choices or numeric values with units and predeclared absolute/relative tolerance. The larger of the two tolerance bounds is used. Correct answers score 100, incorrect or malformed answers score 0. Format validity is recorded separately. Explicit JSON requirements are identical across models; there is no model-based answer extraction.
+## Textbooks and exercises
 
-Open tasks use five dimensions scored 0–4:
+Use demanding end-of-chapter problems from high-quality textbooks with verified adoption at leading US universities. Record edition, chapter, problem identifier, adoption evidence, learning objective and solution provenance. Prefer official author, publisher and university solutions over unattributed answer sites. Independently solve and verify the reasoning.
 
-| Ability | Dimensions |
-|---|---|
-| Experimental design | Hypothesis/measurement, controls, replication/statistics, confounds/feasibility, interpretation |
-| Research reasoning | Question definition, competing hypotheses, discriminating predictions, information value, falsification/updating |
-| Paper appraisal | Source verification, evidence localization, methods evaluation, inferential scope, uncertainty/validation |
+Select mechanism, evidence, control, quantitative-assumption and figure-interpretation problems. Write original variants with changed data and counterfactuals; do not redistribute copyrighted question/solution collections. Track public-solution exposure and semantic overlap. Publicly solved problems support calibration but do not establish resistance to memorization. Related variants stay in one source family.
 
-Total percentage = sum of dimension scores × 5. Item-specific anchors and acceptable alternatives govern partial credit. Critical errors affect the relevant dimension; an omission is not repeatedly penalized across unrelated dimensions. Length, jargon and novelty alone earn no credit. Draft anchor answers are calibration aids pending expert revision, not certified gold standards.
+## Bank and splits
 
-Two experts score independently. Any dimension difference of at least 2, or total difference greater than 10 percentage points, requires a third reviewer. Exactly 10 points alone does not trigger adjudication. Disagreement on the paper subjudgments or refusal label also requires resolution. Otherwise, dimension scores are averaged. Adjudication replaces the final decision while preserving both originals. Formal review uses the locked domain roster.
+The revised blueprint has 12 domain/task cells with 20 slots each: 240 target slots, 48 public and 192 held out. Each cell has 3/13 public/held-out text slots and 1/3 image slots; formal held-out tracks contain 156 text and 36 image items. This replaces the previous four-task 320-slot blueprint and does not imply completion. Split both case and source-paper families before authoring variants. Closely related publications, including both STAP papers, remain together.
 
-Calibration reports exact and within-one dimension agreement and the mean absolute difference in total percentage scores. These are descriptive agreement summaries, not evidence of construct validity. A human coordinator must document acceptance and resolve systematic differences before locking a bank.
+## Concepts and logic scoring
 
-## Execution and costs
+Each private key lists concepts, aliases and criteria for correct contextual use, plus directed premise → inference → conclusion links with evidence locations. Reviewers mark missing, reversed or contradicted links. A term in an incorrect assertion earns no credit. The lexical diagnostic highlights matches but produces **no automatic score**; negation and keyword stuffing require contextual review.
 
-Each question starts with an independent context and no tools. One completed answer per question is retained. Network, rate-limit and timeout failures permit at most two additional attempts. API, context or unsupported-image errors remain operational outcomes; they do not count as scientific zeroes. Empty answers and irrelevant refusals are completed answers and receive no automatic retry.
+All dimensions have item-specific 0–4 anchors and these percentage weights:
 
-The run configuration records exact model identifier, supported generation settings, code/dataset/template versions, pricing assumptions and limits. Responses retain the provider-reported model name, token counts when available, latency and stop reason. Provider-billed cost is recorded only when exposed; current Inspect adapter reports token-based estimates, not invoices. The reservation ledger retains an allocation for failed requests because failure does not guarantee no charge.
+| Task | Concepts | Logic chain | Task detail | Controls/uncertainty | Conclusion alignment |
+|---|---:|---:|---:|---:|---:|
+| Essay | 30 | 40 | 10 | 10 | 10 |
+| Experimental design | 20 | 30 | 30 | 10 | 10 |
+| Research reasoning | 15 | 30 | 30 | 10 | 15 |
 
-Input ceilings are estimates. The text preflight uses a conservative byte-based bound plus message overhead; image accounting is provider-dependent. This mechanism cannot enforce a provider's billing cap. Use provider-side limits, verify pricing, and choose ceilings that include all charged reasoning/image tokens. Unexpected or missing usage stops further paid requests. No fallback model is selected.
+Total = sum of dimension score / 4 × weight. Essay detail means precise evidence analysis; design/reasoning detail means operational protocol adequacy. Accept equivalent scientific terminology and valid alternative designs. Length, prestige, indiscriminate skepticism and fashionable techniques earn no credit. Explain distinct consequences before penalizing an error across multiple dimensions.
 
-## Aggregation and uncertainty
+Two experts score independently. Any dimension gap ≥2, weighted-total gap >10 percentage points, or categorical disagreement requires a third reviewer. Exactly 10 points alone is not a trigger. Preserve both originals. Calibration measures agreement, not construct validity.
 
-Scores are aggregated separately by modality. Overall score is the unweighted mean of the 16 domain/ability cell means. Domain means weight the four abilities equally; ability means weight the four domains equally. Missing cells leave these totals unset. A partial report may show an explicitly labelled mean over observed cells; it is not a formal overall score.
+## Five independent reasoning attempts
 
-Reports show requested and completed counts, scored counts, empty responses, expert-reviewed refusal rate and its denominator, expert disagreement and its denominator, paper source/conclusion subaccuracy, elapsed time and available cost estimates. Objective-question refusal status is not automatically classified in v0.1; their malformed/empty status is reported, and full refusal-rate auditing remains a coordinator task.
+Each reasoning question schedules five fresh-context samples with identical visible evidence and no previous answers, feedback or hints. Other tasks have one sample. With a configured seed, sample n uses base+n−1. Store duplicates, refusals and empty completions too. Each sample has at most two transport retries; retries are not extra scientific opportunities.
 
-Confidence intervals use a fixed-seed case-family cluster bootstrap, stratified by the set of cells in which a family appears. Resample families within each stratum. A family receives the same weight wherever it appears, including across cells. This preserves the benchmark's cell composition while retaining dependence within cases. Each draw recomputes the equal-cell mean. Intervals are withheld if a cell or stratum has fewer than two scored families, scoring is incomplete, or too few valid draws remain. With three held-out visual items per cell, interval estimates are still fragile; the sample count must accompany them. The method does not capture question-author selection bias or expert uncertainty.
+Freeze the original-paper packet before the earliest public disclosure of the later paper, including preprints. Private keys record both sources, dates, author overlap and the actual later experiments. Keep future-paper titles, findings, matching criteria and answers out of requests. These retrospective public-literature cases remain vulnerable to training-data memorization; hidden keys do not make them genuinely prospective.
 
-Paired model differences require identical question IDs, dataset hash and rubric hash. Each item's score difference is computed first, then aggregated and bootstrapped by family. Coordinators must additionally check generation and evidence conditions; a paired calculation alone does not establish fair equivalence. No automatic significance or superiority claim is produced.
+A historical hit requires reviewer agreement that ONE answer matches all five aspects: biological question, mechanism, intervention/analysis strategy, readout and predicted outcome. That answer must also score ≥3/4 on logic and protocol detail and ≥2/4 on controls/uncertainty. A paper title, vague topic match or union of fragments across five answers cannot qualify. Equivalent methods may qualify with an explicit rationale.
 
-## Versioning and governance
+Report first-sample quality, best complete-answer quality, hit-at-1 and hit-at-5 separately. All five must be scored before final aggregation. These are observed outcomes, not general pass-probability estimates. A strong alternative direction can earn quality credit without a historical hit. Later author behavior is a reference, not the only scientifically correct future direction.
 
-Completed run inputs and responses have a checksum inventory. Edits invalidate verification. Scoring produces content-addressed versions; reports are deterministic from a chosen score artifact. Local hashes detect accidental modification, not malicious rewriting of all records. Store a signed or externally archived manifest for a formal release.
+## Disputed-paper and raw-data tracks
 
-Expert identities, held-out materials, answers, ratings and unpublished responses belong in a private directory outside the repository. A reviewed public release uses an explicit path allowlist. The current package contains development questions and code; it makes no claim of expert validation or real model performance.
+Disputed-paper essays require observation → measurement problem → affected comparison → claim limitation, benign alternatives and falsifying checks. Technical evidence should precede official notices. Distinguish fabrication findings, image concerns, contamination, non-replication, correction and retraction. PubPeer counts and author silence do not prove fraud. Missing results are not necessarily negative. Assess reporting denominators, exclusions and complete outcomes. See [the ten-paper selection](DISPUTED_PAPERS.md).
+
+Raw-data bioinformatics and neural-data reproduction are separate artifact tasks. Require raw accessions/hashes, frozen environments, figure panels, preprocessing, derived tables and prespecified numerical tolerances. Processed matrices are not raw sequencing data; figure spreadsheets are not raw acquisition signals. See [the reproduction protocol](REPRODUCTION.md). The numerical checker verifies files and metric agreement; it does not execute submissions, authenticate logs, certify isolation or establish biological truth. Independent raw-to-output execution is required for agent credit.
+
+## Execution and reporting
+
+Authors may browse. Evaluated models receive only frozen materials and no retrieval tools. Client checks cannot inspect remote-provider internals; an offline code track requires OS-enforced network isolation and private-target separation.
+
+The 20 questions schedule 36 samples and at most 108 visible calls with transport retries. Budget each call, retain failed-call reservations, and stop paid requests when usage is missing or exceeds ceilings. Provider limits remain necessary. The direct Inspect exploratory task does not implement Workbench sampling/budget enforcement; use `lsrw run`.
+
+Aggregate quality separately by modality as an equal mean over 12 cells. Incomplete scoring or missing cells leaves totals unset. Preserve every sample, not only winners. Family-cluster bootstrap and paired comparisons require sufficient independent families and matching dataset/rubric versions. Reports cannot remove selection bias, hindsight or expert uncertainty.
+
+Run hashes detect changes but are not authenticated audit trails. Historical runs retain their original bytes and require their version's scoring software. Legacy discovery records remain inspectable, but current export is blocked until task types and answers are upgraded. Private answers, future-paper targets, reviewer identities and unpublished responses remain outside GitHub.

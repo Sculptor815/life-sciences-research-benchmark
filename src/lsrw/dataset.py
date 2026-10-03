@@ -41,8 +41,8 @@ def validate(items, root, formal=False):
             fail("formal items must have reviewed status")
         if item["difficulty"] not in ("undergraduate", "graduate"):
             fail("invalid difficulty")
-        if type(item["word_limit"]) is not int or not 10 <= item["word_limit"] <= 1500:
-            fail("word_limit must be an integer from 10 to 1500")
+        if type(item["word_limit"]) is not int or not 301 <= item["word_limit"] <= 12000:
+            fail("word_limit must be an integer from 301 to 12000")
         if not item["family_id"] or not item["source_family"]:
             fail("case and source families are required")
         families[item["family_id"]].add(item["split"])
@@ -52,18 +52,12 @@ def validate(items, root, formal=False):
             fail("topic tags required")
         else:
             coverage[item["domain"]].update(item["topics"])
-        if item["response_type"] not in ("choice", "numeric", "open"):
-            fail("invalid response type")
-        if (item["ability"] == "knowledge") != (item["response_type"] in ("choice", "numeric")):
-            fail("knowledge must be objective; other abilities must be open")
-        if item["response_type"] == "choice" and (not isinstance(item["choices"], dict) or set(item["choices"]) != set("ABCD")):
-            fail("choice questions require four labelled options")
-        if item["response_type"] != "choice" and item["choices"]:
-            fail("only choice questions may contain options")
+        if item["response_type"] != "open" or item["choices"]:
+            fail("All current questions require open responses without answer choices")
         if not isinstance(item["packet"], str):
             fail("packet must be visible text, never hidden metadata")
-        if item["ability"] == "paper_appraisal" and not item["packet"].strip():
-            fail("paper appraisal requires a fixed evidence packet")
+        if not item["packet"].strip():
+            fail("Every question requires a fixed evidence packet")
         if (item["modality"] == "image") != bool(item["materials"]):
             fail("images required only for image track")
         for asset in item["materials"]:

@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/"src"))
 
 from lsrw.adapters import MockAdapter
+from lsrw.service import DIMENSIONS as SERVICE_DIMENSIONS, CRITERIA as SERVICE_CRITERIA
 from lsrw.curation import calibration
 from lsrw.dataset import load_dataset, validate
 from lsrw.grading import objective_score, resolve_ratings, validate_key, validate_rating
@@ -21,7 +22,7 @@ from lsrw.review import collect_reviews, prepare_review, save_rating
 from lsrw.runner import dry_run, execute, load_config, verify_run
 from lsrw.statistics import family_interval, macro, paired_comparison
 from lsrw.storage import digest, read_json, write_new
-from lsrw.taxonomy import ABILITIES, CELL_COUNTS, DIMENSIONS, DOMAINS, TOPICS
+from lsrw.taxonomy import ABILITIES, CELL_COUNTS, DIMENSIONS, DOMAINS, TOPICS, FOLLOWUP_FIELDS, REFERENCE_MIN_WORDS
 
 
 class WorkbenchTests(unittest.TestCase):
@@ -34,12 +35,13 @@ class WorkbenchTests(unittest.TestCase):
     def config(self, **changes):
         config = load_config(ROOT/"configs/mock.json")
         config["output_root"] = str(self.work/"runs")
+        config.update(max_output_tokens=1200,input_token_ceiling=16000)
         config.update(changes)
         return config
 
     def rating(self, ability="experimental_design", reviewer="r1", values=None):
         return {"reviewer":reviewer,"scores":dict(zip(DIMENSIONS[ability],values or [3]*5)),"rationale":"Test-only expert-style record; not an actual human judgment.",
-                "source_correct":True if ability=="paper_appraisal" else None,"conclusion_correct":True if ability=="paper_appraisal" else None,"refusal":False}
+                "source_correct":True if ability=="paper_appraisal" else None,"conclusion_correct":True if ability=="paper_appraisal" else None,"refusal":False,"user_service":dict.fromkeys(SERVICE_DIMENSIONS,3),"followup_match":dict.fromkeys(FOLLOWUP_FIELDS,False) if ability=="research_reasoning" else None}
 
     def toy_keys(self):
         # Deliberately arbitrary keys test plumbing, not the scientific pilot answers.
@@ -54,6 +56,11 @@ class WorkbenchTests(unittest.TestCase):
                 key["dimensions"]={d:{"anchors":{str(n):"Test rubric "+str(n) for n in range(5)},"acceptable_alternatives":["fixture"],"critical_errors":["fixture"]} for d in DIMENSIONS[item["ability"]]}
                 if item["ability"]=="paper_appraisal":
                     key.update(source_state="insufficient_to_verify",support_state="insufficient_evidence")
+            key.update(user_goal="Test fixture decision",service_criteria=SERVICE_CRITERIA,reference_answer=" ".join(["fixture"] * REFERENCE_MIN_WORDS[item["ability"]]),
+                       required_concepts=[{"id":"test","aliases":["fixture"],"criterion":"Test-only context"}],
+                       logic_chain=[{"id":"test","premise":"fixture","inference":"fixture","conclusion":"fixture","evidence_location":"fixture"}],
+                       protocol_steps=[{"step":1,"action":"test fixture"}],
+                       followup_target={"original_source":{"public_date":"2000-01-01"},"cutoff_date":"2000-01-01","later_source":{"public_date":"2001-01-01"},"author_overlap":["fixture"],"match_criteria":dict.fromkeys(FOLLOWUP_FIELDS,"fixture")})
             keys[item["id"]]=key
         path=self.work/(uuid.uuid4().hex+"-keys.json")
         write_new(path,keys)
@@ -73,14 +80,14 @@ class WorkbenchTests(unittest.TestCase):
                         result.append(item)
         return result
 
-    def test_pilot_has_sixteen_cells_and_four_visuals(self):
+    def test_pilot_has_twelve_cells_and_four_visuals(self):
         self.assertEqual(len(self.pilot),20)
-        self.assertEqual(len({(i["domain"],i["ability"]) for i in self.pilot}),16)
+        self.assertEqual(len({(i["domain"],i["ability"]) for i in self.pilot}),12)
         self.assertEqual(sum(i["modality"]=="image" for i in self.pilot),4)
 
-    def test_formal_counts_accept_320_fixture(self):
+    def test_formal_counts_accept_240_fixture(self):
         items=self.full_fixture()
-        self.assertEqual(len(items),320)
+        self.assertEqual(len(items),240)
         self.assertEqual(validate(items,ROOT/"data/public",True),[])
         self.assertTrue(validate(items[:-1],ROOT/"data/public",True))
 
@@ -133,9 +140,9 @@ class WorkbenchTests(unittest.TestCase):
         self.assertEqual(resolve_ratings([left,right],"experimental_design")["status"],"needs_adjudication")
 
     def test_total_disagreement_strictly_over_ten(self):
-        left=self.rating(values=[2,2,3,3,3]); right=self.rating(reviewer="r2")
+        left=self.rating(values=[2,3,3,2,2]); right=self.rating(reviewer="r2")
         self.assertEqual(resolve_ratings([left,right],"experimental_design")["status"],"scored")
-        left=self.rating(values=[2,2,2,3,3])
+        left=self.rating(values=[2,2,3,3,3])
         self.assertEqual(resolve_ratings([left,right],"experimental_design")["status"],"needs_adjudication")
 
     def test_adjudicator_independence_and_original_preservation(self):
@@ -143,7 +150,8 @@ class WorkbenchTests(unittest.TestCase):
         before=copy.deepcopy(pair)
         with self.assertRaises(ValueError): resolve_ratings(pair,"experimental_design",self.rating())
         result=resolve_ratings(pair,"experimental_design",self.rating(reviewer="r3",values=[2]*5))
-        self.assertEqual(result["score"],50)
+        self.assertEqual(result["task_quality_score"],50)
+        self.assertEqual(result["score"],75)
         self.assertEqual(pair,before)
 
     def test_invalid_rating_and_self_pair_rejected(self):
@@ -185,7 +193,7 @@ class WorkbenchTests(unittest.TestCase):
     def test_dry_run_writes_nothing(self):
         config=self.config(output_root=str(self.work/"should-not-exist"))
         result=dry_run(config)
-        self.assertEqual(result["maximum_attempts"],60)
+        self.assertEqual(result["maximum_attempts"],108)
         self.assertFalse(Path(config["output_root"]).exists())
 
     def test_invalid_live_budget_and_generation_override(self):
@@ -229,7 +237,7 @@ class WorkbenchTests(unittest.TestCase):
             for a in ABILITIES:
                 rows.append({"domain":d,"ability":a,"score":100 if (d,a)==(DOMAINS[0],ABILITIES[0]) else 0,"family_id":d+a})
         rows.extend([rows[0].copy() for _ in range(9)])
-        self.assertEqual(macro(rows),6.25)
+        self.assertAlmostEqual(macro(rows),100/12)
 
     def test_cluster_bootstrap_and_pairing_reproducible(self):
         rows=[]

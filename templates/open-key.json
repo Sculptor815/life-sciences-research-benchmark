@@ -1,14 +1,133 @@
 {
   "id": "replace-with-matching-id",
-  "version": "draft-0.1",
+  "version": "draft-0.3",
   "expert_review": "pending",
-  "references": [{"source": "REPLACE", "evidence_location": "REPLACE", "retrieved": "YYYY-MM-DD"}],
+  "references": [
+    {
+      "source": "REPLACE",
+      "evidence_location": "REPLACE",
+      "retrieved": "YYYY-MM-DD"
+    }
+  ],
   "dimensions": {
-    "hypothesis_measurement": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
-    "controls": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
-    "replication_statistics": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
-    "confounds_feasibility": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
-    "interpretation": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]}
+    "concept_coverage": {
+      "anchors": {
+        "0": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "1": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "2": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "3": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "4": "REPLACE with item-specific contextual evidence and missing links at this level"
+      },
+      "acceptable_alternatives": [
+        "REPLACE"
+      ],
+      "critical_errors": [
+        "REPLACE"
+      ]
+    },
+    "logic_chain": {
+      "anchors": {
+        "0": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "1": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "2": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "3": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "4": "REPLACE with item-specific contextual evidence and missing links at this level"
+      },
+      "acceptable_alternatives": [
+        "REPLACE"
+      ],
+      "critical_errors": [
+        "REPLACE"
+      ]
+    },
+    "task_detail": {
+      "anchors": {
+        "0": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "1": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "2": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "3": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "4": "REPLACE with item-specific contextual evidence and missing links at this level"
+      },
+      "acceptable_alternatives": [
+        "REPLACE"
+      ],
+      "critical_errors": [
+        "REPLACE"
+      ]
+    },
+    "controls_uncertainty": {
+      "anchors": {
+        "0": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "1": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "2": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "3": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "4": "REPLACE with item-specific contextual evidence and missing links at this level"
+      },
+      "acceptable_alternatives": [
+        "REPLACE"
+      ],
+      "critical_errors": [
+        "REPLACE"
+      ]
+    },
+    "conclusion_alignment": {
+      "anchors": {
+        "0": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "1": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "2": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "3": "REPLACE with item-specific contextual evidence and missing links at this level",
+        "4": "REPLACE with item-specific contextual evidence and missing links at this level"
+      },
+      "acceptable_alternatives": [
+        "REPLACE"
+      ],
+      "critical_errors": [
+        "REPLACE"
+      ]
+    }
   },
-  "anchor_answers": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}
+  "reference_answer": "REPLACE: Write more than 300 English words for an essay, more than 900 for design, and more than 1200 for research reasoning. Do not count the rubric as the answer.",
+  "required_concepts": [
+    {
+      "id": "REPLACE",
+      "aliases": [
+        "REPLACE"
+      ],
+      "criterion": "REPLACE with correct contextual use"
+    }
+  ],
+  "logic_chain": [
+    {
+      "id": "REPLACE",
+      "premise": "REPLACE",
+      "inference": "REPLACE",
+      "conclusion": "REPLACE",
+      "evidence_location": "REPLACE"
+    }
+  ],
+  "protocol_steps": [
+    {
+      "step": 1,
+      "action": "REPLACE",
+      "variables_and_units": "REPLACE",
+      "control": "REPLACE",
+      "acceptance_or_stop_rule": "REPLACE",
+      "provenance": "proposed; verify original methods separately"
+    }
+  ],
+  "user_goal": "REPLACE with the actual user decision and success conditions",
+  "service_criteria": {
+    "scientific_accuracy": "Distinguish observations, assumptions and proposals; state correct biological implications and uncertainty without inventing evidence.",
+    "decision_value": "Resolve the user's stated decision, identify the highest-value uncertainty, prioritize a discriminating next step, and explain what would change the recommendation.",
+    "actionability": "Provide an ordered feasible plan, prerequisites, controls, decision rules, and explicit blocking inputs; details must support execution rather than merely add length.",
+    "verifiability": "Trace claims and results to supplied evidence, preserve data/protocol provenance, and specify independent checks; never present a proposed analysis as completed.",
+    "communication": "Lead with the useful conclusion, separate essential actions from supporting detail, and make limits understandable without verbosity or false confidence."
+  },
+  "service_anchors": {
+    "0": "Fundamentally wrong, unsupported or unusable for this criterion; a fatal false premise belongs in scientific accuracy, with the exact contradiction recorded.",
+    "1": "Some relevant content, but the user still lacks the essential information or receives materially misleading guidance.",
+    "2": "Partly useful and scientifically relevant, but substantial verification, redesign or clarification is still needed.",
+    "3": "Reliably advances the stated decision, with a feasible next step and transparent limits; one noncritical issue remains.",
+    "4": "Fully satisfies the stated criterion for this case: precise evidence, justified decisions, practical next steps and explicit conditions that would change the advice."
+  }
 }
