@@ -2,9 +2,11 @@
 
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
+**Current comparison:** 12 models, 30 questions, one answer per question. The project owner has carefully reviewed all 30 questions and reference answers. The existing scoring round will be completed before a separate, stricter rescore begins. See [current evaluation and review status](docs/CURRENT_EVALUATION.md) for the 20/30/50 category weights, reviewer provenance and requested rubric changes. The public pilot described below is an earlier, separate configuration.
+
 The primary outcome is whether an answer helps a researcher make a sound decision and advance the work. Scientific accuracy, decision value, actionability, verifiability and clear communication determine the user-service score. Keywords, logic, protocol detail and historical follow-up hits are reported as supporting diagnostics; long answers and author imitation do not establish usefulness.
 
-**Status: development workbench, version 0.3.0.** The runnable public pilot has 20 open-response drafts. Private revised reference answers contain 421–636 words for essays, 949–1,082 for design, and 1,279–1,341 for reasoning. Ten additional disputed-paper essays have separate 500-plus-word private answers. The earlier private discovery-review collection contains 46 research/controversy cases and 178 candidate questions with draft reference answers, source-reading records and review tools. The older 178 candidates are an archived discovery collection; they have not all been upgraded to the current answer-depth contract. Candidates are not a formal question bank. No expert approvals or real model leaderboard are claimed.
+**Status: development benchmark, version 0.3.0.** The runnable public pilot has 20 open-response drafts. Private revised reference answers contain 421–636 words for essays, 949–1,082 for design, and 1,279–1,341 for reasoning. Ten additional disputed-paper essays have separate 500-plus-word private answers. The earlier private discovery-review collection contains 46 research/controversy cases and 178 candidate questions with draft reference answers, source-reading records and review tools. The older 178 candidates are an archived discovery collection; they have not all been upgraded to the current answer-depth contract. Candidates are not a formal question bank. No expert approvals or real model leaderboard are claimed.
 
 Start with the [installation and walkthrough](docs/QUICKSTART.md). The [researcher needs](docs/USER_NEEDS.md) define what useful assistance should accomplish. Read the [evaluation method](docs/METHOD.md) before interpreting scores. Coordinators should also read the [authoring and review guide](docs/AUTHORING.md).
 
@@ -52,7 +54,7 @@ The core validator, mock runner and reports use Python's standard library. For a
 
 ## First run
 
-The supplied mock configuration saves runs in the sibling `life-sciences-research-workbench-private/runs` directory. Relative paths resolve from the configuration's directory, so the D-drive checkout and a new clone use the same layout. Change `output_root` to choose another private location.
+The supplied mock configuration saves runs in the sibling `life-sciences-research-benchmark-private/runs` directory. Relative paths resolve from the configuration's directory, so the D-drive checkout and a new clone use the same layout. Change `output_root` to choose another private location.
 
 ```console
 lsrw validate
@@ -86,7 +88,7 @@ After both reviews, run `lsrw score` again with `--reviews`. Cases requiring a t
 
 Copy `configs/api.template.json` into your private directory and set absolute dataset and output paths. Fill in an exact Inspect model identifier, supported generation settings, a budget, dated token prices, and an input-token ceiling. Keep provider credentials in environment variables. The template deliberately refuses to run while prices and budget are unset.
 
-Run with `--dry-run` first to inspect request counts and reservation estimates. Use `lsrw run` for budget accounting. The optional `lsrw.inspect_tasks.public_pilot` task supports exploratory Inspect workflows, but direct `inspect eval` does not enforce Workbench budget reservations or formal eligibility.
+Run with `--dry-run` first to inspect request counts and reservation estimates. Use `lsrw run` for budget accounting. The optional `lsrw.inspect_tasks.public_pilot` task supports exploratory Inspect workflows, but direct `inspect eval` does not enforce Benchmark budget reservations or formal eligibility.
 
 Prices and token ceilings are user-supplied estimates, not a provider-enforced spending limit. Configure a provider-side limit as well. Image and reasoning-token accounting require particular care. Requests stop when the next reservation would exceed the budget or reported usage exceeds the configured ceilings. A completed answer is never selectively retried. The five reasoning samples are scheduled in advance, including refusals and empty completions.
 
@@ -101,6 +103,6 @@ The release script includes only explicitly listed public files, validates that 
 
 See [implementation status](docs/STATUS.md) for completed checks and the remaining scientific review gates. The public repository contains only the explicit release inventory; private research corpora, draft answers and review records stay outside it.
 
-Code: MIT. Original pilot questions and synthetic figures: CC BY 4.0, attributed to Life Sciences Research Workbench contributors. External references retain their own licenses; linked papers and figures are not redistributed.
+Code: MIT. Original pilot questions and synthetic figures: CC BY 4.0, attributed to Life Sciences Research Benchmark contributors. External references retain their own licenses; linked papers and figures are not redistributed.
 
 The [ten-paper audit selection](docs/DISPUTED_PAPERS.md) distinguishes fabrication findings from narrower reliability concerns. The [raw-data reproduction protocol](docs/REPRODUCTION.md) defines input, figure and numerical-evidence requirements. High-quality textbook exercises and official solutions may inform original questions; [authoring rules](docs/METHOD.md) address source tracking and memorization.

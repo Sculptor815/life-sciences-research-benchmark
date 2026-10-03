@@ -83,7 +83,7 @@ def dry_run(config):
             "per_attempt_reserved_usd": reservation, "one_pass_estimate_usd": reservation*requests,
             "including_two_retries_estimate_usd": reservation*requests*3,
             "budget_usd": config["budget_usd"], "backend": config["backend"], "model": config["model"],
-            "notice": "Estimates and maximum_attempts cover workbench-visible calls, not a guaranteed provider billing cap. Provider internal calls are not observable. Configure provider billing limits; image token ceilings must cover provider image accounting."}
+            "notice": "Estimates and maximum_attempts cover benchmark-visible calls, not a guaranteed provider billing cap. Provider internal calls are not observable. Configure provider billing limits; image token ceilings must cover provider image accounting."}
 
 
 def execute(config, adapter=None, sleep=time.sleep):

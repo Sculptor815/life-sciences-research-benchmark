@@ -16,8 +16,8 @@ from lsrw import service
 class OpenProtocolTests(unittest.TestCase):
     def setUp(self):
         # Reuse the explicitly synthetic fixture builder, not scientific answer keys.
-        from test_workbench import WorkbenchTests
-        self.fixture=WorkbenchTests()
+        from test_benchmark import BenchmarkTests
+        self.fixture=BenchmarkTests()
         self.fixture.work=Path(__file__).resolve().parents[1]/'.test-work'/uuid.uuid4().hex
         self.fixture.work.mkdir(parents=True)
         from lsrw.dataset import load_dataset

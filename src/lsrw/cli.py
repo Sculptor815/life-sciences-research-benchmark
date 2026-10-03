@@ -20,7 +20,7 @@ def main(argv=None):
     if os.name == "nt" and not sys.flags.utf8_mode:
         result = subprocess.run([sys.executable, "-X", "utf8", "-m", "lsrw", *(sys.argv[1:] if argv is None else argv)])
         raise SystemExit(result.returncode)
-    parser = argparse.ArgumentParser(prog="lsrw", description="Life Sciences Research Workbench")
+    parser = argparse.ArgumentParser(prog="lsrw", description="Life Sciences Research Benchmark")
     commands = parser.add_subparsers(dest="command", required=True)
     cmd = commands.add_parser("validate")
     cmd.add_argument("--dataset", default="data/public/items.jsonl")

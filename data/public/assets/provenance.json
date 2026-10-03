@@ -1,7 +1,7 @@
 {
   "origin": "Original synthetic teaching figures",
   "license": "CC-BY-4.0",
-  "creator": "Life Sciences Research Workbench contributors",
+  "creator": "Life Sciences Research Benchmark contributors",
   "script": "scripts/render_pilot_figures.py",
   "processing": "Deterministic plotting; no real specimens, journal panels or external images",
   "raw_values": "All source arrays and kinetic equations are preserved in the plotting script",

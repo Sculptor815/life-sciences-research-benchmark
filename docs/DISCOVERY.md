@@ -24,9 +24,9 @@ Reviewer names are self-attested, not authenticated accounts. Page comments and 
 Run these commands from the public project directory. Use new output paths to preserve earlier versions:
 
 ```powershell
-.\.venv\Scripts\lsrw.exe research audit --corpus '../life-sciences-research-workbench-private/research/corpus-v0.2.json'
-.\.venv\Scripts\lsrw.exe research review --corpus '../life-sciences-research-workbench-private/research/corpus-v0.2.json' --output '../life-sciences-research-workbench-private/research/REVIEW-next.html'
-.\.venv\Scripts\lsrw.exe research import-decisions --corpus '../life-sciences-research-workbench-private/research/corpus-v0.2.json' --decisions 'EXPORTED-REVIEW.json' --output '../life-sciences-research-workbench-private/candidate-reviews'
+.\.venv\Scripts\lsrw.exe research audit --corpus '../life-sciences-research-benchmark-private/research/corpus-v0.2.json'
+.\.venv\Scripts\lsrw.exe research review --corpus '../life-sciences-research-benchmark-private/research/corpus-v0.2.json' --output '../life-sciences-research-benchmark-private/research/REVIEW-next.html'
+.\.venv\Scripts\lsrw.exe research import-decisions --corpus '../life-sciences-research-benchmark-private/research/corpus-v0.2.json' --decisions 'EXPORTED-REVIEW.json' --output '../life-sciences-research-benchmark-private/candidate-reviews'
 ```
 
 Import checks corpus and case hashes, rejecting stale versions, duplicate decisions and missing rationale. `research export` separates candidate prompts and packets from private answers only after checking the current task types and minimum reference-answer lengths; the older 178-candidate archive will require revision before export. These exports remain drafts, not a formal 240-question bank.

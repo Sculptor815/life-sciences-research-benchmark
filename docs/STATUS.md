@@ -1,6 +1,10 @@
 # Implementation status — 2026-10-03
 
-Version 0.3 is a development workbench. No completed expert-validated bank, paid-model leaderboard, laboratory-validated protocol or full-paper raw-data reproduction is claimed.
+## Current comparison
+
+The ongoing private evaluation uses 12 models and 30 questions, with one answer per question and category weights of 20/30/50. The project owner confirmed careful human review of all 30 questions and their reference answers. Codex is scoring candidate answers under the existing rubric first; a stricter second round will follow without replacing those results. [Current evaluation](CURRENT_EVALUATION.md) records the review provenance and requested additions. The implementation details below describe the earlier public pilot, whose settings are separate.
+
+Version 0.3 is a development benchmark. No completed expert-validated bank, paid-model leaderboard, laboratory-validated protocol or full-paper raw-data reproduction is claimed.
 
 ## Current implementation
 
@@ -29,4 +33,4 @@ Version 0.3 is a development workbench. No completed expert-validated bank, paid
 4. Acquire and independently analyze licensed raw artifacts for the ten integrity cases, include author responses and matched reliable controls, and measure false accusations as well as detection.
 5. Complete real raw-data paper-to-figure reproductions and an OS-isolated agent execution harness. Validate numerical targets and confirm that outputs actually derive from submitted code and original data.
 6. Build the 240-slot bank, including visual design/reasoning, then calibrate and lock it. Assess usefulness with blinded researchers attempting to act on the answers, rather than relying only on reference matching.
-7. Validate a paid evaluation-provider integration before production use. DeepSeek Harness assisted authoring; that is separate from running it as an evaluated Workbench provider.
+7. Validate a paid evaluation-provider integration before production use. DeepSeek Harness assisted authoring; that is separate from running it as an evaluated Benchmark provider.

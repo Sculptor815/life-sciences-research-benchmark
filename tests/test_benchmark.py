@@ -25,7 +25,7 @@ from lsrw.storage import digest, read_json, write_new
 from lsrw.taxonomy import ABILITIES, CELL_COUNTS, DIMENSIONS, DOMAINS, TOPICS, FOLLOWUP_FIELDS, REFERENCE_MIN_WORDS
 
 
-class WorkbenchTests(unittest.TestCase):
+class BenchmarkTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.work = ROOT/".test-work"/uuid.uuid4().hex

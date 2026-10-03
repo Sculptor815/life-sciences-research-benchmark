@@ -3,7 +3,7 @@ requires = ["setuptools>=70"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "life-sciences-research-workbench"
+name = "life-sciences-research-benchmark"
 version = "0.3.0"
 description = "Reproducible evaluations of biological knowledge and research judgment"
 requires-python = ">=3.11"

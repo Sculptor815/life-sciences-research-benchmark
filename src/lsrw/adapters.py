@@ -29,7 +29,7 @@ class MockAdapter:
 
 
 class InspectAdapter:
-    """Inspect supplies provider clients; Workbench owns retry and budget records."""
+    """Inspect supplies provider clients; Benchmark owns retry and budget records."""
     def __init__(self, config):
         from inspect_ai.model import GenerateConfig, get_model
         self.version = importlib.metadata.version("inspect_ai")

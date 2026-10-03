@@ -68,7 +68,7 @@ Raw-data bioinformatics and neural-data reproduction are separate artifact tasks
 
 Authors may browse. Evaluated models receive only frozen materials and no retrieval tools. Client checks cannot inspect remote-provider internals; an offline code track requires OS-enforced network isolation and private-target separation.
 
-The 20 questions schedule 36 samples and at most 108 visible calls with transport retries. Budget each call, retain failed-call reservations, and stop paid requests when usage is missing or exceeds ceilings. Provider limits remain necessary. The direct Inspect exploratory task does not implement Workbench sampling/budget enforcement; use `lsrw run`.
+The 20 questions schedule 36 samples and at most 108 visible calls with transport retries. Budget each call, retain failed-call reservations, and stop paid requests when usage is missing or exceeds ceilings. Provider limits remain necessary. The direct Inspect exploratory task does not implement Benchmark sampling/budget enforcement; use `lsrw run`.
 
 Aggregate quality separately by modality as an equal mean over 12 cells. Incomplete scoring or missing cells leaves totals unset. Preserve every sample, not only winners. Family-cluster bootstrap and paired comparisons require sufficient independent families and matching dataset/rubric versions. Reports cannot remove selection bias, hindsight or expert uncertainty.
 

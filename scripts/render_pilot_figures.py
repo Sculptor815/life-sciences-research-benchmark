@@ -49,7 +49,7 @@ def render(output):
     axes[1].set(xticks=range(5),xticklabels=["v1","v2","v3","v4","v5"],yticks=range(5),yticklabels=["v1","v2","v3","v4","v5"],title="Pairwise linkage disequilibrium (r squared)")
     fig.colorbar(im,ax=axes[1],shrink=.8)
     fig.savefig(output/"inf-k02.png"); plt.close(fig)
-    (output/"provenance.json").write_text(json.dumps({"origin":"Original synthetic teaching figures", "license":"CC-BY-4.0", "creator":"Life Sciences Research Workbench contributors", "script":"scripts/render_pilot_figures.py", "processing":"Deterministic plotting; no real specimens, journal panels or external images", "raw_values":"All source arrays and kinetic equations are preserved in the plotting script", "created":"2026-10-03"},indent=2)+"\n",encoding="utf-8")
+    (output/"provenance.json").write_text(json.dumps({"origin":"Original synthetic teaching figures", "license":"CC-BY-4.0", "creator":"Life Sciences Research Benchmark contributors", "script":"scripts/render_pilot_figures.py", "processing":"Deterministic plotting; no real specimens, journal panels or external images", "raw_values":"All source arrays and kinetic equations are preserved in the plotting script", "created":"2026-10-03"},indent=2)+"\n",encoding="utf-8")
 
 
 if __name__ == "__main__":

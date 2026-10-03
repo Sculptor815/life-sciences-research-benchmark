@@ -1,6 +1,6 @@
 {
   "dataset": "../data/public/items.jsonl",
-  "output_root": "../../life-sciences-research-workbench-private/runs",
+  "output_root": "../../life-sciences-research-benchmark-private/runs",
   "backend": "mock",
   "model": "mock/development-only",
   "track": "all",

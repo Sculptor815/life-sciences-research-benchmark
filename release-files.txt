@@ -49,10 +49,11 @@ templates/question-quality-rubric.json
 tests/test_optional_runtime.py
 tests/test_discovery.py
 tests/test_question_quality.py
-tests/test_workbench.py
+tests/test_benchmark.py
 docs/DISPUTED_PAPERS.md
 docs/REPRODUCTION.md
 src/lsrw/reproduction.py
 tests/test_open_protocol.py
 src/lsrw/service.py
 docs/USER_NEEDS.md
+docs/CURRENT_EVALUATION.md
