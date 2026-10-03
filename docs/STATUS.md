@@ -14,11 +14,11 @@ This is a development pilot. It is not a completed or expert-validated 320-quest
 - A local Streamlit review form, paired-rating calibration summaries and a formal-bank lock command.
 - Separate modality reports in HTML/CSV/JSON, equal-cell aggregation, family-cluster bootstrap and same-item paired comparisons.
 - English README/method documentation; Chinese installation, question-authoring and expert-review instructions.
-- Explicit public release inventory, deterministic archive builder, and a proposed Windows/Linux CI workflow.
+- Explicit public release inventory, deterministic archive builder, and a Windows/Linux CI workflow.
 
 ## Verification completed locally
 
-- 51 automated checks pass on Python 3.12.9 / Windows, including the installed Inspect AI and Streamlit integration checks, candidate answer isolation, review version binding, malformed research records, source/case split isolation and forbidden model tool requests. Tests ran with Python UTF-8 mode; Streamlit's temporary test page required filesystem permission outside the sandbox. CI has not run on GitHub.
+- 51 automated checks pass on Python 3.12.9 / Windows, including the installed Inspect AI and Streamlit integration checks, candidate answer isolation, review version binding, malformed research records, source/case split isolation and forbidden model tool requests. Tests ran with Python UTF-8 mode; Streamlit's temporary test page required filesystem permission outside the sandbox. [GitHub Actions passed for the initial public commit 000ce71](https://github.com/Sculptor815/life-sciences-research-workbench/actions/runs/37097201796), including the configured Windows/Linux core matrix and optional integration job.
 - Seven author-side synthetic workflow checks passed in the recorded scientific Python environment: ORA, paired CCA, donor aggregation/exploratory DE, covariate-adjusted quantitative-trait association, Scanpy clustering, diffusion pseudotime and miniature VCF QC. These are not agent capability scores, real-data validations, or full GATK/DESeq2/MOFA executions.
 - A 20-item mock run completed; eight objective items were scored and twelve open items await human review. No expert ratings were fabricated. No paid model calls were made.
 - Current public materials pass draft validation. Formal validation correctly rejects this pilot because counts and expert approvals are incomplete.
@@ -31,7 +31,7 @@ This is a development pilot. It is not a completed or expert-validated 320-quest
 3. Build and review the final 320 questions. The 320-slot CSV is a blueprint; it is not a generated question bank. The pilot is not yet assigned to formal slots. Add image-based design, reasoning and appraisal cases.
 4. Calibrate with the final 64 public items, resolve systematic disagreement and lock the 256 held-out items/rubrics.
 5. Select exact model versions, provider-supported settings and budget; execute once per item; complete independent scoring and adjudication.
-6. Review release materials, create a dedicated GitHub repository and publish code/public questions. Publish actual scores only after the preceding gates.
+6. Review future public-question releases and publish actual scores only after the preceding gates. The code and 20-question draft pilot are already in the public repository; private draft answers and research material are excluded.
 
 ## Current limits
 
@@ -40,7 +40,7 @@ This is a development pilot. It is not a completed or expert-validated 320-quest
 - Refusal classification is human-reviewed for open answers. Objective answers expose format/empty status; a complete all-item refusal audit is not automated.
 - Cost control is reservation-based and depends on configured pricing/ceilings. Provider-side budgets remain necessary.
 - The current visual pilot and case count are too small for scientific claims about model rankings.
-- Public code is prepared for `Sculptor815/life-sciences-research-workbench`. No formal scientific release, leaderboard, completed hidden question bank, or actual model score is claimed. Private research records and answers are excluded from the release inventory.
+- Public code is published at [Sculptor815/life-sciences-research-workbench](https://github.com/Sculptor815/life-sciences-research-workbench). No formal scientific release, leaderboard, completed hidden question bank, or actual model score is claimed. Private research records and answers are excluded from the release inventory.
 - Private discovery collection: 46 cases / 178 questions, including DNA damage response, pyroptosis, glycolysis/TCA discovery, neural circuits, analytical methods and four disputed-paper families. Only three original papers have a recorded complete main-text reading in this pass. Other source depths remain visible. Candidate selection does not count as formal expert approval.
 - Textbook inventories distinguish official university adoption, publisher edition/TOC verification, actual chapter bibliography retrieval and paper-level reading. No claim of retrieving all references from all core textbooks is made. The 80-concept inventory is a coverage proposal, not 80 completed evidence dossiers.
 - A separate question-generation rubric provides six dimensions and 30 behavioral anchors. Missing novelty evidence leaves the total unscored. The quality-summary command checks completeness and arithmetic; it does not authenticate reviewers or validate scientific merit. Twelve private proposed research directions have AI draft ratings, not expert scores.
