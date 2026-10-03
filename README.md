@@ -2,7 +2,27 @@
 
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
-**Current comparison:** 12 models, 30 questions, one answer per question. The project owner has carefully reviewed all 30 questions and reference answers. First-round scoring and archiving are complete for all **352 returned response records**; eight transport-uncertain requests remain missing. Seven models have complete 30-question scores. See the [first-round results and charts](docs/first-round-20261003/SCORECARD.md) for the same-question comparison across all 12 models. The separate [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) define the later rescore; no second-round scores are included. See [current evaluation status](docs/CURRENT_EVALUATION.md) for the 20/30/50 category weights and reviewer provenance. The public pilot described below is an earlier, separate configuration.
+**Current comparison:** the first round is complete: **12 models, 30 questions each, 360 reviewed responses**, including eight authorized recovery submissions. The project owner carefully reviewed all 30 questions and reference answers. See the [complete first-round results](docs/first-round-20261003/SCORECARD.md) for category scores, historical-direction hits, costs, time and explanation quality. This is the archived original scoring version; the [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) will govern a separate rescore of the same answers and become the final scoring version. No second-round scores are included here. See [evaluation status and provenance](docs/CURRENT_EVALUATION.md). The public pilot described below is an earlier, separate configuration.
+
+## First-round results
+
+The four charts compare the same 30 questions for every model. Essay, design and research category means carry 20/30/50 weights. Research items combine 60% qualified historical-direction hit and 40% scientific quality, under the documented post-hoc amendment. Provider colors are green for OpenAI, copper for Anthropic and slate blue for other providers; colors do not affect scoring.
+
+| Answer quality | API expense |
+|---|---|
+| ![First-round answer quality](docs/first-round-20261003/common_score.png) | ![Confirmed run cost](docs/first-round-20261003/common_cost_confirmed_usd.png) |
+| Response time | Scientific explanation quality |
+| ![Mean response time](docs/first-round-20261003/common_mean_response_seconds.png) | ![Written explanation quality](docs/first-round-20261003/explanation_mean.png) |
+
+**360 question scores:** R marks a refusal; P marks a partial answer. Research cells already include the 60/40 direction/quality weighting.
+
+![Reviewed question scores for all 12 models and 30 questions](docs/first-round-20261003/reviewed-item-scores.png)
+
+[Four-chart high-resolution overview](docs/first-round-20261003/four-metric-overview.png) · [Scalable overview](docs/first-round-20261003/four-metric-overview.svg) · [Scalable heatmap](docs/first-round-20261003/reviewed-item-scores.svg) · [Metrics CSV](docs/first-round-20261003/model-summary.csv)
+
+Confirmed run charges are **$35.6704**, with **16 unresolved bills** excluded. Means include provider/network waiting; they are not wall-clock completion times. Explanation scores concern visible scientific arguments, not hidden reasoning; Fable's mean uses 19 assessable answers out of 30. These are exploratory results from one unblinded Codex referee, not an independently validated leaderboard.
+
+## Benchmark purpose
 
 The primary outcome is whether an answer helps a researcher make a sound decision and advance the work. Scientific accuracy, decision value, actionability, verifiability and clear communication determine the user-service score. Keywords, logic, protocol detail and historical follow-up hits are reported as supporting diagnostics; long answers and author imitation do not establish usefulness.
 

@@ -68,3 +68,10 @@ docs/first-round-20261003/common_mean_response_seconds.png
 docs/first-round-20261003/common_mean_response_seconds.svg
 docs/first-round-20261003/explanation_mean.png
 docs/first-round-20261003/explanation_mean.svg
+docs/first-round-20261003/summary.json
+docs/first-round-20261003/model-summary.csv
+docs/first-round-20261003/item-scores.csv
+docs/first-round-20261003/four-metric-overview.png
+docs/first-round-20261003/four-metric-overview.svg
+docs/first-round-20261003/reviewed-item-scores.png
+docs/first-round-20261003/reviewed-item-scores.svg

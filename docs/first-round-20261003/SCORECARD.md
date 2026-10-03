@@ -1,40 +1,79 @@
-# First-round scorecard
+# First-round results
 
-Updated 2026-10-03T17:30:33.528757+00:00. **All 352 returned records have first-round reviews. Eight transport-uncertain requests remain missing; the planned 360-answer comparison is incomplete.**
+**Complete: 12 models x 30 questions = 360 reviewed responses.** This is the original scoring round, retained separately from the forthcoming strict second-round rescore. Exported 4 October 2026 (Asia/Shanghai); evaluation records are dated 3 October 2026 UTC.
 
-The shared subset has 27 questions: 9 essays, 10 designs and 8 research questions. Every model is compared on these same question IDs. Category means receive 20/30/50 weights; research items use 60% qualified direction hit plus 40% original scientific quality. Shared-subset results are not the 30-question benchmark result.
+Each model answered ten essays, ten experimental-design questions and ten research-reasoning questions. Category means are weighted **20% / 30% / 50%**. Each research item is **60 x qualified historical-direction Hit@1 + 0.40 x scientific quality**. This weighting was requested after inspection of some answers and is post-hoc. The first-round quality rubric is unchanged.
 
-The paid runner has stopped; no unsent or active requests remain. Original answers and the 327-review archive are preserved, with an additive archive for the completed continuation.
+Eight interrupted requests were each resubmitted once with explicit owner authorization. One answer per slot is retained; there was no best-of selection. Original interrupted records and immutable first-round reviews remain archived privately. No valid refusal was retried.
 
-Model order follows the frozen roster, not score rank. The strict second round has not begun.
+## Scores
 
-| Model | Reviewed /30 | Complete 30-item score | Shared-subset score | Shared confirmed cost | Mean response time | Written explanation |
-|---|---:|---:|---:|---:|---:|---:|
-| GPT-6 Astra | 29/30 | Unavailable | 86.93 | $6.9335 | 112.2s | 99.77 (27/27 assessable) |
-| GPT-5.6 Sol | 30/30 | 82.36 | 83.90 | $1.8739 | 107.8s | 89.35 (27/27 assessable) |
-| GPT-5.6 Terra | 30/30 | 69.69 | 69.10 | $2.1592 | 83.2s | 85.19 (27/27 assessable) |
-| Claude Fable 5 | 30/30 | 29.17 | 30.22 | $4.7723 +10 unresolved | 50.4s | 62.50 (17/27 assessable) |
-| Claude Opus 4.6 | 29/30 | Unavailable | 40.34 | $2.9780 | 105.2s | 49.54 (27/27 assessable) |
-| Claude Opus 4.8 | 29/30 | Unavailable | 49.88 | $4.3693 | 96.3s | 59.95 (27/27 assessable) |
-| Gemini 3.1 Pro Preview | 30/30 | 34.31 | 34.16 | $1.2514 | 46.9s | 47.69 (27/27 assessable) |
-| DeepSeek V4.1 Flash | 27/30 | Unavailable | 57.10 | $0.1337 | 158.2s | 66.20 (27/27 assessable) |
-| Qwen3.8 Max (0902) | 30/30 | 62.99 | 63.24 | $2.2903 | 390.4s | 72.92 (27/27 assessable) |
-| Kimi K3 | 30/30 | 63.21 | 65.65 | $3.3028 | 168.7s | 79.17 (27/27 assessable) |
-| GLM 5.3 FlashX | 28/30 | Unavailable | 51.99 | $0.1784 | 53.5s | 56.94 (27/27 assessable) |
-| Grok 4.7 | 30/30 | 57.10 | 59.04 | $1.4458 | 135.6s | 76.16 (27/27 assessable) |
+| Model | Overall /100 | Essay | Design | Research | Direction hits /10 |
+|---|---:|---:|---:|---:|---:|
+| GPT-6 Astra | 86.03 | 100.00 | 98.00 | 73.25 | 6/10 |
+| GPT-5.6 Sol | 82.36 | 96.25 | 87.13 | 73.95 | 7/10 |
+| GPT-5.6 Terra | 69.69 | 91.50 | 80.63 | 54.40 | 4/10 |
+| Kimi K3 | 63.21 | 85.00 | 76.63 | 46.45 | 3/10 |
+| Qwen3.8 Max (0902) | 62.99 | 81.75 | 63.13 | 55.40 | 5/10 |
+| Grok 4.7 | 57.10 | 85.25 | 69.00 | 38.70 | 2/10 |
+| DeepSeek V4.1 Flash | 54.73 | 78.50 | 62.00 | 40.85 | 3/10 |
+| Claude Opus 4.8 | 50.93 | 68.25 | 55.00 | 41.55 | 3/10 |
+| GLM 5.3 FlashX | 48.70 | 65.25 | 50.25 | 41.15 | 3/10 |
+| Claude Opus 4.6 | 39.55 | 60.13 | 48.00 | 26.25 | 1/10 |
+| Gemini 3.1 Pro Preview | 34.31 | 58.50 | 42.88 | 19.50 | 0/10 |
+| Claude Fable 5 | 29.17 | 59.38 | 25.25 | 19.45 | 1/10 |
 
-A refusal remains zero task performance and has no assessable explanation index. Explanation means therefore display their assessable denominator and should not be read without it. These are visible scientific arguments, not hidden reasoning. Confirmed costs exclude unresolved charges; they are lower bounds where marked. Times include network/provider waiting and are per-request means, not total wall-clock duration.
+## Cost, time and explanation quality
 
-The project owner reviewed the questions and reference answers. Candidate scoring is a single unblinded Codex assessment, provisional and retrospective. Written answers do not establish successful laboratory work or executed raw-data reproduction.
+| Model | Confirmed run cost (USD) | Unresolved bills | Mean selected-answer time | Explanation /100 | Assessable |
+|---|---:|---:|---:|---:|---:|
+| GPT-6 Astra | $7.8503 | 1 | 115.5 s | 99.79 | 30/30 |
+| GPT-5.6 Sol | $2.1014 | 0 | 108.7 s | 89.58 | 30/30 |
+| GPT-5.6 Terra | $2.4111 | 0 | 83.8 s | 85.21 | 30/30 |
+| Claude Fable 5 | $5.4660 | 10 | 52.1 s | 62.17 | 19/30 |
+| Claude Opus 4.6 | $3.3280 | 1 | 105.9 s | 49.79 | 30/30 |
+| Claude Opus 4.8 | $4.8406 | 1 | 96.1 s | 59.58 | 30/30 |
+| Gemini 3.1 Pro Preview | $1.3775 | 0 | 46.5 s | 48.33 | 30/30 |
+| DeepSeek V4.1 Flash | $0.1475 | 2 | 154.5 s | 66.04 | 30/30 |
+| Qwen3.8 Max (0902) | $2.5534 | 0 | 397.5 s | 72.92 | 30/30 |
+| Kimi K3 | $3.7896 | 0 | 174.1 s | 79.38 | 30/30 |
+| GLM 5.3 FlashX | $0.1985 | 1 | 51.9 s | 55.63 | 30/30 |
+| Grok 4.7 | $1.6064 | 0 | 137.0 s | 75.63 | 30/30 |
 
-Shared question IDs: mol-k01, mol-d01, mol-r01, mol-p01, bio-k01, bio-d01, bio-r01, bio-p01, neu-d01, neu-r01, neu-p01, inf-k01, inf-d01, inf-r01, inf-p01, mol-k02, bio-k02, mol-d02, bio-d02, bio-d03, neu-d02, inf-d02, inf-d03, mol-r02, mol-r03, bio-r02, neu-r02.
+**Confirmed run total: $35.6704; 16 bills remain unresolved.** Costs include known charges for original interrupted calls and authorized recovery submissions. Unknown charges are excluded, not assumed to be zero. These figures are separate from account-wide usage and budget reservations. No candidate or grading API calls were made to produce this export.
 
-![Shared-subset task score](common_score.png)
+Selected-request times sum to 12.70 hours; this is not elapsed wall-clock time because requests ran concurrently. Per-model means include network/provider waiting and exclude interrupted attempts.
 
-![Confirmed answer cost](common_cost_confirmed_usd.png)
+Claude Fable 5 has 11 empty valid refusals, which receive zero task performance and no explanation index. Two additional partial answers were graded for their actual content. Its explanation mean therefore uses 19/30 answers; all other models use 30/30. Written scientific-explanation scores evaluate visible arguments, not hidden chain of thought.
 
-![Time to answer](common_mean_response_seconds.png)
+## Figures
 
-![Written scientific explanation](explanation_mean.png)
+Green identifies OpenAI models, copper identifies Anthropic models, and slate blue identifies the other providers. This is a display convention only. Every chart uses the same fixed roster order. Heatmap color encodes score instead of provider.
 
-Run-wide confirmed charges are $35.3959, excluding unresolved charges. The cost column and cost chart above cover only the shared 27-question subset. Per-model totals must not be inferred from that column. Account-wide usage and conservative budget reservations are separate from confirmed run charges.
+![common score](common_score.png)
+[Scalable SVG](common_score.svg)
+
+![common cost confirmed usd](common_cost_confirmed_usd.png)
+[Scalable SVG](common_cost_confirmed_usd.svg)
+
+![common mean response seconds](common_mean_response_seconds.png)
+[Scalable SVG](common_mean_response_seconds.svg)
+
+![explanation mean](explanation_mean.png)
+[Scalable SVG](explanation_mean.svg)
+
+![four metric overview](four-metric-overview.png)
+[Scalable SVG](four-metric-overview.svg)
+
+![reviewed item scores](reviewed-item-scores.png)
+[Scalable SVG](reviewed-item-scores.svg)
+
+## Method and limitations
+
+The project owner carefully reviewed all 30 questions and reference answers, confirmed on 3 October 2026. Candidate scoring is a single, unblinded Codex assessment against the supplied questions, evidence and references. Question review does not imply independent expert certification of candidate grades. Model names are the recorded run labels.
+
+The quality score weights scientific accuracy 35%, decision value 25%, actionability 20%, verifiability 15%, and communication 5%. A historical hit requires the biological question, mechanism, intervention, readout and predicted outcome to jointly match the sealed follow-up target without a critical control or inference failure. Alternative research directions may be scientifically useful without matching that historical target.
+
+These are exploratory written-answer results on a small question set. They do not establish successful laboratory experiments, executed raw-data reproduction, general model superiority or independent inter-rater reliability. Candidate browsing and tools were disabled. The forthcoming strict second round will reuse the same saved answers and be published separately as the final scoring version.
+
+Download [model metrics](model-summary.csv), [question score matrix](item-scores.csv), or [aggregate JSON](summary.json). Private candidate text, reference answers and individual grading records are not published.
