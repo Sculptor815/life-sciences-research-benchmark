@@ -13,7 +13,7 @@ This is a development pilot. It is not a completed or expert-validated 320-quest
 - An Inspect AI model adapter and an optional native Inspect public-pilot task. The main Workbench runner uses Inspect's model API and its own audit records; it does not yet export native `.eval` logs for that path.
 - A local Streamlit review form, paired-rating calibration summaries and a formal-bank lock command.
 - Separate modality reports in HTML/CSV/JSON, equal-cell aggregation, family-cluster bootstrap and same-item paired comparisons.
-- English README/method documentation; Chinese installation, question-authoring and expert-review instructions.
+- English documentation, review interfaces, and question-quality scoring rubric, including installation, authoring, and expert-review instructions.
 - Explicit public release inventory, deterministic archive builder, and a Windows/Linux CI workflow.
 
 ## Verification completed locally

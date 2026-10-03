@@ -4,7 +4,7 @@ Evaluate how models answer biological questions, design experiments, reason abou
 
 **Status: development workbench, version 0.2.0.** The runnable public pilot remains 20 draft questions. The private discovery-review collection adds 46 research/controversy cases and 178 candidate questions with draft reference answers, source-reading records and review tools. Candidates are not a formal question bank. No expert approvals or real model leaderboard are claimed.
 
-Start with the [Chinese installation and walkthrough](docs/QUICKSTART.zh-CN.md). Read the [evaluation method](docs/METHOD.md) before interpreting scores. Coordinators should also read the [authoring and review guide](docs/AUTHORING.zh-CN.md).
+Start with the [installation and walkthrough](docs/QUICKSTART.md). Read the [evaluation method](docs/METHOD.md) before interpreting scores. Coordinators should also read the [authoring and review guide](docs/AUTHORING.md).
 
 ## What is evaluated
 
@@ -19,7 +19,7 @@ Molecular and biochemical methods apply across disease areas. Each question has 
 
 Each domain is evaluated in four abilities: **knowledge, experimental design, research reasoning, and paper appraisal**. The question track tests scientific judgment using supplied materials. Model browsing and tools are disabled in that track. A separate author-side script executes seven small synthetic analysis workflows; it does not score an agent's programming ability or establish real-data pipeline validity.
 
-The [discovery-review guide](docs/DISCOVERY.zh-CN.md) explains textbook selection, frozen evidence packets, private answers, candidate review and pipeline limits. Core textbook selection requires documented adoption by leading US university courses, with edition, semester and required/recommended status distinguished. Open supplementary teaching resources do not substitute for this evidence.
+The [discovery-review guide](docs/DISCOVERY.md) explains textbook selection, frozen evidence packets, private answers, candidate review and pipeline limits. Core textbook selection requires documented adoption by leading US university courses, with edition, semester and required/recommended status distinguished. Open supplementary teaching resources do not substitute for this evidence.
 
 ## Pilot and full benchmark
 
@@ -78,7 +78,7 @@ lsrw review --queue "PRIVATE_DIRECTORY/reviews/round-1/rater-1/queue.json"
 
 Give each reviewer only their own queue and material access. The interface hides model configuration and the other reviewer's scores. Local files do not provide account-based access control; the coordinator is responsible for file separation. An answer may identify its model in its own text; document any resulting loss of blinding.
 
-After both reviews, run `lsrw score` again with `--reviews`. Cases requiring a third reviewer remain pending until an adjudication file is supplied. See [the review guide](docs/AUTHORING.zh-CN.md) for the file format and commands.
+After both reviews, run `lsrw score` again with `--reviews`. Cases requiring a third reviewer remain pending until an adjudication file is supplied. See [the review guide](docs/AUTHORING.md) for the file format and commands.
 
 ## API evaluations
 

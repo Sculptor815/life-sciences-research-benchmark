@@ -15,12 +15,12 @@ data/public/assets/mol-k02.png
 data/public/assets/bio-k02.png
 data/public/assets/neu-k02.png
 data/public/assets/inf-k02.png
-docs/AUTHORING.zh-CN.md
+docs/AUTHORING.md
 docs/METHOD.md
-docs/QUICKSTART.zh-CN.md
+docs/QUICKSTART.md
 docs/REFERENCES.md
 docs/STATUS.md
-docs/DISCOVERY.zh-CN.md
+docs/DISCOVERY.md
 scripts/check_analysis_pipelines.py
 scripts/package_release.py
 scripts/render_pilot_figures.py
