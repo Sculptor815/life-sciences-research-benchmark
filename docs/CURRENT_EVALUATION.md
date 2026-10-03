@@ -10,7 +10,21 @@ Candidate-answer scores are assigned by Codex through individual reading. This i
 
 ## Two scoring rounds, kept separate
 
-1. **Finish the existing round.** Read each available final answer against the frozen question, evidence and existing rubric. Save exact evidence for deductions and retain the original response hashes. Finish and archive this round before introducing the revised scoring policy.
+### Research scoring amendment, 3 October 2026
+
+At the owner's explicit request, **both rounds, including round one**, use the following research-reasoning item score:
+
+**Research score = 60 × qualified historical-direction Hit@1 + 0.40 × scientific quality.**
+
+Scientific quality is scored from 0 to 100. Hit@1 is 1 only when the biological question, mechanism, intervention, readout and predicted outcome jointly match the sealed follow-up target without a critical control or inference failure; otherwise it is 0. Keyword overlap alone is insufficient. Component-level matches and exact evidence remain available in private review records. Missing matching review is unavailable, not a miss.
+
+For example, a direction miss with scientific quality 100 receives 40; a qualified hit with quality 70 receives 88. A scientifically valuable alternative direction can therefore retain a high quality score while receiving a lower combined research score. This benchmark explicitly prioritizes the selected historical continuation; it does not establish that other research directions lack value or novelty.
+
+The ten research scores are averaged before receiving the 50% category weight. Essay and experimental-design means retain their 20% and 30% weights. There is exactly one candidate answer per question. No answer regeneration or best-of-five selection is introduced.
+
+This is an **owner-requested post-hoc weighting amendment**, made after some answers had been inspected. Existing scientific-quality scores, historical matching judgments, deduction evidence and candidate hashes are retained; only derived item/category/overall scores are recalculated. Earlier report snapshots are archived. The later stricter deduction policy remains a separate second-round change.
+
+1. **Finish the existing round.** Read each available final answer against the frozen question, evidence and existing scientific-quality rubric. Apply the research-weight amendment above from this round. Save exact evidence for deductions and retain the original response hashes. Finish and archive this round before introducing the stricter deduction policy.
 2. **Specify and freeze the stricter rubric.** Turn the owner's requirements below into an English, item-applicable checklist, with explicit deduction rules and a scoring flowchart. Freeze it before the second round begins.
 3. **Regrade every saved answer.** Use the same candidate responses; do not ask models to regenerate answers. Save a separate second-round review for each answer. Keep both scoring versions, explain score changes and do not rewrite the first round.
 
