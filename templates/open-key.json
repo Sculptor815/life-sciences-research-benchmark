@@ -1,0 +1,14 @@
+{
+  "id": "replace-with-matching-id",
+  "version": "draft-0.1",
+  "expert_review": "pending",
+  "references": [{"source": "REPLACE", "evidence_location": "REPLACE", "retrieved": "YYYY-MM-DD"}],
+  "dimensions": {
+    "hypothesis_measurement": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
+    "controls": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
+    "replication_statistics": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
+    "confounds_feasibility": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]},
+    "interpretation": {"anchors": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}, "acceptable_alternatives": ["REPLACE"], "critical_errors": ["REPLACE"]}
+  },
+  "anchor_answers": {"0": "REPLACE", "1": "REPLACE", "2": "REPLACE", "3": "REPLACE", "4": "REPLACE"}
+}

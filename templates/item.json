@@ -1,0 +1,22 @@
+{
+  "id": "replace-with-unique-id",
+  "family_id": "replace-with-case-family",
+  "source_family": "replace-with-source-paper-family",
+  "domain": "bioinformatics",
+  "ability": "experimental_design",
+  "topics": ["multiomics_integration"],
+  "techniques": ["replace-with-method"],
+  "context": "replace-with-research-context",
+  "difficulty": "graduate",
+  "modality": "text",
+  "split": "public",
+  "language": "en",
+  "status": "draft",
+  "prompt": "REPLACE: Write an English question with a specific research decision.",
+  "choices": {},
+  "response_type": "open",
+  "word_limit": 450,
+  "materials": [],
+  "packet": "REPLACE: Fixed methods, results and evidence locations; no grading instructions.",
+  "version": "draft-0.1"
+}

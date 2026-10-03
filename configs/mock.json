@@ -1,0 +1,18 @@
+{
+  "dataset": "../data/public/items.jsonl",
+  "output_root": "../../life-sciences-research-workbench-private/runs",
+  "backend": "mock",
+  "model": "mock/development-only",
+  "track": "all",
+  "split": "public",
+  "formal": false,
+  "supports_images": true,
+  "max_output_tokens": 1200,
+  "timeout_seconds": 90,
+  "generation": {},
+  "budget_usd": 0,
+  "input_usd_per_million": 0,
+  "output_usd_per_million": 0,
+  "input_token_ceiling": 16000,
+  "dataset_version": "pilot-0.1"
+}

@@ -1,0 +1,440 @@
+{
+  "schema_version": "1.0",
+  "artifact_kind": "proposed_question_quality_rubric",
+  "rubric_id": "LSRW-new-biological-questions-v1",
+  "created_on": "2026-10-03",
+  "authoring_status": "original_project_design_not_a_published_standard",
+  "human_review": "pending",
+  "purpose": "评价由较可信发现引出的新生物学问题本身；重点是科学价值、证据起点、可检验性和能区分解释的预测。此方案是项目原创提案，不声称为已发表文献规范、经过验证的心理测量量表或专家共识。",
+  "score_unit": "one biological question with its bounded evidence basis, target system and proposed discriminating approach",
+  "scale": {
+    "minimum": 0,
+    "maximum": 4,
+    "dimensions": 6,
+    "formal_total_maximum": 24,
+    "default_weight_per_dimension": 1,
+    "weight_policy": "等权仅是本项目初始选择。任何改权重必须在下一轮评分前预先记录，并重新报告敏感性，不能看完结果后改权重来支持偏好。"
+  },
+  "dimensions": [
+    {
+      "id": "importance",
+      "name_zh": "生物学重要性",
+      "construct": "若得到可信的阳性、阴性或边界性结果，对理解所声明生物系统有什么实质影响。不是领域热度、名人、疾病名称或论文影响因子的代理。",
+      "anchors": {
+        "0": "问题与给定生物学现象没有可解释联系，或无论何种结果都不能改变一个明确的生物学判断；仅要求重述已给事实。",
+        "1": "指向真实现象，但价值主要是描述一个附带差异；没有说明差异会改变什么认识。宏大的影响口号不替代具体作用。",
+        "2": "填补一个明确且有用的局部知识缺口，例如界定一个细胞状态、时间窗或效应边界；能说明至少一种结果的生物学含义，但影响范围仍窄或论证不充分。",
+        "3": "回答会改变对一个清楚界定的机制、功能联系或适用边界的理解；阳性与有信息量的阴性结果均能指导后续研究，影响论证与问题尺度相称。",
+        "4": "回答会解决该系统中的关键不确定性、重组一个重要机制解释或确定后续研究的优先方向；明确说明不同可信结果各自如何改变知识，价值不依赖结果显著、领域热门或推广到所有生物。"
+      },
+      "do_not_reward": [
+        "只因出现癌症、衰老、意识等大词而加分。",
+        "宣称结果会颠覆教科书但未说明具体改变。"
+      ],
+      "positive_negative_symmetry": "一个严格界定的负结果若排除关键机制或划定重要边界，可以达到4分。"
+    },
+    {
+      "id": "evidence_grounding",
+      "name_zh": "证据依据",
+      "construct": "问题的起点是否准确连接冻结材料中的观察，并区分作者解释、已有因果证据、测量限制与我们提出的新假设。",
+      "anchors": {
+        "0": "关键前提与材料直接矛盾，捏造材料中没有的结果，或将明确未做的实验作为已完成证据；没有将问题改写为条件性假设。",
+        "1": "主题与材料相关，但关键推断主要依靠未提供的事实或权威称谓；把关联、标志物或方法输出直接当作已证实机制。",
+        "2": "能定位至少一个相关观察并提出合理延伸，基本区分观察与假设；但对关键证据限制、系统差异或前提依赖处理不完整。",
+        "3": "清楚列出支持问题的材料定位、已有结果的结论边界和仍未解决的环节；对替代解释及跨系统外推有适度、具体的约束。",
+        "4": "在3分基础上，识别哪一条前提最影响问题价值，说明若该前提不成立应如何重述或转向；使用证据强弱来安排验证顺序，不因保守怀疑而否定全部已有效的证据。"
+      },
+      "do_not_reward": [
+        "堆砌引用数量。",
+        "只说所有研究都可能有artifact。",
+        "否认包中实际存在且适用的干预/救援证据。"
+      ],
+      "uncertain_premise_policy": "争议性发现可以产生高质量问题；若问题本身检验关键争议并清楚限定前提，不因发现尚不稳定而自动低分。"
+    },
+    {
+      "id": "novelty",
+      "name_zh": "有界新颖性",
+      "construct": "在明示的检视范围内，问题相对于既有知识增加了什么未被回答的内容。必须分别记录冻结prior-art包相对新颖性与作者团队当前文献检索检视；两者都不证明全球首创。",
+      "anchors": {
+        "0": "检视材料已经在相同核心系统/条件下直接回答同一问题，候选仅改写措辞或复制结论，未提出新的边界、机制或解释分歧。",
+        "1": "主要重复已有问题，仅更换不具明确生物学理由的标记、样本或参数；或提出直接重复验证但未增加新的生物学范围。独立复现仍可在importance获得高分。",
+        "2": "提出材料尚未回答的具体条件、时间窗、系统边界或机制组合，并说明为何该差别可能改变答案；新内容真实但扩展幅度有限。",
+        "3": "识别检视范围内尚未解决的机制连接、关键边界或不同发现之间的张力，提出与已有问题实质不同的、明确的新预测空间。",
+        "4": "在透明且与问题匹配的文献检视范围内，形成新的解释性问题或揭示被忽略的关键机制联系，并说明已有工作为何没有回答它；不要求覆盖全球文献，也不得使用未证实的世界首次声明。"
+      },
+      "required_records": [
+        "frozen_prior_art_assessment",
+        "current_literature_review",
+        "official_novelty_score"
+      ],
+      "unsearched_rule": "若作者团队尚未完成并记录针对本问题的文献检索检视，official_novelty_score必须为null；即使可估计相对于冻结包的新颖性，也不得代替正式新颖性分或生成正式总分。",
+      "no_global_priority_claim": true
+    },
+    {
+      "id": "testability",
+      "name_zh": "可检验性",
+      "construct": "问题能否转为清楚的观察或干预，并规定怎样的测量结果会支持、削弱或限制拟议解释。评分要求足以评估问题，不要求完整实验操作手册。",
+      "anchors": {
+        "0": "核心术语不能对应可观察的量，或问题按其表述不允许任何可能结果改变判断。",
+        "1": "提出可研究的实体或关系，但目标变量、系统、方向或时间尺度含混，无法判断何种数据算回答了问题。",
+        "2": "给出明确系统、主要操作/观察和读数，至少一个预期结果可检验；但关键时间窗、实验单位、效应解释或阴性结果条件仍不清楚。",
+        "3": "主要终点、比较、时序和实验单位可操作；阳性与阴性结果均有条件性解释，并提出检查操作是否成功与检测是否足够敏感的办法。",
+        "4": "在3分基础上，针对最关键的不确定性给出可执行的判断边界、量程/灵敏度或机制特异性验证；允许不确定、混合及非预期结果触发合理修订，而非事后改变问题以保证正确。"
+      },
+      "do_not_reward": [
+        "实验步骤越多就给越高分。",
+        "仅以P<0.05作为机制成功定义。",
+        "把未达显著性等同没有效应。"
+      ],
+      "negative_result_rule": "可解释的阴性结果需要相对于声明检查操作有效性、测量灵敏度/不确定性和时间条件；不强制每题都做某一种统计检验。"
+    },
+    {
+      "id": "discrimination",
+      "name_zh": "区分解释的能力",
+      "construct": "预期观察能否区分重要竞争解释，包括相关artifact或测量替代解释，并产生有信息量的更新。",
+      "anchors": {
+        "0": "所有合理结果都被解释为支持同一主张，或设计结果无法区分所列任何解释。",
+        "1": "只有单一支持性预测，或罗列其他解释却不说明它们预期看到什么；控制与关键分歧没有关系。",
+        "2": "至少给出两个有意义解释及部分不同预测，但主要读数仍可能被同一混杂产生，或判别关系尚含糊。",
+        "3": "针对关键竞争解释给出不同、可检查的结果模式，并配置与该分歧直接相关的控制或正交读数；说明结果将如何改变各解释的可信度。",
+        "4": "构成简洁而强的判别关系：可信阳性、可信阴性及至少一种歧义/混合结果均有更新路径；优先排除最有影响的替代解释，不要求堆满所有可能控制，也不把某一次不显著当作完全排除。"
+      },
+      "do_not_reward": [
+        "只列出大量artifact名称。",
+        "用任何结果都能解释的模糊机制。",
+        "把审稿式全面否定当作高水平推理。"
+      ],
+      "reference_design_policy": "参考设计只是实现判别的一种方式。能同样或更有效区分解释的替代设计应得同等分；不用指定技术不应自动扣分。"
+    },
+    {
+      "id": "feasibility",
+      "name_zh": "条件下的可行性",
+      "construct": "相对于任务明确提供的资源、时间、系统和约束，是否有合理实施路线及关键依赖判断。成本高或雄心大本身不等于低质量。",
+      "anchors": {
+        "0": "在已给约束下存在已知关键不可实现条件，且没有可行替代或分阶段路径；例如必须取得题包明确不可能取得的样本。",
+        "1": "主要步骤依赖未证实可用的工具、样本或读数；未识别这些依赖会阻止回答问题，资源主张缺少依据。",
+        "2": "核心路线原则上可以实施，关键资源或方法大体合理；但样本层级、操作验证、时间或一个主要瓶颈仍需实质澄清。",
+        "3": "在声明资源下给出合理的最小实施路径，说明主要瓶颈、独立重复层级及必要的先导验证；不以增加大量测量来替代真正实验复制。",
+        "4": "在3分基础上，提供资源相称的阶段推进/停止条件或替代路线，把最早可失败的关键依赖先验证；设计复杂度与预期信息价值相称，不要求最低成本或最短周期。"
+      },
+      "unknown_constraints_rule": "若任务未给资源约束，按明确陈述的合理假设评分并记录；不得依据评分者实验室的设备习惯惩罚候选。",
+      "do_not_reward": [
+        "盲目偏好最常见、最便宜的方法。",
+        "以技术新潮代替实施依据。",
+        "把成功完成全套实验作为问题本身得分前提。"
+      ]
+    }
+  ],
+  "novelty_protocol": {
+    "separate_assessments": {
+      "frozen_prior_art_assessment": {
+        "purpose": "评估候选相对评测开始时提供的知识包是否提出新增内容。",
+        "score": "integer 0..4 or null",
+        "required_fields": [
+          "packet_id",
+          "packet_sha256",
+          "packet_cutoff_date",
+          "covered_sources_or_claim_ids",
+          "nearest_prior_question",
+          "difference_from_nearest_prior",
+          "supporting_locations",
+          "score",
+          "rationale"
+        ],
+        "boundary": "此分只说明相对于该有限包的新颖性；包里没有不等于文献从未研究。"
+      },
+      "current_literature_review": {
+        "purpose": "由作者/审核团队在模型评测外检索，检视当前可访问文献中是否已有相同问题及答案。",
+        "score": "integer 0..4 or null",
+        "required_fields": [
+          "status",
+          "searcher",
+          "searched_at",
+          "databases_or_search_services",
+          "exact_queries",
+          "date_and_language_scope",
+          "inclusion_exclusion_notes",
+          "records_screened",
+          "closest_prior_studies",
+          "read_depth_per_source",
+          "overlap_and_remaining_gap",
+          "known_blind_spots",
+          "score",
+          "rationale"
+        ],
+        "status_values": [
+          "not_started",
+          "partial",
+          "completed_within_declared_scope"
+        ],
+        "completion_rule": "完成不是穷尽所有文献；必须记录与关键实体、同义词、机制/干预及相近生物系统匹配的检索，审阅最接近结果并解释遗漏范围。仅有一个搜索命中或无结果不自动视为完成。",
+        "null_rule": "not_started或partial时score=null。不能用检索命中少、关键词新颖或评分者没听过替代检索。",
+        "claim_language": "截至所记录日期，在所声明检索范围内，尚未找到直接回答该具体问题的研究；这不证明全球首次。"
+      }
+    },
+    "official_novelty_score_rule": "只有current_literature_review.status=completed_within_declared_scope且其score为0..4时，official_novelty_score才可使用该分。frozen_prior_art_assessment单独显示；不取平均来掩盖当前检索中已有答案，也不以冻结包相对分补齐未完成检索。",
+    "offline_fairness": "被评测模型只能看冻结包，不联网。新增文献检索由作者/审核人员在评测外执行。冻结后发现的先例可降低问题现实新颖性，却不能回溯惩罚模型对未提供证据的事实识别能力；分别记录question_quality与agent_task_performance。若重建包，则新建版本并重新评测。",
+    "replication_policy": "直接复现可能novelty较低而importance很高。应另标purpose=replication并按该用途解读，不把低新颖性等同低科学价值。"
+  },
+  "aggregation": {
+    "formal_total_formula": "importance + evidence_grounding + official_novelty_score + testability + discrimination + feasibility",
+    "formal_total_range": "0..24",
+    "validity_conditions": [
+      "六维都有可审核的0..4分及理由。",
+      "current_literature_review完成有界检视。",
+      "两个评分者的分歧已按规则处理并标注共识状态。"
+    ],
+    "missing_novelty_output": {
+      "novelty": null,
+      "total_score": null,
+      "total_status": "pending",
+      "formal_rank_eligible": false,
+      "partial_score": "sum of the other five dimensions if all five are scored",
+      "partial_denominator": 20,
+      "partial_label": "非正式五维描述分；未含新颖性，不可用于正式排名"
+    },
+    "other_missing_dimension": "任一其他维度缺评分时formal total也为null；五维partial_score仅在五项都已评分时显示，否则null并列出缺项。",
+    "ranking_policy": "不根据partial_score、单人未裁决评分或不同版本/不同资源约束下的总分作正式排名。合格总分也需同时展示维度画像与重要争议；并列允许保留，不为排出名次强行细分。",
+    "quality_gates": "材料关键事实尚待核实、无法解释的前提冲突或必要伦理/样本约束未解决时标记needs_revision。总分不能覆盖这些具体问题；不把所有不确定性自动判失败。",
+    "uncertainty_reporting": "显示两位原始评分、每维范围、裁决理由和剩余不确定性。不把小分差包装成精确科学优劣。"
+  },
+  "bias_controls": [
+    {
+      "id": "prestige_halo",
+      "risk": "作者、名校、名刊、奖项和模型品牌影响判断。",
+      "control": "初轮使用匿名问题ID及来源ID，隐藏作者、机构、期刊品牌、模型来源与之前得分；保留评价所必需的方法、系统和证据质量。独立来源核查人员可看完整引文，不能把名气作为评分理由。"
+    },
+    {
+      "id": "familiarity_halo",
+      "risk": "熟悉的经典故事看起来更可信或更重要。",
+      "control": "评分理由必须指向材料观察或明确生物意义，不能写大家都知道或这是经典。随机化题序，平衡熟悉与不熟悉领域并记录评分者专长。"
+    },
+    {
+      "id": "conservative_negation",
+      "risk": "模型只要否定因果性、罗列artifact就得到高分。",
+      "control": "同时评估对有效阳性证据的承认和可行判别建议。无根据地否认真实扰动/救援证据，或拒绝所有可能结论，应在evidence_grounding或discrimination扣分。"
+    },
+    {
+      "id": "verbosity",
+      "risk": "长答案、术语多或控制列表长被误认为优秀。",
+      "control": "设置相同长度上限；按最小充分证据与判别逻辑评分，不按字数、术语数或控制数计分。简洁答案满足锚点可得满分。"
+    },
+    {
+      "id": "positive_result_bias",
+      "risk": "只有可能得到显著阳性的题被认为重要。",
+      "control": "要求说明可解释阴性结果的价值；负结果若排除关键机制可高分。不奖励保证显著或只挑预期成功的实验。"
+    },
+    {
+      "id": "reference_answer_lockin",
+      "risk": "只接受参考技术路线或关键词。",
+      "control": "参考设计非唯一答案；记录替代设计如何达到同一判别目标。评分者先独立理解候选，再看参考例，防止关键词匹配。"
+    },
+    {
+      "id": "novelty_from_ignorance",
+      "risk": "陌生问题被当作新颖，或无搜索结果被当作世界首次。",
+      "control": "novelty实行单独检索门槛；未检索必须null。列出最相近先例与实质差异，保留范围和盲区。"
+    },
+    {
+      "id": "outcome_hindsight",
+      "risk": "已知后续发表结果决定对最初问题的评价。",
+      "control": "冻结评测时点与材料；第一轮只用当时证据评分。后续结果另列验证跟踪，不改写原始得分理由。"
+    },
+    {
+      "id": "technology_fashion",
+      "risk": "高通量、AI、组学或新技术天然加分。",
+      "control": "评价技术是否解决关键判别难点；小而直接的实验可优于大规模但不可判别的数据收集。"
+    },
+    {
+      "id": "scope_and_cost",
+      "risk": "广泛宏大问题或低成本问题受到不当偏爱。",
+      "control": "在给定问题范围和资源约束下评价；明确边界的局部机制问题可高分，昂贵但合理的必要实验也可高分。"
+    },
+    {
+      "id": "double_counting",
+      "risk": "同一缺陷在多个维度重复处罚导致过度低分。",
+      "control": "标记主要受影响维度；只有给出不同的可说明后果时才同时影响其他维度。保留跨维理由。"
+    },
+    {
+      "id": "demographic_or_language_style",
+      "risk": "语言熟练度、背景推测或表达习惯替代科学判断。",
+      "control": "不推断作者身份。只在歧义确实妨碍科学解释时反映到相关维度，并给出精确歧义；不按文风或口音评分。"
+    }
+  ],
+  "double_rating_protocol": {
+    "reviewer_roles": "至少两名相互独立评分者。记录相关专业背景与潜在利益冲突；AI可辅助定位，但不得标作人工批准。",
+    "anonymization": "隐藏候选作者/模型、名校名人、已有分数和接受状态。来源完整引用单独保管，方法和必要证据不隐藏。当前文献新颖性可由独立检索人员先准备去标识的对比材料。",
+    "calibration_before_scoring": [
+      "选择一组覆盖低、中、高质量及真实复现价值的锚点练习题；不给出目标排名。",
+      "两人独立给六维分、材料定位及一句主要理由，检索缺失项按null处理。",
+      "讨论分歧是否来自锚点理解、材料不足或专业判断；修订规则后对练习题重评分，再冻结rubric版本。",
+      "锚点只是训练例，不是唯一正确生物学设计。"
+    ],
+    "independent_scoring": [
+      "两人不能先交换评分或参考总分。",
+      "逐维评分后再计算允许的总分，防止总体好感倒推分项。",
+      "每维至少记录证据定位、主要理由和可改变评分的材料。",
+      "缺资料用null/needs_information，不用0代替未知。"
+    ],
+    "disagreement_triggers": [
+      "任一维相差至少2分。",
+      "即使只差1分，但跨越关键事实是否成立、材料是否充分、是否可正式排名或novelty检索完成状态。",
+      "总分排序对一个未解决分歧敏感。"
+    ],
+    "adjudication": [
+      "先核对双方是否使用同一包、检索记录和资源假设。",
+      "争议只围绕具体观察、锚点和候选措辞，不以资历或多数印象裁决。",
+      "若为缺材料，补材料并新建版本；两人独立重评受影响维度，必要时扩大到相关维度。",
+      "若仍无法一致，第三名相关领域评分者独立审阅；记录其依据，不把三人平均当作解决事实争议。",
+      "允许保留每维区间与未裁决状态；正式总分和排名保持pending，直到关键争议得到处理。"
+    ],
+    "small_differences": "差1分且不存在关键争议时可讨论形成整数共识；不得悄悄用平均数产生伪精度。保留两人原始分数。",
+    "reliability_reporting": "每轮报告逐维完全一致率、相差不超过1分比例及null比例。样本足够时可补充适当的一致性统计并说明模型/样本不确定性；本方案不预设未经验证的合格阈值。",
+    "final_approval": "只有被授权的人类审核者明确批准后，human_review才可由pending改为approved；独立AI复核、两模型一致或格式检查均不等价。"
+  },
+  "question_vs_agent_quality": {
+    "question_quality": "针对候选问题这件产物，按本六维评价；可以由人或模型提出。显示证据和现实新颖性，不把问题数当质量。",
+    "agent_task_performance": "针对模型在相同冻结材料、输出预算和工具限制下的表现，另记录材料忠实性、任务遵循、提出有价值候选的比例、校准与重复生成稳定性。不得直接用一题总分宣称agent总体能力。",
+    "separation_rules": [
+      "记录generator_id但在问题评分时盲化。",
+      "同一个好问题不因模型有名而升分，同一个坏问题不因来源是人类而免扣。",
+      "设定统一候选数量和长度；预先声明按全部候选、随机样本或固定best-of-k预算评估，避免无限采样择优。",
+      "问题去重规则须预先固定；同一思想改写多次不增加多样性计数。",
+      "冻结包外先例影响现实问题新颖性时，单独标明是否属于模型不可见信息；不将其混入模型事实幻觉评分。",
+      "跨模型比较需同一包版本、同一任务约束、同一评分协议及适当重复；不要把未完成novelty的partial_score变成模型排行榜。"
+    ]
+  },
+  "frozen_generation_task_template": {
+    "template_id": "question_generation_from_frozen_evidence_v1",
+    "language": "English",
+    "system_contract": "Use only the supplied frozen materials. Do not browse, call retrieval tools, or invent citations. Distinguish observations, authors' interpretations, and your hypotheses. Prior-art absence from the packet does not establish global novelty.",
+    "required_author_inputs": {
+      "packet_id": "stable identifier",
+      "packet_sha256": "hash of exactly the candidate-visible material",
+      "cutoff_date": "date through which author-curated prior art is represented",
+      "research_domain": "defined domain and system",
+      "trusted_findings": "each with source ID, methods/observations, read depth, reliability rationale and stated limitations; omit reviewer answers",
+      "prior_art": "closest relevant questions, experiments and results, with stable source locations and retrieval scope",
+      "resource_constraints": "organism/cell system, samples, available interventions/readouts, time/budget bounds if relevant; explicitly mark unknowns",
+      "candidate_count": "fixed integer, identical across compared agents",
+      "length_limit": "fixed total or per-candidate limit",
+      "unresolved_claims": "facts whose status is uncertain; do not silently promote them"
+    },
+    "prompt": "Using only the frozen evidence and prior-art packet, propose {candidate_count} distinct biological research questions that follow from the supplied findings. For each, state: (1) the precise question and target system; (2) why answering it matters; (3) the observations that motivate it, cited by packet source/claim ID; (4) the nearest question already addressed in the packet and the specific remaining difference; (5) at least two plausible explanations with distinguishable predictions where scientifically appropriate; (6) a minimal proposed study, its experimental unit, key control and main readout; (7) what a credible positive, negative or ambiguous result would imply; and (8) the main feasibility dependency and what would make you revise the question. Label all new experiments as proposed. Do not claim global novelty or cite work absent from the packet. Be concise and remain within {length_limit}. If the packet cannot support a premise, state the limitation and make the question conditional rather than invent evidence.",
+    "candidate_output_fields": [
+      "candidate_id",
+      "question",
+      "target_system",
+      "importance",
+      "evidence_claim_ids",
+      "evidence_to_question_reasoning",
+      "nearest_prior_art_in_packet",
+      "specific_gap",
+      "competing_explanations",
+      "distinguishing_predictions",
+      "proposed_minimal_study",
+      "experimental_unit",
+      "key_controls",
+      "primary_readout",
+      "interpretation_of_positive_negative_ambiguous_results",
+      "feasibility_dependencies",
+      "revision_conditions",
+      "novelty_scope_statement"
+    ],
+    "evaluation_material_separation": "Candidate receives only frozen evidence, prior art, constraints and task instructions. Hold back rubric exemplars with answers, reference designs, literature-QA conclusions, reviewer scores and author/agent identity.",
+    "offline_enforcement": "Prompt instruction alone is insufficient: runner must expose no browsing/retrieval/network tools, use only the packet, and record tool attempts and packet/version hashes. This JSON defines policy, not a claim that the runner has been tested."
+  },
+  "score_record_template": {
+    "candidate_id": "<id>",
+    "rubric_version": "LSRW-new-biological-questions-v1",
+    "packet_id": "<packet>",
+    "packet_sha256": "<sha256>",
+    "rater_id": "<anonymous>",
+    "human_review": "pending",
+    "scores": {
+      "importance": null,
+      "evidence_grounding": null,
+      "novelty": null,
+      "testability": null,
+      "discrimination": null,
+      "feasibility": null
+    },
+    "rationales_by_dimension": {},
+    "evidence_locations_by_dimension": {},
+    "frozen_prior_art_assessment": {
+      "score": null,
+      "status": "pending",
+      "scope_statement": "relative to the packet only"
+    },
+    "current_literature_review": {
+      "status": "not_started",
+      "score": null,
+      "search_log": [],
+      "closest_prior_studies": [],
+      "known_blind_spots": []
+    },
+    "total_score": null,
+    "total_status": "pending",
+    "formal_rank_eligible": false,
+    "partial_score": null,
+    "partial_denominator": 20,
+    "partial_label": "非正式五维描述分，不可用于正式排名",
+    "needs_revision": [],
+    "disagreements": [],
+    "adjudication_status": "not_started",
+    "reference_design_is_unique": false
+  },
+  "worked_scoring_examples": [
+    {
+      "purpose": "illustrate missing-novelty arithmetic, not a validated example question",
+      "scores": {
+        "importance": 3,
+        "evidence_grounding": 3,
+        "novelty": null,
+        "testability": 4,
+        "discrimination": 3,
+        "feasibility": 3
+      },
+      "current_literature_review": {
+        "status": "not_started",
+        "score": null
+      },
+      "frozen_prior_art_assessment": {
+        "score": 3,
+        "scope": "relative to frozen packet only"
+      },
+      "partial_score": 16,
+      "partial_denominator": 20,
+      "total_score": null,
+      "total_status": "pending",
+      "formal_rank_eligible": false,
+      "interpretation": "冻结包相对新颖性3不能替代未检索的正式novelty；16/20只用于指出改进方向。"
+    },
+    {
+      "purpose": "illustrate a useful replication",
+      "scores": {
+        "importance": 4,
+        "evidence_grounding": 4,
+        "novelty": 1,
+        "testability": 4,
+        "discrimination": 3,
+        "feasibility": 4
+      },
+      "current_literature_review": {
+        "status": "completed_within_declared_scope",
+        "score": 1,
+        "example_only": true
+      },
+      "total_score": 20,
+      "total_denominator": 24,
+      "total_status": "illustrative_not_a_real_rated_candidate",
+      "formal_rank_eligible": false,
+      "interpretation": "独立复现可有高重要性而新颖性低。此数字例没有真实检索记录，不能作为已完成评分或排名条目。"
+    }
+  ],
+  "remaining_validation": [
+    "用户/领域专家审阅维度与锚点。",
+    "在匿名候选集上试评分，检查锚点可理解性和评分者一致性。",
+    "验证运行器的材料隔离与离线限制。",
+    "检验维度相关性与是否重复计分；样本不足时不声称量表已验证。"
+  ]
+}
