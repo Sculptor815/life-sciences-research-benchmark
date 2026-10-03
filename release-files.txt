@@ -59,3 +59,12 @@ docs/USER_NEEDS.md
 docs/CURRENT_EVALUATION.md
 docs/STRICT_SCORING_V2.md
 docs/assets/scoring-workflow-v2.svg
+docs/first-round-20261003/SCORECARD.md
+docs/first-round-20261003/common_score.png
+docs/first-round-20261003/common_score.svg
+docs/first-round-20261003/common_cost_confirmed_usd.png
+docs/first-round-20261003/common_cost_confirmed_usd.svg
+docs/first-round-20261003/common_mean_response_seconds.png
+docs/first-round-20261003/common_mean_response_seconds.svg
+docs/first-round-20261003/explanation_mean.png
+docs/first-round-20261003/explanation_mean.svg
