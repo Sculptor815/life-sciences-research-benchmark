@@ -2,7 +2,7 @@
 
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
-**Current comparison:** the first round is complete: **12 models, 30 questions each, 360 reviewed responses**, including eight authorized recovery submissions. The project owner carefully reviewed all 30 questions and reference answers. See the [complete first-round results](docs/first-round-20261003/SCORECARD.md) for category scores, historical-direction hits, costs, time and explanation quality. This is the archived original scoring version; the [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) will govern a separate rescore of the same answers and become the final scoring version. No second-round scores are included here. See [evaluation status and provenance](docs/CURRENT_EVALUATION.md). The public pilot described below is an earlier, separate configuration.
+**Current comparison:** the first round is complete: **12 models, 30 questions each, 360 reviewed responses. I carefully reviewed all 30 questions and reference answers. See the [complete first-round results](docs/first-round-20261003/SCORECARD.md) for category scores, historical-direction hits, costs, time and explanation quality. This is the archived original scoring version; the [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) will govern a separate rescore of the same answers and become the final scoring version. No second-round scores are included here. See [evaluation status and provenance](docs/CURRENT_EVALUATION.md). The public pilot described below is an earlier, separate configuration.
 
 ## First-round results
 
