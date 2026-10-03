@@ -1,5 +1,7 @@
 # Evaluation method
 
+This page describes the earlier version-0.3 pilot. For the current 30-question, single-attempt comparison, use [current evaluation](CURRENT_EVALUATION.md) and the [strict second-round rubric](STRICT_SCORING_V2.md), including the owner-requested 60/40 research weighting. The older five-attempt and expert-panel procedures below are not the current run's configuration.
+
 Version 0.3 uses four domains and exactly three open-response tasks: **essay, experimental design, and research reasoning**. Disputed-paper appraisal is an essay task. The active pilot has no multiple-choice or numeric-only items.
 
 ## The primary outcome: helping the researcher

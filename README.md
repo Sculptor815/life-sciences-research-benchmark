@@ -2,7 +2,7 @@
 
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
-**Current comparison:** 12 models, 30 questions, one answer per question. The project owner has carefully reviewed all 30 questions and reference answers. The existing scoring round will be completed before a separate, stricter rescore begins. See [current evaluation and review status](docs/CURRENT_EVALUATION.md) for the 20/30/50 category weights, reviewer provenance and requested rubric changes. The public pilot described below is an earlier, separate configuration.
+**Current comparison:** 12 models, 30 questions, one answer per question. The project owner has carefully reviewed all 30 questions and reference answers. The first round is archived for all 327 available responses; 33 planned slots remain unavailable. The separate [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) define the rescore of the same answers. See [current evaluation status](docs/CURRENT_EVALUATION.md) for the 20/30/50 category weights and reviewer provenance. The public pilot described below is an earlier, separate configuration.
 
 The primary outcome is whether an answer helps a researcher make a sound decision and advance the work. Scientific accuracy, decision value, actionability, verifiability and clear communication determine the user-service score. Keywords, logic, protocol detail and historical follow-up hits are reported as supporting diagnostics; long answers and author imitation do not establish usefulness.
 

@@ -2,6 +2,8 @@
 
 The current comparison uses 12 models and 30 questions: ten essays, ten experimental designs and ten research-reasoning questions. Each question receives exactly one independently generated answer. Category means receive weights of 20%, 30% and 50%, respectively. Model browsing and tools are disabled. This configuration is separate from the older 20-question public pilot and its five-attempt research setting.
 
+**Checkpoint, 3 October 2026 UTC:** all 327 completed response records have a first-round review and an immutable private archive. Eight transport-uncertain requests and 25 unsent slots remain unavailable. One model has all 30 reviewed answers; the full roster comparison is incomplete. The [strict second-round rubric](STRICT_SCORING_V2.md), including its applicability table and [scoring workflow](assets/scoring-workflow-v2.svg), is specified after that archive and before second-round scoring. No private answers or individual reviews are published here.
+
 ## Human review and scoring provenance
 
 All 30 questions and their reference answers have been carefully reviewed by the project owner, who confirmed completion on 3 October 2026. Question development combined literature-based drafting, AI assistance and human review. This statement applies to the current 30-question set; it does not certify the entire earlier discovery archive or imply two independent expert approvals.
@@ -32,7 +34,7 @@ The revised assessment is a **post-hoc rescore requested after inspection of som
 
 ## Requested additions for the next rubric
 
-These requirements are recorded now; the revised rubric is **not yet active**. Its final applicability matrix and scoring flowchart will be published after the existing round is complete.
+The owner requirements below are now formalized in [strict-v2.0](STRICT_SCORING_V2.md). That document defines the complete applicability, evidence, calibration and non-duplication rules. Its new quality scale starts at 100 and deducts distinct failures, rather than subtracting again from first-round scores that already penalized some omissions. The two score versions remain separate.
 
 | Requested criterion | Requested deduction |
 |---|---:|

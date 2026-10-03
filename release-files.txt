@@ -57,3 +57,5 @@ tests/test_open_protocol.py
 src/lsrw/service.py
 docs/USER_NEEDS.md
 docs/CURRENT_EVALUATION.md
+docs/STRICT_SCORING_V2.md
+docs/assets/scoring-workflow-v2.svg
