@@ -1,4 +1,4 @@
-# Life Sciences Research Workbench
+# Life Sciences Research Benchmark
 
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
