@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="1440pt" viewBox="0 0 1008 1440" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-04T22:34:06.808265</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1440 
+L 1008 1440 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #f6f4ef"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 55.44 698.4 
+L 952.56 698.4 
+Q 964.8 698.4 964.8 686.16 
+L 964.8 177.84 
+Q 964.8 165.6 952.56 165.6 
+L 55.44 165.6 
+Q 43.2 165.6 43.2 177.84 
+L 43.2 686.16 
+Q 43.2 698.4 55.44 698.4 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #ffffff; stroke: #d6ded6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 79.2 222.48 
+C 83.78271 222.48 88.17834 220.65927 91.418805 217.418805 
+C 94.65927 214.17834 96.48 209.78271 96.48 205.2 
+C 96.48 200.61729 94.65927 196.22166 91.418805 192.981195 
+C 88.17834 189.74073 83.78271 187.92 79.2 187.92 
+C 74.61729 187.92 70.22166 189.74073 66.981195 192.981195 
+C 63.74073 196.22166 61.92 200.61729 61.92 205.2 
+C 61.92 209.78271 63.74073 214.17834 66.981195 217.418805 
+C 70.22166 220.65927 74.61729 222.48 79.2 222.48 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #43806d; stroke: #43806d; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 84.24 381.6 
+L 477.36 381.6 
+Q 489.6 381.6 489.6 369.36 
+L 489.6 257.04 
+Q 489.6 244.8 477.36 244.8 
+L 84.24 244.8 
+Q 72 244.8 72 257.04 
+L 72 369.36 
+Q 72 381.6 84.24 381.6 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #ebf2ec; stroke: #d6ded6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 530.64 381.6 
+L 923.76 381.6 
+Q 936 381.6 936 369.36 
+L 936 257.04 
+Q 936 244.8 923.76 244.8 
+L 530.64 244.8 
+Q 518.4 244.8 518.4 257.04 
+L 518.4 369.36 
+Q 518.4 381.6 530.64 381.6 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #f7ede3; stroke: #e6d4c4; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 504 704.719336 
+Q 504 718.557873 504 730.160342 
+" clip-path="url(#p4385e3493d)" style="fill: none; stroke: #43806d; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 508.2 721.760342 
+L 504 730.160342 
+L 499.8 721.760342 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #43806d; stroke: #43806d; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 55.44 1000.8 
+L 952.56 1000.8 
+Q 964.8 1000.8 964.8 988.56 
+L 964.8 753.84 
+Q 964.8 741.6 952.56 741.6 
+L 55.44 741.6 
+Q 43.2 741.6 43.2 753.84 
+L 43.2 988.56 
+Q 43.2 1000.8 55.44 1000.8 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #edf1f7; stroke: #ced8e6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 79.2 798.48 
+C 83.78271 798.48 88.17834 796.65927 91.418805 793.418805 
+C 94.65927 790.17834 96.48 785.78271 96.48 781.2 
+C 96.48 776.61729 94.65927 772.22166 91.418805 768.981195 
+C 88.17834 765.74073 83.78271 763.92 79.2 763.92 
+C 74.61729 763.92 70.22166 765.74073 66.981195 768.981195 
+C 63.74073 772.22166 61.92 776.61729 61.92 781.2 
+C 61.92 785.78271 63.74073 790.17834 66.981195 793.418805 
+C 70.22166 796.65927 74.61729 798.48 79.2 798.48 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #43806d; stroke: #43806d; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 84.24 979.2 
+L 434.16 979.2 
+Q 446.4 979.2 446.4 966.96 
+L 446.4 933.84 
+Q 446.4 921.6 434.16 921.6 
+L 84.24 921.6 
+Q 72 921.6 72 933.84 
+L 72 966.96 
+Q 72 979.2 84.24 979.2 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #ffffff; stroke: #ced8e6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 487.44 979.2 
+L 923.76 979.2 
+Q 936 979.2 936 966.96 
+L 936 933.84 
+Q 936 921.6 923.76 921.6 
+L 487.44 921.6 
+Q 475.2 921.6 475.2 933.84 
+L 475.2 966.96 
+Q 475.2 979.2 487.44 979.2 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #ffffff; stroke: #ced8e6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 504 1006.397314 
+Q 504 1020.598471 504 1032.56356 
+" clip-path="url(#p4385e3493d)" style="fill: none; stroke: #43806d; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 508.2 1024.16356 
+L 504 1032.56356 
+L 499.8 1024.16356 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #43806d; stroke: #43806d; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 55.44 1216.8 
+L 952.56 1216.8 
+Q 964.8 1216.8 964.8 1204.56 
+L 964.8 1056.24 
+Q 964.8 1044 952.56 1044 
+L 55.44 1044 
+Q 43.2 1044 43.2 1056.24 
+L 43.2 1204.56 
+Q 43.2 1216.8 55.44 1216.8 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #ffffff; stroke: #d6ded6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 79.2 1100.88 
+C 83.78271 1100.88 88.17834 1099.05927 91.418805 1095.818805 
+C 94.65927 1092.57834 96.48 1088.18271 96.48 1083.6 
+C 96.48 1079.01729 94.65927 1074.62166 91.418805 1071.381195 
+C 88.17834 1068.14073 83.78271 1066.32 79.2 1066.32 
+C 74.61729 1066.32 70.22166 1068.14073 66.981195 1071.381195 
+C 63.74073 1074.62166 61.92 1079.01729 61.92 1083.6 
+C 61.92 1088.18271 63.74073 1092.57834 66.981195 1095.818805 
+C 70.22166 1099.05927 74.61729 1100.88 79.2 1100.88 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #43806d; stroke: #43806d; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 504 1223.119336 
+Q 504 1236.957873 504 1248.560342 
+" clip-path="url(#p4385e3493d)" style="fill: none; stroke: #43806d; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 508.2 1240.160342 
+L 504 1248.560342 
+L 499.8 1240.160342 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #43806d; stroke: #43806d; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 55.44 1382.4 
+L 952.56 1382.4 
+Q 964.8 1382.4 964.8 1370.16 
+L 964.8 1272.24 
+Q 964.8 1260 952.56 1260 
+L 55.44 1260 
+Q 43.2 1260 43.2 1272.24 
+L 43.2 1370.16 
+Q 43.2 1382.4 55.44 1382.4 
+z
+" clip-path="url(#p4385e3493d)" style="fill: #193d32; stroke: #193d32; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #43806d" x="43.2" y="52.38375" transform="rotate(-0 43.2 52.38375)">LIFE SCIENCES BENCHMARK</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 31px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193d32" x="43.2" y="107.617188" transform="rotate(-0 43.2 107.617188)">How the final score is calculated</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52675e" x="43.2" y="135.435937" transform="rotate(-0 43.2 135.435937)">Round 2  |  Same saved answers, stricter scientific review</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="79.2" y="211.761563" transform="rotate(-0 79.2 211.761563)">1</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193d32" x="115.2" y="212.956719" transform="rotate(-0 115.2 212.956719)">Score scientific quality (Q): start at 100</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #43806d" x="93.6" y="282.423437" transform="rotate(-0 93.6 282.423437)">Controls: -10 if unmet</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(93.6 311.110938)">Explain what controls establish;</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(93.6 333.550938)">design them before experiments.</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 14.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52675e" x="93.6" y="364.325977" transform="rotate(-0 93.6 364.325977)">Molecular / biochemical / neural work</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #bc8054" x="540" y="282.423437" transform="rotate(-0 540 282.423437)">Prior Methods: -10 if unmet</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(540 311.110938)">Plan to consult prior experiments;</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(540 333.550938)">adapt and validate their conditions.</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 14.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52675e" x="540" y="363.491094" transform="rotate(-0 540 363.491094)">All four domains; no actual browsing</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193d32" x="72" y="432.71875" transform="rotate(-0 72 432.71875)">Other applicable checks: -5 per distinct failure</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 17.5px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(72 469.978906)">Key concepts and evidence; correct observation-to-conclusion logic</text>
+    <text style="font-size: 17.5px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(72 493.078906)">Competing explanations and informative experimental outcomes</text>
+    <text style="font-size: 17.5px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(72 516.178906)">Quantitative steps, measurements, tool parameters and analysis</text>
+    <text style="font-size: 17.5px; font-family: 'DejaVu Sans'; fill: #193d32" transform="translate(72 539.278906)">Calibration, troubleshooting, iteration and independent validation</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52675e" x="72" y="579.239062" transform="rotate(-0 72 579.239062)">Judge scientific meaning, not keyword counts. Do not deduct twice for one defect.</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52675e" x="72" y="606.599062" transform="rotate(-0 72 606.599062)">G1 factual errors / G2 core omissions: each capped at 20 points.</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #43806d" x="504" y="652.246562" transform="rotate(-0 504 652.246562)">Q = max(0, 100 - applicable deductions)</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52675e" x="504" y="682.199062" transform="rotate(-0 504 682.199062)">A false central premise that invalidates the main recommendation caps Q at 20.</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="79.2" y="787.879687" transform="rotate(-0 79.2 787.879687)">2</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193d32" x="115.2" y="788.956719" transform="rotate(-0 115.2 788.956719)">Research only: check the historical direction (H)</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193d32" x="72" y="832.822812" transform="rotate(-0 72 832.822812)">Does the proposal match the selected historical follow-up?</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193d32" x="72" y="868.642969" transform="rotate(-0 72 868.642969)">Biological question + mechanism + intervention + readout + predicted outcome</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52675e" x="72" y="903.730547" transform="rotate(-0 72 903.730547)">All five must match, without a critical control or inference failure.</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b83a9" x="259.2" y="956.539062" transform="rotate(-0 259.2 956.539062)">Qualified match: H = 1</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b83a9" x="705.6" y="957.85625" transform="rotate(-0 705.6 957.85625)">Otherwise: H = 0</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="79.2" y="1090.151719" transform="rotate(-0 79.2 1090.151719)">3</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193d32" x="115.2" y="1091.446563" transform="rotate(-0 115.2 1091.446563)">Calculate each question score</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 13.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #43806d" x="194.4" y="1142.988586" transform="rotate(-0 194.4 1142.988586)">KNOWLEDGE</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #43806d" x="194.4" y="1184.59875" transform="rotate(-0 194.4 1184.59875)">Q</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 13.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc8054" x="460.8" y="1142.988586" transform="rotate(-0 460.8 1142.988586)">EXPERIMENTAL DESIGN</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc8054" x="460.8" y="1184.59875" transform="rotate(-0 460.8 1184.59875)">Q</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 13.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b83a9" x="770.4" y="1142.988586" transform="rotate(-0 770.4 1142.988586)">RESEARCH REASONING</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b83a9" x="770.4" y="1184.59875" transform="rotate(-0 770.4 1184.59875)">60 x H + 0.40 x Q</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52675e" x="770.4" y="1208.339219" transform="rotate(-0 770.4 1208.339219)">60% direction  +  40% scientific quality</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="72" y="1299.308594" transform="rotate(-0 72 1299.308594)">4   Average the 10 scores in each category, then combine</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="504" y="1340.052656" transform="rotate(-0 504 1340.052656)">Overall = 20% Knowledge + 30% Design + 50% Research</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #dce9e1" x="504" y="1374.335" transform="rotate(-0 504 1374.335)">Each term uses its category mean. Final score: 0-100.</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52675e" x="43.2" y="1416.635156" transform="rotate(-0 43.2 1416.635156)">Existing strict-v2.1 rubric, simplified for reading. Post-hoc scoring; one Codex referee.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4385e3493d">
+   <rect x="0" y="0" width="1008" height="1440"/>
+  </clipPath>
+ </defs>
+</svg>
