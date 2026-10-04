@@ -1,0 +1,239 @@
+{
+  "model_code": "grok",
+  "item_id": "mol-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:40:58.875873+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "5c33df5a55d28cc9aee7a3680405d9ed0084e5e47d1a119e578ec359449a94af",
+  "question_sha256": "5488a7e9eeb816e751e05687b8eaccb3a13670fa0f369c0936aa85b2a8ed7d4d",
+  "reference_sha256": "998c31eb8371578c1997cee1c0aaacd811239d380b47eab3eb182fac993df05a",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "5088be50c97a8c68012c468332bdf18932306580627ce22396e93ad3b92904f0",
+  "primary_route": "Direct GSDMD N-terminal membrane action tested by purified protein/defined lipid reconstitution, orthogonal physical permeability and qualified mutant cellular rescue; conditional indirect-effector branch.",
+  "complete_final_answer_read": true,
+  "word_count": 4952,
+  "first_round_scientific_quality": 66.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original Methods, supplements or validated protein/membrane/cell protocols to select and verify transferable conditions. Naming unknown settings and proposing local validation does not meet this separate lookup requirement."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "generates the same amino terminus",
+      "evidence_type": "exact_quote",
+      "reason": "Cleavage liberating an amino-terminal GSDMD domain defines its C-terminal boundary, not a new amino terminus of that domain. Repeatedly using the new amino terminus as the activation boundary confuses the fragment topology."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The biological dose range is unreported. Titrate; do not copy an external concentration.",
+      "evidence_type": "exact_quote",
+      "reason": "Several specific quality gates are useful, but central protein/lipid/buffer/timing and cell settings still lack executable quantitative choices or complete calibration-to-choice procedures."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent-preparation/culture replication plan tied to a meaningful-effect or precision/power objective and pilot variance."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective randomized/balanced processing, allocation concealment or blinded acquisition/analysis, or justified equivalent."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective technical exclusion, attrition, all-field/trace inclusion and stopping policy preserving biological nonresponses."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No selected primary contrast/time window, statistical model, uncertainty construction and multiplicity procedure."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The numerical ratio bounds are unreported",
+      "evidence_type": "exact_quote",
+      "reason": "The lipid panel is frozen using technical gates, but protein-dose and condition ranges remain unbounded without an objective procedure deriving bounds and search stop."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed or ambiguous exploratory work."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Protein-free failure plus a specific add-back favors M2",
+      "evidence_type": "exact_quote",
+      "reason": "The M2 definition assigns membrane execution to another protein, while the proposed tests establish joint necessity and co-reconstitution. No component-specific agency experiment distinguishes that executor from a permissive cofactor."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "An allele series correlated quantitatively",
+      "evidence_type": "exact_quote",
+      "reason": "Expression matching is present, but mutant folding/solubility and preserved activation/localization are not explicitly verified. Correlated loss of activity in both systems can reflect generic destabilization, not a selective physical interface."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete construct/protein/lipid/culture-to-raw-acquisition manifest, analysis versions/settings and exclusion provenance."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Strong protein-free assay and contamination logic, explicit optical-interference test, matched baseline/maximal release, technical stability gates and conditional negative interpretation. The mapped-terminus error, unqualified allele bridge and indirect agency claim remain substantive. Technical controls have concrete pass/fail actions, so P03 is not charged merely for lacking arbitrary historical numbers.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, interventions and nominal readouts match: direct protein-free lipid action, active/inhibited states, lipid matrices/alleles, recruitment/assembly/leakage/electrical evidence and GSDMD-deficient reconstitution. Mechanism/predicted outcome fail the qualified separation-of-function requirement because normal mutant folding and activation/localization are not demonstrated; equal abundance alone is insufficient. Match [true,false,true,true,false], retaining first-round non-hit.",
+  "item_score": 14.0
+}

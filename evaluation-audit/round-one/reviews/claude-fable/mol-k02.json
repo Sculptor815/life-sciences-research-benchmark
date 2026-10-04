@@ -1,0 +1,76 @@
+{
+  "item_id": "mol-k02",
+  "model_code": "claude-fable",
+  "response_id": "mol-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:28:51.125028+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "8ad1386f3c47299600c1411ae71dbf415d95649dca27f83e90f5da32a0bf20a0",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "within any plausible noise envelope for a single unreplicated measurement",
+      "issue": "Neither the replicate number nor a noise distribution is supplied. Describe the small nominal difference without asserting it falls within every plausible error envelope."
+    },
+    {
+      "quote": "With n = 1 per condition and no variance",
+      "issue": "No n is reported; one summary bar is not evidence of one biological replicate. This invents a design detail despite earlier acknowledging missing replication information."
+    },
+    {
+      "quote": "Restoration of the 50 kDa band excludes clonal artifacts and compensatory effects.",
+      "issue": "Rescue can restore a downstream protein whose expression or stability depends on the target. It supports dependence and reduces some clonal concerns but does not exclude indirect regulation or establish antibody-antigen identity."
+    },
+    {
+      "quote": "Target peptides in the 50 kDa band and their absence in the KO is near-definitive",
+      "issue": "Target peptides can occur in a mixed gel slice or an indirectly captured complex. This supports target presence, not near-definitive direct recognition by the tested antibody. Use controlled enrichment and orthogonal attribution."
+    },
+    {
+      "quote": "discordance (second antibody detects a KO-persistent band at the predicted MW) would overturn.",
+      "issue": "The second antibody may cross-react or recognize an escaping epitope. Discordance prompts further validation, rather than automatically overturning the first band assignment."
+    },
+    {
+      "quote": "Only the clonal-artifact/off-target-edit scenario",
+      "issue": "This excludes other consequential alternatives that the answer itself lists, including indirect regulation, selective degradation and invalid quantification. Several could change the interpretation."
+    },
+    {
+      "quote": "## 6. Limits of this interpretation",
+      "issue": "The 1605-word answer modestly exceeds the 1500-word limit and repeats its conclusion and assumptions. This is a minor communication deduction, separate from the scientific errors."
+    }
+  ],
+  "rationale": "Correct band selection and numerical reading with a rich validation plan. Multiple categorical identity/rescue claims and invented replication/noise details undermine the stated evidence discipline. The principal problem is the proposed decision logic rather than missing terminology.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Codex personally read all twelve complete final answers, exact question and packet, full reference and displayed synthetic figure. No hidden reasoning, paid judge, laboratory experiment or candidate web access was used.",
+    "The chart gives approximate 100-to-5 signal at 50 kDa and 95-to-93 at 75 kDa, with equal loading and validated KO as stated premises. The relative genetic support favors 50 kDa; it does not establish direct antigen identity or universal antibody specificity. Small numerical approximations do not change this qualitative comparison.",
+    "Reference correction: no complete coding-sequence deletion is specified in the candidate packet. The sealed logic chain assumes one, but the figure only says validated KO. Escaping isoforms are legitimate conditional alternatives when the validation scope is unknown.",
+    "Reference correction: the candidate was not shown the draft-key editorial status or original multiple-choice distractors. Do not require mention of a draft key, expert-review status or rejection of choices absent from the open question.",
+    "Reference correction: a target-derived modified species cannot persist after confirmed complete protein elimination merely because it is modified. A persistent band may contain a separate comigrating protein; distinguish that from residual/escaping target and incomplete null validation.",
+    "Summary bars do not reveal n, statistical equivalence, noise, raw-blot integrity or normalization method. Equal loading is a premise here, not proof of equal extraction/transfer. Expected sequence mass alone cannot reverse the observed ranking.",
+    "Rescue strengthens genetic dependence but may also restore downstream proteins. Failed rescue needs verified expression, relevant isoform, epitope, localization and processing. Genetic or RNA loss alone need not prove protein-null status.",
+    "MS can establish target presence while a comigrating species or indirect interactor generates antibody signal. Non-detection requires sensitivity and peptide coverage before being decisive. Peptide blocking can affect shared epitopes and does not independently prove endogenous identity.",
+    "The original frozen reference and candidate records are preserved. Corrections are disclosed here and applied consistently. Reviews are unblinded single-AI provisional assessments, not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Uhlen et al. (2016), A proposal for validation of antibodies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+      "scope": "Read the genetic, independent-antibody, tagging, immunocapture-MS and additional-characterization sections. They support application-specific validation and note indirect capture, tag artifacts and peptide-blocking limitations. No supplementary audit or experimental replication performed."
+    }
+  ],
+  "overall_benchmark_score": null
+}

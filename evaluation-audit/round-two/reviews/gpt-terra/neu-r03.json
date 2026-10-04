@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:34:48.185480+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7597924eb1083c918ac69fa2a607f8e97c10aa795c5973fdf480d9ddb15225bd",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "aaf03858c40453994a5f7bdee16b4674045071fe422aee35870fed55675c8df2",
+  "primary_route": "Intermediate-probability fixed-time/value-matched task with optional certainty anchors, cue reversal and timing controls.",
+  "complete_final_answer_read": true,
+  "word_count": 4132,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dopamine identity must be independent of reward responses, but no actual anatomical/genetic/molecular recording-identification strategy or its validation route is selected. A list of possible criteria remains an unresolved core identity prerequisite."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timing, delivery, identity and stability checks lack numerical acceptance-to-action thresholds or a concrete derivation of tolerances before the main contrast."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal-level pilot variance and meaningful effect planning are present, but no numerical power or confidence-width target is specified for the confirmatory sample."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The hierarchical conceptual model does not specify a likelihood/dispersion decision with diagnostics and a concrete multiplicity procedure across the several primary comparisons."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-trial/unit manifest with exact analysis/acquisition versions/settings, calibration records and all technical/biological losses is specified."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Mean baseline-corrected activity",
+      "evidence_type": "exact_quote",
+      "reason": "Primary activity and slope have no actual count/rate/calibrated-signal unit or explicit weak/missing response policy; timing windows alone do not define the measurement."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Revise training only before confirmatory recording",
+      "evidence_type": "exact_quote",
+      "reason": "Pilot restrictions and diagnostic repairs are given, but changed technical/valuation parameters are not explicitly linked to a revised frozen protocol and fresh independent confirmation."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Where feasible, use an orthogonal",
+      "evidence_type": "exact_quote",
+      "reason": "A possible population/release assay and generic independent replication are named, without a selected validation method or a defined held-out/independent confirmation comparison and agreement criterion."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value/timing alternatives, independent identity claim limits, same-time delivery, counterbalanced cues, behavioral valuation/measurement and separate phasic assay checks are supplied. Proposed parameters and causal limits are explicit."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "0.75",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced coded allocation, archived outcome schedules and effect-independent technical/learner exclusions are stated. The main three-point probability series is bounded, with fixed proposed windows and intertrial timing. Fault-specific troubleshooting and meaningful-effect interval criteria support cautious positive/null interpretation."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "0.75",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced coded allocation, archived outcome schedules and effect-independent technical/learner exclusions are stated. The main three-point probability series is bounded, with fixed proposed windows and intertrial timing. Fault-specific troubleshooting and meaningful-effect interval criteria support cautious positive/null interpretation."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "0.75",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced coded allocation, archived outcome schedules and effect-independent technical/learner exclusions are stated. The main three-point probability series is bounded, with fixed proposed windows and intertrial timing. Fault-specific troubleshooting and meaningful-effect interval criteria support cautious positive/null interpretation."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "0.75",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced coded allocation, archived outcome schedules and effect-independent technical/learner exclusions are stated. The main three-point probability series is bounded, with fixed proposed windows and intertrial timing. Fault-specific troubleshooting and meaningful-effect interval criteria support cautious positive/null interpretation."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "0.75",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced coded allocation, archived outcome schedules and effect-independent technical/learner exclusions are stated. The main three-point probability series is bounded, with fixed proposed windows and intertrial timing. Fault-specific troubleshooting and meaningful-effect interval criteria support cautious positive/null interpretation."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Scientifically useful intermediate-probability study, with several operational steps deferred and certainty conditions optional rather than fixed.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The uncertainty/value question and separated delay/phasic readout match. The actual core includes only p=.25/.5/.75; exact p=0 and p=1 are optional and interchangeable with .10/.90. It therefore does not commit to the sealed intermediate-versus-certainty intervention/prediction, though its alternative curvature/value experiment earns quality credit. This is not a penalty for failing to guess the historical result.",
+  "item_score": 18.0
+}

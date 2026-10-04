@@ -1,0 +1,238 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "inf-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:25:11.150508+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "23cd7603d2c55d7f9710757fce2767f85ceac5142c3b56e91a4631c91ac039ac",
+  "question_sha256": "8138345556a001f3fc4bac1a0c5986dac661ae6888f5a3dbc53bb26d7b98aa09",
+  "reference_sha256": "912190a8c7d04d1735a11f4798b4464c402e57d4430430d189830cd0e29fdd0d",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "d2e5624f2853d5ec740a2136fb37b55233ba012782edeca0d76d2948cbbb796e",
+  "primary_route": "Proposed donor-average treatment contrast with hierarchical comparison, donor-grouped resampling and null calibration, and protected donor-level validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2578,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original experimental Methods/supplements to verify allocation and sampling conditions and release-specific model protocols. Reconstructing identifiers and naming prior evidence alone is insufficient."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "per-donor AUC",
+      "evidence_type": "exact_quote",
+      "reason": "Treatment is constant within each donor in this design, so a within-donor treatment-class AUC has only one label class and is not defined. Use a donor-level prediction evaluated across held-out donors instead."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "two-sample t-test / Welch test, Wilcoxon rank-sum if donor n permits",
+      "evidence_type": "exact_quote",
+      "reason": "The primary summary/test and outcome-family implementation remain alternatives without a concrete selection rule; null calibration selects mixed versus pseudobulk but does not resolve the pseudobulk route."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "QC thresholds",
+      "evidence_type": "exact_quote",
+      "reason": "No objective reference-to-acceptance calibration rule sets the assay QC thresholds and failure response."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "precision-weighting donor summaries by cell count only if calibration",
+      "evidence_type": "exact_quote",
+      "reason": "Type-I calibration alone does not ensure cell-count weighting preserves the donor-average estimand under informative cell yield. The target and weighting relationship are not fixed."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational missing-donor/attrition policy or explicit distinction between biological cell loss and technical QC failure. Low-yield sensitivity does not replace this rule."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Multiple endpoint/co-primary tests are proposed without a selected multiplicity procedure/family or matching single primary inferential decision."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting and fallback methods are specified but a changed procedure is not explicitly refrozen and assigned fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Hierarchical-model estimate agrees in sign and the cluster-bootstrap CI excludes the null",
+      "evidence_type": "exact_quote",
+      "reason": "Acceptance still requires the mixed-model result even when the prespecified fallback rejects that model for calibration/convergence failure. The fallback and final acceptance rules conflict."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Held-out validation (for any predictive/classifier claim or multivariate signature)",
+      "evidence_type": "exact_quote",
+      "reason": "Held-out validation is limited to predictive claims; no operational independent donor validation of the proposed primary treatment contrast is provided."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No immutable raw input hashes, pinned executable environment and exact analysis commands link identifiers to outputs."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Cells from a donor never appear in both training and test folds.",
+      "evidence_type": "exact_quote",
+      "reason": "Donor grouping is correct, but every transformation, feature selection and threshold fit is not explicitly restricted to each training fold."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical reproduction of donor-effect and null-calibration outputs with tolerances and runtime/resource/failure logs."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Donor-Randomized, Cell-Level Measured Studies",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Correct donor allocation, nonidentifiability of saturated donor fixed effects, enumeration resolution, null-imposed simulations and grouped bootstrap. Finite weighted/unweighted alternatives are calibrated. Per-donor AUC is invalid for a donor-constant label, target weighting is unresolved and the fallback/acceptance rules conflict.",
+  "item_score": 30
+}

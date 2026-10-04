@@ -1,0 +1,100 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "qwen",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:32:00.884607+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "c35402741092676d7997d6ab7e77811688a2ef380f2d637de6acbd691eea8319",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 2
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 73.75,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Compare CS+ test-induced activation with control conditions.",
+      "issue": "Both cues are presented during the proposed terminal test. A later IEG sample cannot assign activity to CS+ specifically without separate cue cohorts or a validated temporally resolving assay."
+    },
+    {
+      "quote": "Randomize animals to experimental group after surgical recovery and expression validation.",
+      "issue": "Fear-versus-neutral experience and actuator identity must be allocated before those interventions. Randomize later contingency within preassigned strata; the current general allocation instruction comes too late for all listed groups."
+    },
+    {
+      "quote": "A second activity-dependent tag can mark cells active during the new-learning phase",
+      "issue": "Dual-tag cross-reactivity checks are useful, but also verify closure of the original opsin-tagging gate before the second acquisition window. Otherwise later activity may expand the manipulated source population."
+    },
+    {
+      "quote": "## 21. Final concise recommendation",
+      "issue": "At 5335 words the answer exceeds the 5000-word limit and repeatedly restates calibration, allocation and interpretation. Consolidate those sections without losing the ordered protocol."
+    }
+  ],
+  "rationale": "A useful external-cue/internal-outcome alternative with differential cue and baseline readouts, unpaired controls, nested analysis and cautious causal limits. It needs cue-specific IEG sampling, prospective allocation of early factors and explicit original-gate closure. Excess length and duplicated sections reduce usability. The alternative question is not penalized solely for failing historical matching.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "serve as an instructive signal for forming a new association",
+      "assessment": "Alternative internal-outcome conditioning, not neutral-context-as-CS conditioning and natural-context retrieval."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "an internal teaching signal or US-like event",
+      "assessment": "Alternative internal-outcome conditioning, not neutral-context-as-CS conditioning and natural-context retrieval."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "A neutral cue temporally paired with that activation",
+      "assessment": "Alternative internal-outcome conditioning, not neutral-context-as-CS conditioning and natural-context retrieval."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Cue-specific freezing to the CS+ relative to the CS−",
+      "assessment": "Alternative internal-outcome conditioning, not neutral-context-as-CS conditioning and natural-context retrieval."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "optical activation of the dentate gyrus fear-learning ensemble is sufficient to support formation",
+      "assessment": "Alternative internal-outcome conditioning, not neutral-context-as-CS conditioning and natural-context retrieval."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

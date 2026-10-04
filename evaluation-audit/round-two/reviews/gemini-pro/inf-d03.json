@@ -1,0 +1,238 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "inf-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:25:11.193360+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "13f644a6b8dad1af62fd41a03c9c843ddaebc1793d9d790a159ab56b524e7a0b",
+  "question_sha256": "8138345556a001f3fc4bac1a0c5986dac661ae6888f5a3dbc53bb26d7b98aa09",
+  "reference_sha256": "912190a8c7d04d1735a11f4798b4464c402e57d4430430d189830cd0e29fdd0d",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "4f4aa02530e16fc1e525c3b3116c431fe1292a2d8d3462a5670fd74b474987f2",
+  "primary_route": "Proposed donor-average treatment contrast with hierarchical comparison, donor-grouped resampling and null calibration, and protected donor-level validation.",
+  "complete_final_answer_read": true,
+  "word_count": 1329,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original experimental Methods/supplements to verify allocation and sampling conditions and release-specific model protocols. Reconstructing identifiers and naming prior evidence alone is insufficient."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "it indicates that the biological effect is masked by high donor variance",
+      "evidence_type": "exact_quote",
+      "reason": "High ICC or lost significance does not establish that a true effect exists but is masked. The packet explicitly supports uncertainty rather than this affirmative biological explanation."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "t-test or non-parametric equivalent",
+      "evidence_type": "exact_quote",
+      "reason": "No operational endpoint/test selection or specified hierarchical distribution/link/fitting algorithm."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "predefined thresholds",
+      "evidence_type": "exact_quote",
+      "reason": "No objective technical reference calibration or procedure defining assay acceptance/failure thresholds."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "observed pilot effect size",
+      "evidence_type": "exact_quote",
+      "reason": "Planning is based on an observed pilot effect without an independent minimum meaningful effect, stated power/precision target or propagation of pilot uncertainty."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Randomization and blinding are present but processing/acquisition order is not prospectively balanced across arms/batches or an equivalent justified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No outcome-independent donor/cell exclusion ledger, missing-donor policy or separation of biological loss from technical failure."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit interval construction, multiplicity procedure or allocation-restricted permutation implementation is specified."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The hierarchical model will remain structurally valid",
+      "evidence_type": "exact_quote",
+      "reason": "Correct nesting does not ensure a particular model remains valid at very small donor n; likelihood/link, convergence and reference-distribution assumptions must be checked."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded parameter/assumption exploration with criteria and lock."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational sequence diagnosing identity/reference/batch failure or model nonconvergence with a targeted repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit refreeze and fresh independent confirmation after revising a failed procedure."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The study is accepted as valid if the null calibration yields an expected uniform distribution",
+      "evidence_type": "exact_quote",
+      "reason": "Discrete randomization p-values need not be exactly uniform; calibration alone is also not a rule for positive, negative or falsifying biological conclusions."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "evaluate whether the observed biological effect generalizes",
+      "evidence_type": "exact_quote",
+      "reason": "No operational held-out treatment-effect comparison/interval and acceptance metric; applying a fitted hierarchical model is not by itself independent confirmation of the contrast."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No immutable inputs, pinned computational environment or exact command provenance."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Donor splitting is specified but fitted preprocessing/features/thresholds are not explicitly learned only from training donors."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational treatment-batch/time-confounding gate, informative-missingness sensitivity or null stress across uncertain variance/cluster-size scenarios."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical rerun with tolerances and runtime/resource/failure logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain."
+    }
+  ],
+  "deductions_uncapped": 95,
+  "quality_score": 5,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "The basic allocation-unit distinction, donor bootstrap and reporting of donor/cell counts are correct. Many executable safeguards are absent, model validity is overstated, and high ICC is incorrectly interpreted as masking a real effect rather than leaving its existence uncertain.",
+  "item_score": 5
+}

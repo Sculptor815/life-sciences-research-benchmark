@@ -1,0 +1,224 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:15:35.317330+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c0e3a7a477ff1161ab10433af7e080bf66c402c724f8adccbf24ebe2f03a5b4b",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "283862de7da8ff4ac17e23f484f8f0f0d5e43ce7209252e59d0aaeb9a30c7148",
+  "primary_route": "Separate optical, reporter and target kinetics with substrate titration and proposed independent product validation.",
+  "complete_final_answer_read": true,
+  "word_count": 492,
+  "first_round_scientific_quality": 45.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Deconvolution study: target inhibition vs. substrate competition vs. reporter interference",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior target/reporter Methods, supplements or a validated protocol before execution and check transfer of detailed conditions."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "two cheap counter-assays",
+      "evidence_type": "exact_quote",
+      "reason": "Reporter and optical checks are proposed, but the truncated answer never defines a complete prospective positive/negative/procedural control design."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unknown parameters",
+      "evidence_type": "exact_quote",
+      "reason": "No identity, stock integrity or active-enzyme qualification procedure is returned."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Phase 0",
+      "evidence_type": "exact_quote",
+      "reason": "No executable preparation/quantities/timing or calibration-to-setting procedure is returned."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "quantified and corrected",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative calibration acceptance threshold and failure action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "initial-rate linearity",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative primary endpoint units, correction and weak/saturated/missing measurement rules."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Study design",
+      "evidence_type": "exact_quote",
+      "reason": "No independent allocation unit, nested technical replication or precision-based replication plan."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Study design",
+      "evidence_type": "exact_quote",
+      "reason": "No randomization, concealment, blinding or equivalent bias controls."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Study design",
+      "evidence_type": "exact_quote",
+      "reason": "No prospective eligibility, attrition or stopping criteria."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "substrate-variation kinetics",
+      "evidence_type": "exact_quote",
+      "reason": "No specific estimand/model assumptions, uncertainty or comparison plan."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unknown parameters",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded pilot exploration, evaluation and confirmatory lock."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Phase 0",
+      "evidence_type": "exact_quote",
+      "reason": "No failure-diagnostic-repair-retest sequence."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Phase 0",
+      "evidence_type": "exact_quote",
+      "reason": "No iteration boundaries/refreeze/fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "license the conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "No operational supportive, adequately precise negative and ambiguous outcome rules."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "direct-product-detection arms",
+      "evidence_type": "exact_quote",
+      "reason": "Mentions an orthogonal arm not returned in the partial text; no operational independent validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Phase 0",
+      "evidence_type": "exact_quote",
+      "reason": "No linked raw data, IDs, provenance and versioned analysis audit plan."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal loss has \u22653 non-target explanations",
+      "evidence_type": "exact_quote",
+      "reason": "Available text correctly maps evidence to assay-layer alternatives and the intended strategy. Missing concrete components are charged to specific C/P checks, not again for truncation/shortness."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal loss has \u22653 non-target explanations",
+      "evidence_type": "exact_quote",
+      "reason": "Available text correctly maps evidence to assay-layer alternatives and the intended strategy. Missing concrete components are charged to specific C/P checks, not again for truncation/shortness."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal loss has \u22653 non-target explanations",
+      "evidence_type": "exact_quote",
+      "reason": "Available text correctly maps evidence to assay-layer alternatives and the intended strategy. Missing concrete components are charged to specific C/P checks, not again for truncation/shortness."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal loss has \u22653 non-target explanations",
+      "evidence_type": "exact_quote",
+      "reason": "Available text correctly maps evidence to assay-layer alternatives and the intended strategy. Missing concrete components are charged to specific C/P checks, not again for truncation/shortness."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal loss has \u22653 non-target explanations",
+      "evidence_type": "exact_quote",
+      "reason": "Available text correctly maps evidence to assay-layer alternatives and the intended strategy. Missing concrete components are charged to specific C/P checks, not again for truncation/shortness."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal loss has \u22653 non-target explanations",
+      "evidence_type": "exact_quote",
+      "reason": "Available text correctly maps evidence to assay-layer alternatives and the intended strategy. Missing concrete components are charged to specific C/P checks, not again for truncation/shortness."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal loss has \u22653 non-target explanations",
+      "evidence_type": "exact_quote",
+      "reason": "Available text correctly maps evidence to assay-layer alternatives and the intended strategy. Missing concrete components are charged to specific C/P checks, not again for truncation/shortness."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "target enzyme \u2192 product \u2192 coupling enzyme \u2192 fluorophore \u2192 photons",
+      "evidence_type": "exact_quote",
+      "reason": "Explains what the composite readout measures and why it cannot identify target activity alone."
+    }
+  ],
+  "partial_answer": true,
+  "partial_answer_note": "Returned answer ends at the first preparation list marker (1. **). Graded the complete returned text; not a refusal and not regenerated.",
+  "deductions_uncapped": 90,
+  "quality_score": 10,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Returned conceptual introduction is useful but the operational protocol cuts off before its first step; no missing steps are assumed.",
+  "item_score": 10
+}

@@ -1,0 +1,100 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "gemini-pro",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:32:00.879429+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "669045de0bb03d4380a6a09f3d63de5d856c82d3cf622094b87e413738827a4b",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 1,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 50.0,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Mice are randomly assigned to three cohorts",
+      "issue": "The three groups omit both matched explicitly unpaired light/shock exposure and an inactive-opsin light-plus-shock control. The proposed positive pattern cannot isolate contingency or neural activation from combined procedural effects."
+    },
+    {
+      "quote": "48 hours later, mice are placed in Context B",
+      "issue": "Neutral tagging is assumed adaptable, but there is no gate-closure validation before B, expression/readout qualification sequence, or sample-size/precision plan. The packet requires an auditable calibrated design."
+    },
+    {
+      "quote": "placed back into Context A (the originally labeled context) and Context C",
+      "issue": "Test order and carryover are not controlled. Terminal IEG sampling must isolate one defined context exposure rather than pooling activity from multiple tests."
+    },
+    {
+      "quote": "Low or random cellular overlap",
+      "issue": "A negative behavioral result accompanied by failed natural reactivation can indicate an ineffective cue/labeling assay. It does not establish biological inability to form the association; require validated recruitment and adequate precision."
+    }
+  ],
+  "rationale": "Correct neutral-context-as-CS direction and no-light context comparison, with proposed rather than fabricated settings. However, key contingency and opsin controls, labeling-closure validation, power and test-order handling are missing. The negative conclusion overinterprets a potentially failed neural assay.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Can an internally activated sparse DG neural ensemble",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "functionally sufficient to serve as a conditioned stimulus",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Context A - Neutral",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "No light or shock is presented in Phase 3.",
+      "assessment": "The neutral ensemble, external shock and natural-context prediction are present. The readout component is incomplete because matched contingency and opsin controls are absent."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Group 1 exhibits significantly higher freezing in Context A compared to Context C",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

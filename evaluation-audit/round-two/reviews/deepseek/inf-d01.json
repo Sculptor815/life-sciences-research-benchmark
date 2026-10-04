@@ -1,0 +1,238 @@
+{
+  "model_code": "deepseek",
+  "item_id": "inf-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:50:53.683824+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e2fabed12453ba18e420032776bcfb5bc2f82660b1de1f72a751e9e1d86c824d",
+  "question_sha256": "defb2d5afa06ce05847814081f892e153c6478b102ec166da9bfa6e92bf0ca27",
+  "reference_sha256": "af8af736b20cfadbc10950d9e83db1e5582000b2afdae0d27e561d3998ee5974",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8ad06488a113b996db4fb3c8fd5a3e2fe63572390f3941bea8ffe235d675d990",
+  "primary_route": "Patient-paired multiomic treatment-associated program discovery, assay-specific preprocessing, primary late integration/enrichment and locked external cohort validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2073,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult original assay Methods, supplements or validated analysis protocols and check their transfer to the present inputs."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Sample pairing is assumed and a dictionary requested, but no independent sample-identity/pairing-integrity check is operational."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use standard pipelines for the platform.",
+      "evidence_type": "exact_quote",
+      "reason": "Normalization is not specified as an executable platform-conditional algorithm; comparing unspecified methods by QC does not determine the candidate method set and settings."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "weighted sum of top features",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit sign/orientation, normalization and missing-feature/modality denominator defines the actual score consistently across patients and external data."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "based on the discovery effect size",
+      "evidence_type": "exact_quote",
+      "reason": "Power simulation using the selected observed effect without accounting for selection optimism or variance uncertainty does not justify replication precision; no independent nuisance-calibrated detectable effect is provided."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use Fisher, Stouffer",
+      "evidence_type": "exact_quote",
+      "reason": "Combining pathway p-values across correlated assays from the same patients needs an explicit covariance-aware or dependence-preserving null procedure."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Include patient as a group/random effect",
+      "evidence_type": "exact_quote",
+      "reason": "MOFA grouping is not an ordinary paired random-intercept adjustment; the answer does not specify a valid paired representation/likelihood for the selected model. Official model documentation distinguishes group variability and covariate adjustment: https://biofam.github.io/MOFA2/faq.html ."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded factor/feature/regularization/missingness search or concrete derivation of range and search stop."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit refreeze and fresh independent confirmation after revision following a failed validation."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "use the closest available design",
+      "evidence_type": "exact_quote",
+      "reason": "An unpaired/differently timed cohort cannot validate the original paired-change estimand without a separately specified target and compatibility rule. Available single modalities also do not validate the unchanged full score."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No input hashes, exact environment/commands/seeds and raw-data/sample/output provenance sufficient for audit."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Inner-fold feature/parameter selection is stated, but fitted normalization and imputation are not explicitly confined to training folds."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A MAR assumption and complete-case comparisons are given, but no explicit informative-missingness sensitivity scenario; permutation nulls are not justified against time-batch nonexchangeability."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical rerun, table/figure tolerances or resource/failure/source-difference logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete."
+    }
+  ],
+  "deductions_uncapped": 75,
+  "quality_score": 25,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "A useful patient-blocked, externally locked workflow with explicit association-versus-causation limits and balanced bridging proposed for confounding. Technical calibration and failure diagnostics are sensible. The menu of integration methods leaves tool assumptions unresolved, and independent validation/implementation details remain incomplete.",
+  "item_score": 25
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "kimi",
+  "item_id": "bio-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:14:47.809818+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "4c4cb2bc7df73eb89ddf4f42311d49fae4a3930af5f98b67a4709ca6f18896b2",
+  "question_sha256": "1a2f38bc4a291e966598faece6d609fa8591d54539f53a2f49f3a56c3116856b",
+  "reference_sha256": "8282d415ac922ab3df37704b68f9314a3cf0a493392b6b5995af7ead2893d7e3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "819888576aa3d32724dc982fbf0731f437ed02bd0a697e474a81ff3a52b64b7a",
+  "primary_route": "Calibrated same-motor angle/chemistry with ATP/load perturbation, independent detector validation, then gated torque-clamp work and actual chemical-energy measurement.",
+  "complete_final_answer_read": true,
+  "word_count": 4123,
+  "first_round_scientific_quality": 75.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult/check prior primary Methods or a validated protocol for detailed pre-execution conditions and transfer. Recording unknown settings and developing an assay locally do not satisfy this distinct requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core immobilization/shaft attachment, solution chemistry (including nucleotide/free-magnesium conditions), recording settings and load manipulation lack an executable quantitative workflow or a concrete calibration-to-setting procedure. Lists of parameters to select later are insufficient."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary estimands and hierarchical/held-out comparisons are present, but exact model assumptions/diagnostics and multiplicity control for the several primary load/coupling/event tests are incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "ATP/load/acquisition optimization is not bounded by an explicit ladder or objective range-derivation/search-stop rule before the lock. A promise to select a spanning range from pilots is not a fully specified exploration policy."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot separation and troubleshooting are described, but technical changes do not explicitly trigger a revised freeze and fresh independent confirmatory data under a defined change-control policy."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "A phosphate-release reporter timestamps",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful coupling/chemical-timing question; biological integrity, occupancy, noncentral-label, alternate attachment, analog-purity and sensor/flow controls have explicit purposes. Binding, cleavage and release are distinguished and validated perturbations are required for assignments. Conditional force-generation alternatives are not treated as proven solely by a histogram."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "half-width no greater than 0.10",
+      "evidence_type": "exact_quote",
+      "reason": "Known-angle/injection recovery, synchronized timing and independent chemical capture calibration (suggested >=80% feasibility), corrected/uncorrected matched-event fractions and defined unresolved events establish quantitative measurement gates. Pilot variance targets 2-degree angle uncertainty and 0.10 matching half-width. Balanced randomized coded allocation, retained long pauses/censored traces and registered precision/feasibility stopping preserve the observed population."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "half-width no greater than 0.10",
+      "evidence_type": "exact_quote",
+      "reason": "Known-angle/injection recovery, synchronized timing and independent chemical capture calibration (suggested >=80% feasibility), corrected/uncorrected matched-event fractions and defined unresolved events establish quantitative measurement gates. Pilot variance targets 2-degree angle uncertainty and 0.10 matching half-width. Balanced randomized coded allocation, retained long pauses/censored traces and registered precision/feasibility stopping preserve the observed population."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "half-width no greater than 0.10",
+      "evidence_type": "exact_quote",
+      "reason": "Known-angle/injection recovery, synchronized timing and independent chemical capture calibration (suggested >=80% feasibility), corrected/uncorrected matched-event fractions and defined unresolved events establish quantitative measurement gates. Pilot variance targets 2-degree angle uncertainty and 0.10 matching half-width. Balanced randomized coded allocation, retained long pauses/censored traces and registered precision/feasibility stopping preserve the observed population."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "half-width no greater than 0.10",
+      "evidence_type": "exact_quote",
+      "reason": "Known-angle/injection recovery, synchronized timing and independent chemical capture calibration (suggested >=80% feasibility), corrected/uncorrected matched-event fractions and defined unresolved events establish quantitative measurement gates. Pilot variance targets 2-degree angle uncertainty and 0.10 matching half-width. Balanced randomized coded allocation, retained long pauses/censored traces and registered precision/feasibility stopping preserve the observed population."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "half-width no greater than 0.10",
+      "evidence_type": "exact_quote",
+      "reason": "Known-angle/injection recovery, synchronized timing and independent chemical capture calibration (suggested >=80% feasibility), corrected/uncorrected matched-event fractions and defined unresolved events establish quantitative measurement gates. Pilot variance targets 2-degree angle uncertainty and 0.10 matching half-width. Balanced randomized coded allocation, retained long pauses/censored traces and registered precision/feasibility stopping preserve the observed population."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Standard textbook free-energy values",
+      "evidence_type": "exact_quote",
+      "reason": "Failure-specific diagnostic actions, two independent step methods and held-out/null/orthogonal chemical checks support qualified conclusions. Torque-clamp work is allowed only after coupling validation and actual ATP/ADP/phosphate/temperature measurement. Outcomes explicitly separate binding/release and missing-event ambiguity. Immutable unit IDs, raw movies/calibrations and code versions are retained."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Standard textbook free-energy values",
+      "evidence_type": "exact_quote",
+      "reason": "Failure-specific diagnostic actions, two independent step methods and held-out/null/orthogonal chemical checks support qualified conclusions. Torque-clamp work is allowed only after coupling validation and actual ATP/ADP/phosphate/temperature measurement. Outcomes explicitly separate binding/release and missing-event ambiguity. Immutable unit IDs, raw movies/calibrations and code versions are retained."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Standard textbook free-energy values",
+      "evidence_type": "exact_quote",
+      "reason": "Failure-specific diagnostic actions, two independent step methods and held-out/null/orthogonal chemical checks support qualified conclusions. Torque-clamp work is allowed only after coupling validation and actual ATP/ADP/phosphate/temperature measurement. Outcomes explicitly separate binding/release and missing-event ambiguity. Immutable unit IDs, raw movies/calibrations and code versions are retained."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "Standard textbook free-energy values",
+      "evidence_type": "exact_quote",
+      "reason": "Failure-specific diagnostic actions, two independent step methods and held-out/null/orthogonal chemical checks support qualified conclusions. Torque-clamp work is allowed only after coupling validation and actual ATP/ADP/phosphate/temperature measurement. Outcomes explicitly separate binding/release and missing-event ambiguity. Immutable unit IDs, raw movies/calibrations and code versions are retained."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong chemistry-to-angle design and properly conditional energetic follow-up with quantitative precision gates; core wet preparation, bounded parameter search and change-control detail still need work.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "The proposal supplies stepping/coupling question and mechanism, ATP/load interventions with credible angular/chemical controls, measured steps and conditional torque-clamp work using actual ATP/ADP/phosphate free energy, and a conditional three-step/three-turnover outcome. The explicit efficiency-calculation gate prevents unsupported energy claims. This matches the historical stepping-plus-energetics direction without requiring the candidate to assert an unobserved exact efficiency or 120-degree answer in advance.",
+  "item_score": 88.0
+}

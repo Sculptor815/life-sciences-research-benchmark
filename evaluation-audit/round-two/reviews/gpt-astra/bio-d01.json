@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:08:18.271340+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "ce9e5eb13317850fe5008180a1dda60c4e4f1349452f75b7e5bd05996aeabe04",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "375971dbf77c18b4b3515402bbd7228b3f7ea6bd4bdc94b4b96e6e80a9233e85",
+  "primary_route": "Optical/reporter deconvolution, target-product initial rates and substrate-by-compound kinetic matrix.",
+  "complete_final_answer_read": true,
+  "word_count": 2389,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recommended approach",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation of primary target/reporter assay Methods or validated protocols with a transfer check for the actual chemistry."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Buffer and cofactors",
+      "evidence_type": "exact_quote",
+      "reason": "Ordered concentration/time calibration is useful, but buffer/cofactor composition, pH and temperature remain an instruction to establish conditions, without a concrete selection/calibration procedure or executable local settings."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "calibration, recovery, blanks",
+      "evidence_type": "exact_quote",
+      "reason": "Lists the dimensions that must pass but does not define an acceptable recovery/error/noise criterion or a procedure deriving that criterion before confirmation. An unspecified validated range/pass requirement is incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "absolute rates",
+      "evidence_type": "exact_quote",
+      "reason": "Does not specify the unit convention for the primary absolute product-formation rate or reportable product amount/concentration; calibration and blank handling do not supply that missing quantitative endpoint definition."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Stop or redesign a condition",
+      "evidence_type": "exact_quote",
+      "reason": "Describes stopping/redesign but does not require a newly frozen protocol and fresh independent confirmation after changing failed/ambiguous conditions."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record reagent lots",
+      "evidence_type": "exact_quote",
+      "reason": "Retains useful curves and lots but lacks an auditable raw-file/sample-ID linkage and exact analysis software/code/settings versions sufficient to reconstruct the contrast."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not assume an",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit product-spike, no-target/no-substrate, vehicle active reactions, dark/illumination and reporter-capacity controls have distinct prospective roles. A known inhibitor is appropriately conditional on availability."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate-competitive inhibition is a type of target inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly separates the three assay layers, competing substrate/chemical and time-dependent explanations, model limits and proposed versus supplied facts."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate-competitive inhibition is a type of target inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly separates the three assay layers, competing substrate/chemical and time-dependent explanations, model limits and proposed versus supplied facts."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate-competitive inhibition is a type of target inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly separates the three assay layers, competing substrate/chemical and time-dependent explanations, model limits and proposed versus supplied facts."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate-competitive inhibition is a type of target inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly separates the three assay layers, competing substrate/chemical and time-dependent explanations, model limits and proposed versus supplied facts."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate-competitive inhibition is a type of target inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly separates the three assay layers, competing substrate/chemical and time-dependent explanations, model limits and proposed versus supplied facts."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate-competitive inhibition is a type of target inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly separates the three assay layers, competing substrate/chemical and time-dependent explanations, model limits and proposed versus supplied facts."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate-competitive inhibition is a type of target inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly separates the three assay layers, competing substrate/chemical and time-dependent explanations, model limits and proposed versus supplied facts."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Check identity, stock concentration",
+      "evidence_type": "exact_quote",
+      "reason": "Identifies missing reaction components as prerequisites, checks compound identity/soluble concentration, and separately verifies enzyme activity and analyte identity."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "at least three independent assay runs",
+      "evidence_type": "exact_quote",
+      "reason": "Distinguishes day/run from technical wells, uses pilot variance and prespecified meaningful differences/precision for replication, balances/randomizes run placement and codes analysis before decoding."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "at least three independent assay runs",
+      "evidence_type": "exact_quote",
+      "reason": "Distinguishes day/run from technical wells, uses pilot variance and prespecified meaningful differences/precision for replication, balances/randomizes run placement and codes analysis before decoding."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Signal lies outside validated quantification limits",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective technical exclusion/redirection criteria cover solubility, recovery, stability and rate validity; biological ambiguity is retained rather than discarded. Threshold detail is separately charged under P03."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "negligible inhibitor depletion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct global mixed/competitive equations, free-inhibitor/initial-rate assumptions, tight-binding branch, run-level uncertainty, residual/model comparison and meaningful-effect/equivalence decision targets."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "negligible inhibitor depletion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct global mixed/competitive equations, free-inhibitor/initial-rate assumptions, tight-binding branch, run-level uncertainty, residual/model comparison and meaningful-effect/equivalence decision targets."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "0.1\u201310",
+      "evidence_type": "exact_quote",
+      "reason": "Bounds the substrate pilot around measured Km and compound range by solubility/analytic validity, with rate/coverage criteria and choices fixed before confirmation; buffer calibration remains a separate P02 gap."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Re-examine matrix matching",
+      "evidence_type": "exact_quote",
+      "reason": "Ordered separate-layer checks, validated quench/product recovery and repair/redirection of invalid conditions distinguish multiple failure causes instead of blindly refitting."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved\u2014not",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit equivalence/meaningful-effect precision criteria, pure/mixed mechanism outcomes and unresolved technical or wide-interval branch; competition is not physical site proof."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "test ion suppression explicitly",
+      "evidence_type": "exact_quote",
+      "reason": "Independent nonfluorescent/separation-based chemistry is specified with analyte identity, before/after preparation spikes, matrix effects and validated quench; orthogonality itself is not assumed interference-free."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong scientific discrimination and uncertainty logic, with specific omissions in transferable conditions, calibration thresholds, primary units, fresh confirmation and audit details.",
+  "item_score": 65
+}

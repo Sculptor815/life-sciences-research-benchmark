@@ -1,0 +1,92 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "gpt-terra",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:30:50.207050+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "eefa13df497ab153fbcede293874f7e4832987902e01998ae66ee6c8dca54562",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 95.0,
+  "reasoning_index": 93.75,
+  "errors": [
+    {
+      "quote": "The labeling window must be sufficiently restricted",
+      "issue": "The plan centers the initial tagging window but does not explicitly verify closure before the later reactivation/acquisition episode. Add a closed-gate challenge and confirm that the manipulated population remains the original tag."
+    },
+    {
+      "quote": "If F-Paired and F-Unpaired groups show equivalent delayed B freezing",
+      "issue": "Equivalence requires a predefined margin and adequate interval precision. The main confidence-interval plan needs this operational rule before concluding that contingency was unsupported."
+    }
+  ],
+  "rationale": "A scientifically useful alternative: use the existing fear-tagged population as an internal instructive event for a new external context, then test that context without light. Explicitly avoids pairing more shock with the already fearful source context and bounds the claim. This earns quality credit despite not matching the held-out neutral-context-as-CS study. Physiological checks, separate first-test cohorts, allocation and assignment-based sensitivity analyses are strong; tagging-closure and equivalence details remain.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "act, while a novel context is present, as an internal instructive event",
+      "assessment": "Valid alternative research question: old fear-tagged ensemble is the internal outcome; the held-out study instead conditions a previously neutral ensemble and tests its original natural context. No scientific-quality penalty is applied solely for this mismatch."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "Reactivating the fear-learning-labeled DG population",
+      "assessment": "Valid alternative research question: old fear-tagged ensemble is the internal outcome; the held-out study instead conditions a previously neutral ensemble and tests its original natural context. No scientific-quality penalty is applied solely for this mismatch."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "reactivate that population while the animal is in distinct context B",
+      "assessment": "Valid alternative research question: old fear-tagged ensemble is the internal outcome; the held-out study instead conditions a previously neutral ensemble and tests its original natural context. No scientific-quality penalty is applied solely for this mismatch."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "later expose the animal to B with",
+      "assessment": "Valid alternative research question: old fear-tagged ensemble is the internal outcome; the held-out study instead conditions a previously neutral ensemble and tests its original natural context. No scientific-quality penalty is applied solely for this mismatch."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "greater in B than C",
+      "assessment": "Valid alternative research question: old fear-tagged ensemble is the internal outcome; the held-out study instead conditions a previously neutral ensemble and tests its original natural context. No scientific-quality penalty is applied solely for this mismatch."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

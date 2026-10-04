@@ -1,0 +1,239 @@
+{
+  "model_code": "deepseek",
+  "item_id": "mol-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:40:58.866510+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "ce8b1b9efa18f90d0912c3b23c3eabfefca8e2c16d689a0017de14562bcd1c93",
+  "question_sha256": "5488a7e9eeb816e751e05687b8eaccb3a13670fa0f369c0936aa85b2a8ed7d4d",
+  "reference_sha256": "998c31eb8371578c1997cee1c0aaacd811239d380b47eab3eb182fac993df05a",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "3f359f95cc71b0f84141672dc9d130ea6366605830d44a0e4d10a62c80ce53d1",
+  "primary_route": "Direct GSDMD N-terminal membrane action tested by purified protein/defined lipid reconstitution, orthogonal physical permeability and qualified mutant cellular rescue; conditional indirect-effector branch.",
+  "complete_final_answer_read": true,
+  "word_count": 2908,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original Methods, supplements or validated protein/membrane/cell protocols to select and verify transferable conditions. Naming unknown settings and proposing local validation does not meet this separate lookup requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Determine by pilot titration.",
+      "evidence_type": "exact_quote",
+      "reason": "Critical buffer, protein/lipid, time and cell settings are listed as unknown without concrete calibration-to-choice procedures."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No independent free-reporter/protein interference and reference-recovery/acceptance gate with a defined calibration failure action. Orthogonal assays alone do not calibrate the primary fluorescence signal."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent-preparation/culture replication plan tied to a meaningful-effect or precision/power objective and pilot variance."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective randomized/balanced processing, allocation concealment or blinded acquisition/analysis, or justified equivalent."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective technical exclusion, attrition, all-field/trace inclusion and stopping policy preserving biological nonresponses."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No selected primary contrast/time window, statistical model, uncertainty construction and multiplicity procedure."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "across a small lipid panel",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded protein/lipid/condition exploration, objective technical evaluation rule and freeze before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed or ambiguous exploratory work."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "GSDMD-N is upstream, not the direct executioner.",
+      "evidence_type": "exact_quote",
+      "reason": "Effector-loss protection establishes a requirement, not physical agency; the factor can permit direct GSDMD action. Negative reconstitution and partial-versus-complete protection also do not uniquely discriminate the stated models."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Pore-defective N mutants lose both in vitro permeabilization and cellular lysis.",
+      "evidence_type": "exact_quote",
+      "reason": "The mutant bridge lacks explicit preserved mutant folding/solubility/cleavage/localization validation. Expression matching alone cannot distinguish selective loss of membrane activity from generic loss of function."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete construct/protein/lipid/culture-to-raw-acquisition manifest, analysis versions/settings and exclusion provenance."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Relevant defined lipid panel, fractionated purified active protein, binding/assembly/conductance measurements and isogenic cellular rescue. However, the mutant is not sufficiently qualified and the outcome rules mistake cellular requirement for physical execution. Early permeability and terminal lysis are distinguished but do not cure that causal gap.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, intervention and nominal readouts match: direct bilayer question, purified active/inhibited states with lipid panel/mutations, binding/leakage/conductance/assembly and GSDMD-null reconstitution. Mechanism and predicted outcome fail qualification because no preserved mutant folding/activation/localization establishes selective physical activity, while effector-loss protection is incorrectly used to exclude direct execution. Match [true,false,true,true,false], retaining the first-round non-hit.",
+  "item_score": 14.0
+}

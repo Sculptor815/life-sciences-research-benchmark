@@ -1,0 +1,151 @@
+# Claude Fable 5 / inf-r02
+
+Original final answer, shared by both scoring rounds.
+
+# Most Valuable Next Biological Question
+
+**Question.** When a single cell's surface-protein signal and the corresponding transcript signal disagree (e.g., protein-high / mRNA-low, or mRNA-high / protein-low), does that disagreement mark a genuine, reproducible, functionally distinct cell state — or is it an artifact of the different noise and detection properties of the two modalities?
+
+**Why this is the highest-value question given the packet.** The supplied evidence establishes exactly three things: (1) oligonucleotide-tagged antibodies permit linked protein and transcript measurement in the same single cells; (2) the two layers are complementary but have different noise/detection characteristics; (3) neither an optimal integrated representation nor the biological reality of RNA–protein disagreements has been established. Any downstream use of the technology — cell-type discovery, integrated embeddings, biomarker nomination — depends on knowing whether discordant cells are states or noise. An integration algorithm built before this is answered will either smooth away real biology (if discordance is real) or hallucinate cell states (if discordance is technical). The validation question is therefore logically upstream of the algorithmic question and is answerable with experiments, which the algorithmic question alone is not.
+
+---
+
+# Evidence → Inference → Conclusion Chain
+
+1. **Evidence:** Joint measurement is feasible; modalities are linked per cell. → **Inference:** Per-cell RNA–protein concordance can be computed directly, without computational matching across separate assays.
+2. **Evidence:** The two measurements have different noise and detection properties. → **Inference:** Some per-cell disagreement is *expected* purely from measurement physics (antibody background, ambient antibody-tag counts, transcript dropout at low capture efficiency). Observed discordance is therefore a mixture of technical and (possibly) biological components, and the mixture proportions are unknown.
+3. **Evidence:** No benchmark or validation of discordant populations is supplied. → **Inference:** We cannot currently assign any discordant cell to "state" vs "artifact." → **Conclusion:** The decisive next step is a designed experiment that decomposes discordance into technical and biological components using orthogonal (non-oligo-tag) measurements and perturbations, producing ground truth that any future integration method can be benchmarked against.
+
+---
+
+# Competing Mechanisms and Discriminating Predictions
+
+For a focal discordant population — call it **P+R−** (protein-high, transcript-low; the symmetric R+P− case is handled analogously) — the candidate mechanisms are:
+
+**M1. Antibody background / ambient tag counts (technical).** Nonspecific antibody binding, free antibody-oligo in droplets, or Fc-receptor capture creates protein signal without protein.
+*Prediction:* Isotype-control antibody signal and empty-droplet tag counts scale with the P+ signal; an independent antibody clone against a different epitope of the same protein, read by conventional flow cytometry, shows no protein on sorted P+R− cells; spiked-in known-negative cells (e.g., a different species or an epitope-knockout line) show comparable "P+" signal.
+
+**M2. Transcript dropout (technical).** mRNA is present but below detection at the achieved capture efficiency.
+*Prediction:* Sorted P+R− cells show the transcript by sensitive orthogonal assays (RT-qPCR on sorted bulk; single-molecule RNA FISH per cell) at levels comparable to concordant P+R+ cells; discordance frequency falls as sequencing depth/capture efficiency rises; discordance is enriched among genes with low mean counts.
+
+**M3. Temporal decoupling via protein persistence (biological).** The gene was transcribed earlier; mRNA decayed but long-lived surface protein persists — discordance encodes a "memory" of a prior state.
+*Prediction:* smFISH confirms genuine mRNA absence while independent-clone flow confirms genuine protein presence; blocking transcription does not change protein on these cells over the chase window, while blocking translation shows the protein pool is not being actively replenished; in time-course experiments after a stimulus that transiently induces the gene, P+R− cells appear *after* the R+ peak and decay with the protein's measured half-life; discordance magnitude across genes correlates with independently measured protein half-lives.
+
+**M4. Steady-state post-transcriptional/translational regulation (biological).** Persistent cell-intrinsic regulation (translation efficiency, protein stability set-points) holds protein and mRNA at different relative levels indefinitely.
+*Prediction:* Like M3, both signals validate orthogonally, but the discordant state is stable: sorted P+R− cells cultured for multiple protein half-lives remain P+R−; no temporal ordering after stimulus; cycloheximide chase shows active maintenance (protein declines when translation is blocked only if synthesis is ongoing from low but nonzero mRNA — distinguishing a "low mRNA, high translation/stability" regime from pure persistence).
+
+**M5. Extrinsically acquired protein (biological, non-cell-autonomous).** Protein on the surface was acquired from other cells (membrane transfer) or from soluble ligand binding, with no endogenous expression.
+*Prediction:* P+R− cells show no transcript by smFISH *and* no intracellular protein synthesis; in a co-culture where donor cells carry a tagged or allotype-distinguishable version of the protein and recipient cells are genetically unable to express it, recipients become P+; protein on P+R− cells disappears with mild acid wash or protease stripping and does not recover in isolated culture.
+
+**M6. Doublets, aggregates, or cell-cell conjugates (technical/ambiguous).** Two cells in one droplet mix one cell's protein with another's transcriptome.
+*Prediction:* P+R− events are enriched for elevated total counts, mixed lineage transcript signatures, and (in a species- or genotype-mixing design) cross-genotype barcode collisions; discordance frequency scales with cell loading concentration.
+
+These predictions are pairwise discriminating: M1 vs M2 differ in which orthogonal assay (flow vs FISH/qPCR) rescues the "missing" signal; M3 vs M4 differ in temporal stability and chase behavior; M5 is uniquely identified by transfer assays and strippability; M6 by loading-dependence and mixing designs. Mixtures of mechanisms are expected; the design below quantifies each component's share.
+
+---
+
+# Proposed Research Plan (proposal — no results are claimed)
+
+## Stage 0. Prerequisites and scope decisions
+
+0.1 **System.** A cellular system where joint tagged-antibody + transcriptome profiling is already working per the supplied result (assumption: reagents and workflow are reproducible in our hands; this must be re-verified, Stage 1). Choose a heterogeneous population (e.g., primary mononuclear cells from ≥4 independent donors, or an equivalent mixed-lineage system) so that both concordant and discordant populations plausibly exist. *Unreported parameter:* the packet does not state which tissues/panels were used; the plan is written generically.
+
+0.2 **Panel.** 10–20 antibody targets spanning (a) canonical lineage markers expected to be concordant (positive controls for concordance), (b) targets with plausible post-transcriptional regulation or shedding (candidates for real discordance), (c) ≥2 isotype-matched control antibodies with no mammalian target (background controls). *Assumption:* antibody clones validated for flow cytometry exist for each target with at least two independent epitopes — required for Stage 3.
+
+0.3 **Pre-registration.** Before any data collection, write and timestamp: definitions of discordance (below), primary endpoints, analysis code skeleton, stop rules, and sample-size justification.
+
+0.4 **Operational definition of discordance (to be calibrated in Stage 1).** For each cell *i* and gene/protein pair *g*: protein signal above a background threshold derived from isotype controls and empty-droplet tag distributions, AND transcript count below a threshold derived from the gene-specific dropout model at the cell's total depth (P+R−); symmetric definition for R+P−. Thresholds are fixed *before* Stage 2 analysis.
+
+## Stage 1. Calibration of both modalities (technical floor)
+
+1.1 **Antibody titration.** Titrate each antibody over ≥5 concentrations on the target cell mixture; choose the concentration maximizing signal-to-background (positive population vs isotype and vs known-negative lineage). Record staining concentration, cell number, wash count, and buffer — these become fixed protocol constants.
+
+1.2 **Background spike-in.** Spike known-negative cells (different species, or an engineered knockout line lacking the epitope, where available) at ~5% into every run. Their tag counts define the per-run, per-antibody background distribution. *Assumption/limitation:* Fc-receptor biology differs across species; include Fc-block and interpret species spike-ins as a lower bound on background for Fc-receptor-bearing cells.
+
+1.3 **Ambient estimation.** Retain and sequence empty droplets; model ambient antibody-tag and ambient mRNA levels per run.
+
+1.4 **Dropout calibration.** Using the lineage-marker genes with unambiguous expected expression (e.g., a marker that defines a sorted-pure subpopulation), fit a per-run detection curve: probability of observing ≥1 transcript count as a function of expected expression and cell depth. Optionally add synthetic RNA spike-ins at known copy numbers if compatible with the workflow (*unreported whether the original workflow supports this; treat as optional*).
+
+1.5 **Doublet calibration.** Run one lane as a 50:50 mix of two genotypes (or species) to empirically measure the multiplet rate at the chosen loading density.
+
+**Stage 1 pass criterion (gate):** For positive-control markers, protein and transcript must separate known-positive from known-negative lineages with pre-specified effect sizes (e.g., >90% of expected-positive cells above protein threshold; isotype false-positive rate <2% at that threshold). If not met, troubleshoot (titration, blocking, washes, depth) before proceeding; do not use Stage 1 data for biological inference.
+
+## Stage 2. Map discordance and its technical covariates (observational core)
+
+2.1 **Design and independent units.** The biological replicate (independent unit) is the donor/independent culture, not the cell. ≥4 donors, each processed in ≥2 independent runs on different days (donor × day crossed where logistics allow). Randomize donor-to-lane and donor-to-day assignment by pre-generated random sequence. Within each run include: species/knockout spike-ins (1.2), isotype antibodies, and empty-droplet retention.
+
+2.2 **Blinding.** Sample tubes and sequencing libraries carry coded labels; the analyst applying the pre-registered discordance definitions is blinded to donor identity and to any hypothesis about which markers "should" be discordant until the primary tables are locked.
+
+2.3 **Measurements.** Per cell: antibody-tag counts (all targets + isotypes), transcriptome, total depth, mitochondrial fraction (quality), predicted multiplet status.
+
+2.4 **Primary analysis (pre-specified).**
+- Fit a per-antibody background mixture using isotype, spike-in negative, and empty-droplet data; call protein-positive cells relative to this background with a fixed false-positive rate (e.g., 1%).
+- For each P+ cell, compute the probability that the observed transcript count (often zero) is consistent with the gene's expression in concordant P+R+ cells given that cell's depth (dropout model from 1.4). Define P+R− only where dropout probability < a pre-set bound (e.g., <5%).
+- Exclude predicted multiplets; report discordance rates per marker per donor with donor as the unit for confidence intervals (mixed model: discordance ~ marker + (1|donor) + (1|run)).
+- Pre-specified technical covariate tests: does discordance rate correlate with ambient tag level, cell depth, loading density (M1/M2/M6 signatures)?
+
+2.5 **Power (assumption-based, stated explicitly).** Assume a candidate discordant population of ≥2% of cells for at least one marker (assumption, not reported in packet). With ~8,000 analyzed cells per run and 8 runs, we expect ≥1,200 discordant cells per marker — ample for sorting-based follow-up and for estimating rates per donor within ±0.5% absolute. If no marker shows ≥0.5% discordance above the technically-explained floor, trigger Stop Rule S1 (below).
+
+**Stage 2 output:** A ranked list of marker-specific discordant populations with the technically-explained fraction already subtracted, and 1–3 focal populations selected by pre-registered criteria (effect size, reproducibility across donors, sortable by conventional flow).
+
+## Stage 3. Orthogonal validation of focal discordant populations (decisive experiments)
+
+All Stage 3 experiments use conventional (fluorophore, not oligo-tag) readouts to break shared-artifact modes.
+
+3.1 **Sort-and-verify (discriminates M1 vs M2 vs real).** Using a *different antibody clone* with a fluorophore, sort four gates per focal marker: P+R− candidates cannot be gated on RNA by flow, so sort on protein (P+ and P−) and, if an informative co-marker exists, use it; then within sorted fractions measure:
+- Transcript by RT-qPCR (bulk, sensitive) and by single-molecule RNA FISH (per-cell, with per-cell protein immunofluorescence co-stain using the independent clone). smFISH+IF on the same cells is the key assay: it reproduces the joint measurement with entirely independent chemistry.
+- *Predictions:* M1 → independent-clone IF shows no protein on tag-defined P+ cells. M2 → smFISH shows mRNA in tag-defined R− cells at concordant levels. M3/M4/M5 → smFISH-negative, IF-positive cells exist at a frequency consistent with Stage 2.
+- Blinding: smFISH/IF images scored by an observer blinded to gate identity; automated spot-counting with locked parameters.
+
+3.2 **Kinetics and chase (discriminates M3 vs M4).** Culture sorted P+R− and P+R+ cells separately.
+- **Stability time course:** re-phenotype (flow + qPCR) at 0, 1, 2, 4 days. M3 predicts protein decays toward P− with no mRNA reappearance; M4 predicts stable P+R(low) maintained.
+- **Translation block (cycloheximide, short pulse with viability controls):** M4's "low mRNA, high synthesis" regime predicts measurable protein decline during the pulse; M3's "no synthesis, slow turnover" predicts no change beyond constitutive internalization.
+- **Transcription block (actinomycin D or equivalent, short pulse):** distinguishes ongoing low-level transcription from true transcriptional silence.
+- **Stimulus time course (if the focal gene is inducible):** stimulate concordant-negative cells; sample jointly over a dense time course. M3 predicts an ordered trajectory R+ → P+R+ → P+R− → P−R−; M4 predicts no such ordering.
+- Controls: vehicle-treated arms; viability gating; a concordant marker measured in the same cells as an internal clock.
+
+3.3 **Transfer assay (tests M5).** Co-culture protein-expressing donor cells with recipient cells genetically unable to express the target (knockout, or a naturally negative lineage confirmed by smFISH), with donor/recipient distinguishable by a dye or genotype. Measure recipient surface acquisition by flow over hours. Complementary test on ex vivo P+R− cells: mild acid wash / protease stripping, then re-culture in isolation; M5 predicts stripping removes protein with no recovery; M3/M4 predict recovery only if synthesis is ongoing (M4).
+
+3.4 **Multiplet audit (closes M6).** Repeat one joint-profiling run on the sorted P+R− fraction at low loading density with genotype mixing. If "discordance" was multiplet-driven, the sorted, low-density run shows collapse of the signal.
+
+3.5 **Functional distinctness (upgrades "real state" to "meaningful state").** If 3.1–3.4 establish a genuine P+R− state, test one pre-registered functional hypothesis appropriate to the marker (e.g., differential response magnitude to a receptor-ligand stimulus between P+R− and P+R+ cells; readout by flow of an activation marker or by transcriptional response). This is confirmatory, powered on Stage 3.1 effect sizes, with randomized well assignment and blinded readout.
+
+## Stage 4. Deliverable for integration methods
+
+Package the validated labels (per-cell: concordant / technically-discordant / biologically-discordant, with mechanism class) plus the raw joint data as a ground-truth benchmark. Pre-specify the benchmark metric: an integrated representation should (a) not merge validated biological-discordant cells into their concordant neighbors and (b) not split technically-discordant cells into spurious clusters. This directly addresses the packet's second open problem (no optimal integrated representation) using the answer to the first.
+
+## Stop rules
+
+- **S1 (futility, after Stage 2):** If, across all markers and donors, discordance above the technically-explained floor is <0.5% of cells with 95% CI excluding 2%, stop biological follow-up; report that observed disagreements are dominantly technical at current assay performance, and redirect effort to background/dropout modeling.
+- **S2 (artifact, after 3.1):** If independent-clone IF fails to confirm protein on ≥70% of tag-defined P+R− cells for a focal marker, declare that marker's discordance M1-dominated; drop it; proceed with remaining focal markers only.
+- **S3 (safety/quality):** Any run failing Stage 1 gates or isotype FPR >2× calibration is excluded before unblinding; exclusions logged with reasons.
+- **S4 (resource):** Maximum two troubleshooting iterations per failed gate before escalating to protocol redesign.
+
+## Troubleshooting (anticipated failure modes)
+
+- High isotype background on specific lineages → add/extend Fc block; reduce antibody concentration; add wash steps; re-run Stage 1 gate.
+- smFISH probes failing (low signal) → validate probes on a known-positive line first (prerequisite, moved before Stage 3 if risk is high).
+- Sorted P+R− cells too rare/fragile for culture → substitute index-sorting into plates with per-cell qPCR, sacrificing the chase experiments; note that M3 vs M4 then relies on stimulus time courses only.
+- Cycloheximide/actinomycin toxicity confounds chases → shorten pulses, add viability-matched vehicle arms; if unresolvable, rely on the stimulus-ordering prediction for M3/M4 discrimination.
+- Batch confounding (donor×day) → the mixed model absorbs run effects; if a run is an outlier on spike-in background, apply S3.
+
+---
+
+# Outcome Interpretation (conditional; none observed)
+
+**Positive outcome.** Stage 2 finds reproducible discordance above the technical floor; Stage 3.1 confirms protein (independent clone) and confirms transcript absence (smFISH) in the same cells; Stage 3.2–3.4 assign a mechanism (e.g., ordered stimulus trajectory → M3). **Strongest justified conclusion:** for the focal marker(s), RNA–protein disagreement marks a genuine cell state with a specific mechanism, and the joint assay's discordance signal carries biological information (e.g., temporal memory) that RNA alone cannot provide; integration methods must preserve, not regress out, this axis. Generalization beyond the tested markers is *not* justified — discordance must be validated per marker.
+
+**Negative outcome.** Discordance collapses under controls: it tracks ambient/isotype background (M1), disappears at higher capture/depth or is rescued by smFISH/qPCR (M2), or scales with loading and vanishes after sorting (M6). **Strongest justified conclusion:** at current assay performance, apparent disagreements for the tested panel are measurement artifacts; the correct "integration" is a noise model (background subtraction + dropout-aware likelihood), and claimed discordance-defined states in this system should be treated as unvalidated. This is itself a valuable, publishable calibration result and still yields the Stage 4 benchmark (with the "biological" class empty).
+
+**Ambiguous outcomes.**
+- *Partial validation:* independent-clone IF confirms protein in, say, 40–70% of candidates — a mixture of M1 and a real state. Conclusion limited to: a real sub-population exists but its frequency is lower than tag-based estimates; report both bounds.
+- *Mechanism underdetermined:* smFISH-negative/IF-positive confirmed, but chases are confounded by toxicity and no inducible stimulus exists → state is real but M3 vs M4 vs M5 unresolved; report the state with mechanism-agnostic label and the stripping-assay result as the best M5 discriminator.
+- *Donor heterogeneity:* discordance replicates in some donors only → treat donor as a biological variable; conclusion restricted to "state exists in a subset of individuals," requiring a larger donor cohort before generality claims.
+
+---
+
+# Alternatives Considered and Limits
+
+- **Alternative next question — "what is the optimal integrated representation?"** Rejected as first priority because, per the packet, no ground truth exists; any representation benchmark would be circular without the validation data this plan produces. The plan deliberately outputs that ground truth (Stage 4).
+- **Alternative — scale the antibody panel.** Valuable but premature: scaling multiplies unvalidated discordance calls.
+- **Limits.** (i) Conclusions are marker- and system-specific; the packet gives no basis for claiming universal rules linking RNA and protein. (ii) The orthogonal assays have their own failure modes (clone cross-reactivity, FISH sensitivity); hence the requirement for *two* independent confirmations (clone + FISH) before any "real state" claim. (iii) Several parameters (achievable depth, discordant-population frequency, availability of knockout lines and inducible stimuli) are assumptions, flagged above, and Stage 1/2 are designed to measure or replace them. (iv) Everything in Stages 1–4 is proposed; no results are reported or implied.

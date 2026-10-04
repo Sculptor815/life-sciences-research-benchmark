@@ -1,0 +1,101 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "gpt-sol",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:27:21.425550+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "3e90e137058ee997b7bef6962b671c20b043dc6f40a6c80fd02d0821d5528ef2",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 77.5,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "select an experimentally tractable preparation",
+      "issue": "No concrete model, target region, identity assay, recording hardware, reward type/magnitude or initial task settings are selected. The extensive calibration agenda remains short of the requested executable experiment; explicit approval and welfare implementation also remain undeveloped."
+    },
+    {
+      "quote": "Select a reward magnitude that is detectable and motivating",
+      "issue": "Measure actual dispensed amount and variation, not only motivation and discriminability. Timing is well calibrated, but physical reward-volume calibration is not operationalized."
+    },
+    {
+      "quote": "differs from zero in the predicted positive direction",
+      "issue": "This tests a chosen quadratic term against a chosen linear alternative. Add held-out model comparison, learning/belief models and checks for nonlinear subjective value; a significant coefficient does not uniquely identify uncertainty."
+    },
+    {
+      "quote": "Record, where feasible:",
+      "issue": "Movement and anticipatory behavior are central alternatives and should be mandatory adequate measurements or explicit limits on interpretation. The answer acknowledges covariate limits but leaves their measurement implementation optional."
+    },
+    {
+      "quote": "Temporal hazard or timing prediction is the better explanation.",
+      "issue": "A signal can jointly reflect probability and timing. Appearance with uncertain timing does not by itself exclude an independent uncertainty component; compare joint models and prespecified interactions."
+    }
+  ],
+  "rationale": "Substantive historical match: probability grid, intermediate maximum, separate delay/phasic epochs, cue and behavior controls, value-matched and magnitude/timing extensions. Strong causal restraint and noncircular identity criteria. Unselected implementations and incomplete model/measurement validation limit quality.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "represents reward-probability uncertainty, independently of expected reward value",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "maximal near probability 0.5",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "p=0.25",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Middle delay:",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "inverted-U probability relationship",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

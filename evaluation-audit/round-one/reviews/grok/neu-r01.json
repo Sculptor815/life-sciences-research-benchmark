@@ -1,0 +1,100 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "grok",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:32:00.883577+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "3e5021a3e7cd02c2050b075c80f7d3b67fd73a25f129be1d013c8d7284570fde",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "baseline freezing in the first test minute above a locked ceiling",
+      "issue": "The first retrieval-test minute is already an outcome of assigned learning. Excluding high-freezing animals selects on the response, potentially deleting true learning or generalization. Pre-registration and blinding do not remove this bias; retain these outcomes."
+    },
+    {
+      "quote": "Pair greater than light only on A.",
+      "issue": "The core design lacks matched unpaired light-plus-shock exposure. Comparisons with either component alone do not isolate temporal contingency from a combined nonassociative effect. Add the unpaired arm before a pairing-specific claim."
+    },
+    {
+      "quote": "If A labeling is not above those controls",
+      "issue": "Different contexts can recruit equally sized but distinct ensembles. Requiring greater total A labeling than alternate-context labeling confuses population size with context identity; quantify reactivation/overlap instead."
+    },
+    {
+      "quote": "no such pairing-specific overlap pattern in shock-only and light-only arms",
+      "issue": "Natural A can reactivate its tagged ensemble without subsequent shock pairing. Such overlap need not be pairing-specific; use it as population-identity validation rather than a mandatory acquisition signature."
+    }
+  ],
+  "rationale": "Extensive, mostly feasible neutral-context protocol with good phase separation and bounded nulls. Its primary analysis nevertheless selects animals by the retrieval outcome, lacks a matched unpaired arm, and mistakes labeling counts/natural reactivation for pairing-specific evidence. These require material redesign despite strong documentation.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "participate as the conditioned cue in a new association",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Reinstating the context-defined pattern",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "light plus shock in B",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Primary tests are no-light exposures to A and C",
+      "assessment": "Correct historical question and intervention, but the readout/control component is incomplete: outcome selection and absent unpaired exposure compromise the promised context/contingency discrimination."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Pair shows greater freezing in A than in C.",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

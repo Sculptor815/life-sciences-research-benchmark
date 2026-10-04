@@ -1,0 +1,239 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "bio-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:47:49.802997+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c243dfc195d63fedb954a28d7bd8473a0c7f2491c72857b74e82e8a7913d4167",
+  "question_sha256": "d93d3ae3a989ada01328cb28f05820c58b4ff3f4820b238c927b391e7bd7fa22",
+  "reference_sha256": "1e18498facff37adeca34fd379e7bba2833a775fd7b49bc1c8294cec6b9481cd",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "40ff5af1d98df1e1674b81055ba73c34ccd582f514f3f91792ac4579faf3ce41",
+  "primary_route": "Calibrated forced reverse gamma rotation in isolated F1 with ADP/phosphate and direct ATP measurement; motion, direction, enzyme and analytical controls.",
+  "complete_final_answer_read": true,
+  "word_count": 1295,
+  "first_round_scientific_quality": 46.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of primary Methods, supplements or validated mechanical-manipulation/ATP-assay protocols with verification of transfer to this system."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "C4 (No-Substrate Control)",
+      "evidence_type": "exact_quote",
+      "reason": "No catalytically inactive F1 counterfactual, and combined ADP/Pi omission does not establish each substrate requirement. No-F1 and stationary controls alone do not attribute synthesis to active F1."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "applied torque exceeds the theoretical energy required",
+      "evidence_type": "exact_quote",
+      "reason": "Two independent unit errors: torque cannot be directly compared with synthesis energy without an angular work integral; angular position is subsequently assigned degrees/sec, which is angular velocity. These are separate propositions, charged once each."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "saturating concentrations of ADP and Pi",
+      "evidence_type": "exact_quote",
+      "reason": "Substrate, ionic/buffer, temperature, volume and quench/measurement settings have no quantitative values or concrete calibration-to-choice procedure; one proposed speed and duration is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "standard curve mapping luminescence intensity",
+      "evidence_type": "exact_quote",
+      "reason": "Static luminescence calibration ignores reporter ATP consumption, time response and product-recovery mass balance; no independent recovery/interference acceptance and failure rule is given."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "50",
+      "evidence_type": "exact_quote",
+      "reason": "Fifty single molecules are not an identified independent chamber/preparation allocation design; no nesting, pilot variance or precision/power justification."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No randomized/balanced allocation or blinded/coded acquisition and analysis, or justified equivalent."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Prospective quality review is proposed, but operational exclusion thresholds, stopping policy and complete technical attrition versus biological nonresponse accounting are not specified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "repeated-measures ANOVA",
+      "evidence_type": "exact_quote",
+      "reason": "The repeated allocation unit, independence/covariance assumptions, uncertainty and multiplicity procedure are unspecified; a named ANOVA alone does not resolve them."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot ranges or variables are supplied, but no complete bounded exploration and objective setting-selection/lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed/ambiguous exploratory work."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "we conclude that F1 coupling is irreversible or slips",
+      "evidence_type": "exact_quote",
+      "reason": "Verified reverse motion plus an undetectable ATP signal does not establish irreversibility without validated detection sensitivity, chemical conditions and retained catalytic competence. The positive rule also never inventories/exceeds prebound ATP."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational orthogonal chemical identity or synthesis validation beyond the same luciferase signal."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preparation/chamber/raw-trajectory/chemical-sample/calibration manifest linked to analysis versions/settings, deviations and outputs."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference."
+    }
+  ],
+  "deductions_uncapped": 85,
+  "quality_score": 15,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "Empirical direction and the core reverse-work question are clear, and a broken-linkage failure has a proposed repair. Missing catalytic/substrate controls, reporter kinetics, rigorous independent replication and conservative null interpretation prevent the claimed reversal inference.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question and imposed reverse-with-ADP/Pi intervention match. Mechanism, readout and outcome lack active-enzyme controls, each-substrate dependence, net bound-pool accounting and calibrated consuming-reporter production. Match [true,false,true,false,false]; broad topic agreement is not a qualified historical hit.",
+  "item_score": 6.0
+}

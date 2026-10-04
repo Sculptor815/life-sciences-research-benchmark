@@ -1,0 +1,64 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "kimi",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:03:32.532626+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "c0b33c096fc827ad8415f8c3db8aeda96942a9e6ca3b6637864ef3d3b6f0b144",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 86.25,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "Catalytic activity contributes quantitatively, but a noncatalytic function also contributes",
+      "issue": "Partial KD rescue does not uniquely partition catalytic and noncatalytic contributions: incomplete preservation of unmeasured interactions or activity, expression heterogeneity and adaptation remain alternatives. The outcome row should retain this conditional interpretation."
+    },
+    {
+      "quote": "Process all samples rapidly and uniformly using conditions validated to preserve phosphorylation.",
+      "issue": "This is an appropriate handling requirement but not an executable assay workflow. The answer does not select and order phospho-S detection, lysis/quench and specificity-control processing. General workflow detail could be supplied even while K-specific settings await calibration."
+    }
+  ],
+  "rationale": "Strong evidence calibration, functional residual-activity titration, expression matching based on rescue sensitivity, independent biological units, equivalence analysis and separation of ligand-specific growth. The partial-rescue outcome overattributes quantitative mechanism, and the primary assay remains a study-level outline. Most causal safeguards are unusually well developed.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol.",
+    "Protein presence during catalytic inhibition does not establish functional scaffold preservation. Conformation and interactions can change.",
+    "Lack of an inhibitor effect in null cells does not establish selectivity: floor effects and changed dependency can hide off-target actions.",
+    "Do not normalize the pathway endpoint by K abundance across null and rescued cells; division by absent K is undefined and implies an unjustified linear correction.",
+    "Fold-proxy similarity is not proof of identical tertiary structure or preservation of every interaction."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature08833",
+      "use": "Primary evidence that ATP-competitive RAF inhibitors can alter dimerization; protein presence alone does not ensure unchanged interaction functions. Not an assertion that fictional K is RAF."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-017-01274-0",
+      "use": "Primary study of inhibitor-induced RAF conformation and RAS interaction, supporting the need to qualify noncatalytic consequences."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,238 @@
+{
+  "model_code": "grok",
+  "item_id": "inf-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:56:16.303872+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "37feb2a4517d920c36693a76d19401a515124fd368549af328a85fd9e26b2b94",
+  "question_sha256": "defb2d5afa06ce05847814081f892e153c6478b102ec166da9bfa6e92bf0ca27",
+  "reference_sha256": "af8af736b20cfadbc10950d9e83db1e5582000b2afdae0d27e561d3998ee5974",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "a9f482ad27212694b6d74f9436c4ebd5b0f2151236bf82cba4baba7c3d9ab5fc",
+  "primary_route": "Patient-paired multiomic treatment-associated program discovery, assay-specific preprocessing, primary late integration/enrichment and locked external cohort validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2759,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult original assay Methods, supplements or validated analysis protocols and check their transfer to the present inputs."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use frozen quantification pipelines.",
+      "evidence_type": "exact_quote",
+      "reason": "No executable modality-specific normalization/quantification algorithm or explicit candidate set and calibration-to-choice procedure. Technical criteria are useful but do not specify the transformations to run."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Standardize scores using discovery-fold means and SDs.",
+      "evidence_type": "exact_quote",
+      "reason": "The preceding scores are built from paired deltas. Centering those deltas by the discovery mean changes the target to deviation from the discovery response, whereas the external zero test is described as a pre/post change. Preserve the raw paired mean or define a separate sample-level transform; observed-modality averages also require explicit estimand comparability."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Patient bootstrap uncertainty is specified, but pathway testing has no operational multiplicity family/error-control rule; false feature-inclusion calibration does not automatically control enrichment claims."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded feature/penalty/factor/normalization search or concrete range-derivation and stop procedure."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A sample manifest and frozen specification are provided, but immutable raw-input hashes, exact software/environment/seeds and execution commands are absent."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "simulating the observed missingness rates",
+      "evidence_type": "exact_quote",
+      "reason": "Rate-based artificial masking does not assess plausible informative dropout/MNAR. No explicit mechanism-dependent sensitivity/bounding scenario is supplied; batch-aware null restrictions are otherwise stronger than unrestricted paired swaps."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical rerun, output tolerances or runtime/resource/failure/source-difference logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "The reproducible object is a frozen, patient-level pre-to-post score built only from assay blocks whose treatment contrast is separable from batch, internally stable under patient resampling, and tested once on the locked second cohort. Integration constructs that score across incomplete modalities; enrichment interprets or optionally regularizes it; external validation is the only confirmation. Do not call a pathway hit, a joint factor model, or a development-set p-value a reproducible treatment program.",
+      "evidence_type": "exact_quote",
+      "reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Careful non-identifiability reasoning, patient-level resampling, independent cohort governance and explicit limits on causal and integrated claims. Several fitted steps are explicitly fold-restricted, and a post-hoc rescue requires a third cohort. The delta-centering endpoint needs correction; execution/audit and missingness sensitivity remain incomplete.",
+  "item_score": 55
+}

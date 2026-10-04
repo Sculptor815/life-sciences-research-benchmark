@@ -1,0 +1,255 @@
+{
+  "model_code": "deepseek",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:16:18.063078+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9fd0108c07a6e554d10666fd4f82a74a76dd6f52be879ac9e42a086c705c847a",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "bb2897d1d84024a64c7e11f240ca9008e530da3476c4919c9993cb476dd09bbd",
+  "primary_route": "Normal-prior NB estimator with simulations, held-out RNA and optional orthogonal validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2598,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "\\log_2(1.5)",
+      "evidence_type": "exact_quote",
+      "reason": "The NB coefficient is on the natural-log scale in log(mu), but the strong-effect threshold is log2(1.5) or log2(2) without conversion. This changes the biological threshold."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "by empirical Bayes or hierarchical Bayes",
+      "evidence_type": "exact_quote",
+      "reason": "The alternatives are named but no selected estimator, normalization, solver/convergence or concrete calibration-to-setting procedure is supplied."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "difference in mean normalized counts or a rank-based statistic",
+      "evidence_type": "exact_quote",
+      "reason": "These validation quantities cannot be compared in magnitude or plotted on an identity line against training log fold changes. A matched log-ratio estimand and uncertainty are required. Unvalidated genes are also not automatically false positives."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Biological replication is recognized, but a justified meaningful-effect/precision or power calculation and simulation Monte Carlo precision/stopping rule are absent."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational randomized/balanced processing or masked QC/estimator-comparison plan, nor justified equivalent bias control, is specified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Eligibility intent is present but failed-fit/missing-measurement handling, all-eligible denominators and stopping/maximal acquisition rules remain unspecified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable primary method-difference uncertainty procedure and relevant multiplicity/error-control rule is fixed; listing metrics or interval outputs is insufficient."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Sensitivity scenarios are named, but bounded settings or a concrete derivation-and-lock procedure for the essential prior/filter/model choices are absent."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Possible failure modes are named without a diagnostic result linked to an ordered technical repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational iteration policy identifies what stays frozen, what may change and the fresh independent confirmation required after a change."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "low-information raw extremes replicate at \u2264 10%",
+      "evidence_type": "exact_quote",
+      "reason": "The validation success condition requires low-information extremes rarely replicate regardless of whether they are real. Real low-count biology can replicate; the rejection gate must use known-null/error evidence, not reward lack of replication as a universal success."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If FASTQ files are available",
+      "evidence_type": "exact_quote",
+      "reason": "The plan acknowledges counts-only limits, but does not specify an immutable executable environment, full commands, unit-to-library/output mapping and figure-source audit. The conditional raw-read list alone is insufficient."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Permute condition labels",
+      "evidence_type": "exact_quote",
+      "reason": "Unrestricted label permutation can invalidate a paired or batch-adjusted design; exchangeability blocks are not defined. Missing-data rules and composition/outlier stress are also absent."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Figure concepts do not supply numeric source tables plus a clean-environment rerun, numerical tolerances, resource/failure logs and source-difference audit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "No proposed result below has been observed.",
+      "evidence_type": "exact_quote",
+      "reason": "The biological question, prior/noise/dispersion alternatives and count/prior reasoning are explicit, with prospective status and feasibility prerequisites. 2,598 words meet the limit; specific scale/decision defects are charged once to G1/P04/P13."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "calibration slope between 0.9 and 1.1",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth simulation includes quantitative accuracy/false-positive/calibration gates and failure interpretation, satisfying the statistical-calibration structure despite separate endpoint and implementation problems."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Fit the shrinkage model on training only.",
+      "evidence_type": "exact_quote",
+      "reason": "Distinct biological held-out/independent validation is proposed after freezing the model and gene set, with no validation tuning. Measurement-scale incompatibility belongs to P04 rather than another independence charge."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "Fit the shrinkage model on training only.",
+      "evidence_type": "exact_quote",
+      "reason": "Distinct biological held-out/independent validation is proposed after freezing the model and gene set, with no validation tuning. Measurement-scale incompatibility belongs to P04 rather than another independence charge."
+    }
+  ],
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Relevant alternatives and prospective limits, but coefficient-scale conversion, validation estimand and false-positive logic need substantial correction.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question and selective-shrinkage tradeoff align, but the primary estimator retains a Normal prior and no adaptive heavy-tail algorithm is provided. The validation scale mismatch and low-information nonreplication success rule also invalidate the identifying readout/prediction.",
+  "item_score": 8.0
+}

@@ -1,0 +1,62 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "claude-opus46",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:08:42.699960+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "d72006787c2496223a7da292faeea655c1e8269c31ae922cc118260a5b56504b",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "the original reconciliation problem was likely a documentation failure, not a results-altering error",
+      "issue": "A successful new replication cannot establish whether the original allocations were correct or the original errors changed results. Only an original-record audit addresses that question."
+    },
+    {
+      "quote": "No performance deficit with full traceability",
+      "issue": "The proposed decision row treats a new negative result as evidence of the original identity artifact without adequate efficacy, precision and contextual qualification. Traceability alone does not make the biological test decisive."
+    },
+    {
+      "quote": "no compensatory pathway can rescue learning when P is inhibited",
+      "issue": "A scoped necessity claim concerns specified tested conditions; it does not require excluding every possible compensatory pathway or rescue intervention. This imposes an unjustified universal criterion."
+    },
+    {
+      "quote": "benign explanations are plausible and arguably more likely given available evidence",
+      "issue": "The dossier supplies no basis for ranking intent explanations. The table also labels clerical error high-plausibility and other alternatives moderate without case evidence."
+    },
+    {
+      "quote": "the gap is at the level of data provenance rather than experimental logic",
+      "issue": "There is also an unresolved performance-to-learning inference: inhibition timing, sensory/motor effects and retrieval confounds are not supplied. The proposed same-performance replication does not resolve that distinction."
+    }
+  ],
+  "rationale": "Correct local source match and explicit rejection of an automatic misconduct verdict. However, the proposed decisive replication overclaims what it says about original records, alternative probabilities are unsupported, and necessity is defined too universally. The follow-up would not adequately resolve acquisition versus performance.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

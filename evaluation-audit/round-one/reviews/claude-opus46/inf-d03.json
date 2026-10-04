@@ -1,0 +1,61 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "claude-opus46",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.010107+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "2a5d2225f6a818b123861e3982bc24951c55127765eb28962f88a55609fc27e3",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "exact for the donor-level null hypothesis regardless of distributional assumptions",
+      "issue": "This claim requires the actual allocation scheme and a specified sharp null or justified exchangeability. Permuting across donors without preserving the earlier blocked allocation is not generally exact; weak mean-effect nulls also need qualification."
+    },
+    {
+      "quote": "provide distribution-free inference",
+      "issue": "An ordinary cluster bootstrap is not a finite-sample distribution-free guarantee, especially with few donors."
+    },
+    {
+      "quote": "cell-level analysis might be defensible",
+      "issue": "Low estimated ICC does not change the randomized unit or establish independent-cell treatment replication. A defensible model would require explicit assumptions and calibrated assignment-level inference."
+    },
+    {
+      "quote": "Increasing donor n is the only way to gain power.",
+      "issue": "Increasing cells can still reduce measurement error of donor summaries; gains diminish but do not become identically zero merely because ICC is high."
+    },
+    {
+      "quote": "or cross-validation prediction accuracy exceeds chance",
+      "issue": "Predictive performance is not an interchangeable confirmation criterion for a treatment contrast. A held-out comparison must test the same estimand with both arms and calibrated uncertainty."
+    }
+  ],
+  "rationale": "Useful hierarchical design, donor aggregation, reporting, calibration simulations and exact 5-versus-5 allocation count. Incorrect exactness/bootstrap claims, incomplete restricted resampling and conflation of prediction with treatment confirmation require major correction.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

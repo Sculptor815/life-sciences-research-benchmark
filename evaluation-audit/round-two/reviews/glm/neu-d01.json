@@ -1,0 +1,223 @@
+{
+  "model_code": "glm",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:08:24.030668+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7fcabb6c851efd837af771d3dafd8eee827c104381888b95b31740d44f5f7a3f",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "b1b9a196b1b5542b61dcc9094a4abf62f27d202d6e6c7026334bcf5162b6cb38",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 2363,
+  "first_round_scientific_quality": 42.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "no illumination during the ITI",
+      "evidence_type": "exact_quote",
+      "reason": "No off-window illumination condition tests the temporal specificity claim; merely omitting illumination outside retrieval is not a temporal control."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "no carry-over onto subsequent light-off trials would indicate persistent motor disruption",
+      "evidence_type": "exact_quote",
+      "reason": "This time-lock statement reverses the prediction: absence of carryover does not indicate a persistent disruption. It contradicts the following claim that carryover favors slowing."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Inject retrograde vector",
+      "evidence_type": "exact_quote",
+      "reason": "No functional viral dose, delivered amount, expression timing or executable surgical/preparation calibration procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "or a behavioral probe",
+      "evidence_type": "exact_quote",
+      "reason": "Behavioral interruption is allowed to replace physiological inhibition validation. Lowest power/duty and postmortem inspection also do not measure acute heating or establish target-engagement/calibration accuracy."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit primary trial denominator incorporating omissions or rule for corrupted/missing tracking/event measurements."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "number of light-on vs. light-off trials per animal",
+      "evidence_type": "exact_quote",
+      "reason": "Power targets trials rather than the number of independently allocated animals; animal-level variance/precision planning is absent."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "locomotion as a time-varying covariate",
+      "evidence_type": "exact_quote",
+      "reason": "Adjusting post-treatment movement does not identify a retrieval-specific effect without causal assumptions. No uncertainty intervals/multiplicity procedure support the multiple claims."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "guarantees the animal's P\u2192other projection is untouched",
+      "evidence_type": "exact_quote",
+      "reason": "Projection-defined somatic expression does not spare collaterals of those same cells. O2 provides access to Q-projecting neurons, not exclusively Q-projecting neurons."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "sweeping intensity and pulse protocol",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded intensity/duty exploration or independently defined physiological acceptance before lock; behavioral suppression is an allowed tuning target."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Repeat-after-repair lacks explicit refreeze and fresh independent confirmatory data."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "no significant light-on effect",
+      "evidence_type": "exact_quote",
+      "reason": "Nonsignificance of controls does not establish negligible sensory/motor effects; no equivalence or meaningful-effect bounds define the necessity decision."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "use as a confirmatory follow-up only",
+      "evidence_type": "exact_quote",
+      "reason": "Terminal inhibition is only named, without an operational independently validated protocol. The primary soma result therefore lacks a valid orthogonal pathway test."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Trial/light logs are useful but no complete raw file, stable identifier, calibration and exact processing/code/environment provenance manifest."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Necessity of the P\u2192Q Projection During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion."
+    }
+  ],
+  "central_false_premise": "The answer explicitly guarantees that P-soma inhibition of Q-projecting cells leaves P-to-other output untouched. Those neurons may collateralize; the primary pathway-isolation premise is false and invalidates its projection-specific recommendation.",
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 1,
+    "evidence_grounding": 4,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 50.0,
+  "explanation_reason": "Proposed randomized blinded animal/trial study with matched reporter and other-projection groups, postmortem targeting checks, movement/light probes and practical diagnostics. The central assertion that somatic projection-defined inhibition spares collateral output is false. Time-lock, post-treatment adjustment and null-control logic are also flawed, each charged under its specific criterion.",
+  "item_score": 20
+}

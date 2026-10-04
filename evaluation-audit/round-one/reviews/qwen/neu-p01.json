@@ -1,0 +1,46 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "qwen",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:09:20.364963+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "a8c2d7ae874f39dbac254d867e12fca051ff1453c6682bb001da6150878d5838",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 98.75,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Final conclusion",
+      "issue": "The answer contains 1685 whitespace-delimited words against a 1500-word limit and repeats the same identity/uncertainty conclusions across several sections. This is a communication deduction only; its central scientific argument and audit are sound."
+    }
+  ],
+  "rationale": "Carefully separates metadata identity from animal provenance, unverified from false, and notice status from intent. Explains allocation, duplication and denominator errors conditionally, identifies behavioral alternatives, and specifies a record-linked reanalysis that could disconfirm the particular concern. Minor excess length and repetition.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,55 @@
+{
+  "item_id": "inf-p01",
+  "model_code": "kimi",
+  "response_id": "inf-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:53:40.337569+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "b4b18eadc86804d26851a3f2e4b0adc4e4e909303238e26cc9f9d49a6c460cba",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 95.0,
+  "reasoning_index": 93.75,
+  "errors": [
+    {
+      "quote": "an intent-to-deceive concern would be disproved",
+      "issue": "A template or citation-manager trail can support an accidental-error explanation but does not conclusively establish all motives. Use narrower language tied to the observed history."
+    },
+    {
+      "quote": "seek replication in an independently ascertained sample",
+      "issue": "The answer correctly checks within-stratum overlap and recognizes non-identifiability. Complete the operational branch by specifying balanced case-control processing in the replication/resequencing design when the original strata lack both groups."
+    }
+  ],
+  "rationale": "Strong case-specific analysis, explicit missing-information limits, non-overlap recognition and a well-designed stratified/permutation check. Minor improvements concern the repair branch for absent overlap and avoiding a categorical conclusion about intent from document history.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The exact frozen question, full reference answer and full received final answers were read. This is a conceptual essay, not a demand for a complete executable sequencing protocol.",
+    "C2 affirmatively identifies a synthetic training record. No real publication or researcher is accused. A missing lookup or N1 alone would not establish invention or deceptive intent.",
+    "Reference required concept rc6 incorrectly says an all-annotated background always inflates significance. The full reference correctly allows either direction; no bias direction is identifiable from this packet.",
+    "Assess center-by-phenotype overlap rather than silently assuming either complete confounding or sufficient overlap. Covariate adjustment cannot recover an absent comparison.",
+    "Center-specific filters can yield equivalent effective detection. Unreported coverage, relatedness or adjustment is not evidence of their absence or failure.",
+    "A disappearing p-value after restriction does not prove artifact: evaluate effects, precision, power and estimand. A persisting calibrated association does not establish the pathway mechanism.",
+    "Benign alternatives include safeguards or true biology as well as non-malicious analytical mistakes. A negative-control result alone need not exclude bias in a different variant class.",
+    "Frozen keys and response records remain unchanged; these corrections are transparent reviewer metadata. No raw-data reanalysis was performed."
+  ],
+  "review_sources": [
+    {
+      "title": "gnomAD v3.0 release methods overview",
+      "url": "https://gnomad.broadinstitute.org/news/2019-10-gnomad-v3-0/",
+      "scope": "Reviewer read joint-genotyping and sample/variant QC overview, including ancestry, coverage and relatedness. Background support only; no validation of the invented dossier, no universal numerical thresholds imported."
+    }
+  ],
+  "overall_benchmark_score": null
+}

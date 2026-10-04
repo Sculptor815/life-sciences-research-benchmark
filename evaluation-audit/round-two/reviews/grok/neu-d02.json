@@ -1,0 +1,222 @@
+{
+  "model_code": "grok",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:30:20.181720+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "ed721fd57f8e659735f6eb1eac1e00af00d7b87e7fc386776ed70697114a96c4",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "1d696b83d70b714356de9cbc30c6eafc5fb10df2ee26a8a9d918ae614796d96e",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3749,
+  "first_round_scientific_quality": 75.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Returned answer has 3,749 whitespace-delimited words, exceeding the 3,500-word limit by 249 words."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No concrete preparation/delivery quantity and expression timing, or calibration-to-choice procedure for producing the biological indicator preparation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Structural calcium independence and channel separability are assumed rather than tested with independent activity/single-label controls and an interference acceptance gate; synchronized recording also lacks a measured clock-error gate."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "False-event time normalization is present, but unique event-to-spike matching and electrically silent windows separated from residual calcium decay are unspecified."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal independence is correct, but recruitment until confidence intervals are narrow lacks a pilot variance-to-animal allocation plan and a specified sequential-coverage procedure."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Stimulus-versus-blank contrasts and partial associations lack a defined response test and multiplicity procedure for the visual-response claims."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Training re-lock after diagnostic changes is proposed but a fresh independent confirmation set after a failed validation is not required."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Define baseline from electrode-silent",
+      "evidence_type": "exact_quote",
+      "reason": "Validation preprocessing can use its electrical labels to select baseline frames; the rule is not confined to calibration cells or a distinct predeclared calibration block. The alternative pre-stimulus option does not prescribe a leakage-free choice rule."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No raw-file/sample/event provenance linkage and complete code/environment/processing version manifest."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed. Do not treat fluorescence amplitude, detected events, or visual-related transients as spike counts until a held-out paired calibration in the target cell type meets the gates in this protocol. Exact indicator identity, expression level, spike numbers, imaging rates, and analysis thresholds are unreported and must be estimated here; they are not filled in from the source.",
+      "evidence_type": "exact_quote",
+      "reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "A thoughtful proposed inverse-problem calibration, explicit somatic/spine limits, animal-level split, blinded/randomized blocks, known focus shifts and bounded pilot-spread coefficient grid. Failure-to-restricted-claim decisions and the ban on discarding inconvenient validation strata are useful. Some executable preparation, metric and independent confirmation details remain missing.",
+  "item_score": 45
+}

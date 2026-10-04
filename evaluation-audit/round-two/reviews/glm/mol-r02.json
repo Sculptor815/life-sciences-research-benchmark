@@ -1,0 +1,239 @@
+{
+  "model_code": "glm",
+  "item_id": "mol-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:37:46.849153+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "99da38279fd27104a318c8b6169b12a68d4a3518de0d5f97801a5a8d8cee4e47",
+  "question_sha256": "18ef4462f4f6072b5cde3b86e735cd54dcfe8ff2616e3905276a619a2e8bee05",
+  "reference_sha256": "da4f395c3ac28e425be90cad5a96348ce8907930151791cf1c9eb7010890b847",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c8cca2c999e410f75f85149ebc9050a4647af7e8d883b19e2afd62f67a844c11",
+  "primary_route": "Factorial irradiation/repair-rate/external-delay study of time-versus-residual-damage release with genotype rescue.",
+  "complete_final_answer_read": true,
+  "word_count": 3481,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The central repair/conditional-switch/damage-assay technologies and operating conditions remain unspecified without a concrete tool-selection and quantitative calibration-to-execution procedure. Qualitative validation gates do not make the proposed main intervention directly executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Damage/measurement calibration names background, dynamic range or controls but does not supply quantitative acceptance thresholds or a concrete procedure to derive tolerances and act on failed calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Residual DNA damage at defined times.",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative lesion units, normalization, detection floor or rule for weak/saturated/missing assay signals is specified. Division timing is defined, but the independent damage axis is essential to the primary decoupling claim."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use a pilot variance estimate",
+      "evidence_type": "exact_quote",
+      "reason": "No meaningful effect or target power/precision completes the proposed pilot-based calculation; a minimum of 3-6 cultures is not a justification."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Final n should be set before unblinding.",
+      "evidence_type": "exact_quote",
+      "reason": "Setting n only before unblinding does not lock confirmatory acquisition before outcomes accrue. Observation horizon, attrition/all-assigned denominators and efficacy-independent stopping remain incomplete despite technical-stop lists."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use time-to-event models",
+      "evidence_type": "exact_quote",
+      "reason": "Model family/assumption checks, competing-death handling, confidence procedure and multiplicity are unspecified. Residual damage/time model comparison has no operational metric."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dose/duration/switch parameters are described as a range or to be calibrated without a bounded ladder or a concrete range-derivation and acceptance-to-lock procedure. This differs from independent assay calibration in P03."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting and pilot separation are present, but no explicit change-control policy requires re-freezing the revised procedure and fresh independent confirmation after technical changes."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "use stronger orthogonal repair perturbations",
+      "evidence_type": "exact_quote",
+      "reason": "Orthogonal repair perturbations/readouts are proposed as later troubleshooting but not specified as an independent confirmation with a defined implementation/decision; merely requiring a repair measure distinct from survival is insufficient."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "M",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "must be obtained or re-established empirically",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly obtaining the missing original external-delay method and validating its transfer satisfies M. Genotype confirmation/complementation, sham, repair-perturbation and delay-only controls are planned. The alternative time-versus-repair question, scope and causal caveats are sound; 3,481 words satisfy format."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Make the experiment auditable",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized balanced coded cultures and blinded scoring, explicit problem/cause/remedy sequences, technical stops and discriminating bounded conclusions are present. "
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Make the experiment auditable",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized balanced coded cultures and blinded scoring, explicit problem/cause/remedy sequences, technical stops and discriminating bounded conclusions are present. "
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Make the experiment auditable",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized balanced coded cultures and blinded scoring, explicit problem/cause/remedy sequences, technical stops and discriminating bounded conclusions are present. "
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw movie/lineage/assay identifiers, exact analysis versions/settings and source-to-output records sufficient to reconstruct the study are not specified as a complete audit trail."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Good alternative decoupling logic and explicit source-method recovery, with substantial unresolved assay/statistical/confirmation details. Model preference remains conditional on actually decoupling time and damage.",
+  "historical_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+  "item_score": 20.0
+}

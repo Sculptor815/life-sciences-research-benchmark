@@ -1,0 +1,72 @@
+{
+  "item_id": "mol-k02",
+  "model_code": "qwen",
+  "response_id": "mol-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:28:51.224949+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "12b56a14c2e8bc83d626968987c0985adf380399d26d09f52066497e78d5acd1",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 61.25,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "within typical quantification noise",
+      "issue": "No noise estimate is supplied. Near-equal bar heights support a small nominal difference, not formal equivalence."
+    },
+    {
+      "quote": "a verified null (genomic + mRNA) in which an epitope-independent antibody still detects 50 kDa",
+      "issue": "Genomic/mRNA checks alone do not establish absence of all relevant protein; the second antibody can also cross-react. Its persistent band does not automatically falsify the first antibody's target assignment."
+    },
+    {
+      "quote": "Any single one of these falsifies I1",
+      "issue": "The listed MS/rescue/second-antibody results are not individually decisive. A mixed gel region, failed rescue expression or distinct second-antibody epitope can explain them; moreover I1 is genotype dependence, which could remain true even if identity is wrong."
+    },
+    {
+      "quote": "the 75 kDa band is excluded as target signal.",
+      "issue": "The summary cannot exclude a target component within a mixed band, compensation or saturation. The answer names assumptions but does not establish this stronger exclusion; keep the conclusion at weaker genetic support."
+    },
+    {
+      "quote": "Immunogen/peptide competition abolishing the 50 kDa band.",
+      "issue": "Blocking can also eliminate a cross-reactive shared-epitope signal. This supports epitope recognition, not independent endogenous protein identity."
+    },
+    {
+      "quote": "Overexpression increasing the 50 kDa band",
+      "issue": "Prefer physiological/endogenous expression with tag/function controls. Overexpression may mask off-target binding or restore downstream proteins, so it needs limits alongside the listed positive prediction."
+    }
+  ],
+  "rationale": "Correct quantitative contrast and many relevant alternatives, but the proposed falsification rules repeatedly conflate genetic dependence with direct identity. Protein-null verification, mixed-band MS and competing antibody/peptide evidence require more cautious interpretation. The answer is usable as a starting plan after substantial correction of its decision rules.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Codex personally read all twelve complete final answers, exact question and packet, full reference and displayed synthetic figure. No hidden reasoning, paid judge, laboratory experiment or candidate web access was used.",
+    "The chart gives approximate 100-to-5 signal at 50 kDa and 95-to-93 at 75 kDa, with equal loading and validated KO as stated premises. The relative genetic support favors 50 kDa; it does not establish direct antigen identity or universal antibody specificity. Small numerical approximations do not change this qualitative comparison.",
+    "Reference correction: no complete coding-sequence deletion is specified in the candidate packet. The sealed logic chain assumes one, but the figure only says validated KO. Escaping isoforms are legitimate conditional alternatives when the validation scope is unknown.",
+    "Reference correction: the candidate was not shown the draft-key editorial status or original multiple-choice distractors. Do not require mention of a draft key, expert-review status or rejection of choices absent from the open question.",
+    "Reference correction: a target-derived modified species cannot persist after confirmed complete protein elimination merely because it is modified. A persistent band may contain a separate comigrating protein; distinguish that from residual/escaping target and incomplete null validation.",
+    "Summary bars do not reveal n, statistical equivalence, noise, raw-blot integrity or normalization method. Equal loading is a premise here, not proof of equal extraction/transfer. Expected sequence mass alone cannot reverse the observed ranking.",
+    "Rescue strengthens genetic dependence but may also restore downstream proteins. Failed rescue needs verified expression, relevant isoform, epitope, localization and processing. Genetic or RNA loss alone need not prove protein-null status.",
+    "MS can establish target presence while a comigrating species or indirect interactor generates antibody signal. Non-detection requires sensitivity and peptide coverage before being decisive. Peptide blocking can affect shared epitopes and does not independently prove endogenous identity.",
+    "The original frozen reference and candidate records are preserved. Corrections are disclosed here and applied consistently. Reviews are unblinded single-AI provisional assessments, not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Uhlen et al. (2016), A proposal for validation of antibodies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+      "scope": "Read the genetic, independent-antibody, tagging, immunocapture-MS and additional-characterization sections. They support application-specific validation and note indirect capture, tag artifacts and peptide-blocking limitations. No supplementary audit or experimental replication performed."
+    }
+  ],
+  "overall_benchmark_score": null
+}

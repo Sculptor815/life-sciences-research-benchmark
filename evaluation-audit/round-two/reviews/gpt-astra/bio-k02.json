@@ -1,0 +1,134 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "bio-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:13:41.750078+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "98e270525d3a5ebf0be90ce8e6ef5d8c0be512006cd71943cd63db2515e55677",
+  "question_sha256": "d576679cb0522006ae6a3f256e6d4d1ed7180289149160eaf9054837dc1f2a1e",
+  "reference_sha256": "537c9e482a9662f10c65fb2f21594beb86fbd037d481e97efd72e3c550773802",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "78744c0352006ef86b999cac6cee381cddb9a3a6382e558996ffb37114c88715",
+  "primary_route": "Global kinetic matrix, time/recovery tests, product controls and proposed orthogonal assays.",
+  "complete_final_answer_read": true,
+  "word_count": 1086,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Use enzyme-free and substrate-free controls, product-spike controls",
+      "evidence_type": "exact_quote",
+      "reason": "Defines enzyme-free/substrate-free negative conditions and product-spike positive/detection controls with their artifact-discriminating roles before collection."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "competitive-type kinetic pattern",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution plan to consult prior Methods/supplements or validated protocols and verify transfer."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "competitive-type kinetic pattern",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete matrix-matched detector/product calibration with acceptance criterion and failed-calibration action. Model fitting or progress-curve checks do not replace it."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "competitive-type kinetic pattern",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Parameter values and rate units are described, but the proposed measurements lack baseline correction and weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "which is not generally the substrate dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate graphical values, equations and distinction between kinetic classification and physical binding location; includes alternative mechanisms and model limits, labels proposed work and respects format."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "which is not generally the substrate dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate graphical values, equations and distinction between kinetic classification and physical binding location; includes alternative mechanisms and model limits, labels proposed work and respects format."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "which is not generally the substrate dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate graphical values, equations and distinction between kinetic classification and physical binding location; includes alternative mechanisms and model limits, labels proposed work and respects format."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "which is not generally the substrate dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate graphical values, equations and distinction between kinetic classification and physical binding location; includes alternative mechanisms and model limits, labels proposed work and respects format."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "which is not generally the substrate dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate graphical values, equations and distinction between kinetic classification and physical binding location; includes alternative mechanisms and model limits, labels proposed work and respects format."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "which is not generally the substrate dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate graphical values, equations and distinction between kinetic classification and physical binding location; includes alternative mechanisms and model limits, labels proposed work and respects format."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "which is not generally the substrate dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate graphical values, equations and distinction between kinetic classification and physical binding location; includes alternative mechanisms and model limits, labels proposed work and respects format."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "A poorly constrained plateau",
+      "evidence_type": "exact_quote",
+      "reason": "Gives supportive and falsifying parameter/residual outcomes, an ambiguous plateau and separate slow-off-rate/irreversibility possibilities."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "an orthogonal product assay",
+      "evidence_type": "exact_quote",
+      "reason": "Independent product or structural validation is named but no selected orthogonal measurement/comparison procedure is described; mutagenesis caveats are sound but do not make the assay operational."
+    }
+  ],
+  "deductions_uncapped": 25,
+  "quality_score": 75,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Accurate model and location distinctions, with detailed failure predictions; strict measurement implementation omissions are scored separately.",
+  "item_score": 75
+}

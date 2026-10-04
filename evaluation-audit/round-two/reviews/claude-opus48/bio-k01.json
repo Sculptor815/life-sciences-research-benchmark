@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "bio-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:03:26.912443+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "990c58c282ae02e041e073f4e77789655de5444a677fd8e411a5a1da655438cd",
+  "question_sha256": "e5a45dec0d2517d68cec2cb721477e214452d8543683d6d377e1be872cfc40d4",
+  "reference_sha256": "425acfdd9f006f0f842223fef2b6ad93f510268641fee28dd344f907f5ecda04",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "965b51d5a3b08055a0f8388e78bb29d5c9be75d2aedf607c0a81c071e3df59cf",
+  "primary_route": "Early progress curves, enzyme loading and multiple-substrate inhibition kinetics.",
+  "complete_final_answer_read": true,
+  "word_count": 941,
+  "first_round_scientific_quality": 95.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Doubling [E] should double v.",
+      "evidence_type": "exact_quote",
+      "reason": "No prospective no-enzyme/no-substrate background and known-response/procedural controls with their roles; changing enzyme or adding product does not define those controls."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The initial rate is v = 30 nmol/min.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation and transfer-check of prior Methods or validated protocols."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The initial rate is v = 30 nmol/min.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No detector reference calibration with acceptance limits and failed-calibration action; progress-curve shape is not a product-recovery calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The initial rate is v = 30 nmol/min.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Rate units and a depletion bound are given, but no baseline-corrected measurement specification with weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The initial rate is v = 30 nmol/min.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent product/readout validation; repeated time points and enzyme titration retain the original detector artifact."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "deviation (curvature) marks the end of the valid window.",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit linearity/depletion and failed-regime alternatives determine whether the predicted initial rate can be used."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation with the two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct amount-rate derivation and assumptions, two-parameter non-identifiability, synthetic-data limits and proposed window/enzyme checks; no invented measured precision and within the word limit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation with the two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct amount-rate derivation and assumptions, two-parameter non-identifiability, synthetic-data limits and proposed window/enzyme checks; no invented measured precision and within the word limit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation with the two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct amount-rate derivation and assumptions, two-parameter non-identifiability, synthetic-data limits and proposed window/enzyme checks; no invented measured precision and within the word limit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation with the two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct amount-rate derivation and assumptions, two-parameter non-identifiability, synthetic-data limits and proposed window/enzyme checks; no invented measured precision and within the word limit."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation with the two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct amount-rate derivation and assumptions, two-parameter non-identifiability, synthetic-data limits and proposed window/enzyme checks; no invented measured precision and within the word limit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation with the two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct amount-rate derivation and assumptions, two-parameter non-identifiability, synthetic-data limits and proposed window/enzyme checks; no invented measured precision and within the word limit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation with the two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct amount-rate derivation and assumptions, two-parameter non-identifiability, synthetic-data limits and proposed window/enzyme checks; no invented measured precision and within the word limit."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Sound derivation and identifiability reasoning, with strict operational omissions scored separately.",
+  "item_score": 65
+}

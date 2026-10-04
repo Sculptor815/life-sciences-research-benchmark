@@ -1,0 +1,96 @@
+{
+  "item_id": "bio-r01",
+  "model_code": "grok",
+  "response_id": "bio-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:14:35.165480+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "fc360e77d5e320b7fe6402fb4492b641951bf2a3ea1656ba411388e434fe82bc",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "If steps are absent or much smaller than the dominant angular period of this construct, bead angle is not gamma angle",
+      "issue": "Lack of resolved steps can arise from load, bandwidth, low signal or enzyme state. It does not prove mechanical decoupling. Use direct compliance/occupancy measurements and distinguish an unresolved linkage check from evidence of failure."
+    },
+    {
+      "quote": "Signal is abolished by the kinase inhibitor while hydrolysis rotation of F1 survives: the ATP was not made by F1 synthesis.",
+      "issue": "Preserved hydrolysis does not exclude an inhibitor effect on the reverse catalytic states or product assay. Validate synthesis-direction specificity and orthogonal nucleotide balance before attributing the signal to adenylate kinase."
+    },
+    {
+      "quote": "Failure in tier 2 with success in tier 1 supports gating or equilibration, not full reversible work transduction.",
+      "issue": "A tier-2 null can reflect insufficient transmitted work, changed catalytic occupancy, sensitivity or a limited operating range. It does not positively identify gating without those controls; the later conditional-negative section is better qualified."
+    }
+  ],
+  "rationale": "Strong two-tier separation of vectorial chemistry from uphill energy conversion, measured bound inventory, quench recovery, actual trajectories and independent preparations/chambers. The main flaws are categorical step-based linkage rejection and using hydrolysis preservation to prove inhibitor specificity for synthesis. Extensive length remains within the 5000-word limit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The packet establishes ATP-associated directional motion, not an ATP-per-turn yield, torque, universal camera sign or completed reverse-synthesis experiment. Proposed numerical settings may earn credit when explicitly qualified.",
+    "Correct the draft reference by explicitly requiring magnesium/cofactor and nucleotide speciation qualification; its generic reaction inventory is not a complete buffer recipe.",
+    "Reverse operation should generate new ATP repeatedly beyond measured initial available/bound pools. Three catalytic sites are not a universal total ATP-contamination bound.",
+    "Luciferase is an acceptable chemical readout when its consumption, recovery and time response are calibrated. An intensity slope is not generally synthesis flux; chromatographic detection is an alternative, not mandatory.",
+    "Label incorporation can reflect exchange. Pair isotope provenance with net-product/material balance; account for reporter consumption and sample removal as appropriate.",
+    "Empirical direction, mixed surface orientations, actual rotor turns and transmitted torque are distinct quantities. Do not replace any with the nominal actuator command.",
+    "Mechanical input can drive ATP synthesis uphill. Low initial ATP may aid sensitivity but does not prove positive chemical-energy storage; energetic efficiency needs both work and chemical free energy.",
+    "ATP per turn is a coupling yield, not energetic efficiency. Inactive fractions, orientation, incomplete entrainment and analytical recovery can reduce apparent yield without establishing loose molecular coupling.",
+    "Separate ADP and phosphate controls help discriminate intended synthesis from alternative ATP production. Inhibitor effects require assay and enzyme specificity validation.",
+    "Matching is retrospective and applies all five predeclared components. A partially correct historical direction is recorded even when the experimental design is flawed; no claim of prospective novelty or uncontaminated holdout is made."
+  ],
+  "review_sources": [
+    {
+      "title": "Itoh et al. (2004): mechanically driven ATP synthesis by F1-ATPase",
+      "url": "https://www.columbia.edu/cu/biology/courses/w4070/Reading_List_Fernandez/ATP_synthesis_F1.pdf",
+      "scope": "Reviewer read main text, figure captions and Methods. Supports the reverse-rotation historical target, with documented orientation and reporter-response limitations. Supplements and numerical reanalysis remain unaudited; not provided to candidates."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Can an externally imposed rotation of gamma",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Synthesis-direction work drives ADP + Pi → ATP.",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Impose synthesis-direction rotation",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Sample chemistry at epoch boundaries",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Omit-ADP, omit-Pi, no-F1, wrong-attachment, denatured, and catalytic-mutant arms do not show the increase.",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

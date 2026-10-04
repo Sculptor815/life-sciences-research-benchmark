@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:16:56.262892+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "8442ed3e784270f8847df655702f95e21267b619f3151d3aad1d764488193581",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "ed6c3ab5f4df6d8994130c943af700d871958fbb07c7e1536851792bc3095d23",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3882,
+  "first_round_scientific_quality": 83.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Returned answer has 3,882 whitespace-delimited words versus the frozen 3,500-word limit, a material overrun."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No concrete indicator expression/preparation route, functional delivered quantity or calibration-to-choice procedure for constructing the recording preparation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "another validated 3D registration method",
+      "evidence_type": "exact_quote",
+      "reason": "No known-displacement recovery test, structural-channel activity/cross-talk calibration or quantitative electrophysiological accuracy gate. Naming a validated method does not establish this preparation's measurement performance."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "False-positive rate",
+      "evidence_type": "exact_quote",
+      "reason": "Performance metrics are named, but valid-time/window denominators and missing-frame/ground-truth duration accounting are not specified sufficiently to reproduce false-positive estimates across censored recordings."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prospectively defined number of animals",
+      "evidence_type": "exact_quote",
+      "reason": "The hierarchy is correct, but no pilot variance-to-independent-animal precision/power procedure determines that number."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "predefined agreement",
+      "evidence_type": "exact_quote",
+      "reason": "No actual visual-response test, comparison statistic or multiplicity procedure; listing alternative classifiers/regressions does not define this primary agreement analysis."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified plausible correction coefficients",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded coefficient/model exploration or rule deriving parameter bounds and search stop before lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot/train/test separation is good, but changes after a validation failure are not explicitly refrozen and tested on fresh independent data."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw traces/masks are retained, but no full stable identifier linkage and exact acquisition/processing/code/environment version manifest."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol for a genetically encoded calcium indicator (GECI)",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Clear proposed somatic ground truth with actual spike labels, type/compartment limits, blinded randomized blocks and independent validation partitions. It recognizes nonlinear history/expression effects and keeps saturation as a restricted-range outcome rather than a precise count. Structural volumes, neuropil alternatives and paired visual evidence address artifacts; technical exclusions and diagnostic repairs are useful. The operating workflow and quantitative acceptance/audit details remain incomplete.",
+  "item_score": 45
+}

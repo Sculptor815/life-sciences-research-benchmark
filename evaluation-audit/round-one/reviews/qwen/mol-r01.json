@@ -1,0 +1,118 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "qwen",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:29:35.554451+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "6212003058b4b98ee2dc587471d3ba49aeb1e3b6e5a369f658acb1425162e19a",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 61.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "GSDMD-N is not the terminal membrane-disrupting agent under these conditions.",
+      "issue": "The proposed protein-fraction dependence and cellular epistasis do not distinguish a permissive protein from a physical executor. The answer explicitly allows protein chaperones earlier, making this final exclusion inconsistent with its own alternatives."
+    },
+    {
+      "quote": "Measure fluorescence change over time and normalize to detergent-induced maximal release.",
+      "issue": "The outline lacks an explicit free-reporter optical-interference control and a defined independent-preparation/primary-contrast/exclusion analysis. It does provide protein-only pelleting controls; those do not resolve the separate leakage and statistical gaps."
+    },
+    {
+      "quote": "If mutations or conditions that prevent oligomerization also prevent permeabilization, oligomerization is causally implicated.",
+      "issue": "Co-loss is not specific without showing binding, folding and other relevant functions remain intact for that perturbation. Later cellular folding checks help but do not fully validate this oligomerization inference."
+    },
+    {
+      "quote": "Final conditional recommendation",
+      "issue": "The final answer contains 5218 whitespace-delimited words against a 5000-word limit and repeats the design and outcome matrices. Communication deduction only."
+    }
+  ],
+  "rationale": "Broad, scientifically relevant design with proper folding checks, protein-only binding controls, separate cytokine measurements and attention to secondary rupture. The major central error is exclusion of direct GSDMD execution from add-back dependence; the leakage/statistical protocol remains incomplete and the answer exceeds the stated word limit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The fixed packet establishes genetic/cleavage dependence, not physical membrane agency. Do not require knowledge of later results, residue numbers, lipid ratios or historical instrument settings.",
+    "A protein requirement or co-reconstitution establishes dependence, not the identity of the lesion-forming component. A permissive cofactor can support direct GSDMD action.",
+    "Negative artificial reconstitution is qualified evidence, not proof of indirect action. An assay-positive control does not validate the test protein or all relevant membrane conditions.",
+    "Direct permeability, terminal rupture and cytokine release are distinct. Sufficiency in a minimal membrane need not exclude later cellular executors.",
+    "Trans inhibition by an isolated domain is conditional; intact-protein autoinhibition does not require it.",
+    "Historical direction is scored separately from study quality. Five target components are conjunctive within each component; a full Hit@1 requires all five. Equivalent cellular functional-complementation designs count as rescue.",
+    "Historical matching is not prospective novelty: source identifiers are visible and no exhaustive earlier-public-disclosure audit exists. Full source methods have not been independently audited.",
+    "The later paper erratum corrects a typeset received date from 2015 to 2016; it does not change its June 2016 publication date or report a biological-result correction."
+  ],
+  "review_sources": [
+    {
+      "title": "Original GSDMD cleavage study",
+      "url": "https://www.nature.com/articles/nature15514",
+      "scope": "Primary abstract and publication metadata"
+    },
+    {
+      "title": "Later gasdermin pore/autoinhibition study",
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary abstract, author metadata and accessible extended-figure captions; full methods not audited"
+    },
+    {
+      "title": "Later-paper erratum",
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher erratum text: received-date typesetting correction only"
+    },
+    {
+      "title": "NINJ1 and terminal membrane rupture",
+      "url": "https://www.nature.com/articles/s41586-021-03218-7",
+      "scope": "Post-cutoff primary abstract supports reviewer distinction of permeability and rupture; candidate is not required to name NINJ1"
+    },
+    {
+      "title": "Direct inhibition of GSDMD by necrosulfonamide",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6462819/",
+      "scope": "Post-cutoff primary abstract; confirms why target specificity controls matter, not required candidate foreknowledge"
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Direct membrane action by cleaved GSDMD-N",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "provided they fold properly",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "GSDMD mutants identified in reconstitution assays",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Structural visualization",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Mutations that abolish reconstituted permeabilization also reduce cellular lytic death",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

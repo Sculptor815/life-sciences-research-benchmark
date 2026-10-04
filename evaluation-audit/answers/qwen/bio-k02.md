@@ -1,0 +1,41 @@
+# Qwen3.8 Max (0902) / bio-k02
+
+Original final answer, shared by both scoring rounds.
+
+**Bottom line.** The inhibitor curve is a right‑shifted hyperbola with the *same* plateau as the vehicle curve: Vmax is unchanged (shared asymptote ≈ 100 nmol/min) while the apparent Km rises ~3‑fold (≈ 20 µM → ≈ 60 µM). This is the diagnostic signature of **pure competitive inhibition** (inhibitor binds only free enzyme; mutual exclusivity with substrate). The immediate next action is not to claim an active‑site mechanism but to (i) confirm the shared Vmax at [S] ≫ Km at several inhibitor concentrations and globally fit competing models, and (ii) obtain orthogonal binding/structural data, because a competitive *kinetic* pattern establishes mutual exclusivity of binding, not physical overlap of sites.
+
+**1. Evidence → inference chain (figure, E1).**
+- Evidence: both curves are rectangular hyperbolae approaching the dotted line at 100 nmol/min; at [S] = 300 µM vehicle ≈ 94 and inhibitor ≈ 83 nmol/min (94% vs 83% of the asymptote); the inhibitor curve lies below vehicle at all [S] and the gap narrows as [S] rises.
+- Inference 1 (Vmax): a common asymptote means the same limiting rate; extrapolation of both curves gives Vmax ≈ 100 nmol/min. Half‑maximal rates: vehicle reaches 50 nmol/min at [S] ≈ 20 µM; inhibitor at [S] ≈ 60 µM.
+- Inference 2 (Km): Km(vehicle) ≈ 20 µM; Km,app(inhibitor) ≈ 60 µM; ratio α = Km,app/Km ≈ 3. Consistency check with v = Vmax[S]/(Km+[S]): vehicle predicts 71/83/94 at [S] = 50/100/300 µM; inhibitor (Km,app = 60) predicts 45/62/83 — matching the plotted traces.
+- Conclusion: ΔVmax ≈ 0, ΔKm ≈ ×3. For competitive inhibition α = 1 + [I]/Ki = 3, so Ki = [I]/2 — **[I] is unreported in the packet**, so Ki cannot be computed; this is an unreported parameter, not a result.
+
+**2. Compatible model.** Rapid‑equilibrium/steady‑state competitive inhibition: E + S ⇌ ES → E + P with E + I ⇌ EI (Ki), and no ESI complex (equivalently, the mixed‑inhibition factor α′ → ∞). Rate law v = Vmax[S]/(Km(1+[I]/Ki) + [S]): Vmax intact, Km scaled by α. Incompatible models: uncompetitive (lowers both Vmax and Km; curves would converge at low [S] and stay parallel‑offset), pure noncompetitive (lowers Vmax, Km unchanged; curves would separate at high [S]), mixed (lowers Vmax; asymptotes would differ). The shared asymptote excludes all three *as drawn*.
+
+**3. Assumptions required (labelled as assumptions).**
+- A1 Initial‑rate/steady‑state: <~5–10% substrate conversion, negligible product inhibition; hyperbolae imply no cooperativity (Hill n ≈ 1).
+- A2 Free‑ligand approximation: [S]free ≈ [S]total and [I]free ≈ [I]total (no tight binding, [I] ≫ [E]total).
+- A3 Reversible, time‑independent equilibrium inhibition (no slow‑binding or covalent inactivation during the assay).
+- A4 The dotted asymptote is a true shared Vmax, i.e., an extrapolation claim; the highest plotted [S] (300 µM = 5× Km,app) reaches only 83% of it for the inhibitor, so the plateau is inferred, not observed.
+- A5 No assay interference by inhibitor (absorbance/fluorescence overlap, coupling‑enzyme inhibition), constant pH/T/ionic strength, vehicle inert.
+- A6 Single‑substrate Michaelis–Menten behaviour (E1 states ideal MM kinetics).
+
+**4. Why the kinetic pattern does not locate a binding site.** Competitive kinetics reports a *thermodynamic linkage*: substrate and inhibitor cannot occupy the enzyme simultaneously (binding is mutually exclusive; inhibitor affinity for ES ≈ 0). Two physically distinct arrangements produce identical linkage: (i) steric competition — inhibitor occupies the substrate pocket; (ii) allosteric exclusion — inhibitor binds a remote site and, via conformational change or conformational selection, abolishes substrate binding (and vice versa). Both give α′ → ∞ and the same hyperbolic family. Kinetics measures populations of states, not coordinates; therefore "competitive" is a statement about mechanism‑level exclusivity, and any site assignment requires structural or direct‑binding evidence. Conversely, an active‑site binder need not look competitive if it can bind ES (mixed pattern), so site and pattern are logically independent.
+
+**5. Checks that could challenge the interpretation (proposed experiments; none are reported in E1).**
+- C1 Extend the substrate range to 10–20× Km,app with and without inhibitor. Prediction if competitive: curves converge on one Vmax. If the inhibitor plateau falls short → mixed/noncompetitive; the current conclusion fails.
+- C2 Titrate inhibitor (≥ 4–5 concentrations) and globally fit competitive vs mixed vs noncompetitive vs uncompetitive models; compare by AIC/BIC and inspect residuals. Lineweaver–Burk: competitive predicts intersection on the 1/v axis and a linear slope replot (slope = (Km/Vmax)(1+[I]/Ki)) with constant intercept; curvature or drifting intercepts indicate mixed/tight‑binding behaviour.
+- C3 Time‑ and pre‑incubation dependence: vary E+I pre‑incubation time and do dilution "jump‑off" assays. Deepening inhibition with time or non‑recovery after dilution indicates slow‑binding/irreversible inhibition, invalidating A3 and the equilibrium Ki.
+- C4 Tight‑binding test: vary [E]total at fixed [I]; IC50 shifting with [E] violates A2; refit with the Morrison equation.
+- C5 Assay‑artifact controls: run the detection system without enzyme (inner‑filter/quenching), and test inhibitor against any coupling enzymes; artifactually scaled signals mimic Vmax changes, and substrate sequestration by the inhibitor (chemical depletion of free [S]) mimics a horizontal shift — distinguishable because sequestration gives an additive, not multiplicative, [S] offset (it would fail to reproduce v ≈ 83 at [S] = 300 µM). Measure free substrate directly if suspected.
+- C6 Direct binding localization: SPR/ITC/MST of inhibitor against free enzyme vs enzyme saturated with substrate (or a non‑turnover substrate analogue). Competitive predicts binding to free E only, antagonized by substrate. Co‑crystallography/cryo‑EM/NMR chemical‑shift mapping, plus mutagenesis of active‑site residues with Ki re‑measurement, assign the physical site; loss of inhibition upon mutating a remote residue would support allosteric exclusion despite competitive kinetics.
+- C7 Progress‑curve linearity over the sampling window to verify A1.
+
+**6. Alternatives and what would change the call.**
+- If C1/C2 show a reduced inhibitor Vmax → mixed or noncompetitive inhibition (α′ finite); the "unchanged Vmax" reading would then be an extrapolation artifact of the limited [S] window.
+- If Km were unchanged and Vmax lowered → noncompetitive; if Vmax/Km constant with both lowered → uncompetitive; neither matches the figure.
+- If inhibition is time‑dependent or [E]‑dependent → slow/tight‑binding mechanisms; apparent "competitive" constants become operationally defined only.
+- If binding studies show inhibitor binding to ES or to a remote site with antagonism → kinetics stays "competitive" but the site claim becomes allosteric; this is exactly the pattern/site dissociation in §4.
+- Because E1 supplies synthetic, replicate‑free curves with no error bars, the ±read of Km (≈ 20 vs 60 µM) is visual; refitting the underlying rate data with confidence intervals is required before quoting α = 3 or Ki = [I]/2.
+
+**7. Limits of the packet.** E1 declares ideal MM behaviour and provides no [I], no [E], no replicates, no raw data, and no validation experiments; therefore the conclusion is necessarily "compatible with competitive inhibition under assumptions A1–A6," not proof of mechanism or site. The strongest defensible statement: *the inhibitor raises apparent Km ~3‑fold without detectable change in Vmax, consistent with mutually exclusive (competitive) binding; physical localization of the site requires the orthogonal experiments in C6.*

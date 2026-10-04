@@ -1,0 +1,134 @@
+{
+  "model_code": "qwen",
+  "item_id": "mol-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:00:08.265811+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "a5511ae6ac1d82b965f9cf004c8a7f5e2179c93771acfe399f4927710cfd8791",
+  "question_sha256": "83f4992b8d828ae4516dfeb944e8921d0f4706164cf7443bb348714562bc468d",
+  "reference_sha256": "fe6cad42d8b330c2133bebe164b42f815489fc29ea2267094b0d0987154f9562",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8b7d3cbca4dae9b88a879b23a8a80e92aeff6cc390e6d7ea74620cb49b8fda74",
+  "primary_route": "Multiple independent reagents, rescue, tagging, IP and gel-slice proteomics.",
+  "complete_final_answer_read": true,
+  "word_count": 1895,
+  "first_round_scientific_quality": 90.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Reintroduce the target coding sequence into the knockout line",
+      "evidence_type": "exact_quote",
+      "reason": "Genetic validation is proposed without necessary matched rescue-delivery/vector and detection-background controls and their roles; the supplied existing null/loading observation does not constitute those prospective procedural controls."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The following are proposed experiments",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer-check prior Methods, supplements or a validated protocol before conducting the proposed validation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The antibody conditions are within a linear detection range.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective background/linearity calibration with an acceptance criterion and failed-calibration action for the proposed band measurement."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The antibody conditions are within a linear detection range.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative band-intensity definition with normalization denominator and weak/saturated-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "A band is not automatically one protein",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly maintains genetic dependence versus antigen identity, unknown source of the 75-kDa band and possible co-migration. Proposed data are not claimed observed; failures of operational validation are charged under specific checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "A band is not automatically one protein",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly maintains genetic dependence versus antigen identity, unknown source of the 75-kDa band and possible co-migration. Proposed data are not claimed observed; failures of operational validation are charged under specific checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "A band is not automatically one protein",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly maintains genetic dependence versus antigen identity, unknown source of the 75-kDa band and possible co-migration. Proposed data are not claimed observed; failures of operational validation are charged under specific checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "A band is not automatically one protein",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly maintains genetic dependence versus antigen identity, unknown source of the 75-kDa band and possible co-migration. Proposed data are not claimed observed; failures of operational validation are charged under specific checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "A band is not automatically one protein",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly maintains genetic dependence versus antigen identity, unknown source of the 75-kDa band and possible co-migration. Proposed data are not claimed observed; failures of operational validation are charged under specific checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "A band is not automatically one protein",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly maintains genetic dependence versus antigen identity, unknown source of the 75-kDa band and possible co-migration. Proposed data are not claimed observed; failures of operational validation are charged under specific checks."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Final interpretation",
+      "evidence_type": "exact_quote",
+      "reason": "The answer contains 1895 whitespace-delimited words against a 1500-word maximum, a material excess; this is one format deduction."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Second reagent detects no 50-kDa band",
+      "evidence_type": "exact_quote",
+      "reason": "Absence of independent-antibody/MS signal or failed rescue is treated as evidence against assignment without requiring adequate assay sensitivity or successful rescue function; false-negative validation is not separated."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Supports direct or tightly associated target recognition",
+      "evidence_type": "exact_quote",
+      "reason": "Offers distinct epitopes, rescue, endogenous tagging and protein identification while acknowledging co-migrating species and association rather than always asserting direct binding; convergent positive evidence is operationally described at essay scope."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Strong bounded main inference and multiple independent approaches; negative validation outcomes lack sensitivity/technical-success gates and the response exceeds the word limit.",
+  "item_score": 60
+}

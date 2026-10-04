@@ -1,0 +1,80 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "qwen",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:03:32.523604+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "c485fe2c258ae3bae1cb33e6f5024b1f3c33b258098650b80ee483e956a31749",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 2
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 60.0,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "rescues phospho-S and growth to a level not significantly below wild-type K",
+      "issue": "A nonsignificant deficit does not establish equivalence or catalytic dispensability. A prespecified meaningful margin and confidence interval/equivalence test are required."
+    },
+    {
+      "quote": "wild-type and kinase-dead K are not significantly different in abundance",
+      "issue": "Nonsignificance does not establish adequate expression matching. The acceptance gate should use the prespecified matching interval and measurement uncertainty."
+    },
+    {
+      "quote": "kinase-dead K activity is not distinguishable from blank/background",
+      "issue": "An assay non-detect needs a quantitative upper bound related to the activity capable of cellular rescue. Background indistinguishability alone does not exclude sufficient residual catalysis."
+    },
+    {
+      "quote": "K is required for normal ligand-induced S phosphorylation",
+      "issue": "The initial pooled-KO result has not yet resolved the off-target and population alternatives that the later study correctly addresses."
+    },
+    {
+      "quote": "endogenous catalytic-dead knock-in.",
+      "issue": "An ordinary endogenous knock-in is not an acute catalytic inhibition, despite being listed in that acute-perturbation category. It can entail long-term adaptation."
+    },
+    {
+      "quote": "Final minimal study design",
+      "issue": "The answer repeats the protocol, controls and outcome rules across several sections and contains 4157 whitespace-delimited words against the 3500-word limit. This repeated final list adds to an already overlong answer."
+    }
+  ],
+  "rationale": "Broad, useful QC and operational handling, including rapid inhibitor-protected lysis, independent derivations and ligand controls. The central statistical decision rules nevertheless substitute nonsignificance for equivalence and absence; residual-activity qualification is incomplete. Repetition and excess length reduce usability.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol.",
+    "Protein presence during catalytic inhibition does not establish functional scaffold preservation. Conformation and interactions can change.",
+    "Lack of an inhibitor effect in null cells does not establish selectivity: floor effects and changed dependency can hide off-target actions.",
+    "Do not normalize the pathway endpoint by K abundance across null and rescued cells; division by absent K is undefined and implies an unjustified linear correction.",
+    "Fold-proxy similarity is not proof of identical tertiary structure or preservation of every interaction."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature08833",
+      "use": "Primary evidence that ATP-competitive RAF inhibitors can alter dimerization; protein presence alone does not ensure unchanged interaction functions. Not an assertion that fictional K is RAF."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-017-01274-0",
+      "use": "Primary study of inhibitor-induced RAF conformation and RAS interaction, supporting the need to qualify noncatalytic consequences."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,122 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "grok",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:29:35.551401+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "5c33df5a55d28cc9aee7a3680405d9ed0084e5e47d1a119e578ec359449a94af",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 66.25,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "Map whether cleavage in that two-protein reaction generates the same amino terminus as the death-inducing cellular species.",
+      "issue": "The active amino-terminal fragment retains the original N terminus; matching that terminus alone cannot map its cleavage boundary. Identify its new C terminus, or the complementary C-terminal fragment's new N terminus. Earlier mass mapping helps, but this stated validation rule is anatomically misdirected."
+    },
+    {
+      "quote": "Cellular regulators may still change rate or threshold; they are not the effector if the protein-free system works and alleles concord.",
+      "issue": "Minimal sufficiency plus concordant loss of function cannot exclude a required later cellular executor. This contradicts the otherwise useful distinction between initial permeability and large-marker release."
+    },
+    {
+      "quote": "A genuine effector should be protease- and heat-sensitive, inactive without the active domain",
+      "issue": "Heat sensitivity and obligate contemporaneous GSDMD dependence are not universal properties of an executor. A stable activated effector may remain active after GSDMD removal, and a permissive protein can meet all listed criteria."
+    },
+    {
+      "quote": "at comparable abundance:",
+      "issue": "The allele bridge controls abundance and activity but does not explicitly establish mutant folding/cleavage integrity. General defects can produce concordant losses in liposomes and cells."
+    },
+    {
+      "quote": "Statistical power, replicate number, and blinding rules are unreported [S1].",
+      "issue": "The study gives useful QC, independent preparations and prespecified image windows, but largely defers its statistical comparison and exclusion plan. Repeated decision tables also obscure a few contradictory categorical rules."
+    }
+  ],
+  "rationale": "Extensive assay qualification, controlled lipid variation, optical-artifact checks and bounded negative-assay discussion. Major remaining issues are the wrong terminus in one cleavage validation step and overexclusive interpretation of cellular effectors; the allele bridge also needs molecular integrity controls. The 4952-word answer is within the limit, with a minor clarity deduction for repetition and conflicting decision rules.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The fixed packet establishes genetic/cleavage dependence, not physical membrane agency. Do not require knowledge of later results, residue numbers, lipid ratios or historical instrument settings.",
+    "A protein requirement or co-reconstitution establishes dependence, not the identity of the lesion-forming component. A permissive cofactor can support direct GSDMD action.",
+    "Negative artificial reconstitution is qualified evidence, not proof of indirect action. An assay-positive control does not validate the test protein or all relevant membrane conditions.",
+    "Direct permeability, terminal rupture and cytokine release are distinct. Sufficiency in a minimal membrane need not exclude later cellular executors.",
+    "Trans inhibition by an isolated domain is conditional; intact-protein autoinhibition does not require it.",
+    "Historical direction is scored separately from study quality. Five target components are conjunctive within each component; a full Hit@1 requires all five. Equivalent cellular functional-complementation designs count as rescue.",
+    "Historical matching is not prospective novelty: source identifiers are visible and no exhaustive earlier-public-disclosure audit exists. Full source methods have not been independently audited.",
+    "The later paper erratum corrects a typeset received date from 2015 to 2016; it does not change its June 2016 publication date or report a biological-result correction."
+  ],
+  "review_sources": [
+    {
+      "title": "Original GSDMD cleavage study",
+      "url": "https://www.nature.com/articles/nature15514",
+      "scope": "Primary abstract and publication metadata"
+    },
+    {
+      "title": "Later gasdermin pore/autoinhibition study",
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary abstract, author metadata and accessible extended-figure captions; full methods not audited"
+    },
+    {
+      "title": "Later-paper erratum",
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher erratum text: received-date typesetting correction only"
+    },
+    {
+      "title": "NINJ1 and terminal membrane rupture",
+      "url": "https://www.nature.com/articles/s41586-021-03218-7",
+      "scope": "Post-cutoff primary abstract supports reviewer distinction of permeability and rupture; candidate is not required to name NINJ1"
+    },
+    {
+      "title": "Direct inhibition of GSDMD by necrosulfonamide",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6462819/",
+      "scope": "Post-cutoff primary abstract; confirms why target specificity controls matter, not required candidate foreknowledge"
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "pore-like",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "An allele series correlated quantitatively",
+      "assessment": "Partial direction evidence only: the target requires validated selective membrane-function perturbation linked to cell death, with functional variants and cellular rescue; see rationale for missing components."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "loss of oligomerization with preserved recruitment",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Electrical steps in a protein-free bilayer",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "they are not the effector if the protein-free system works and alleles concord",
+      "assessment": "Partial direction evidence only: the target requires validated selective membrane-function perturbation linked to cell death, with functional variants and cellular rescue; see rationale for missing components."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,56 @@
+{
+  "item_id": "bio-p01",
+  "model_code": "claude-opus46",
+  "response_id": "bio-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:38:07.604659+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "144cbc54af96fe39b787a1644081fb5b3db3f679bb0ac29b4e0199eb9fba05ad",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "fully explicable by ATP depletion alone",
+      "issue": "The supplied ATP change does not quantify a sufficient causal explanation for the incorporation change; temporal ordering, absolute pools, normalization and mediation are unknown."
+    },
+    {
+      "quote": "quantitatively consistent with, and arguably predicted by, a ~50 % ATP loss",
+      "issue": "No quantitative model relates these percentages. Their numerical proximity cannot predict the translation effect."
+    },
+    {
+      "quote": "If Q fails to inhibit peptide-bond formation in this system, the direct-PTC-inhibitor claim is disproved",
+      "issue": "A negative isolated assay constrains tested ribosomes, chemical form and conditions; it does not establish all cellular suppression as upstream or bioenergetic."
+    },
+    {
+      "quote": "If translation recovers when ATP is restored (e.g., by creatine-phosphate supplementation), the ribosome is not the direct target",
+      "issue": "Rescue can affect exposure, competing pathways or parallel effects. It does not exclude a coexisting direct action; cellular delivery and regeneration are also not established by supplementation alone."
+    }
+  ],
+  "rationale": "Identifies the central confound and source uncertainty but replaces an unsupported direct mechanism with an unsupported metabolic causal conclusion. Numerical overinterpretation and categorical negative/rescue rules undermine the proposed discrimination.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The reported endpoint is puromycin incorporation. Do not require candidates to assert independently established protein synthesis suppression.",
+    "Concurrent 50% ATP and 60% incorporation reductions do not establish causal order or a quantitative transfer function. ATP amount is not adenylate energy charge.",
+    "A full cell-free translation assay can be inhibited outside the peptide-transfer reaction. Isolate the reaction or separately control charging, factors and regeneration.",
+    "A negative assay constrains its tested species, chemical form and conditions. It is not a universal refutation; positive controls alone do not cover every context mismatch.",
+    "Biochemical direct action and the cause of a cellular phenotype are distinct. ATP rescue or early timing alone does not exclude mixed mechanisms.",
+    "Selectivity requires a defined comparison scope. Cross-species ribosome activity need not contradict selectivity for peptide transfer over unrelated targets.",
+    "No DOI supplied is not no DOI exists. No recorded notice is not proof of reliability. Existence, provenance, editorial status and scientific support remain separate.",
+    "The reference suggestions about ATP matching and complete cell-free negatives are prospective checks, not uniquely identifying interventions."
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,223 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "bio-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:08:07.444117+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "2ecf17a30885f7950ff495fb3e98f0ac03fcf226224ac0efb5333adc00c04e24",
+  "question_sha256": "9897959937c05bea4661cdf8b301b0b350235db1b56f302510fc8132468083b7",
+  "reference_sha256": "494bb9585a8ba22eeb3aa44162cd54a8b39534002dd77a6f77e38ec56d1ef0b6",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "5f25f65ba7dc70d196792f349ed12e4615df0b36495c4dc83151eb5bf5eedce8",
+  "primary_route": "Isotope tracing, step blockade/restoration and proposed biochemical reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2756,
+  "first_round_scientific_quality": 33.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation of prior detailed Methods/supplements/validated protocols and transfer of conditions; a literature respiratory-rate benchmark is not that consultation."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sham-wash comparison or inactive/matched-protein add-back control for the claimed restoration; wash handling and added protein/buffer can change flux independently of catalytic rescue."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 15,
+      "quote": "scintillation counting",
+      "evidence_type": "exact_quote",
+      "reason": "Three independent errors: scintillation cannot measure stable 13C; succinate through isocitrate to alpha-ketoglutarate releases one CO2, not the stated two before the alpha-ketoglutarate-dehydrogenase block; 80% of Vmax does not establish substrate non-limitation."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "based on the 1937 observation",
+      "evidence_type": "exact_quote",
+      "reason": "An anticipated numerical CCR of 5-10 is attributed to the unread historical observation, but the supplied packet gives no such numerical effect. Proposed pilot assumptions must not be presented as source-supported values."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "isotonic phosphate-saline",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete doses and times do not supply buffer/ion/cofactor preparation quantities or a calibration-to-choice procedure for this biochemical system."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Natural-abundance subtraction and a carbon-closure target lack isotope/organic-acid assay accuracy, matrix-spike recovery, quench validation and an analytical acceptance/failure rule."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "CCR is undefined or infinite",
+      "evidence_type": "exact_quote",
+      "reason": "CCR divides by net intermediate consumption, which can approach zero in the intended cycling state. No finite alternative estimand or denominator/weak-measurement rule makes the primary contrast usable."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "increase succinate dose",
+      "evidence_type": "exact_quote",
+      "reason": "A biological nonresponse triggers increased succinate or a different intermediate without preserving a predeclared null result; technical damage must first be separated from a wrong hypothesis."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "O\u2082 uptake in F recovers",
+      "evidence_type": "exact_quote",
+      "reason": "Respiratory recovery and succinate oxidation do not independently establish target-specific inhibition, intact neighboring steps or actual target recovery after washout. This is distinct from the isotope-identity decision failure."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No refrozen repaired protocol and fresh independent confirmation after changing dose, preparation, intermediate or rescue strategy."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "atom % excess significantly > natural abundance",
+      "evidence_type": "exact_quote",
+      "reason": "Recovered succinate was supplied as U-13C4-succinate: its label exceeding natural abundance can reflect original tracer persistence, not regeneration. The proposed endpoint does not distinguish new return from residual tracer. Likewise label need not disappear from initially labelled succinate under the downstream block."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Fractionate the tissue preparation to remove one enzyme",
+      "evidence_type": "exact_quote",
+      "reason": "One-enzyme-depleted tissue with purified add-back is not a compositionally defined enzyme system; unmeasured enzymes and parallel reactions remain."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No linked raw isotope/gas files, sample identifiers and exact analysis-code/model/settings provenance."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Recycling from Alternative Explanations in a Tissue-Derived Oxidation Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13."
+    }
+  ],
+  "central_false_premise": "The principal cycling-acceptance criterion treats persistence of the originally supplied labelled succinate above natural abundance as isotope regeneration. That observation does not identify a cycle, invalidating the main recommendation.",
+  "deductions_uncapped": 85,
+  "quality_score": 15,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 50.0,
+  "explanation_reason": "Concrete tissue, dose ranges, independent preparations split across arms, randomization/blinding, paired tests/multiplicity and diagnostic repairs are useful. Proposed versus measured status is mostly clear. Primary tracer persistence is misidentified as regeneration and the primary ratio can be undefined; source effect attribution and several biochemical/tool statements require correction. G3/G5 consequences of the primary decision error are charged only under P13.",
+  "item_score": 15
+}

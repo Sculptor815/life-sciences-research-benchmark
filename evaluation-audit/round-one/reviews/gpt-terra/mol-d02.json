@@ -1,0 +1,67 @@
+{
+  "item_id": "mol-d02",
+  "response_id": "mol-d02",
+  "model_code": "gpt-terra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:55:59.650082+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "ea156d6faccc60e847765ddc089ebad2c4ca5d0a630ab43d6d221ca7ae530d5b",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Evidence for p53 necessity requires a positive, statistically and biologically meaningful",
+      "issue": "A positive difference-in-differences establishes a contribution but permits substantial residual arrest after depletion. Add an explicit negligible-residual equivalence criterion, or narrow the conclusion to p53 contributing to the full response. The opening removal hypothesis does not repair the weaker formal acceptance rule."
+    },
+    {
+      "quote": "Damage burden is matched or explicitly modeled as unmatched.",
+      "issue": "Modeling an unmatched post-manipulation injury measure does not by itself establish equal delivered damage or identify a checkpoint-specific direct effect. Keep common-exposure and lesion-matched estimands separate, state causal assumptions, and do not make the stronger matched-injury conclusion solely because a covariate was included."
+    },
+    {
+      "quote": "Prespecify four mutually exclusive lineage outcomes:",
+      "issue": "A cell can enter S and then die. State a first-event hierarchy or a multistate sequence with the endpoint clearly defined; the listed progression/death categories are not mutually exclusive for entire lineages without such a rule."
+    },
+    {
+      "quote": "S phase: DNA content between 2N and 4N with positive nucleotide incorporation",
+      "issue": "Retain intermediate-DNA incorporation-negative cells as a distinct stalled/low-synthesis S-like population and define the control-derived no-pulse threshold and compensation/background workflow. Requiring incorporation positivity can miss precisely the inhibited replication states this experiment must distinguish."
+    }
+  ],
+  "rationale": "Substantial and mostly sound loss/rescue protocol with explicit proposed status, injury calibration, starting-state tracking and separate caffeine interaction. Formal necessity and unmatched-injury acceptance are too permissive; lineage-event classification and low-synthesis gating need more operational detail. Damage-dependent restoration wording is not treated as a claim that p53 alone is sufficient without damage.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The exact candidate question/packet, complete frozen reference including its curator clarification, and all three complete final answers were personally read. No hidden reasoning, paid judge or actual experiment was used.",
+    "The reference body retains survivor-only and damage-recalibration language. Its explicit clarification takes precedence: use starting-cohort denominators and competing death outcomes; match initial delivered injury without removing later repair differences caused by p53.",
+    "A partial loss of arrest supports contribution to the response. Full necessity for the defined response requires evidence that meaningful damage-induced arrest is absent after effective loss, with uncertainty and rescue specificity. Do not demand exact zero or universal dependence.",
+    "Common external exposure and state-specific lesion matching estimate different effects. Neither is rejected categorically if justified and reported. Merely adjusting for a post-treatment mediator is not automatically a matched-damage causal experiment.",
+    "Near-endogenous rescue includes damage-induced kinetics and cell-to-cell abundance; successful damage-dependent rescue does not prove p53-alone sufficiency. Assay/dose calibration proposals are legitimate because identities and timings were not supplied.",
+    "Predetermined outcome-based rejection can still select confirmatory results. Distinguish technical failure from biological death, lesion burden or negative arrest outcomes and preserve the latter in reporting.",
+    "Live tracking must distinguish S entry followed by death, no S entry before death, persistent viable G1, and unresolved tracking. No informative-loss mechanism is cured by labeling all loss censoring.",
+    "All three answers are within the 3500-word limit. Proposed means, timing rules and calibrated margins are not penalized for differing from unprovided historical methods.",
+    "The source audit here is limited to indexed primary-paper abstract/metadata excerpts; PubMed/PMC full-page access was challenged. No full historical methods audit is claimed. Scoring follows the supplied hypothetical packet rather than unavailable methods."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1933891/",
+      "scope": "Indexed primary-paper abstract excerpt and bibliographic record: 1991 p53, irradiation and caffeine associations. Full-page text unavailable."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1323840/",
+      "scope": "Indexed primary-paper abstract excerpt: 1992 genetic gain/loss and irradiation checkpoint experiments; no full-methods audit."
+    }
+  ],
+  "overall_benchmark_score": null
+}

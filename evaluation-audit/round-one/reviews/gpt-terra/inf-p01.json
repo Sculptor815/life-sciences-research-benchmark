@@ -1,0 +1,55 @@
+{
+  "item_id": "inf-p01",
+  "model_code": "gpt-terra",
+  "response_id": "inf-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:53:40.324161+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "87001727174ba1010ebd7eedebd05f63fee6046d0914475e11a788e97a5142ed",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 87.5,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "matches or stratifies participants by ancestry and sequencing center, with suitable center/ancestry adjustment",
+      "issue": "The repair plan does not first check whether center-by-phenotype strata contain both groups. Complete confounding cannot be repaired by adjustment or stratification; specify balanced resequencing or a genuinely crossed new cohort when overlap is absent."
+    },
+    {
+      "quote": "## Final disposition",
+      "issue": "At 1676 whitespace-delimited words, the answer exceeds the 1500-word limit and repeats the same disposition in several sections. Condense without losing its sound uncertainty qualifications."
+    }
+  ],
+  "rationale": "Accurate source/analysis distinction and strong treatment of reporting omissions, filter uncertainty and association versus causation. The main scientific omission is an explicit non-identifiability branch in the repair plan; excess length also reduces usability.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The exact frozen question, full reference answer and full received final answers were read. This is a conceptual essay, not a demand for a complete executable sequencing protocol.",
+    "C2 affirmatively identifies a synthetic training record. No real publication or researcher is accused. A missing lookup or N1 alone would not establish invention or deceptive intent.",
+    "Reference required concept rc6 incorrectly says an all-annotated background always inflates significance. The full reference correctly allows either direction; no bias direction is identifiable from this packet.",
+    "Assess center-by-phenotype overlap rather than silently assuming either complete confounding or sufficient overlap. Covariate adjustment cannot recover an absent comparison.",
+    "Center-specific filters can yield equivalent effective detection. Unreported coverage, relatedness or adjustment is not evidence of their absence or failure.",
+    "A disappearing p-value after restriction does not prove artifact: evaluate effects, precision, power and estimand. A persisting calibrated association does not establish the pathway mechanism.",
+    "Benign alternatives include safeguards or true biology as well as non-malicious analytical mistakes. A negative-control result alone need not exclude bias in a different variant class.",
+    "Frozen keys and response records remain unchanged; these corrections are transparent reviewer metadata. No raw-data reanalysis was performed."
+  ],
+  "review_sources": [
+    {
+      "title": "gnomAD v3.0 release methods overview",
+      "url": "https://gnomad.broadinstitute.org/news/2019-10-gnomad-v3-0/",
+      "scope": "Reviewer read joint-genotyping and sample/variant QC overview, including ancestry, coverage and relatedness. Background support only; no validation of the invented dossier, no universal numerical thresholds imported."
+    }
+  ],
+  "overall_benchmark_score": null
+}

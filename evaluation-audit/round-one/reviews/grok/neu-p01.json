@@ -1,0 +1,50 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "grok",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:09:20.367669+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "97b74d9d296e725001b25b2a7259b387b4d7ac33e1063c6df44e0260d51971f0",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 86.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "“Lower” also leaves open residual learning, which would count against strict necessity.",
+      "issue": "Residual learning is not evidence against strict necessity without demonstrating sufficiently complete effective inhibition; efficacy is unreported. The answer should distinguish residual function from residual learning."
+    },
+    {
+      "quote": "If the same animal, session, or mislinked file entered more than one “group,” the comparison in E1 would not estimate an effect of inhibiting P.",
+      "issue": "Unmodelled reuse or misassignment can invalidate the stated comparison, but reused animals in a documented repeated-measures design need not do so. The audit should distinguish legitimate dependence from erroneous allocation rather than categorically reject cross-group identity."
+    }
+  ],
+  "rationale": "Clear, concise separation of source identity, auditability, necessity and intent; correctly notes unknown bias direction and that replication does not rehabilitate original records. The residual-learning argument omits inhibition efficacy, and the audit treatment of dependence is too categorical.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

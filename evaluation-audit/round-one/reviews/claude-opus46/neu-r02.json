@@ -1,0 +1,118 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "claude-opus46",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:59:40.035752+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "2021c8ea8baaf67ab2dc48e8f1b60a51eb132ef816caff66d0716798b2932dfc",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "Computed as the mean of all neurons' scores divided by 7",
+      "issue": "The scale is contralateral-to-ipsilateral while deprivation side is randomized. Without recoding relative to the deprived eye/recorded hemisphere, effects can cancel or reverse across animals. Dividing by seven is not equivalent to a deprivation-aligned contralateral bias index."
+    },
+    {
+      "quote": "if LGN cells driven by the deprived eye show normal receptive fields",
+      "issue": "Selecting only responsive LGN cells can miss upstream response losses. Compare systematically sampled response distributions and sensitivity, not just surviving normal-looking fields, before localizing the deficit to cortex."
+    },
+    {
+      "quote": "optical correction or contact lens is applied",
+      "issue": "Corneal opacity is not generally resolved by refractive correction. Demonstrate comparable retinal image quality or mark localization unresolved rather than adjust for opacity as a covariate."
+    },
+    {
+      "quote": "partial η² < 0.06",
+      "issue": "This is an observed between-group effect, not blinded nuisance variance. The proposed adaptive sample increase and repeated significance-based extension need calibrated error control and cannot guarantee power."
+    },
+    {
+      "quote": "If still non-significant with n = 9, the effect — if real — is small",
+      "issue": "Nonsignificance at a fixed small sample does not bound the effect. Report confidence intervals against a prespecified meaningful margin."
+    },
+    {
+      "quote": "before more than a few days of patterned visual experience",
+      "issue": "Several days of exposure is not visually naive. A newborn-versus-juvenile comparison also confounds age with experience and cannot uniquely establish an innate scaffold or instruction."
+    },
+    {
+      "quote": "Its data are excluded and a replacement animal enrolled.",
+      "issue": "Welfare attrition may be caused by treatment. Retain assigned-animal accounting and evaluate informative missingness rather than replace until the desired analyzable count is reached."
+    },
+    {
+      "quote": "Normal-reared control",
+      "issue": "No sham surgery/handling group is supplied, and alternative less-invasive deprivation is not considered. Long treatment duration and week8-to12 endpoint variation require stronger justification and matched ages; proposed concrete numbers are not automatically validated."
+    }
+  ],
+  "rationale": "Concrete unilateral study with explicit reopening and some upstream controls, but an unaligned primary ocular-dominance estimator, selected upstream sampling, missing sham and invalid adaptive inference compromise its qualifying readout. Scientific-quality credit retained for useful platform detail and animal-level intent.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does Visual Experience Causally Contribute",
+      "assessment": "Substantive historical component present."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Experience-Instructed Construction",
+      "assessment": "Substantive historical component present."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Unilateral eyelid suture",
+      "assessment": "Substantive historical component present."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Computed as the mean of all neurons' scores divided by 7",
+      "assessment": "Different intervention/endpoint or critical measurement-control gap; see explicit rationale and deductions."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "dramatically shift cortical responses away from the deprived eye",
+      "assessment": "Different intervention/endpoint or critical measurement-control gap; see explicit rationale and deductions."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

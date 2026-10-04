@@ -1,0 +1,82 @@
+{
+  "item_id": "bio-d03",
+  "response_id": "bio-d03",
+  "model_code": "deepseek",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T23:05:47.776519+08:00",
+  "review_type": "single AI curator; complete received final answer personally read; model identity visible; original rubric",
+  "candidate_sha256": "51ac5f9429f9926a7beabe3da49c28261c1ca1bc13e50bd7b5dc0a0b04b254e1",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "CAF with M_consumed ≈ 0 supports non-cycling activation.",
+      "issue": "A genuinely recycled candidate can have almost zero net consumption. Dividing gas flux by net consumption is ill-conditioned; near-zero consumption does not assign activation. The ratio also needs explicit carbon/oxygen stoichiometry."
+    },
+    {
+      "quote": "IRR = k_dil / k_dep (or k_dil when k_dep ≈ 0).",
+      "issue": "This switches from a dimensionless ratio to a rate and lacks a common decision scale. Mono-exponential dilution can measure exchange or replenishment rather than net cyclic return; fit explicit alternative atom-mapped networks instead."
+    },
+    {
+      "quote": "Resuspend/wash the preparation in a defined buffer",
+      "issue": "Defined buffer and washed crude material do not establish defined enzyme composition. The route, enzyme/cofactor inventory and alternate activities still require specification."
+    },
+    {
+      "quote": "rescue with downstream product",
+      "issue": "Downstream product can feed a bypass without restoring the missing reaction. Keep it a separate bypass control, not evidence that the original cycle was restored."
+    },
+    {
+      "quote": "Treat technical chambers as replicates only after confirming low within-preparation variance.",
+      "issue": "Low variance never creates independent biological replication. The later instruction to use preparations for inference is correct and should replace this ambiguous early statement."
+    },
+    {
+      "quote": "Non-cycling activation:** DiD ≈ 0",
+      "issue": "Activation of a linear pathway sharing the inhibited enzyme can give positive DiD. The final cycle-closure limitation is appropriate, but the hypothesis table and discriminator overstate what perturbation/dilution can establish."
+    }
+  ],
+  "rationale": "Substantial controls, direct step assays, reciprocal tracers and a useful difference-in-differences scaffold. Weakly identified isotope metrics, crude reconstitution and misleading alternative predictions prevent a discriminating recycling conclusion.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read the complete final answer, exact question/packet and entire frozen reference answer including its curator clarification. No hidden reasoning, paid judge or laboratory execution.",
+    "This uses the existing first-round rubric. The owner requested a stricter second round only after completion of this round; new 10/5-point deductions have not been applied.",
+    "The packet explicitly says the 1937 full text and figures were not read. Do not attribute proposed experimental details to the historical paper or penalize absence of invented historical settings.",
+    "The preliminary key mentions a noncycling analog and a small fixed discovery n. Its clarification permits omission/restoration where no validated analog exists. Independent sample size should be powered/calibrated; no particular small n is required.",
+    "Do not demand a positive addition effect in an already saturated endogenous pool. Failure to meet a proposed support gate limits the conclusion and does not automatically falsify cycling.",
+    "Adding downstream carbon around an irreversible block does not restore the missing reaction. Label exchange or appearance in one pool does not establish net cycle flux; respiration alone is insufficient.",
+    "Initial pools, mobilizable reserves, carbon sources, washout losses, cofactor-regeneration reactions and reversible exchange need accounting. Carbon closure alone cannot distinguish all network topologies.",
+    "Unknown numeric settings can be calibrated; concrete proposed biochemical routes are nevertheless useful. No complete primary-source methods audit is claimed.",
+    "Additional correction: isotope enrichment or residual starting tracer is not return flux; one-way replenishment and reversible exchange can coexist with oxidation. Stable carrier amount can coexist with loss of its original carbon atoms.",
+    "A closed-cycle proposal needs appropriate carbon mapping, multi-turn dynamics and identifiable alternative networks. CO2 release can be partial decarboxylation. Define stoichiometric units and handle a near-zero ratio denominator explicitly.",
+    "No-substrate controls do not guarantee additive endogenous flux under added substrate. Include measured convertible pools and mobilizable reserves in finite-pool alternatives. Biological background is not an automatic QC exclusion.",
+    "Heat-inactivated controls do not exclude contaminating enzymes in an active preparation. Washed or enzyme-depleted crude fractions are not automatically compositionally defined enzyme reconstitutions.",
+    "Unknown settings may be calibrated and scientifically valid equivalent contrasts accepted; no fixed author recipe, unavailable analog, mandatory small n, or new round-two deductions imposed.",
+    "Reviewer checked indexed primary-paper excerpts on arsenite inhibition of both PDH and KGDH and on exchanging pools in TCA isotope modeling. PMC full-page access was challenged; no full-text or source-methods audit is claimed."
+  ],
+  "review_sources": [
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20161290/",
+      "use": "Primary-paper indexed excerpt"
+    },
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/6863451/",
+      "use": "Primary-paper indexed excerpt"
+    }
+  ],
+  "overall_benchmark_score": null
+}

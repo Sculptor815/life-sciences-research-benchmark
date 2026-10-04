@@ -1,0 +1,41 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "gpt-astra",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:08:42.693682+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "54bcbc8a330bad00b2835ea99851397f45b3a4b2333a512c094c4cf1f8d021e9",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Precisely separates dossier identity, animal traceability, validity of the comparison, biological necessity and intent. Explains concrete possible errors without asserting they occurred, bounds necessity to the task and inhibition efficacy, and distinguishes recovery of contemporaneous records from new biological replication. The proposed audit and acquisition-versus-performance follow-up directly address the concerns.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

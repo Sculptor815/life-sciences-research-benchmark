@@ -1,0 +1,70 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "claude-opus48",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:56:17.687415+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "3f08a748af7b1478d939fadbbac2cae5e8e17a6db60081e31e0825ee31a52580",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 58.75,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "M1–M3 establish that kinase K is required",
+      "issue": "The pooled-knockout phenotype is not yet independently attributed to K, and ligand-dependent growth is not established by the packet."
+    },
+    {
+      "quote": "is only lost if the protein is removed or misfolded.",
+      "issue": "Scaffolding can change through localization, specific interface changes, phosphorylation or inhibitor-induced conformation without protein removal or global misfolding. The later caveat acknowledges this but contradicts the early definition."
+    },
+    {
+      "quote": "quantify the catalytic-dependent fraction.",
+      "issue": "Partial rescue and partial inhibitor effects do not identify a catalytic fraction of a nonlinear pathway. Residual activity, target engagement, conformation and compensation remain alternative explanations."
+    },
+    {
+      "quote": "when they disagree, the discrepancy localizes the artifact.",
+      "issue": "Discordance does not localize an artifact: incomplete intracellular inhibition, mutant residual activity, structural changes and chronic adaptation can all produce it. The decision table specifically favors a KD artifact without excluding these alternatives."
+    },
+    {
+      "quote": "If KD loses partners, it is a misfolding artifact",
+      "issue": "Lost binding can follow a specific interface change or loss of a catalysis-dependent docking site without misfolding. That result invalidates simple separation but does not diagnose misfolding."
+    },
+    {
+      "quote": "AS+analog must inhibit K in vitro.",
+      "issue": "In-vitro inhibition alone is insufficient to interpret a negative cellular inhibition result as catalytic dispensability. Intracellular engagement and functional blockade must pass before that branch is interpreted; the answer relegates in-cell checks to troubleshooting."
+    },
+    {
+      "quote": "size replicates from the KO effect magnitude in M1",
+      "issue": "M1 contains no numerical effect magnitude or variance. A pilot or explicit external input is needed for prospective power, including the equivalence contrast."
+    }
+  ],
+  "rationale": "Strong breadth, a reciprocal probe, explicit TOST and phosphatase controls, and a useful final caveat on conformation. Substantial corrections are still needed: several central decision rules overattribute mechanism, the starting causal claim exceeds the packet, and the main acceptance gate does not establish adequate cellular catalytic blockade. Missing effect-size inputs are not resolved by the proposed power statement.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol."
+  ],
+  "overall_benchmark_score": null
+}

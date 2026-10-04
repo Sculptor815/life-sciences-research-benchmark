@@ -1,0 +1,134 @@
+{
+  "model_code": "qwen",
+  "item_id": "bio-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:04:59.290449+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7886d8c4218850e17850c8f3ce85c61f66ba3190ed277b47b3d3c210d9be858d",
+  "question_sha256": "e5a45dec0d2517d68cec2cb721477e214452d8543683d6d377e1be872cfc40d4",
+  "reference_sha256": "425acfdd9f006f0f842223fef2b6ad93f510268641fee28dd344f907f5ecda04",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "2f0a2f58a75464fbfb0abe3120e494d267bfd5f1aceae4f6835c410d2ddc1b17",
+  "primary_route": "Product progress curves and multi-substrate/inhibitor model comparison.",
+  "complete_final_answer_read": true,
+  "word_count": 1580,
+  "first_round_scientific_quality": 85.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Start the reaction by adding enzyme or substrate.",
+      "evidence_type": "exact_quote",
+      "reason": "No prospective background, known-response and procedural controls with defined comparison roles."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The substrate-concentration units cancel",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit prior-Methods or validated-protocol consultation with transfer checks before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The substrate-concentration units cancel",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete detector/product-reference calibration, acceptance rule and action on failed recovery or linearity."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The substrate-concentration units cancel",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Amount-rate units are present, but no complete blank/baseline-normalized endpoint with weak, saturated or missing measurement rules."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The substrate-concentration units cancel",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent chemistry/readout confirmation; the proposed time and enzyme checks rely on the same measurement."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the calculated rate is unchanged when enzyme concentration is reduced proportionally",
+      "evidence_type": "exact_quote",
+      "reason": "This conflicts with the same answer requiring rate proportional to enzyme. No enzyme-normalized rate is defined; the inconsistent criterion would reject a valid amount-rate response."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "a single substrate, or other substrates held at fixed or saturating concentrations.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct derivation and model assumptions, non-identifiability and synthetic-data distinction. The enzyme-dependence decision conflict is charged under P13 only. The 1580 whitespace-word count is a small overrun with substantial equation tokenization, not a material presentation failure."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "a single substrate, or other substrates held at fixed or saturating concentrations.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct derivation and model assumptions, non-identifiability and synthetic-data distinction. The enzyme-dependence decision conflict is charged under P13 only. The 1580 whitespace-word count is a small overrun with substantial equation tokenization, not a material presentation failure."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "a single substrate, or other substrates held at fixed or saturating concentrations.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct derivation and model assumptions, non-identifiability and synthetic-data distinction. The enzyme-dependence decision conflict is charged under P13 only. The 1580 whitespace-word count is a small overrun with substantial equation tokenization, not a material presentation failure."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "a single substrate, or other substrates held at fixed or saturating concentrations.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct derivation and model assumptions, non-identifiability and synthetic-data distinction. The enzyme-dependence decision conflict is charged under P13 only. The 1580 whitespace-word count is a small overrun with substantial equation tokenization, not a material presentation failure."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "a single substrate, or other substrates held at fixed or saturating concentrations.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct derivation and model assumptions, non-identifiability and synthetic-data distinction. The enzyme-dependence decision conflict is charged under P13 only. The 1580 whitespace-word count is a small overrun with substantial equation tokenization, not a material presentation failure."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "a single substrate, or other substrates held at fixed or saturating concentrations.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct derivation and model assumptions, non-identifiability and synthetic-data distinction. The enzyme-dependence decision conflict is charged under P13 only. The 1580 whitespace-word count is a small overrun with substantial equation tokenization, not a material presentation failure."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "a single substrate, or other substrates held at fixed or saturating concentrations.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct derivation and model assumptions, non-identifiability and synthetic-data distinction. The enzyme-dependence decision conflict is charged under P13 only. The 1580 whitespace-word count is a small overrun with substantial equation tokenization, not a material presentation failure."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Correct core kinetic reasoning; mutually incompatible enzyme-loading acceptance rules need correction.",
+  "item_score": 60
+}

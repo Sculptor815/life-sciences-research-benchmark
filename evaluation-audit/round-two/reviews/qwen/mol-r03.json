@@ -1,0 +1,239 @@
+{
+  "model_code": "qwen",
+  "item_id": "mol-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:56:43.681173+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "6cd31cdf4af25fd626b35fb7d8f4eb5daf06f78c8cfad034432cbdd34067e5dc",
+  "question_sha256": "bf00c28a6e92add5751c281d77d4c3490535449c784810d44640a95c1cb7f695",
+  "reference_sha256": "691bdf29d87b44088c4c14b684a72ae289dd778c52bb1d20cc108695c93a7735",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "5f3fe23a462a789f33d7df0a50538f87084e2be8532553c89e62419072804db6",
+  "primary_route": "Purified NT vesicle leakage, membrane binding/assembly, planar-bilayer conductance and giant-vesicle imaging followed by cell comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 5442,
+  "first_round_scientific_quality": 70.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of prior primary Methods, supplements or validated protocols; local validation and acknowledging absent packet methods do not by themselves satisfy this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core protein preparation/cleavage and lipid formulation/buffer conditions remain unresolved lists rather than a quantitative preparation-to-intervention workflow or a concrete source/calibration-to-setting procedure. Proposed protein concentration series alone does not specify the essential reconstitution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Baseline leakage below a pre-specified threshold",
+      "evidence_type": "exact_quote",
+      "reason": "Thresholds for central leakage, reporter recovery and electrical stability are repeatedly deferred. Instrument checks exist but no quantitative acceptance rule or concrete pilot-to-tolerance derivation is given."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparations and a pilot are recognized, but no quantitative power/precision target with an effect/variance-to-sample-size decision is supplied; a proposed three/six-preparation floor is not a justified confirmatory sample size."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Inclusion and exclusion criteria for technical replicates",
+      "evidence_type": "exact_quote",
+      "reason": "Technical QC exclusions are listed, but attrition/original unit denominators and a finite repeat/confirmatory stopping policy are not fixed."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The main contrast and model are named, but model assumptions/diagnostics and a fully specified uncertainty/multiplicity procedure for the panel are incomplete. Naming a mixed model is not sufficient execution detail."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A concentration/lipid/time range is proposed without a bounded ladder or concrete derivation of bounds, an objective selection criterion and a lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly delimit permitted changes, refreeze the revised procedure and require fresh independent confirmation after such changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-unit-to-output audit trail with sample identifiers, exact analysis versions/settings and preserved failed/excluded runs is specified."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The complete answer contains 5,442 whitespace-delimited words against the explicit 5,000-word limit; excess repetition is material, not a penalty merely for verbosity."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "It would mean that the supplied minimal system lacks a required",
+      "evidence_type": "exact_quote",
+      "reason": "Even after nominal purity/monodispersity QC, no detected activity need not mean a missing factor: damaged inactive protein, inadequate sensitivity or imprecise negative evidence remain possible. The primary negative decision lacks a quantitative absence/equivalence rule."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase-only control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful minimal-sufficiency and pore-versus-destabilization questions, prospective fragment/mock/cleavage/buffer/fluorophore controls, protein identity and membrane assumptions are articulated. Purified, cellular and packet conclusions are distinguished; negative-rule defect is charged once at P13."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Characteristic conductance states",
+      "evidence_type": "exact_quote",
+      "reason": "Baseline/maximum-normalized endpoints and failed calibration handling are defined. Coded randomized positions, acquisition order and automated/blinded event detection constrain bias; ordered failure-specific repairs and orthogonal electrical plus vesicle-size/morphology readouts distinguish discrete conductance from generic leakage."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Characteristic conductance states",
+      "evidence_type": "exact_quote",
+      "reason": "Baseline/maximum-normalized endpoints and failed calibration handling are defined. Coded randomized positions, acquisition order and automated/blinded event detection constrain bias; ordered failure-specific repairs and orthogonal electrical plus vesicle-size/morphology readouts distinguish discrete conductance from generic leakage."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Characteristic conductance states",
+      "evidence_type": "exact_quote",
+      "reason": "Baseline/maximum-normalized endpoints and failed calibration handling are defined. Coded randomized positions, acquisition order and automated/blinded event detection constrain bias; ordered failure-specific repairs and orthogonal electrical plus vesicle-size/morphology readouts distinguish discrete conductance from generic leakage."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Characteristic conductance states",
+      "evidence_type": "exact_quote",
+      "reason": "Baseline/maximum-normalized endpoints and failed calibration handling are defined. Coded randomized positions, acquisition order and automated/blinded event detection constrain bias; ordered failure-specific repairs and orthogonal electrical plus vesicle-size/morphology readouts distinguish discrete conductance from generic leakage."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong direction and physical-mechanism reasoning with substantial execution deferrals and a material word-limit violation; no full pore claim from leakage alone.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "All five positive-core elements are present: intrinsic pore/conduit question, direct lipid action, purified fragments and controls, electrical characteristic states plus size/morphology discrimination, and a restricted conditional conduit prediction. Generic operating details and negative-branch limits reduce Q2 without erasing this correct positive branch.",
+  "item_score": 76.0
+}

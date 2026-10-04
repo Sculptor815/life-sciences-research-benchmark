@@ -1,0 +1,256 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "inf-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:55:10.214472+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c2ddadeea5873b8db8e88a1756f17ff92aa7eb0888e73a8b828b64dc418e3978",
+  "question_sha256": "e2a8164d3113ad32ccba25c2f790e6e0ea6dfabd0df8ab61546b9e78aeb131b9",
+  "reference_sha256": "3c78377ec00297d0605f749ff1e96def2de7ed9fb0e950a8b0d736f845f47eb1",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "972ab2ed197c90ae22d462f51e725026d33cca27bee6d044d8e163ebbf8fad75",
+  "primary_route": "Paired PBMC joint-sequencing and orthogonal RNA/protein fluorescence prevalence comparison.",
+  "complete_final_answer_read": true,
+  "word_count": 1387,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer prior primary Methods or validated protocols before execution. Calibration alone is not this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Essential stimulation, sampling, staining and preparation settings are deferred; no quantitative source/calibration-to-setting procedure makes the primary workflow executable."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent biological units and a pilot are recognized, but no quantitative power or precision target connects meaningful effect and pilot variation to a confirmatory sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Model families and contrasts are named but the primary likelihood/assumptions, diagnostics and multiplicity procedure remain unspecified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Titration and sampling exploration lack a bounded quantitative search or derivation of bounds with a selection objective and setting lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical repair does not explicitly require a revised frozen procedure and fresh independent confirmatory data after changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete immutable input manifest, exact software/environment/settings and command-to-output provenance chain is specified."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment rerun with numerical figure outputs, declared tolerances, resource/failure logs and source-difference audit is planned."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "RNA/protein positivity and discordance frequencies lack specified control-derived decision thresholds, weak/saturated signal handling and explicit retained denominators."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Blinding is proposed, but no randomized/balanced donor-condition processing order or lane allocation is supplied."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Two technical halt thresholds are supplied, but no assigned-sample attrition accounting or bounded replacement/confirmatory stopping policy is given."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Standard dimensionality reduction and discordance analysis are named without their transformation/observation principles and limitations."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "proving the sequencing-based disagreement is assay-specific noise",
+      "evidence_type": "exact_quote",
+      "reason": "Failure of an orthogonal assay to detect a state does not prove artifact without a calibrated target-specific detection/equivalence bound. A paired t-test for difference is also not proof of prevalence equivalence."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No biological-unit-separated discovery/tuning/test procedure with all feature/preprocessing fits contained in discovery is specified."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical-covariate correlation and control measurements do not supply a parameter/depth/missingness stress test that retains genuine biological variability."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "preserving these states as distinct phenotypic clusters",
+      "evidence_type": "exact_quote",
+      "reason": "Real RNA/protein discordance may be continuous and need not form a distinct cluster. Orthogonal prevalence alone does not mandate this representation or identify the best integration algorithm."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Human Peripheral Blood Mononuclear Cells",
+      "evidence_type": "exact_quote",
+      "reason": "The proposal names a tractable system and panel, separates supplied evidence from proposed work and recognizes biological/technical alternatives; specific inference errors are charged separately."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "multiplet rate >8%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric mixture/ambient/housekeeping acceptance gates and associated loading/wash/permeabilization repairs are supplied. Independent joint RNA/protein fluorescence on matched aliquots provides an operational orthogonal validation."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "multiplet rate >8%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric mixture/ambient/housekeeping acceptance gates and associated loading/wash/permeabilization repairs are supplied. Independent joint RNA/protein fluorescence on matched aliquots provides an operational orthogonal validation."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "multiplet rate >8%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric mixture/ambient/housekeeping acceptance gates and associated loading/wash/permeabilization repairs are supplied. Independent joint RNA/protein fluorescence on matched aliquots provides an operational orthogonal validation."
+    }
+  ],
+  "deductions_uncapped": 85,
+  "quality_score": 15,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Useful orthogonal comparison with some quantitative gates, but little executable/statistical detail and overstrong negative/cluster conclusions.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit.",
+  "item_score": 6.0,
+  "review_amended_at": "2026-10-04T09:00:57.820449+00:00"
+}

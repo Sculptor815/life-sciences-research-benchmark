@@ -1,0 +1,111 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "claude-fable",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:39:14.712326+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "1a6b7fa542ef9d26ac60dafc979ae56ece0fee54a69f4c80d2d4a2095796e541",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "cannot be worse in principle and will be better exactly when H2 holds",
+      "issue": "Nesting a Normal model in a more flexible fitted family does not guarantee lower out-of-sample risk. Hyperparameter estimation, finite samples, identifiability and optimization can worsen performance even under heavy-tailed truth."
+    },
+    {
+      "quote": "near-zero bias at all effect sizes",
+      "issue": "Bayes-optimality averaged over the true prior does not imply zero conditional bias for each effect stratum. A correctly specified Normal-prior posterior estimator still shrinks finite-information large effects."
+    },
+    {
+      "quote": "with bootstrap CIs over subsample draws",
+      "issue": "Repeated splits reuse biological samples. Treating overlapping draws as independent units understates population uncertainty; resample independent biological units or studies and rerun the full split/estimation procedure, or explicitly restrict inference to conditional split variability."
+    },
+    {
+      "quote": "qPCR (or orthogonal-platform) measurements",
+      "issue": "The protocol allows qPCR on the same samples as an independent validation anchor. That can test assay agreement but cannot establish independent biological reproducibility; specify new units or label the shared-sample role and covariance."
+    },
+    {
+      "quote": "residual reference error biases all arms similarly",
+      "issue": "This is not assured after selecting/stratifying by noisy reference magnitudes or fitting regression slopes. Reference-selection error and uncertainty can interact differently with estimators; use an uncertainty-aware comparison."
+    },
+    {
+      "quote": "true effect distributions in strong-perturbation experiments are heavy-tailed",
+      "issue": "Good predictive performance of a fitted tail model in selected datasets does not establish the universal underlying biological distribution or justify it as a default across experiments."
+    },
+    {
+      "quote": "a negative-binomial / count-model framework",
+      "issue": "The packet says count model, not specifically NB. NB is a reasonable proposed assumption, but the answer repeatedly describes it as supplied/inherited evidence."
+    }
+  ],
+  "rationale": "A concrete adaptive Student-t/scale-mixture proposal and appropriate broad historical direction, with useful matched estimators and joint stability/accuracy criteria. Important claims about nested-model superiority, conditional bias, validation independence and bootstrap uncertainty are incorrect or overconfident. The pipeline also lacks some requested raw-file/sample integrity details. Historical Hit@1 is true despite these study-quality deductions.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All six complete received final answers in this file, the exact question/packet and full reference were personally read. Output-truncated passages were recovered before scoring. No paid API judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "restore those magnitudes without re-admitting the unstable extreme estimates",
+      "assessment": "Matches the biological and methodological objective."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Normal-prior shrinkage over-shrinks the tail.",
+      "assessment": "Names the mechanism for preserving supported large effects."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "marginally a scaled Student-t with ν degrees of freedom",
+      "assessment": "Adaptive heavy-tailed count-model intervention matches the direction, without requiring the exact later Cauchy implementation."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "MSE and bias of estimated vs gold LFC",
+      "assessment": "Full proposal includes strata, rankings, sign errors, instability and independent/split data; validity limitations are scored separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "adaptive heavy-tailed prior (M2) will reduce tail bias while satisfying the stability guard",
+      "assessment": "Explicit joint forecast matches the historical direction."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

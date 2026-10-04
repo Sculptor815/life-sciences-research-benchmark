@@ -1,0 +1,123 @@
+{
+  "item_id": "inf-r02",
+  "response_id": "inf-r02",
+  "model_code": "claude-opus46",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:21:03.579152+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "7092efcb8f1e2b881be9913306c52fabcc7143c207e307c506b8aa5c7ad49547",
+  "service": {
+    "scientific_accuracy": 1,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 1,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 1,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 40.0,
+  "reasoning_index": 43.75,
+  "errors": [
+    {
+      "quote": "essentially all observed variance is technical",
+      "issue": "Clonal steady-state cells retain biological transcriptional bursting, cell-cycle and protein-turnover variation. Their joint dispersion is not pure technical noise and cannot identify the claimed biological fraction in primary PBMCs."
+    },
+    {
+      "quote": "same donor, same tissue, different library preparations",
+      "issue": "These are technical replicates, not independent biological replicates. The later donor definition is correct, but claims must separate repeated preparation from donor generalization."
+    },
+    {
+      "quote": "cells with the same barcode",
+      "issue": "Split destructive libraries contain different cells, and barcode matches do not identify the same cells. The later population-level caveat is correct, but an embedding position is not interchangeable with cell identity for the proposed Jaccard statistic."
+    },
+    {
+      "quote": "Remove markers with <20 % detection rate in the spike-in cells",
+      "issue": "A marker may genuinely be absent in Jurkat yet informative in PBMCs. Control-cell expression is not a universal assay-detectability criterion; validate appropriate positive material per target."
+    },
+    {
+      "quote": "ADT: Centered log-ratio (CLR) transformation across cells, applied per sample to avoid batch effects.",
+      "issue": "Per-sample CLR does not guarantee removal of batch effects and can change biological composition contrasts. Specify transformation orientation, zero handling and technical background controls."
+    },
+    {
+      "quote": "If technical covariates explain >80 % of the deviance",
+      "issue": "QC variables can reflect genuine activation, size or viability biology. Arbitrary deviance proportions do not identify technical causes, and correlated covariate sets do not uniquely partition causation."
+    },
+    {
+      "quote": "significant enrichment (FDR < 0.05)",
+      "issue": "Enrichment in the same RNA used to define cell states is not independent validation of a protein-regulatory mechanism. Required held-out donors/markers and orthogonal paired biological endpoints are absent from the main inference."
+    },
+    {
+      "quote": "A flat profile across conditions supports Mechanism B.",
+      "issue": "Stable genuine biological discordance need not change during this stimulus/time range. Lack of a condition effect is not evidence of technical origin."
+    },
+    {
+      "quote": "n = 75 per group has >80 % power",
+      "issue": "This is false for an independent two-proportion comparison of5% versus10% at two-sided0.05;75 cells is also the expected discordant numerator, not the denominator. More cells cannot replace donor-level power."
+    },
+    {
+      "quote": "This fraction estimates the extent to which Mechanism A vs. B dominates.",
+      "issue": "Passing reproducibility/enrichment/time tests does not estimate a mixture fraction without a validated identifiable generative model. Orthogonal same-cell validation is deferred to future work, so the strong positive/negative state conclusions are not established."
+    }
+  ],
+  "rationale": "Some concrete PBMC stimulation and computational choices, but the central pure-technical null, reproducibility statistic, variance partition and power justification are invalid. Scientific quality is low independently of the historical miss. No cell-specific adaptive integration or leakage-free biological benchmark is implemented.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Complete final answer, packet, reference and sealed target personally read. Original rubric only; strict-round penalties not active.",
+    "Cell-specific learned modality utility and an explicit integrated neighborhood construction are essential for this historical target; generic calibrated weighting or a graph mention is insufficient.",
+    "Donor splitting must precede fitted transformations and tuning. Condition blinding does not replace independent endpoint validation or prevent marker-label circularity.",
+    "A technical-null mismatch need not define a new cell state. Low-count/QC correlation does not prove artifact. Use known-control calibration, independent phenotypes and quantitative sensitivity analyses.",
+    "The supplied assessment contains no raw data; a plan is not actual figure reproduction. Accessions should be sought in primary records, never invented.",
+    "Primary abstract, Figure 1 caption and indexed WNN construction Methods excerpt verified. Complete paper, supplement and raw-data execution not audited."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34062119/",
+      "scope": "Complete indexed primary abstract and Figure 1 caption read."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238499/",
+      "scope": "Indexed primary Methods excerpt for cell-specific weighted similarity and WNN graph construction read; no whole-paper/raw-data audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Do single cells that show discordant RNA and surface-protein abundance",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Technical artifact (noise-driven discordance)",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Do not integrate the two modalities at this stage",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "same barcode",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "genuine, transient post-transcriptional regulatory states",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-04T07:23:32.901359+00:00",
+  "changes": [
+    {
+      "model": "claude-fable",
+      "item": "neu-r01",
+      "v1_hit": null,
+      "v2_hit": false,
+      "reason": "No substantive answer: none of the five historical-direction components is present.",
+      "candidate_sha256": "81717c015a80fed9b56c056a8977507dfeec8c90ec243c6eb3219dbc0afa22fa"
+    },
+    {
+      "model": "claude-fable",
+      "item": "inf-r01",
+      "v1_hit": true,
+      "v2_hit": false,
+      "reason": "The adaptive Student-t intervention, biological question and selective-tail mechanism match. V1 credited all five; strict reassessment finds the identifying evaluation unqualified: its primary reference-tail comparison ignores reference-selection uncertainty and its confidence intervals bootstrap correlated subsample draws as independent. The resulting decision cannot establish the claimed reliable accuracy improvement. Readout and qualified predicted outcome fail; direction points are not removed merely for missing Methods.",
+      "candidate_sha256": "1a6b7fa542ef9d26ac60dafc979ae56ece0fee54a69f4c80d2d4a2095796e541"
+    }
+  ],
+  "note": "First-round matching and candidate bytes preserved; second-round qualified historical matching is separately audited."
+}

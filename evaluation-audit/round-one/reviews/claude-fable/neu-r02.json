@@ -1,0 +1,114 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "claude-fable",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:59:40.035752+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "d1fcfe2b289a1ed60b7c0a40ac9d2dd05f89e6b66ee5cedc9d07d9ca4e5bcb4c",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "record from both hemispheres with pre-specified penetration plan.",
+      "issue": "The immediate post-deprivation recording arm does not explicitly reopen the closed eye and restore equal optical access. Recovery groups reopen later, but do not repair the acute core comparison. Optical/peripheral checks are useful yet endpoint restoration must be explicit."
+    },
+    {
+      "quote": "experience constructs the organization.",
+      "issue": "Deprivation plus maturation differences can show necessity or permissive effects, not instruction of detailed receptive fields. A response-magnitude covariate does not eliminate developmental-stage confounding."
+    },
+    {
+      "quote": "only interpret selectivity among responsive units",
+      "issue": "Responsiveness can be changed by deprivation. Retain nonresponsive denominators and evaluate selection bias before concluding unchanged organization among survivors."
+    },
+    {
+      "quote": "within baseline CIs",
+      "issue": "Overlap with a baseline confidence interval is not a prespecified equivalence test. A precise null requires an effect-size margin and appropriate interval for the between-group contrast."
+    },
+    {
+      "quote": "blocks all visual input",
+      "issue": "Darkness removes light-driven visual input, not spontaneous retinal activity. The later caveat correctly acknowledges this; use consistent wording and avoid equating early organization with genetic specification."
+    },
+    {
+      "quote": "only lids can be closed unilaterally",
+      "issue": "Unilateral reversible optical occlusion is an alternative. The categorical claim unnecessarily restricts model/intervention choice."
+    },
+    {
+      "quote": "whose species is not specified",
+      "issue": "The proposed model, deprivation/recording implementation and main operating conditions remain unselected. Adult normative data alone are insufficient for developmental contrasts; compare age-matched groups and temporal changes."
+    }
+  ],
+  "rationale": "Substantial developmental, competition and recovery program with animal-level inference and audit controls. The core endpoint restoration is not explicit and several instruction/equivalence claims are too strong. Historical partial components recorded without treating a topic match as a qualified hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Is the organized receptive-field structure and binocular organization",
+      "assessment": "Substantive historical component present."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Binocular competition",
+      "assessment": "Substantive historical component present."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "unilateral lid closure from eye opening",
+      "assessment": "Substantive historical component present."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "record from both hemispheres with pre-specified penetration plan.",
+      "assessment": "Different intervention/endpoint or critical measurement-control gap; see explicit rationale and deductions."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "monocular deprivation shifts the ocular influence distribution strongly toward the open eye",
+      "assessment": "Different intervention/endpoint or critical measurement-control gap; see explicit rationale and deductions."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

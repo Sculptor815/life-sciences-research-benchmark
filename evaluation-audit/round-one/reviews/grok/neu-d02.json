@@ -1,0 +1,74 @@
+{
+  "item_id": "neu-d02",
+  "response_id": "neu-d02",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:13:15.617843+00:00",
+  "review_type": "single AI curator; complete final answer personally read; model identity visible; original rubric",
+  "candidate_sha256": "ed721fd57f8e659735f6eb1eac1e00af00d7b87e7fc386776ed70697114a96c4",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 75.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Define baseline from electrode-silent or pre-stimulus frames",
+      "issue": "Using validation electrode silence to choose baseline makes the optical procedure dependent on unavailable deployment labels. Confine such fitting to designated training/per-cell calibration blocks or freeze a fluorescence-only rule; do not mix the two in the held-out test."
+    },
+    {
+      "quote": "Spine signals are anatomically downstream of the soma",
+      "issue": "This is an oversimplified directionality claim: spines receive synaptic inputs and may have local signals, while somatic action potentials can backpropagate. The answer correctly limits spine spike claims elsewhere; retain that distinction."
+    },
+    {
+      "quote": "Blank stimuli estimate the false-positive rate per unit time.",
+      "issue": "Blank trials can contain genuine spontaneous spikes and residual calcium. Only electrically defined negatives with response-memory handling support spike false-positive counts. The later blank-plus-electrode-silent threshold is stronger and should replace the unconditional statement."
+    },
+    {
+      "quote": "Accept a validation cell only if all of the following hold",
+      "issue": "Neuropil sensitivity and performance-linked acceptance should delimit a reported operating range, not silently remove difficult cells. Report coverage and outcomes outside the range; a proxy expression ratio additionally needs calcium/reference/optical qualification."
+    },
+    {
+      "quote": "Uncertainties that dominate interpretation",
+      "issue": "The complete answer has 3749 words, exceeding the 3500-word limit; repeated decision gates can be condensed."
+    }
+  ],
+  "rationale": "Strong animal-level holdout, explicit soma/spine limits, direct pairing and contamination sensitivity. Test-label-dependent preprocessing, expression ambiguity and error accounting need correction; 3749 words exceeds the 3500-word limit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read every full received final answer and the exact question, packet, complete frozen reference and curator operational extension. Recovered tool-truncated passages before scoring. No hidden reasoning, paid judge or new candidate generation.",
+    "Original first-round rubric only. New user-requested 10/5 deductions will be formalized and applied separately only after this round is complete.",
+    "Unknown indicator identities, spike counts, rates and thresholds may be calibrated. Do not require an invented historical recipe or arbitrary universal numeric cutoffs; judge calibration procedures and operational inferential validity.",
+    "Somatic electrical spikes ground somatic spike inference, not local spine synaptic calcium. A spine event without a somatic spike may be real. Calcium without a spike can still be a false positive for the declared somatic-spike output.",
+    "Blank stimulation is not electrical silence. Silent periods may retain calcium from previous spikes. Use calibrated temporal windows, matching and explicit denominators; false discovery proportion is not true-negative-based FPR.",
+    "Reference intensity ratios are conditional optical proxies, not automatic expression concentrations. Baseline calcium, reference abundance and spectral attenuation matter. A 2D channel alone cannot reconstruct arbitrary 3D motion.",
+    "Motion/neuropil correlations can include genuine neural activity. Validate correction against paired ground truth and structural recoverability rather than excluding on desired functional outcomes.",
+    "Maintain saturation and poor inference as performance failures. Report unavailable technical intervals and operating-range coverage separately. Never tune validation preprocessing using its electrical labels unless an explicitly separate per-cell calibration protocol is the claimed deployment.",
+    "New-neuron and new-animal validation differ from held-out trials in a calibrated cell. Cells/trials/spines must retain animal and parent-cell clustering. No actual experiment or raw-data pipeline was executed.",
+    "Reviewer inspected the primary 2013 publisher abstract and figure titles, plus indexed primary spike-inference benchmark excerpts; full historical Methods and supplements were not audited. Historical numeric details are not claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature12354",
+      "use": "Primary indicator paper",
+      "scope": "Publisher abstract and figure titles only; no complete source-methods audit."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27151639/",
+      "use": "Primary spike-inference benchmark",
+      "scope": "Indexed abstract excerpt only."
+    }
+  ],
+  "overall_benchmark_score": null
+}

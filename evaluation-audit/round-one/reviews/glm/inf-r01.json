@@ -1,0 +1,111 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "glm",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:49:49.034346+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "5c186c011fe54dddb78166f4446eb6231466f525c23cf4d174b9fdaee265b7a2",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "compare against the full-n estimate treated as a reference",
+      "issue": "The subsample is included in the full-n reference, creating correlated estimation errors. Use disjoint reference samples or quantify this dependence rather than treating agreement as independent recovery."
+    },
+    {
+      "quote": "Held-out replicates:** where n ≥ 4 per condition, estimate on a 2-vs-2 subsample and test recovery of the full-data calls",
+      "issue": "These full-data calls are not held out. A no-tuning rule does not remove shared observations between the estimate and its validation target."
+    },
+    {
+      "quote": "matched proteomics log-ratios",
+      "issue": "Protein abundance and RNA abundance are different estimands. Protein disagreement may reflect translation or degradation biology rather than inaccurate RNA fold changes; it is not interchangeable magnitude ground truth."
+    },
+    {
+      "quote": "Technical/batch noise masquerading as biology",
+      "issue": "The table restricts this to low-count effects lacking coherent biology and expects shrinkage to suppress them. Batch artifacts can be precise, high-count and pathway-coherent; shrinkage is not a general confounding correction."
+    },
+    {
+      "quote": "base mean below the filter threshold",
+      "issue": "The primary pipeline has already filtered on cumulative counts, while this criterion compares a normalized mean to that threshold. Define consistent units and retain a separately evaluated low-information universe; otherwise the purported safeguard can omit the cases it must test."
+    },
+    {
+      "quote": "or top-decile unshrunken |LFC|",
+      "issue": "Extreme observed estimates are not a replacement for independently supported true/reference strong effects. This alternative definition can select the noise that the evaluation is supposed to distinguish."
+    },
+    {
+      "quote": "the packet's count model with cross-gene dispersion shrinkage and a Normal prior",
+      "issue": "Likelihood, normalization, prior-scale fitting and posterior uncertainty/convergence rules are not operationally specified. A later optional adaptive-prior comparison is also undeveloped."
+    }
+  ],
+  "rationale": "Useful provenance and broad simulation structure, but shared-data references are mislabeled held out, validation mixes RNA and protein estimands, and information strata can be circular or filtered away. Technical-artifact assumptions and method specification require substantial correction. No complete adaptive-tail historical intervention is proposed.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All four complete final answers in this file, the exact question/packet and full reference were personally read. The long Qwen answer was read in overlapping sections. No paid judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "without erasing genuinely large effects",
+      "assessment": "Biological recovery question matches."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "a Normal prior is misspecified and could bias large true effects toward zero",
+      "assessment": "Mechanistic concern matches."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "a different shrinkage family (e.g., a mixture/adaptive-shrinkage approach)",
+      "assessment": "Only an optional family name, without a defined adaptive heavy-tailed model or algorithm."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "ROC/PRC per mechanism",
+      "assessment": "Magnitude/ranking endpoints exist, but explicit posterior sign/interval calibration for the new estimator is missing."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "the Normal-prior shrinkage layer improves recovery",
+      "assessment": "Primary forecast concerns the original Normal method rather than the later adaptive-tail intervention."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

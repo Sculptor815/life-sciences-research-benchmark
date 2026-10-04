@@ -1,0 +1,74 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "claude-opus46",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:20:31.295146+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "c747dc118098f83dfc4323c0366dd034cea57249745218e34df70c60ad9e8a2d",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 1,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 48.75,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "If treatment is applied per well from the same donor, those wells are technical (or at best pseudo-) replicates of that donor and must not be treated as independent units.",
+      "issue": "Individually allocated wells can be independent treatment units for within-donor inference. They do not create independent donors. This categorical denial conflates treatment replication with donor sampling and conflicts with the supplied packet."
+    },
+    {
+      "quote": "Donor as random effect",
+      "issue": "The associated DESeq2 donor formula represents fixed effects, not a random donor effect. For donor-constant treatment, saturated donor indicators absorb the treatment coefficient. Specify an identifiable allocation-dependent formula and an actually supported random-effects approach if one is needed."
+    },
+    {
+      "quote": "with a likelihood-ratio or Wald test against that threshold",
+      "issue": "DESeq2 results with a positive lfcThreshold uses thresholded Wald testing; supplying the threshold replaces prior LRT p-values. The proposal must specify the actual test and estimand rather than treating these as interchangeable."
+    },
+    {
+      "quote": "no genes with dispersion orders of magnitude above trend",
+      "issue": "Real high-dispersion genes may legitimately be outliers to the trend and are intentionally handled without ordinary trend shrinkage. Absence of such genes is not a required QC success criterion."
+    },
+    {
+      "quote": "Bit-identical results confirm no hidden state.",
+      "issue": "Bit equality does not prove every dependency is declared: the same unrecorded input can persist across reruns. Independently isolated environments, captured dependencies and semantic/numerical comparisons are needed; differing hashes also do not by themselves establish scientific divergence."
+    }
+  ],
+  "rationale": "Useful immutable-input structure, count-model framing, contrast and FDR documentation. Major independent-unit and donor-model errors undermine experimental interpretation; threshold-test ambiguity, dispersion QC and overclaimed hash verification weaken operational validity. No actual execution is claimed.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete received final answer was personally read in full, together with the exact candidate packet and frozen reference/clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than image byte equality alone. Partial source access cannot establish full reproduction. All four answers fit the 3500-word limit.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    },
+    {
+      "url": "https://bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf",
+      "scope": "Official manual indexed excerpt corroborates lfcThreshold Wald testing replacing LRT p-values; not a full manual audit."
+    },
+    {
+      "url": "https://bioconductor.org/help/course-materials/2022/CSAMA/lab/2-tuesday/lab-03-rnaseq/rnaseqGene_CSAMA2022.html",
+      "scope": "Official course excerpt corroborates special treatment of dispersion outliers; no software execution."
+    }
+  ],
+  "overall_benchmark_score": null
+}

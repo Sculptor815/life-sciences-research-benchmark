@@ -1,0 +1,64 @@
+{
+  "item_id": "bio-d02",
+  "response_id": "bio-d02",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:38:02.554319+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "0fb588c9f686ad7866ed9ded2acc5a25947339f0ac51dd4a696888c0965b6209",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 67.5,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "Do not invent a second enzyme assay.",
+      "issue": "This is a proposed design: a justified, validated factor-independent component assay can be specified without inventing historical results. Sham recovery and rescue alone cannot independently exclude reversible stabilization or damage to the separated enzyme pool; add independent integrity measurements and common excess-complement capacity."
+    },
+    {
+      "quote": "if assays are available, the major inorganic cations actually present",
+      "issue": "Relevant individual ions cannot be optional if salt explanations are claimed excluded. Conductivity plus partial cations does not establish complete ionic composition or free-ion availability."
+    },
+    {
+      "quote": "initial rate (gas production or sugar disappearance)",
+      "issue": "Choose an operational primary assay and an orthogonal fermentation-product confirmation. Sugar loss or gas alone can include nonfermentative processes; assay-specific blank/recovery and product measurements are needed."
+    },
+    {
+      "quote": "Protein level equals measured protein in the boiled-filtrate addition.",
+      "issue": "Add controls for inhibition by ashed/depleted material in active-F rescue and match all primary-arm protein contributions. A foreign-protein negative alone does not exclude all extract-specific stabilization mechanisms."
+    }
+  ],
+  "rationale": "Thoughtful dilution/inhibitor alternatives, paired sham-normalized contrasts, heat equivalence and conditional chemical limits. It deliberately omits independent enzyme assays, leaves important ion/readout choices incomplete and overstates what rescue plus a few comparator preparations can exclude.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All eleven complete received nonempty final answers were personally read, against the exact question, evidence packet and full frozen reference including curator corrections. The initial combined key/Astra output truncated part of the key; the reference answer was intact, the remaining correction fields were recovered and Astra was reread separately in full. No paid judge, hidden reasoning or actual experiment was used.",
+    "Exact historical buffer/ion values are unavailable. Accept calibrated proposed settings and scientifically justified equivalent methods; do not require an invented source recipe or a chemically defined structural analog for an unidentified activity.",
+    "The key contains preliminary protocol gates that can sound outcome-selective. Its curator clarification governs: successful reconstitution is an inferential outcome, not an exclusion rule. Preserve failed confirmatory recoveries and report residual activity.",
+    "The key preliminary normalization language conflicts with its corrected primary analysis. Fixed original-extract/enzyme input and final volume with absolute rates are primary; normalization by variable added inactive protein must not drive apparent recovery.",
+    "Boiled complementary activity rescues an intact enzyme fraction; it does not replace destroyed enzymes. Heat survival does not establish NAD identity, a single molecule, non-protein composition or lack of catalytic action.",
+    "Use matching of actual relevant ions, not conductivity as proof of composition. Restore evaporated water without automatically adding solutes; validate matrix after heat and separation. Dialysis may remove the unknown diffusible factor.",
+    "Preserved sentinel enzymes do not prove integrity of an entire pathway. Excess common complement, independent component measures and matched sham handling provide complementary evidence; rescue alone cannot eliminate reversible stabilization.",
+    "Inactive/depleted fractions require an inhibition check with active complement. Multiple biological preparations differ from technical aliquots or repeated processing of one batch. Same-principle methods can test device artifacts but provide weaker orthogonality than an independent physicochemical partition.",
+    "Word counts: Astra 2376, Sol 2709, Terra 2784, Opus46 2362, Opus48 2912, DeepSeek 2079, Gemini 1065, GLM 2541, Kimi 2776, Grok 3034, Qwen 4323. Only Qwen exceeds 3500.",
+    "Primary-author historical account inspected in Harden 1914 Chapter IV excerpts on dialysis, gelatin filtration, recombination and recovery loss (approximately lines 750-770), plus adjacent indexed assay discussion. Original 1906 DOI was inaccessible. This is not a full 1906 methods/supplement audit, and historical recipes were not imposed on candidates."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.gutenberg.org/cache/epub/44985/pg44985-images.html",
+      "scope": "Primary author Arthur Harden, Alcoholic Fermentation (1914), Chapter IV selected dialysis/filtration/reconstitution and recovery-loss passages; not the full book or full 1906 original."
+    }
+  ],
+  "overall_benchmark_score": null
+}

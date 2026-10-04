@@ -1,0 +1,222 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:28:34.765039+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "012881a175653e6ea72beeed6f80ee50e903bc9683b7075a9f9cfd34a1f7a772",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "7af0b00d6696235bc31d6183fe46f55cac7b9d94172fba356abcfb466703c6bf",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 1270,
+  "first_round_scientific_quality": 33.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The prospective controls lack an explicitly electrically verified silent/negative condition for determining false optical events; structural/neuropil correction alone does not establish the necessary negative comparison."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "provide an exact mapping",
+      "evidence_type": "exact_quote",
+      "reason": "Paired calibration cannot guarantee an exact amplitude-to-spike-count map in the presence of history, saturation and biological variability."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No concrete indicator preparation/dose/timing workflow or calibration-to-choice rule."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No independent channel cross-talk/structural activity calibration, known-displacement accuracy gate or synchronization-error acceptance procedure."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Detection/error rates lack explicit denominator, unique spike-event matching window and missing/saturated measurement accounting."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "individual neurons (somas) and isolated dendritic spines",
+      "evidence_type": "exact_quote",
+      "reason": "Spines and cells are not independent biological allocation units; the plan lacks animal/parent-cell nesting and independent replication precision justification."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correlation and false-positive targets lack an inferential model, uncertainty procedure and multiplicity handling for visual responses."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Somatic electrophysiology is treated as ground truth for spine events without addressing local synaptic calcium; an uncalibrated structural channel alone also does not identify all three displacement components."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No refreeze and fresh independent confirmation after changes prompted by failures."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A significant fluorescence-spike correlation and false-positive target are not sufficient acceptance: minimum useful sensitivity/count error and ambiguous or non-identifiable outcomes need explicit decision gates."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Threshold selection against revealed electrophysiology and performance reporting use the same data; there is no held-out independent confirmation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No raw-file/sample/trial provenance linkage and exact processing/code/environment version record."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "**RECOMMENDED NEXT ACTION AND CONCLUSION**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction."
+    }
+  ],
+  "deductions_uncapped": 75,
+  "quality_score": 25,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "The answer proposes paired recordings and randomized/blinded acquisition, an explicit coefficient sweep and practical failure checks. It remains grounded in packet limitations in places, but exact-mapping language, spine ground-truth assumptions and absence of independent validation require substantial correction.",
+  "item_score": 25
+}

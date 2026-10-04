@@ -1,0 +1,255 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:13:08.317124+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "1b6969d5d7f142d9475d5b88e40423bfccda255866137e452ed6eff5b2941ba1",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "b90519fe30062c32ed94149e009453d82e22a0f6bc672e32a8ddc24bb71f3d1f",
+  "primary_route": "Existing Normal-prior NB shrinkage benchmark, simulations and independent RNA reference; heavier-tailed priors are future options.",
+  "complete_final_answer_read": true,
+  "word_count": 3570,
+  "first_round_scientific_quality": 51.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "MLE shows near-zero average bias",
+      "evidence_type": "exact_quote",
+      "reason": "The figure describes bias in absolute magnitude, |estimate|-|truth|. Even an unbiased signed estimator generally has positively biased absolute magnitude near zero; signed and magnitude bias are not interchangeable."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "This is the framework described in the evidence packet.",
+      "evidence_type": "exact_quote",
+      "reason": "NB likelihood and log-normal dispersion prior are proposed implementation assumptions, not facts supplied by the generic packet."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "estimated from the observed distribution of MLEs",
+      "evidence_type": "exact_quote",
+      "reason": "Prior-scale estimation lacks adjustment for unequal estimation noise, an actual fitting algorithm and convergence/acceptance rules; software/example references do not supply an executable configuration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "pseudo-truth",
+      "evidence_type": "exact_quote",
+      "reason": "A one-replicate pseudocount ratio and n-at-least-10 MLE are treated as quantitative reference effects without propagating their uncertainty; the pseudocount and normalization rule are unspecified. These cannot support calibrated magnitude losses merely by being called noisy."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "B = 50",
+      "evidence_type": "exact_quote",
+      "reason": "Fixed n=2/3/6 and 50 simulations lack a meaningful-effect/precision or power calculation and Monte Carlo precision/stopping rule."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "There is no condition-blind QC/exclusion or masked estimator-comparison workflow and no balanced/randomized validation processing rule beyond a random held-out pair."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Remove genes with fewer than 10 total counts",
+      "evidence_type": "exact_quote",
+      "reason": "The gene filter is concrete, but sample exclusions, unestimable/failed fits, missing validations, retained denominators and stopping are unspecified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Wald test p-value",
+      "evidence_type": "exact_quote",
+      "reason": "Wald/BH DE testing is named, but the primary method-performance difference has no uncertainty or multiplicity procedure and interval/sign calibration is not evaluated."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "approximately proportional to mean count / dispersion",
+      "evidence_type": "exact_quote",
+      "reason": "The NB log-link information depends on both conditions and design through weights proportional to mu/(1+alpha*mu), not mean/dispersion. At high counts it saturates rather than increasing linearly. Using baseMean/dispersion to identify the core information strata is materially misleading."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "0.5\u00d7 and 2\u00d7",
+      "evidence_type": "exact_quote",
+      "reason": "Bounded prior/filter sensitivity is present, but no development selection rule and lock before independent evaluation are provided; registered search bounds alone are not a frozen confirmation workflow."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "check goodness-of-fit via dispersion plots and Cook",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostics and alternative normalization are listed without quantitative failure gates and an ordered repair/retest procedure."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommended next step: test alternative priors",
+      "evidence_type": "exact_quote",
+      "reason": "No revision/retention policy specifies which parts stay fixed or new independent confirmation after prior or preprocessing changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The Normal prior is too restrictive",
+      "evidence_type": "exact_quote",
+      "reason": "Failed ranking or external validation cannot uniquely identify a restrictive prior; normalization, likelihood and reference errors are alternatives. Suppression failure also inconsistently switches from threshold 1 to 2."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "full parameter provenance",
+      "evidence_type": "exact_quote",
+      "reason": "There is no immutable checksum/sample-library mapping plus executable environment/commands and saved numerical source-output audit."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use the observed distribution of baseMean values and shrunken dispersions",
+      "evidence_type": "exact_quote",
+      "reason": "Full-data preprocessing/dispersion/prior fitting is not explicitly confined to the training subset in the fallback holdout; refitting normalization and hyperparameters inside each split is required."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "batch effects",
+      "evidence_type": "exact_quote",
+      "reason": "Batch is a caveat rather than an eligibility/design-adjustment plan; missingness, composition shifts and confounded contrasts have no explicit stress/exclusion procedure."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Figure 1: MA Plot with Shrinkage",
+      "evidence_type": "exact_quote",
+      "reason": "No saved numerical tables, clean-environment rerun, agreement tolerance, resource/failure logs or source-difference audit is specified."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "under what data conditions",
+      "evidence_type": "exact_quote",
+      "reason": "The meaningful question, broad evidence chain and explicit alternative shrinkage behaviors are present, with a feasible eligible RNA dataset route and 3,570-word format. General conclusions are bounded to tested regimes; the specific erroneous prior-failure decision is charged only to P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "under what data conditions",
+      "evidence_type": "exact_quote",
+      "reason": "The meaningful question, broad evidence chain and explicit alternative shrinkage behaviors are present, with a feasible eligible RNA dataset route and 3,570-word format. General conclusions are bounded to tested regimes; the specific erroneous prior-failure decision is charged only to P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "under what data conditions",
+      "evidence_type": "exact_quote",
+      "reason": "The meaningful question, broad evidence chain and explicit alternative shrinkage behaviors are present, with a feasible eligible RNA dataset route and 3,570-word format. General conclusions are bounded to tested regimes; the specific erroneous prior-failure decision is charged only to P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "under what data conditions",
+      "evidence_type": "exact_quote",
+      "reason": "The meaningful question, broad evidence chain and explicit alternative shrinkage behaviors are present, with a feasible eligible RNA dataset route and 3,570-word format. General conclusions are bounded to tested regimes; the specific erroneous prior-failure decision is charged only to P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "under what data conditions",
+      "evidence_type": "exact_quote",
+      "reason": "The meaningful question, broad evidence chain and explicit alternative shrinkage behaviors are present, with a feasible eligible RNA dataset route and 3,570-word format. General conclusions are bounded to tested regimes; the specific erroneous prior-failure decision is charged only to P13."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "under what data conditions",
+      "evidence_type": "exact_quote",
+      "reason": "The meaningful question, broad evidence chain and explicit alternative shrinkage behaviors are present, with a feasible eligible RNA dataset route and 3,570-word format. General conclusions are bounded to tested regimes; the specific erroneous prior-failure decision is charged only to P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "under what data conditions",
+      "evidence_type": "exact_quote",
+      "reason": "The meaningful question, broad evidence chain and explicit alternative shrinkage behaviors are present, with a feasible eligible RNA dataset route and 3,570-word format. General conclusions are bounded to tested regimes; the specific erroneous prior-failure decision is charged only to P13."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "Prediction: this fraction > 0.90",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth simulation gates provide a specified calibration target and failure action; the wrong information measure is charged specifically to P09."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "independent higher-replicate RNA-seq study",
+      "evidence_type": "exact_quote",
+      "reason": "An independent same-contrast RNA study or RNA qPCR comparison is operationalized with effect correlation/MSE; reference uncertainty deficiencies are charged to P04, not repeated here."
+    }
+  ],
+  "deductions_uncapped": 95,
+  "quality_score": 5,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Useful study sequence and misspecification scenarios, but NB information, absolute-bias and reference/error logic require substantial corrections. Packet attribution and the causal diagnosis of prior failure are also overstated.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The question and shrinkage tradeoff match, but the primary intervention retains the Normal prior. Cauchy appears only as future work. Incorrect information strata, noisy pseudo-truth and uncalibrated evaluation prevent qualified readout/prediction matching. This retains the v1 non-hit.",
+  "item_score": 2.0
+}

@@ -1,0 +1,223 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:05:21.273039+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "afce183176877b7fe3d8507bf4324b0c248d7a04112a5e374926c5c89d73df7a",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "b7a697d3e4fad36647694b48e09d2cec0bafbeb4c88210a4815421bb566072d2",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 2720,
+  "first_round_scientific_quality": 55.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Allow \u22654 weeks",
+      "evidence_type": "exact_quote",
+      "reason": "The selected viral route lacks functional titer, delivered amount, coordinates/atlas lookup and operational injection preparation despite detailed optical examples."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "trial-level binary choice (correct/incorrect)",
+      "evidence_type": "exact_quote",
+      "reason": "The primary correct/incorrect denominator does not specify treatment-induced omissions, and missing video/events are not handled quantitatively."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Coded viruses and randomized trials are specified, but randomization/concealment of animal assignment to construct groups is absent."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Baseline (no-inhibition) accuracy \u226575% during test sessions",
+      "evidence_type": "exact_quote",
+      "reason": "Excluding animals based on test-period behavioral accuracy can select post-treatment outcomes. An included-animal sensitivity analysis does not justify the primary biological exclusion."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "somatic inhibition is preferred",
+      "evidence_type": "exact_quote",
+      "reason": "Retrograde labeling identifies Q-projecting neurons, not Q-only output. Illuminating their P somata silences any collaterals; a low dual-label fraction does not establish functional collateral insignificance. The later caveat does not repair the primary projection-specific recommendation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Parameter/opsin changes are not explicitly refrozen and tested in fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "not significantly impaired",
+      "evidence_type": "exact_quote",
+      "reason": "Nonsignificant motor or light-control tests do not establish confound equivalence. No prespecified meaningful-effect bounds support the retrieval decision."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "free-locomotion assay (open field)",
+      "evidence_type": "exact_quote",
+      "reason": "Open-field locomotion is not a matched cue-period sensory/motor or independent pathway validation. No operational independent retrieval test validates the primary somatic result."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No linked animal/trial raw videos/events, calibration records and exact code/model/acquisition versions."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Optogenetic Test of Projection P\u2192Q Necessity During Cue Retrieval",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors."
+    }
+  ],
+  "central_false_premise": "The central recommendation treats retrogradely targeted somatic inhibition as isolating P-to-Q transmission despite acknowledged possible collaterals. It suppresses a projection-defined population, not the specified single projection, invalidating the principal pathway-specific conclusion as written.",
+  "deductions_uncapped": 55,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 1,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Detailed proposed physiology with an explicit suppression criterion, bounded power grid, onset/offset and rebound checks. Animal-level sample assumptions, coded scoring, Holm correction and formal interim approach are given; prospective light/no-light/epoch controls address major alternatives. However the actual soma manipulation cannot support the claimed isolated P-to-Q effect, and null controls are overinterpreted. Specific checks own those defects without duplicate general errors.",
+  "item_score": 20
+}

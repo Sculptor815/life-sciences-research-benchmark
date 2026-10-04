@@ -1,0 +1,107 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "claude-opus48",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:39:14.712326+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "b6ec69b3489e0046e883120f0b26eadb030b198e45b8ba7127928731669ff106",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Shrinkage-vs-information curve.",
+      "issue": "The stated prediction uses absolute raw-minus-shrunk change and expects it to fall monotonically with information across genes. Absolute shrinkage also depends on effect magnitude and fitted prior scale; condition on those or use a justified standardized comparison before diagnosing a failure."
+    },
+    {
+      "quote": "then subsample to few replicates",
+      "issue": "Using the larger dataset as a reference and subsampling from it creates shared-data dependence unless the reference excludes the small subset. Prevent overlap or quantify its effect; the later no-tuning rule does not solve shared-sample validation."
+    },
+    {
+      "quote": "matched qPCR, protein, or an independent platform",
+      "issue": "Protein abundance is a different estimand from transcript abundance; discordance need not indicate RNA estimation error. Same-sample qPCR is also assay validation, not independent biological replication. Prespecify the actual estimand and independent units."
+    },
+    {
+      "quote": "Normal prior on effects, per the packet.",
+      "issue": "The proposed estimator does not specify a complete likelihood, prior-scale fit, posterior algorithm, numerical diagnostics or uncertainty construction. Repeating the packet method is not an operational adaptive-tail proposal."
+    },
+    {
+      "quote": "Binned estimated effect vs observed true effect.",
+      "issue": "This may describe mean-effect calibration but does not test interval coverage or false-sign probability calibration. Define the latter explicitly if using uncertainty to reject unstable extremes."
+    },
+    {
+      "quote": "orthogonal assay independently confirms specific genes",
+      "issue": "Orthogonal confirmation of selected genes is not sufficient to claim reproduction of a particular published result without the original dataset/contrast, numerical target and reproduction criteria. Validation and reproduction remain distinct."
+    }
+  ],
+  "rationale": "Good broad pipeline sequence and honest non-execution status, but estimator and error-control rules remain underspecified. Information diagnostics, overlapping reference data and protein-versus-RNA validation can give misleading decisions. The historical heavy-tail direction appears only as a future option; no complete intervention or corresponding forecast is provided.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All six complete received final answers in this file, the exact question/packet and full reference were personally read. Output-truncated passages were recovered before scoring. No paid API judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "erasing genuinely large, well-supported effects",
+      "assessment": "Biological question matches."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "a Normal prior could over-shrink the tail",
+      "assessment": "Mechanistic motivation recognized."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Add a heavier-tailed prior comparison",
+      "assessment": "A conditional suggestion without an adaptive prior or fitting method is only a partial intervention component."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Binned estimated effect vs observed true effect.",
+      "assessment": "Estimation/ranking diagnostics exist, but explicit posterior sign/interval uncertainty calibration is absent."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "whether the shrinkage estimator *behaves* as its rationale predicts",
+      "assessment": "Forecast evaluates the original shrinkage behavior rather than the new adaptive-tail method."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

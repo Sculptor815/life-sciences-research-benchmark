@@ -1,0 +1,68 @@
+{
+  "item_id": "bio-d02",
+  "response_id": "bio-d02",
+  "model_code": "deepseek",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:38:02.551069+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "2667112989753e27e2ed2c828bdbbaccdf32ff74f1803bdcad2e27279d49207a",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Only use batches where retentate can be reactivated to a calibrated level.",
+      "issue": "A common excess-complement capacity assay can diagnose gross failure, but selecting confirmatory batches by successful rescue conditions on the central biological outcome. Prespecify independent handling/integrity evidence, retain failed recoveries and distinguish technical loss from evidence against the hypothesis."
+    },
+    {
+      "quote": "subject a retentate aliquot to the same handling, time, temperature, shear, and dilution as R, but without the actual separation step",
+      "issue": "A retentate already underwent separation. A useful sham must start from the parent aliquot before separation, with compatible handling and subsequent common-complement comparison; otherwise original separation damage is shared and cannot be detected."
+    },
+    {
+      "quote": "use conductivity and pH as calibrated surrogates",
+      "issue": "These cannot uniquely match ion species or free-ion concentrations. If direct relevant ion measurements are unavailable, retain the salt alternative rather than treating scalar matching as exclusion."
+    },
+    {
+      "quote": "matched or adjusted in analysis.",
+      "issue": "Covariate adjustment does not replace physical matching when fraction identity is confounded with composition, particularly with few batches and nonlinear ion/protein effects. Use matched design or limit the claim; do not infer exclusion from regression alone."
+    },
+    {
+      "quote": "verified to fail to restore retentate activity",
+      "issue": "Also verify that the depleted material does not suppress active-F rescue. Without this, treatment-generated inhibitors can mimic selective factor depletion."
+    }
+  ],
+  "rationale": "Good independent-preparation structure, explicit second separation, heat matrix and quantitative comparisons. Outcome-conditioned recovery gates, an invalid sham definition, surrogate ion matching and regression-based artifact exclusion weaken causal interpretation.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All eleven complete received nonempty final answers were personally read, against the exact question, evidence packet and full frozen reference including curator corrections. The initial combined key/Astra output truncated part of the key; the reference answer was intact, the remaining correction fields were recovered and Astra was reread separately in full. No paid judge, hidden reasoning or actual experiment was used.",
+    "Exact historical buffer/ion values are unavailable. Accept calibrated proposed settings and scientifically justified equivalent methods; do not require an invented source recipe or a chemically defined structural analog for an unidentified activity.",
+    "The key contains preliminary protocol gates that can sound outcome-selective. Its curator clarification governs: successful reconstitution is an inferential outcome, not an exclusion rule. Preserve failed confirmatory recoveries and report residual activity.",
+    "The key preliminary normalization language conflicts with its corrected primary analysis. Fixed original-extract/enzyme input and final volume with absolute rates are primary; normalization by variable added inactive protein must not drive apparent recovery.",
+    "Boiled complementary activity rescues an intact enzyme fraction; it does not replace destroyed enzymes. Heat survival does not establish NAD identity, a single molecule, non-protein composition or lack of catalytic action.",
+    "Use matching of actual relevant ions, not conductivity as proof of composition. Restore evaporated water without automatically adding solutes; validate matrix after heat and separation. Dialysis may remove the unknown diffusible factor.",
+    "Preserved sentinel enzymes do not prove integrity of an entire pathway. Excess common complement, independent component measures and matched sham handling provide complementary evidence; rescue alone cannot eliminate reversible stabilization.",
+    "Inactive/depleted fractions require an inhibition check with active complement. Multiple biological preparations differ from technical aliquots or repeated processing of one batch. Same-principle methods can test device artifacts but provide weaker orthogonality than an independent physicochemical partition.",
+    "Word counts: Astra 2376, Sol 2709, Terra 2784, Opus46 2362, Opus48 2912, DeepSeek 2079, Gemini 1065, GLM 2541, Kimi 2776, Grok 3034, Qwen 4323. Only Qwen exceeds 3500.",
+    "Primary-author historical account inspected in Harden 1914 Chapter IV excerpts on dialysis, gelatin filtration, recombination and recovery loss (approximately lines 750-770), plus adjacent indexed assay discussion. Original 1906 DOI was inaccessible. This is not a full 1906 methods/supplement audit, and historical recipes were not imposed on candidates."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.gutenberg.org/cache/epub/44985/pg44985-images.html",
+      "scope": "Primary author Arthur Harden, Alcoholic Fermentation (1914), Chapter IV selected dialysis/filtration/reconstitution and recovery-loss passages; not the full book or full 1906 original."
+    }
+  ],
+  "overall_benchmark_score": null
+}

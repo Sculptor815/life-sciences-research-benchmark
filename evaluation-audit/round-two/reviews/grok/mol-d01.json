@@ -1,0 +1,222 @@
+{
+  "model_code": "grok",
+  "item_id": "mol-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:30:03.460945+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "eaffe105660841160a742610f201ba09c7cdb96f53bc507ae97f2566a7a55691",
+  "question_sha256": "977a901aa45a51e53beb3d5dfc1df4236d50dbabe47be214290304b663ddcfc5",
+  "reference_sha256": "4c10b3678ba1f5bc0060a9db770578e48e607d5100db658b12d6b95ee26dbab8",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "97285042301d98ba4ec2de233fda71b58df3af17a2437c62c7a312de2161d128",
+  "primary_route": "Matched wild-type versus kinase-dead K rescue in K-loss cells; proposed orthogonal confirmation assessed where used.",
+  "complete_final_answer_read": true,
+  "word_count": 3139,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit prior Methods/supplement/validated-protocol consultation and detailed condition-transfer verification before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit matched non-targeting editing/selection control alongside parental and rescue groups. Independent null reagents reduce specific off-target artifacts but do not isolate common handling effects."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Acute blockade is required for the \u201crather than scaffolding\u201d wording",
+      "evidence_type": "exact_quote",
+      "reason": "Acute catalytic blockade can strengthen catalytic necessity, but does not establish scaffold dispensability. The stronger stated claim still requires an active scaffold-defective comparison; correctly naming this distinction elsewhere does not validate the upgrade rule."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "titrate dose, multiplicity, or inducer",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative delivery/target-cell/exposure/expression workflow or concrete calibration-to-choice procedure for preparation settings."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Express phospho-S as a ratio to total S",
+      "evidence_type": "exact_quote",
+      "reason": "Blot saturation has a repair path, but primary background/below-limit/absent-denominator/missing-value handling is not defined."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "minimum of three biological replicates",
+      "evidence_type": "exact_quote",
+      "reason": "The growth endpoint has a variance/power plan, but the co-primary signaling comparison is assigned a minimum three without a precision/power or pilot-variance justification."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Correct for the pre-specified family",
+      "evidence_type": "exact_quote",
+      "reason": "Confidence intervals, nesting and an equivalence margin are present, but no correction/gatekeeping procedure is given for the primary family; it remains an instruction to determine later."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "K-dependent by the empty-vector and matched-input controls",
+      "evidence_type": "exact_quote",
+      "reason": "A K-associated kinase can coprecipitate only when K is present. Empty-vector background and matched K input do not establish that observed phosphotransfer is intrinsic K activity; no purification or contaminating-kinase discrimination is specified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Replacement alleles, delivery repair and retitration lack explicit refreeze and fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Kinase-dead must fall to empty-vector background",
+      "evidence_type": "exact_quote",
+      "reason": "Background-level activity does not exclude activity sufficient for rescue without connecting the activity detection limit to a functional WT activity titration. Expression-window titration alone does not establish that activity bound."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Selectivity is the null-cell test",
+      "evidence_type": "exact_quote",
+      "reason": "No additional drug effect in a null arm can reflect a floor effect and is not proof of specificity. The decisive inhibitor arm also lacks direct verification that scaffold complexes remain intact under drug; a resistant/insensitive rescue or other operational specificity route is needed."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Locked quantification files lack linked raw inputs, sample IDs and exact analysis-code/model/environment/settings versions."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommendation: Do not interpret catalysis versus scaffolding from M1\u2013M3. First reconfirm K loss and the two phenotypes, then run an isogenic rescue in K-null cells with expression-matched wild-type K versus a quality-controlled kinase-dead K, and pair it with acute catalytic blockade in cells that still contain K protein. Only the joint pattern can support \u201ccatalysis is required rather than scaffolding.\u201d",
+      "evidence_type": "exact_quote",
+      "reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Good cautious attribution of M1, authenticated cells, phosphate-specificity controls and loading curves with assay-replacement/saturation repair. Randomized coded balanced processing, technical stopping and ligand dose/time selection bounded by vehicle-to-plateau response and two-day stability are explicit. Useful diagnostic branches and endpoint separation. The immunoprecipitated activity assay and null-cell inhibitor test are less identifying than claimed; missing quantitative and confirmatory safeguards remain.",
+  "item_score": 30
+}

@@ -1,0 +1,99 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "gpt-sol",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:39:14.709246+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "b67e0d0af2efd7fb93c0b207acaea7411f0d2fe7710474e8908d3a9a0338a7ee",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "expressed as an absolute log2 fold change",
+      "issue": "Later the GLM uses log(mu)=log(s)+X*gamma+C*beta with beta called a log fold change, but does not state conversion. If log is natural, compare beta/log(2) with the log2 threshold, or put log(2)*beta in the link. Freeze units for prior scales, thresholds and figures."
+    },
+    {
+      "quote": "under a frozen empirical-Bayes procedure",
+      "issue": "The procedure is not actually specified: how to estimate the Normal prior scale while accounting for noisy gene-wise estimates, posterior computation, convergence and boundary rules remain missing. The heavier-tailed alternative is only a contingency, not an implemented comparison."
+    },
+    {
+      "quote": "normalization method;",
+      "issue": "Normalization is explicitly left on the unreported-parameters list without choosing or operationally defining one. The requested complete pipeline needs a proposed normalization rule and its assumptions; missing dataset metadata do not prevent specifying that rule."
+    },
+    {
+      "quote": "false-sign rate for null or near-null effects",
+      "issue": "Define event and denominator precisely. Exact null effects have no true direction, and false strong-effect claims, selected-set false-sign proportion and per-null-gene call probability are different quantities. The information-gate calibration cannot use these interchangeably."
+    }
+  ],
+  "rationale": "Careful biological framing, independent validation, multiple truth regimes and useful separation of uncertainty from absence. The primary proposal remains a Normal-prior benchmark with important implementation choices deferred and ambiguous effect units/error definitions. This is useful research planning, but not a fully specified adaptive heavy-tailed method; historical intervention is not matched.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All six complete received final answers in this file, the exact question/packet and full reference were personally read. Output-truncated passages were recovered before scoring. No paid API judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "recovering reproducible transcriptional responses",
+      "assessment": "Biological target substantially matches."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Normal-prior method may over-shrink rare large effects",
+      "assessment": "Correct mechanism motivating a possible extension."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "as a sensitivity analysis, a less strongly contracting or heavy-tailed effect model if the Normal prior fails.",
+      "assessment": "A conditional menu entry is not a defined adaptive heavy-tailed intervention."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "calibration of posterior directional probabilities.",
+      "assessment": "Readouts include bias, ranking, sign/coverage and independent validation."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "strong informative effects are retained, while low-information extremes lose magnitude or fail the evidence gate.",
+      "assessment": "Desired joint outcome is present, even though the primary estimator remains Normal."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

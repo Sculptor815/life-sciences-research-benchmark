@@ -1,0 +1,66 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "qwen",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:23:55.269241+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "4b31b34d429e0d1fa645d2020dea5ca89445d88bd52aba4ebbb7eba2317418ff",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 70.0,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "Treatment must not be perfectly confounded with batch, donor, lane, extraction date, or library preparation date.",
+      "issue": "The answer correctly proposes a donor-level between-arm model elsewhere. Donor-constant treatment is not intrinsically invalid when independently allocated donors are the replicates; distinguish it from including aliased saturated donor effects."
+    },
+    {
+      "quote": "gene_count ~ offset(library_size) + design_terms",
+      "issue": "For a log-link NB model the offset is on the log scale, and DESeq2 size factors are not interchangeable with raw library sizes under compositional changes. The later median-of-ratios setting is useful but should be reconciled with this equation."
+    },
+    {
+      "quote": "test: Wald_or_LRT_placeholder",
+      "issue": "Choose a primary hypothesis/test and compatible shrinker, define estimated-count import if using a transcript quantifier, explicitly validate paired reads and count-column order, and omit constant donor/batch factors in the single-level branch. These are proposed methodological choices, not forbidden invented historical settings."
+    },
+    {
+      "quote": "Every plot file should be listed in an output manifest with its generating command and input hashes.",
+      "issue": "Provenance is useful but clean rerun verification also needs aligned numerical result/plot-data comparisons and tolerance rules, rather than only declared hashes and output reproducibility flags."
+    },
+    {
+      "quote": "## 7. Final proposed statement",
+      "issue": "The full received answer is 3854 whitespace-delimited words, exceeding the 3500-word limit. Repeated status declarations and duplicate manifest descriptions could be shortened without removing needed scientific detail."
+    }
+  ],
+  "rationale": "Substantial hierarchy, causal adjustment awareness, paired/parallel designs, manifest and source-interpretation audit. Contradictory donor-stop rules, offset notation, unresolved central choices and limited numerical rerun verification prevent higher credit. Also exceeds the stated word limit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete final answer was personally read separately in full, against the exact question, packet and frozen reference including clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than byte equality. Partial source access cannot establish full reproduction. Word counts: DeepSeek 2307, Gemini 1228, GLM 2436, Kimi 3456, Grok 3342, Qwen 3854; only Qwen exceeds 3500.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

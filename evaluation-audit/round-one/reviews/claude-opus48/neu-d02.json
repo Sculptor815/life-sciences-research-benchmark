@@ -1,0 +1,74 @@
+{
+  "item_id": "neu-d02",
+  "response_id": "neu-d02",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:13:15.614635+00:00",
+  "review_type": "single AI curator; complete final answer personally read; model identity visible; original rubric",
+  "candidate_sha256": "41959ef41f46cd56e7cfd62c5c9de363af6cedbdbd7e30ba0cdf768db43c76ef",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "This controls for how much indicator is present.",
+      "issue": "The resting indicator/reference ratio is only an optical proxy without independent calibration of baseline calcium, reference abundance and differential attenuation. It cannot directly control molecular abundance."
+    },
+    {
+      "quote": "per-cell measured kinetics",
+      "issue": "These kinetics and neuropil coefficients are obtained using paired electrophysiology, but no explicit held-out blocks/preparations separate fitting from reporting. Blinding the detector after fitting does not validate transfer to new cells without their electrical labels."
+    },
+    {
+      "quote": "Flag and exclude epochs where residual motion correlation with the GECI signal exceeds a pre-set bound.",
+      "issue": "True movement-related neural activity can correlate with motion. Excluding on the functional outcome can remove genuine responses and error-prone epochs. Gate on validated registration recoverability and report retained/excluded performance, using ephys to test signal preservation."
+    },
+    {
+      "quote": "rate of detected \"events\" with no corresponding ephys spike",
+      "issue": "Define the time denominator, one-to-one temporal tolerance, duplicate-event handling and negatives beyond earlier calcium decay. Otherwise this rate and its ROC-style curve are not reproducibly specified."
+    },
+    {
+      "quote": "spine claims inherit somatic calibration plus correction controls",
+      "issue": "The explicit lack-of-local-ground-truth caveat is good, but somatic calibration does not transfer to local spine spikes/synaptic calcium. Report optical spine responses and associations only unless a local validation is supplied."
+    }
+  ],
+  "rationale": "Good paired acquisition, per-cell kinetics, expression-stratified modeling and motion challenges. Independent validation, expression measurement, motion-related selection and explicit event metrics need substantial correction.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read every full received final answer and the exact question, packet, complete frozen reference and curator operational extension. Recovered tool-truncated passages before scoring. No hidden reasoning, paid judge or new candidate generation.",
+    "Original first-round rubric only. New user-requested 10/5 deductions will be formalized and applied separately only after this round is complete.",
+    "Unknown indicator identities, spike counts, rates and thresholds may be calibrated. Do not require an invented historical recipe or arbitrary universal numeric cutoffs; judge calibration procedures and operational inferential validity.",
+    "Somatic electrical spikes ground somatic spike inference, not local spine synaptic calcium. A spine event without a somatic spike may be real. Calcium without a spike can still be a false positive for the declared somatic-spike output.",
+    "Blank stimulation is not electrical silence. Silent periods may retain calcium from previous spikes. Use calibrated temporal windows, matching and explicit denominators; false discovery proportion is not true-negative-based FPR.",
+    "Reference intensity ratios are conditional optical proxies, not automatic expression concentrations. Baseline calcium, reference abundance and spectral attenuation matter. A 2D channel alone cannot reconstruct arbitrary 3D motion.",
+    "Motion/neuropil correlations can include genuine neural activity. Validate correction against paired ground truth and structural recoverability rather than excluding on desired functional outcomes.",
+    "Maintain saturation and poor inference as performance failures. Report unavailable technical intervals and operating-range coverage separately. Never tune validation preprocessing using its electrical labels unless an explicitly separate per-cell calibration protocol is the claimed deployment.",
+    "New-neuron and new-animal validation differ from held-out trials in a calibrated cell. Cells/trials/spines must retain animal and parent-cell clustering. No actual experiment or raw-data pipeline was executed.",
+    "Reviewer inspected the primary 2013 publisher abstract and figure titles, plus indexed primary spike-inference benchmark excerpts; full historical Methods and supplements were not audited. Historical numeric details are not claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature12354",
+      "use": "Primary indicator paper",
+      "scope": "Publisher abstract and figure titles only; no complete source-methods audit."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27151639/",
+      "use": "Primary spike-inference benchmark",
+      "scope": "Indexed abstract excerpt only."
+    }
+  ],
+  "overall_benchmark_score": null
+}

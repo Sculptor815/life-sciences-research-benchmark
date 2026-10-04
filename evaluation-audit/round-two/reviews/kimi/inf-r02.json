@@ -1,0 +1,255 @@
+{
+  "model_code": "kimi",
+  "item_id": "inf-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:57:26.396185+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "ec08149fe8f804caec189c03065c21c3263c8e2242983029ae68c930fba64805",
+  "question_sha256": "e2a8164d3113ad32ccba25c2f790e6e0ea6dfabd0df8ab61546b9e78aeb131b9",
+  "reference_sha256": "3c78377ec00297d0605f749ff1e96def2de7ed9fb0e950a8b0d736f845f47eb1",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6c7e908481c27543e35ca91beaf4bf5cca79f5d50ad5dbcb7756a28aac4263e3",
+  "primary_route": "One prospective RNA-high/surface-low precursor state, orthogonal localization, conditional live fate and function tests.",
+  "complete_final_answer_read": true,
+  "word_count": 4167,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer prior primary Methods or validated protocols before execution. Calibration alone is not this action."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No identifiable biological system/target pair or concrete source-resolution procedure is selected; eligibility criteria alone leave the experiment inputs unresolved."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Essential stimulation, sampling, staining and preparation settings are deferred; no quantitative source/calibration-to-setting procedure makes the primary workflow executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Relevant blanks and specificity controls are listed, but an operational numerical acceptance-to-action rule or concrete derivation of its tolerance is not supplied."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent biological units and a pilot are recognized, but no quantitative power or precision target connects meaningful effect and pilot variation to a confirmatory sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Model families and contrasts are named but the primary likelihood/assumptions, diagnostics and multiplicity procedure remain unspecified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical repair does not explicitly require a revised frozen procedure and fresh independent confirmatory data after changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete immutable input manifest, exact software/environment/settings and command-to-output provenance chain is specified."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment rerun with numerical figure outputs, declared tolerances, resource/failure logs and source-difference audit is planned."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "population time courses do not prove",
+      "evidence_type": "exact_quote",
+      "reason": "Valid precursor/repression/retention/turnover alternatives with careful distinction between destructive assays, population dynamics and recoverable live-cell fate. Function and mechanism claims are explicitly conditional."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "two non-overlapping sets of independent biological units",
+      "evidence_type": "exact_quote",
+      "reason": "Unit-level prevalence/transition/function estimands, balanced masked randomized handling, logged exclusions and a one-repeat technical cap are provided. A proposed bounded time ladder is adjusted in pilot to bracket responses. Independent locked replication, orthogonal same-cell assays, calibrated live-proxy requirements and retained condition/QC sensitivity constrain inference."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong biological discrimination and independent validation with honest limits; essential system, execution, power and reproducible computation details remain unresolved.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit.",
+  "item_score": 20.0
+}

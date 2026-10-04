@@ -1,0 +1,45 @@
+# Grok 4.7 / mol-k01
+
+Original final answer, shared by both scoring rounds.
+
+The 50-kDa band is the only signal with genetic-specificity support. It depends on the target coding sequence. The 75-kDa band does not and must not be assigned to the target.
+
+**Conclusion.** In E1, a validated biallelic deletion of the entire target coding sequence eliminates the 50-kDa immunoreactive band and leaves the 75-kDa band unchanged, with comparable loading. The best-supported interpretation is that the antibody is not monospecific: the 50-kDa signal is genetically dependent on the target locus, whereas the 75-kDa signal is genetically independent of that coding sequence and remains an unassigned cross-reactive or otherwise off-target band. Genetic dependence supports use of the 50-kDa band as the candidate target signal only with the limits below. It does not prove that the polypeptide in that band is the target protein.
+
+**Evidence → inference → conclusion.**
+
+- E1 observation: the same antibody detects both a 50-kDa and a 75-kDa band.
+- E1 observation: cells with a validated biallelic deletion of the entire target coding sequence lose the 50-kDa band.
+- E1 observation: the 75-kDa band is unchanged, and loading is comparable.
+
+Inference 1. A polypeptide encoded by the deleted coding sequence cannot be produced in a true null. Any band that is that polypeptide, or an epitope-bearing fragment strictly derived from it, should disappear. Loss of the 50-kDa band matches that prediction.
+
+Inference 2. Comparable loading and an unchanged 75-kDa band make a global technical failure (underloading, failed transfer, failed detection) a poor explanation of the selective 50-kDa loss.
+
+Inference 3. Because the deletion removes the entire coding sequence, persistence of the 75-kDa band cannot be explained as an isoform, splice variant, alternative start, or post-translationally modified form encoded by that gene. Those products should also be absent.
+
+Conclusion. Only the 50-kDa signal has support from a genetic specificity test. The antibody preparation recognizes at least one additional species that does not require the target coding sequence. Report and quantify only the 50-kDa candidate, and do not treat total lane immunoreactivity, or the 75-kDa band, as target abundance.
+
+**Antigen loss versus indirect effects.** Disappearance after knockout shows dependence on the locus, not molecular identity.
+
+The pattern favors loss of an antigen over a nonspecific indirect effect for three reasons grounded in E1. The lesion is a complete coding-sequence deletion, not a partial edit that could leave a truncated epitope. The change is selective loss of one band, not a shift, smear, or gain. An internal feature of the same blot, the 75-kDa band, plus stated comparable loading, argues against a blot-wide artifact.
+
+Indirect genetic dependence is not excluded. The missing target could stabilize, induce, or otherwise be required for an unrelated ~50-kDa protein that this antibody cross-reacts with. Clonal adaptation, an undetected second-site change, or altered processing of a cross-reactive protein could also remove a 50-kDa band without that band being the target. E1 says the deletion is validated; that supports the genotype, not the identity of the lost band. No replicate count, second clone, second guide, or orthogonal identification is supplied, so confidence is qualitative.
+
+What would weaken the antigen-loss reading: the 50-kDa band persists in an independently generated null; an independent knockdown does not reduce it; or mass spectrometry of the band identifies a different protein. What would strengthen it: restoration of a 50-kDa band by re-expression, and target-derived peptides from that band that are absent in the null.
+
+**Why the 75-kDa band stays unassigned.** Failure to disappear excludes “product of this coding sequence” under E1 conditions. It does not identify the protein. Molecular weight alone assigns nothing. No second antibody, peptide-competition result, immunoprecipitation–mass spectrometry, or tagged standard is in the packet, and the packet states that no unreported validation data exist. The band may be off-target cross-reactivity, a contaminant, or a detection artifact that happens to be reproducible. Unchanged intensity makes it unlikely, in this experiment, to be a target-dependent indirect product, but that is still not an identification. It should be marked nonspecific or unassigned and omitted from target quantification.
+
+**Orthogonal validation, with interpretable outcomes.** These are proposed experiments, not completed results. Predicted mass of the target is not in the packet and must not be assumed.
+
+1. Independent null allele or acute knockdown, separate from the E1 clone. Outcome that supports the current reading: 50-kDa loss or reduction, 75-kDa unchanged. Outcome that overturns it: 50-kDa band remains in a confirmed null, which would reclassify E1’s loss as clone- or reagent-specific.
+
+2. Re-expression of the target coding sequence in the null, ideally near endogenous level, with a tag only if the mass shift is accounted for. Outcome that supports identity: selective restoration of the 50-kDa signal (or of a tag-shifted band detected by both the test antibody and an anti-tag reagent). Outcome against identity: no restoration, or restoration of a band at a different mass. The 75-kDa band should stay unchanged if it is unrelated; a change would reopen an indirect-effect model and would need a separate explanation.
+
+3. Second antibody to a non-overlapping epitope, run on the same wild-type and null lysates. Concordant loss of 50 kDa and no shared 75-kDa band strengthens both genetic dependence and epitope specificity. Discordance (second antibody never sees 50 kDa, or loses a different band) means the first antibody’s 50-kDa signal may be a dependent cross-reactant. Shared recognition of 75 kDa would still leave that band unassigned unless it disappeared in the null.
+
+4. Immunoprecipitation–mass spectrometry of wild-type versus null lysates, plus excision of the 75-kDa region. Target peptides present only in the wild-type 50-kDa material support identity. Peptides from another protein support cross-reactivity despite genetic dependence. Proteins identified at 75 kDa are candidates only; assign that band only if an independent perturbation of the identified protein removes it and the target null still does not.
+
+**Limits.** E1 does not show that the antibody is specific in other tissues, species, or states, where the cross-reactive 75-kDa species or additional bands may dominate. One validated deletion does not equal multiple biological replicates. “Removes” and “unchanged” are qualitative; effect size and variance are unreported. Overexpression rescue can create extra bands, so comparison to the endogenous 50-kDa position matters. Preabsorption with immunogen is a weak extra test: blocking both bands would not separate a true epitope from a shared cross-reactive sequence.
+
+**Assumptions.** The null is protein-null across the coding sequence; loading comparison is a fair measure of total protein; both bands are from the tested lysate rather than a detection artifact unique to one lane; and “unchanged” means no biologically meaningful loss of the 75-kDa signal. If any of those is false, the assignment of genetic support to the 50-kDa band should be reopened.

@@ -1,0 +1,61 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.012200+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "13f644a6b8dad1af62fd41a03c9c843ddaebc1793d9d790a159ab56b524e7a0b",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "it indicates that the biological effect is masked by high donor variance",
+      "issue": "High ICC or loss of significance does not establish that a true biological effect exists and is masked. The result may reflect an absent effect, imprecision, confounding or model misspecification."
+    },
+    {
+      "quote": "expected uniform distribution of *p*-values under the null",
+      "issue": "Exact tests with few allocations have discrete, often conservative p-values. Require calibrated size/coverage within an attainable error tolerance, not literal uniformity."
+    },
+    {
+      "quote": "The hierarchical model will remain structurally valid, though confidence intervals will widen.",
+      "issue": "A chosen hierarchy can still be misspecified or poorly calibrated at small cluster counts; wider intervals are not guaranteed adequate coverage. Explicit finite-cluster calibration and diagnostics are needed."
+    },
+    {
+      "quote": "Use these calibrated variance components and the observed pilot effect size to power the main proposed study",
+      "issue": "A small pilot effect is noisy and selection-sensitive. Use a biologically meaningful target plus uncertainty ranges rather than a plug-in observed effect as the sole power input."
+    },
+    {
+      "quote": "resample donors with replacement",
+      "issue": "Preserve arm counts and any joint pair/block sampling. The generic bootstrap can omit an arm with few donors; specify design-respecting resampling and uncertainty calibration."
+    }
+  ],
+  "rationale": "Correct high-level unit distinction and proposed grouped analysis. The executable model/test and validation criteria are underdeveloped, and the high-ICC interpretation asserts an effect the evidence cannot establish.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

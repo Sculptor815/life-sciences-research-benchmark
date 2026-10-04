@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "neu-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:58:34.898349+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "566c9c35a277d63d5f86774315846c556c59898eb6ab047e6f35bdda3ca353a8",
+  "question_sha256": "4c2268fa61eddebd0815be795d74eda3915b8fb4d10a5114cc77da1e8979793b",
+  "reference_sha256": "e933f1f0f95c95d268287ea90ea23a591a5994e448bdcfe9e9db676ca0323086",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "0ca39c94559ff1798ab5f7706ff914928d9d6f78d1a22da05106e89aa62ea108",
+  "primary_route": "Contemporaneous identity/allocation audit and proposed independent projection-necessity validation.",
+  "complete_final_answer_read": true,
+  "word_count": 1188,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "independent replication",
+      "evidence_type": "exact_quote",
+      "reason": "No complete prospective role-defined perturbation-efficacy positive, sham/inactive negative and matched procedural/performance-control design. Generic appropriate or matched controls do not specify those comparisons."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior perturbation/behavior Methods or validated protocols and verify transfer of detailed conditions before the proposed biological follow-up; identity-file recovery is a different action."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No independent behavioral scoring/suppression measurement calibration with a reference, acceptance criterion and failure action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative behavioral endpoint with trial/animal denominator, baseline and timeout/weak/missing-measurement handling."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "a null replication would support the concern that the original effect was an artifact of the identity problem",
+      "evidence_type": "exact_quote",
+      "reason": "A null cannot diagnose the original identity problem without adequate efficacy, precision and contextual equivalence; a fresh positive also needs learning-specific controls."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Identity reconciliation can audit the old comparison, but the biological validation is generic or absent. No operational independent perturbation/behavior comparison separates acquisition from task expression with remaining target-specific uncertainty."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "benign explanations make independent replication likely to succeed",
+      "evidence_type": "exact_quote",
+      "reason": "Benign record loss does not determine replication probability; the biological claim can be wrong without misconduct."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication likely to succeed",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Identifies performance alternatives and correctly says new data do not rehabilitate old records, but later gives unsupported replication-likelihood and null-diagnosis claims.",
+  "item_score": 55
+}

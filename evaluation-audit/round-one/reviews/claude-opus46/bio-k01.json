@@ -1,0 +1,42 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "claude-opus46",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.798843+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "492306dccb2b51b73ea4c3a55c1ea24d4977a7ecb6de4d7c59f7ff8b50a0b968",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "Uncompetitive: parallel lines (both intercept and slope change proportionally).",
+      "issue": "For the stated classical model, Km and Vmax decrease by the same factor, so the reciprocal-plot slope Km/Vmax is unchanged; the intercept changes."
+    },
+    {
+      "quote": "a competitive inhibitor that doubles Km,app and an uncompetitive inhibitor that halves both Vmax,app and Km,app could yield the same fractional decrease in v₀.",
+      "issue": "At the supplied substrate concentration these examples give 18 and 22.5 nmol/min respectively, not the same decrease."
+    },
+    {
+      "quote": "If v₀ is strictly proportional to [E]_total, the system is in the initial-rate regime and no artefacts",
+      "issue": "Enzyme proportionality is a useful check, not proof that all assay artifacts are absent."
+    }
+  ],
+  "rationale": "The core answer is correct, but a numerical inhibition example, reciprocal-plot explanation and sufficiency claim about validation require substantive corrections. R-squared alone also cannot certify a valid initial-rate interval.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

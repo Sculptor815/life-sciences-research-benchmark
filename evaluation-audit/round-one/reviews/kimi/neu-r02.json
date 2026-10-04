@@ -1,0 +1,122 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "kimi",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:01:23.987859+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "b6408338d962de5cf33e7a9074b51b0a9d947f1e915548e0b010623e5c933e76",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Terminal recording** at defined ages",
+      "issue": "Immediate G2/G3 endpoints do not explicitly reopen the deprived eyes and restore matched optical access. Reopening is described in recovery groups and pilot, not this main endpoint; no independent retinal/precortical functional assay excludes peripheral loss."
+    },
+    {
+      "quote": "at P18, randomize within litter to arms",
+      "issue": "The G6 intervention begins P14, before the specified allocation day. Allocation must precede intervention."
+    },
+    {
+      "quote": "within-animal longitudinal imaging in G7",
+      "issue": "This contradicts the terminal recording schedule at P35/P49 and lacks a defined baseline/chronic preparation. The gain-before/after analysis cannot be executed from the stated terminal design."
+    },
+    {
+      "quote": "Timing: ordinal trend across G6/G2/G5.",
+      "issue": "The only normal group is recorded P28; P21 and P52 treatment cohorts need age-matched normal/sham controls and age-by-treatment inference. Otherwise maturation can masquerade as changing deprivation susceptibility."
+    },
+    {
+      "quote": "BD ≈ MD in severity of global disruption",
+      "issue": "This conflicts with the preceding permissive hypothesis prediction that MD remains normal while BD abolishes organization. The same hypothesis cannot supply contradictory discrimination rules."
+    },
+    {
+      "quote": "Total response gain across both eyes remains constant",
+      "issue": "Homeostatic regulation does not generally require exact gain conservation or a fixed recovery speed. Correlation of potentiation/depression cannot identify homeostatic versus competitive mechanisms uniquely."
+    },
+    {
+      "quote": "ODI = (R_contra − R_ipsi)/(R_contra + R_ipsi)",
+      "issue": "Baseline-corrected weak/negative responses require denominator and eligibility rules. Unit-level permutation must preserve animal clustering; weighted averages and inclusion thresholds need validation against response-loss bias."
+    },
+    {
+      "quote": "Lid suture is the least invasive manipulation",
+      "issue": "This is asserted without comparison to reversible optical occlusion. BD/alternating-exposure arms do not substitute for matched sham surgery or functional peripheral controls."
+    },
+    {
+      "quote": "any lid reopening event",
+      "issue": "Exclude-and-replace may induce informative attrition; retain assigned-animal outcomes and prespecified adherence sensitivity. Direct implementation also lacks the chosen calcium indicator/recording preparation, stimulus values and calibrated intervention conditions."
+    }
+  ],
+  "rationale": "Concrete candidate model and broad developmental question with useful randomization and data provenance. Internal timeline/recording contradictions, uncorrected age effects and missing acute optical/peripheral validation materially undermine the core study; no qualified historical hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does patterned binocular visual experience during development",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Instructive activity-dependent competition",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Contralateral-eye lid suture P21–P28",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "ODI = (R_contra − R_ipsi)/(R_contra + R_ipsi)",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "shift of cortical responsiveness toward the non-deprived eye",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

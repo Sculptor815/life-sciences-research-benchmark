@@ -1,0 +1,52 @@
+{
+  "item_id": "mol-k01",
+  "model_code": "claude-fable",
+  "response_id": "mol-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:58:41.196630+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "90be7aeb9bf1d86f40f35e75936fe1401cee1ceff598839097dbdb3c3e1d359a",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 71.25,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "Failure to restore the band despite confirmed tag expression would indicate the KO-sensitive band was an indirect effect",
+      "issue": "Failed rescue can instead reflect altered localization, processing, function or recognition of the construct. Expression alone does not exclude those alternatives."
+    },
+    {
+      "quote": "Peptides identified in the 75-kDa region *assign* the unknown band",
+      "issue": "Co-migrating proteins and immunoprecipitated partners need to be distinguished from the directly recognized antigen."
+    },
+    {
+      "quote": "Loss of the 50-kDa band is not an artifact of unequal protein loading or transfer",
+      "issue": "Comparable loading does not establish equivalent transfer of the particular species."
+    }
+  ],
+  "rationale": "Good recognition of full coding deletion, unknown expected mass, indirect dependence and application specificity. A size-shifting rescue is useful, but negative outcomes and proteomic identities are overinterpreted, so the proposed resolution is less decisive than claimed.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Comparable loading does not establish antigen identity or guarantee equivalent transfer of each species.",
+    "No expected target molecular mass is supplied. Do not assume 50 kDa is the predicted full-length mass.",
+    "Untagged rescue may restore either the target or an indirectly dependent antigen.",
+    "Gel-slice proteomics and native immunoprecipitation can contain co-migrating proteins or partners; identity of a constituent is not automatically identity of the immunoreactive species.",
+    "No requirement to mention private draft status or obsolete multiple-choice distractors.",
+    "Complete coding deletion blocks new target synthesis; pre-existing protein and signal mixtures are possible caveats when timing and turnover are unspecified, not established explanations.",
+    "A reference list of methods does not make any single validation approach infallible."
+  ],
+  "validation_framework_source": "https://pmc.ncbi.nlm.nih.gov/articles/10335836/",
+  "overall_benchmark_score": null
+}

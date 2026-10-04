@@ -1,0 +1,134 @@
+{
+  "model_code": "qwen",
+  "item_id": "bio-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:16:11.023292+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "d35f1a48a31f2a73ccc4243e658a877b8a4811d557904113d6798119b1dd8390",
+  "question_sha256": "d576679cb0522006ae6a3f256e6d4d1ed7180289149160eaf9054837dc1f2a1e",
+  "reference_sha256": "537c9e482a9662f10c65fb2f21594beb86fbd037d481e97efd72e3c550773802",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "03b88903ce5d3b3e00d181b6799732584ad22ff1f9acbba5b49600c13b84ed7c",
+  "primary_route": "Global kinetics, enzyme/time/artifact tests, binding comparisons and mapping.",
+  "complete_final_answer_read": true,
+  "word_count": 1140,
+  "first_round_scientific_quality": 67.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "run the detection system without enzyme",
+      "evidence_type": "exact_quote",
+      "reason": "No complete prospective known-product positive, enzyme/substrate-free negative and matched procedural control design with each role; named generic artifact checks or vehicle alone are insufficient."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The inhibitor curve",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior Methods/supplements or validated protocols and check transfer before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The inhibitor curve",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No detector/product reference calibration with acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The inhibitor curve",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Units and kinetic parameters are reported, but the proposed rate endpoint lacks baseline correction and weak/saturated/missing-value rules."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 15,
+      "quote": "mixed\u2011inhibition factor \u03b1\u2032 \u2192 \u221e",
+      "evidence_type": "exact_quote",
+      "reason": "Three independent errors: the standard competitive limit has alpha-prime=1, not infinity; parallel uncompetitive lines refer to reciprocal plots, not v-versus-S curves; substrate sequestration is not universally an additive offset and can approximately rescale free substrate. Repeated alpha-prime statements count once."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "[I] is unreported",
+      "evidence_type": "exact_quote",
+      "reason": "Correct numeric curve checks, principal parameter direction and physical nonlocalization, explicitly proposed experiments and no fabricated empirical precision."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "[I] is unreported",
+      "evidence_type": "exact_quote",
+      "reason": "Correct numeric curve checks, principal parameter direction and physical nonlocalization, explicitly proposed experiments and no fabricated empirical precision."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "[I] is unreported",
+      "evidence_type": "exact_quote",
+      "reason": "Correct numeric curve checks, principal parameter direction and physical nonlocalization, explicitly proposed experiments and no fabricated empirical precision."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "[I] is unreported",
+      "evidence_type": "exact_quote",
+      "reason": "Correct numeric curve checks, principal parameter direction and physical nonlocalization, explicitly proposed experiments and no fabricated empirical precision."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "[I] is unreported",
+      "evidence_type": "exact_quote",
+      "reason": "Correct numeric curve checks, principal parameter direction and physical nonlocalization, explicitly proposed experiments and no fabricated empirical precision."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "[I] is unreported",
+      "evidence_type": "exact_quote",
+      "reason": "Correct numeric curve checks, principal parameter direction and physical nonlocalization, explicitly proposed experiments and no fabricated empirical precision."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "refit with the Morrison equation",
+      "evidence_type": "exact_quote",
+      "reason": "Enzyme-dependent IC50 does not uniquely establish tight binding; aggregation, adsorption and assay artifacts need discrimination before committing to that model."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "assign the physical site",
+      "evidence_type": "exact_quote",
+      "reason": "Mutation effects and NMR shifts can be indirect conformational effects; loss of inhibition at a remote residue does not by itself map binding, without integrity/direct-contact validation."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correct curve arithmetic but serious mixed-model convention and diagnostic/localization errors.",
+  "item_score": 45
+}

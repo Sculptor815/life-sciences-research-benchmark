@@ -1,0 +1,50 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "gpt-sol",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:53:34.913550+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "f570a6c769edc8690397897fda4fc8ab68d84da2ea894b6a99fe079107971525",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 86.25,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "phospho-S is therefore not required for the measured growth phenotype, or an alternate pathway compensates.",
+      "issue": "Growth restoration despite failure to restore the phospho-S readout does not establish absence of a residual sufficient phosphorylation level, nor necessity in the original WT context. It motivates a direct S-specific perturbation and leaves compensation possible."
+    },
+    {
+      "quote": "Measure phospho-S and total S in the same samples.",
+      "issue": "This measurement section does not give the actual sample-processing and assay sequence: prompt preservation of phosphorylation, lysis/normalization, a specified phospho-assay workflow and processing of a specificity control. The design is well ordered at study level but not yet an executable laboratory protocol."
+    }
+  ],
+  "rationale": "Comprehensive and useful rescue design with physiological expression matching, independent derivations, equivalence testing, orthogonal catalytic perturbation, and appropriate noncatalytic-versus-scaffold distinctions. One discordant-rescue branch overstates the causal conclusion about S phosphorylation. Assay implementation requires further detail.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol."
+  ],
+  "overall_benchmark_score": null
+}

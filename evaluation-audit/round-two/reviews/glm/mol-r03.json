@@ -1,0 +1,239 @@
+{
+  "model_code": "glm",
+  "item_id": "mol-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:56:43.709671+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9d63c7de23b4270ce197b4fca7e76c659e8e9cef896b7f0d8ebcb381e8af9d62",
+  "question_sha256": "bf00c28a6e92add5751c281d77d4c3490535449c784810d44640a95c1cb7f695",
+  "reference_sha256": "691bdf29d87b44088c4c14b684a72ae289dd778c52bb1d20cc108695c93a7735",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "66627e86b4a655812de90053b09cf0edaadc7c1d5c9760f2b438831e3157f515",
+  "primary_route": "Defined liposome NT/FL/CT and cleavage comparison, size/EM corroboration and a cellular osmoprotection/mutant bridge.",
+  "complete_final_answer_read": true,
+  "word_count": 2598,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of prior primary Methods, supplements or validated protocols; local validation and acknowledging absent packet methods do not by themselves satisfy this action."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Full-length GSDMD + purified active caspase",
+      "evidence_type": "exact_quote",
+      "reason": "Active caspase alone and matched cleavage-buffer/carryover controls are absent from the cleavage-activation comparison. The cellular binding-deficient mutant bridge also lacks a required folding/abundance check; charge the combined prospective-control criterion once."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core protein preparation/cleavage and lipid formulation/buffer conditions remain unresolved lists rather than a quantitative preparation-to-intervention workflow or a concrete source/calibration-to-setting procedure. Proposed protein concentration series alone does not specify the essential reconstitution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Define maximal leakage",
+      "evidence_type": "exact_quote",
+      "reason": "Spontaneous-release and positive-pore thresholds are useful, but there is no free-reporter-plus-protein interference/recovery calibration or quantitative fluorescence dynamic-range check."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparations and a pilot are recognized, but no quantitative power/precision target with an effect/variance-to-sample-size decision is supplied; a proposed three/six-preparation floor is not a justified confirmatory sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The main contrast and model are named, but model assumptions/diagnostics and a fully specified uncertainty/multiplicity procedure for the panel are incomplete. Naming a mixed model is not sufficient execution detail."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "small osmoprotectants block cell swelling, large ones do not",
+      "evidence_type": "exact_quote",
+      "reason": "The size-exclusion osmoprotection prediction is reversed and repeated in the required cellular cross-check. Excluded extracellular polymers larger than a permeant pore can sustain osmotic protection; smaller permeating solutes generally cannot. Primary experimental support: https://link.springer.com/article/10.15252/embj.201694696 . Count this once, not again as G1/P13."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A concentration/lipid/time range is proposed without a bounded ladder or concrete derivation of bounds, an objective selection criterion and a lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly delimit permitted changes, refreeze the revised procedure and require fresh independent confirmation after such changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "only after two reproducible failures",
+      "evidence_type": "exact_quote",
+      "reason": "Two repeat failures do not distinguish technical from biological causes. Similarly, failure of the lipid scan and fraction rescue does not establish indirect physiology as the primary mechanism; a remaining reagent/context limitation is not resolved by repetition."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-unit-to-output audit trail with sample identifiers, exact analysis versions/settings and preserved failed/excluded runs is specified."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "All steps below are proposals",
+      "evidence_type": "exact_quote",
+      "reason": "Valuable direct-pore versus indirect question, feasible identified membrane platforms, identity and aggregation checks and explicit proposal labels. Scientific defects are charged at the specific calibration/control/tool/decision checks rather than duplicated as general errors."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "pre-register what counts as a ring/oligomer vs. debris",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized time-course/AUC, blinded randomized balanced plates, whole-plate QC rejection and a three-matrix maximum, ordered diagnostic repairs and blinded structural plus graded-cargo corroboration make the positive pore branch operational. Its exact pore geometry and physiological exclusivity are appropriately limited."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "pre-register what counts as a ring/oligomer vs. debris",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized time-course/AUC, blinded randomized balanced plates, whole-plate QC rejection and a three-matrix maximum, ordered diagnostic repairs and blinded structural plus graded-cargo corroboration make the positive pore branch operational. Its exact pore geometry and physiological exclusivity are appropriately limited."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "pre-register what counts as a ring/oligomer vs. debris",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized time-course/AUC, blinded randomized balanced plates, whole-plate QC rejection and a three-matrix maximum, ordered diagnostic repairs and blinded structural plus graded-cargo corroboration make the positive pore branch operational. Its exact pore geometry and physiological exclusivity are appropriately limited."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "pre-register what counts as a ring/oligomer vs. debris",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized time-course/AUC, blinded randomized balanced plates, whole-plate QC rejection and a three-matrix maximum, ordered diagnostic repairs and blinded structural plus graded-cargo corroboration make the positive pore branch operational. Its exact pore geometry and physiological exclusivity are appropriately limited."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "pre-register what counts as a ring/oligomer vs. debris",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized time-course/AUC, blinded randomized balanced plates, whole-plate QC rejection and a three-matrix maximum, ordered diagnostic repairs and blinded structural plus graded-cargo corroboration make the positive pore branch operational. Its exact pore geometry and physiological exclusivity are appropriately limited."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Direct pore core is present, but the osmoprotection size prediction is backwards and technical/biological decision rules are weak; preparation and calibration details remain incomplete.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "The positive primary branch includes purified NT membrane action, independently assessed rings/structures and functional size cutoff with explicit fragment/irrelevant-protein controls. These jointly match all five historical components. The reversed auxiliary cellular osmoprotection prediction is penalized under P09; it does not invalidate the independent correct structural-plus-size positive pore branch. Use the same positive-core/secondary-error distinction as for the other models.",
+  "item_score": 74.0
+}

@@ -1,0 +1,106 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "gpt-astra",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:24:16.194588+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "4c939bc2f0ef220bd8788e668ece6e6c3f74316c927e7d484fda0dcbaead1cc4",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Use pilot data to set quantitative detection and decision thresholds.",
+      "issue": "The plan correctly identifies independent units and pilot calibration, but leaves the primary contrast/time window, analysis model and objective exclusion rules unspecified. This is a limited operational gap, not a request to invent numerical sample sizes."
+    }
+  ],
+  "rationale": "A particularly strong agency test: functional activation followed by separation of E, carryover controls, reciprocal separation-of-function variants, and explicit distinction between cooperative execution and a permissive cofactor. Reconstitution, optical artifact controls, cellular timing and conditional conclusions form a coherent causal chain.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The fixed packet establishes genetic/cleavage dependence, not physical membrane agency. Do not require knowledge of later results, residue numbers, lipid ratios or historical instrument settings.",
+    "A protein requirement or co-reconstitution establishes dependence, not the identity of the lesion-forming component. A permissive cofactor can support direct GSDMD action.",
+    "Negative artificial reconstitution is qualified evidence, not proof of indirect action. An assay-positive control does not validate the test protein or all relevant membrane conditions.",
+    "Direct permeability, terminal rupture and cytokine release are distinct. Sufficiency in a minimal membrane need not exclude later cellular executors.",
+    "Trans inhibition by an isolated domain is conditional; intact-protein autoinhibition does not require it.",
+    "Historical direction is scored separately from study quality. Five target components are conjunctive within each component; a full Hit@1 requires all five. Equivalent cellular functional-complementation designs count as rescue.",
+    "Historical matching is not prospective novelty: source identifiers are visible and no exhaustive earlier-public-disclosure audit exists. Full source methods have not been independently audited.",
+    "The later paper erratum corrects a typeset received date from 2015 to 2016; it does not change its June 2016 publication date or report a biological-result correction."
+  ],
+  "review_sources": [
+    {
+      "title": "Original GSDMD cleavage study",
+      "url": "https://www.nature.com/articles/nature15514",
+      "scope": "Primary abstract and publication metadata"
+    },
+    {
+      "title": "Later gasdermin pore/autoinhibition study",
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary abstract, author metadata and accessible extended-figure captions; full methods not audited"
+    },
+    {
+      "title": "Later-paper erratum",
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher erratum text: received-date typesetting correction only"
+    },
+    {
+      "title": "NINJ1 and terminal membrane rupture",
+      "url": "https://www.nature.com/articles/s41586-021-03218-7",
+      "scope": "Post-cutoff primary abstract supports reviewer distinction of permeability and rupture; candidate is not required to name NINJ1"
+    },
+    {
+      "title": "Direct inhibition of GSDMD by necrosulfonamide",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6462819/",
+      "scope": "Post-cutoff primary abstract; confirms why target specificity controls matter, not required candidate foreknowledge"
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "biochemical sufficiency without cellular proteins",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Retain any identified E-activation function.",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Disruption plus wild-type full-length rescue.",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Early membrane permeability",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Strong evidence that direct membrane action contributes causally to cellular execution.",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

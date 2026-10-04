@@ -1,0 +1,53 @@
+{
+  "item_id": "bio-k02",
+  "model_code": "gpt-terra",
+  "response_id": "bio-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:22:48.307883+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "1e1703c46b8fd15360de67c436df0ba2bf4520be370ff67fc64a1f23fe507ea0",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 91.25,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "Vehicle reaches this near **25 µM substrate**.",
+      "issue": "The vehicle half-maximal crossing is approximately 20 micromolar, not 25. With the correctly read inhibitor value near 60, the shift is approximately threefold, not the repeatedly calculated 2.4-fold. This is a modest graphical-reading error, not a wrong inhibition classification."
+    }
+  ],
+  "rationale": "Strong model assumptions, Km-versus-Kd qualification, assay controls and cautious site inference. The principal deduction is a systematic vehicle-curve reading error propagated into the ratio. Numerical graph-reading ranges containing the true value in other answers are accepted; arbitrary exact precision is not required.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All twelve complete final answers, the exact question, E1 packet, full sealed reference and synthetic figure were personally read. No paid judge, hidden reasoning or candidate web access was used.",
+    "The supplied shared asymptote is 100 nmol/min. Approximate half-maximal crossings are 20 and 60 micromolar, giving a threefold shift. At 300 micromolar the curves are about 94 and 83, not at the common asymptote. Accept reasonable approximate ranges; do not demand unreported fit precision.",
+    "Reference correction: the old required-concept/limitation text saying the shift cannot be quantified is too strong. The graphical shift can be estimated; exact fitted uncertainty and Ki remain unavailable. The updated paragraph already permits approximate 20-to-60 readings. Frozen original keys are preserved.",
+    "The synthetic ideal-MM/shared-asymptote premise is sufficient for the requested compatible kinetic classification. Proposed tests concern transfer to real data; no candidate must pretend experiments or error bars exist.",
+    "Reference correction: mutational effects are not necessary proof of active-site occupancy. Retained function, folding, direct binding and convergent contact evidence are needed; changes can be indirect. HDX or chemical-shift perturbations alone do not necessarily map ligand contacts.",
+    "Km generally combines binding and catalytic rates, not simply equilibrium Kd. Apparent affinity shorthand should not imply an intrinsic threefold Kd change.",
+    "Notation guardrail: in v=Vmax*S/(alpha*Km+alpha-prime*S), alpha=1+[I]/Ki and alpha-prime=1+[I]/Ki-prime. Pure competition has alpha-prime=1 and Ki-prime infinite. Other authors use a linkage alpha equal to a ratio of dissociation constants; accept a clearly defined alternative convention rather than penalizing a symbol alone.",
+    "An inactive ternary ESI complex is not equivalent to mutually exclusive ligand occupancy. Under the simple mixed model it decreases Vmax. A remote inhibitor can be kinetically competitive through mutual exclusion.",
+    "Incomplete recovery after dilution can be slow reversible dissociation or assay instability as well as irreversible inhibition. Competition binding and indirect mutational effects do not by themselves localize a pocket.",
+    "No actual enzyme experiments were run. The scores assess the written scientific explanation and proposed checks; this single unblinded AI review remains provisional and requires human review."
+  ],
+  "review_sources": [
+    {
+      "title": "Assay Guidance Manual: Mechanism of Action Assays for Enzymes",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK92001/",
+      "scope": "Search-indexed author-manual extracts corroborate kinetic competition without pocket identity and free-ligand/fit checks. Full page access returned a browser challenge; no claim of full-page inspection. Scoring primarily uses the supplied figure and explicit rate-law algebra; different alpha conventions are distinguished."
+    }
+  ],
+  "overall_benchmark_score": null
+}

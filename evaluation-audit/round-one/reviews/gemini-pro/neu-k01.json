@@ -1,0 +1,72 @@
+{
+  "item_id": "neu-k01",
+  "model_code": "gemini-pro",
+  "response_id": "neu-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:50:07.047301+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "37dbfabf38d1a5e1274f112652df88d70fedc0dca9c4a558a7e5900700d737a6",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "solely establishes that there was a higher level of time-integrated intracellular calcium binding to the indicator",
+      "issue": "The packet establishes a recorded fluorescence difference. Unexcluded motion and other optical effects prevent a calcium-binding conclusion, and an unspecified response metric does not establish a time integral."
+    },
+    {
+      "quote": "the only strictly permissible inference is biochemical:",
+      "issue": "The strictly permissible inference is optical, not necessarily biochemical. The later acknowledgment of motion does not repair this categorical conclusion."
+    },
+    {
+      "quote": "mathematically verify if Trial B contained more spikes.",
+      "issue": "Deconvolution is model-dependent estimation with uncertainty and possible non-identifiability. It does not independently verify spike counts."
+    },
+    {
+      "quote": "specific synthetic indicator",
+      "issue": "The figures are described as synthetic teaching material; the indicator is not identified as synthetic."
+    }
+  ],
+  "rationale": "Identifies kinetics, nonlinear gain and optical alternatives, but repeatedly promotes an optical observation into a biochemical conclusion. Electrophysiology is appropriate; the outlined validation does not operationally distinguish motion well, and its deconvolution claim is too strong.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "E1 establishes larger recorded fluorescence only. Comparable settings do not establish greater calcium concentration, influx, spiking or neural activity.",
+    "Response metric, region and cell population are unspecified. A peak difference is not necessarily an integral difference.",
+    "Slow kinetics limit resolution but do not universally eliminate single-spike timing information in sparse, sufficiently sampled and calibrated high-SNR recordings.",
+    "A fixed monotonic saturation curve compresses signal; saturation alone does not reverse an otherwise identical instantaneous calcium-to-fluorescence mapping.",
+    "Spike-to-fluorescence calibration is not absolute calcium concentration or influx calibration. Buffering, extrusion and compartment properties matter.",
+    "The motion reference should be calcium-insensitive while tracking relevant optical motion. Correlation with movement alone does not justify discarding biological trials.",
+    "Changing indicator changes sensitivity, noise, loading and buffering; disappearance with a faster indicator is not unique proof of an original artifact.",
+    "The draft reference overstates that more spikes must produce more resolved events with a faster indicator and that the transfer must remain linear. Neither is a necessary prediction.",
+    "The prompt contains no doubling or universal-synchrony claim and does not expose private editorial status. Those old key requirements are not imposed on candidates.",
+    "Same-cell electrophysiology should be matched to the imaged compartment and trial history; somatic spikes alone may not account for dendritic calcium."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/s41586-023-05828-9",
+      "use": "Primary indicator study using simultaneous imaging/electrophysiology and reporting differences in kinetics, linearity and signal-to-noise."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9518861/",
+      "use": "Primary two-channel correction study: calcium-independent fluorescence records shared motion contributions."
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2013.00201/full",
+      "use": "Primary modeling study including indicator binding, buffering and saturation in inference."
+    }
+  ],
+  "overall_benchmark_score": null
+}

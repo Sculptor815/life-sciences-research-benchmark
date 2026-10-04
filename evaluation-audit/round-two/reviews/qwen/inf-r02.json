@@ -1,0 +1,255 @@
+{
+  "model_code": "qwen",
+  "item_id": "inf-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:55:10.239948+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "048ee593b20aa8277942e5d8e293a90a483c5565bc8896e605aa896cc7224f14",
+  "question_sha256": "e2a8164d3113ad32ccba25c2f790e6e0ea6dfabd0df8ab61546b9e78aeb131b9",
+  "reference_sha256": "3c78377ec00297d0605f749ff1e96def2de7ed9fb0e950a8b0d736f845f47eb1",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "dff8ffe7cd638f73df4f9f61a1b6860de322227da6d3244df8c8469dccca3a66",
+  "primary_route": "Noise-calibrated discordance discovery across single, weighted-joint and late-graph representations.",
+  "complete_final_answer_read": true,
+  "word_count": 4834,
+  "first_round_scientific_quality": 53.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer prior primary Methods or validated protocols before execution. Calibration alone is not this action."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No identifiable biological system/target pair or concrete source-resolution procedure is selected; eligibility criteria alone leave the experiment inputs unresolved."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Essential stimulation, sampling, staining and preparation settings are deferred; no quantitative source/calibration-to-setting procedure makes the primary workflow executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Relevant blanks and specificity controls are listed, but an operational numerical acceptance-to-action rule or concrete derivation of its tolerance is not supplied."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent biological units and a pilot are recognized, but no quantitative power or precision target connects meaningful effect and pilot variation to a confirmatory sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Model families and contrasts are named but the primary likelihood/assumptions, diagnostics and multiplicity procedure remain unspecified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Titration and sampling exploration lack a bounded quantitative search or derivation of bounds with a selection objective and setting lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical repair does not explicitly require a revised frozen procedure and fresh independent confirmatory data after changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete immutable input manifest, exact software/environment/settings and command-to-output provenance chain is specified."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment rerun with numerical figure outputs, declared tolerances, resource/failure logs and source-difference audit is planned."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Biological-unit split stability is proposed, but no explicit held-out test set with all normalization, feature/state discovery and parameter selection fitted only inside training units is specified."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "that is evidence against treating them as robust biological states",
+      "evidence_type": "exact_quote",
+      "reason": "Preferential removal by count/stress/QC filters is not itself evidence against biology; activation or other real states can change these metrics. The sensitivity plan lacks a check preserving such biology rather than treating its removal as validation."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "latent states are coupled except for measurement error",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed coupled-state technical null is conceptually appropriate and distinct from independent modality shuffling. Probability-based discordance and RNA/protein reliability concepts are explained; causal/function claims remain limited."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Stability when the discovery set is split by biological unit.",
+      "evidence_type": "exact_quote",
+      "reason": "Per-unit state frequencies and uncertain four-state calls define measurements. Balanced coded processing, reported exclusion reasons, specific repair branches, meaningful detection-frequency limits and biological-unit split stability provide useful validation. Missing fold containment is charged separately at P16."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Stability when the discovery set is split by biological unit.",
+      "evidence_type": "exact_quote",
+      "reason": "Per-unit state frequencies and uncertain four-state calls define measurements. Balanced coded processing, reported exclusion reasons, specific repair branches, meaningful detection-frequency limits and biological-unit split stability provide useful validation. Missing fold containment is charged separately at P16."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Stability when the discovery set is split by biological unit.",
+      "evidence_type": "exact_quote",
+      "reason": "Per-unit state frequencies and uncertain four-state calls define measurements. Balanced coded processing, reported exclusion reasons, specific repair branches, meaningful detection-frequency limits and biological-unit split stability provide useful validation. Missing fold containment is charged separately at P16."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Stability when the discovery set is split by biological unit.",
+      "evidence_type": "exact_quote",
+      "reason": "Per-unit state frequencies and uncertain four-state calls define measurements. Balanced coded processing, reported exclusion reasons, specific repair branches, meaningful detection-frequency limits and biological-unit split stability provide useful validation. Missing fold containment is charged separately at P16."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Stability when the discovery set is split by biological unit.",
+      "evidence_type": "exact_quote",
+      "reason": "Per-unit state frequencies and uncertain four-state calls define measurements. Balanced coded processing, reported exclusion reasons, specific repair branches, meaningful detection-frequency limits and biological-unit split stability provide useful validation. Missing fold containment is charged separately at P16."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Stability when the discovery set is split by biological unit.",
+      "evidence_type": "exact_quote",
+      "reason": "Per-unit state frequencies and uncertain four-state calls define measurements. Balanced coded processing, reported exclusion reasons, specific repair branches, meaningful detection-frequency limits and biological-unit split stability provide useful validation. Missing fold containment is charged separately at P16."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Careful uncertainty and null logic, but source resolution, quantitative implementation and fully independent computational evaluation are incomplete; QC association is overinterpreted.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit.",
+  "item_score": 14.0
+}

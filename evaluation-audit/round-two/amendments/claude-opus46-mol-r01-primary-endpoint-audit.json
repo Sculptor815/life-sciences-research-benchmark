@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-04T06:42:08.677880+00:00",
+  "item": "mol-r01",
+  "model": "claude-opus46",
+  "reason": "Consistent primary-endpoint applicability across the complete question group; no criterion/point-value change. Original round-two review retained. Opus46 nominal readout matching also aligned with equivalent cellular comparisons; no hit change.",
+  "before_sha256": "0c98fa890721ffe103ab9dfa0e4113a3043f249532ba59c488b39f382a01a1df",
+  "after_sha256": "5b1d6398530abc70636974a37188fb1cf22bbf23dc63cc4f8a4a4f4696693085",
+  "quality_after": 30,
+  "item_after": 12.0,
+  "candidate_and_round_one_unchanged": true
+}

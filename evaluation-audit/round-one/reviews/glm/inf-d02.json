@@ -1,0 +1,66 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "glm",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:23:55.265753+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "08f6d797703eae60edf5e5ffe816d7379541a96676f99f134e3be056d01ff6f2",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "if per well within donor, wells are subsamples and must be aggregated or modeled with donor-level blocking such that the effective n is the number of donors.",
+      "issue": "Independently allocated wells can support within-donor treatment inference. Donor-population sampling remains a separate issue; the initial rule erases valid treatment replication and conflicts with the later correct well-level declaration."
+    },
+    {
+      "quote": "Treatment allocated per donor, multiple donors, randomized within donor: `~ donor + treatment`",
+      "issue": "This branch combines mutually inconsistent allocation schemes. For treatment constant within independent donors, donor fixed effects absorb treatment; use donor-level replicate observations with an identifiable treatment-plus-covariate design. A paired donor formula requires within-donor treatment variation."
+    },
+    {
+      "quote": "sample swap detected by genotype/sex markers or PCA clustering with the wrong group",
+      "issue": "PCA clustering with an unexpected treatment group does not establish a sample swap. Require independent identity evidence; excluding a sample for unexpected expression would be outcome-dependent despite the separate prohibition on removing inconvenient results."
+    },
+    {
+      "quote": "confirm treatment separates as expected",
+      "issue": "Treatment separation in PCA is not required for a valid experiment. True null effects or dominant unrelated variation can prevent separation; this check must not condition acceptance on the expected biological result."
+    },
+    {
+      "quote": "checking that a random sample of gene coordinates in the GTF lies within chromosome lengths of the FASTA",
+      "issue": "This can detect gross incompatibility but cannot verify genome-build identity: different assemblies can both pass bounds checks. Verify accession/release, sequence dictionaries and documented annotation-to-assembly compatibility."
+    }
+  ],
+  "rationale": "Good immutable files, metadata, normalization awareness and clean rerun intent. Inconsistent experimental-unit rules, an unidentifiable default donor formula and expression-based sample-swap/acceptance criteria are substantial scientific defects. Coordinate bounds alone also provide weak build validation.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete final answer was personally read separately in full, against the exact question, packet and frozen reference including clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than byte equality. Partial source access cannot establish full reproduction. Word counts: DeepSeek 2307, Gemini 1228, GLM 2436, Kimi 3456, Grok 3342, Qwen 3854; only Qwen exceeds 3500.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

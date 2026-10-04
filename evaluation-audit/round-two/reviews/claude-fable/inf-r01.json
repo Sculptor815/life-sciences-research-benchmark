@@ -1,0 +1,255 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:13:08.314095+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "1a6b7fa542ef9d26ac60dafc979ae56ece0fee54a69f4c80d2d4a2095796e541",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8b0e9c22431d5f274b4f50f09290c2b62d0a521da4c329bfc6c32a0baa46160c",
+  "primary_route": "Adaptive Student-t NB effect shrinkage evaluated against Normal/MLE using repeated disjoint-within-draw reference splits, simulations and independent RNA validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2497,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "cannot be worse in principle",
+      "evidence_type": "exact_quote",
+      "reason": "Two independent substantive errors: (1) nesting the Normal family does not guarantee lower finite-sample predictive risk after estimating extra hyperparameters; (2) correct Normal-prior Bayes optimality does not imply zero conditional bias in every true-effect stratum. Charge 10 points; these are not claims of unperformed execution."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "inherited from the packet",
+      "evidence_type": "exact_quote",
+      "reason": "The packet supplies a generic count model, not a negative-binomial likelihood. Calling NB inherited/established misattributes an implementation assumption to the supplied evidence."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "true effect distributions in strong-perturbation experiments are heavy-tailed",
+      "evidence_type": "exact_quote",
+      "reason": "Better tail RMSE and a fitted small nu do not establish a uniquely true biological distribution or justify an adaptive-prior default across experiments. Recommending the adaptive model even under unresolved unstable nu also exceeds the stated evidence."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Hyperparameters (\u03c3, \u03bd) estimated by maximizing the marginal likelihood",
+      "evidence_type": "exact_quote",
+      "reason": "The statistical family is explicit, but admissible hyperparameter ranges, numerical integration/optimization, convergence checks and executable raw-read settings or a concrete calibration-to-choice procedure are missing."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "qPCR primer efficiencies",
+      "evidence_type": "exact_quote",
+      "reason": "The orthogonal measurement depends on qPCR efficiency/reference calibration, but these are deferred as placeholders, without calibration acceptance and failure response."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "residual reference error biases all arms similarly",
+      "evidence_type": "exact_quote",
+      "reason": "Reference-error effects need not be equal after selecting reference-tail genes; the protocol does not propagate reference uncertainty or account for selection. Excluding high-SE genes does not solve conditional reference-selection bias."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "bootstrap CIs over subsample draws",
+      "evidence_type": "exact_quote",
+      "reason": "Repeated draws from the same biological cohort overlap and are not independent studies. Bootstrapping draws rather than independent biological units/cohorts does not deliver the stated study-level uncertainty; the fixed 50 simulations also lack precision justification."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "unblinding any differential results",
+      "evidence_type": "exact_quote",
+      "reason": "Blinded QC and assay gene selection are useful, but the acquired validation measurements lack randomized/balanced processing or an equivalent recorded bias-control procedure."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified exclusion thresholds",
+      "evidence_type": "exact_quote",
+      "reason": "Thresholds are promised, but failed fits, missing validations, all-eligible denominators and stopping/maximum acquisition rules are not operationalized."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "posterior-SD-based uncertainty",
+      "evidence_type": "exact_quote",
+      "reason": "The principal difference margin and uncertainty calculation are not implemented; there is no posterior/sign-probability calibration or defined secondary-testing family. The separate dependence defect belongs only to P05."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "\u03bd degrees of freedom",
+      "evidence_type": "exact_quote",
+      "reason": "Simulation n values are bounded, but the essential adaptive-tail hyperparameter search and primary margin remain unbounded placeholders with no concrete derivation-and-lock procedure."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prioritize model-form diagnostics before prior-form conclusions",
+      "evidence_type": "exact_quote",
+      "reason": "This names a diagnostic priority but provides no measurable failed check linked to a specific repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "expanding eligible datasets",
+      "evidence_type": "exact_quote",
+      "reason": "Expansion after ambiguity does not define what may change, a revised protocol freeze and fresh independent confirmation after such changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "record accession IDs",
+      "evidence_type": "exact_quote",
+      "reason": "Versions/container and accessions are recorded, but file checksums, biological-unit-to-library/count mapping, exact commands and numerical output audit records are incomplete."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "batch annotations",
+      "evidence_type": "exact_quote",
+      "reason": "Recording batch does not prevent condition-batch confounding or define adjustment. Missingness and composition/outlier stress tests are not operationalized; the count-model misspecification arm alone is insufficient."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Figure generation (prespecified)",
+      "evidence_type": "exact_quote",
+      "reason": "Figures are named without numerical source-table exports, clean-environment rerun, tolerances, resource/failure logs and source-difference audit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "scale-mixture-of-Normals prior",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful biological question motivates a valid Student-t empirical-Bayes intervention and matched likelihood comparison, with distinct light-tail/heavy-tail/noise predictions. Source eligibility and workflow stages are present, and 2,497 words meet the limit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "scale-mixture-of-Normals prior",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful biological question motivates a valid Student-t empirical-Bayes intervention and matched likelihood comparison, with distinct light-tail/heavy-tail/noise predictions. Source eligibility and workflow stages are present, and 2,497 words meet the limit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "scale-mixture-of-Normals prior",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful biological question motivates a valid Student-t empirical-Bayes intervention and matched likelihood comparison, with distinct light-tail/heavy-tail/noise predictions. Source eligibility and workflow stages are present, and 2,497 words meet the limit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "scale-mixture-of-Normals prior",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful biological question motivates a valid Student-t empirical-Bayes intervention and matched likelihood comparison, with distinct light-tail/heavy-tail/noise predictions. Source eligibility and workflow stages are present, and 2,497 words meet the limit."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "scale-mixture-of-Normals prior",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful biological question motivates a valid Student-t empirical-Bayes intervention and matched likelihood comparison, with distinct light-tail/heavy-tail/noise predictions. Source eligibility and workflow stages are present, and 2,497 words meet the limit."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "scale-mixture-of-Normals prior",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful biological question motivates a valid Student-t empirical-Bayes intervention and matched likelihood comparison, with distinct light-tail/heavy-tail/noise predictions. Source eligibility and workflow stages are present, and 2,497 words meet the limit."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "scale-mixture-of-Normals prior",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful biological question motivates a valid Student-t empirical-Bayes intervention and matched likelihood comparison, with distinct light-tail/heavy-tail/noise predictions. Source eligibility and workflow stages are present, and 2,497 words meet the limit."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "fully held-out sequencing replicates",
+      "evidence_type": "exact_quote",
+      "reason": "Joint tail-accuracy/stability gates and positive/negative/ambiguous branches are explicit. The detailed primary reference uses remaining biological replicates, and the separate fully held-out validation option is operational; no tuning on its outcomes is proposed. This credits the alternative independent RNA route without counting same-sample qPCR as independent biological sampling."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "fully held-out sequencing replicates",
+      "evidence_type": "exact_quote",
+      "reason": "Joint tail-accuracy/stability gates and positive/negative/ambiguous branches are explicit. The detailed primary reference uses remaining biological replicates, and the separate fully held-out validation option is operational; no tuning on its outcomes is proposed. This credits the alternative independent RNA route without counting same-sample qPCR as independent biological sampling."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "fully held-out sequencing replicates",
+      "evidence_type": "exact_quote",
+      "reason": "Joint tail-accuracy/stability gates and positive/negative/ambiguous branches are explicit. The detailed primary reference uses remaining biological replicates, and the separate fully held-out validation option is operational; no tuning on its outcomes is proposed. This credits the alternative independent RNA route without counting same-sample qPCR as independent biological sampling."
+    }
+  ],
+  "deductions_uncapped": 95,
+  "quality_score": 5,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "The core adaptive-tail idea is sound, but finite-sample superiority, conditional-bias and reference-error claims require correction. The primary uncertainty analysis and overextended distribution/default conclusions materially weaken the explanation.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The adaptive Student-t intervention, biological question and selective-tail mechanism match. V1 credited all five; strict reassessment finds the identifying evaluation unqualified: its primary reference-tail comparison ignores reference-selection uncertainty and its confidence intervals bootstrap correlated subsample draws as independent. The resulting decision cannot establish the claimed reliable accuracy improvement. Readout and qualified predicted outcome fail; direction points are not removed merely for missing Methods.",
+  "item_score": 2.0
+}

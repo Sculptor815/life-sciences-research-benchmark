@@ -1,0 +1,134 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "mol-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:00:08.250055+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "a6e968ac3fe45d6c49b237bb23c8813292b7dccb64940ef14ccb07b7da5795cb",
+  "question_sha256": "83f4992b8d828ae4516dfeb944e8921d0f4706164cf7443bb348714562bc468d",
+  "reference_sha256": "fe6cad42d8b330c2133bebe164b42f815489fc29ea2267094b0d0987154f9562",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "3ebbafdf0718f9e0d7c33cdae0793243cc4c11754a6745c849b5180362df0412",
+  "primary_route": "Empty-vector rescue, independent epitopes, band/IP proteomics and endogenous tagging.",
+  "complete_final_answer_read": true,
+  "word_count": 1481,
+  "first_round_scientific_quality": 95.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "with appropriate empty-vector control.",
+      "evidence_type": "exact_quote",
+      "reason": "Prospectively specifies parental/null/rescue and matched vector controls, explains genetic dependence and the distinct rescue interpretation; sufficient control roles for the selected essay-scale route."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Proposed orthogonal validation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer-check prior Methods, supplements or a validated protocol before conducting the proposed validation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "75-kDa signal persists despite complete target coding-sequence loss",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective background/linearity calibration with an acceptance criterion and failed-calibration action for the proposed band measurement."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "75-kDa signal persists despite complete target coding-sequence loss",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative band-intensity definition with normalization denominator and weak/saturated-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion result alone does not exclude every indirect biological explanation.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer covers all requested concepts and alternative indirect dependence, uses the supplied genetic facts without a new measured claim and stays under 1500 words. The antigen-identity limitation of proposed MS is assessed under P14 rather than repeated as a general overclaim."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion result alone does not exclude every indirect biological explanation.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer covers all requested concepts and alternative indirect dependence, uses the supplied genetic facts without a new measured claim and stays under 1500 words. The antigen-identity limitation of proposed MS is assessed under P14 rather than repeated as a general overclaim."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion result alone does not exclude every indirect biological explanation.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer covers all requested concepts and alternative indirect dependence, uses the supplied genetic facts without a new measured claim and stays under 1500 words. The antigen-identity limitation of proposed MS is assessed under P14 rather than repeated as a general overclaim."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion result alone does not exclude every indirect biological explanation.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer covers all requested concepts and alternative indirect dependence, uses the supplied genetic facts without a new measured claim and stays under 1500 words. The antigen-identity limitation of proposed MS is assessed under P14 rather than repeated as a general overclaim."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion result alone does not exclude every indirect biological explanation.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer covers all requested concepts and alternative indirect dependence, uses the supplied genetic facts without a new measured claim and stays under 1500 words. The antigen-identity limitation of proposed MS is assessed under P14 rather than repeated as a general overclaim."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion result alone does not exclude every indirect biological explanation.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer covers all requested concepts and alternative indirect dependence, uses the supplied genetic facts without a new measured claim and stays under 1500 words. The antigen-identity limitation of proposed MS is assessed under P14 rather than repeated as a general overclaim."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion result alone does not exclude every indirect biological explanation.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer covers all requested concepts and alternative indirect dependence, uses the supplied genetic facts without a new measured claim and stays under 1500 words. The antigen-identity limitation of proposed MS is assessed under P14 rather than repeated as a general overclaim."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "expression of a reintroduced construct that is not equivalent to the endogenous protein.",
+      "evidence_type": "exact_quote",
+      "reason": "Negative rescue and discordant antibody/tag/MS outcomes include technical or construct alternatives and state when assignment should be reconsidered."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "This provides direct molecular identity evidence",
+      "evidence_type": "exact_quote",
+      "reason": "Presence of target peptides in a gel region/IP is used to identify the antibody signal without addressing co-migrating proteins or captured partners. Independent-epitope/tag approaches are useful but do not close that specific identity inference as stated."
+    }
+  ],
+  "deductions_uncapped": 25,
+  "quality_score": 75,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Correct conditional genetic support and useful negative outcomes; proteomic presence is overstated as identity of the immunoreactive species.",
+  "item_score": 75
+}

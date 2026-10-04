@@ -1,0 +1,223 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "bio-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:08:07.467214+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "877e6b864511c29b4909e956469fd992450a989c72afb6bb3d8be0b665364802",
+  "question_sha256": "9897959937c05bea4661cdf8b301b0b350235db1b56f302510fc8132468083b7",
+  "reference_sha256": "494bb9585a8ba22eeb3aa44162cd54a8b39534002dd77a6f77e38ec56d1ef0b6",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "b31b7ae10e78740db7f87208e96cc6b62342465f1c89749c872c74c55d2e387c",
+  "primary_route": "Isotope tracing, step blockade/restoration and proposed biochemical reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 1340,
+  "first_round_scientific_quality": 33.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prior Methods/supplement/validated-protocol consultation with condition transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core arms lack sham handling/wash and inactive enzyme controls for the primary interruption/restoration route."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Lists tissue preparation alternatives without selecting or resolving an identifiable source/system and integrity-qualified assay route."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative buffer/cofactor recipe or concrete calibration-to-choice procedure; label position and time selection remain insufficiently specified."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A lower-bound isotope recovery target is not full calibration: no quantitative isotope/matrix reference accuracy, upper closure limit and validated quench/recovery failure rule."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable background/below-limit or missing-pool handling and complete labelled plus unlabelled carbon accounting for the quantitative endpoint."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Aliquots are not independently prepared biological replicates; no justified independent-unit precision or power plan."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Treats activity without added substrate as invalid rather than retaining and quantifying genuine endogenous-fuel metabolism."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Statistical significance is invoked without a defined model, preparation-level uncertainty and multiple-contrast handling."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Selecting inhibitor dose from oxygen suppression and validating washout by resumed respiration do not assay the actual target, neighboring steps or residual inhibitor independently."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded parameter exploration, objective dose/time selection and lock before confirmation."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Failure checks such as verifying inhibitor penetration are not paired with an actual penetration/target assay and ordered diagnostic repair/retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No refrozen repaired protocol with fresh independent confirmation or protection against tuning through biological nonresponses."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "CTR greater than one does not uniquely establish multiple cycles: a multi-carbon molecule can release multiple CO2 in one pass, and allosteric activation can increase substrate oxidation. Label entry into X is not proof of return/regeneration."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "An artificial matrix with unspecified validated enzymes is not an operational purified component inventory with omission/restoration and contamination qualification."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sample/raw-data/code/model/version/settings audit trail."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended Next Action**",
+      "evidence_type": "exact_quote",
+      "reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks."
+    }
+  ],
+  "central_false_premise": "The principal acceptance rule asserts that CTR >1 and label entering X establish repeated cycling. These observations can arise without a closed regenerative cycle and invalidate the principal recommendation.",
+  "deductions_uncapped": 90,
+  "quality_score": 10,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "The answer follows the requested proposed-experiment format and recognizes broad alternatives and randomized/blinded allocation. Its primary turnover threshold and label-entry criterion fail to identify recycling; execution, measurement and independent confirmation are largely underspecified. These causal defects are charged under P13 rather than duplicated under general scientific checks.",
+  "item_score": 10
+}

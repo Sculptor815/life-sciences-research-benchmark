@@ -1,0 +1,23 @@
+{
+  "item_id": "bio-d03",
+  "model_code": "claude-fable",
+  "response_id": "bio-d03",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:43:40.473348+00:00",
+  "review_type": "single AI curator; completed refusal record, question and full reference inspected",
+  "candidate_sha256": "f7938e9c5d47763441d1412ebd3fec64f4bb82773f0f6e49503b271622eee712",
+  "service": {
+    "scientific_accuracy": 0,
+    "decision_value": 0,
+    "actionability": 0,
+    "verifiability": 0,
+    "communication": 0
+  },
+  "service_score": 0,
+  "reasoning_index": null,
+  "reasoning_status": "not assessable: no submitted scientific explanation",
+  "errors": [],
+  "rationale": "Provider returned an empty valid refusal for the proposed citrate-cycle recycling and isotope-tracing experiment. There is no submitted protocol to evaluate. Task performance is zero; scientific-explanation quality is unavailable. Preserve this original completion and do not selectively retry. A read-only receipt lookup returned HTTP 404; cost remains unconfirmed, not zero.",
+  "confidence": "high",
+  "overall_benchmark_score": null
+}

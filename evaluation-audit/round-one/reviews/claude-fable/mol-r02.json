@@ -1,0 +1,107 @@
+{
+  "item_id": "mol-r02",
+  "response_id": "mol-r02",
+  "model_code": "claude-fable",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:33:36.034271+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "9e2e4f822d65bbc8fe11964dd30c99f76f7b7e5d6e2c89180d970d610921bff7",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Therefore *RAD9* is not (or not primarily) a repair gene",
+      "issue": "Repair during an imposed hold excludes an absolute inability to repair, not additional direct/indirect RAD9 repair functions or altered repair fidelity."
+    },
+    {
+      "quote": "This yields a genetics-free estimate of \"time required for repair,\"",
+      "issue": "Survival-rescue saturation in a rad9 background is neither genetics-free nor a direct measure of lesion clearance in wild type. Survival, external arrest and genotype effects must be separated with a physical repair readout."
+    },
+    {
+      "quote": "double mutants: same phenotype → same pathway",
+      "issue": "A shared loss-of-function phenotype, especially a floor of no delay, cannot generally order genes or prove pathway identity. Require informative separation-of-function/activation alleles, quantitative phenotypes and independent validation."
+    },
+    {
+      "quote": "Three concordant independent replicates; a fourth only if two of three disagree on the arrest landmark.",
+      "issue": "Outcome-dependent extension based on concordance is not a fixed confirmatory sampling plan. Predefine error-controlled adaptation or retain the fixed cohort and report disagreement."
+    },
+    {
+      "quote": "reduce dose until unirradiated doubling time is within 1.5× WT",
+      "issue": "Changing irradiation dose cannot alter the unirradiated baseline doubling-time defect. Change the strain/perturbation or interpretation, not this unrelated parameter."
+    }
+  ],
+  "rationale": "A detailed classical-genetics proposal with useful controls and acknowledged on/off identifiability limits. Repair-time proxy, pathway ordering, stopping and troubleshooting errors undermine the mechanistic claims; no historical synthesis question.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Exact packet and full frozen reference read, including sealed target. Original rubric only; stricter requested penalties inactive. Alternative scientifically valuable research questions receive full quality consideration independently of retrospective match.",
+    "Sealed target requires a synthesis-versus-existing-protein switching question, verified synthesis perturbation, separate initiation/recovery and conditional predictions. General checkpoint on/off discussion or conditional RAD9 removal alone is not a joint match.",
+    "Packet permits repair during externally imposed delay; it does not prove all repair, fidelity or survival is restored or that RAD9 has no repair-related role.",
+    "New detailed tools may be proposed without claiming author methods. Calibrate unknown doses and windows; unsupported precision and unselected central tools are different limitations.",
+    "Physical lesion measurements, checkpoint state, actual division, survival and protein abundance are distinct readouts. Budding, foci or CFU cannot silently substitute for all of them.",
+    "Track original cohorts, damage dilution/selection and death as competing events. End-of-window living nondivision is censoring, not proof of permanent arrest.",
+    "Do not reject confirmatory outcomes merely because expected genotype effects fail. Restrict exclusions to independently verified technical failures.",
+    "Conditional switch nulls require validated function and kinetics. Repair manipulation may affect signaling directly; correlated lesion decline alone does not establish a causal sensed species.",
+    "Donorless HO breaks can undergo end joining; nuclease recutting, chromosome loss and surviving lineages require verification. Population measurements do not establish per-cell persistence.",
+    "Historical primary abstract and metadata verified, full original Methods not audited. Review is unblinded single-Codex assessment, not independent expert certification."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2247073/",
+      "scope": "Primary abstract and publication metadata personally read; verifies sealed 1990 target, not full historical methods."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8628283/",
+      "scope": "Indexed primary abstract excerpt verifies HO-break end joining; no full Methods audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "Is the RAD9-dependent delay an active, damage-initiated signaling process",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "Is the RAD9-dependent delay an active, damage-initiated signaling process",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Is the RAD9-dependent delay an active, damage-initiated signaling process",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Is the RAD9-dependent delay an active, damage-initiated signaling process",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Is the RAD9-dependent delay an active, damage-initiated signaling process",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

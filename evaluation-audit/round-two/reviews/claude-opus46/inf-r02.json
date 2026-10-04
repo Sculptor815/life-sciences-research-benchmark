@@ -1,0 +1,256 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "inf-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:52:30.765528+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7092efcb8f1e2b881be9913306c52fabcc7143c207e307c506b8aa5c7ad49547",
+  "question_sha256": "e2a8164d3113ad32ccba25c2f790e6e0ea6dfabd0df8ab61546b9e78aeb131b9",
+  "reference_sha256": "3c78377ec00297d0605f749ff1e96def2de7ed9fb0e950a8b0d736f845f47eb1",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "f3239945551e958ad34b7b91eb45318485803adabe663b6cd7d9568404b43baa",
+  "primary_route": "PBMC activation, clonal spike-in noise model and replicate/condition/pathway tests of discordance.",
+  "complete_final_answer_read": true,
+  "word_count": 2973,
+  "first_round_scientific_quality": 40.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer prior primary Methods or validated protocols before execution. Calibration alone is not this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Essential stimulation, sampling, staining and preparation settings are deferred; no quantitative source/calibration-to-setting procedure makes the primary workflow executable."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Model families and contrasts are named but the primary likelihood/assumptions, diagnostics and multiplicity procedure remain unspecified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical repair does not explicitly require a revised frozen procedure and fresh independent confirmatory data after changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete immutable input manifest, exact software/environment/settings and command-to-output provenance chain is specified."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment rerun with numerical figure outputs, declared tolerances, resource/failure logs and source-difference audit is planned."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "essentially all observed variance is technical",
+      "evidence_type": "exact_quote",
+      "reason": "Clonal steady-state cells retain biological transcription, protein and cell-cycle heterogeneity. Treating their entire variance as technical creates an invalid null calibration; a second cell line does not repair that premise."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "residual exceeds the 95th percentile",
+      "evidence_type": "exact_quote",
+      "reason": "The stated positive-tail threshold misses large negative residuals despite claiming both RNA-high/protein-low and protein-high/RNA-low calls. A two-sided calibrated endpoint is not supplied consistently."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "n = 75 per group has >80 % power",
+      "evidence_type": "exact_quote",
+      "reason": "The 75 discordant cells are not the total binomial denominator or independent donor count; 75 per group also does not give the claimed power for 5% versus 10%. Increasing cell yield cannot substitute for biological-unit power."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "bottom/top 2.5 % of library size",
+      "evidence_type": "exact_quote",
+      "reason": "Fixed within-sample tail removal and mitochondrial cutoff can preferentially remove activated biological states. No control-derived failure validation or complete attrition/denominator policy protects those outcomes."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "applied per sample to avoid batch effects",
+      "evidence_type": "exact_quote",
+      "reason": "Per-sample CLR is not a guarantee of removing batch effects; size-factor/CLR and regression assumptions and limitations are not correctly developed into a justified transformation strategy."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "genuine, transient post-transcriptional regulatory states",
+      "evidence_type": "exact_quote",
+      "reason": "Replicate consistency, enrichment and time association alone do not establish the stated post-transcriptional mechanism or information unavailable to either modality alone. Orthogonal mechanistic validation is deferred."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "A flat profile across conditions supports Mechanism B.",
+      "evidence_type": "exact_quote",
+      "reason": "Biological discordance can be stable across these conditions. A flat trajectory or disappearance after decontamination cannot alone establish technical origin; the negative decision lacks effect-size equivalence and calibrated sensitivity."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary confirmation is same-donor split-library consistency; orthogonal functional follow-up is only suggested for an ambiguous result, not committed as a validating experiment for the main claim."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No independent donor test split with noise/typing/feature/model fitting contained in discovery folds is specified. The same observations define discordance and test its transcriptomic enrichment."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded depth/missingness/normalization robustness challenge preserving biological discordance is specified; observational technical-covariate regression is not that stress test."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Primary human PBMCs",
+      "evidence_type": "exact_quote",
+      "reason": "Identifiable source, markers, stimulus and proposed sample layout are provided. Packet facts and predictions are separated; factual quantitative and inference defects are charged only under their specific checks."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "1 h, 2 h, 6 h, 12 h",
+      "evidence_type": "exact_quote",
+      "reason": "Coded randomized blocked allocation and a bounded temporal expansion are explicit. Antibody/ambient/coverage failure triggers prompt concrete troubleshooting actions; invalid null and post-repair confirmation are charged separately."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "1 h, 2 h, 6 h, 12 h",
+      "evidence_type": "exact_quote",
+      "reason": "Coded randomized blocked allocation and a bounded temporal expansion are explicit. Antibody/ambient/coverage failure triggers prompt concrete troubleshooting actions; invalid null and post-repair confirmation are charged separately."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "1 h, 2 h, 6 h, 12 h",
+      "evidence_type": "exact_quote",
+      "reason": "Coded randomized blocked allocation and a bounded temporal expansion are explicit. Antibody/ambient/coverage failure triggers prompt concrete troubleshooting actions; invalid null and post-repair confirmation are charged separately."
+    }
+  ],
+  "deductions_uncapped": 85,
+  "quality_score": 15,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 50.0,
+  "explanation_reason": "Substantial design detail, but a biologically variable clonal null, incorrect power denominator and observational mechanism claims materially weaken the study.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit.",
+  "item_score": 6.0,
+  "review_amended_at": "2026-10-04T09:00:57.820449+00:00"
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "mol-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:28:17.370583+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "6d49daafbd3d0280f53f3d582edab475580797260a9b4349f91c286272881990",
+  "question_sha256": "18ef4462f4f6072b5cde3b86e735cd54dcfe8ff2616e3905276a619a2e8bee05",
+  "reference_sha256": "da4f395c3ac28e425be90cad5a96348ce8907930151791cf1c9eb7010890b847",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6b3744357094c50f9b3c5a7a9ccab9b755ea84f5b438140d0feae040c882061d",
+  "primary_route": "Dose-by-external-delay matrix plus reversible RAD9 on/off schedules, with damage, division and reproductive readouts.",
+  "complete_final_answer_read": true,
+  "word_count": 3988,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-experiment consultation/check of original Methods, supplements or validated protocols to select and transfer detailed conditions; establishing local prerequisites alone is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The central repair/conditional-switch/damage-assay technologies and operating conditions remain unspecified without a concrete tool-selection and quantitative calibration-to-execution procedure. Qualitative validation gates do not make the proposed main intervention directly executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Damage/measurement calibration names background, dynamic range or controls but does not supply quantitative acceptance thresholds or a concrete procedure to derive tolerances and act on failed calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Primary division measurement",
+      "evidence_type": "exact_quote",
+      "reason": "First division and subsequent growth are listed, but an operational division-event definition and direct lesion units/normalization plus weak/saturated/missing-signal handling are not fixed."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "accommodates cells that do not divide",
+      "evidence_type": "exact_quote",
+      "reason": "The time-to-event model does not explicitly separate death from nondivision censoring, and the actual model/assumption tests and correction procedure are deferred. Eventual reproductive outcome measured separately does not correct informative death censoring."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dose/duration/switch parameters are described as a range or to be calibrated without a bounded ladder or a concrete range-derivation and acceptance-to-lock procedure. This differs from independent assay calibration in P03."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting and pilot separation are present, but no explicit change-control policy requires re-freezing the revised procedure and fresh independent confirmation after technical changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "No change in delay, with validated rapid inactivation",
+      "evidence_type": "exact_quote",
+      "reason": "No-change supports downstream memory only if a meaningful ongoing-RAD9 effect is excluded with adequate precision. Switching validation alone is not an equivalence test; pilot sample power does not automatically establish this null decision."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Add an orthogonal damage measure if feasible",
+      "evidence_type": "exact_quote",
+      "reason": "The principal dose/time mechanism rests on a single unspecified damage assay; orthogonal damage validation is only a contingent suggestion, without a required assay/decision plan independent of that artifact."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw movie/lineage/assay identifiers, exact analysis versions/settings and source-to-output records sufficient to reconstruct the study are not specified as a complete audit trail."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Model comparison alone cannot establish causation",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative checkpoint-architecture question and causal limitations are sound. Matched strains/restoration, always-on/off and switch-only controls, sham/external-delay controls and pilot feasibility gates are explicit; source facts are not invented and 3,988 words meet format."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "target at least 90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Pilot variance with a half-WT/rad9 meaningful difference and 90% power, independent culture blocks, balanced randomized aliquots and masked scoring are specified. Technical stops, no efficacy-driven optional stopping and retention of contradicting cultures are explicit."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "target at least 90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Pilot variance with a half-WT/rad9 meaningful difference and 90% power, independent culture blocks, balanced randomized aliquots and masked scoring are specified. Technical stops, no efficacy-driven optional stopping and retention of contradicting cultures are explicit."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "target at least 90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Pilot variance with a half-WT/rad9 meaningful difference and 90% power, independent culture blocks, balanced randomized aliquots and masked scoring are specified. Technical stops, no efficacy-driven optional stopping and retention of contradicting cultures are explicit."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Wild type does not delay",
+      "evidence_type": "exact_quote",
+      "reason": "Problem-specific checks distinguish delivery, stage, toxicity, assay floor and switch artifacts and prescribe recalibration/redesign before retesting."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Clear alternative mechanism hypotheses and good allocation/replication. Death handling and a no-effect-to-memory inference remain incomplete; many core methods are unspecified.",
+  "historical_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+  "item_score": 18.0
+}

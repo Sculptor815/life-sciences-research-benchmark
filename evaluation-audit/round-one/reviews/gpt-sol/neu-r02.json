@@ -1,0 +1,102 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "gpt-sol",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:23:22.494607+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "668beddea19af3b865a9b7df0cf8d99e291f42708b8d8a6a6c841178b6f1b17b",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 77.5,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "Selection of the species remains a prerequisite",
+      "issue": "A suitable species and recording/optical platform are never selected. The proposed safeguards are useful, but intervention ages, duration, initial stimulus ranges, acquisition settings and an implemented assay remain a future protocol-development task."
+    },
+    {
+      "quote": "If a validated retinal or precortical functional assay is available",
+      "issue": "Make adequate peripheral functional validation a prerequisite for the relevant localization claim, not an optional availability-dependent add-on. The answer correctly withholds interpretation after peripheral damage, but ocular appearance alone would not exclude altered retinal or thalamic function."
+    },
+    {
+      "quote": "the temporal relationship of their patterned inputs matter",
+      "issue": "The asynchronous and synchronous schedules match cumulative per-eye dose but differ in instantaneous total binocular drive and adaptation. Measure those consequences and constrain the conclusion; this contrast alone does not isolate neural correlation from every activity-dose mechanism."
+    },
+    {
+      "quote": "a preregistered ocular-bias index or eye-response contrast",
+      "issue": "No actual estimator, response threshold or weak-denominator rule is specified; these are deferred to calibration. Useful absolute-response and nonresponsive-unit safeguards deserve credit, but the executable quantitative analysis remains incomplete."
+    }
+  ],
+  "rationale": "Strong proposed unilateral experiment, matched shams, restored optical access, explicit peripheral limitation, independent sampling and animal-level inference. Its qualified historical core is present; unfinished assay choices and correlation-versus-total-drive interpretation limit original scientific quality.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does patterned input from the two eyes causally instruct",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Relative eye activity drives competition",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "One randomly selected eye receives pattern-attenuated input.",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Remove all optical devices before physiological assessment.",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Unilateral attenuation shifts cortical influence toward the non-attenuated eye.",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

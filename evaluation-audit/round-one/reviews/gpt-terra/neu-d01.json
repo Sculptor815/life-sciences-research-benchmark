@@ -1,0 +1,66 @@
+{
+  "item_id": "neu-d01",
+  "model_code": "gpt-terra",
+  "response_id": "neu-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:58:36.954488+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "aa18c872c0427393eb5d7f050a14a03873bc99c814ab6cbf1c2027683156294f",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "On randomized trials, illuminate P-derived terminals in Q only during the predefined **post-cue, pre-go retrieval window**.",
+      "issue": "The functional calibration never measures inhibition onset, offset recovery or rebound. A light window ending before go does not establish that the physiological intervention ends before movement; measure transmission kinetics and choose a recovery gap."
+    },
+    {
+      "quote": "**Primary retrieval window:** a post-cue, pre-movement interval, if the task supports one.",
+      "issue": "A post-cue delay can probe maintenance, action preparation or a state needed later, while retrieval may already have occurred during cue presentation. The answer includes a cue-period arm and acknowledges some uncertainty, but repeatedly labels the primary delay as retrieval without a task-specific discrimination."
+    },
+    {
+      "quote": "**Movement-window light:** after the go signal, during locomotion.",
+      "issue": "This control and main-task kinematics do not fully test delayed motor-planning effects of pre-go inhibition. An instructed/forced-choice motor task with the same pre-go inhibition would strengthen the core dissociation."
+    }
+  ],
+  "rationale": "Good anatomical specificity, all-randomized-trial analysis, independent units and practical-effect bounds. The principal repair is physiological timing: recovery before locomotion is assumed rather than validated. The selected post-cue epoch also needs a more cautious mnemonic/maintenance label and a motor control matched to the actual intervention time.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "O1 establishes that population P has two targets, not that every Q-projecting neuron collateralizes. Do not assume either overlap or disjointness; validate or retain the limitation.",
+    "Projection-defined somatic inhibition tests a population and all its affected outputs. Local Q-terminal intervention is preferable for a pathway claim but also needs actual transmission and off-target validation.",
+    "Suppression in neuronal somata does not guarantee suppression of terminal transmission. Validate physiological onset, sustained effect, offset recovery and rebound at the actual behavioral settings.",
+    "Reduced normal performance supports a conditional causal requirement, not memory storage or an exclusive retrieval computation. Cue perception, attention, maintenance and motor preparation remain alternatives.",
+    "Light offset is not necessarily inhibition offset. A choice made after light ends can correctly report an earlier retrieval deficit; outcome timing alone is not a rebound diagnosis.",
+    "Movement adjustment/matching after intervention and conditioning on response completion can bias inference. Report all randomized trials and use experimental motor/sensory dissociations.",
+    "A nonsignificant control effect is not equivalence. Predefine biologically meaningful bounds and obtain enough precision to exclude consequential confounds.",
+    "Two pathways or epochs can both be necessary. Effects in an other-projection control do not by themselves invalidate the tested pathway contribution.",
+    "Numbers missing from the packet may be proposed as pilot settings; no specific opsin, surgical coordinate or animal count is mandatory. Operational calibration and justified independent-animal sampling are required.",
+    "Reference correction: population-level divergence must not be described as demonstrated single-neuron collateralization. Terminal effects on intended local Q signaling are part of the intervention, not automatically an off-target artifact."
+  ],
+  "review_sources": [
+    {
+      "title": "Mahn et al. (2016): biophysical constraints of presynaptic optogenetic inhibition",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4926958/",
+      "scope": "Reviewer-only primary-source check of terminal efficacy, paradoxical release and offset rebound; no particular construct is required by the question."
+    },
+    {
+      "title": "Montgomery, Nyhan and Torres: post-treatment conditioning",
+      "url": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/",
+      "scope": "Authors summarize their methodological paper on adjustment/selection after treatment. Used only by reviewer, not candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

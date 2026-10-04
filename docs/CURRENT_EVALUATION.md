@@ -1,5 +1,7 @@
 # Latest publication and rescoring status
 
+The owner has now authorized full scoring-process publication: [720 reviews, 360 final answers, deduction evidence, amendments and reproducible score calculations](../evaluation-audit/README.md). This supersedes earlier private-review publication restrictions recorded below; scores and frozen rubric contents are unchanged.
+
 The strict second round is complete: **360/360 answers, 12 models, 30 questions each**. The [complete final score tables](second-round-20261004/SCORECARD.md) apply category weights 20/30/50 and research direction/quality weights 60/40. Original answers and first-round reviews are preserved; all candidate hashes, applicable checks and calculations passed validation. No new candidate or paid-judge API calls were made.
 
 The [open question set](../benchmark-30/README.md) contains all 30 questions, both reference versions and the frozen final rubric. Original versions were carefully reviewed by the owner; v2 revisions await owner review. Candidate scoring is a single unblinded Codex assessment under a post-hoc rubric.

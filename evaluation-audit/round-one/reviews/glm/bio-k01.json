@@ -1,0 +1,46 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "glm",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.808719+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "fed5b0b195a1bd96d184c1b7e6b4575e005da3d274f60d350187895865320c6f",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "a 2-fold competitive Km shift from a 1.5-fold Vmax decrease, because both can produce the same single rate value.",
+      "issue": "At the supplied point these give 18 and 20 nmol/min, respectively."
+    },
+    {
+      "quote": "e.g., every 15–30 s",
+      "issue": "Timing is not derived from volume or substrate availability; it can miss the initial window at the supplied amount rate."
+    },
+    {
+      "quote": "if curvature appears earlier, substrate depletion is the cause.",
+      "issue": "Earlier curvature is compatible with depletion but does not uniquely identify it."
+    },
+    {
+      "quote": "Vmax = kcat·[E]total",
+      "issue": "With [E] as concentration this gives concentration/time; the packet Vmax is amount/time, requiring enzyme amount or a volume factor."
+    }
+  ],
+  "rationale": "The headline calculation is correct, but numerical, dimensional and causal errors affect the supporting explanation. The first-order approximation at S=Km/2 is also too loose without quantifying its error.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

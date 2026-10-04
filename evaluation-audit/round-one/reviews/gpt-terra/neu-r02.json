@@ -1,0 +1,106 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "gpt-terra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:23:22.495613+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "bfca147fa332f2f2d2163de1ffbb55379c519414127baebcae73317c8387277b",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "At each terminal age, measure the following in every included animal:",
+      "issue": "The acute endpoint never explicitly removes the deprivation device and restores equally calibrated optical access before comparing eye-driven responses. Recovery animals are restored, but that does not resolve the core immediate deprivation endpoint."
+    },
+    {
+      "quote": "Health and intervention fidelity:",
+      "issue": "Ocular observations and gross pathology do not establish retinal function. Add functional peripheral validation and distinguish altered precortical transmission from a cortical developmental effect. The answer acknowledges localization limits but does not operationally resolve the core confound."
+    },
+    {
+      "quote": "The chosen method may be electrophysiological, optical, or another validated approach",
+      "issue": "No single-neuron method or validated cellular-resolution alternative, concrete model, deprivation platform or working conditions are selected. A future method-selection checklist is not a directly executable experiment."
+    },
+    {
+      "quote": "normal versus bilateral reduction",
+      "issue": "Prioritizing bilateral effects is scientifically defensible for a different question, but it must not displace the controlled unilateral ocular-dominance comparison needed for the sealed historical target. The answer does retain a unilateral arm, which receives component credit."
+    },
+    {
+      "quote": "the fraction or distribution of neurons responsive to both eyes",
+      "issue": "Specify all-unit and nonresponsive denominators, baseline-corrected eye responses and low-response handling. Restricting correspondence to surviving binocular cells can hide the main biological loss."
+    }
+  ],
+  "rationale": "Thoughtful staged necessity-versus-instruction design with nesting, sham and recovery controls. The historical question and unilateral intervention are present, but unremoved endpoint occlusion and missing functional peripheral assessment leave the target readout insufficiently controlled; no qualified hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does patterned visual experience causally instruct",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Relative interocular competition/correlation",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "reduced patterned input to one eye; left and right eye assignment balanced.",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "At each terminal age, measure the following in every included animal:",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Strong shift toward the non-deprived eye",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

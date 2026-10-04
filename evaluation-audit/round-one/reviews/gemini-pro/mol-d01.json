@@ -1,0 +1,80 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "gemini-pro",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:03:32.512547+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "4b832b8f4e28f6f9537ee3214251ba7f338112488fa7248c24e7b6299fdf60c7",
+  "service": {
+    "scientific_accuracy": 1,
+    "decision_value": 2,
+    "actionability": 1,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 1,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 38.75,
+  "reasoning_index": 37.5,
+  "errors": [
+    {
+      "quote": "A KD mutant lacks catalytic activity but retains the physical domains required for protein-protein interactions",
+      "issue": "This describes an intended reagent, not a property established for M3. The proposed protocol never actually measures K catalytic activity and never tests relevant binding/localization, so the central comparison is not qualified."
+    },
+    {
+      "quote": "identical fragmentation patterns, indicating identical tertiary structure",
+      "issue": "Limited-proteolysis similarity cannot establish identical tertiary structure, let alone every relevant scaffold function."
+    },
+    {
+      "quote": "We also assume ligand-induced signaling directly drives the growth phenotype observed in M1.",
+      "issue": "This assumption is not tested by the proposed design. Vehicle-by-ligand growth comparisons and independent proliferation/death measurements are needed before linking the endpoints."
+    },
+    {
+      "quote": "Use one-way ANOVA with post-hoc testing",
+      "issue": "The plan does not define an equivalence margin/test for the claim of equal rescue, account adequately for the longitudinal/nested design, or provide prospective sample-size calibration."
+    },
+    {
+      "quote": "The evidence establishes that K is required",
+      "issue": "The pooled-knockout phenotype remains vulnerable to off-target and selection effects. Cloning alone does not establish on-target causality."
+    },
+    {
+      "quote": "K’s scaffolding role is sufficient",
+      "issue": "Rescue by a genuinely inactive mutant supports a noncatalytic contribution, not specifically a scaffold mechanism. Here inactivity is not even measured."
+    }
+  ],
+  "rationale": "The answer identifies the basic rescue contrast and the danger of an unstable mutant, and provides a clear sequence of broad steps. However, the essential catalytic-inactivity assay and scaffold-competence checks are missing; the folding inference is invalid, and the analysis cannot support equal rescue. Substantial redesign is required before the experiment can answer its central question.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol.",
+    "Protein presence during catalytic inhibition does not establish functional scaffold preservation. Conformation and interactions can change.",
+    "Lack of an inhibitor effect in null cells does not establish selectivity: floor effects and changed dependency can hide off-target actions.",
+    "Do not normalize the pathway endpoint by K abundance across null and rescued cells; division by absent K is undefined and implies an unjustified linear correction.",
+    "Fold-proxy similarity is not proof of identical tertiary structure or preservation of every interaction."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature08833",
+      "use": "Primary evidence that ATP-competitive RAF inhibitors can alter dimerization; protein presence alone does not ensure unchanged interaction functions. Not an assertion that fictional K is RAF."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-017-01274-0",
+      "use": "Primary study of inhibitor-induced RAF conformation and RAS interaction, supporting the need to qualify noncatalytic consequences."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,53 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "claude-fable",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.009013+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "23cd7603d2c55d7f9710757fce2767f85ceac5142c3b56e91a4631c91ac039ac",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "per-donor AUC",
+      "issue": "A donor has one treatment class in this design, so a treatment-class AUC within each donor is undefined. Compute discrimination across held-out donors containing both arms, or use a defined donor-level prediction loss."
+    },
+    {
+      "quote": "pseudobulk + permutation, which remains valid by construction",
+      "issue": "Validity depends on the actual restricted allocation/exchangeability and null being tested; aggregation alone does not make a permutation procedure universally valid. The final exchangeability caveat is credited."
+    },
+    {
+      "quote": "prefer whichever passes calibration",
+      "issue": "Type-I-error calibration does not establish that precision weighting and equal-donor summaries estimate the same biological target, especially with informative cell counts. State the target first and standardize comparisons accordingly."
+    }
+  ],
+  "rationale": "Strong independent-unit definition, fixed-donor collinearity warning, exact small-sample resolution example, repeated null simulations and grouped validation. Main limitations are an undefined per-donor classifier metric and incomplete separation of calibrated testing from estimand validity.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

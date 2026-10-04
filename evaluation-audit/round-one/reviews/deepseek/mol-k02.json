@@ -1,0 +1,60 @@
+{
+  "item_id": "mol-k02",
+  "model_code": "deepseek",
+  "response_id": "mol-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:28:51.168965+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "f54a5acb4d04c1f958a5224cdea5a35b7b09ecce7fd7f3173c6e4f1f274357fa",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "If the 75 kDa band also contains target protein, the KO may be incomplete",
+      "issue": "The proposed MS analysis is of Control bands only. Target presence in control at 75 kDa cannot establish incomplete KO; compare control with KO and distinguish mixed species before inferring residual target."
+    },
+    {
+      "quote": "If rescue fails to restore the 50 kDa band, the 50 kDa band may be a secondary/off-target effect",
+      "issue": "Also verify rescue expression, relevant isoform, epitope and processing; technical rescue failure can explain the result. Conversely rescue may restore a downstream protein and is not an independent molecular identity test."
+    },
+    {
+      "quote": "The 50 kDa band must correspond to the intended target protein.",
+      "issue": "That is the identity hypothesis under test, not a prerequisite for concluding relative genetic dependence. Keep genotype association and direct recognition separate throughout the proposed decision rules."
+    }
+  ],
+  "rationale": "Sound central interpretation and good attention to circular KO validation, normalization and multiple independent strategies. Approximate 96/4 readings are close enough for this qualitative task. The operational corrections concern MS sampling of control alone, rescue failure and an identity assumption that exceeds the band-level inference.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Codex personally read all twelve complete final answers, exact question and packet, full reference and displayed synthetic figure. No hidden reasoning, paid judge, laboratory experiment or candidate web access was used.",
+    "The chart gives approximate 100-to-5 signal at 50 kDa and 95-to-93 at 75 kDa, with equal loading and validated KO as stated premises. The relative genetic support favors 50 kDa; it does not establish direct antigen identity or universal antibody specificity. Small numerical approximations do not change this qualitative comparison.",
+    "Reference correction: no complete coding-sequence deletion is specified in the candidate packet. The sealed logic chain assumes one, but the figure only says validated KO. Escaping isoforms are legitimate conditional alternatives when the validation scope is unknown.",
+    "Reference correction: the candidate was not shown the draft-key editorial status or original multiple-choice distractors. Do not require mention of a draft key, expert-review status or rejection of choices absent from the open question.",
+    "Reference correction: a target-derived modified species cannot persist after confirmed complete protein elimination merely because it is modified. A persistent band may contain a separate comigrating protein; distinguish that from residual/escaping target and incomplete null validation.",
+    "Summary bars do not reveal n, statistical equivalence, noise, raw-blot integrity or normalization method. Equal loading is a premise here, not proof of equal extraction/transfer. Expected sequence mass alone cannot reverse the observed ranking.",
+    "Rescue strengthens genetic dependence but may also restore downstream proteins. Failed rescue needs verified expression, relevant isoform, epitope, localization and processing. Genetic or RNA loss alone need not prove protein-null status.",
+    "MS can establish target presence while a comigrating species or indirect interactor generates antibody signal. Non-detection requires sensitivity and peptide coverage before being decisive. Peptide blocking can affect shared epitopes and does not independently prove endogenous identity.",
+    "The original frozen reference and candidate records are preserved. Corrections are disclosed here and applied consistently. Reviews are unblinded single-AI provisional assessments, not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Uhlen et al. (2016), A proposal for validation of antibodies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+      "scope": "Read the genetic, independent-antibody, tagging, immunocapture-MS and additional-characterization sections. They support application-specific validation and note indirect capture, tag artifacts and peptide-blocking limitations. No supplementary audit or experimental replication performed."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,223 @@
+{
+  "model_code": "glm",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:44:54.542999+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "843f85e56abad8ad25bbea45a79105371fd8e2b929f8e767f77961c157e2baa0",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "d20f8c341e131469658d0aa80e6d3e8b79560e0f85e30758887df619b4c78f77",
+  "primary_route": "Yeast-juice fractionation, chemical add-back and heat-dependent functional reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2541,
+  "first_round_scientific_quality": 32.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Protocol: Testing Requirement for a Heat-Stable Separable Factor in Yeast-Juice Fermentation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior Methods, supplements or validated protocols and verify detailed-condition transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "substitute protein",
+      "evidence_type": "exact_quote",
+      "reason": "Inactive analog replaces enzyme fraction R rather than candidate F, so does not test restoring-factor specificity; no candidate-depleted matrix with inhibitor-rescue validation."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "non-protein factor",
+      "evidence_type": "exact_quote",
+      "reason": "Heat survival/filtration cannot establish a non-protein chemical class."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "produce:",
+      "evidence_type": "exact_quote",
+      "reason": "No actual separation/cutoff/recovery/recipe procedure; contradictory heat acceptance separately belongs to P13."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "injected known gas volume",
+      "evidence_type": "exact_quote",
+      "reason": "Gas standard helpful, but no accuracy/leak/blank gate and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "CO\u2082 evolution per unit time",
+      "evidence_type": "exact_quote",
+      "reason": "No fixed gas amount/time unit convention or blank/weak/saturated/missing rules."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "n = 3\u20135",
+      "evidence_type": "exact_quote",
+      "reason": "Independent units/nesting given but no precision/power justification."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Adjust conductivity",
+      "evidence_type": "exact_quote",
+      "reason": "Conductivity cannot yield the individual-ion recipe required for salt exclusion."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All values below must be measured",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded fraction/dose/heat/ion exploration with objective selection and confirmation lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Do not add arms post hoc",
+      "evidence_type": "exact_quote",
+      "reason": "Exploratory labeling does not provide refreeze and fresh independent confirmation after repair."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Each comparator arm in the max",
+      "evidence_type": "exact_quote",
+      "reason": "Primary contrast/C3 require heated F plus intact R to be inactive despite heat-stable-factor rescue prediction; C6 also requires rediluted active F+R inactive. Mandatory success rules contradict the intended hypothesis."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Independent separation",
+      "evidence_type": "exact_quote",
+      "reason": "No second separation principle or operational independent product validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "seed recorded",
+      "evidence_type": "exact_quote",
+      "reason": "Seed alone does not supply raw-file/unit/provenance and versioned code/settings audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "no results exist",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13."
+    }
+  ],
+  "central_false_premise": "C3 requires heated F plus intact R below 10% of W although a heat-stable restoring factor should preserve rescue. The mandatory primary decision invalidates the intended hypothesis test; frozen central-false-premise cap20 applies.",
+  "deductions_uncapped": 75,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "Proposed status and packet coverage explicit; qualified independent materials, coded randomized data-lock collection, technical input gates, mixed model/CI/family correction and specific failure repairs. Central contradictory hypothesis has one owner P13.",
+  "item_score": 20
+}

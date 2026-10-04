@@ -1,0 +1,34 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "gpt-terra",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.798843+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "3d932b368a300ff87f5dff36f75169fea34a4f63fdd2539a5a7d6debb383a776",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 86.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Fit the earliest points to a straight line.",
+      "issue": "The plan does not explicitly establish a post-transient quasi-steady-state window or account for mixing/assay lag; earliest points can include a transient."
+    }
+  ],
+  "rationale": "Correct arithmetic and inhibition patterns, useful blanks and calibration. The assumption discussion omits free-versus-total substrate and quasi-steady-state timing, limiting the completeness of the initial-rate argument.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

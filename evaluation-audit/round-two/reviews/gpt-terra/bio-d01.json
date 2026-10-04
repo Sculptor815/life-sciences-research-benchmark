@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:08:18.307703+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "0c13e0debcb2b1b4099201b0157e9117b2b3726d59c7aeee5c39a46b5b6e2e05",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "bca3221b8a539d0f2eeecae03b8547a5066a4eedc1004427896fab9646e90bf0",
+  "primary_route": "Optical/reporter deconvolution, target-product initial rates and substrate-by-compound kinetic matrix.",
+  "complete_final_answer_read": true,
+  "word_count": 3357,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation of primary target/reporter assay Methods or validated protocols with a transfer check for the actual chemistry."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Prepare a concentrated compound stock",
+      "evidence_type": "exact_quote",
+      "reason": "No compound/reagent identity, purity or authenticated stock-concentration check precedes the experiment; visual homogeneity alone does not establish integrity."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "For all unreported parameters, establish them by calibration",
+      "evidence_type": "exact_quote",
+      "reason": "Buffer, pH, temperature, cofactor conditions and exact preparation remain unknown without a concrete lookup or calibration-to-decision procedure. Stating calibrate every parameter is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reproducible, monotonic",
+      "evidence_type": "exact_quote",
+      "reason": "Calibration coverage and inversion are checked, but no predefined recovery/error/precision acceptance criterion establishes quantitative accuracy; monotonicity alone does not validate it."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "initial rate of target-product formation",
+      "evidence_type": "exact_quote",
+      "reason": "Defines amount-versus-time conceptually but does not specify the reportable amount/concentration and time unit convention or a complete weak/missing quantitative endpoint rule."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Fit initial target-product rates globally",
+      "evidence_type": "exact_quote",
+      "reason": "Models and uncertainty are named, but the free-inhibitor versus total-inhibitor assumption/depletion check is absent. No branch handles tight binding before the standard competitive equation is interpreted."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Stop or redirect the study",
+      "evidence_type": "exact_quote",
+      "reason": "Repair/redirection lacks a refreeze and fresh independent confirmation requirement after altered conditions."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "demonstrating target-directed inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Less calibrated product can also arise from substrate sequestration or product destruction during target incubation. Post-stop product spikes do not exclude those alternatives, so the target-directed decision is not identifying."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If a staged assay cannot be validated",
+      "evidence_type": "exact_quote",
+      "reason": "Primary inference reuses the same reporter/fluorescence system with transfer curves. The alternative nonfluorescent measurement is unnamed and undeveloped; no operational independent chemistry measurement validates the corrected product estimate."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Inspect raw traces",
+      "evidence_type": "exact_quote",
+      "reason": "No specified raw-file/unit audit manifest or versioned executable analysis/settings retention allows another analyst to reconstruct the result."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "stopped compound-containing matrix spiked",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective vehicle, omission, reporter-only, fixed product/fluorophore and stopped-matrix controls have clear roles separating assay layers."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "kinetically consistent with substrate-competitive inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correct primary classification, endpoint limitations, synthetic/source status and kinetic-versus-physical-site caution. Specific target attribution failure is charged under P13 only."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "kinetically consistent with substrate-competitive inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correct primary classification, endpoint limitations, synthetic/source status and kinetic-versus-physical-site caution. Specific target attribution failure is charged under P13 only."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "kinetically consistent with substrate-competitive inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correct primary classification, endpoint limitations, synthetic/source status and kinetic-versus-physical-site caution. Specific target attribution failure is charged under P13 only."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "kinetically consistent with substrate-competitive inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correct primary classification, endpoint limitations, synthetic/source status and kinetic-versus-physical-site caution. Specific target attribution failure is charged under P13 only."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "kinetically consistent with substrate-competitive inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correct primary classification, endpoint limitations, synthetic/source status and kinetic-versus-physical-site caution. Specific target attribution failure is charged under P13 only."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "kinetically consistent with substrate-competitive inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correct primary classification, endpoint limitations, synthetic/source status and kinetic-versus-physical-site caution. Specific target attribution failure is charged under P13 only."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "kinetically consistent with substrate-competitive inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Correct primary classification, endpoint limitations, synthetic/source status and kinetic-versus-physical-site caution. Specific target attribution failure is charged under P13 only."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "number of independent runs should be set prospectively",
+      "evidence_type": "exact_quote",
+      "reason": "Fresh reactions nested across day/preparation runs, pilot variability/precision for replication, randomized balanced controls and coded analysis are specified."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "number of independent runs should be set prospectively",
+      "evidence_type": "exact_quote",
+      "reason": "Fresh reactions nested across day/preparation runs, pilot variability/precision for replication, randomized balanced controls and coded analysis are specified."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not discard discrepant controls",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective technical criteria and stops avoid outcome-selected removal and cover invalid quench, precipitation and noninvertible detector behavior; numeric pass details are a distinct P03 gap."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "F = H(P, I)",
+      "evidence_type": "exact_quote",
+      "reason": "Explains target/reporter/detector separation and the need for compound-specific transfer functions and invertibility; kinetic patterns are not structural proof."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "Predefine all condition labels",
+      "evidence_type": "exact_quote",
+      "reason": "Sets ranges from vehicle kinetic transition and soluble/valid reporter range and freezes series, timing and exclusions before confirmation; the missing buffer-setting procedure is separately P02."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Reduce target enzyme amount",
+      "evidence_type": "exact_quote",
+      "reason": "Provides cause-specific repairs for nonlinear early product, failed quench, reporter suppression and insolubility with explicit stop/redirect branches."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Useful staged-calibration and control design, but not independently validated target chemistry; substrate/product side chemistry and several executable/statistical/audit requirements remain unresolved.",
+  "item_score": 45
+}

@@ -1,0 +1,120 @@
+{
+  "item_id": "bio-r02",
+  "response_id": "bio-r02",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:08:52.452338+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "2fb23daeed44905a8cd2d84db980aa9538ea29b8c80d06830c9b4901b1097431",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 1,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 48.75,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "A single rotating F1-ATPase molecule represents one independent unit",
+      "issue": "ATP/load treatments are assigned to flow cells, so molecules share chamber and preparation dependence. Include independent enzyme/chamber replication and account for clustering."
+    },
+    {
+      "quote": "to the unblinded",
+      "issue": "This contradicts the earlier blinded-analysis plan. Lock step calls and exclusions before condition decoding."
+    },
+    {
+      "quote": "hidden Markov model or Student's t-test based step finder",
+      "issue": "There is no continuous-rotation null, synthetic recovery, dynamic response calibration or false-step validation. Static filament noise does not establish that the chosen algorithm can resolve real elementary steps without creating them."
+    },
+    {
+      "quote": "Perform linear regression on rotation rate versus ATP concentration",
+      "issue": "A linear rate model is generally confined to an appropriate low-substrate regime; use a calibrated kinetic model across saturation and separate dwell from transit time."
+    },
+    {
+      "quote": "F1-ATPase is a tightly coupled, discrete stepper motor.",
+      "issue": "Resolved apparent steps and ATP-dependent waits do not establish one-to-one turnover coupling or rigid elementary transitions. No chemical turnover accounting is proposed."
+    },
+    {
+      "quote": "shortening the fluorescent filament proportionally reduces hydrodynamic drag",
+      "issue": "Rotational drag is not simply proportional to length; it depends strongly on geometry, wall proximity and attachment. Measure drag/compliance and optical uncertainty, not just short-versus-long labels."
+    },
+    {
+      "quote": "the necessary surface chemistry",
+      "issue": "Central attachment chemistry, ATP and MgATP conditions, probe dimensions, timing and calibration thresholds remain unspecified. No executable torque/work or cellular-free-energy measurement is offered."
+    }
+  ],
+  "rationale": "Relevant question and factorial idea, but step-finder validation is too weak for the claimed tight-coupling conclusion. Mentioning 120 degrees does not cure the missing calibrated readout. Historical hit is false, with question/mechanism/intervention partial credit retained.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full original question, packet, reference and sealed historical target read before grading. Every available final answer personally read; no hidden reasoning. Original quality rubric only; strict-round deductions remain inactive.",
+    "Qualified match follows the reference explicit core: resolved stepping, ATP/load discrimination, conditional directional prediction and credible measurement controls. All five fields must qualify. A forced 120-degree prior or name alone fails; an unbiased predicted recurring-step experiment need not invent the historical angle from the packet.",
+    "Work/free-energy comparison is a reference extension and earns quality credit when operationally supplied; its absence is not an additional binary gate beyond the explicit core qualification. Unsupported efficiency claims would be penalized. Preserve this interpretation across models.",
+    "The packet reports rotation with ATP, not a supplied minus-ATP experiment, exact catalytic symmetry, step angle or energetic result. Distinguish background hypotheses from packet evidence.",
+    "A fixed step is not automatically one ATP. Bulk ATPase and selected imaged motors require matched populations and active-fraction accounting. Binding, hydrolysis and product release are different event identities; timing alone does not identify the energetic driver.",
+    "Brownian-ratchet and power-stroke descriptions do not uniquely separate by fixed angles or backward events. Gated stochastic models can be discretely and tightly coupled.",
+    "Angle states must be inferred without forcing the sequel. Validate dynamic measurement response and step inference against continuous/noise controls, temporal blur, probe compliance and per-molecule angular origins.",
+    "Surface-confined or torsionally trapped Brownian probes require a suitable fluctuation/response or relaxation model; naive long-lag free diffusion cannot provide drag. Wall geometry and load-dependent optics must be controlled.",
+    "Control free magnesium/MgATP and nucleotide/product composition across nominal ATP changes. Viscogens can affect chemistry as well as drag.",
+    "Independent molecules are nested in chambers and enzyme preparations. Technical repeats, excluded inactive molecules and long biological pauses require explicit denominators/estimands and nonselective retention.",
+    "The 1998 primary abstract and metadata verify historical direction; complete 1998 Methods not audited. Selected 2011 original Methods passages support calibration guardrails, not required historical settings. No candidate sees this evidence."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9657145/",
+      "scope": "Complete primary abstract and author/publication metadata read; 1998 full Methods not audited."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3207686/",
+      "scope": "Selected original Rotation Assay and Torque Calibration Methods passages personally read; supports measured chemical conditions and frequency-dependent fluctuation calibration."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2877361/",
+      "scope": "Indexed original theoretical-study abstract/excerpt read: flashing-ratchet model with discrete substeps; not full-paper audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does the F1-ATPase central subunit rotate continuously",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Discrete Stepping (Tight Coupling)",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Experimental Groups (Varying Load and Turnover)",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "hidden Markov model or Student's t-test based step finder",
+      "assessment": "Critical step-inference/prediction gap: preferred patterns or an unvalidated step finder cannot establish the claimed elementary coupling. See exact deductions."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "F1-ATPase is a tightly coupled, discrete stepper motor.",
+      "assessment": "Critical step-inference/prediction gap: preferred patterns or an unvalidated step finder cannot establish the claimed elementary coupling. See exact deductions."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

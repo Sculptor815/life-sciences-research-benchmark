@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:28:34.739928+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "65cadeed5b76f6773b26290bfa7aed6963d2fbdd75272f8bc0dbd6d5e6732e52",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6a52fd8fd86ee11652df2880c368582f4696103e8009d9d76b43480fe695d5d1",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2306,
+  "first_round_scientific_quality": 42.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The preparation lists co-expression and recovery, but no functional delivered indicator quantity or concrete calibration-to-choice procedure for constructing that preparation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "coefficients are estimated from these calibration frames",
+      "evidence_type": "exact_quote",
+      "reason": "Jointly expressing channels under motion do not independently identify spectral unmixing coefficients. Single-label/reference measurements and a residual interference acceptance gate are missing."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "fraction of supra-threshold fluorescence transients that lack a corresponding spike",
+      "evidence_type": "exact_quote",
+      "reason": "This denominator defines false discovery proportion, not false-positive rate. Plotting sensitivity against it does not give the stated ROC; false events per valid time and unique event matching are also unresolved. Charge this metric defect once."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Cell-session pairs are treated as independent and the precision-based increase in cells lacks independent animal replication/nesting in the inferential sampling plan."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Only cells in the central tertile proceed",
+      "evidence_type": "exact_quote",
+      "reason": "Selecting only the central expression tertile removes the low/high expression performance required for calibration; rejected performance regimes need retained coverage/failure accounting."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Correlation coefficient",
+      "evidence_type": "exact_quote",
+      "reason": "No specified visual-response contrast test or multiplicity procedure; a spike-rate correlation and detection curve do not define the requested visual-response comparison."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reports z-displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Reference brightness drift is not uniquely axial displacement: bleaching and symmetric defocus can give the same intensity. A single intensity calibration is insufficient for signed 3D tracking; the expression ratio also is not independent of resting calcium/reference abundance."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Repairs are proposed but revised settings are not explicitly refrozen and evaluated on fresh independent confirmation data."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Select r that minimizes the residual",
+      "evidence_type": "exact_quote",
+      "reason": "Neuropil coefficient, spike mapping and detection thresholds are fitted and assessed against the same paired data; no independent held-out animal/cell validation is operational."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No linked raw-data/cell/trial manifest with exact acquisition, processing and code/environment versions supports rerunning the result."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) Used to Infer Neural Activity",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Prospective paired recordings, explicit biological/artifact comparisons, blinded analysts, bounded neuropil and threshold sweeps, saturation curves and ordered troubleshooting are useful. Incorrect error-rate terminology, non-identifying axial estimation, restricted expression sampling and same-data calibration/validation materially limit the scientific explanation; these are charged under specific checks.",
+  "item_score": 40
+}

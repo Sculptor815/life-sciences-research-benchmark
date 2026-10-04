@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:34:48.172381+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "3e90e137058ee997b7bef6962b671c20b043dc6f40a6c80fd02d0821d5528ef2",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "b50963e5e65879bc6cd8ec112b1738c788e4792c1b095604f8c91b45f2262029",
+  "primary_route": "Five-probability fixed-time task with value/magnitude/timing modules and remapped confirmation.",
+  "complete_final_answer_read": true,
+  "word_count": 3748,
+  "first_round_scientific_quality": 77.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dopamine identity must be independent of reward responses, but no actual anatomical/genetic/molecular recording-identification strategy or its validation route is selected. A list of possible criteria remains an unresolved core identity prerequisite."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timing, delivery, identity and stability checks lack numerical acceptance-to-action thresholds or a concrete derivation of tolerances before the main contrast."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The hierarchical conceptual model does not specify a likelihood/dispersion decision with diagnostics and a concrete multiplicity procedure across the several primary comparisons."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-trial/unit manifest with exact analysis/acquisition versions/settings, calibration records and all technical/biological losses is specified."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "baseline-adjusted activity",
+      "evidence_type": "exact_quote",
+      "reason": "Epochs are named but the primary activity variable lacks an explicit rate/count or calibrated signal unit, normalization definition and missing/weak-signal handling; naming baseline adjustment is not an executable endpoint definition."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "covariate adjustment alone cannot prove",
+      "evidence_type": "exact_quote",
+      "reason": "Mechanisms, entropy-versus-variance distinction and fixed/matched-value controls are sound. Independent identity and preparation-level phasic controls avoid response-based cell selection; cue/device/behavior controls and guarded association claims are supplied."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Independent pilot variance and meaningful-effect simulation target 90% power. Counterbalanced cue/module allocations, coded processing, locked windows and finite learner/technical loss rules are explicit. A five-point probability grid bounds the main manipulated parameter."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Independent pilot variance and meaningful-effect simulation target 90% power. Counterbalanced cue/module allocations, coded processing, locked windows and finite learner/technical loss rules are explicit. A five-point probability grid bounds the main manipulated parameter."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Independent pilot variance and meaningful-effect simulation target 90% power. Counterbalanced cue/module allocations, coded processing, locked windows and finite learner/technical loss rules are explicit. A five-point probability grid bounds the main manipulated parameter."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Independent pilot variance and meaningful-effect simulation target 90% power. Counterbalanced cue/module allocations, coded processing, locked windows and finite learner/technical loss rules are explicit. A five-point probability grid bounds the main manipulated parameter."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "restart confirmation with frozen parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Specific cue, timing, movement and learning faults trigger repairs in a new pilot followed by a newly registered frozen confirmation cohort. Remapped replication and across-animal confirmation are explicit. Null conclusions require intervals excluding the meaningful effect and do not exclude heterogeneous coding."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "restart confirmation with frozen parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Specific cue, timing, movement and learning faults trigger repairs in a new pilot followed by a newly registered frozen confirmation cohort. Remapped replication and across-animal confirmation are explicit. Null conclusions require intervals excluding the meaningful effect and do not exclude heterogeneous coding."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "restart confirmation with frozen parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Specific cue, timing, movement and learning faults trigger repairs in a new pilot followed by a newly registered frozen confirmation cohort. Remapped replication and across-animal confirmation are explicit. Null conclusions require intervals excluding the meaningful effect and do not exclude heterogeneous coding."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "restart confirmation with frozen parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Specific cue, timing, movement and learning faults trigger repairs in a new pilot followed by a newly registered frozen confirmation cohort. Remapped replication and across-animal confirmation are explicit. Null conclusions require intervals excluding the meaningful effect and do not exclude heterogeneous coding."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Coherent historically matching hypothesis and independent-confirmation policy; important acquisition, measurement-unit and detailed statistical/audit specifications remain incomplete.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "The fixed-magnitude certainty/intermediate probability grid, matched-value challenge, separate middle-delay and cue/outcome responses, movement/history/cue controls and inverted-U directional prediction jointly match the sealed later study. Operational deductions remain separate from the valid historical core.",
+  "item_score": 84.0
+}

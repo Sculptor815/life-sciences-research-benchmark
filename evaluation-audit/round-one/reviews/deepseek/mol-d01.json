@@ -1,0 +1,66 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "deepseek",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:53:34.916606+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "230ac9abe6e62afc43e442a37cc2388e57061c5aa4a781ba9ac08f2fbff0f533",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 55.0,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Neither tested function is sufficient/necessary alone; redundancy or assay insensitivity",
+      "issue": "When each validated reciprocal allele independently rescues, each retained function can be sufficient in that background; neither function is individually necessary. The table incorrectly includes not sufficient and reverses the implication."
+    },
+    {
+      "quote": "Acceptance: K-KD activity ≤10% of K-WT",
+      "issue": "Ten percent residual activity can be sufficient for signaling and growth. This arbitrary threshold cannot qualify a reagent for concluding catalytic dispensability without a functional activity titration and informative detection bound."
+    },
+    {
+      "quote": "If no partner is known, at minimum show K-S co-IP and correct localization.",
+      "issue": "The packet does not establish that S binds K. Requiring K-S co-IP would reject a valid indirect pathway or an appropriate separation reagent; identify relevant partners rather than assume S is one."
+    },
+    {
+      "quote": "incubate K-WT or K-KD with S immunoprecipitate or substrate and measure phospho-S. This tests directness;",
+      "issue": "An S immunoprecipitate can carry other kinases and cofactors, as can immunopurified K. Direct phosphotransfer requires defined components and contamination/background controls; this proposed route is not by itself a directness test."
+    },
+    {
+      "quote": "If the growth effect is below the calibrated minimal effect size, increase n or improve assay sensitivity.",
+      "issue": "Increasing n in response to an observed small effect without a prespecified sequential design risks biased inference. A genuinely smaller-than-meaningful effect is not repaired by recruiting until significance."
+    },
+    {
+      "quote": "K is required for ligand-induced phospho-S and growth in this setting",
+      "issue": "M1 is a pooled-knockout association with unresolved on-target attribution and does not establish ligand-dependent growth. The proposed controls address these gaps, but this evidence-table statement treats them as already resolved."
+    }
+  ],
+  "rationale": "Many useful controls, folding tests and assay candidates are present. However, the reciprocal-rescue table contains a logic reversal, a 10% residual-activity threshold cannot establish catalytic inactivity, S binding is assumed, and the directness and adaptive-sample-size rules need substantive redesign. Numerical detail does not compensate for these inferential errors.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol."
+  ],
+  "overall_benchmark_score": null
+}

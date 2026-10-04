@@ -1,0 +1,118 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "qwen",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:23:22.499629+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "7ec2582991ebae6418ad6c7de35bf4051d949730eaef6a71c388fe6fe37be806",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 61.25,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "Binocular opaque occlusion.",
+      "issue": "The plan contains no unilateral deprivation comparison and no directional shift toward the experienced eye. Its related bilateral necessity question is not the sealed historical target."
+    },
+    {
+      "quote": "patterned input is more likely to be instructive",
+      "issue": "Failure of diffuse light to rescue does not uniquely establish instruction: pattern can be permissive or produce different activity statistics. Match relevant drive and manipulate specific pattern relationships before the claimed instructive conclusion."
+    },
+    {
+      "quote": "If ages differ because of recovery or late deprivation, age must be included",
+      "issue": "Covariate adjustment cannot identify perfectly confounded age and treatment. Include contemporaneous age-matched controls and compare treatment effects within age before testing timing."
+    },
+    {
+      "quote": "Use split-half reliability to exclude unreliable units.",
+      "issue": "A true deprivation-induced loss of selectivity/reliability is an outcome. Excluding it biases the organization estimate; separate technical failure from biologically weak units and report all-unit denominators."
+    },
+    {
+      "quote": "ODI =",
+      "issue": "After blank subtraction, responses can be negative or their sum near zero. Specify a validated denominator/weak-response rule. Beta regression also requires appropriate transformation/support handling for an index on [-1,1], rather than direct application."
+    },
+    {
+      "quote": "Confirm that occlusion or deprivation did not damage the eye.",
+      "issue": "No specific functional retinal/precortical assay is implemented; acute occluder removal is explicit only for the recovery group. Optical calibration is helpful but does not resolve all peripheral confounds."
+    },
+    {
+      "quote": "These should be recorded in a versioned protocol",
+      "issue": "Model, intervention duration, acquisition/stimulus settings and actual quantitative decision thresholds remain to be selected. Extensive checklists do not supply the requested executable experiment."
+    },
+    {
+      "quote": "",
+      "issue": "Full answer contains 5348 words, exceeding the 5000-word limit."
+    }
+  ],
+  "rationale": "Broad, auditable bilateral developmental program with calibration, sham conditions and nested models. No historical unilateral intervention, plus instruction, age and selection errors. Long form does not substitute for an executable method or a qualifying target match.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Is patterned binocular visual experience causally required",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Activity-permissive experience",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Binocular opaque occlusion.",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Primary outcome measures",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Early deprivation significantly reduces binocular neuron fraction.",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

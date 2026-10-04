@@ -1,0 +1,134 @@
+{
+  "model_code": "kimi",
+  "item_id": "bio-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:16:11.025306+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "83da48bcd2d826ef800aba3c447a2669b001e3f0f1022dc25a55cab0e50dd423",
+  "question_sha256": "d576679cb0522006ae6a3f256e6d4d1ed7180289149160eaf9054837dc1f2a1e",
+  "reference_sha256": "537c9e482a9662f10c65fb2f21594beb86fbd037d481e97efd72e3c550773802",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "591ef6fdd11a9a2683c07c1ecab72d79795a55e55ad0461914b7bd768aeef4f6",
+  "primary_route": "Model matrix, recovery, enzyme/artifact checks and proposed alternative chemistry/mapping.",
+  "complete_final_answer_read": true,
+  "word_count": 1284,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "product-standard spike",
+      "evidence_type": "exact_quote",
+      "reason": "No complete prospective known-product positive, enzyme/substrate-free negative and matched procedural control design with each role; named generic artifact checks or vehicle alone are insufficient."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "raises the apparent Km",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior Methods/supplements or validated protocols and check transfer before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "raises the apparent Km",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No detector/product reference calibration with acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "raises the apparent Km",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Units and kinetic parameters are reported, but the proposed rate endpoint lacks baseline correction and weak/saturated/missing-value rules."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "\u03b1\u2032 \u2248 large",
+      "evidence_type": "exact_quote",
+      "reason": "Two errors: weak ES inhibitor binding corresponds to standard alpha-prime near 1, not large; apparent Km is not generally an equilibrium binding affinity, so the stated equivalence is unjustified."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "drawn and labeled as a premise",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate curve values and main model/site distinction with synthetic-data limits and alternative tests. Specific model/validation errors are charged separately."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "drawn and labeled as a premise",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate curve values and main model/site distinction with synthetic-data limits and alternative tests. Specific model/validation errors are charged separately."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "drawn and labeled as a premise",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate curve values and main model/site distinction with synthetic-data limits and alternative tests. Specific model/validation errors are charged separately."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "drawn and labeled as a premise",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate curve values and main model/site distinction with synthetic-data limits and alternative tests. Specific model/validation errors are charged separately."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "drawn and labeled as a premise",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate curve values and main model/site distinction with synthetic-data limits and alternative tests. Specific model/validation errors are charged separately."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "drawn and labeled as a premise",
+      "evidence_type": "exact_quote",
+      "reason": "Accurate curve values and main model/site distinction with synthetic-data limits and alternative tests. Specific model/validation errors are charged separately."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Failure to recover indicates covalent/irreversible inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "Slow dissociation, insufficient dilution or enzyme damage can also prevent recovery; failure is not uniquely covalent/irreversible."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "different detection chemistry",
+      "evidence_type": "exact_quote",
+      "reason": "Orthogonal chemistry is unnamed and not operational; binding-site competition/mutation suggestions do not include protein-integrity or allosteric-coupling checks for localization."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correct graphical interpretation but affinity/mixed-model errors and overstrong failed-recovery interpretation.",
+  "item_score": 50
+}

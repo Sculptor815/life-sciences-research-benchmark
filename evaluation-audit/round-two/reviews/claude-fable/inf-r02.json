@@ -1,0 +1,255 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "inf-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:52:30.754564+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "8075a8eb3a82024737e8a6ebdb40240cd8eabb1e570d23907e91b55f91484106",
+  "question_sha256": "e2a8164d3113ad32ccba25c2f790e6e0ea6dfabd0df8ab61546b9e78aeb131b9",
+  "reference_sha256": "3c78377ec00297d0605f749ff1e96def2de7ed9fb0e950a8b0d736f845f47eb1",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "ddb3ab252e3e9fd78bf19291a86fd0035d1a98564c00978df73a82d32a12996f",
+  "primary_route": "Discordance discovery, orthogonal paired imaging and sorted-population kinetic/transfer follow-up.",
+  "complete_final_answer_read": true,
+  "word_count": 3004,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer prior primary Methods or validated protocols before execution. Calibration alone is not this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Essential stimulation, sampling, staining and preparation settings are deferred; no quantitative source/calibration-to-setting procedure makes the primary workflow executable."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent biological units and a pilot are recognized, but no quantitative power or precision target connects meaningful effect and pilot variation to a confirmatory sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Model families and contrasts are named but the primary likelihood/assumptions, diagnostics and multiplicity procedure remain unspecified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical repair does not explicitly require a revised frozen procedure and fresh independent confirmatory data after changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete immutable input manifest, exact software/environment/settings and command-to-output provenance chain is specified."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment rerun with numerical figure outputs, declared tolerances, resource/failure logs and source-difference audit is planned."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Culture sorted P+R\u2212 and P+R+ cells separately.",
+      "evidence_type": "exact_quote",
+      "reason": "The answer correctly admits that live sorting cannot gate these RNA states, then repeatedly requires separately cultured/reprofiled RNA-defined populations without a validated live proxy. Destructive joint profiling or FISH cannot supply those recoverable cells."
+    },
+    {
+      "id": "G4",
+      "state": "unmet",
+      "points": 5,
+      "quote": "M5 is uniquely identified",
+      "evidence_type": "exact_quote",
+      "reason": "Surface strippability and failure to recover are not unique to transferred protein: endogenous long-lived surface protein without ongoing synthesis can behave likewise. The proposed transfer experiment can establish transfer capability, not uniquely assign every ex vivo discordance to it."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the correct \"integration\" is a noise model",
+      "evidence_type": "exact_quote",
+      "reason": "Failure of the selected discordant markers does not identify a uniquely correct integration strategy or justify treating all observed discrepancies as artifacts; this exceeds the tested marker-specific validation."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "technically-explained fraction already subtracted",
+      "evidence_type": "exact_quote",
+      "reason": "The fitted detection/background probabilities do not identify a separable technical fraction for every heterogeneous biological cell. Subtracting that fraction and assigning per-cell mechanism ground truth requires a calibrated mixture/identifiability model that is absent."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "confirms transcript absence",
+      "evidence_type": "exact_quote",
+      "reason": "A negative smFISH result with positive controls constrains abundance at its detection limit, not literal absence. The declared real-state/mechanism decisions omit an explicit uncertainty bound on the negative measurement."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No donor-disjoint discovery/tuning/confirmation split with all fitting inside training units is specified; focal populations are selected and promoted to ground truth on the discovery donors."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the mixed model absorbs run effects",
+      "evidence_type": "exact_quote",
+      "reason": "A random run effect does not resolve donor-by-day confounding. The troubleshooting instruction lacks a balanced independent repeat for that confound and can mistake unidentifiable run/biology differences for corrected signal."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "primary mononuclear cells",
+      "evidence_type": "exact_quote",
+      "reason": "A tractable proposed PBMC system, panel and biological hypotheses are specified; new data are not claimed. Scope and assumptions are visible and answer length is within the limit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "primary mononuclear cells",
+      "evidence_type": "exact_quote",
+      "reason": "A tractable proposed PBMC system, panel and biological hypotheses are specified; new data are not claimed. Scope and assumptions are visible and answer length is within the limit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "primary mononuclear cells",
+      "evidence_type": "exact_quote",
+      "reason": "A tractable proposed PBMC system, panel and biological hypotheses are specified; new data are not claimed. Scope and assumptions are visible and answer length is within the limit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "primary mononuclear cells",
+      "evidence_type": "exact_quote",
+      "reason": "A tractable proposed PBMC system, panel and biological hypotheses are specified; new data are not claimed. Scope and assumptions are visible and answer length is within the limit."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "primary mononuclear cells",
+      "evidence_type": "exact_quote",
+      "reason": "A tractable proposed PBMC system, panel and biological hypotheses are specified; new data are not claimed. Scope and assumptions are visible and answer length is within the limit."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "primary mononuclear cells",
+      "evidence_type": "exact_quote",
+      "reason": "A tractable proposed PBMC system, panel and biological hypotheses are specified; new data are not claimed. Scope and assumptions are visible and answer length is within the limit."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "isotype false-positive rate <2%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric positive/background gates, per-donor discordance rates, coded randomized allocation and logged technical exclusions are present. Bounded chase times and two troubleshooting iterations, specific repairs and same-cell smFISH/immunofluorescence validation provide real experimental value despite the separate live-sorting defect."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "isotype false-positive rate <2%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric positive/background gates, per-donor discordance rates, coded randomized allocation and logged technical exclusions are present. Bounded chase times and two troubleshooting iterations, specific repairs and same-cell smFISH/immunofluorescence validation provide real experimental value despite the separate live-sorting defect."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "isotype false-positive rate <2%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric positive/background gates, per-donor discordance rates, coded randomized allocation and logged technical exclusions are present. Bounded chase times and two troubleshooting iterations, specific repairs and same-cell smFISH/immunofluorescence validation provide real experimental value despite the separate live-sorting defect."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "isotype false-positive rate <2%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric positive/background gates, per-donor discordance rates, coded randomized allocation and logged technical exclusions are present. Bounded chase times and two troubleshooting iterations, specific repairs and same-cell smFISH/immunofluorescence validation provide real experimental value despite the separate live-sorting defect."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "isotype false-positive rate <2%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric positive/background gates, per-donor discordance rates, coded randomized allocation and logged technical exclusions are present. Bounded chase times and two troubleshooting iterations, specific repairs and same-cell smFISH/immunofluorescence validation provide real experimental value despite the separate live-sorting defect."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "isotype false-positive rate <2%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric positive/background gates, per-donor discordance rates, coded randomized allocation and logged technical exclusions are present. Bounded chase times and two troubleshooting iterations, specific repairs and same-cell smFISH/immunofluorescence validation provide real experimental value despite the separate live-sorting defect."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "isotype false-positive rate <2%",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric positive/background gates, per-donor discordance rates, coded randomized allocation and logged technical exclusions are present. Bounded chase times and two troubleshooting iterations, specific repairs and same-cell smFISH/immunofluorescence validation provide real experimental value despite the separate live-sorting defect."
+    }
+  ],
+  "deductions_uncapped": 75,
+  "quality_score": 25,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Useful orthogonal validation, but nonrecoverable RNA-defined live groups, overidentified mechanisms and unvalidated ground-truth decomposition undermine several conclusions.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit.",
+  "item_score": 10.0
+}

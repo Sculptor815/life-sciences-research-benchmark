@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-10-03T17:10:09.991343+00:00",
+  "item_id": "neu-r03",
+  "model_code": "gpt-terra",
+  "original_review_sha256": "aaf03858c40453994a5f7bdee16b4674045071fe422aee35870fed55675c8df2",
+  "type": "transparent reviewer clarification; no raw review replacement",
+  "clarification": "The candidate explicitly defines uncertainty about whether reward occurs. Its U=4p(1-p) can validly represent occurrence uncertainty even when reward amounts differ. The saved note about reward variance is a construct-definition caution, not an additional established factual error in that chosen occurrence-uncertainty model. Do not deduct merely for choosing occurrence uncertainty instead of reward variance.",
+  "score_impact": "No numerical change: original scientific_accuracy3 and other dimensions remain supported by conflating risky-choice indifference with independently matched expected value, optional certainty anchors, and deferred implementation. Historical hit remains true. This clarification must travel with the review archive and ledger."
+}

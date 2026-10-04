@@ -1,0 +1,105 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "gpt-terra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:04:16.564459+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "7597924eb1083c918ac69fa2a607f8e97c10aa795c5973fdf480d9ddb15225bd",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "reward magnitudes that produce approximate behavioral indifference",
+      "issue": "Lottery indifference depends on risk preference and probability weighting, not only expected utility. Matching choice values does not independently match expected reward value; model and identify those quantities separately."
+    },
+    {
+      "quote": "U = 4p(1-p)",
+      "issue": "This is probability-only Bernoulli uncertainty. When reward amount varies, reward variance includes magnitude squared and may no longer peak at one-half across the matched-value series. Explicitly distinguish probability entropy/occurrence uncertainty from reward variance in the inference."
+    },
+    {
+      "quote": "Optional near-certain reference conditions:",
+      "issue": "The endpoint contrasts are relevant and proposed, but making true certainty anchors optional weakens the confirmatory inverted-U discrimination. Freeze an adequate endpoint grid before collection."
+    },
+    {
+      "quote": "A robust design would use:",
+      "issue": "Neuron identity criteria and single-cell platform remain unselected. No actual species, region, reward-delivery hardware or acquisition implementation is supplied; optical methods would need impulse-response calibration to separate cue from delay."
+    },
+    {
+      "quote": "effects disappear after accounting for movement",
+      "issue": "Adjusted loss can reflect mediation, collinearity or reduced common support rather than pure artifact. The final ambiguous classification is appropriately cautious, but interpret the mechanistic predictions consistently."
+    },
+    {
+      "quote": "welfare limits and technical exclusion criteria.",
+      "issue": "Approval, concrete monitoring/stop criteria and animal preparation remain listed as future specifications rather than an implemented proposed workflow."
+    }
+  ],
+  "rationale": "Historical core qualifies: explicit uncertainty/value hypotheses, endpoint references, probability manipulation, separate epochs and intermediate maximum. Hierarchical design and reversal controls are strong. Subjective-value identification, changing reward-variance interpretation and deferred implementation reduce original quality.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "encode uncertainty about whether reward will occur",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Expected-value or reward-probability coding",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Optional near-certain reference conditions:",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Cue and outcome responses must not be combined",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "greatest near \\(p=0.5\\)",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

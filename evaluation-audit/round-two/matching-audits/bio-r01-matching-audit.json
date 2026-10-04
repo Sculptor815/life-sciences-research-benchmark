@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-04T06:51:58.656471+00:00",
+  "scope": "Post-hoc round-two full-read corrections to prior qualified matching; no candidate or first-round edits.",
+  "changes": [
+    {
+      "model_code": "deepseek",
+      "item_id": "bio-r01",
+      "old_hit": true,
+      "new_hit": false,
+      "reason": "Question and intervention match reverse gamma work with ADP/Pi; nominal readout includes actual angle, separated labeled ATP, total ATP and all required counterfactuals. Mechanism/predicted outcome are not qualified because isotope incorporation is treated as synthesis without excluding initial bound ATP exchange/release through net inventory accounting. Match [true,false,true,true,false]; original first-round matching is preserved.",
+      "candidate_sha256": "a7f5c417324f2add1533ecd7f821c40699add660b63eb1f0abd8eb4ab95cd9fe",
+      "review_sha256": "cdf47e5f3724838f4129397d06b905dfb4d032c6189386248ec602548a513b56"
+    },
+    {
+      "model_code": "qwen",
+      "item_id": "bio-r01",
+      "old_hit": true,
+      "new_hit": false,
+      "reason": "Question, reverse-with-substrates intervention and nominal readout match the historical components. Mechanism/outcome fail the qualified repeated-net-synthesis requirement: the answer calls labeled phosphate proof of new synthesis but does not exclude exchange plus release from prebound ATP. Solution baseline alone is not a full initial inventory. Match [true,false,true,true,false]; original candidate and round-one review remain unchanged.",
+      "candidate_sha256": "3d4f6abf38bb65ddf1ffe0cfc196db3cab79f4e5c74c35c530096b1bf2864862",
+      "review_sha256": "75a29815bac5b0484fa25bec67ed660f7e72643e93f6b0db692d559e5caec58c"
+    },
+    {
+      "model_code": "kimi",
+      "item_id": "bio-r01",
+      "old_hit": true,
+      "new_hit": false,
+      "reason": "Question and intended reverse-torque intervention match; nominal direct chemistry, actual tracking and relevant controls satisfy the readout component. Mechanism/predicted outcome fail qualification through unverified per-molecule assignment and lack of repeated net production beyond the bound pool, compounded by the wrong-sign stall test in the claimed conjunction. Match [true,false,true,true,false].",
+      "candidate_sha256": "a8bed48d2fbd2815ecc8d60b08d8adefbf82bc006425ddceda485798d7076adb",
+      "review_sha256": "64619d2c60c74c94a89a55eeba826eb801ec4f922fcddb18437eafb858599fbf"
+    },
+    {
+      "model_code": "glm",
+      "item_id": "bio-r01",
+      "old_hit": true,
+      "new_hit": false,
+      "reason": "Question and reverse intervention with intended substrates match. Mechanism/readout/outcome fail qualification: separate substrate dependence is not tested, substrate-depleting pretreatment is not repaired, consuming-reporter conversion is invalid and finite stored ATP is not excluded. Match [true,false,true,false,false].",
+      "candidate_sha256": "c75d8b2d7b2406a1c734351fe3e3df1f8c84edeaeca70552a3d33e4ebcc07ccf",
+      "review_sha256": "1d159501777efccc3286b662156d93ed2f8ca477c83d4432829aebb1d6d27b83"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "mol-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:23:27.664102+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c9d066d096a069e07d7edcff1d03e7b9631e2a1564e97fb2f8243a1d81095afa",
+  "question_sha256": "977a901aa45a51e53beb3d5dfc1df4236d50dbabe47be214290304b663ddcfc5",
+  "reference_sha256": "4c10b3678ba1f5bc0060a9db770578e48e607d5100db658b12d6b95ee26dbab8",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "17a033a8b767c3d72a1315d7fd406e97e2808c4fc5a86fda821b5499e407c3ca",
+  "primary_route": "K-loss plus matched WT/kinase-dead rescue, with conditionally validated orthogonal catalytic perturbation.",
+  "complete_final_answer_read": true,
+  "word_count": 2441,
+  "first_round_scientific_quality": 95.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended approach",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult detailed prior Methods, supplements or validated protocols before execution and verify condition transfer. Generic established procedures or partner-literature lookup are insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Standardize medium conditioning",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative preparation/delivery recipe, conditioning duration or bounded calibration-to-choice procedure for those settings. Low-copy matched delivery is a strategy, not an executable intervention procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Validate assay specificity and linearity",
+      "evidence_type": "exact_quote",
+      "reason": "Names calibration properties, common reference and phosphorylation-specificity control, but does not give a concrete measurement-accuracy acceptance rule or criterion deriving the pass threshold."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "phospho-S/total-S response",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized response and growth-rate endpoints are clear, but no background-subtraction and weak/saturated/missing-signal handling rules make the phosphorylation ratio reliable at the detection limits."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "handle multiple endpoint/contrast testing explicitly",
+      "evidence_type": "exact_quote",
+      "reason": "The primary contrasts, hierarchy and confidence intervals are named, but no correction or gatekeeping procedure is specified for the listed multiple primary endpoint/contrast family."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "ligand concentration and time courses",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded ligand/delivery-expression parameter exploration with a range-selection or stopping procedure before the confirmatory lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Repair or replace it",
+      "evidence_type": "exact_quote",
+      "reason": "Repair/replacement branches do not require a refrozen protocol and fresh independent confirmation after reagent, expression or stimulation changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended approach",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sample-to-raw-file linkage and exact analysis-code/software/settings provenance sufficient to reconstruct all contrasts."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Scientifically strong distinction between catalytic necessity and scaffold dispensability, noncatalytic versus scaffold-specific rescue, and signaling versus growth causation. Controls address editing/delivery/selection and ligand exposure prospectively. Authenticated cells, full construct sequence, fold/interaction/activity qualification with an informative residual-activity bound, independent derivation precision planning, randomized coded allocation, outcome-independent stopping and ordered diagnostics are appropriate. Orthogonal inhibition requires target engagement, intact complexes and resistance rescue; equivalence/null/ambiguous decisions are carefully bounded.",
+  "item_score": 55
+}

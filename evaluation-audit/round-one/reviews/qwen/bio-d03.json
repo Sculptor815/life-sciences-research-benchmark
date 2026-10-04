@@ -1,0 +1,78 @@
+{
+  "item_id": "bio-d03",
+  "response_id": "bio-d03",
+  "model_code": "qwen",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T23:05:47.778523+08:00",
+  "review_type": "single AI curator; complete received final answer personally read; model identity visible; original rubric",
+  "candidate_sha256": "d5f46fbf14adc571cb8c0b373bae6819f8177314698056d9d2104490f915dfa8",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "TON_X = cumulative D_X(permissive) / P_X(0)",
+      "issue": "P_X(0) is defined before X addition, so this omits the added candidate and other convertible pools. CO2 carbon also needs explicit conversion to a cycle-equivalent amount. Use measured post-addition accessible pools and a justified finite-network bound."
+    },
+    {
+      "quote": "F_X_conserved = 1 − (X-derived 13CO2 + net X carbon loss) / added X carbon",
+      "issue": "Carbon lost from X into CO2 can already contribute to net X carbon loss, causing double counting. Carbon atoms can be replaced while the carrier species is genuinely recycled; loss of starting label is not itself stoichiometric consumption of the carrier species."
+    },
+    {
+      "quote": "Total carbon balance for 13C label.",
+      "issue": "Tracer recovery is not total-carbon balance. The design also needs absolute unlabeled pools, mobilizable reserves and total products; no-substrate subtraction alone cannot guarantee their contributions under added-substrate conditions."
+    },
+    {
+      "quote": "use of a clarified soluble fraction if appropriate",
+      "issue": "A clarified/depleted fraction remains chemically and enzymatically undefined. The requested reconstitution needs a concrete component/cofactor inventory and alternate-activity bounds."
+    },
+    {
+      "quote": "Define a calibrated score for the fraction of 13C appearing in predicted intermediates",
+      "issue": "A sequence-fidelity score has no specified model or discrimination threshold against branched and exchange-only alternatives. Arrival order and step-sensitive CO2 can be shared by open routes; fit and test the alternative atom-mapped flux models."
+    }
+  ],
+  "rationale": "Extensive controls, biological replication and direct restoration readouts; appropriately separates downstream bypass controls. The principal mathematical metrics, total-carbon accounting and reconstitution do not fully distinguish recycling from alternative turnover routes.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read the complete final answer, exact question/packet and entire frozen reference answer including its curator clarification. No hidden reasoning, paid judge or laboratory execution.",
+    "This uses the existing first-round rubric. The owner requested a stricter second round only after completion of this round; new 10/5-point deductions have not been applied.",
+    "The packet explicitly says the 1937 full text and figures were not read. Do not attribute proposed experimental details to the historical paper or penalize absence of invented historical settings.",
+    "The preliminary key mentions a noncycling analog and a small fixed discovery n. Its clarification permits omission/restoration where no validated analog exists. Independent sample size should be powered/calibrated; no particular small n is required.",
+    "Do not demand a positive addition effect in an already saturated endogenous pool. Failure to meet a proposed support gate limits the conclusion and does not automatically falsify cycling.",
+    "Adding downstream carbon around an irreversible block does not restore the missing reaction. Label exchange or appearance in one pool does not establish net cycle flux; respiration alone is insufficient.",
+    "Initial pools, mobilizable reserves, carbon sources, washout losses, cofactor-regeneration reactions and reversible exchange need accounting. Carbon closure alone cannot distinguish all network topologies.",
+    "Unknown numeric settings can be calibrated; concrete proposed biochemical routes are nevertheless useful. No complete primary-source methods audit is claimed.",
+    "Additional correction: isotope enrichment or residual starting tracer is not return flux; one-way replenishment and reversible exchange can coexist with oxidation. Stable carrier amount can coexist with loss of its original carbon atoms.",
+    "A closed-cycle proposal needs appropriate carbon mapping, multi-turn dynamics and identifiable alternative networks. CO2 release can be partial decarboxylation. Define stoichiometric units and handle a near-zero ratio denominator explicitly.",
+    "No-substrate controls do not guarantee additive endogenous flux under added substrate. Include measured convertible pools and mobilizable reserves in finite-pool alternatives. Biological background is not an automatic QC exclusion.",
+    "Heat-inactivated controls do not exclude contaminating enzymes in an active preparation. Washed or enzyme-depleted crude fractions are not automatically compositionally defined enzyme reconstitutions.",
+    "Unknown settings may be calibrated and scientifically valid equivalent contrasts accepted; no fixed author recipe, unavailable analog, mandatory small n, or new round-two deductions imposed.",
+    "Reviewer checked indexed primary-paper excerpts on arsenite inhibition of both PDH and KGDH and on exchanging pools in TCA isotope modeling. PMC full-page access was challenged; no full-text or source-methods audit is claimed."
+  ],
+  "review_sources": [
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20161290/",
+      "use": "Primary-paper indexed excerpt"
+    },
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/6863451/",
+      "use": "Primary-paper indexed excerpt"
+    }
+  ],
+  "overall_benchmark_score": null
+}

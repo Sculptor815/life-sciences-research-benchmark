@@ -1,0 +1,23 @@
+{
+  "item_id": "neu-d02",
+  "model_code": "claude-fable",
+  "response_id": "neu-d02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:07:54.916549+00:00",
+  "review_type": "single AI curator; completed refusal record, question and full reference inspected",
+  "candidate_sha256": "2edf2f066290df1922d673135e0d2ba824afb9c6d3e16a6ce9db24b4dc4d08a6",
+  "service": {
+    "scientific_accuracy": 0,
+    "decision_value": 0,
+    "actionability": 0,
+    "verifiability": 0,
+    "communication": 0
+  },
+  "service_score": 0,
+  "reasoning_index": null,
+  "reasoning_status": "not assessable: no submitted scientific explanation",
+  "errors": [],
+  "rationale": "Provider returned an empty valid refusal for the proposed calcium-indicator calibration against simultaneous electrophysiology. There is no submitted protocol to evaluate. Task performance is zero; scientific-explanation quality is unavailable. Preserve this original completion and do not selectively retry. Cost remains unconfirmed, not zero; inspect the separate dated billing reconciliation.",
+  "confidence": "high",
+  "overall_benchmark_score": null
+}

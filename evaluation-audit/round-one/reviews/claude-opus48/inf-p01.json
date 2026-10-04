@@ -1,0 +1,59 @@
+{
+  "item_id": "inf-p01",
+  "model_code": "claude-opus48",
+  "response_id": "inf-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:53:40.331132+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "d4350bd88f75635a3ae9cbc60ec76032a171f69a929a157b56ab026a11583dd3",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "inflates significance whenever testable genes are non-randomly distributed",
+      "issue": "Nonrandom eligibility does not guarantee inflation; the direction depends on the relation of pathway membership to testability."
+    },
+    {
+      "quote": "or with genomic-control/λ and principal-component adjustment reported",
+      "issue": "Reporting genomic control and PCs is not an alternative to a design that separates center from disease status. Check overlap; use balanced resequencing/new sampling if completely confounded. A calibrated global inflation measure alone does not validate this pathway test."
+    },
+    {
+      "quote": "consistent only with an object that never entered the literature",
+      "issue": "Not-applicable notice status alone is not exclusive proof of bibliographic nonexistence. C2 supplies the affirmative identity evidence; keep N1 subsidiary to that evidence."
+    }
+  ],
+  "rationale": "Strong separation of source and analysis, explicit unsupported-versus-refuted distinction, and useful callability and relatedness checks. Correct the deterministic enrichment-bias direction and the proposed adjustment alternative to an identifiable design.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The exact frozen question, full reference answer and full received final answers were read. This is a conceptual essay, not a demand for a complete executable sequencing protocol.",
+    "C2 affirmatively identifies a synthetic training record. No real publication or researcher is accused. A missing lookup or N1 alone would not establish invention or deceptive intent.",
+    "Reference required concept rc6 incorrectly says an all-annotated background always inflates significance. The full reference correctly allows either direction; no bias direction is identifiable from this packet.",
+    "Assess center-by-phenotype overlap rather than silently assuming either complete confounding or sufficient overlap. Covariate adjustment cannot recover an absent comparison.",
+    "Center-specific filters can yield equivalent effective detection. Unreported coverage, relatedness or adjustment is not evidence of their absence or failure.",
+    "A disappearing p-value after restriction does not prove artifact: evaluate effects, precision, power and estimand. A persisting calibrated association does not establish the pathway mechanism.",
+    "Benign alternatives include safeguards or true biology as well as non-malicious analytical mistakes. A negative-control result alone need not exclude bias in a different variant class.",
+    "Frozen keys and response records remain unchanged; these corrections are transparent reviewer metadata. No raw-data reanalysis was performed."
+  ],
+  "review_sources": [
+    {
+      "title": "gnomAD v3.0 release methods overview",
+      "url": "https://gnomad.broadinstitute.org/news/2019-10-gnomad-v3-0/",
+      "scope": "Reviewer read joint-genotyping and sample/variant QC overview, including ancestry, coverage and relatedness. Background support only; no validation of the invented dossier, no universal numerical thresholds imported."
+    }
+  ],
+  "overall_benchmark_score": null
+}

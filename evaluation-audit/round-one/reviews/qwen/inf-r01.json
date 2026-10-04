@@ -1,0 +1,107 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "qwen",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:49:49.038104+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "830870110e9180004c51ee577158ec4c0ba4e28004756bf64d283d72ef18f4e7",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "The count-model family is left generic",
+      "issue": "The requested proposed method can legitimately instantiate and label a count likelihood. Leaving it generic, with unspecified normalization, scale fitting and numerical inference, prevents a complete executable estimator."
+    },
+    {
+      "quote": "the gene-level log fold-change, for example log2 fold-change",
+      "issue": "The displayed log-link coefficient must have a fixed base. Define the natural-log to log2 conversion before comparing with later log2 thresholds. Also include an explicit gene intercept or require one in the nuisance design; a condition indicator and optional covariates alone do not model baseline gene abundance."
+    },
+    {
+      "quote": "total normalized count for gene",
+      "issue": "The fallback count/(1+dispersion) information score does not reflect coefficient precision across the two groups/design and does not reproduce the NB information saturation with count depth. Prefer the actual likelihood curvature with boundary checks."
+    },
+    {
+      "quote": "Use the same RNA samples as the RNA-seq experiment.",
+      "issue": "This is orthogonal assay validation, not independent biological replication. Spike-ins likewise test technical recovery; separate those roles from new-specimen validation before claiming reproducible endogenous expression changes."
+    },
+    {
+      "quote": "Estimate prior width \\(\\tau\\) robustly from the distribution of high-information unshrunk effects.",
+      "issue": "Specify a noise-aware fitting rule and how selection of high-information genes is handled when effect size and abundance are related. The raw spread of selected estimates can misestimate the prior scale for the full gene population."
+    },
+    {
+      "quote": "Exclusion of samples after inspection must be documented",
+      "issue": "Documentation alone does not prevent result-dependent exclusions. Freeze objective technical rules before viewing condition-effect results and label post hoc exclusions as sensitivity analyses."
+    }
+  ],
+  "rationale": "Comprehensive reporting, simulations, useful error definitions and careful non-reproduction language. Important gaps remain in likelihood/units/intercept, prior estimation and information measurement; same-sample qPCR and spike-ins are overpromoted as independent biological validation. The adaptive-tail alternative is mentioned but not implemented.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All four complete final answers in this file, the exact question/packet and full reference were personally read. The long Qwen answer was read in overlapping sections. No paid judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Real rare strong regulation",
+      "assessment": "Biological question matches."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "a heavier-tailed prior may protect them better than a Normal prior",
+      "assessment": "Mechanistic rationale matches."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "This is an alternative beyond the supplied starting point and would need separate evaluation.",
+      "assessment": "Heavy tails are explicitly future work, without an adaptive replacement model."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "For posterior credible intervals, compute the fraction of true effects inside 95% intervals.",
+      "assessment": "Error, sign, ranking/stability and interval-calibration readouts are present."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "The Normal-prior, information-sharing count-model estimator improves recovery",
+      "assessment": "Primary forecast concerns the original Normal model."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

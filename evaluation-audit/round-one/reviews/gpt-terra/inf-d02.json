@@ -1,0 +1,66 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "gpt-terra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:20:31.295146+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "e6e4afc638a0bd916f4a5db6aa405e459404a014a2550b8a37739895e91bffc5",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "If the design matrix is rank-deficient or treatment is fully confounded with donor, processing batch, or another covariate",
+      "issue": "Between-donor allocation is valid when independent donors receive different conditions and appropriate donor-level covariates are used. Do not confuse donor-constant treatment with failure of identifiability; the answer already gives a suitable parallel design but this stop rule contradicts it."
+    },
+    {
+      "quote": "old-versus-regenerated result-table and plot hashes.",
+      "issue": "Specify numerical comparisons of aligned result rows and plot data, tolerance rules and semantic difference categories. Different image metadata or rendering can change hashes without changing scientific results."
+    },
+    {
+      "quote": "with its recorded normalization, dispersion estimation, and inference settings.",
+      "issue": "Recordkeeping is strong, but primary normalization/testing/shrinkage algorithm decisions remain insufficiently explicit for the proposed executable plan. Name the intended normalization, Wald or LRT hypothesis and compatible shrinker, while leaving dataset-specific numerical values and versions as declared placeholders."
+    }
+  ],
+  "rationale": "Careful independent-unit and donor-generalization discussion, input manifests, paired/parallel modeling and source audit. Inconsistent donor-confounding rejection, deferred model-setting choices and hash-centered rerun acceptance prevent full credit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete received final answer was personally read in full, together with the exact candidate packet and frozen reference/clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than image byte equality alone. Partial source access cannot establish full reproduction. All four answers fit the 3500-word limit.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    },
+    {
+      "url": "https://bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf",
+      "scope": "Official manual indexed excerpt corroborates lfcThreshold Wald testing replacing LRT p-values; not a full manual audit."
+    },
+    {
+      "url": "https://bioconductor.org/help/course-materials/2022/CSAMA/lab/2-tuesday/lab-03-rnaseq/rnaseqGene_CSAMA2022.html",
+      "scope": "Official course excerpt corroborates special treatment of dispersion outliers; no software execution."
+    }
+  ],
+  "overall_benchmark_score": null
+}

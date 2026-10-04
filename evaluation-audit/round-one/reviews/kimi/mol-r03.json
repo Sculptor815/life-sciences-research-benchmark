@@ -1,0 +1,112 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "kimi",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.074514+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "e7e956b844052df9ce2d376156f37d38990a5080173055720543bcecdf816044",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "protein-free liposomes/GPMVs",
+      "issue": "Cell-derived GPMVs generally retain membrane proteins; they are not intrinsically protein-free. The later platform hierarchy distinguishes them, but the prediction must maintain that distinction."
+    },
+    {
+      "quote": "Primary causal criterion: plasma-membrane dye/ion influx precedes organelle collapse",
+      "issue": "Temporal order plus blockers is not by itself causal ordering: detection thresholds, reporter response times, off-target effects and feedback can reverse apparent sequence. The later genetic requirements help but do not make this criterion sufficient."
+    },
+    {
+      "quote": "if candidate depletion blocks plasma-membrane permeability but preserves GSDMD cleavage and NT abundance, M2 is supported.",
+      "issue": "This also fits altered trafficking, lipid environment, repair or activation of a direct pore protein. Preserved cleavage alone does not identify a separate membrane executor."
+    },
+    {
+      "quote": "same direction and overlapping confidence intervals",
+      "issue": "Overlap of separate confidence intervals is not a replication-equivalence test. Prespecify a meaningful agreement margin and analyze the between-experiment difference/heterogeneity."
+    },
+    {
+      "quote": "halt a cell line/condition if expression is unstable, basal toxicity exceeds prespecified limits",
+      "issue": "Basal toxicity may be the fragment phenotype rather than technical failure. Distinguish expression-system faults from real biological outcomes and retain the latter."
+    },
+    {
+      "quote": "Test ionic strength, pH, divalent cations, reducing conditions",
+      "issue": "This very broad factorial program lacks selected working ranges, lipid fractions and production/cell implementation. Add caspase-alone carryover controls to the cleavage-generated reconstitution."
+    }
+  ],
+  "rationale": "Detailed broad program with reporter calibration, mutant integrity, preparation-aware analysis, cells and alternative mechanisms. Good historical match; some platform, causal-order, cofactor and replication claims exceed what the stated tests identify.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "sufficient to injure lipid membranes directly",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "forms a discrete permeability pathway",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "protein-free large/giant unilamellar vesicles",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Planar bilayers: apply voltage clamps",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "sufficient for defined bilayer permeabilization",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

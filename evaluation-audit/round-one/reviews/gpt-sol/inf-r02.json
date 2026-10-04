@@ -1,0 +1,99 @@
+{
+  "item_id": "inf-r02",
+  "response_id": "inf-r02",
+  "model_code": "gpt-sol",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:15:16.926516+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "72fb8c7b103980db2f3e0212e7ad0b06569f6ebab974d4ba43a72a46e63601f4",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 77.5,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "Cells with comparable transcript measurements retain distinct surface-protein levels.",
+      "issue": "Conditioning on noisy observed RNA does not hold true transcript abundance fixed. A validated errors-in-variables/latent observation model is needed before attributing residual protein differences to regulation downstream of RNA."
+    },
+    {
+      "quote": "These need not assay the same individual cells",
+      "issue": "Separate matched-aliquot RNA/protein validation checks marginal population changes, not the joint discordant-cell fraction. The answer acknowledges this limit later; a paired orthogonal single-cell measurement or appropriately weaker state claim is needed for the persistent-state conclusion."
+    },
+    {
+      "quote": "Use this model to predict how many apparent discordant cells would occur if the underlying biological variables were coordinated.",
+      "issue": "The coordinated latent null and technical error model lack a specified likelihood, identifiable calibration, fitting and model-selection procedure. Rejecting a coordinated null does not uniquely identify a discrete state over continuous kinetics/heterogeneity."
+    },
+    {
+      "quote": "Exact biological system, markers, perturbation, timing, panel, sample size",
+      "issue": "The proposed mechanistic workflow defers the actual system/target, perturbation/dose, assay settings and statistical implementation. Excellent development gates do not supply an executable experiment."
+    }
+  ],
+  "rationale": "Strong alternative biological-discordance program with independent units, held-out model comparison, balanced time courses, sorting controls and explicit destructive-assay limits. Scientific quality is credited on its own merits. No learned cell-specific modality weighting or integrated-neighborhood construction is proposed, so it does not match the sealed WNN direction.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Complete final answer, packet, reference and sealed target personally read. Original rubric only; strict-round penalties not active.",
+    "Cell-specific learned modality utility and an explicit integrated neighborhood construction are essential for this historical target; generic calibrated weighting or a graph mention is insufficient.",
+    "Donor splitting must precede fitted transformations and tuning. Condition blinding does not replace independent endpoint validation or prevent marker-label circularity.",
+    "A technical-null mismatch need not define a new cell state. Low-count/QC correlation does not prove artifact. Use known-control calibration, independent phenotypes and quantitative sensitivity analyses.",
+    "The supplied assessment contains no raw data; a plan is not actual figure reproduction. Accessions should be sought in primary records, never invented.",
+    "Primary abstract, Figure 1 caption and indexed WNN construction Methods excerpt verified. Complete paper, supplement and raw-data execution not audited."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34062119/",
+      "scope": "Complete indexed primary abstract and Figure 1 caption read."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238499/",
+      "scope": "Indexed primary Methods excerpt for cell-specific weighted similarity and WNN graph construction read; no whole-paper/raw-data audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Do reproducible disagreements between a surface protein",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Modality-specific measurement error",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "This should precede development or selection",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Assess performance on held-out biological units",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "apparent disagreement is at least partly a genuine transitional biological phenomenon",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

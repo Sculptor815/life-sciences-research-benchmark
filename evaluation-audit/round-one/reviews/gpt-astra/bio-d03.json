@@ -1,0 +1,45 @@
+{
+  "item_id": "bio-d03",
+  "response_id": "bio-d03",
+  "model_code": "gpt-astra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:53:30.918103+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible; original rubric",
+  "candidate_sha256": "d525a7fdc95784c33e0ec756d688305d08ae215ef1969a967bd1d620848e2304",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95,
+  "reasoning_index": 100,
+  "errors": [
+    {
+      "quote": "Reconstitute the experimentally assigned reactions with individually characterized enzymes",
+      "issue": "The architecture is excellent, but the proposal leaves the actual preparation, carbon-entry substrate, intermediate/reaction map, complementary tracer positions and component/cofactor inventory largely deferred. Specify at least one justified concrete proposed system and compatible tracing/step-restoration route, while calibrating its unknown numerical conditions. A generic E1..Em network is less operational than the requested experimental plan."
+    }
+  ],
+  "rationale": "Strong common-state blocked/restored comparison, separate routing and carbon-source tracer formats, uncertainty-aware pool bounds, isotope/carbon balances, direct step validation, defined omission/add-back and competing-model identifiability. It does not equate oxygen uptake or label appearance with recycling. Main shortcoming is an abstract implementation whose biochemical identities remain to be selected.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read the complete final answer, exact question/packet and entire frozen reference answer including its curator clarification. No hidden reasoning, paid judge or laboratory execution.",
+    "This uses the existing first-round rubric. The owner requested a stricter second round only after completion of this round; new 10/5-point deductions have not been applied.",
+    "The packet explicitly says the 1937 full text and figures were not read. Do not attribute proposed experimental details to the historical paper or penalize absence of invented historical settings.",
+    "The preliminary key mentions a noncycling analog and a small fixed discovery n. Its clarification permits omission/restoration where no validated analog exists. Independent sample size should be powered/calibrated; no particular small n is required.",
+    "Do not demand a positive addition effect in an already saturated endogenous pool. Failure to meet a proposed support gate limits the conclusion and does not automatically falsify cycling.",
+    "Adding downstream carbon around an irreversible block does not restore the missing reaction. Label exchange or appearance in one pool does not establish net cycle flux; respiration alone is insufficient.",
+    "Initial pools, mobilizable reserves, carbon sources, washout losses, cofactor-regeneration reactions and reversible exchange need accounting. Carbon closure alone cannot distinguish all network topologies.",
+    "Unknown numeric settings can be calibrated; concrete proposed biochemical routes are nevertheless useful. No complete primary-source methods audit is claimed."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

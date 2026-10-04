@@ -1,0 +1,222 @@
+{
+  "model_code": "deepseek",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:08:23.996747+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9403e66abd682d0418514b840adf072af7043ad9a983857459a0e279b602e77d",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "82c819cb7c706b2a1eff486a35a6d8cdcc3149603a7bcb2ee6000c07277a3728",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 2196,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unreported parameters",
+      "evidence_type": "exact_quote",
+      "reason": "The actual opsin/targeting preparation, functional viral dose, expression interval and executable delivery/assay workflow remain unspecified calibration intentions."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reliable inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative physiological accuracy/acceptance and recovery criterion or independent movement-detector reference/error calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "proportion of correct choices",
+      "evidence_type": "exact_quote",
+      "reason": "Omissions are recorded but their role in the primary denominator is unspecified; missing/corrupted tracking and event data have no quantitative handling rule."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "mediation analysis",
+      "evidence_type": "exact_quote",
+      "reason": "No causal assumptions identify a direct retrieval effect after treatment-induced movement. Co-primary and multiple secondary outcomes also lack a multiplicity/uncertainty procedure."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "This isolates release at Q",
+      "evidence_type": "exact_quote",
+      "reason": "Local terminal illumination does not automatically isolate synaptic release: axonal excitation, collateral propagation and local effects need verification. Somatic firing or generic Q activity are offered as substitutes for the actual P-to-Q transmission check."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "vary light power and duration",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded exploration or rule deriving safe intensity/duration limits and stopping before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Recalibration is not explicitly refrozen and confirmed on new independent data after changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "effect is absent or much smaller",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative meaningful-effect/equivalence bound for the light-control deficit. Recording a nonsignificant or apparently smaller control effect cannot exclude a material confound."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "movement-only inhibition controls",
+      "evidence_type": "exact_quote",
+      "reason": "Different illumination epochs and generic physiology do not provide an operational task-matched low-motor or separately validated retrieval test; cue-offset timing alone does not distinguish retrieval from maintenance."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete linked raw trial/video/physiology files, identifiers and exact acquisition/model/code/environment versions."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Proposed terminal-focused study with appropriate no-light/reporter/epoch controls, anatomical verification, animal-level pilot power, randomized blinded allocation and technical/welfare rules. It recognizes cue processing, motor and motivational alternatives and gives practical diagnostic repairs. However terminal specificity, post-treatment adjustment and confound thresholds need correction; the specific checks own these deficits without duplicate general deductions.",
+  "item_score": 40
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "mol-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T18:55:00.735589+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "fb8d5f1904d7cf0ee8d294c181a940c17844e8e1213173fac5e60ddccd039cda",
+  "question_sha256": "83f4992b8d828ae4516dfeb944e8921d0f4706164cf7443bb348714562bc468d",
+  "reference_sha256": "fe6cad42d8b330c2133bebe164b42f815489fc29ea2267094b0d0987154f9562",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "956fc5134c12ffe78d10ff785315538ad2be571da47fe513128cacdc83c9bac0",
+  "primary_route": "Controlled size-shifting rescue plus band/enrichment proteomics and candidate-antigen perturbation.",
+  "complete_final_answer_read": true,
+  "word_count": 1127,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Compare matched wild-type, deletion, deletion-plus-empty-vector, and deletion-plus-target-rescue samples.",
+      "evidence_type": "exact_quote",
+      "reason": "Prospectively specifies parental/null/rescue and matched vector controls, explains genetic dependence and the distinct rescue interpretation; sufficient control roles for the selected essay-scale route."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "These experiments are",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer-check prior Methods, supplements or a validated protocol before conducting the proposed validation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The 50-kDa band has genetic specificity support",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective background/linearity calibration with an acceptance criterion and failed-calibration action for the proposed band measurement."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The 50-kDa band has genetic specificity support",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative band-intensity definition with normalization denominator and weak/saturated-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "genetic dependence is evidence for specificity, but is not identical to proof of direct antigen recognition",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly distinguishes locus dependence, molecular identity, indirect effects and unassigned signal, avoids inventing target mass, labels proposals, remains within 1500 words and handles co-migration/persistent pre-existing material as caveats rather than established facts."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "genetic dependence is evidence for specificity, but is not identical to proof of direct antigen recognition",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly distinguishes locus dependence, molecular identity, indirect effects and unassigned signal, avoids inventing target mass, labels proposals, remains within 1500 words and handles co-migration/persistent pre-existing material as caveats rather than established facts."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "genetic dependence is evidence for specificity, but is not identical to proof of direct antigen recognition",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly distinguishes locus dependence, molecular identity, indirect effects and unassigned signal, avoids inventing target mass, labels proposals, remains within 1500 words and handles co-migration/persistent pre-existing material as caveats rather than established facts."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "genetic dependence is evidence for specificity, but is not identical to proof of direct antigen recognition",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly distinguishes locus dependence, molecular identity, indirect effects and unassigned signal, avoids inventing target mass, labels proposals, remains within 1500 words and handles co-migration/persistent pre-existing material as caveats rather than established facts."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "genetic dependence is evidence for specificity, but is not identical to proof of direct antigen recognition",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly distinguishes locus dependence, molecular identity, indirect effects and unassigned signal, avoids inventing target mass, labels proposals, remains within 1500 words and handles co-migration/persistent pre-existing material as caveats rather than established facts."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "genetic dependence is evidence for specificity, but is not identical to proof of direct antigen recognition",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly distinguishes locus dependence, molecular identity, indirect effects and unassigned signal, avoids inventing target mass, labels proposals, remains within 1500 words and handles co-migration/persistent pre-existing material as caveats rather than established facts."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "genetic dependence is evidence for specificity, but is not identical to proof of direct antigen recognition",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly distinguishes locus dependence, molecular identity, indirect effects and unassigned signal, avoids inventing target mass, labels proposals, remains within 1500 words and handles co-migration/persistent pre-existing material as caveats rather than established facts."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "inconclusive unless expression, localization, function, and construct integrity are verified.",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit successful, negative and ambiguous rescue and proteomic outcomes separate biological contradictions from failed validation."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "a gel slice can contain several proteins, and an immunoprecipitate can contain binding partners.",
+      "evidence_type": "exact_quote",
+      "reason": "Combines controlled size-shifting rescue, independent-epitope evidence and candidate-antigen perturbation; explicitly preserves ambiguity in co-migration and protein identification."
+    }
+  ],
+  "deductions_uncapped": 20,
+  "quality_score": 80,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Precise, bounded genetic inference and discriminating orthogonal validation; procedural omissions are separately reflected in strict task quality.",
+  "item_score": 80
+}

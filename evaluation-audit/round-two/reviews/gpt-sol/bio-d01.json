@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:08:18.293334+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "3e423e4260b11d21a83d81ad082b1aea9ff7b269483bd9075a3b7f628edc00a3",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8a6fe7729652b7bc8227d076c044641869cee75531d384033c95ccd0e831cfb9",
+  "primary_route": "Optical/reporter deconvolution, target-product initial rates and substrate-by-compound kinetic matrix.",
+  "complete_final_answer_read": true,
+  "word_count": 2535,
+  "first_round_scientific_quality": 86.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recommended study",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation of primary target/reporter assay Methods or validated protocols with a transfer check for the actual chemistry."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Prepare fresh target enzyme",
+      "evidence_type": "exact_quote",
+      "reason": "Fresh preparation/solubility and activity are checked, but no prerequisite verifies reagent/compound identity and purity or authenticated stock concentration before mechanistic inference."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "same buffer used for the assay",
+      "evidence_type": "exact_quote",
+      "reason": "No usable original buffer is supplied, and no selection/calibration procedure specifies buffer, pH, cofactors or temperature. Several timing/range quantities remain generic despite a good ordered workflow."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Set numerical thresholds from calibration and pilot precision",
+      "evidence_type": "exact_quote",
+      "reason": "Defers numerical recovery, precision and background acceptance thresholds without defining how they are selected from calibration; the action after failure is present but the pass rule remains unspecified."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Report absolute rates",
+      "evidence_type": "exact_quote",
+      "reason": "Primary rate units and analyte amount/concentration convention are not fixed; absolute rate plus normalized activity does not complete the quantitative endpoint specification."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Repeat after lowering compound concentration",
+      "evidence_type": "exact_quote",
+      "reason": "Repair actions are given, but no requirement to freeze the amended procedure and confirm it on new independent runs is stated."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "target direct rate is unchanged",
+      "evidence_type": "exact_quote",
+      "reason": "The decision table treats an unchanged rate as exclusion of target inhibition without an explicit equivalence/adequate-precision or inconclusive biological-null branch; technical failure stops do not solve this inferential issue."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record raw fluorescence",
+      "evidence_type": "exact_quote",
+      "reason": "Records raw signals and preparation information but not linked raw-file/unit identifiers and exact executable analysis/software versions/settings for an independent audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Reporter-only reactions",
+      "evidence_type": "exact_quote",
+      "reason": "Vehicle active reactions, enzyme/substrate omissions, reporter-only, fluorophore/product spikes and staged exposure are role-defined prospectively."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "mechanisms are not mutually exclusive",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes competition from reporter interference and chemical loss, labels proposals and respects unknown source settings; no additional distinct content error."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "mechanisms are not mutually exclusive",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes competition from reporter interference and chemical loss, labels proposals and respects unknown source settings; no additional distinct content error."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "mechanisms are not mutually exclusive",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes competition from reporter interference and chemical loss, labels proposals and respects unknown source settings; no additional distinct content error."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "mechanisms are not mutually exclusive",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes competition from reporter interference and chemical loss, labels proposals and respects unknown source settings; no additional distinct content error."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "mechanisms are not mutually exclusive",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes competition from reporter interference and chemical loss, labels proposals and respects unknown source settings; no additional distinct content error."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "mechanisms are not mutually exclusive",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes competition from reporter interference and chemical loss, labels proposals and respects unknown source settings; no additional distinct content error."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "mechanisms are not mutually exclusive",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes competition from reporter interference and chemical loss, labels proposals and respects unknown source settings; no additional distinct content error."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "technical replicates and must be nested",
+      "evidence_type": "exact_quote",
+      "reason": "Independent runs versus technical wells, variance/precision-based sample-size planning, randomized/blocked plate placement and coding before analysis are explicit."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "technical replicates and must be nested",
+      "evidence_type": "exact_quote",
+      "reason": "Independent runs versus technical wells, variance/precision-based sample-size planning, randomized/blocked plate placement and coding before analysis are explicit."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Stop or do not interpret a condition",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective technical eligibility and stopping cover precipitation, recovery, rate and detector validity; do not select by hoped-for inhibitor result."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "ordinary steady-state models may be invalid",
+      "evidence_type": "exact_quote",
+      "reason": "Global untransformed competing models, residual/parameter uncertainty, run-level analysis and tight-binding/time-dependent assumptions are stated."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "ordinary steady-state models may be invalid",
+      "evidence_type": "exact_quote",
+      "reason": "Global untransformed competing models, residual/parameter uncertainty, run-level analysis and tight-binding/time-dependent assumptions are stated."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "upper concentration is limited by verified solubility",
+      "evidence_type": "exact_quote",
+      "reason": "Defines finite soluble/optically valid concentration bounds and Km-bracketing/rate criteria, locks windows/exclusions/model comparison before decoding."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "If compound cannot be removed without product loss",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnoses staged-removal failure and redirects to direct chemistry; failed conditions are repaired by explicit concentration/window/coupling/readout changes."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Product plus compound without enzyme",
+      "evidence_type": "exact_quote",
+      "reason": "Independent reporter-free separation/chemistry assay has matrix standards, product and substrate stability, quench/recovery and specificity controls; addresses shared analytical artifacts."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong assay separation and control logic, but source-condition/identity readiness, thresholds, units and interpretable null/fresh-confirmation details are incomplete.",
+  "item_score": 55
+}

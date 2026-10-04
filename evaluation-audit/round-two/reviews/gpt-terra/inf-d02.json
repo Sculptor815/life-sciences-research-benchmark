@@ -1,0 +1,238 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "inf-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:02:17.262231+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e6e4afc638a0bd916f4a5db6aa405e459404a014a2550b8a37739895e91bffc5",
+  "question_sha256": "122b241adf77142ecf3caf672be24312c4394332738d1101387cacbc816a0746",
+  "reference_sha256": "528edd1fac3b3ef20cda836348178f2de01ee2d3cf73221ce429b8146fbb35e5",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "d8121c8f535ef882939a7396efed4ab9f5228befbfcbc76372f226aaff819e2f",
+  "primary_route": "Proposed fixed-design bulk RNA-seq negative-binomial treatment-minus-control inference at independent allocation level, with immutable workflow and source-difference audit; no executed data or predictive training task.",
+  "complete_final_answer_read": true,
+  "word_count": 3292,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original RNA-seq Methods, supplements and release-specific validated tool/import protocols to select and verify transferable settings. Future source comparison or recording chosen settings is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The ordered workflow records the eventual normalization/filtering settings but lacks a concrete procedure selecting them for the primary count pipeline. Unknown placeholder versions and numerical values are permitted by the prompt and are not the deduction."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "calibrated from qualified pilot/control data",
+      "evidence_type": "exact_quote",
+      "reason": "No specified accuracy/precision/false-rejection target and rule translates reference data into the actual technical acceptance threshold."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Obtain the treatment-control test statistic",
+      "evidence_type": "exact_quote",
+      "reason": "The primary test is not chosen or defined (for example coefficient Wald versus a specified likelihood-ratio comparison), although NB design and BH family are supplied."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded preprocessing/filter/model sensitivity set or rule deriving parameter limits and stop before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Changes after failed or ambiguous analysis lack explicit refreezing and fresh independent confirmation; adding units for low replication does not specify that iteration boundary."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "alternate valid count-model implementation",
+      "evidence_type": "exact_quote",
+      "reason": "No actual alternative method/assay or independent confirmation design is specified; naming an unspecified valid implementation is insufficient to run a corroborating test."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The regeneration audit relies on table/plot hashes without numeric tolerances, an explicit fresh clean-environment verification and runtime/memory/failure resource records."
+    },
+    {
+      "id": "P16",
+      "state": "not_applicable",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Primary route is prospectively specified count-contrast inference, not prediction or feature-selection performance assessment. Its blinded pilot/calibration and frozen confirmatory specification are described; predictive train/test leakage is not an additional deduction. Independent/orthogonal confirmation is assessed separately under P14."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan  ",
+      "evidence_type": "exact_quote",
+      "reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Careful donor/well allocation, blocked design rank checks, immutable input/output provenance, prospective power and blinded QC rules. The answer properly labels all work as proposed and preserves negative results. The primary inferential implementation, quantitative calibration and independent corroboration remain insufficiently operational.",
+  "item_score": 55
+}

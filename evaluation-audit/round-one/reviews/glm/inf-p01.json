@@ -1,0 +1,67 @@
+{
+  "item_id": "inf-p01",
+  "model_code": "glm",
+  "response_id": "inf-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:53:40.336008+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "e0a9c11e653cf45ad790e7259b2bc2b41e51717aa08417dd3a12c40f71e0196f",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "E2 guarantees the variant universe itself differs by group",
+      "issue": "Different filter settings do not guarantee different effective ascertainment or retained variant universes. The packet does not supply measured performance, so use a conditional bias claim."
+    },
+    {
+      "quote": "Restrict to one sequencing center; within it, match or adjust cases and controls",
+      "issue": "If phenotype is completely separated by center, a single center has no case-control comparison. Check overlap before proposing this analysis; use balanced resequencing or a crossed new cohort when absent."
+    },
+    {
+      "quote": "the confounding concern is confirmed and the claim is dead",
+      "issue": "A null after restriction can be underpowered or target a different population. Compare estimates and intervals; it does not prove the original signal an artifact or pathway biology false."
+    },
+    {
+      "quote": "**Benign (non-causal) explanations for a hypothetical burden signal:**",
+      "issue": "The alternatives here largely repeat artifact mechanisms. A fair analysis should also entertain genuine biology, equivalent effective filters and adequate but unreported safeguards as alternatives to the critique."
+    },
+    {
+      "quote": "to remove stratification entirely",
+      "issue": "Within-family comparisons reduce important population confounding but do not automatically remove every source of stratification, selection or technical bias in the stated design."
+    }
+  ],
+  "rationale": "Correct identity judgment and a useful explicit either-direction background-bias caveat. However, guaranteed filter non-comparability, an infeasible single-center comparison under complete confounding, categorical null interpretation and incomplete benign alternatives weaken the argument.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The exact frozen question, full reference answer and full received final answers were read. This is a conceptual essay, not a demand for a complete executable sequencing protocol.",
+    "C2 affirmatively identifies a synthetic training record. No real publication or researcher is accused. A missing lookup or N1 alone would not establish invention or deceptive intent.",
+    "Reference required concept rc6 incorrectly says an all-annotated background always inflates significance. The full reference correctly allows either direction; no bias direction is identifiable from this packet.",
+    "Assess center-by-phenotype overlap rather than silently assuming either complete confounding or sufficient overlap. Covariate adjustment cannot recover an absent comparison.",
+    "Center-specific filters can yield equivalent effective detection. Unreported coverage, relatedness or adjustment is not evidence of their absence or failure.",
+    "A disappearing p-value after restriction does not prove artifact: evaluate effects, precision, power and estimand. A persisting calibrated association does not establish the pathway mechanism.",
+    "Benign alternatives include safeguards or true biology as well as non-malicious analytical mistakes. A negative-control result alone need not exclude bias in a different variant class.",
+    "Frozen keys and response records remain unchanged; these corrections are transparent reviewer metadata. No raw-data reanalysis was performed."
+  ],
+  "review_sources": [
+    {
+      "title": "gnomAD v3.0 release methods overview",
+      "url": "https://gnomad.broadinstitute.org/news/2019-10-gnomad-v3-0/",
+      "scope": "Reviewer read joint-genotyping and sample/variant QC overview, including ancestry, coverage and relatedness. Background support only; no validation of the invented dossier, no universal numerical thresholds imported."
+    }
+  ],
+  "overall_benchmark_score": null
+}

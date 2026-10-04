@@ -1,0 +1,238 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "inf-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:22:37.386672+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "1d61308b88369556a2b635378e844388c85c14e5e096dc6ae1f4e7961b1ebf50",
+  "question_sha256": "8138345556a001f3fc4bac1a0c5986dac661ae6888f5a3dbc53bb26d7b98aa09",
+  "reference_sha256": "912190a8c7d04d1735a11f4798b4464c402e57d4430430d189830cd0e29fdd0d",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c0a4a92f8854e72e15f1802d3d7662e89f700c425b272e73d92ab871562296ac",
+  "primary_route": "Proposed donor-average treatment contrast with hierarchical comparison, donor-grouped resampling and null calibration, and protected donor-level validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3147,
+  "first_round_scientific_quality": 93.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original experimental Methods/supplements to verify allocation and sampling conditions and release-specific model protocols. Reconstructing identifiers and naming prior evidence alone is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "appropriate distribution and link for continuous, count, binary, or zero-inflated outcomes",
+      "evidence_type": "exact_quote",
+      "reason": "No chosen primary outcome-family fitting branch or operational pilot rule selecting distribution/link, normalization and fit settings. The high-level workflow is ordered but not executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical references and repeat measurements are named but no objective calibration-to-acceptance rule or reference/control failure criterion is operational."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified error criterion and multiplicity procedure",
+      "evidence_type": "exact_quote",
+      "reason": "No concrete multiplicity procedure/family or operational primary interval method is provided; promising to prespecify them does not specify inference."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting and future independent cohorts are discussed, but changed procedures are not explicitly refrozen and assigned fresh confirmation after a failed evaluation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "an effect interval that does not rule out the prespecified meaningful effect criterion",
+      "evidence_type": "exact_quote",
+      "reason": "This validation acceptance condition can be satisfied by an extremely imprecise near-null estimate with the same sign. Failing to exclude a meaningful effect is not affirmative confirmation; a calibrated precision/evidence requirement is missing."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No immutable raw file hashes and exact code/environment/command manifest connects sample identifiers to reproducible computational outputs."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "donor-level cross-validation for exploratory model selection",
+      "evidence_type": "exact_quote",
+      "reason": "The external donor split is protected, but fitting every transformation and feature selection inside each internal training fold is not explicit."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment rerun of numerical figures/tables with output tolerance and runtime/resource/failure logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Well grounded allocation-unit logic, equal-donor summaries, grouped permutation and bootstrap, variance-based design simulation and informative-cluster-size stress. A finite sensitivity set includes weighting with/without precision weights and balanced subsampling. Validation compatibility is too weak to establish positive confirmation, and implementation/provenance details remain incomplete.",
+  "item_score": 50
+}

@@ -1,0 +1,238 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "inf-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:02:17.246870+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "cc5d97b84f455ba065fd093ae14d525e177bfce1ffc30281f87c63e09978f0ff",
+  "question_sha256": "122b241adf77142ecf3caf672be24312c4394332738d1101387cacbc816a0746",
+  "reference_sha256": "528edd1fac3b3ef20cda836348178f2de01ee2d3cf73221ce429b8146fbb35e5",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "f7b5f84f9e0e543494912a21121278b8a447b6f38fb4df738db5ec319ce6777e",
+  "primary_route": "Proposed fixed-design bulk RNA-seq negative-binomial treatment-minus-control inference at independent allocation level, with immutable workflow and source-difference audit; no executed data or predictive training task.",
+  "complete_final_answer_read": true,
+  "word_count": 2981,
+  "first_round_scientific_quality": 81.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original RNA-seq Methods, supplements and release-specific validated tool/import protocols to select and verify transferable settings. Future source comparison or recording chosen settings is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The record lists required normalization/filtering settings but does not supply an operational rule selecting normalization and low-count eligibility from the eventual input. The prompt-required path/version/numeric placeholders are not themselves failures."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "validated historical performance, or a blinded pilot",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit reference-to-acceptance procedure, precision/false-rejection objective or calibration failure rule sets the technical QC thresholds."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Named alternative pipelines are useful, but filtering/normalization parameter sensitivity has no bounded candidate set or range-derivation and stopping procedure."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A changed protocol after troubleshooting is not explicitly refrozen and assigned fresh independent confirmation."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The clean-build target and checksums do not specify numeric agreement tolerances for nondeterministic output or runtime/memory/resource logs. Image hashes alone can change without scientific differences."
+    },
+    {
+      "id": "P16",
+      "state": "not_applicable",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Primary route is prospectively specified count-contrast inference, not prediction or feature-selection performance assessment. Its blinded pilot/calibration and frozen confirmatory specification are described; predictive train/test leakage is not an additional deduction. Independent/orthogonal confirmation is assessed separately under P14."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed auditable bulk RNA-seq differential-expression plan",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Correct independent allocation hierarchy, donor-blocking identifiability, count model, explicit Wald/BH contrast, prospective power simulation and immutable reconstruction contract. Frozen transcript-import and named alternative inference methods make computational corroboration more operational. Fine-grained calibration, iteration and rerun acceptance still need completion.",
+  "item_score": 65
+}

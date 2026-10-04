@@ -1,0 +1,48 @@
+{
+  "item_id": "bio-p01",
+  "model_code": "claude-opus48",
+  "response_id": "bio-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:38:07.604659+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "09f018f3c8856dd6c1ef7b18326351a956bb02ef0000ded217f843f1d0e20441",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "A successful retrieval and clean retraction check **disproves the reliability concern**",
+      "issue": "Document existence and no recorded retraction do not establish scientific reliability. They resolve narrower provenance and notice questions."
+    },
+    {
+      "quote": "Supply saturating ATP/GTP and purified ribosomes; if Q still inhibits peptide-bond formation with a dose-response, the indirect-energy explanation is falsified.",
+      "issue": "A coupled reconstituted translation system can be inhibited at charging, factors or energy-regeneration enzymes. Controlled nucleotide levels and isolation of peptide transfer are required; a biochemical effect also need not explain the cellular effect by the same route."
+    }
+  ],
+  "rationale": "Correctly identifies the ATP/viability confound and rejects a misconduct inference. However, it conflates a clean source-status check with reliability and treats coupled translation as a decisive peptide-transfer localization. Its own assay-artifact caveat is not fully carried into the proposed decision rule.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The reported endpoint is puromycin incorporation. Do not require candidates to assert independently established protein synthesis suppression.",
+    "Concurrent 50% ATP and 60% incorporation reductions do not establish causal order or a quantitative transfer function. ATP amount is not adenylate energy charge.",
+    "A full cell-free translation assay can be inhibited outside the peptide-transfer reaction. Isolate the reaction or separately control charging, factors and regeneration.",
+    "A negative assay constrains its tested species, chemical form and conditions. It is not a universal refutation; positive controls alone do not cover every context mismatch.",
+    "Biochemical direct action and the cause of a cellular phenotype are distinct. ATP rescue or early timing alone does not exclude mixed mechanisms.",
+    "Selectivity requires a defined comparison scope. Cross-species ribosome activity need not contradict selectivity for peptide transfer over unrelated targets.",
+    "No DOI supplied is not no DOI exists. No recorded notice is not proof of reliability. Existence, provenance, editorial status and scientific support remain separate.",
+    "The reference suggestions about ATP matching and complete cell-free negatives are prospective checks, not uniquely identifying interventions."
+  ],
+  "overall_benchmark_score": null
+}

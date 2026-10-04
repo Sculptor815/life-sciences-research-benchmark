@@ -1,0 +1,239 @@
+{
+  "model_code": "glm",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:43:00.933789+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "df886b7e150312b332b1479a114140961a97391bb8fb685781c1830f2bac7ba5",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8244d9bab4b9f2137869ca23959bc378f01d081d30b0ba1076c8e04d4175a060",
+  "primary_route": "Prospective monotonic reward-value recording with five probabilities, magnitude blocks and later optional causal perturbation.",
+  "complete_final_answer_read": true,
+  "word_count": 2463,
+  "first_round_scientific_quality": 37.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timing, delivery, identity and stability checks lack numerical acceptance-to-action thresholds or a concrete derivation of tolerances before the main contrast."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal-level pilot variance and meaningful effect planning are present, but no numerical power or confidence-width target is specified for the confirmatory sample."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The hierarchical conceptual model does not specify a likelihood/dispersion decision with diagnostics and a concrete multiplicity procedure across the several primary comparisons."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Repair/redesigned pilot suggestions do not explicitly require a revised frozen procedure and fresh independent confirmatory data after parameter changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-trial/unit manifest with exact analysis/acquisition versions/settings, calibration records and all technical/biological losses is specified."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "a small reward is delivered after the p=0 cue",
+      "evidence_type": "exact_quote",
+      "reason": "An unexpected reward after a cue cannot independently manipulate the preceding waiting-period licking/probability relationship; repeated such rewards also change the purported p=0 contingency. The C5 comparison is not the claimed behavior-decorrelation control."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "activation at the originally expected time",
+      "evidence_type": "exact_quote",
+      "reason": "When a reward is delayed, the packet predicts depression at the missed expected time, with activation when the unexpectedly timed reward arrives. This answer repeatedly reverses the omitted-time sign and uses the wrong response as a mandatory replication gate."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "their information content is confined",
+      "evidence_type": "exact_quote",
+      "reason": "A null linear probability coefficient does not rule out nonlinear uncertainty or heterogeneous delay coding. No meaningful-effect equivalence rule supports the stronger conclusion that information is confined to outcome violations."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "putative dopamine neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative prospective-value question is valid, with a proposed waveform/optotag strategy and honest putative identity qualification. Conditional causal work is distinguished from correlational results. The wrong packet sign is charged once at G1."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "100 ms bins",
+      "evidence_type": "exact_quote",
+      "reason": "Defined spikes/s windows, coded counterbalanced cue/block allocation, training caps and a bounded five-probability design are present. Motion/delivery/learning faults have diagnostics; animal-level cross-validation explicitly checks generalization. The flawed replication sign is not charged again under stopping."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "100 ms bins",
+      "evidence_type": "exact_quote",
+      "reason": "Defined spikes/s windows, coded counterbalanced cue/block allocation, training caps and a bounded five-probability design are present. Motion/delivery/learning faults have diagnostics; animal-level cross-validation explicitly checks generalization. The flawed replication sign is not charged again under stopping."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "100 ms bins",
+      "evidence_type": "exact_quote",
+      "reason": "Defined spikes/s windows, coded counterbalanced cue/block allocation, training caps and a bounded five-probability design are present. Motion/delivery/learning faults have diagnostics; animal-level cross-validation explicitly checks generalization. The flawed replication sign is not charged again under stopping."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "100 ms bins",
+      "evidence_type": "exact_quote",
+      "reason": "Defined spikes/s windows, coded counterbalanced cue/block allocation, training caps and a bounded five-probability design are present. Motion/delivery/learning faults have diagnostics; animal-level cross-validation explicitly checks generalization. The flawed replication sign is not charged again under stopping."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "100 ms bins",
+      "evidence_type": "exact_quote",
+      "reason": "Defined spikes/s windows, coded counterbalanced cue/block allocation, training caps and a bounded five-probability design are present. Motion/delivery/learning faults have diagnostics; animal-level cross-validation explicitly checks generalization. The flawed replication sign is not charged again under stopping."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "100 ms bins",
+      "evidence_type": "exact_quote",
+      "reason": "Defined spikes/s windows, coded counterbalanced cue/block allocation, training caps and a bounded five-probability design are present. Motion/delivery/learning faults have diagnostics; animal-level cross-validation explicitly checks generalization. The flawed replication sign is not charged again under stopping."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Concrete prospective-value task with held-out-animal analysis, but reverses the omission control and does not test the historical uncertainty direction.",
+  "historical_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The chosen question and primary model concern monotonic prospective value versus event-only signaling, not uncertainty separated from value. No intermediate-peaked uncertainty prediction is tested. Five probabilities and separated epochs alone do not create a direction hit; the reversed expected-time control is an additional critical defect.",
+  "item_score": 16.0
+}

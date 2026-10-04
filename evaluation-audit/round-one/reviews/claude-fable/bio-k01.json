@@ -1,0 +1,42 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "claude-fable",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.798843+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "53210b01a710858780e522eaa1afb5e1bdeefdd4dd6fd3d00ca543a3507b42da",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "a competitive inhibitor raising Km,app from 20 → 60 µM and an uncompetitive inhibitor cutting Vmax to ~52 nmol/min (with corresponding Km reduction) can produce indistinguishable single-point rates.",
+      "issue": "The first rate is 900/70=12.857 nmol/min. Preserving Km/Vmax for the second gives Km=11.556 and v=24.124 nmol/min. These are distinguishable examples; an uncompetitive Vmax near 18 is needed for the first rate."
+    },
+    {
+      "quote": "Single substrate, single active site, no cooperativity",
+      "issue": "A hyperbolic kinetic law does not establish that an enzyme has only one active site."
+    },
+    {
+      "quote": "the hyperbolic equation fails and the Morrison quadratic form is needed.",
+      "issue": "This is too categorical: substantial substrate sequestration requires an appropriate mass-balance/kinetic treatment; a named tight-binding inhibitor formula is not automatically required in this inhibitor-free packet."
+    }
+  ],
+  "rationale": "Correct headline answer but consequential errors in the worked mechanism example and unjustified model restrictions. The elaborate protocol does not repair those logical faults.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

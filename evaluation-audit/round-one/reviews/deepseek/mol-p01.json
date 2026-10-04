@@ -1,0 +1,48 @@
+{
+  "item_id": "mol-p01",
+  "model_code": "deepseek",
+  "response_id": "mol-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.930264+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "6b62831c6edceb0ce236390f29e0ca0b1bbbee2bcb35cb71e1aaab2c85fb09d2",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 67.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "If they are negative, the claim is disproven.",
+      "issue": "Even controlled negatives constrain the tested conditions and assay sensitivity; they do not establish general biological nonbinding. The earlier caveat about low abundance is appropriate but conflicts with this categorical decision rule."
+    },
+    {
+      "quote": "via DOI, PubMed, Crossref, publisher",
+      "issue": "The packet defines a dossier-only namespace. External bibliographic searches alone cannot authenticate the internal LS-M17 mapping."
+    }
+  ],
+  "rationale": "Correct main conclusion, useful negative controls and an unusually explicit distinction between the combined practical assays and direct contact inside a cell. The categorical negative-result rule contradicts those limits; citation checking needs dossier provenance rather than fictional-name lookup.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Dossier-only identifiers cannot be authenticated by finding or failing to find similarly named real publications. Underlying dossier documents and curation records can resolve the mismatch.",
+    "A complete registry entry establishes its recorded fields, not that its mapping is necessarily correct. An error is not proof of intent.",
+    "Included controls are not reported successful control outcomes. Grade the principal co-IP conclusion while recording any unreported-result assertion.",
+    "Not supplied does not mean never performed. Untested does not mean false.",
+    "Purified binding and endogenous co-IP address complementary questions; their combination is strong support but not automatically proof of direct contact in an unmodified cell.",
+    "Negative assays require sensitivity, reagent competence and relevant conditions. Depleting a bridge can disturb localization or stability even when A and B also bind directly.",
+    "The reference suggestion that all direct binding must survive bridge disruption is overstrong. Do not require it.",
+    "No misconduct probability can be inferred by treating author, title and year mismatches as three independent random errors."
+  ],
+  "overall_benchmark_score": null
+}

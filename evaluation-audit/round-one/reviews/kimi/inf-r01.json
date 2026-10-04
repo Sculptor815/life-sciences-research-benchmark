@@ -1,0 +1,99 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "kimi",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:49:49.034346+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "e040c48821ce4dafe362bbea0263a51f7af160506a99dd2b84563b1cd60d2ebe",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "Fit the same model to all eligible high-replicate samples to create an internal reference.",
+      "issue": "The small subsets subsequently reuse reference observations. The answer acknowledges internal dependence, which is valuable, but does not quantify or remove its effect on the primary preservation comparison. Use disjoint reference units or an explicit dependent-error analysis."
+    },
+    {
+      "quote": "Report the posterior mean or mode as the primary magnitude estimate.",
+      "issue": "Choose one primary estimator and define prior-scale fitting, posterior computation, normalization and convergence/failure rules. This choice and the unspecified across-gene scale estimate leave central parts of the requested method unresolved."
+    },
+    {
+      "quote": "low-information extremes are less likely to be called or validated after shrinkage.",
+      "issue": "Independent validation outcomes for a fixed gene do not change because its discovery estimate is shrunk. If evaluating changing selected sets, define the denominator and distinguish true low-information effects from known-null errors; lower validation is not a general success criterion."
+    },
+    {
+      "quote": "Concordance of prespecified pathway effects.",
+      "issue": "The biological question makes pathway coordination an endpoint, but the plan supplies no pathway score, directional hypothesis, gene-dependence-aware test or multiplicity rule. Naming a pathway in advance prevents one selection problem but does not define a calibrated pathway analysis."
+    }
+  ],
+  "rationale": "Careful biological-unit provenance, correct log-scale conversion, independent new-sample validation and many useful error readouts. The method remains insufficiently specified, and the internal reference, low-information validation criterion and pathway endpoint need repair. Flexible priors are discussed only as future alternatives, so the historical intervention is not matched.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All four complete final answers in this file, the exact question/packet and full reference were personally read. The long Qwen answer was read in overlapping sections. No paid judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "preservation and low-information-extreme rejection explicit falsification tests",
+      "assessment": "Biological objective substantially matches."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Normal prior may be misspecified when effects are sparse, asymmetric, multimodal or heavy-tailed",
+      "assessment": "Recognizes the mechanism motivating a tail change."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Flexible or mixture priors",
+      "assessment": "An undeveloped alternative, not a specified adaptive heavy-tailed intervention."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Standard-error calibration and interval coverage.",
+      "assessment": "Error, ranking, sign and calibration readouts are present."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "zero-centered Normal prior should preferentially restrain low-information effects",
+      "assessment": "The forecast remains about the original Normal method."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "bio-p01",
+  "model_code": "deepseek",
+  "response_id": "bio-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:38:07.604659+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "d258e9ab15521205ce1f364a0f9e4ae93c71968215e9779e56842351028b3103",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "If Q fails to inhibit peptide-bond formation in this cell-free system, the direct claim is disproved.",
+      "issue": "The negative result is conditional on ribosome species, chemical form, competence, sensitivity and reaction conditions. It cannot categorically settle cellular directness."
+    },
+    {
+      "quote": "If Q inhibits all comparably, selectivity is disproved.",
+      "issue": "The claim does not specify selectivity among ribosome classes. A compound may selectively inhibit ribosomal peptide transfer across several species while sparing unrelated processes; the comparison scope must be defined."
+    },
+    {
+      "quote": "Citation exists only as a local teaching-dossier record",
+      "issue": "Only a local citation is supplied; the packet does not establish that no corresponding document exists elsewhere."
+    }
+  ],
+  "rationale": "Good core confound analysis, source-status caution and proposed counter-screen concept. The decision rules overinterpret negatives, impose an unstated cross-species selectivity requirement, and conflate locally supplied provenance with exclusive local existence.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The reported endpoint is puromycin incorporation. Do not require candidates to assert independently established protein synthesis suppression.",
+    "Concurrent 50% ATP and 60% incorporation reductions do not establish causal order or a quantitative transfer function. ATP amount is not adenylate energy charge.",
+    "A full cell-free translation assay can be inhibited outside the peptide-transfer reaction. Isolate the reaction or separately control charging, factors and regeneration.",
+    "A negative assay constrains its tested species, chemical form and conditions. It is not a universal refutation; positive controls alone do not cover every context mismatch.",
+    "Biochemical direct action and the cause of a cellular phenotype are distinct. ATP rescue or early timing alone does not exclude mixed mechanisms.",
+    "Selectivity requires a defined comparison scope. Cross-species ribosome activity need not contradict selectivity for peptide transfer over unrelated targets.",
+    "No DOI supplied is not no DOI exists. No recorded notice is not proof of reliability. Existence, provenance, editorial status and scientific support remain separate.",
+    "The reference suggestions about ATP matching and complete cell-free negatives are prospective checks, not uniquely identifying interventions."
+  ],
+  "overall_benchmark_score": null
+}

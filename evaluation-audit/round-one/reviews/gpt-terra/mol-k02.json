@@ -1,0 +1,56 @@
+{
+  "item_id": "mol-k02",
+  "model_code": "gpt-terra",
+  "response_id": "mol-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:28:51.099014+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "14aadbff0b12c11d4c470a64fc6864427e2f3bb90f17d31ddff2964c343152a4",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "If the 50 kDa band does not return, the inference that it is the target would be weakened or overturned.",
+      "issue": "Before interpreting failed rescue, verify expression, abundance, relevant isoform, epitope, localization and processing. Rescue can also restore a downstream protein; restoration strengthens dependence but does not itself prove direct recognition."
+    },
+    {
+      "quote": "If the 50 kDa material lacks target peptides and instead contains another protein, the current band assignment would be overturned.",
+      "issue": "A gel region can contain several proteins and target peptides may escape detection. Require sufficient sensitivity, unique-peptide coverage and controls linking the antibody signal to the identified species; an unrelated MS hit alone is not decisive."
+    }
+  ],
+  "rationale": "Accurate image reading and a well-organized conditional band-level conclusion. Controls and alternative explanations are strong, but two proposed overturning rules overstate what failed rescue and negative/alternative MS identification establish. Those rules need qualification before use.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Codex personally read all twelve complete final answers, exact question and packet, full reference and displayed synthetic figure. No hidden reasoning, paid judge, laboratory experiment or candidate web access was used.",
+    "The chart gives approximate 100-to-5 signal at 50 kDa and 95-to-93 at 75 kDa, with equal loading and validated KO as stated premises. The relative genetic support favors 50 kDa; it does not establish direct antigen identity or universal antibody specificity. Small numerical approximations do not change this qualitative comparison.",
+    "Reference correction: no complete coding-sequence deletion is specified in the candidate packet. The sealed logic chain assumes one, but the figure only says validated KO. Escaping isoforms are legitimate conditional alternatives when the validation scope is unknown.",
+    "Reference correction: the candidate was not shown the draft-key editorial status or original multiple-choice distractors. Do not require mention of a draft key, expert-review status or rejection of choices absent from the open question.",
+    "Reference correction: a target-derived modified species cannot persist after confirmed complete protein elimination merely because it is modified. A persistent band may contain a separate comigrating protein; distinguish that from residual/escaping target and incomplete null validation.",
+    "Summary bars do not reveal n, statistical equivalence, noise, raw-blot integrity or normalization method. Equal loading is a premise here, not proof of equal extraction/transfer. Expected sequence mass alone cannot reverse the observed ranking.",
+    "Rescue strengthens genetic dependence but may also restore downstream proteins. Failed rescue needs verified expression, relevant isoform, epitope, localization and processing. Genetic or RNA loss alone need not prove protein-null status.",
+    "MS can establish target presence while a comigrating species or indirect interactor generates antibody signal. Non-detection requires sensitivity and peptide coverage before being decisive. Peptide blocking can affect shared epitopes and does not independently prove endogenous identity.",
+    "The original frozen reference and candidate records are preserved. Corrections are disclosed here and applied consistently. Reviews are unblinded single-AI provisional assessments, not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Uhlen et al. (2016), A proposal for validation of antibodies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+      "scope": "Read the genetic, independent-antibody, tagging, immunocapture-MS and additional-characterization sections. They support application-specific validation and note indirect capture, tag artifacts and peptide-blocking limitations. No supplementary audit or experimental replication performed."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,89 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "gpt-astra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:04:16.560956+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "c6153d0118f77cf05b9e3d112e931a68875ea98819393ffc89f94b341d4701db",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 2,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 90.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "A preparation permitting repeatable reward learning",
+      "issue": "No species/region, identification platform, selected electrode/recording approach or implemented reward apparatus is nominated. The scientific plan is rigorous but requires material method selection."
+    },
+    {
+      "quote": "The definitive protocol is not ready to launch",
+      "issue": "Reward amounts, timing, identity thresholds, behavior measure and sample size remain development tasks. The honest calibration gates deserve credit; the requested especially detailed executable protocol remains incomplete."
+    }
+  ],
+  "rationale": "Strong uncertainty-versus-value study with full probability endpoints, magnitude factor, independent dopamine identity, separate epochs, cue/behavior/timing controls, categorical primary inference and held-out animals. Historical core qualifies. Original actionability is limited by unselected biological and assay implementation, without applying strict-round penalties.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "reflects uncertainty about whether a reward will occur",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Expected-value or anticipation signal",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "p\\in\\{0,\\ 0.25,\\ 0.5,\\ 0.75,\\ 1\\}",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Define separate epochs:",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "intermediate probabilities produce reproducible waiting-period enhancement",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

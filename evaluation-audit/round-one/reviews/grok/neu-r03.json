@@ -1,0 +1,113 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:27:21.426575+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "86a90e9059b55923562b35a4f16db982c83b316704e0108d54b600c84de0b437",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "a phasic response to unpredicted reward",
+      "issue": "Including reward responsiveness in dopamine identity selects a response-defined subset and does not establish chemical identity. Use independent validated identity criteria or label the population putative and restricted; do not imply coverage of all dopamine neurons."
+    },
+    {
+      "quote": "If only the late window is modulated, report M4, not uncertainty.",
+      "issue": "Late or ramping anticipatory uncertainty is not excluded by being near outcome. Timing shape alone cannot select hazard over uncertainty; the target itself includes gradually increasing delay activity. Test probability-by-time and timing manipulations rather than discard this target pattern."
+    },
+    {
+      "quote": "Five levels are required",
+      "issue": "Three nondegenerate levels can identify linear and quadratic terms. Five levels improve shape and paired contrasts but are not mathematically necessary to avoid collinearity."
+    },
+    {
+      "quote": "with a maximum run length",
+      "issue": "Constraining outcome runs can make conditional probability depend on history. Validate the scheduling hazard and use the actual conditional probability in learning models; adding only recent reward rate may not suffice."
+    },
+    {
+      "quote": "Delay activity must not predict the sampled outcome within a probability.",
+      "issue": "A pre-outcome difference can reflect learned schedule/history rather than sensory leakage. Outcome splits are a diagnostic, not proof of illicit prediction or a reason to select only favorable trials."
+    },
+    {
+      "quote": "only if a monotonic delay effect needs to be separated",
+      "issue": "Matched-value/magnitude tests are useful for nonlinear interpretations too. A quadratic fixed-magnitude effect separates selected linear models but cannot exclude all nonlinear value or salience explanations."
+    },
+    {
+      "quote": "Primary biological unit: neuron nested in animal.",
+      "issue": "Animals are the independent biological replication level for a population-general claim; neurons are nested observations. The hierarchical model partly addresses this wording, but power must explicitly represent independent animals and between-animal variation."
+    },
+    {
+      "quote": "Use one preparation",
+      "issue": "No actual species/region, chemically validated population, recording platform or working task parameters beyond an illustrative delay are selected. The minimum transient-relative effect also needs a scientific rationale rather than an arbitrary fraction."
+    }
+  ],
+  "rationale": "Recognizes the probability/uncertainty direction and proposes useful synchronized behavior, held-out analysis and calibration. Response-based identity and a rule rejecting late uncertainty signals critically compromise the target readout and prediction; no qualified hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "whether cue–outcome delay activity",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Sustained uncertainty.",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Proposed probabilities: 0, 0.25, 0.50, 0.75, and 1.0.",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "a phasic response to unpredicted reward",
+      "assessment": "Critical target readout/prediction failure: response-selected identity or rejection of late anticipatory uncertainty. See exact deductions."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "If only the late window is modulated, report M4, not uncertainty.",
+      "assessment": "Critical target readout/prediction failure: response-selected identity or rejection of late anticipatory uncertainty. See exact deductions."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

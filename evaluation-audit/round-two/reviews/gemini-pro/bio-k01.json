@@ -1,0 +1,134 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "bio-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:03:26.916738+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "6f2a4f6ac98186b0310c1507aeb1344869bc2ef3399fc19254dcadc55ca317e5",
+  "question_sha256": "e5a45dec0d2517d68cec2cb721477e214452d8543683d6d377e1be872cfc40d4",
+  "reference_sha256": "425acfdd9f006f0f842223fef2b6ad93f510268641fee28dd344f907f5ecda04",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "2ec209a916dd206371edcceb0319569998ec3e336b86a1fc28fcb4dfb978779a",
+  "primary_route": "Continuous or early sampled product curves and substrate-titration kinetics.",
+  "complete_final_answer_read": true,
+  "word_count": 998,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "record the product formed",
+      "evidence_type": "exact_quote",
+      "reason": "No prospective no-enzyme/no-substrate background and known-response/procedural controls with their roles; changing enzyme or adding product does not define those controls."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "30 nmol/min",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation and transfer-check of prior Methods or validated protocols."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "30 nmol/min",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No detector reference calibration with acceptance limits and failed-calibration action; progress-curve shape is not a product-recovery calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "30 nmol/min",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Rate units and a depletion bound are given, but no baseline-corrected measurement specification with weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "30 nmol/min",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent product/readout validation; repeated time points and enzyme titration retain the original detector artifact."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "which confirms that the calculated 30 nmol/min rate is a valid initial velocity",
+      "evidence_type": "exact_quote",
+      "reason": "Linear time-course signal is treated as confirming an artifact-free 30 nmol/min initial rate, and the valid interval is claimed to start strictly at time zero. A biased linear detector or pre-steady-state transient can defeat that decision."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "requires correction (e.g., the Morrison equation).",
+      "evidence_type": "exact_quote",
+      "reason": "Prescribes an inhibitor tight-binding formula for substrate sequestration without an inhibitor; explicit free-substrate/complex mass balance is needed instead."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "A single lowered reaction rate proves that inhibition is occurring",
+      "evidence_type": "exact_quote",
+      "reason": "A lower readout could result from less active enzyme or detector interference and does not prove molecular inhibition."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "underdetermined system",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly derives rate/units and explains parameter non-identifiability, proposes substrate series and distinguishes the synthetic prediction from measurement. Main-regime validation defects are charged specifically above."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "underdetermined system",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly derives rate/units and explains parameter non-identifiability, proposes substrate series and distinguishes the synthetic prediction from measurement. Main-regime validation defects are charged specifically above."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "underdetermined system",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly derives rate/units and explains parameter non-identifiability, proposes substrate series and distinguishes the synthetic prediction from measurement. Main-regime validation defects are charged specifically above."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "underdetermined system",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly derives rate/units and explains parameter non-identifiability, proposes substrate series and distinguishes the synthetic prediction from measurement. Main-regime validation defects are charged specifically above."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "underdetermined system",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly derives rate/units and explains parameter non-identifiability, proposes substrate series and distinguishes the synthetic prediction from measurement. Main-regime validation defects are charged specifically above."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Correct arithmetic; unsupported inhibition claim and validation sufficiency, plus an inappropriate sequestration correction, weaken mechanistic interpretation.",
+  "item_score": 50
+}

@@ -1,0 +1,241 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:39:04.458239+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7a6937d6eb4d7b4a07e35ae2435d51b9ba18be61ba2139546092d09e0dfb0c1d",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "1f1ee0317161affd6df92502079f46f24e686ef85ffd836f79faef2f570bc0bf",
+  "primary_route": "Five-probability sweep plus iso-mean/iso-variance blocks, embedded timing/omission probes and mixed-unit/photometry recording.",
+  "complete_final_answer_read": true,
+  "word_count": 3048,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timing, delivery, identity and stability checks lack numerical acceptance-to-action thresholds or a concrete derivation of tolerances before the main contrast."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal-level pilot variance and meaningful effect planning are present, but no numerical power or confidence-width target is specified for the confirmatory sample."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The hierarchical conceptual model does not specify a likelihood/dispersion decision with diagnostics and a concrete multiplicity procedure across the several primary comparisons."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical/training changes are not explicitly followed by a revised frozen analysis/protocol and fresh independent confirmation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-trial/unit manifest with exact analysis/acquisition versions/settings, calibration records and all technical/biological losses is specified."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "On a minority (~10%) of p=1 and p=0.5 trials",
+      "evidence_type": "exact_quote",
+      "reason": "Unsignaled timing shifts and omissions embedded in the supposedly certain fixed-time conditions change the learned timing/probability distribution. The primary analysis never excludes or models that contamination. Session exclusion for absent phasic signatures also selects on biological responses."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "variance/entropy term p(1",
+      "evidence_type": "exact_quote",
+      "reason": "Two mathematical errors: a table labeled expected-value controlled predicts value-only firing rising with probability; p(1-p) is called variance/entropy even across varying magnitudes, although amount variance requires m^2 and entropy is a distinct function. Correct fixed-magnitude variance is written elsewhere but does not repair the cross-condition decision."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "fully predicted",
+      "evidence_type": "exact_quote",
+      "reason": "The packet reports diminished predicted-reward responses, not necessarily zero firing response; the opening inference upgrades this to fully predicted -> no response as reported framework."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "cross-validated likelihood",
+      "evidence_type": "exact_quote",
+      "reason": "Cross-validation has no held-out unit/block definition; optional photometry lacks a specified independent confirmation comparison. Neither provides an operational independent check of the fitted uncertainty claim."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent identification",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant question, an independent optotagging/pharmacological identity strategy and sensible event-separated measures are proposed. The specific mathematical and contaminated-control problems are charged in G1/C rather than duplicated."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "mean firing rate",
+      "evidence_type": "exact_quote",
+      "reason": "Rate or delta-F/F with ITI baseline and defined epochs, coded counterbalanced mappings and a bounded five-probability grid are supplied. Training, artifact, drift and delivery problems have candidate repairs; limits distinguish association from downstream causality."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "mean firing rate",
+      "evidence_type": "exact_quote",
+      "reason": "Rate or delta-F/F with ITI baseline and defined epochs, coded counterbalanced mappings and a bounded five-probability grid are supplied. Training, artifact, drift and delivery problems have candidate repairs; limits distinguish association from downstream causality."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "mean firing rate",
+      "evidence_type": "exact_quote",
+      "reason": "Rate or delta-F/F with ITI baseline and defined epochs, coded counterbalanced mappings and a bounded five-probability grid are supplied. Training, artifact, drift and delivery problems have candidate repairs; limits distinguish association from downstream causality."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "mean firing rate",
+      "evidence_type": "exact_quote",
+      "reason": "Rate or delta-F/F with ITI baseline and defined epochs, coded counterbalanced mappings and a bounded five-probability grid are supplied. Training, artifact, drift and delivery problems have candidate repairs; limits distinguish association from downstream causality."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 0,
+      "quote": "exclude that session",
+      "evidence_type": "exact_quote",
+      "reason": "Biological phasic-response selection is already charged at C; no duplicate deduction.",
+      "covered_by": "C"
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 0,
+      "quote": "EV artifact",
+      "evidence_type": "exact_quote",
+      "reason": "Categorical interpretation of the iso-EV result repeats the inconsistent value/variance mapping charged at G1; no duplicate deduction.",
+      "covered_by": "G1"
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Nominally matches the uncertainty study but embedded probes undermine certainty and probability/value/variance predictions are internally inconsistent.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "All nominal historical topics are present, but the certain fixed-time anchor is altered by unmodeled timing/omission probes and the varying-magnitude variance prediction is misdefined. These critical control/readout-prediction defects prevent a qualified match.",
+  "item_score": 12.0
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "grok",
+  "item_id": "bio-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:34:09.937955+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "fd9f5761256b2294f49a5da721ba9eb0ba12f468b2efde5e04cd939b0a77e9f0",
+  "question_sha256": "d576679cb0522006ae6a3f256e6d4d1ed7180289149160eaf9054837dc1f2a1e",
+  "reference_sha256": "537c9e482a9662f10c65fb2f21594beb86fbd037d481e97efd72e3c550773802",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "be65369240ccc319065e98a71d51953c59ae335acd506a09d22e9bc855821410",
+  "primary_route": "Global kinetics and time/enzyme checks plus independent substrate-competed binding.",
+  "complete_final_answer_read": true,
+  "word_count": 1020,
+  "first_round_scientific_quality": 85.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Proposed experiments and re-analyses",
+      "evidence_type": "exact_quote",
+      "reason": "No complete prospective known-product positive, enzyme/substrate-free negative and matched procedural control design with each role; named generic artifact checks or vehicle alone are insufficient."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The curves match competitive inhibition",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior Methods/supplements or validated protocols and check transfer before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The curves match competitive inhibition",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No detector/product reference calibration with acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The curves match competitive inhibition",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Units and kinetic parameters are reported, but the proposed rate endpoint lacks baseline correction and weak/saturated/missing-value rules."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "or does not go on to product",
+      "evidence_type": "exact_quote",
+      "reason": "Allowing nonproductive substrate binding to EI generally creates a mixed/uncompetitive component; lack of product alone is not equivalent to the pure competitive exclusion required by the stated equation."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "it still does not prove pocket overlap.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main graphical parameters and bounded kinetic classification; proposed concentration/time/binding tests and missing-data caveats are clear. Specific ternary-state error is charged once."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "it still does not prove pocket overlap.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main graphical parameters and bounded kinetic classification; proposed concentration/time/binding tests and missing-data caveats are clear. Specific ternary-state error is charged once."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "it still does not prove pocket overlap.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main graphical parameters and bounded kinetic classification; proposed concentration/time/binding tests and missing-data caveats are clear. Specific ternary-state error is charged once."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "it still does not prove pocket overlap.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main graphical parameters and bounded kinetic classification; proposed concentration/time/binding tests and missing-data caveats are clear. Specific ternary-state error is charged once."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "it still does not prove pocket overlap.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main graphical parameters and bounded kinetic classification; proposed concentration/time/binding tests and missing-data caveats are clear. Specific ternary-state error is charged once."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "it still does not prove pocket overlap.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main graphical parameters and bounded kinetic classification; proposed concentration/time/binding tests and missing-data caveats are clear. Specific ternary-state error is charged once."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "consider tight-binding, depletion, insolubility, or aggregator mechanisms.",
+      "evidence_type": "exact_quote",
+      "reason": "Different parameter/time/residual outcomes revise the model while enzyme-dependent potency prompts multiple competing explanations rather than one forced mechanism."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Binding assay in the presence and absence of saturating substrate",
+      "evidence_type": "exact_quote",
+      "reason": "Specifies an independent binding comparison using the named SPR/ITC/NMR readouts and explicitly says lost binding supports exclusivity but does not prove pocket overlap; structure is separately required for that claim. Sufficient at essay scope."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Good conditional model/validation reasoning with one incorrect equivalence between nonproductive ternary binding and pure competition.",
+  "item_score": 65
+}

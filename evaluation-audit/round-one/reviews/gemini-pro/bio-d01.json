@@ -1,0 +1,74 @@
+{
+  "item_id": "bio-d01",
+  "model_code": "gemini-pro",
+  "response_id": "bio-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:39:43.206406+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "9a805b1a6686c30068928500c86b2e543fdcab60aa5e67a38b21059642dd275e",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "one that binds allosterically (non-competitive/uncompetitive target inhibition)",
+      "issue": "Kinetic class is not a binding-site map: allosteric inhibitors can show competitive patterns, and noncompetitive/uncompetitive kinetics alone do not establish allosteric binding."
+    },
+    {
+      "quote": "The $R^2$ for the non-linear regression models in Phase 3 must be >0.90 to confidently classify the inhibition mechanism.",
+      "issue": "A high fit R-squared does not distinguish competing kinetic models or establish parameter identifiability. Compare global models with residuals, uncertainty and adequate substrate/inhibitor ranges."
+    },
+    {
+      "quote": "a fixed concentration of the pure, pre-generated final fluorophore",
+      "issue": "A correction from one fluorophore concentration is not validated over the product range. Chemical fluorophore changes, reporter substrate effects and condition-dependent attenuation can persist."
+    },
+    {
+      "quote": "Independent Units:** Individual wells",
+      "issue": "The design does not establish independent preparations/days, replication sufficient for precision, or a nested analysis. Automated extraction also does not substitute for blinded/predefined analysis decisions."
+    },
+    {
+      "quote": "If Phase 2 reveals the compound inhibits the reporter enzyme >50%",
+      "issue": "This threshold is not an identifying boundary. Smaller reporter effects can materially bias the coupled rate; orthogonal target validation and reporter-capacity checks at relevant conditions are needed, with chemical substrate/product controls."
+    }
+  ],
+  "rationale": "Clear short plan with the right broad counterassays and initial-rate matrix. It conflates kinetic class with binding location, treats model fit quality as mechanism confidence, and leaves correction validation, independent replication and direct product analysis underdeveloped.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "D3 establishes spectral proximity, not the magnitude of inner filtering. Fluorophore-only signal loss does not distinguish absorption, quenching and chemical conversion.",
+    "Substrate-competitive inhibition is a kinetic subclass of target inhibition; it is not necessarily active-site occupancy. Substrate sequestration and chemical loss require separate controls.",
+    "Reporter-only inhibition and true target inhibition can coexist. Do not force mutually exclusive categories or subtract arbitrary effect percentages.",
+    "A fully validated staged reporter calibration can be informative; a specific analytical instrument is not mandatory. Target quenching, matrix matching, product recovery and chemical stability must justify the inference.",
+    "Orthogonal methods can have their own compound-dependent artifacts, including ion suppression. Nonfluorescence alone does not establish specificity.",
+    "Independent preparations/days support reproducibility; technical wells cannot substitute for them. A null significance test is not equivalence; margins should be scientifically justified.",
+    "Simple inner-filter correction formulas depend on optical geometry. For f=F_without/F_with, attenuation correction multiplies signal by f, not by 1/f.",
+    "The draft reference uses reporter Km as a preparation item, but full reporter Michaelis-Menten characterization is not universally essential if empirical capacity and relevant intermediate concentrations are validated.",
+    "No fixed concentrations, replicate counts, Z-prime or R-squared thresholds are supplied by the packet. Proposed pilot settings are acceptable when labeled and validated; they are not historical facts.",
+    "The Fable response is nonempty but ends mid-protocol with provider content_filter/native refusal. Assess only submitted content, preserve its cost and hash, and do not retry."
+  ],
+  "review_sources": [
+    {
+      "title": "Assay Guidance Manual: fluorescence and absorbance interference",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK343429/?report=printable",
+      "scope": "Official guidance: concentration/matrix-dependent interference. No candidate access."
+    },
+    {
+      "title": "Lakowicz and Weber: fluorescence quenching by oxygen",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6959846/",
+      "scope": "Primary paper, equations and lifetime discussion: static and dynamic intensity effects require discrimination. No candidate access."
+    }
+  ],
+  "overall_benchmark_score": null
+}

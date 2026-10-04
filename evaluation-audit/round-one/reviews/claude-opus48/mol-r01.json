@@ -1,0 +1,126 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "claude-opus48",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:24:31.246258+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "a54df1a6a987fe460bef0fb49182e77e3b952f27c0da84f866c902465a35751f",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 55.0,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "The inverse pattern—no permeabilization on bare lipid but abolition of cellular lysis",
+      "issue": "This final rule identifies an executor from a negative reconstitution and a cellular requirement. The plan itself recognizes missing cofactors, yet does not distinguish a permissive protein from the physical lesion maker."
+    },
+    {
+      "quote": "an executor's loss abolishes permeabilization; a repair/modifier's loss *enhances or accelerates* lysis.",
+      "issue": "Effect direction cannot classify physical agency. An essential positive modifier can abolish permeabilization when lost; loss of a negative executor regulator can accelerate it. Component-specific tests are needed."
+    },
+    {
+      "quote": "Show that adding back purified C-terminal domain in trans suppresses NT-driven leakage/conductance.",
+      "issue": "Autoinhibition in the intact molecule does not guarantee inhibition by a separated domain in trans. This should be a conditional binding/function experiment, not a required successful validation."
+    },
+    {
+      "quote": "Loss-of-function mutant NT: no leakage",
+      "issue": "Loss of leakage is not a specific mechanistic control without mutant integrity measurements and a matched cellular rescue. The mutant remains confined to biochemical controls; cell specificity is inferred mainly from effector knockouts and size concordance."
+    },
+    {
+      "quote": "the only protein present is purified GSDMD-NT",
+      "issue": "The actual proposed in-situ cleavage contains protease and cleavage products. Protease-only controls are useful, but the claim of a one-protein system requires removal or separate-purified-NT replication."
+    },
+    {
+      "quote": "size cut-off",
+      "issue": "Probe charge/binding and a pore larger than all tested tracers can invalidate the binary pore-versus-rupture interpretation. Sampling, independent preparations and objective image/trace selection also remain unspecified."
+    }
+  ],
+  "rationale": "Relevant direct-action question with lipid, structural and conductance measurements. The answer overstates what knockout direction, trans inhibition, negative assays and size concordance establish, and lacks a selective molecular-to-cellular rescue bridge. It labels unprovided settings honestly, but much of the proposed protocol is not yet a decisive causal test.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The fixed packet establishes genetic/cleavage dependence, not physical membrane agency. Do not require knowledge of later results, residue numbers, lipid ratios or historical instrument settings.",
+    "A protein requirement or co-reconstitution establishes dependence, not the identity of the lesion-forming component. A permissive cofactor can support direct GSDMD action.",
+    "Negative artificial reconstitution is qualified evidence, not proof of indirect action. An assay-positive control does not validate the test protein or all relevant membrane conditions.",
+    "Direct permeability, terminal rupture and cytokine release are distinct. Sufficiency in a minimal membrane need not exclude later cellular executors.",
+    "Trans inhibition by an isolated domain is conditional; intact-protein autoinhibition does not require it.",
+    "Historical direction is scored separately from study quality. Five target components are conjunctive within each component; a full Hit@1 requires all five. Equivalent cellular functional-complementation designs count as rescue.",
+    "Historical matching is not prospective novelty: source identifiers are visible and no exhaustive earlier-public-disclosure audit exists. Full source methods have not been independently audited.",
+    "The later paper erratum corrects a typeset received date from 2015 to 2016; it does not change its June 2016 publication date or report a biological-result correction."
+  ],
+  "review_sources": [
+    {
+      "title": "Original GSDMD cleavage study",
+      "url": "https://www.nature.com/articles/nature15514",
+      "scope": "Primary abstract and publication metadata"
+    },
+    {
+      "title": "Later gasdermin pore/autoinhibition study",
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary abstract, author metadata and accessible extended-figure captions; full methods not audited"
+    },
+    {
+      "title": "Later-paper erratum",
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher erratum text: received-date typesetting correction only"
+    },
+    {
+      "title": "NINJ1 and terminal membrane rupture",
+      "url": "https://www.nature.com/articles/s41586-021-03218-7",
+      "scope": "Post-cutoff primary abstract supports reviewer distinction of permeability and rupture; candidate is not required to name NINJ1"
+    },
+    {
+      "title": "Direct inhibition of GSDMD by necrosulfonamide",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6462819/",
+      "scope": "Post-cutoff primary abstract; confirms why target specificity controls matter, not required candidate foreknowledge"
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "what molecule actually makes the hole?",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "Loss-of-function mutant NT: no leakage",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "point-mutant GSDMD-NT",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "In-cell pore-size concordance",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "would establish effector-mediated execution and identify the executor",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

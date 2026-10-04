@@ -1,0 +1,109 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "kimi",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:12:40.556426+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "9fa0f92a4290ba123148ac59d5dd1480c098014c175762b49ced71389c612726",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "SURE outcome response is absent",
+      "issue": "The packet predicts attenuation of responses to fully predicted reward; an absent phasic SURE response can be the correct learned result. Automatically invalidating waiting data for this pattern rejects a scientifically valid preparation."
+    },
+    {
+      "quote": "Rewarded and certain-omission controls are indistinguishable",
+      "issue": "Certain reward and certain no-reward can both lack an outcome prediction error. This is not by itself assay failure; validate unexpected reward/omission and independent neural identity without this contradictory gate."
+    },
+    {
+      "quote": "Actual outcome probabilities diverge materially from programmed probabilities",
+      "issue": "Independent Bernoulli schedules can fluctuate legitimately. Repeating sessions until realized rates fit a tolerance selects histories; distinguish software/delivery failure from valid stochastic variation and model the retained realized sequence."
+    },
+    {
+      "quote": "If one blinded interim analysis is planned",
+      "issue": "An interval on the uncertainty treatment coefficient requires decoded condition information; call it an independent monitoring analysis and calibrate the stopping rule rather than describe it as a blinded nuisance check."
+    },
+    {
+      "quote": "the same physical cue does not consistently produce the same neural pattern",
+      "issue": "This prediction is reversed for a cue-identity artifact: a sensory artifact should tend to follow physical identity across remappings. The subsequent old-cue/new-probability prediction is more appropriate."
+    },
+    {
+      "quote": "Use prespecified waveform stability and neuron-identification criteria.",
+      "issue": "No concrete independently validated dopamine identity method, region/platform or sensor/recording preparation is selected. Calibration of sensor impulse response and transient contamination is also missing for the optional photometry route."
+    },
+    {
+      "quote": "Primary waiting window",
+      "issue": "The interval is specified but no independent cue-transient/sensor-kinetic validation establishes clean separation. Actual reward amounts, neural sampling, preparation and welfare implementation remain incomplete."
+    }
+  ],
+  "rationale": "Strong full-grid and matched-distribution conceptual design, animal-level inference and measured-behavior caveats. However the explicit SURE-no-response invalidation and certain-control gate contradict the supplied learned-reward evidence and can reject valid recordings. Core question/mechanism/intervention present; readout/prediction do not qualify under these gates.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Do dopamine signals during the learned cue-to-reward waiting period encode reward uncertainty",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Scalar expected value or utility",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "P0–SURE ladder",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "SURE outcome response is absent",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "greatest at \\(p=0.5\\)",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

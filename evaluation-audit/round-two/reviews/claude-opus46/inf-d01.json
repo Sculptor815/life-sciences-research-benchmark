@@ -1,0 +1,238 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "inf-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:50:53.639979+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "5ebcf2fa873e709e8a69930f78fb211587e4863872f285a56750a57d528e29bc",
+  "question_sha256": "defb2d5afa06ce05847814081f892e153c6478b102ec166da9bfa6e92bf0ca27",
+  "reference_sha256": "af8af736b20cfadbc10950d9e83db1e5582000b2afdae0d27e561d3998ee5974",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "a2ea05a9ca3c165ba907c0ff7a30e768dc5a75e97938a1873e47ebec7c69ee3a",
+  "primary_route": "Patient-paired multiomic treatment-associated program discovery, assay-specific preprocessing, primary late integration/enrichment and locked external cohort validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2629,
+  "first_round_scientific_quality": 51.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult original assay Methods, supplements or validated analysis protocols and check their transfer to the present inputs."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "change attributable to treatment",
+      "evidence_type": "exact_quote",
+      "reason": "An uncontrolled pre/post contrast is not attributable to treatment alone; time, concurrent care and progression remain alternatives even with patient pairing."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Batch-effect audit",
+      "evidence_type": "exact_quote",
+      "reason": "The ordered workflow applies ComBat before specifying scale/normalization, then offers transformed RNA followed by count-model alternatives without an explicit raw-count versus transformed-input branch. Executable input requirements are unresolved."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Average the standardised per-omic scores",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit sign orientation and missing-component/coverage denominator make the composite comparable across patients/cohorts. A one-sided positive test is not justified for potentially negative component scores without orientation."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If fewer, power is insufficient",
+      "evidence_type": "exact_quote",
+      "reason": "The 20-pair cutoff is asserted without a program-level effect/variance/precision calculation. A generic single-feature t-test power statement does not justify the selected multi-pathway or external inference."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Fisher's or Stouffer's method",
+      "evidence_type": "exact_quote",
+      "reason": "RNA/protein/metabolite pathway evidence from the same patients is dependent; ordinary p-value combinations need an explicit covariance-aware or valid dependence-preserving null calibration."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Little's test",
+      "evidence_type": "exact_quote",
+      "reason": "A failure to reject MCAR does not establish MCAR or distinguish MAR from MNAR. The proposed binary classification therefore does not justify imputation eligibility. Cramer V alone also is not a design-rank/contrast-estimability test."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "relax the per-omic FDR to 0.15",
+      "evidence_type": "exact_quote",
+      "reason": "Thresholds are relaxed when too few features/pathways pass. Documenting result-driven relaxation does not provide an error-calibrated, locked parameter search."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A revised program after failure is not explicitly refrozen and assigned fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "retain only for post-hoc confirmation",
+      "evidence_type": "exact_quote",
+      "reason": "Completely batch-confounded metabolomics cannot confirm an RNA/protein treatment signal. Supportive use cannot supply the missing counterfactual; this is a distinct invalid claim gate."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No immutable input manifest, stable file/sample provenance links, exact software/environment and execution commands."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "re-run B\u2013C",
+      "evidence_type": "exact_quote",
+      "reason": "Resampling repeats differential/enrichment stages but not fitted preprocessing/imputation in A, allowing held-out patient information into internal stability evaluation."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "permute pre/post labels within patients",
+      "evidence_type": "exact_quote",
+      "reason": "Within-patient swaps do not preserve exchangeability when time is confounded with assay batch; preprocessing is also omitted from the permutation pipeline. No valid conditional null is supplied."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical rerun, declared output tolerances or resource/failure/source-difference logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis Design: Identifying a Reproducible Treatment-Associated Multi-Omic Program from Paired Tumor Samples",
+      "evidence_type": "exact_quote",
+      "reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only."
+    }
+  ],
+  "deductions_uncapped": 75,
+  "quality_score": 25,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "The plan is traceable to the packet and preserves a genuinely untouched external cohort, with useful technical QC and pathway-level outputs. Dependent evidence combination, adaptive threshold relaxation and supportive use of confounded metabolites substantially weaken its causal and statistical interpretation. Distinct defects are assigned to specific checks only.",
+  "item_score": 25
+}

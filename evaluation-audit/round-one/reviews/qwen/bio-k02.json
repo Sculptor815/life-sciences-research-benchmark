@@ -1,0 +1,65 @@
+{
+  "item_id": "bio-k02",
+  "model_code": "qwen",
+  "response_id": "bio-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:22:48.312126+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "d35f1a48a31f2a73ccc4243e658a877b8a4811d557904113d6798119b1dd8390",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 67.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "the mixed‑inhibition factor α′ → ∞",
+      "issue": "In the common rate law v=Vmax*S/(alpha*Km+alpha-prime*S), pure competition has alpha-prime=1, while Ki-prime tends to infinity. The answer defines alpha as 1+[I]/Ki but never defines an alternative alpha-prime convention; its repeated factor limit is wrong or materially ambiguous."
+    },
+    {
+      "quote": "curves would converge at low [S] and stay parallel‑offset",
+      "issue": "Parallel uncompetitive lines are a property of the double-reciprocal representation, not raw v-versus-substrate hyperbolae. Do not transfer that diagnostic to the supplied figure."
+    },
+    {
+      "quote": "sequestration gives an additive, not multiplicative, [S] offset",
+      "issue": "That is not universal. In a regime with an excess unsaturated substrate binder, free substrate can be approximately a constant fraction of total, mimicking a multiplicative Km shift. Measuring free substrate is useful; the asserted graphical exclusion is not justified."
+    },
+    {
+      "quote": "inhibitor binding to ES or to a remote site with antagonism",
+      "issue": "Binding to ES challenges the simplest no-ESI competitive model; it does not by itself imply a remote site or guarantee unchanged competitive kinetics. Separate state binding, physical location and the catalytic activity of any ternary complex."
+    }
+  ],
+  "rationale": "Excellent quantitative graph cross-check and many useful controls, but several explicit mechanistic claims are wrong: the mixed-model factor limit, raw-curve uncompetitive geometry, universal sequestration rule and ES-binding inference. These are substantive scientific reasoning errors despite the correct main classification.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All twelve complete final answers, the exact question, E1 packet, full sealed reference and synthetic figure were personally read. No paid judge, hidden reasoning or candidate web access was used.",
+    "The supplied shared asymptote is 100 nmol/min. Approximate half-maximal crossings are 20 and 60 micromolar, giving a threefold shift. At 300 micromolar the curves are about 94 and 83, not at the common asymptote. Accept reasonable approximate ranges; do not demand unreported fit precision.",
+    "Reference correction: the old required-concept/limitation text saying the shift cannot be quantified is too strong. The graphical shift can be estimated; exact fitted uncertainty and Ki remain unavailable. The updated paragraph already permits approximate 20-to-60 readings. Frozen original keys are preserved.",
+    "The synthetic ideal-MM/shared-asymptote premise is sufficient for the requested compatible kinetic classification. Proposed tests concern transfer to real data; no candidate must pretend experiments or error bars exist.",
+    "Reference correction: mutational effects are not necessary proof of active-site occupancy. Retained function, folding, direct binding and convergent contact evidence are needed; changes can be indirect. HDX or chemical-shift perturbations alone do not necessarily map ligand contacts.",
+    "Km generally combines binding and catalytic rates, not simply equilibrium Kd. Apparent affinity shorthand should not imply an intrinsic threefold Kd change.",
+    "Notation guardrail: in v=Vmax*S/(alpha*Km+alpha-prime*S), alpha=1+[I]/Ki and alpha-prime=1+[I]/Ki-prime. Pure competition has alpha-prime=1 and Ki-prime infinite. Other authors use a linkage alpha equal to a ratio of dissociation constants; accept a clearly defined alternative convention rather than penalizing a symbol alone.",
+    "An inactive ternary ESI complex is not equivalent to mutually exclusive ligand occupancy. Under the simple mixed model it decreases Vmax. A remote inhibitor can be kinetically competitive through mutual exclusion.",
+    "Incomplete recovery after dilution can be slow reversible dissociation or assay instability as well as irreversible inhibition. Competition binding and indirect mutational effects do not by themselves localize a pocket.",
+    "No actual enzyme experiments were run. The scores assess the written scientific explanation and proposed checks; this single unblinded AI review remains provisional and requires human review."
+  ],
+  "review_sources": [
+    {
+      "title": "Assay Guidance Manual: Mechanism of Action Assays for Enzymes",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK92001/",
+      "scope": "Search-indexed author-manual extracts corroborate kinetic competition without pocket identity and free-ligand/fit checks. Full page access returned a browser challenge; no claim of full-page inspection. Scoring primarily uses the supplied figure and explicit rate-law algebra; different alpha conventions are distinguished."
+    }
+  ],
+  "overall_benchmark_score": null
+}

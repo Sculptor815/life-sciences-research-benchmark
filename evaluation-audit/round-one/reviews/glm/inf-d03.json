@@ -1,0 +1,61 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "glm",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.013223+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "ad336a9d4287b2082a201dc0a77cf17bb9cc202b743fa8f90412c6c0b31b071c",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "with 4 vs 4 donors the floor is ≈ 0.014",
+      "issue": "Under the stated 2/C(8,4) formula the value is 2/70 ≈ 0.0286, not 0.014. The formula itself requires the particular two-sided symmetric statistic/allocation convention and is not universal."
+    },
+    {
+      "quote": "labels randomly permuted within donors",
+      "issue": "Treatment is constant within donor, so this either makes no change or invents within-donor treatment assignments incompatible with the design. It cannot calibrate the donor-assigned treatment test."
+    },
+    {
+      "quote": "permute treatment labels **across donors**",
+      "issue": "Preserve the stated block randomization and specify the targeted null; unrestricted donor permutation is not automatically compatible with the actual allocation."
+    },
+    {
+      "quote": "Cell count per donor becomes a covariate or weight in analysis.",
+      "issue": "Cell yield may respond to treatment and donor biology. Automatic adjustment/weighting can change the estimand or introduce selection bias; define the scientific target and model informative yield before using it."
+    },
+    {
+      "quote": "the **donor is still the unit for the treatment contrast**",
+      "issue": "For independently treated split samples, the randomized experimental unit can be the sample/well, while donor is a blocking and population-sampling unit. Correctly rejecting cell pseudoreplication does not justify conflating these units."
+    }
+  ],
+  "rationale": "Detailed proposed calibration, mixed/pseudobulk alternatives, donor validation and reporting. Incorrect permutation arithmetic and within-donor null generation, plus ambiguous assignment-level definitions, require major correction before use.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

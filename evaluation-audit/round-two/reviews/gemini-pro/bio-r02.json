@@ -1,0 +1,239 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "bio-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:09:43.205530+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "2fb23daeed44905a8cd2d84db980aa9538ea29b8c80d06830c9b4901b1097431",
+  "question_sha256": "1a2f38bc4a291e966598faece6d609fa8591d54539f53a2f49f3a56c3116856b",
+  "reference_sha256": "8282d415ac922ab3df37704b68f9314a3cf0a493392b6b5995af7ead2893d7e3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6a1128abaa1edeaa3d3150fdad9a5a6b5ef6adc36ea1cd7ac3068f8fdfed4e6c",
+  "primary_route": "Two-by-two nominal ATP/filament-length experiment with fluorescence step-finding; no measured chemistry or energy.",
+  "complete_final_answer_read": true,
+  "word_count": 1402,
+  "first_round_scientific_quality": 48.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult/check prior primary Methods or a validated protocol for detailed pre-execution conditions and transfer. Recording unknown settings and developing an assay locally do not satisfy this distinct requirement."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Negative Control 2 (Stuck Filaments)",
+      "evidence_type": "exact_quote",
+      "reason": "No prospective specific shaft-attachment/multi-motor validation or matched marker-free catalytic-activity control establishes that load changes preserve the enzyme/reporter coupling. Static and ATP-free controls address drift but do not replace these controls."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "necessary surface chemistry",
+      "evidence_type": "exact_quote",
+      "reason": "Core F1 construct, shaft-specific attachment and enzyme integrity are left as assumptions rather than resolved through an identity/activity/attachment feasibility plan."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core immobilization/shaft attachment, solution chemistry (including nucleotide/free-magnesium conditions), recording settings and load manipulation lack an executable quantitative workflow or a concrete calibration-to-setting procedure. Lists of parameters to select later are insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Angular/temporal/chemical calibration tasks are named but no quantitative event-recovery/false-call or signal acceptance-to-action criterion, or concrete derivation of such tolerance, is specified."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent-preparation/chamber/molecule hierarchy is present, but the sample-size pilot does not specify a quantitative precision/power target linked to meaningful effect and between-preparation variance."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "unblinded",
+      "evidence_type": "exact_quote",
+      "reason": "The analysis explicitly applies step-finding to unblinded traces, contradicting its earlier blinded-analysis promise; no locked-before-decoding procedure resolves this."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "at least three full revolutions",
+      "evidence_type": "exact_quote",
+      "reason": "Requiring three turns before bleaching favors faster/longer-lived motors and no original denominator or inactive/irregular outcome retention is provided."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary estimands and hierarchical/held-out comparisons are present, but exact model assumptions/diagnostics and multiplicity control for the several primary load/coupling/event tests are incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "linear regression on rotation rate versus ATP concentration",
+      "evidence_type": "exact_quote",
+      "reason": "A generic linear regression spanning low and saturating ATP cannot identify specific kinetic constants of a saturable turnover relation. No regime restriction or kinetic model establishes the claimed rates."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "ATP/load/acquisition optimization is not bounded by an explicit ladder or objective range-derivation/search-stop rule before the lock. A promise to select a spanning range from pilots is not a fully specified exploration policy."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot separation and troubleshooting are described, but technical changes do not explicitly trigger a revised freeze and fresh independent confirmatory data under a defined change-control policy."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "is a tightly coupled, discrete stepper motor",
+      "evidence_type": "exact_quote",
+      "reason": "Detected staircase traces with ATP-sensitive waits do not demonstrate tight turnover coupling, nor prove all previous continuity was a load artifact. Erratic traces are also assigned to marker noise without discriminating genuine molecular heterogeneity."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "automated step-finding algorithm",
+      "evidence_type": "exact_quote",
+      "reason": "No synthetic continuous-versus-step recovery, independent extraction, orthogonal turnover or physical reference confirmation is specified; one detector and the same fluorescence cannot independently validate inferred steps."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No full raw movie/trajectory/calibration manifest with unit identifiers, analysis versions/settings and all excluded/failed records is specified."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Unresolved Biological Question",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant step-versus-continuous/load question, alternative predictions and proposed-versus-observed distinction are supplied. Specific causal/measurement defects are charged under controls and P09/P13 rather than duplicated."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "in degrees",
+      "evidence_type": "exact_quote",
+      "reason": "Angles in degrees and dwell times in seconds, per-molecule trajectories and noise-floor detection are identifiable endpoints. Drift/bleaching/photon failure is linked to technical correction before continuing, although change-control and quantitative calibration remain missing."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "in degrees",
+      "evidence_type": "exact_quote",
+      "reason": "Angles in degrees and dwell times in seconds, per-molecule trajectories and noise-floor detection are identifiable endpoints. Drift/bleaching/photon failure is linked to technical correction before continuing, although change-control and quantitative calibration remain missing."
+    }
+  ],
+  "deductions_uncapped": 85,
+  "quality_score": 15,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "A useful conceptual first screen, not an executable or chemically identifying mechanistic study. Directional load/ATP manipulations alone cannot establish step stoichiometry.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The mechanical question and ATP/load manipulation align, but neither calibrated work/chemical free energy nor credible chemical coupling is measured. Step-finder output alone lacks independent validation; complete historical readout/prediction does not qualify.",
+  "item_score": 6.0
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "deepseek",
+  "item_id": "mol-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:51:49.432675+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "45b1de26b75bc0dedabb1b4e201f51a404805ebda40dbdd7ad5bd83b071ee298",
+  "question_sha256": "bf00c28a6e92add5751c281d77d4c3490535449c784810d44640a95c1cb7f695",
+  "reference_sha256": "691bdf29d87b44088c4c14b684a72ae289dd778c52bb1d20cc108695c93a7735",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "428502be147f30a073b8c33dbbeff86868fbbe4a9b4f463ef21305513361f3ad",
+  "primary_route": "Minimal liposome/GUV/planar-bilayer study, size/conductance pore discrimination, conditional fractionation and cellular mutant validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2652,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of prior primary Methods, supplements or validated protocols; local validation and acknowledging absent packet methods do not by themselves satisfy this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core protein preparation/cleavage and lipid formulation/buffer conditions remain unresolved lists rather than a quantitative preparation-to-intervention workflow or a concrete source/calibration-to-setting procedure. Proposed protein concentration series alone does not specify the essential reconstitution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Minimum seal resistance",
+      "evidence_type": "exact_quote",
+      "reason": "Calibration standards and inner-filter correction are named but no tolerances or derivation-to-acceptance rule is specified for spontaneous leakage, reporter interference or electrical baseline events."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparations and a pilot are recognized, but no quantitative power/precision target with an effect/variance-to-sample-size decision is supplied; a proposed three/six-preparation floor is not a justified confirmatory sample size."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Randomize field selection",
+      "evidence_type": "exact_quote",
+      "reason": "Imaging order/fields and fraction plates are randomized, but the primary NT-versus-controls leakage/bilayer treatment allocation is not specified as randomized, balanced and concealed."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "highest soluble, QC-passed concentration",
+      "evidence_type": "exact_quote",
+      "reason": "Futility criteria are qualitative, with no registered exposure/attempt limit, attrition ledger or original denominators for unstable/rejected membranes."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The main contrast and model are named, but model assumptions/diagnostics and a fully specified uncertainty/multiplicity procedure for the panel are incomplete. Naming a mixed model is not sufficient execution detail."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A concentration/lipid/time range is proposed without a bounded ladder or concrete derivation of bounds, an objective selection criterion and a lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly delimit permitted changes, refreeze the revised procedure and require fresh independent confirmation after such changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Another cellular component is required",
+      "evidence_type": "exact_quote",
+      "reason": "No activity on two lipid recipes at a soluble concentration does not prove another cellular component is required. The stop-direct-executor rule and conditional conclusion overstate a technically/context-limited negative despite later caveats."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-unit-to-output audit trail with sample identifiers, exact analysis versions/settings and preserved failed/excluded runs is specified."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the field cannot currently distinguish",
+      "evidence_type": "exact_quote",
+      "reason": "Absence of a follow-up in the supplied packet does not establish absence of evidence in the entire field; packet-limited and externally established knowledge are conflated here."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone, if relevant",
+      "evidence_type": "exact_quote",
+      "reason": "Relevant fragment, mock, buffer, cleavage-carryover and fraction-alone controls are designed prospectively. Meaningful alternative hypotheses, identity/aggregation checks, membrane principles and in-vitro scope are explained; no second penalty for the negative-rule error at P13."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "discrete steps plus size selectivity",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized kinetics and current measurements, diagnosed dye/aggregation/bilayer failures and orthogonal current/morphology/size tests support a functional pore assay beyond leakage. The positive-core mechanism and subsequent mutant validation are conditionally separated from known packet facts."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "discrete steps plus size selectivity",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized kinetics and current measurements, diagnosed dye/aggregation/bilayer failures and orthogonal current/morphology/size tests support a functional pore assay beyond leakage. The positive-core mechanism and subsequent mutant validation are conditionally separated from known packet facts."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "discrete steps plus size selectivity",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized kinetics and current measurements, diagnosed dye/aggregation/bilayer failures and orthogonal current/morphology/size tests support a functional pore assay beyond leakage. The positive-core mechanism and subsequent mutant validation are conditionally separated from known packet facts."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Mechanistically appropriate positive pore program; generic operating details and an invalid negative-to-cofactor necessity rule reduce quality.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "Direct pore question/mechanism, purified NT with matched fragment/caspase/mock controls, pure membranes, current plus size discrimination and conditional pore prediction are all present. The incorrect negative/cofactor branch is a quality deduction; it does not invalidate the correctly controlled positive pore branch. Apply the same positive-core rule used for Opus and Sol.",
+  "item_score": 74.0
+}

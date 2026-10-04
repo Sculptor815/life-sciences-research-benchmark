@@ -1,0 +1,222 @@
+{
+  "model_code": "grok",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:08:24.040464+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "4af63885d29917fb7d78fda45031d9865a73eec4396721095a1367df1dffb95f",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "7fc39eaeec6f9c37b3caa1af2d5de32e58b3ace2898ce8b8d19316415fafac7e",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 3007,
+  "first_round_scientific_quality": 61.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "using the targeting route justified by O2",
+      "evidence_type": "exact_quote",
+      "reason": "No actual functional viral dose, injection quantity, construct preparation or executable procedure that resolves the delivery settings."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "lowest power and the shortest duration",
+      "evidence_type": "exact_quote",
+      "reason": "Temperature and output metering are good, but no quantitative transmission-suppression accuracy/acceptance criterion or independently validated tracking reference/error bound."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Choice completion and omissions are separated, but corrupted/missing video/events and unknown trial classifications have no explicit quantitative handling rule."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If the interaction disappears once movement is accounted for",
+      "evidence_type": "exact_quote",
+      "reason": "Loss or persistence of an effect after post-treatment movement adjustment does not identify mediation/retrieval; causal assumptions are missing. Multiplicity for several timing contrasts is also unspecified."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reporter retrieval contrast does not explain it",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative equivalence/confound margin defines this decision; apparent absence or covariate adjustment cannot establish negligible alternative effects."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Terminal versus soma light",
+      "evidence_type": "exact_quote",
+      "reason": "Soma and terminal manipulations do not independently separate a local Q effect from propagated wider-P disruption; both may share it. No operational task-matched low-motor or separately validated causal confirmation is supplied."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Many useful event/histology/power logs are specified, but raw-file linkage and exact tracking, acquisition, code/environment/model versions remain absent."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "The projection-specific necessity claim is supported only by an interaction: retrieval-timed terminal inhibition in Q must reduce correct choices in opsin animals beyond any change produced by identical, equally visible light in opsin-negative animals, and that choice effect must not be accounted for by locomotion impairment. Do not illuminate somata in P and treat the result as a P\u2192Q test.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Strong proposed terminal assay with explicit paradoxical axonal-effect caution, independent transmission/heat pilot, anatomical identity, animal-level power and blinded randomized cohorts. Heat-measured institutional limits bound exploration, then parameters lock before the independent cohort. Technical/welfare stops retain outcomes, and repairs require revalidation. Matched reporter/hardware and temporal controls are useful; post-treatment causal adjustment and orthogonal validation remain inadequate.",
+  "item_score": 55
+}

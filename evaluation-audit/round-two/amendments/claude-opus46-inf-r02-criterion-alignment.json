@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-04T09:00:57.820449+00:00",
+  "before_sha256": "34da77ed2f979b854ae40708ec7a1957f4b6bd78adf0368c978c222ab3588904",
+  "after_sha256": "460122ae6a81ed8a6d7acbcdcaa988fd9682216a6fbdd6220fb705d4219ff5f6",
+  "reason": "Align the existing distinct finding with frozen G5 (overclaim) versus G4 (missing/invalid competing explanation). Swap criterion IDs only; evidence, deductions and all scores unchanged.",
+  "candidate_unchanged": true,
+  "first_round_unchanged": true
+}

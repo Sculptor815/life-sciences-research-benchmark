@@ -1,0 +1,255 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:09:43.482789+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "62abc6e0ff8f0ff4a883107aea5b7896ae421cf181c80a214cdfd52d349f6615",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "7c9d7d73109d24888eadc864d7533f7bfeb25b076586522869ac87c7678939c2",
+  "primary_route": "Unspecified overdispersed count-model implementation with Normal shrinkage, known-truth simulations and independent RNA validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3364,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The precise likelihood and normalization method",
+      "evidence_type": "exact_quote",
+      "reason": "Core count likelihood, normalization, prior-width fitting and uncertainty algorithm are left unspecified, without a concrete prerequisite-to-selection/calibration workflow."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "define acceptable margins",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth checks are named but calibration tolerances and a procedure to set them are deferred; no numerical or concrete calibration-to-acceptance/failure rule is given."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "exact minimum is an unreported design parameter",
+      "evidence_type": "exact_quote",
+      "reason": "Biological units are distinguished from technical runs, but there is no precision/power-based sample-size calculation or pilot decision rule, nor a Monte Carlo precision/stopping target."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "condition assignment, processing date, batch, and sample identity documented prospectively.",
+      "evidence_type": "exact_quote",
+      "reason": "Recording assignment and batch does not specify randomized/balanced processing or masked analysis of the newly acquired validation samples; an equivalent bias-control plan is absent."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Inclusion/exclusion and filtering rules",
+      "evidence_type": "exact_quote",
+      "reason": "Outcome-independent intent is stated, but actual attrition, failed-fit/missing-measurement denominator and stopping policies are not operationalized."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "an uncertainty measure if the selected method supplies one",
+      "evidence_type": "exact_quote",
+      "reason": "A primary inferential estimator, uncertainty method and multiplicity/error-control procedure are not fixed; optional uncertainty does not satisfy the requested comparison."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "alternative",
+      "evidence_type": "exact_quote",
+      "reason": "Simulation scenarios and robustness possibilities lack bounded parameter ranges or a concrete selection-and-lock procedure; unknown historical values do not prevent proposing such a procedure."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The answer diagnoses conceptual possibilities but does not link a measurable failed check to an ordered technical repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "collect additional independent biological samples",
+      "evidence_type": "exact_quote",
+      "reason": "Additional sampling after ambiguity is suggested, without what can change, what remains fixed and a fresh confirmation rule after model or pipeline revision."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "read-processing, alignment/quantification, and gene-counting settings",
+      "evidence_type": "exact_quote",
+      "reason": "File/sample provenance is useful, but an immutable executable environment with exact tool versions, commands, code and output identifiers is not specified."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Planned figures and their interpretation",
+      "evidence_type": "exact_quote",
+      "reason": "Figure concepts are specified but numerical source tables, clean-environment rerun, numeric tolerances, resource/failure logs and source-difference audit are absent."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "A reproducible bulk RNA difference is not, by itself, proof of cell-intrinsic transcriptional regulation.",
+      "evidence_type": "exact_quote",
+      "reason": "Sound expression-versus-composition/noise question, count-mean and Normal-shrinkage rationale, bounded causal claims and explicit proposed status. Eligibility and provenance prerequisites are identified; 3,364 words meet the limit."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Insufficient information",
+      "evidence_type": "exact_quote",
+      "reason": "Effect scale and prespecified materiality/stability/validation classes separate weak data from no effect. Simulated strong-effect loss, validation disagreement and composition ambiguity have discriminating interpretations; missing numerical calibration is charged specifically to P03."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Insufficient information",
+      "evidence_type": "exact_quote",
+      "reason": "Effect scale and prespecified materiality/stability/validation classes separate weak data from no effect. Simulated strong-effect loss, validation disagreement and composition ambiguity have discriminating interpretations; missing numerical calibration is charged specifically to P03."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "hold out specimens before fitting",
+      "evidence_type": "exact_quote",
+      "reason": "Distinct biological validation, representative stratified gene panels and discovery-fitted simulation protect the sample separation. Composition, perfect confounding, null/effect distributions and likelihood stress tests are considered."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "hold out specimens before fitting",
+      "evidence_type": "exact_quote",
+      "reason": "Distinct biological validation, representative stratified gene panels and discovery-fitted simulation protect the sample separation. Composition, perfect confounding, null/effect distributions and likelihood stress tests are considered."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "hold out specimens before fitting",
+      "evidence_type": "exact_quote",
+      "reason": "Distinct biological validation, representative stratified gene panels and discovery-fitted simulation protect the sample separation. Composition, perfect confounding, null/effect distributions and likelihood stress tests are considered."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Clear, scientifically bounded explanation separates composition, sampling and within-cell claims and preserves weak-evidence uncertainty. Its main limitation is that many operational and statistical choices remain placeholders.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The biological question and proposed stratified validation readouts match. The primary Normal-prior estimator is retained, with no adaptive heavy-tailed replacement or matching selective-tail mechanism/predicted improvement over Normal. A valid alternative study does not qualify for historical-direction points.",
+  "item_score": 14.0
+}

@@ -1,0 +1,50 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "gpt-astra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:11:45.857441+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "9bcd58f9122295ee3e5ab9c6171e2f8443aa49bdc9670d517d04dd4ac1649c4b",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "The proposed normalization method would be named and frozen.",
+      "issue": "The proposal should name a primary normalization algorithm now, with a rule for selecting an alternative if its assumptions fail. Likewise choose a proposed effect-size shrinker compatible with the coefficient/contrast. Numerical settings and versions can properly remain recorded placeholders, but these central algorithm choices remain deferred."
+    }
+  ],
+  "rationale": "Excellent auditable-input and clean-environment contract, allocation-unit decision tree, identifiable paired versus between-donor formulas, raw-count input requirements, contrast/FDR distinction and semantic source-difference audit. The principal omission is deferral of normalization and shrinkage algorithm selection. No actual execution or exact historical settings are required.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Both full received final answers, the exact candidate question/packet and full frozen reference including curator clarification were personally read. A truncated initial combined output was followed by reading the complete Fable answer alone. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than image byte equality alone. Partial source access cannot be presented as full article reproduction. Both answers fit the 3500-word limit.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

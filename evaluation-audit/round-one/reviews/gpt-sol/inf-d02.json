@@ -1,0 +1,62 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "gpt-sol",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:20:31.295146+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "cc5d97b84f455ba065fd093ae14d525e177bfce1ffc30281f87c63e09978f0ff",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 4,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 81.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "If treatment is perfectly confounded with batch or donor, the primary treatment effect is not identifiable and confirmatory DE analysis should stop.",
+      "issue": "The earlier parallel donor-level design is valid. Treatment constant within independently allocated donors is not inherently nonidentifiable; saturated donor indicators would absorb it. This blanket stop rule contradicts that valid branch and could reject a legitimate between-donor experiment."
+    },
+    {
+      "quote": "Each output should receive a checksum",
+      "issue": "Checksums and a regeneration command are useful but do not define the numerical/semantic acceptance criteria for independently regenerated tables and plot data. Distinguish row/order/metadata differences from scientifically material changes, with stated tolerances."
+    }
+  ],
+  "rationale": "Strong allocation-unit hierarchy, paired and parallel formulas, immutable inputs, raw-count checks, model/testing choices and provenance. The blanket donor-confounding stop rule conflicts with the otherwise correct between-donor branch; rerun verification needs explicit numerical comparisons beyond file hashes.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete received final answer was personally read in full, together with the exact candidate packet and frozen reference/clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than image byte equality alone. Partial source access cannot establish full reproduction. All four answers fit the 3500-word limit.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    },
+    {
+      "url": "https://bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf",
+      "scope": "Official manual indexed excerpt corroborates lfcThreshold Wald testing replacing LRT p-values; not a full manual audit."
+    },
+    {
+      "url": "https://bioconductor.org/help/course-materials/2022/CSAMA/lab/2-tuesday/lab-03-rnaseq/rnaseqGene_CSAMA2022.html",
+      "scope": "Official course excerpt corroborates special treatment of dispersion outliers; no software execution."
+    }
+  ],
+  "overall_benchmark_score": null
+}

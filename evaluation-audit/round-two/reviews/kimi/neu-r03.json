@@ -1,0 +1,239 @@
+{
+  "model_code": "kimi",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:43:00.911825+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9fa0f92a4290ba123148ac59d5dd1480c098014c175762b49ced71389c612726",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "91b346f57beffad26a46f8b1557a65a68eb28ea6be2fda84ac34c2fb8752b153",
+  "primary_route": "Seven-condition probability and matched-mean distribution study with an independent swapped-cue replication.",
+  "complete_final_answer_read": true,
+  "word_count": 3991,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dopamine identity must be independent of reward responses, but no actual anatomical/genetic/molecular recording-identification strategy or its validation route is selected. A list of possible criteria remains an unresolved core identity prerequisite."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The hierarchical conceptual model does not specify a likelihood/dispersion decision with diagnostics and a concrete multiplicity procedure across the several primary comparisons."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Repair/redesigned pilot suggestions do not explicitly require a revised frozen procedure and fresh independent confirmatory data after parameter changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-trial/unit manifest with exact analysis/acquisition versions/settings, calibration records and all technical/biological losses is specified."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "SURE outcome response is absent",
+      "evidence_type": "exact_quote",
+      "reason": "The troubleshooting table treats absence of a fully predicted SURE outcome response as pump/recording failure and disallows waiting-data interpretation. A diminished or absent predicted-reward transient is compatible with the packet; requiring it can select the preparation on reward responsiveness. Delivery should be validated physically and neural sensitivity with genuinely unexpected events."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Calculate the mean or area under the curve",
+      "evidence_type": "exact_quote",
+      "reason": "The neural measurement is not committed to an actual firing/release/fluorescence signal with a fixed unit and normalization formula. Defined time windows and generic baseline normalization do not supply that missing endpoint contract."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "If dopamine-release photometry is used",
+      "evidence_type": "exact_quote",
+      "reason": "Strong variance/entropy/presence alternatives with correct matched-mean AON/MAG/SURE ordering; explicitly distinguishes release from spiking, physical mean from subjective utility, and covariate mediation from confounding."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Twenty measured deliveries per magnitude with 5% CV acceptance/repair, explicit task timing/trial counts and bounded seven-condition grid are given. Pilot simulations target 90% power for a defined meaningful effect; coded balanced mappings and reported learner/welfare losses avoid directional selection."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Twenty measured deliveries per magnitude with 5% CV acceptance/repair, explicit task timing/trial counts and bounded seven-condition grid are given. Pilot simulations target 90% power for a defined meaningful effect; coded balanced mappings and reported learner/welfare losses avoid directional selection."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Twenty measured deliveries per magnitude with 5% CV acceptance/repair, explicit task timing/trial counts and bounded seven-condition grid are given. Pilot simulations target 90% power for a defined meaningful effect; coded balanced mappings and reported learner/welfare losses avoid directional selection."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Twenty measured deliveries per magnitude with 5% CV acceptance/repair, explicit task timing/trial counts and bounded seven-condition grid are given. Pilot simulations target 90% power for a defined meaningful effect; coded balanced mappings and reported learner/welfare losses avoid directional selection."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "such as 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Twenty measured deliveries per magnitude with 5% CV acceptance/repair, explicit task timing/trial counts and bounded seven-condition grid are given. Pilot simulations target 90% power for a defined meaningful effect; coded balanced mappings and reported learner/welfare losses avoid directional selection."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Specific apparatus/learning/motion faults have repairs; matched-distribution and animal-held-out analyses plus a separately allocated swapped-cue cohort independently check the result. Negative decisions use meaningful-effect confidence intervals. The incorrect SURE gate is charged only at C."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Specific apparatus/learning/motion faults have repairs; matched-distribution and animal-held-out analyses plus a separately allocated swapped-cue cohort independently check the result. Negative decisions use meaningful-effect confidence intervals. The incorrect SURE gate is charged only at C."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "independent replication cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Specific apparatus/learning/motion faults have repairs; matched-distribution and animal-held-out analyses plus a separately allocated swapped-cue cohort independently check the result. Negative decisions use meaningful-effect confidence intervals. The incorrect SURE gate is charged only at C."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong distributional design and replication, but unresolved recording implementation and an invalid predicted-reward positive-control gate require deductions.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Nominally all historical contrasts and the positive intermediate-peak hypothesis are supplied, with excellent independent distributional replication. However the explicit SURE-transient requirement rejects valid predicted-reward nonresponses and gates all interpretation on that response-selected preparation. This critical population/positive-control failure prevents a qualified readout/prediction; a negative sign itself is NOT the reason for the miss.",
+  "item_score": 20.0
+}

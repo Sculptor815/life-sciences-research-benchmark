@@ -1,0 +1,48 @@
+{
+  "item_id": "mol-p01",
+  "model_code": "grok",
+  "response_id": "mol-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.933265+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "b358085c3350621b64670dfcd7abf90741400dd72709a6cddd6e1d6568a6486d",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 91.25,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "Resolve LS-M17 and the Vale 2024 description in a source independent of this dossier.",
+      "issue": "Independent provenance is useful, but an external bibliographic source cannot be assumed to resolve a dossier-only identifier. Inspect the underlying dossier record and its curation trail."
+    },
+    {
+      "quote": "Input controls show that both proteins were present",
+      "issue": "The packet reports inclusion of controls, not their quantitative outcomes. Their inferential contribution should be stated conditionally."
+    }
+  ],
+  "rationale": "Clear mismatch and directness/native-context analysis, calibrated intent limits, and no claim that a title or three cultures establishes direct binding. The source-verification plan needs to respect the internal namespace; controls are slightly overinterpreted.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Dossier-only identifiers cannot be authenticated by finding or failing to find similarly named real publications. Underlying dossier documents and curation records can resolve the mismatch.",
+    "A complete registry entry establishes its recorded fields, not that its mapping is necessarily correct. An error is not proof of intent.",
+    "Included controls are not reported successful control outcomes. Grade the principal co-IP conclusion while recording any unreported-result assertion.",
+    "Not supplied does not mean never performed. Untested does not mean false.",
+    "Purified binding and endogenous co-IP address complementary questions; their combination is strong support but not automatically proof of direct contact in an unmodified cell.",
+    "Negative assays require sensitivity, reagent competence and relevant conditions. Depleting a bridge can disturb localization or stability even when A and B also bind directly.",
+    "The reference suggestion that all direct binding must survive bridge disruption is overstrong. Do not require it.",
+    "No misconduct probability can be inferred by treating author, title and year mismatches as three independent random errors."
+  ],
+  "overall_benchmark_score": null
+}

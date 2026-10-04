@@ -1,0 +1,42 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "gemini-pro",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.802140+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "6f2a4f6ac98186b0310c1507aeb1344869bc2ef3399fc19254dcadc55ca317e5",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "A single lowered reaction rate proves that inhibition is occurring",
+      "issue": "A lower observed rate can arise from assay interference, enzyme loss or other uncontrolled differences; inhibition is not proved."
+    },
+    {
+      "quote": "which confirms that the calculated 30 nmol/min rate is a valid initial velocity",
+      "issue": "A linear signal trace alone does not validate its calibration or establish absence of product effects."
+    },
+    {
+      "quote": "e.g., at 1, 2, 3, 4, and 5 minutes",
+      "issue": "Without assay volume, this proposed schedule is unjustified; at an illustrative 1 mL, substantial depletion occurs within seconds."
+    }
+  ],
+  "rationale": "Correct arithmetic and broad model identifiability, but overclaims what lower rates and linear traces establish. The initial-rate sampling plan is insufficiently conditioned on available substrate.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

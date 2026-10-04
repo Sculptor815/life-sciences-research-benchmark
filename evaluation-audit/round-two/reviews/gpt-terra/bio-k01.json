@@ -1,0 +1,134 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "bio-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:01:49.025317+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "3d932b368a300ff87f5dff36f75169fea34a4f63fdd2539a5a7d6debb383a776",
+  "question_sha256": "e5a45dec0d2517d68cec2cb721477e214452d8543683d6d377e1be872cfc40d4",
+  "reference_sha256": "425acfdd9f006f0f842223fef2b6ad93f510268641fee28dd344f907f5ecda04",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "a0b35aa837e6bed54399071d8603fe6127115eef60b9bed5e1a2c1597544abce",
+  "primary_route": "Initial product progress curves, enzyme-loading checks and substrate-series kinetics.",
+  "complete_final_answer_read": true,
+  "word_count": 1138,
+  "first_round_scientific_quality": 86.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Include no-enzyme and no-substrate controls to quantify background signal.",
+      "evidence_type": "exact_quote",
+      "reason": "Defines prospective no-enzyme/no-substrate background controls, calibration standards for positive detection and enzyme-loading/stability comparisons with their diagnostic roles."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult previous Methods or a validated protocol and check transfer before the validation experiment."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use calibration standards to verify that the detection method is linear",
+      "evidence_type": "exact_quote",
+      "reason": "No defined detector acceptance criterion or action on failed linearity; standards alone leave calibration incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Rate units and substrate-depletion accounting are given, but the quantitative endpoint lacks a rule for weak, saturated or missing detector readings."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent chemical-product/readout validation is given; enzyme-load and time-window checks share the same detector and cannot independently exclude its artifacts."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Lack of proportionality may indicate assay artifacts or enzyme instability.",
+      "evidence_type": "exact_quote",
+      "reason": "Defines supportive time linearity and negative curvature/loading/stability observations with competing technical explanations; the final limit states conditions that would change the conclusion."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correctly derives 30 nmol/min, explains compatible units and kinetic assumptions, separates prediction from supplied measurements, shows why one concentration is non-identifying, and proposes discriminating progress-curve checks without a material format failure."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correctly derives 30 nmol/min, explains compatible units and kinetic assumptions, separates prediction from supplied measurements, shows why one concentration is non-identifying, and proposes discriminating progress-curve checks without a material format failure."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correctly derives 30 nmol/min, explains compatible units and kinetic assumptions, separates prediction from supplied measurements, shows why one concentration is non-identifying, and proposes discriminating progress-curve checks without a material format failure."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correctly derives 30 nmol/min, explains compatible units and kinetic assumptions, separates prediction from supplied measurements, shows why one concentration is non-identifying, and proposes discriminating progress-curve checks without a material format failure."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correctly derives 30 nmol/min, explains compatible units and kinetic assumptions, separates prediction from supplied measurements, shows why one concentration is non-identifying, and proposes discriminating progress-curve checks without a material format failure."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correctly derives 30 nmol/min, explains compatible units and kinetic assumptions, separates prediction from supplied measurements, shows why one concentration is non-identifying, and proposes discriminating progress-curve checks without a material format failure."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculated initial reaction rate is",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correctly derives 30 nmol/min, explains compatible units and kinetic assumptions, separates prediction from supplied measurements, shows why one concentration is non-identifying, and proposes discriminating progress-curve checks without a material format failure."
+    }
+  ],
+  "deductions_uncapped": 25,
+  "quality_score": 75,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Correct arithmetic and model limits; measurement/control omissions are explicitly charged in the strict checklist.",
+  "item_score": 75
+}

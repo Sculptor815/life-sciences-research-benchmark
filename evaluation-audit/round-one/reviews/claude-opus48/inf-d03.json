@@ -1,0 +1,57 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.011152+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "01e95d4638d9f486a09920e182d4953d43950f1df97708560d748c4f30bfe926",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "randomly reassign arm labels to donors",
+      "issue": "The earlier within-batch blocked randomization must be preserved; unrestricted reassignment can produce allocations impossible under the design. Bootstrap must also preserve arm/pair/block sampling appropriately."
+    },
+    {
+      "quote": "resampling cells within a donor would again inflate apparent n and reintroduce pseudoreplication",
+      "issue": "Within-donor resampling is valid for conditional measurement uncertainty, and can be part of a two-stage bootstrap. It becomes pseudoreplication when used as independent treatment replication; the blanket prohibition is false."
+    },
+    {
+      "quote": "Use the donor-level permutation null to confirm that the chosen test (A or B) is calibrated",
+      "issue": "A permutation distribution for one dataset does not by itself establish the nominal FPR of a separate model-based test. Repeated explicit null datasets, whole-pipeline testing and rejection-frequency uncertainty are required; later simulation planning partly addresses this."
+    },
+    {
+      "quote": "the test for treatment approximates donor-level degrees of freedom",
+      "issue": "A random intercept alone does not guarantee suitable finite-cluster treatment inference. Specify and calibrate the small-sample correction, especially with few donors."
+    }
+  ],
+  "rationale": "Correct experimental unit, useful model/aggregate comparison, calibration planning and honest holdout limitations. Resampling restrictions and calibration mechanics remain incomplete, and the prohibition on within-cluster bootstrap is scientifically overbroad.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "qwen",
+  "item_id": "neu-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:29:55.305357+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7ec2582991ebae6418ad6c7de35bf4051d949730eaef6a71c388fe6fe37be806",
+  "question_sha256": "59d29b23d93b7785f7e6965d9a23209f90e316836b9f4e9371b8b3a9f7e1c560",
+  "reference_sha256": "1206c206c57094dab8fe0b44054d81cf50a998470190499bd71d53a3d2d1ae0c",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8784c88d482a4b6648f8b35857ff9e612bf4190ecdcd5c5b791af6a831f601d9",
+  "primary_route": "Early/late bilateral pattern deprivation, restoration and optional diffuse-input control with receptive-field mapping.",
+  "complete_final_answer_read": true,
+  "word_count": 5348,
+  "first_round_scientific_quality": 61.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of previous primary Methods, supplements or a validated technical protocol is proposed. Local pilots, welfare approval and promises to fill unknown settings do not meet this separate requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core exposure duration/intensity, stimulus timing and cortical acquisition/response settings remain a list to select later, without executable quantitative settings or a sufficiently specified calibration-to-setting procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Optical/stimulus and response calibration is named, but quantitative acceptance-to-action thresholds or a concrete derivation of tolerances for eye isolation, delivered contrast and mapping reliability are absent."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal/cluster replication and pilot variability are recognized, but no quantitative power or interval-width target is linked to the meaningful effect and independent-unit variance."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Contrasts and clustering are recognized, but the actual response/distribution model, assumption diagnostics and specified multiplicity policy remain incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Age, exposure dose and stimulus-parameter exploration has no bounded candidate grid or objective range-selection/search-stop rule before locking."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly connect technical changes to a revised frozen procedure and fresh independent confirmation; ordinary initial pilot separation is insufficient."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Confirm that occlusion or deprivation did not damage the eye",
+      "evidence_type": "exact_quote",
+      "reason": "Eye appearance/alignment and stimulus checks are present, but no direct retinal/precortical functional comparison validates equivalent upstream input before cortical-localization claims."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Minimum effect size or signal-to-noise threshold",
+      "evidence_type": "exact_quote",
+      "reason": "An ODI formula is present, but the noise-derived denominator and weak/unresponsive-unit treatment remain generic thresholds to define; the main binocular fraction is conditional on responsiveness and can conceal group-dependent loss."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Imaging may be used as a secondary or alternative modality",
+      "evidence_type": "exact_quote",
+      "reason": "Alternative imaging is listed without a defined independent/orthogonal confirmation comparison for the causal result."
+    },
+    {
+      "id": "G4",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Diffuse visual exposure",
+      "evidence_type": "exact_quote",
+      "reason": "Failure of diffuse light to rescue does not uniquely establish spatial instruction: retinal/cortical activity statistics and permissive requirements are not held equivalent by matching transmitted light alone."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The final answer is 5,348 whitespace-delimited words, materially exceeding the 5,000-word limit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "not a report of completed experiments",
+      "evidence_type": "exact_quote",
+      "reason": "The necessity/timing/recovery question, model/welfare prerequisites and packet boundaries are well stated. Uncertainty and conditional interpretation are generally careful; the specific overidentified diffuse-input inference is charged only at G4."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "version-controlled protocols",
+      "evidence_type": "exact_quote",
+      "reason": "Blocked concealed allocation, coded recordings, fixed sampling and logged technical exclusions/stops are supplied. Fault-specific troubleshooting and qualified null outcomes are sound. Raw files, calibration, exact stimulus logs, preprocessing versions and protocol/code records support audit."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "version-controlled protocols",
+      "evidence_type": "exact_quote",
+      "reason": "Blocked concealed allocation, coded recordings, fixed sampling and logged technical exclusions/stops are supplied. Fault-specific troubleshooting and qualified null outcomes are sound. Raw files, calibration, exact stimulus logs, preprocessing versions and protocol/code records support audit."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "version-controlled protocols",
+      "evidence_type": "exact_quote",
+      "reason": "Blocked concealed allocation, coded recordings, fixed sampling and logged technical exclusions/stops are supplied. Fault-specific troubleshooting and qualified null outcomes are sound. Raw files, calibration, exact stimulus logs, preprocessing versions and protocol/code records support audit."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "version-controlled protocols",
+      "evidence_type": "exact_quote",
+      "reason": "Blocked concealed allocation, coded recordings, fixed sampling and logged technical exclusions/stops are supplied. Fault-specific troubleshooting and qualified null outcomes are sound. Raw files, calibration, exact stimulus logs, preprocessing versions and protocol/code records support audit."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "version-controlled protocols",
+      "evidence_type": "exact_quote",
+      "reason": "Blocked concealed allocation, coded recordings, fixed sampling and logged technical exclusions/stops are supplied. Fault-specific troubleshooting and qualified null outcomes are sound. Raw files, calibration, exact stimulus logs, preprocessing versions and protocol/code records support audit."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Comprehensive bilateral study outline, but execution, precision, upstream controls and the instructive-mechanism discriminator are incomplete; exceeds the response limit.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The broad experience question matches, but all primary deprivation groups are bilateral. There is no unilateral competition experiment or predicted experienced-eye redistribution. The missing peripheral functional check is an additional readout limitation; alternative quality is still credited.",
+  "item_score": 12.0
+}

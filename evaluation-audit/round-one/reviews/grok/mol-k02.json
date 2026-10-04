@@ -1,0 +1,60 @@
+{
+  "item_id": "mol-k02",
+  "model_code": "grok",
+  "response_id": "mol-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:28:51.215736+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "19324932ae32765933d70f40b97af4d33e181cfb54ce6793658736d7ffe0013a",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Failure to restore 50 kDa overturns target assignment even if the knockout loss remains real.",
+      "issue": "Failed rescue requires evidence of appropriate expression, epitope, isoform and processing before interpretation. A negative rescue alone is not decisive, and a positive rescue can also restore a downstream protein."
+    },
+    {
+      "quote": "or peptide competition with on-target versus unrelated peptides",
+      "issue": "Peptide competition tests epitope-related recognition but can block binding to cross-reactive proteins sharing that epitope. It does not identify the endogenous 50-kDa protein, so should not be offered as equivalent to molecular identification."
+    },
+    {
+      "quote": "Overturns a clone-artifact reading if the 50 kDa loss is not reproduced.",
+      "issue": "This reverses the direction: failure to reproduce with independent alleles increases concern about a clone-specific artifact. Reproducible loss across independent perturbations weakens that explanation."
+    }
+  ],
+  "rationale": "Strong evidence boundaries, explicit residual signal, within-band comparisons and recognition that expected mass does not change the plotted genetic ranking. Deduct for the failed-rescue rule, peptide competition presented as identity evidence and an inverted clone-artifact decision statement.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Codex personally read all twelve complete final answers, exact question and packet, full reference and displayed synthetic figure. No hidden reasoning, paid judge, laboratory experiment or candidate web access was used.",
+    "The chart gives approximate 100-to-5 signal at 50 kDa and 95-to-93 at 75 kDa, with equal loading and validated KO as stated premises. The relative genetic support favors 50 kDa; it does not establish direct antigen identity or universal antibody specificity. Small numerical approximations do not change this qualitative comparison.",
+    "Reference correction: no complete coding-sequence deletion is specified in the candidate packet. The sealed logic chain assumes one, but the figure only says validated KO. Escaping isoforms are legitimate conditional alternatives when the validation scope is unknown.",
+    "Reference correction: the candidate was not shown the draft-key editorial status or original multiple-choice distractors. Do not require mention of a draft key, expert-review status or rejection of choices absent from the open question.",
+    "Reference correction: a target-derived modified species cannot persist after confirmed complete protein elimination merely because it is modified. A persistent band may contain a separate comigrating protein; distinguish that from residual/escaping target and incomplete null validation.",
+    "Summary bars do not reveal n, statistical equivalence, noise, raw-blot integrity or normalization method. Equal loading is a premise here, not proof of equal extraction/transfer. Expected sequence mass alone cannot reverse the observed ranking.",
+    "Rescue strengthens genetic dependence but may also restore downstream proteins. Failed rescue needs verified expression, relevant isoform, epitope, localization and processing. Genetic or RNA loss alone need not prove protein-null status.",
+    "MS can establish target presence while a comigrating species or indirect interactor generates antibody signal. Non-detection requires sensitivity and peptide coverage before being decisive. Peptide blocking can affect shared epitopes and does not independently prove endogenous identity.",
+    "The original frozen reference and candidate records are preserved. Corrections are disclosed here and applied consistently. Reviews are unblinded single-AI provisional assessments, not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Uhlen et al. (2016), A proposal for validation of antibodies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+      "scope": "Read the genetic, independent-antibody, tagging, immunocapture-MS and additional-characterization sections. They support application-specific validation and note indirect capture, tag artifacts and peptide-blocking limitations. No supplementary audit or experimental replication performed."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,60 @@
+{
+  "item_id": "inf-p01",
+  "model_code": "claude-fable",
+  "response_id": "inf-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:53:40.327336+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "bf78ab17e6f274a73096a94afa7193c4b1120b1dba1c5d130be88aa34dbf8b76",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 2,
+    "actionability": 1,
+    "verifiability": 3,
+    "communication": 2
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "A burden \"signal\" is expected under the null hypothesis of no disease effect.",
+      "issue": "The design permits an artifactual signal but does not establish its expected direction or magnitude, or that relevant detection/frequency differences must generate it."
+    },
+    {
+      "quote": "documented benign intent",
+      "issue": "C2 documents deliberate creation for training; it does not establish every subsequent use or motive. Absence of fraud evidence should not become proof of benign downstream conduct."
+    },
+    {
+      "quote": "**Chain B — Differential variant calling and unassessed rel",
+      "issue": "The received final answer stops here. It supplies no completed coverage/relatedness or enrichment-background analysis, no analytical benign-alternative evaluation and no operational falsifying check, despite promising them. Score received content; do not retry the partial refusal."
+    }
+  ],
+  "rationale": "Useful source-identity distinction and one center/ancestry chain, but the provider returned only a partial final answer (content_filter/refusal). Substantial requested reasoning and the proposed check are absent. This is a graded partial completion, not an empty refusal or transport failure.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The exact frozen question, full reference answer and full received final answers were read. This is a conceptual essay, not a demand for a complete executable sequencing protocol.",
+    "C2 affirmatively identifies a synthetic training record. No real publication or researcher is accused. A missing lookup or N1 alone would not establish invention or deceptive intent.",
+    "Reference required concept rc6 incorrectly says an all-annotated background always inflates significance. The full reference correctly allows either direction; no bias direction is identifiable from this packet.",
+    "Assess center-by-phenotype overlap rather than silently assuming either complete confounding or sufficient overlap. Covariate adjustment cannot recover an absent comparison.",
+    "Center-specific filters can yield equivalent effective detection. Unreported coverage, relatedness or adjustment is not evidence of their absence or failure.",
+    "A disappearing p-value after restriction does not prove artifact: evaluate effects, precision, power and estimand. A persisting calibrated association does not establish the pathway mechanism.",
+    "Benign alternatives include safeguards or true biology as well as non-malicious analytical mistakes. A negative-control result alone need not exclude bias in a different variant class.",
+    "Frozen keys and response records remain unchanged; these corrections are transparent reviewer metadata. No raw-data reanalysis was performed."
+  ],
+  "review_sources": [
+    {
+      "title": "gnomAD v3.0 release methods overview",
+      "url": "https://gnomad.broadinstitute.org/news/2019-10-gnomad-v3-0/",
+      "scope": "Reviewer read joint-genotyping and sample/variant QC overview, including ancestry, coverage and relatedness. Background support only; no validation of the invented dossier, no universal numerical thresholds imported."
+    }
+  ],
+  "overall_benchmark_score": null,
+  "partial_completion": true
+}

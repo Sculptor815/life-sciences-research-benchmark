@@ -1,0 +1,70 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:20:31.298149+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "e045089f5556dc2d549fcc6b3805e9ceb6817b609e9ed393c10c753600d6615e",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Donor confounded with condition or batch.",
+      "issue": "This is not sufficient to conclude treatment is unidentifiable. Independently allocated between-donor treatment can be modeled at donor level, and donors nested in processing batches can still have identifiable within-donor contrasts. Test the actual design rank and treatment contrast rather than applying this blanket stop rule."
+    },
+    {
+      "quote": "Summation preserves the NB count structure;",
+      "issue": "Negative-binomial sums are not generally negative binomial without distributional conditions. Compatible technical repeats of the same biological material may be merged, but distinct biological compartments/time points must not be pooled solely because their allocation-unit ID matches."
+    },
+    {
+      "quote": "report as underpowered rather than tuning thresholds post hoc.",
+      "issue": "No significant genes does not establish low power. It can reflect small/absent effects with adequate precision, filtering or model issues. Report effect intervals, assumptions and sensitivity; diagnose power only with a justified effect-size/design analysis."
+    },
+    {
+      "quote": "Well-level variation estimates technical/processing dispersion within a biological source.",
+      "issue": "Variation among individually treated wells can include real biological response variation, not just technical dispersion. The later within-donor inference branch receives credit, but this initial categorical statement should be qualified."
+    }
+  ],
+  "rationale": "Substantial manifest and allocation-unit infrastructure, a useful within-donor branch, count-model/shrinkage separation and source-claim ledger. Donor-confounding stop rules, unconditional aggregation justification and the no-discovery/underpower inference are consequential errors. Some testing and input-validation choices remain underdeveloped.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete received final answer was personally read in full, together with the exact candidate packet and frozen reference/clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than image byte equality alone. Partial source access cannot establish full reproduction. All four answers fit the 3500-word limit.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    },
+    {
+      "url": "https://bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf",
+      "scope": "Official manual indexed excerpt corroborates lfcThreshold Wald testing replacing LRT p-values; not a full manual audit."
+    },
+    {
+      "url": "https://bioconductor.org/help/course-materials/2022/CSAMA/lab/2-tuesday/lab-03-rnaseq/rnaseqGene_CSAMA2022.html",
+      "scope": "Official course excerpt corroborates special treatment of dispersion outliers; no software execution."
+    }
+  ],
+  "overall_benchmark_score": null
+}

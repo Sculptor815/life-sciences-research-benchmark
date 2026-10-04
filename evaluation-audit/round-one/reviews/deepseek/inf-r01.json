@@ -1,0 +1,112 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "deepseek",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:41:37.397190+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "9fd0108c07a6e554d10666fd4f82a74a76dd6f52be879ac9e42a086c705c847a",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "posterior mean \\(|\\beta| \\ge \\log_2(1.5)\\) or \\(\\log_2(2)\\)",
+      "issue": "The GLM uses a log link without defining log as base 2, then compares its coefficient directly with log2 thresholds. Specify the conversion or the link scaling consistently across fitting, priors, thresholds and plots."
+    },
+    {
+      "quote": "lower bound of the 95% credible interval above the null threshold",
+      "issue": "This rule excludes strong downregulation as written. Use a sign-aware upper bound below the negative threshold for decreases, or an explicitly defined two-sided magnitude probability."
+    },
+    {
+      "quote": "difference in mean normalized counts or a rank-based statistic",
+      "issue": "These are not on the log-fold-change scale. They can assess selected aspects such as direction, but not comparable magnitude or an identity-line LFC plot without defining a common estimand and scale."
+    },
+    {
+      "quote": "low-information raw extremes replicate at ≤ 10%",
+      "issue": "Some low-information extremes can be real. A blanket upper replication-rate requirement penalizes true recoverable low-count biology; assess known-null errors separately and condition on validated truth and validation precision."
+    },
+    {
+      "quote": "Permute condition labels and rerun the pipeline.",
+      "issue": "With allowed batch, pairing or covariate structure, unrestricted label permutation need not be exchangeable. Specify the design-valid restricted/randomization null or a suitable model-based null."
+    },
+    {
+      "quote": "Estimate \\(\\tau^2\\) by empirical Bayes or hierarchical Bayes.",
+      "issue": "This is a menu rather than a specified fitting algorithm. Choose a prior-scale procedure, normalization and posterior computation, with convergence/failure rules and training-only nuisance fitting."
+    },
+    {
+      "quote": "If FASTQ files are available",
+      "issue": "A counts-only evaluation can be honestly labeled exploratory, but it cannot satisfy the requested full raw-read pipeline. State raw acquisition/QC/count-generation steps as the primary procedure and their required inputs."
+    }
+  ],
+  "rationale": "Useful broad hypothesis structure, varied simulations and explicit non-execution status. Important operational mistakes remain in effect units, the downregulation decision rule, validation estimands, low-information success criteria and permutation validity. The Normal-prior evaluation does not specify the historical adaptive-tail intervention.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Both complete final answers in this file, the exact question/packet and full reference were personally read. No API judge, hidden reasoning or raw-data pipeline execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved.",
+    "Scaling realized counts is not equivalent to drawing fresh counts under known differential-expression truth. Simulated truth, assay agreement and independent biological replication are distinct validation roles. A low-information true effect need not be recoverable by any estimator."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "which genes show real condition-associated expression changes",
+      "assessment": "Matches the biological objective."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "A single Normal prior over-shrinks the large true effects",
+      "assessment": "Recognizes the proposed mechanism."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Estimate \\(\\tau^2\\) by empirical Bayes or hierarchical Bayes.",
+      "assessment": "Only a Normal scale is proposed; a heavier-tailed method remains an undeveloped alternative."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Calibration: observed validation rate versus posterior probability.",
+      "assessment": "Uncertainty, error and ranking readouts are present; validity issues are scored separately."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "the Normal prior matches or approximates the true effect distribution",
+      "assessment": "The main positive forecast retains the Normal method rather than predicting improvement from adaptive heavy tails."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

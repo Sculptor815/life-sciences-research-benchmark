@@ -1,0 +1,124 @@
+{
+  "item_id": "bio-r02",
+  "response_id": "bio-r02",
+  "model_code": "claude-fable",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:56:48.760215+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "0d3420e170cf69cfb5d6fd58bfe3d5af4d80c610a87d28b7b7f6933f830f1363",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Rotation occurs and requires ATP.",
+      "issue": "The packet supplies rotation in ATP, not a demonstrated minus-ATP control. The proposed controls are useful but cannot be retroactively treated as observed evidence."
+    },
+    {
+      "quote": "Loose (Brownian-ratchet-like) coupling",
+      "issue": "A Brownian ratchet can have discrete tightly coupled states. Fixed angles and rare backsteps do not uniquely distinguish it from a power-stroke scheme."
+    },
+    {
+      "quote": "generate simulated angle-vs-time traces",
+      "issue": "Recovery of planted steps is proposed, but no calibrated smooth-rotation null/false-positive challenge or free-state comparison is specified. The subsequent tests focus on the preferred 120-degree model; measurement specificity is not established."
+    },
+    {
+      "quote": "measuring free Brownian angular diffusion of filaments tethered to inactive enzymes",
+      "issue": "Inactive enzyme tethers can be torsionally confined; validate a free-rotor regime or fit stiffness/relaxation instead of assuming the free diffusion relation."
+    },
+    {
+      "quote": "compare per-molecule stepping rate × (assumed steps/rev)",
+      "issue": "Multiplying steps per second by steps per revolution is not a valid turnover normalization. Unknown active fractions and nonrotating ATP consumers also prevent the claimed upper bound or one-ATP-per-step inference."
+    },
+    {
+      "quote": "with each 120° step driven by one ATP turnover",
+      "issue": "ATP-dependent waits and ensemble kinetic congruence do not identify single-event stoichiometry; later caveats do not justify this definitive positive conclusion."
+    },
+    {
+      "quote": "filaments showing intermittent sticking",
+      "issue": "Long non-exponential pauses can be genuine inhibited motor states. The exclusion rule needs independent attachment-failure evidence and retained denominators rather than kinetic appearance alone."
+    },
+    {
+      "quote": "We therefore must establish our own:",
+      "issue": "Central construct/attachment, working buffer and initial substrate settings remain deferred. Free Mg/MgATP control is missing; torque-times-angle assumes a justified constant torque rather than measured work integration."
+    }
+  ],
+  "rationale": "Relevant stepping, ATP/load and energetic questions with hierarchical replication and several useful controls. Critical null-model validation and overclaimed coupling prevent a qualified historical hit. Scores reflect substantive original-rule flaws, not the deferred strict penalties.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full original question, packet, reference and sealed historical target read before grading. Every available final answer personally read; no hidden reasoning. Original quality rubric only; strict-round deductions remain inactive.",
+    "Qualified match follows the reference explicit core: resolved stepping, ATP/load discrimination, conditional directional prediction and credible measurement controls. All five fields must qualify. A forced 120-degree prior or name alone fails; an unbiased predicted recurring-step experiment need not invent the historical angle from the packet.",
+    "Work/free-energy comparison is a reference extension and earns quality credit when operationally supplied; its absence is not an additional binary gate beyond the explicit core qualification. Unsupported efficiency claims would be penalized. Preserve this interpretation across models.",
+    "The packet reports rotation with ATP, not a supplied minus-ATP experiment, exact catalytic symmetry, step angle or energetic result. Distinguish background hypotheses from packet evidence.",
+    "A fixed step is not automatically one ATP. Bulk ATPase and selected imaged motors require matched populations and active-fraction accounting. Binding, hydrolysis and product release are different event identities; timing alone does not identify the energetic driver.",
+    "Brownian-ratchet and power-stroke descriptions do not uniquely separate by fixed angles or backward events. Gated stochastic models can be discretely and tightly coupled.",
+    "Angle states must be inferred without forcing the sequel. Validate dynamic measurement response and step inference against continuous/noise controls, temporal blur, probe compliance and per-molecule angular origins.",
+    "Surface-confined or torsionally trapped Brownian probes require a suitable fluctuation/response or relaxation model; naive long-lag free diffusion cannot provide drag. Wall geometry and load-dependent optics must be controlled.",
+    "Control free magnesium/MgATP and nucleotide/product composition across nominal ATP changes. Viscogens can affect chemistry as well as drag.",
+    "Independent molecules are nested in chambers and enzyme preparations. Technical repeats, excluded inactive molecules and long biological pauses require explicit denominators/estimands and nonselective retention.",
+    "The 1998 primary abstract and metadata verify historical direction; complete 1998 Methods not audited. Selected 2011 original Methods passages support calibration guardrails, not required historical settings. No candidate sees this evidence."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9657145/",
+      "scope": "Complete primary abstract and author/publication metadata read; 1998 full Methods not audited."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3207686/",
+      "scope": "Selected original Rotation Assay and Torque Calibration Methods passages personally read; supports measured chemical conditions and frequency-dependent fluctuation calibration."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2877361/",
+      "scope": "Indexed original theoretical-study abstract/excerpt read: flashing-ratchet model with discrete substeps; not full-paper audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does F1-ATPase rotate in discrete angular steps",
+      "assessment": "Substantive core component present."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Tight three-step rotary coupling",
+      "assessment": "Substantive core component present."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "a log series from well below to well above K_bulk",
+      "assessment": "Substantive core component present."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "generate simulated angle-vs-time traces",
+      "assessment": "Critical event-inference or coupling overclaim prevents qualification; see exact deductions."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "with each 120° step driven by one ATP turnover",
+      "assessment": "Critical event-inference or coupling overclaim prevents qualification; see exact deductions."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

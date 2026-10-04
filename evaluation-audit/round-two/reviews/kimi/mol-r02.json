@@ -1,0 +1,239 @@
+{
+  "model_code": "kimi",
+  "item_id": "mol-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:37:46.835038+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e3ca54b186a25592fcae6d7d39e4c2ff8cce7d3a641ce50e9d903b1b91bc21de",
+  "question_sha256": "18ef4462f4f6072b5cde3b86e735cd54dcfe8ff2616e3905276a619a2e8bee05",
+  "reference_sha256": "da4f395c3ac28e425be90cad5a96348ce8907930151791cf1c9eb7010890b847",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "d5575fc6766e729316a1b492636c05437bd6728d55d5abd6091c43ef92e4d0ee",
+  "primary_route": "Acute RAD9 loss/gain with independent lesion/RAD9/cytological measurements, validated candidate-module ordering and repair-versus-adaptation follow-up.",
+  "complete_final_answer_read": true,
+  "word_count": 4026,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-experiment consultation/check of original Methods, supplements or validated protocols to select and transfer detailed conditions; establishing local prerequisites alone is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The central repair/conditional-switch/damage-assay technologies and operating conditions remain unspecified without a concrete tool-selection and quantitative calibration-to-execution procedure. Qualitative validation gates do not make the proposed main intervention directly executable."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "pilot power analysis using pilot variance",
+      "evidence_type": "exact_quote",
+      "reason": "Biological units and pilot variance are explicit, but no target power/precision or concrete sample-size calculation is given. A pilot-derived meaningful delay alone does not complete that procedure."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "false-discovery control across secondary molecular endpoints",
+      "evidence_type": "exact_quote",
+      "reason": "The correction procedure/family and operational primary time-to-event assumptions are not fixed; named mixed models and bootstrap intervals do not specify resampling level or full inferential implementation. The later explicit competing-death recommendation is credited and not penalized as absent."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dose/duration/switch parameters are described as a range or to be calibrated without a bounded ladder or a concrete range-derivation and acceptance-to-lock procedure. This differs from independent assay calibration in P03."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "does not alone prove causality",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative checkpoint-order/maintenance question, verified isogenic rescue/conditional controls and explicit uncertainty about proposed components are present. No direct molecular contacts are inferred from timing alone. All 4,026 words are within limit; core principles are explained."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "suggested 20%",
+      "evidence_type": "exact_quote",
+      "reason": "Blank, genetic positive/negative, dilution linearity, saturation, CV acceptance and rejection actions calibrate molecular measurements. Stage/genotype-normalized delay, lesion half-time and onset/offset definitions supply quantitative endpoints with recorded uncertainty."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "suggested 20%",
+      "evidence_type": "exact_quote",
+      "reason": "Blank, genetic positive/negative, dilution linearity, saturation, CV acceptance and rejection actions calibrate molecular measurements. Stage/genotype-normalized delay, lesion half-time and onset/offset definitions supply quantitative endpoints with recorded uncertainty."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "repeat held-out batch before conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Seeded balanced allocation, coded lanes and locked QC, explicit technical failure counts, missingness sensitivity and no-surprise unblinding are specified. Ordered troubleshooting is followed by independent held-out batch or dose testing, while post hoc hypotheses remain exploratory."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "repeat held-out batch before conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Seeded balanced allocation, coded lanes and locked QC, explicit technical failure counts, missingness sensitivity and no-surprise unblinding are specified. Ordered troubleshooting is followed by independent held-out batch or dose testing, while post hoc hypotheses remain exploratory."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "repeat held-out batch before conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Seeded balanced allocation, coded lanes and locked QC, explicit technical failure counts, missingness sensitivity and no-surprise unblinding are specified. Ordered troubleshooting is followed by independent held-out batch or dose testing, while post hoc hypotheses remain exploratory."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "repeat held-out batch before conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Seeded balanced allocation, coded lanes and locked QC, explicit technical failure counts, missingness sensitivity and no-surprise unblinding are specified. Ordered troubleshooting is followed by independent held-out batch or dose testing, while post hoc hypotheses remain exploratory."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "at least two orthogonal readouts agree",
+      "evidence_type": "exact_quote",
+      "reason": "Supportive, negative and ambiguous outcomes respect input assay limits; independent cytological and lesion/RAD9 readouts plus rescue are required before strong conclusions. Versioned reagent/strain tables, seeded allocation and locked analysis code/settings support audit."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "at least two orthogonal readouts agree",
+      "evidence_type": "exact_quote",
+      "reason": "Supportive, negative and ambiguous outcomes respect input assay limits; independent cytological and lesion/RAD9 readouts plus rescue are required before strong conclusions. Versioned reagent/strain tables, seeded allocation and locked analysis code/settings support audit."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "at least two orthogonal readouts agree",
+      "evidence_type": "exact_quote",
+      "reason": "Supportive, negative and ambiguous outcomes respect input assay limits; independent cytological and lesion/RAD9 readouts plus rescue are required before strong conclusions. Versioned reagent/strain tables, seeded allocation and locked analysis code/settings support audit."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong conceptual and audit discipline with quantitative assay calibration and staged independent validation. Missing source-method consultation and executable intervention/precision settings are distinct deductions, not evidence of an invalid alternative question.",
+  "historical_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+  "item_score": 28.0
+}

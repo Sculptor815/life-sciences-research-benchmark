@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "mol-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:23:27.708813+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "3f08a748af7b1478d939fadbbac2cae5e8e17a6db60081e31e0825ee31a52580",
+  "question_sha256": "977a901aa45a51e53beb3d5dfc1df4236d50dbabe47be214290304b663ddcfc5",
+  "reference_sha256": "4c10b3678ba1f5bc0060a9db770578e48e607d5100db658b12d6b95ee26dbab8",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "149c7e2c4ea957195d1a15f7e1381e15ccc736cac488d8963a138e7fb752038e",
+  "primary_route": "K-loss plus matched WT/kinase-dead rescue, with conditionally validated orthogonal catalytic perturbation.",
+  "complete_final_answer_read": true,
+  "word_count": 2289,
+  "first_round_scientific_quality": 58.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult detailed prior Methods, supplements or validated protocols before execution and verify condition transfer. Generic established procedures or partner-literature lookup are insufficient."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No matched non-targeting editing control for the CRISPR route; using an independent degron null reduces adaptation concerns but does not replace the procedural editing/selection comparison."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Scaffolding sufficient; catalytic activity dispensable",
+      "evidence_type": "exact_quote",
+      "reason": "The pooled knockout is presented as established necessity, and successful noncatalytic rescue is equated with scaffolding specifically. Neither claim is justified solely by the supplied packet and phenotype rescue."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "single-copy, titratable",
+      "evidence_type": "exact_quote",
+      "reason": "Genetic insertion, degron and AS preparation details, quantities/exposure times and culture conditioning remain unspecified without an executable calibration-to-choice procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "control collapses phospho signal",
+      "evidence_type": "exact_quote",
+      "reason": "Specificity controls are strong, but analytical linearity/background/recovery and an objective quantitative accuracy acceptance gate are not supplied for the ratio measurements."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Report ratio and absolute values",
+      "evidence_type": "exact_quote",
+      "reason": "No background, below-limit, saturated or missing phospho/total-S ratio rule, nor quantitative growth-denominator/death-versus-division handling."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "size replicates from the KO effect magnitude in M1",
+      "evidence_type": "exact_quote",
+      "reason": "M1 supplies no numerical magnitude or variance. No independent pilot obtains those quantities for the WT-KD and equivalence contrasts; fixed clones/days and desired power alone cannot size the study."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "linear mixed-effects",
+      "evidence_type": "exact_quote",
+      "reason": "Mixed models and TOST are specified, but no multiplicity family/correction or gatekeeping across the two endpoints and multiple genetic/chemical contrasts."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "stop and re-engineer",
+      "evidence_type": "exact_quote",
+      "reason": "Re-engineering and troubleshooting lack a refrozen design and fresh independent confirmatory cohort."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Confirm KD is actually dead",
+      "evidence_type": "exact_quote",
+      "reason": "No quantified activity detection bound tied to the minimal activity sufficient for rescue. Labeling the assay result dead does not exclude functionally consequential residual catalysis in the dispensability decision."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "scaffold physically intact",
+      "evidence_type": "exact_quote",
+      "reason": "Physical protein presence and in-vitro analog inhibition do not establish maintained scaffold behavior or adequate functional inhibition in intact cells. The limits acknowledge conformation-dependent scaffold loss but the orthogonal arm does not test it; see primary example https://www.nature.com/articles/nature08833."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sample-to-raw-file linkage and exact analysis-code/environment/settings versions."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "exact_quote",
+      "reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Authenticated cells, phosphatase/peptide specificity controls, fold/localization/partner comparisons, multiple nulls and correctly nested clones are useful. Randomized plates, coded analysis, technical stopping, TOST and a bounded half-log ligand pilot with EC-defined choices are concrete. Causal and assay-tool limitations are discussed, but the required activity/scaffold separation is not operationally verified in the key decisions and chemical arm. P13/P14 own these defects without duplicate general inference penalties.",
+  "item_score": 30
+}

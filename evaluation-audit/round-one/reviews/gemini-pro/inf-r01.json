@@ -1,0 +1,112 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "gemini-pro",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:41:37.397190+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "c51d05f320b3e4f57d68bdd33e3605898dc28fa6bbb07bc6ec8df8bbc3a46331",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 1,
+    "verifiability": 1,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 1,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 1
+  },
+  "service_score": 42.5,
+  "reasoning_index": 31.25,
+  "errors": [
+    {
+      "quote": "generated from mapped RNA-seq reads",
+      "issue": "The proposed starting point is a count matrix, with no actual raw-file manifest, sample/run mapping, acquisition checksums, reference versions or ordered QC/quantification plan. This omits a major requested part of the task."
+    },
+    {
+      "quote": "inject synthetic differential expression by mathematically scaling their baseline counts across conditions",
+      "issue": "Deterministically scaling realized counts does not generate a fresh count experiment with the specified mean-variance law and can create nonintegers. Assigning zero effects to the remaining empirical genes also does not erase their original condition differences. Define a generative null and resample counts with known effects, offsets and dispersion."
+    },
+    {
+      "quote": "Independent Validation: Testing Preservation vs. Shrinkage",
+      "issue": "Comparing simulated estimates with the effects injected into the same simulation is known-truth evaluation, not independent biological validation. Add held-out independent specimens or an appropriate orthogonal measurement with uncertainty."
+    },
+    {
+      "quote": "If the estimator drives *both* Quadrant C and Quadrant D to zero, we falsify the method's utility",
+      "issue": "With extremely little information a true large effect may be indistinguishable from noise. Such a result need not establish a wrong Normal prior or imply that heavy tails can recover unavailable information. Stratify by likelihood information, error tradeoffs and validation precision."
+    },
+    {
+      "quote": "we must replace the Normal prior with a heavy-tailed prior",
+      "issue": "This categorical remedy is not justified without a fitted alternative and a joint test of strong-effect accuracy, false extremes and uncertainty calibration. The proposal never defines the replacement estimator."
+    },
+    {
+      "quote": "the model assumes most genes do not change significantly",
+      "issue": "A continuous zero-centered Normal effect prior is not a probability model for statistical significance or a point mass of unchanged genes. Its scale and data precision determine shrinkage; it does not classify every extreme as noise."
+    },
+    {
+      "quote": "calculate the Root Mean Square Error",
+      "issue": "RMSE alone and MA plots do not measure sign/interval calibration, ranking performance or false strong-effect calls. Define those endpoints, primary acceptance thresholds and simulation replication/uncertainty rules."
+    }
+  ],
+  "rationale": "Recognizes the bias-variance question and the need to separate strong effects from unstable estimates, but the core simulation construction is invalid as described. The requested raw-read pipeline and independent validation are absent, and method fitting and uncertainty evaluation remain minimal. A later heavy-tail suggestion does not constitute a historical intervention match.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Both complete final answers in this file, the exact question/packet and full reference were personally read. No API judge, hidden reasoning or raw-data pipeline execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved.",
+    "Scaling realized counts is not equivalent to drawing fresh counts under known differential-expression truth. Simulated truth, assay agreement and independent biological replication are distinct validation roles. A low-information true effect need not be recoverable by any estimator."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "true, consequential regulatory shifts",
+      "assessment": "Biological question matches at a broad level."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Normal prior over-shrinks true, extreme biological signals",
+      "assessment": "Mechanistic concern matches."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "replace the Normal prior with a heavy-tailed prior",
+      "assessment": "A conditional name-only recommendation does not define an adaptive replacement and fitting procedure."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Root Mean Square Error",
+      "assessment": "The proposed readouts omit calibrated sign/interval uncertainty and independent biological evaluation."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "The recommendation to use this method stands",
+      "assessment": "Primary forecast tests retaining the original Normal method, not the new adaptive-tail method."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

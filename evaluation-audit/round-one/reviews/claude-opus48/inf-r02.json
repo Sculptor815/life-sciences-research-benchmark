@@ -1,0 +1,115 @@
+{
+  "item_id": "inf-r02",
+  "response_id": "inf-r02",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:21:56.734401+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "40d28ea80d4ae1a5cb938fbad9b64cc02dbdf33689bfbe6fa843ebce48cf611d",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 58.75,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "Define the per-marker protein background floor as max(isotype signal, empty-droplet ambient).",
+      "issue": "Isotype binding and empty-droplet counts are distinct distributions, not interchangeable calibrated per-cell signal floors. Their simple maximum/subtraction lacks a normalization and measurement model and can remove genuine low signal."
+    },
+    {
+      "quote": "estimate per-transcript dropout as a function of total UMIs using the agreeing lineage markers",
+      "issue": "Selecting agreeing markers does not establish known latent transcript abundance or absolute false-negative probabilities. Independently calibrated RNA-positive controls and target-specific sensitivity are needed."
+    },
+    {
+      "quote": "Report fraction of disagreement attributable to each block.",
+      "issue": "Variance explained by correlated technical and state covariates is not a causal biological/technical mixture fraction. Cell size, RNA content and viability may be biology or mediators; predictive partition does not identify their causes."
+    },
+    {
+      "quote": "Unstimulated t=0 sample",
+      "issue": "An initial baseline is not a time-matched vehicle/unstimulated control for the entire activation series. Culture duration, handling and survival can mimic the proposed temporal sequence."
+    },
+    {
+      "quote": "these RNA–protein disagreements define real, post-transcriptionally/temporally regulated cell states",
+      "issue": "Orthogonal confirmation supports a real discordant measurement, not automatically a discrete functional state or its particular mechanism. Timing/co-variation alone needs discrimination against continuous kinetics, composition and trafficking alternatives."
+    },
+    {
+      "quote": "restrict analysis to high-UMI cells",
+      "issue": "This can selectively remove true low-RNA states and change the estimand. Report all-cell denominators, sensitivity and capture limits instead of treating filtered concordance as artifact proof."
+    },
+    {
+      "quote": "attributable to each block",
+      "issue": "The planned cross-validation lacks a protected donor-level split before fitting QC, transformations, thresholds and representation; same-data cell-state covariates are not independent endpoints."
+    },
+    {
+      "quote": "All quantitative thresholds",
+      "issue": "No antibody clone/working chemistry, fitted count model, explicit normalization parameters, independent-donor power target or runnable workflow is selected. Concrete PBMC/timepoint choices help but do not make the full experiment operational."
+    }
+  ],
+  "rationale": "Useful PBMC time course, knockout controls and paired smFISH/protein validation proposal. Background subtraction, dropout calibration and causal variance attribution remain underidentified; state claims exceed validation. Integrated representation is explicitly postponed, so no historical adaptive-neighborhood hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Complete final answer, packet, reference and sealed target personally read. Original rubric only; strict-round penalties not active.",
+    "Cell-specific learned modality utility and an explicit integrated neighborhood construction are essential for this historical target; generic calibrated weighting or a graph mention is insufficient.",
+    "Donor splitting must precede fitted transformations and tuning. Condition blinding does not replace independent endpoint validation or prevent marker-label circularity.",
+    "A technical-null mismatch need not define a new cell state. Low-count/QC correlation does not prove artifact. Use known-control calibration, independent phenotypes and quantitative sensitivity analyses.",
+    "The supplied assessment contains no raw data; a plan is not actual figure reproduction. Accessions should be sought in primary records, never invented.",
+    "Primary abstract, Figure 1 caption and indexed WNN construction Methods excerpt verified. Complete paper, supplement and raw-data execution not audited."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34062119/",
+      "scope": "Complete indexed primary abstract and Figure 1 caption read."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238499/",
+      "scope": "Indexed primary Methods excerpt for cell-specific weighted similarity and WNN graph construction read; no whole-paper/raw-data audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Do single-cell disagreements between a marker's transcript",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Technical artifact dominates.",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "does not by itself deliver an optimal integrated representation",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Variance partition (the core test)",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "these RNA–protein disagreements define real",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

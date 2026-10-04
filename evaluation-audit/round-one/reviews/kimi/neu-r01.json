@@ -1,0 +1,96 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "kimi",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:32:00.882034+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "8d3a313cc52eafab30395eef0bd5817fa4e8ac3d4549099d7c96391b317b3bc5",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 91.25,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "Within FEAR-TAG animals, randomize to paired, unpaired, no-actuator, or retrieval-check arms",
+      "issue": "Actuator status has already been assigned before tagging in the earlier phase. Keep that earlier randomization fixed and randomize contingency/check arms within compatible construct strata; the written sequence is inconsistent."
+    },
+    {
+      "quote": "Validate that the cues can be discriminated by the behavioral scoring system.",
+      "issue": "The animal must discriminate the cues. Validated video scoring does not establish sensory discriminability; use independent behavioral/sensory calibration."
+    },
+    {
+      "quote": "P-tag:** activity-labeling window and induction conditions.",
+      "issue": "The detailed tagging plan lacks an explicit test that the gate is closed before new acquisition. Verify closure so subsequent cue/light activity does not expand the manipulated population."
+    }
+  ],
+  "rationale": "Strong alternative differential-cue study with clear second-order versus first-order distinction, physiology, independent units, balanced allocation, prospective records and appropriate causal limits. Minor operational inconsistencies remain in actuator allocation, cue discrimination and gate closure. A short neutral-ensemble extension partially approaches the held-out direction, but tests light activation rather than the original natural context.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "whether an internally activated dentate-gyrus representation can serve as the **antecedent",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Pair activation of that neutral population with a validated external aversive outcome.",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Tag a dentate-gyrus population during a neutral activity condition.",
+      "assessment": "The optional extension names a neutral internal CS, but does not specify the distinct-context training and no-light original-context retrieval required for a full match. The core internal-outcome study is evaluated on its own quality."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Later test activation without the external outcome.",
+      "assessment": "The optional extension names a neutral internal CS, but does not specify the distinct-context training and no-light original-context retrieval required for a full match. The core internal-outcome study is evaluated on its own quality."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "activation acquires a new behavioral consequence",
+      "assessment": "The optional extension names a neutral internal CS, but does not specify the distinct-context training and no-light original-context retrieval required for a full match. The core internal-outcome study is evaluated on its own quality."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

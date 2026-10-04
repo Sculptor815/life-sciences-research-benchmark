@@ -1,0 +1,29 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "kimi",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.806220+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "d0401ddc61062414674e6d9fbae23bd4d4801dc703d4829aa2edca0db5a385ae",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Correct calculation and unit/volume distinction. Appropriate quasi-steady-state assumptions, global inhibition fitting, lag exclusion, slope-window sensitivity, detector standards and blanks. Fully satisfies this bounded essay rubric.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "neu-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:00:19.188733+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "dc83c8dfdb67a6a77ea54207731ecad50c6c058d3dbde8a24021010b83559031",
+  "question_sha256": "756a39f9e44d564dabee1975ff42a930d34dc797bae72957a03799ffd69eea0e",
+  "reference_sha256": "c8094f58dd0d76bcf4a013e6d7bb8b6febd3646999e7b568c8c7552a60434cb0",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "3c33fd303b3d875b4c83af049f6997e7d8cf7a84c75daa74e349d4744dd0aa3a",
+  "primary_route": "Activity-defined DG population manipulated during acquisition; subsequent no-light context-specific behavior, physiological recruitment and contingency controls.",
+  "complete_final_answer_read": true,
+  "word_count": 2024,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer verification of original tagging, optical activation and behavioral Methods/supplements or validated protocols."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "dox washout to re\u2011enable TRE control",
+      "evidence_type": "exact_quote",
+      "reason": "The timeline says doxycycline washout ensures no new tagging, whereas c-fos-tTA/TRE is suppressed by doxycycline and enabled after its removal. The main tagging paragraph correctly restores doxycycline; this contradictory timeline instruction requires correction. Primary source: https://www.its.caltech.edu/~jkenny/nb250c/papers/Liu-2012.pdf ."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "train duration matched to shock epochs",
+      "evidence_type": "exact_quote",
+      "reason": "No executable expression/delivery interval validation, count/duration of acquisition pairings or operational unpaired separation is specified. Optical and shock examples alone do not complete the intervention schedule."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Physiology, anatomy and blinded scoring validation are planned, but objective measurement-calibration acceptance criteria or a procedure deriving them, including scorer agreement/dynamic range and failure action, are not operationally specified."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "% time freezing",
+      "evidence_type": "exact_quote",
+      "reason": "A minimum bout is proposed, but test duration/primary time denominator and movement-threshold calibration-to-choice or missing-frame rules remain unspecified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Minimum retained n per group",
+      "evidence_type": "exact_quote",
+      "reason": "Technical exclusions are blinded, but there is no full assigned-animal sensitivity analysis, missing-outcome policy and maximum replacement/stopping rule retaining all denominators."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The primary interaction/contrasts are identified, but the bounded-outcome model/interval method and multiplicity procedure remain future choices rather than an operational inferential specification."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent pilots and a subsequent lock are proposed, but the power/labeling/physiological parameter exploration lacks a complete bounded search and objective selection/stop rule."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit failure-triggered revision specifies what remains fixed, refreezes the changed procedure and obtains fresh independent confirmation after troubleshooting."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the conditioned element was the **stimulus/photostimulation**",
+      "evidence_type": "exact_quote",
+      "reason": "Light-only expression after training does not uniquely identify conditioning to photostimulation; incomplete natural-context recruitment or state-dependent retrieval can also explain it. The supportive rule should explicitly require the measured A-versus-D specificity, not merely paired/A versus between-group controls."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete animal/construct/batch-to-raw-video/event/physiology/histology manifest with actual delivery records and analysis versions/settings sufficient for reconstruction."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "The core neutral A tagging, reactivation-shock pairing elsewhere and later no-light A/novel-context tests implement the historical direction. Inactive, unpaired, shock-only and window controls, physiology, randomization and counterbalanced tests are valuable. The contradictory doxycycline timeline and overidentified negative branch need correction; quantitative execution and audit gaps remain.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "All five are present in the clearly stated primary route: neutral A representation as a conditionable stimulus; new association rather than acute output; neutral A tagging followed by pairing in C; no-light natural A plus novel D and unpaired/inactive controls; context-A-specific learned freezing predicted explicitly. The main paragraph restores doxycycline and calls for a closed window, so the later washout wording error is deducted under G1 without pretending the intended route is fear-tagging or erasing all matching components. Round-one hit retained.",
+  "item_score": 76.0
+}

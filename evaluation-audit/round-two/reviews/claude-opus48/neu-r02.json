@@ -1,0 +1,241 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "neu-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:26:09.595576+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e1459fb8c6bd46cc83c8162c5a10f42e27833d9fe4c52c685fab45e28bcebc95",
+  "question_sha256": "59d29b23d93b7785f7e6965d9a23209f90e316836b9f4e9371b8b3a9f7e1c560",
+  "reference_sha256": "1206c206c57094dab8fe0b44054d81cf50a998470190499bd71d53a3d2d1ae0c",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "3ed43f5b59df5e8c5da537eb5691e3bc5e4f7337aae81e507fefe4d189000c9c",
+  "primary_route": "Developmental monocular/bilateral/dark-rearing and reverse-occlusion factorial proposal.",
+  "complete_final_answer_read": true,
+  "word_count": 2399,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core exposure duration/intensity, stimulus timing and cortical acquisition/response settings remain a list to select later, without executable quantitative settings or a sufficiently specified calibration-to-setting procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Optical/stimulus and response calibration is named, but quantitative acceptance-to-action thresholds or a concrete derivation of tolerances for eye isolation, delivered contrast and mapping reliability are absent."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Contrasts and clustering are recognized, but the actual response/distribution model, assumption diagnostics and specified multiplicity policy remain incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Age, exposure dose and stimulus-parameter exploration has no bounded candidate grid or objective range-selection/search-stop rule before locking."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly connect technical changes to a revised frozen procedure and fresh independent confirmation; ordinary initial pilot separation is insufficient."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-animal/unit-to-output manifest with calibration records, exact analysis versions/settings and all exclusions/deviations is specified."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "it must appear here",
+      "evidence_type": "exact_quote",
+      "reason": "The experimental MD effect is declared its own positive control and absence mandates halting, making the hypothesis unfalsifiable under the stated protocol. There is also no operational upstream functional comparator or sham delivery control."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "contralateral/ipsilateral bias index",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative dominance estimator, weak-response threshold or deprived-eye alignment rule is given despite randomizing eye side; named indices alone are not executable measurement definitions."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "light-response check",
+      "evidence_type": "exact_quote",
+      "reason": "Pupillary/light-response checks do not independently validate matched retinal/thalamic patterned input. No independent confirmation cohort or operational orthogonal cortical validation is specified."
+    },
+    {
+      "id": "G4",
+      "state": "unmet",
+      "points": 5,
+      "quote": "presence/absence of a critical period",
+      "evidence_type": "exact_quote",
+      "reason": "Age dependence does not distinguish instruction from permissive maintenance, and the maintenance hypothesis is assigned no-deprivation-effect predictions without justification. The mechanism discriminator is not identifying."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "bounded **critical period**",
+      "evidence_type": "exact_quote",
+      "reason": "Two onset categories cannot establish a bounded critical-period curve; dark-reared-versus-normal endpoint differences alone do not measure prolonged plasticity. The final claims exceed the measured contrasts."
+    },
+    {
+      "id": "M",
+      "state": "met",
+      "points": 0,
+      "quote": "anchored to approved protocols and prior literature before execution",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly requires prior protocols/literature to anchor presently unknown species/timing/settings before execution. This prospective technical-source commitment is credited without requiring actual browsing."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "proposal, not a result",
+      "evidence_type": "exact_quote",
+      "reason": "Useful developmental causal question with a model feasibility/welfare prerequisite and accurate proposal labels. Distinct causal/model errors are accounted for separately."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "power",
+      "evidence_type": "exact_quote",
+      "reason": "An independent pilot and meaningful large-shift target lead to >=80% power, with litter/eye randomization, coded or automated scoring and balanced recording days. Troubleshooting links occlusion, anesthesia and sampling to repairs."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "power",
+      "evidence_type": "exact_quote",
+      "reason": "An independent pilot and meaningful large-shift target lead to >=80% power, with litter/eye randomization, coded or automated scoring and balanced recording days. Troubleshooting links occlusion, anesthesia and sampling to repairs."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "power",
+      "evidence_type": "exact_quote",
+      "reason": "An independent pilot and meaningful large-shift target lead to >=80% power, with litter/eye randomization, coded or automated scoring and balanced recording days. Troubleshooting links occlusion, anesthesia and sampling to repairs."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 0,
+      "quote": "if the **positive control G2 shows no detectable shift**",
+      "evidence_type": "exact_quote",
+      "reason": "Outcome-dependent validity stop is the same circular-control defect already charged at C; do not charge twice.",
+      "covered_by": "C"
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 0,
+      "quote": "instructs",
+      "evidence_type": "exact_quote",
+      "reason": "The mechanistic decision overidentifies instruction from age/deprivation contrasts; this is the G4 defect, not a second deduction.",
+      "covered_by": "G4"
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Includes replication and prospective source checking, but a circular positive-control gate and overidentification of developmental mechanisms invalidate the strongest conclusions.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, mechanism and unilateral manipulation match. The core MD treatment is treated as a mandatory positive control, missing upstream/sham safeguards and unaligned dominance scoring prevent the required unbiased readout; the resulting historical inference is not qualified.",
+  "item_score": 16.0
+}

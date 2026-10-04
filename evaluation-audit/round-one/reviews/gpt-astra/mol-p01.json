@@ -1,0 +1,39 @@
+{
+  "item_id": "mol-p01",
+  "model_code": "gpt-astra",
+  "response_id": "mol-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.922365+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "231047a66990d55328416c3dcceef04eb94c324c6183763905b62a8dd5ed6f38",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Precisely separates the three metadata conflicts from the two unsupported biological inferences. It does not invent control outcomes, distinguishes not supplied from never performed, respects the dossier-only identifiers, and describes checks capable of changing the concern without equating an in-vitro result with direct contact inside cells.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Dossier-only identifiers cannot be authenticated by finding or failing to find similarly named real publications. Underlying dossier documents and curation records can resolve the mismatch.",
+    "A complete registry entry establishes its recorded fields, not that its mapping is necessarily correct. An error is not proof of intent.",
+    "Included controls are not reported successful control outcomes. Grade the principal co-IP conclusion while recording any unreported-result assertion.",
+    "Not supplied does not mean never performed. Untested does not mean false.",
+    "Purified binding and endogenous co-IP address complementary questions; their combination is strong support but not automatically proof of direct contact in an unmodified cell.",
+    "Negative assays require sensitivity, reagent competence and relevant conditions. Depleting a bridge can disturb localization or stability even when A and B also bind directly.",
+    "The reference suggestion that all direct binding must survive bridge disruption is overstrong. Do not require it.",
+    "No misconduct probability can be inferred by treating author, title and year mismatches as three independent random errors."
+  ],
+  "overall_benchmark_score": null
+}

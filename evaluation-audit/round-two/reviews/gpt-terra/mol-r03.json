@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "mol-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:45:48.861840+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "5145191025d3e7b8f48aa690871b309e7c3b48e33d3b4ee95a6c65f5b908ea41",
+  "question_sha256": "bf00c28a6e92add5751c281d77d4c3490535449c784810d44640a95c1cb7f695",
+  "reference_sha256": "691bdf29d87b44088c4c14b684a72ae289dd778c52bb1d20cc108695c93a7735",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "d59b79159285d6bd83ae0b03ecc6d242bcc07e445ce0790080cf83f2fc26d0c8",
+  "primary_route": "Direct permeability reconstitution, conductance/single-vesicle corroboration and a cellular abundance/cleavage bridge; conditional cofactor discovery.",
+  "complete_final_answer_read": true,
+  "word_count": 3923,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of prior primary Methods, supplements or validated protocols; local validation and acknowledging absent packet methods do not by themselves satisfy this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core protein preparation/cleavage and lipid formulation/buffer conditions remain unresolved lists rather than a quantitative preparation-to-intervention workflow or a concrete source/calibration-to-setting procedure. Proposed protein concentration series alone does not specify the essential reconstitution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "calibrated method",
+      "evidence_type": "exact_quote",
+      "reason": "Calibration lists measurements but gives no fluorescence-interference recovery or quantitative acceptance-to-action rule for the central leak/electrical assays."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparations and a pilot are recognized, but no quantitative power/precision target with an effect/variance-to-sample-size decision is supplied; a proposed three/six-preparation floor is not a justified confirmatory sample size."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "substantial aggregation",
+      "evidence_type": "exact_quote",
+      "reason": "Technical stops are qualitative and no registered attrition/denominator or bounded confirmatory stopping policy retains every originally assigned preparation."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The main contrast and model are named, but model assumptions/diagnostics and a fully specified uncertainty/multiplicity procedure for the panel are incomplete. Naming a mixed model is not sufficient execution detail."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A concentration/lipid/time range is proposed without a bounded ladder or concrete derivation of bounds, an objective selection criterion and a lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly delimit permitted changes, refreeze the revised procedure and require fresh independent confirmation after such changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "A cofactor should be called a required executioner only if",
+      "evidence_type": "exact_quote",
+      "reason": "Rescue of biochemical activity plus cellular necessity and preserved cleavage establishes a required cofactor, not that the cofactor itself executes membrane injury. A regulator of GSDMD meets all these listed conditions. Later caution does not supply the missing executor-versus-enabler experiment."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-unit-to-output audit trail with sample identifiers, exact analysis versions/settings and preserved failed/excluded runs is specified."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "not a membrane mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "The primary direct-permeability question and competing indirect/artifact hypotheses are valuable. Identity/cleavage verification, fragment/caspase/buffer controls and quantitative abundance matching are prospectively specified. Main conclusions remain limited to tested permeability rather than precise pore architecture; the separate cofactor decision error is charged only at P13."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "fractional leakage",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized fluorescence relative to matched baseline/full lysis, confidence bounds, independent preparation hierarchy and coded randomized runs define a quantitative primary measurement. Diagnostic failure table and current/individual-vesicle readouts operationally corroborate leakage; cellular comparisons check expression and cleavage."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "fractional leakage",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized fluorescence relative to matched baseline/full lysis, confidence bounds, independent preparation hierarchy and coded randomized runs define a quantitative primary measurement. Diagnostic failure table and current/individual-vesicle readouts operationally corroborate leakage; cellular comparisons check expression and cleavage."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "fractional leakage",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized fluorescence relative to matched baseline/full lysis, confidence bounds, independent preparation hierarchy and coded randomized runs define a quantitative primary measurement. Diagnostic failure table and current/individual-vesicle readouts operationally corroborate leakage; cellular comparisons check expression and cleavage."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "fractional leakage",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized fluorescence relative to matched baseline/full lysis, confidence bounds, independent preparation hierarchy and coded randomized runs define a quantitative primary measurement. Diagnostic failure table and current/individual-vesicle readouts operationally corroborate leakage; cellular comparisons check expression and cleavage."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Useful controlled direct-permeability study, but no pore-versus-rupture decision and an overly strong cofactor-executor decision. Several execution and audit requirements remain generic.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question and direct membrane mechanism and purified-fragment intervention align. Readouts establish leakage, membrane injury and generic conductance, explicitly leaving physical lesion architecture unresolved; there is no operational combined pore-versus-nonspecific-rupture decision or corresponding pore-specific prediction. This earns scientific credit for a valid precursor study, not a qualified full pore-discovery hit.",
+  "item_score": 18.0
+}

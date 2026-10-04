@@ -1,0 +1,134 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "bio-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:52:29.107330+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "512abd74ea900309fb214592f13b192aaccb4a5c19fb0fa0c105c5367bfdac7e",
+  "question_sha256": "494a90589de0a7f4835680716ae80a42c1929cd13afd3bd9c839808308015233",
+  "reference_sha256": "94437d80cb0bd66150414ab8fcca44209be263aa582a49077ce2d28ee89007e4",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "1505dbc1023effd3745f6d4fcbd69f3518671443ab15f65ed96d2852fa1473c8",
+  "primary_route": "Source authentication and defined peptide-transfer validation with cellular energy/viability and selectivity comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 1559,
+  "first_round_scientific_quality": 90.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "known ribosomal peptide-bond-formation inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Positive inhibition/vehicle or inactive-compound comparisons are specified prospectively with roles testing functional assay response and background; these are sufficient biological/procedural controls at essay scope, distinct from missing measurement calibration."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior experimental Methods/supplements or validated protocols and check condition transfer before executing follow-up assays. Bibliographic authentication does not meet this distinct requirement."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No product-reference/blank recovery or dynamic-range calibration with an acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The proposed measurement lacks a complete quantitative endpoint with units/denominator, background and weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Failure to inhibit would substantially weaken",
+      "evidence_type": "exact_quote",
+      "reason": "Positive and negative outcomes are bounded; noninhibition weakens rather than universally disproves the direct claim, and inhibition does not establish selectivity or physical PTC localization."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "An explicitly factor-independent reaction with vehicle/known inhibitor and separate cellular time-course/selectivity comparisons tests the upstream-factor alternative; explicitly preserves target-mapping uncertainty. Meets essay validation scope."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "factor-independent puromycin reaction",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 20,
+  "quality_score": 80,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Mechanism and source remain appropriately provisional, with a more interpretable minimal-reaction check. The 1559 whitespace count includes formatting and is not a material 1500-word violation.",
+  "item_score": 80
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "deepseek",
+  "item_id": "mol-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:50:04.392140+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "6b62831c6edceb0ce236390f29e0ca0b1bbbee2bcb35cb71e1aaab2c85fb09d2",
+  "question_sha256": "8336e3f569f2c33ebe28b768216257dbd3c1094d4c46554acf1fa9d413a8c468",
+  "reference_sha256": "d4a8671d7ff96e0b1d48dfdcc75a37a350fb817d4d06c1a19ca7b52d6c70b6ef",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "9276dc2b2466fda9d0f1160460914b3743de5ccd39710eb1e7b6b251c79240b9",
+  "primary_route": "Source-identity audit and endogenous association plus purified/direct-contact validation.",
+  "complete_final_answer_read": true,
+  "word_count": 1005,
+  "first_round_scientific_quality": 67.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "tag-only",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective endogenous IgG and target-loss controls plus purified tag-only/nonspecific comparisons have identifiable roles, beyond the explanation of existing input/IgG controls."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Inspection of source identity or omitted results is not a plan to consult detailed Methods/validated protocols and verify transfer of conditions before the proposed new validation experiment."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No measurement-reference/blank calibration, acceptance criterion and action after failed calibration for the proposed binding/association check."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative association/binding endpoint with normalization or denominator, background and weak/saturated/missing-signal handling."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If they are negative, the claim is disproven.",
+      "evidence_type": "exact_quote",
+      "reason": "Categorical disproof from negative binding/association lacks successful assay/function and sensitivity conditions; a negative result may reflect technical failure."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "Names purified SPR/ITC with tag/nonspecific comparisons and distinguishes the remaining in-cell direct-contact requirement from combined native association and cell-free capability. Sufficient operational independence at essay scope."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Strict in-cell directness",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 25,
+  "quality_score": 75,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Well grounded and explicit about remaining in-cell directness, with one overstrong negative-result decision.",
+  "item_score": 75
+}

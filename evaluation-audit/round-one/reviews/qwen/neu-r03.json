@@ -1,0 +1,113 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "qwen",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:27:21.428228+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "a94fb404c93ab73d691b5ae3a4c22ed91603200c11277ee2ddd99a3e71b2d105",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 61.25,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "Reward magnitude should not vary with probability",
+      "issue": "Keeping magnitude fixed is appropriate for the primary series, but it couples probability to mean reward. Add complementary matched-value distributions and calibrated magnitude manipulations instead of treating all magnitude variation as a confound to avoid."
+    },
+    {
+      "quote": "quadratic probability or entropy model outperforms linear probability",
+      "issue": "This supports a nonmonotonic anticipatory correlate, not unique uncertainty rather than nonlinear value/salience. The candidate notes arousal limits, but lacks a value-matched challenge and sufficiently explicit alternative-model identification."
+    },
+    {
+      "quote": "omit reward at the expected time",
+      "issue": "Additional omissions and rewards at nominal probability zero change experienced probabilities, particularly the certainty anchors. Separate probe blocks or model the actual scheduled conditional contingencies and relearning."
+    },
+    {
+      "quote": "depression relative to expected reward",
+      "issue": "Reduced firing relative to reward activation is not the defining negative response. Demonstrate suppression relative to the appropriate pre-outcome baseline, with timing and floor controls."
+    },
+    {
+      "quote": "continue until the predefined power target is reached",
+      "issue": "Specify a fixed sample derived prospectively, a blinded variance update, or a calibrated sequential design. Repeated observed-effect power checks can cause optional stopping bias."
+    },
+    {
+      "quote": "Probability effects vanish after behavioral covariates: supports motor/arousal confound.",
+      "issue": "Behavior may mediate the neural effect and correlated regressors can absorb it. Report adjusted and unadjusted models and identifiability; disappearance is not decisive proof of confounding."
+    },
+    {
+      "quote": "The specific preparation is an unreported parameter",
+      "issue": "Model, region, identity/recording implementation and concrete working settings are unselected. Optical kinetics can leak cue transients into delay activity and need explicit impulse-response calibration; approval/welfare procedures are also not fully specified."
+    },
+    {
+      "quote": "",
+      "issue": "Full answer contains 5475 words, exceeding the 5000-word limit."
+    }
+  ],
+  "rationale": "Core historical direction qualifies: explicit value versus uncertainty alternatives, full probability grid, separated epochs and intermediate maximum with behavioral and cue controls. Matched-value identification, probe contingency, negative-response baseline and execution details have material gaps. These reduce quality without adding a new binary requirement beyond the reference core.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "independently of event-triggered prediction errors",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Expected value / probability maintenance",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "P50:",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Waiting-period activity",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Activity should be highest at intermediate probabilities",
+      "assessment": "Substantive target component present; see separate quality limitations."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

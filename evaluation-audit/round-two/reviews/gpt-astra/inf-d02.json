@@ -1,0 +1,238 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "inf-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:02:17.230801+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9bcd58f9122295ee3e5ab9c6171e2f8443aa49bdc9670d517d04dd4ac1649c4b",
+  "question_sha256": "122b241adf77142ecf3caf672be24312c4394332738d1101387cacbc816a0746",
+  "reference_sha256": "528edd1fac3b3ef20cda836348178f2de01ee2d3cf73221ce429b8146fbb35e5",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6fdd34c9b1c249f4ee539cb88b0f4afad1eca96558a3a32d6b11a30fc49e60be",
+  "primary_route": "Proposed fixed-design bulk RNA-seq negative-binomial treatment-minus-control inference at independent allocation level, with immutable workflow and source-difference audit; no executed data or predictive training task.",
+  "complete_final_answer_read": true,
+  "word_count": 2616,
+  "first_round_scientific_quality": 95.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original RNA-seq Methods, supplements and release-specific validated tool/import protocols to select and verify transferable settings. Future source comparison or recording chosen settings is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "normalization method would be named and frozen",
+      "evidence_type": "exact_quote",
+      "reason": "The normalization and low-count eligibility procedure are deferred rather than operationally chosen. Recording settings later is not a concrete calibration-to-choice rule. Unknown version/path/numeric placeholders themselves are not penalized."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "platform/process performance and blinded pilot distributions",
+      "evidence_type": "exact_quote",
+      "reason": "No objective reference/control accuracy or false-rejection criterion maps the pilot distribution to assay acceptance. The required calibration is named, not operationalized."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "compare defensible normalization, filtering, or exclusion choices",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded set/range of alternatives or procedure deriving bounds and stopping before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Revisions and adapted pilot reuse are logged, but changes following failed/ambiguous analysis lack explicit refreezing and fresh independent confirmation."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational orthogonal assay, independently specified alternative quantification/inference comparison or independent biological confirmation. Generic sensitivity choices and deterministic reruns do not supply independent validation."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Clean reruns, companion tables and tolerances are proposed, but runtime/memory/resource and failed-step recording are not explicitly specified as part of the computational verification contract."
+    },
+    {
+      "id": "P16",
+      "state": "not_applicable",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Primary route is prospectively specified count-contrast inference, not prediction or feature-selection performance assessment. Its blinded pilot/calibration and frozen confirmatory specification are described; predictive train/test leakage is not an additional deduction. Independent/orthogonal confirmation is assessed separately under P14."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "## Proposed recommendation and scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong allocation-unit reasoning, explicit donor-constant versus crossed design distinction, NB mean-variance model, Wald/BH contrast and careful separation of shrinkage from testing. Immutable provenance, hidden-state controls, numeric/semantic audit and conditional conclusions are well designed. Remaining deductions concern executable calibration, sensitivity/confirmation and resource verification.",
+  "item_score": 60
+}

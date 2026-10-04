@@ -1,0 +1,239 @@
+{
+  "model_code": "glm",
+  "item_id": "bio-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:14:47.816922+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "df0cad3d29d42f3b7abf05b196e839784a382586be1ce3b644f58c1998b3fd02",
+  "question_sha256": "1a2f38bc4a291e966598faece6d609fa8591d54539f53a2f49f3a56c3116856b",
+  "reference_sha256": "8282d415ac922ab3df37704b68f9314a3cf0a493392b6b5995af7ead2893d7e3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "d378929ce530c418f8fbf569d359396a286efcedfc60e48f3504c4382072e815",
+  "primary_route": "ATP/marker-size angular periodicity and inhibitor/product perturbations; torque consistency without work/free-energy or direct turnover counting.",
+  "complete_final_answer_read": true,
+  "word_count": 2491,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult/check prior primary Methods or a validated protocol for detailed pre-execution conditions and transfer. Recording unknown settings and developing an assay locally do not satisfy this distinct requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core immobilization/shaft attachment, solution chemistry (including nucleotide/free-magnesium conditions), recording settings and load manipulation lack an executable quantitative workflow or a concrete calibration-to-setting procedure. Lists of parameters to select later are insufficient."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent-preparation/chamber/molecule hierarchy is present, but the sample-size pilot does not specify a quantitative precision/power target linked to meaningful effect and between-preparation variance."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "exhibiting sustained ATP-driven motion",
+      "evidence_type": "exact_quote",
+      "reason": "Eligibility requires sustained motion and no original inactive/irregular denominator is retained; aborting a coverslip with >30% exclusions can remove biological load-dependent failure."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary estimands and hierarchical/held-out comparisons are present, but exact model assumptions/diagnostics and multiplicity control for the several primary load/coupling/event tests are incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Rayleigh-type periodicity test at 120",
+      "evidence_type": "exact_quote",
+      "reason": "Pooling angle occupancy and testing only prespecified 120/40-degree periodicities does not distinguish actual steps from smooth angle-dependent velocity or orientation artifacts. The second detector is useful but no full continuous-motion null validates this decision."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "ATP/load/acquisition optimization is not bounded by an explicit ladder or objective range-derivation/search-stop rule before the lock. A promise to select a spanning range from pilots is not a fully specified exploration policy."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot separation and troubleshooting are described, but technical changes do not explicitly trigger a revised freeze and fresh independent confirmatory data under a defined change-control policy."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "establishing a 1:1 mechanistic linkage",
+      "evidence_type": "exact_quote",
+      "reason": "ATP-dependent waiting plus analog arrest does not count one binding event per mechanical step. The positive claim asserts this linkage while its own caveat concedes chemical counting is absent."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preserved raw-unit-to-output manifest with exact analysis versions/settings, calibration records and failed/excluded-unit logs is specified."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 15,
+      "quote": "mean decreases linearly with [ATP]",
+      "evidence_type": "exact_quote",
+      "reason": "Three independent substantive errors: (1) binding-limited mean waiting time is inverse, not linear decreasing, in ATP (the later inverse statement does not resolve the contradictory prediction); (2) an 80+40-degree split produces alternating 80/40 intervals, not uniformly 40-degree-spaced occupancy peaks; (3) fixed-torque rate is inversely drag-limited at high drag and plateaus from chemistry at low drag, contrary to the stated inverse-until-drag-limited-plateau logic."
+    },
+    {
+      "id": "G4",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Brownian-ratchet/smooth",
+      "evidence_type": "exact_quote",
+      "reason": "A Brownian ratchet is not identified by continuous occupancy or absence of dwells; ratchets can generate tightly coupled discrete steps. The primary mechanism partition needs a physical kinetic discriminator beyond smooth-versus-stepped traces."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Because three catalytic sites act sequentially",
+      "evidence_type": "exact_quote",
+      "reason": "Three sequential catalytic sites are asserted as a packet-licensed inference despite not being supplied. They may motivate an explicitly external hypothesis, not establish the starting mechanistic fact."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Stator-side handle control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful historical mechanics question and prospective stator/marker-only, ATP/analog/inhibitor controls with a plausible defined attachment system. Other mechanistic errors are charged once at their specific criteria."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Stator-side handle control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful historical mechanics question and prospective stator/marker-only, ATP/analog/inhibitor controls with a plausible defined attachment system. Other mechanistic errors are charged once at their specific criteria."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Stator-side handle control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful historical mechanics question and prospective stator/marker-only, ATP/analog/inhibitor controls with a plausible defined attachment system. Other mechanistic errors are charged once at their specific criteria."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Stator-side handle control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful historical mechanics question and prospective stator/marker-only, ATP/analog/inhibitor controls with a plausible defined attachment system. Other mechanistic errors are charged once at their specific criteria."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Stator-side handle control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful historical mechanics question and prospective stator/marker-only, ATP/analog/inhibitor controls with a plausible defined attachment system. Other mechanistic errors are charged once at their specific criteria."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Stator-side handle control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful historical mechanics question and prospective stator/marker-only, ATP/analog/inhibitor controls with a plausible defined attachment system. Other mechanistic errors are charged once at their specific criteria."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Stator-side handle control",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful historical mechanics question and prospective stator/marker-only, ATP/analog/inhibitor controls with a plausible defined attachment system. Other mechanistic errors are charged once at their specific criteria."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "target \u22641",
+      "evidence_type": "exact_quote",
+      "reason": "Known angular standard and 1-2-degree/1-ms targets, per-molecule angle/dwell/rate endpoints, randomized interleaved coded acquisition, failure-specific corrective checks, independent preparations and distinct optical marker modes provide useful calibration and corroboration despite the flawed primary periodicity inference."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "target \u22641",
+      "evidence_type": "exact_quote",
+      "reason": "Known angular standard and 1-2-degree/1-ms targets, per-molecule angle/dwell/rate endpoints, randomized interleaved coded acquisition, failure-specific corrective checks, independent preparations and distinct optical marker modes provide useful calibration and corroboration despite the flawed primary periodicity inference."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "target \u22641",
+      "evidence_type": "exact_quote",
+      "reason": "Known angular standard and 1-2-degree/1-ms targets, per-molecule angle/dwell/rate endpoints, randomized interleaved coded acquisition, failure-specific corrective checks, independent preparations and distinct optical marker modes provide useful calibration and corroboration despite the flawed primary periodicity inference."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "target \u22641",
+      "evidence_type": "exact_quote",
+      "reason": "Known angular standard and 1-2-degree/1-ms targets, per-molecule angle/dwell/rate endpoints, randomized interleaved coded acquisition, failure-specific corrective checks, independent preparations and distinct optical marker modes provide useful calibration and corroboration despite the flawed primary periodicity inference."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "target \u22641",
+      "evidence_type": "exact_quote",
+      "reason": "Known angular standard and 1-2-degree/1-ms targets, per-molecule angle/dwell/rate endpoints, randomized interleaved coded acquisition, failure-specific corrective checks, independent preparations and distinct optical marker modes provide useful calibration and corroboration despite the flawed primary periodicity inference."
+    }
+  ],
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Relevant proposed experiment but several explicit kinetic/angle/load predictions are wrong, and direct event linkage is inferred too strongly. Energetics remain outside the actual measurement plan.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Step/coupling question and ATP/load manipulation match. No actual chemical-free-energy comparison is made; angular periodicity and rate dependencies also cannot establish the asserted 1:1 nucleotide event. Joint historical energetic readout and qualified prediction are missing.",
+  "item_score": 8.0
+}

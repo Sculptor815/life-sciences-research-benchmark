@@ -1,0 +1,103 @@
+{
+  "item_id": "mol-r02",
+  "response_id": "mol-r02",
+  "model_code": "glm",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:44:47.175115+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "99da38279fd27104a318c8b6169b12a68d4a3518de0d5f97801a5a8d8cee4e47",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Its exact implementation would need pilot validation.",
+      "issue": "The main repair-rate perturbation, physical lesion assay and imposed-delay mechanism remain unspecified. Calibration of unknown settings is appropriate, but the requested detailed plan needs concrete proposed tools and their implementation constraints."
+    },
+    {
+      "quote": "Use time-to-event models for division timing.",
+      "issue": "Specify handling of death as a competing event, living nondivision as censoring, and informative tracking loss. Merely measuring survival separately does not make division-time estimates among remaining cells unbiased."
+    },
+    {
+      "quote": "If time predicts division better than residual damage, a timer is supported.",
+      "issue": "Prediction can favor time because the damage assay misses the signaling lesion or is noisier. Require independently validated causal perturbations and a bounded null/equivalence result before supporting a timer over repair control."
+    },
+    {
+      "quote": "Stop and repeat if:",
+      "issue": "The subsequent list includes inconsistent cultures attributed to batch and low damage measurements. Distinguish independent technical failures from real biological variability/repair-to-baseline; do not replace unfavorable biological outcomes until a consistent result appears."
+    }
+  ],
+  "rationale": "A useful alternative question with a factorial time/repair design, separate repair readout, genotype rescue, blinding and explicit confounding limits. Central assays remain too abstract, and death handling and decision criteria need further specification. No synthesis-dependence historical match.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Exact packet and full frozen reference read, including sealed target. Original rubric only; stricter requested penalties inactive. Alternative scientifically valuable research questions receive full quality consideration independently of retrospective match.",
+    "Sealed target requires a synthesis-versus-existing-protein switching question, verified synthesis perturbation, separate initiation/recovery and conditional predictions. General checkpoint on/off discussion or conditional RAD9 removal alone is not a joint match.",
+    "Packet permits repair during externally imposed delay; it does not prove all repair, fidelity or survival is restored or that RAD9 has no repair-related role.",
+    "New detailed tools may be proposed without claiming author methods. Calibrate unknown doses and windows; unsupported precision and unselected central tools are different limitations.",
+    "Physical lesion measurements, checkpoint state, actual division, survival and protein abundance are distinct readouts. Budding, foci or CFU cannot silently substitute for all of them.",
+    "Track original cohorts, damage dilution/selection and death as competing events. End-of-window living nondivision is censoring, not proof of permanent arrest.",
+    "Do not reject confirmatory outcomes merely because expected genotype effects fail. Restrict exclusions to independently verified technical failures.",
+    "Conditional switch nulls require validated function and kinetics. Repair manipulation may affect signaling directly; correlated lesion decline alone does not establish a causal sensed species.",
+    "Donorless HO breaks can undergo end joining; nuclease recutting, chromosome loss and surviving lineages require verification. Population measurements do not establish per-cell persistence.",
+    "Historical primary abstract and metadata verified, full original Methods not audited. Review is unblinded single-Codex assessment, not independent expert certification."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2247073/",
+      "scope": "Primary abstract and publication metadata personally read; verifies sealed 1990 target, not full historical methods."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8628283/",
+      "scope": "Indexed primary abstract excerpt verifies HO-break end joining; no full Methods audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "what signal terminates the RAD9-dependent DNA-damage division delay",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "what signal terminates the RAD9-dependent DNA-damage division delay",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "what signal terminates the RAD9-dependent DNA-damage division delay",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "what signal terminates the RAD9-dependent DNA-damage division delay",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "what signal terminates the RAD9-dependent DNA-damage division delay",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

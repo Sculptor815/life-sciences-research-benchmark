@@ -1,0 +1,44 @@
+{
+  "item_id": "bio-p01",
+  "model_code": "kimi",
+  "response_id": "bio-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:38:07.607687+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "38a12be6b7c80e196a0c1c4be45c4c3b9f9e347b6a916840414d9954de1cf87d",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 96.25,
+  "reasoning_index": 93.75,
+  "errors": [
+    {
+      "quote": "no direct or selectivity experiment has been performed.",
+      "issue": "The packet states none is available, not that none was ever performed. Keep the statement bounded to supplied evidence."
+    }
+  ],
+  "rationale": "Strong separation of causal direction, labeling artifacts and bibliographic uncertainty. The proposed assay controls coupled components and conditions, bounds the negative result to parent Q under tested conditions, and explicitly retains metabolites as an alternative. Minor evidence-provenance overstatement only.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The reported endpoint is puromycin incorporation. Do not require candidates to assert independently established protein synthesis suppression.",
+    "Concurrent 50% ATP and 60% incorporation reductions do not establish causal order or a quantitative transfer function. ATP amount is not adenylate energy charge.",
+    "A full cell-free translation assay can be inhibited outside the peptide-transfer reaction. Isolate the reaction or separately control charging, factors and regeneration.",
+    "A negative assay constrains its tested species, chemical form and conditions. It is not a universal refutation; positive controls alone do not cover every context mismatch.",
+    "Biochemical direct action and the cause of a cellular phenotype are distinct. ATP rescue or early timing alone does not exclude mixed mechanisms.",
+    "Selectivity requires a defined comparison scope. Cross-species ribosome activity need not contradict selectivity for peptide transfer over unrelated targets.",
+    "No DOI supplied is not no DOI exists. No recorded notice is not proof of reliability. Existence, provenance, editorial status and scientific support remain separate.",
+    "The reference suggestions about ATP matching and complete cell-free negatives are prospective checks, not uniquely identifying interventions."
+  ],
+  "overall_benchmark_score": null
+}

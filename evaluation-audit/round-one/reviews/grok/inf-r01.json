@@ -1,0 +1,99 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "grok",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:49:49.037440+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "9a655e90f5f5992133ec2ae6d3b77145c1aa5d9cad03e5c26c203cfb27870f26",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "It does not name software, prior variance, prior mean, degrees of freedom, normalization, or filters. Those are unreported parameters.",
+      "issue": "Missing packet details should not be fabricated as observations, but the task asks for a proposed method. Choose and label a likelihood, normalization, scale-fitting algorithm and posterior computation; deferring them all leaves a non-executable protocol."
+    },
+    {
+      "quote": "Proposed generative settings, to be fully specified before any fit:",
+      "issue": "The simulation scenarios lack the explicit generating distributions, parameter grid, repetition/Monte Carlo stopping rules and numerical failure handling needed for the requested detailed research protocol."
+    },
+    {
+      "quote": "median absolute error of shrunk versus unshrunk estimates within information strata",
+      "issue": "Useful point-error metrics are specified, but posterior interval/sign-probability calibration is absent. Standard error used as an information stratum is not itself a test that uncertainty or strong-effect claims are calibrated."
+    },
+    {
+      "quote": "Treat that reference as a lower-noise proxy, not as absolute truth.",
+      "issue": "This is appropriately cautious, and the reference uses separate samples. The operational comparison should still specify how its uncertainty and reference-based strong-set selection enter error/attenuation estimates, rather than only labeling it a proxy."
+    }
+  ],
+  "rationale": "Strong restraint about biological claims, independent sample separation and confounding, with scientifically coherent conditional tests. However, the core count/prior algorithms and simulation execution choices are deferred, and uncertainty calibration remains incomplete. Good conceptual planning does not supply the later adaptive-tail intervention.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All four complete final answers in this file, the exact question/packet and full reference were personally read. The long Qwen answer was read in overlapping sections. No paid judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "including strong, high-information effects",
+      "assessment": "Matches the effect-recovery question."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "a wider or heavier-tailed prior fits the strong-effect stratum better",
+      "assessment": "Mechanistic rationale is present."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "a heavier-tailed prior is the relevant alternative",
+      "assessment": "Only a conditional future direction, not an adaptive prior specification or fitting method."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "sign agreement among strong high-information genes",
+      "assessment": "Point-error/sign-agreement readouts are present; calibrated posterior sign/interval uncertainty is not."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "an effect distribution close to the Normal prior hold",
+      "assessment": "Primary forecast retains the original Normal model rather than the historical replacement."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

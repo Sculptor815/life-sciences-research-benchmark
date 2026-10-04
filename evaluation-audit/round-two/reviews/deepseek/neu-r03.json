@@ -1,0 +1,239 @@
+{
+  "model_code": "deepseek",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:39:04.482425+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "a612c7c4de556eb169ebe998ef286ccb856ae06c1873f6073e8163ad1e916779",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6d067cea394c3e26b28c66c9e045bcbddce894788ee4c26755daddec9b869518",
+  "primary_route": "Matched-mean reward distributions with different amount variances, delay models and optional additional probabilities.",
+  "complete_final_answer_read": true,
+  "word_count": 2197,
+  "first_round_scientific_quality": 58.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dopamine identity must be independent of reward responses, but no actual anatomical/genetic/molecular recording-identification strategy or its validation route is selected. A list of possible criteria remains an unresolved core identity prerequisite."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timing, delivery, identity and stability checks lack numerical acceptance-to-action thresholds or a concrete derivation of tolerances before the main contrast."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal-level pilot variance and meaningful effect planning are present, but no numerical power or confidence-width target is specified for the confirmatory sample."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The hierarchical conceptual model does not specify a likelihood/dispersion decision with diagnostics and a concrete multiplicity procedure across the several primary comparisons."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Technical/training changes are not explicitly followed by a revised frozen analysis/protocol and fresh independent confirmation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-trial/unit manifest with exact analysis/acquisition versions/settings, calibration records and all technical/biological losses is specified."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Randomize block order",
+      "evidence_type": "exact_quote",
+      "reason": "Block order is randomized, but sensory cue identities are not counterbalanced across probability/value conditions and no independent learned-contingency criterion is defined. Reward/omission behavioral differences alone do not show cue probability learning."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "firing rate or calcium signal",
+      "evidence_type": "exact_quote",
+      "reason": "The primary activity measure, epoch durations/guard intervals, normalization and weak/missing signal handling remain unspecified alternatives."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "EV and variance will be collinear",
+      "evidence_type": "exact_quote",
+      "reason": "With fixed reward magnitude, EV=p*m and variance=p*(1-p)*m^2 are not globally linearly collinear across the probability range. The earlier correct statement that they are correlated but not identical contradicts this categorical later claim."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reclassify as motor/salience",
+      "evidence_type": "exact_quote",
+      "reason": "A vanished variance coefficient after behavioral adjustment does not identify motor/salience causation; behavior can be a mediator or share a driver."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "not by outcome variance",
+      "evidence_type": "exact_quote",
+      "reason": "The negative decision attributes activity to other causes or excludes variance without requiring an interval that rules out a meaningful variance effect. The more careful futility sentence does not repair this categorical outcome statement."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "ideally",
+      "evidence_type": "exact_quote",
+      "reason": "Across-trial decoder validation is specified; across-session/animal validation is only aspirational. No operational independent test of the generalizable variance claim is committed."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Var =",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value alternatives, correctly computed explicit matched-mean distributions and separation of delay versus event responses. The collinearity error is charged once at G1."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Var =",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value alternatives, correctly computed explicit matched-mean distributions and separation of delay versus event responses. The collinearity error is charged once at G1."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Var =",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value alternatives, correctly computed explicit matched-mean distributions and separation of delay versus event responses. The collinearity error is charged once at G1."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Var =",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value alternatives, correctly computed explicit matched-mean distributions and separation of delay versus event responses. The collinearity error is charged once at G1."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Var =",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value alternatives, correctly computed explicit matched-mean distributions and separation of delay versus event responses. The collinearity error is charged once at G1."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Var =",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value alternatives, correctly computed explicit matched-mean distributions and separation of delay versus event responses. The collinearity error is charged once at G1."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Var =",
+      "evidence_type": "exact_quote",
+      "reason": "Useful uncertainty/value alternatives, correctly computed explicit matched-mean distributions and separation of delay versus event responses. The collinearity error is charged once at G1."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Code condition labels",
+      "evidence_type": "exact_quote",
+      "reason": "Automated randomized block delivery, coded preprocessing, prespecified technical stopping and a bounded probability/magnitude condition set are supplied. Delivery, drift, identity and saturation faults have diagnostic responses; inferential overclaims are charged separately."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Code condition labels",
+      "evidence_type": "exact_quote",
+      "reason": "Automated randomized block delivery, coded preprocessing, prespecified technical stopping and a bounded probability/magnitude condition set are supplied. Delivery, drift, identity and saturation faults have diagnostic responses; inferential overclaims are charged separately."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "Code condition labels",
+      "evidence_type": "exact_quote",
+      "reason": "Automated randomized block delivery, coded preprocessing, prespecified technical stopping and a bounded probability/magnitude condition set are supplied. Delivery, drift, identity and saturation faults have diagnostic responses; inferential overclaims are charged separately."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Code condition labels",
+      "evidence_type": "exact_quote",
+      "reason": "Automated randomized block delivery, coded preprocessing, prespecified technical stopping and a bounded probability/magnitude condition set are supplied. Delivery, drift, identity and saturation faults have diagnostic responses; inferential overclaims are charged separately."
+    }
+  ],
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "A useful matched-mean variance direction, but missing sensory/learning controls, undefined implementation and collinearity/adjustment claims weaken inference.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The uncertainty-versus-value question and matched-mean manipulation are present. The main equal-mean series has its largest amount variance at p=.25, not a fixed-magnitude half-probability maximum, and the required cue/learned-contingency controls are absent. The joint validated historical readout and half-versus-endpoint prediction are not satisfied.",
+  "item_score": 8.0
+}

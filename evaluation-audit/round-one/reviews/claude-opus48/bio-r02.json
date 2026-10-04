@@ -1,0 +1,120 @@
+{
+  "item_id": "bio-r02",
+  "response_id": "bio-r02",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:56:48.760731+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "c198a3339bde1c67be82b6599e29385c3f896e8ded9a7d4a9fcf6834ab18bd70",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "at all ATP concentrations",
+      "issue": "Continuous mechanical progression need not have constant velocity or uniform angular occupancy. ATP waiting and angle-dependent torque can create nonuniform motion; the alternatives are not mutually exclusive as claimed."
+    },
+    {
+      "quote": "Photobleaching steps (for fluorescent markers) or uniform orbit radius confirm a single attachment point",
+      "issue": "Neither establishes single enzyme occupancy or unique mechanical attachment by itself. Multi-labeled filaments and multiple attachments require independent occupancy/geometry controls."
+    },
+    {
+      "quote": "Only passing molecules enter mechanistic analysis.",
+      "issue": "Requiring closed orbits and consistent rotation sense selects against pauses/reversals and biases coupling estimates. Retain eligible inactive/irregular reporters and require independent artifact evidence."
+    },
+    {
+      "quote": "test single-peak (120°) vs multi-peak (substep) models",
+      "issue": "The inference is centered on preferred angles and static noise calibration. It lacks a freely estimated state model and smooth-motion injection/false-step calibration, leaving model-created stepping unresolved."
+    },
+    {
+      "quote": "ATP per turn inferred from step number",
+      "issue": "This assumes the stoichiometry the study is meant to test. Bulk-rate consistency with unmatched active fractions cannot establish it."
+    },
+    {
+      "quote": "taking one ~120° step per catalytic event",
+      "issue": "The proposed mechanics/ATP titration does not count catalytic events; the definitive positive conclusion contradicts the later chemistry limitations."
+    },
+    {
+      "quote": "verified true free-ATP concentrations",
+      "issue": "The relevant MgATP/free Mg composition and product activities are not controlled explicitly. Construct, buffer, starting ranges and acquisition thresholds remain unspecified; energetic work/free-energy extension is not implemented."
+    }
+  ],
+  "rationale": "Correct high-value direction and explicit load/ATP matrix with preparation replication. Preferred-angle inference, invalid single-attachment confirmation and circular stoichiometry are material weaknesses. Core readout/prediction fail qualification despite naming the historical angle.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full original question, packet, reference and sealed historical target read before grading. Every available final answer personally read; no hidden reasoning. Original quality rubric only; strict-round deductions remain inactive.",
+    "Qualified match follows the reference explicit core: resolved stepping, ATP/load discrimination, conditional directional prediction and credible measurement controls. All five fields must qualify. A forced 120-degree prior or name alone fails; an unbiased predicted recurring-step experiment need not invent the historical angle from the packet.",
+    "Work/free-energy comparison is a reference extension and earns quality credit when operationally supplied; its absence is not an additional binary gate beyond the explicit core qualification. Unsupported efficiency claims would be penalized. Preserve this interpretation across models.",
+    "The packet reports rotation with ATP, not a supplied minus-ATP experiment, exact catalytic symmetry, step angle or energetic result. Distinguish background hypotheses from packet evidence.",
+    "A fixed step is not automatically one ATP. Bulk ATPase and selected imaged motors require matched populations and active-fraction accounting. Binding, hydrolysis and product release are different event identities; timing alone does not identify the energetic driver.",
+    "Brownian-ratchet and power-stroke descriptions do not uniquely separate by fixed angles or backward events. Gated stochastic models can be discretely and tightly coupled.",
+    "Angle states must be inferred without forcing the sequel. Validate dynamic measurement response and step inference against continuous/noise controls, temporal blur, probe compliance and per-molecule angular origins.",
+    "Surface-confined or torsionally trapped Brownian probes require a suitable fluctuation/response or relaxation model; naive long-lag free diffusion cannot provide drag. Wall geometry and load-dependent optics must be controlled.",
+    "Control free magnesium/MgATP and nucleotide/product composition across nominal ATP changes. Viscogens can affect chemistry as well as drag.",
+    "Independent molecules are nested in chambers and enzyme preparations. Technical repeats, excluded inactive molecules and long biological pauses require explicit denominators/estimands and nonselective retention.",
+    "The 1998 primary abstract and metadata verify historical direction; complete 1998 Methods not audited. Selected 2011 original Methods passages support calibration guardrails, not required historical settings. No candidate sees this evidence."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9657145/",
+      "scope": "Complete primary abstract and author/publication metadata read; 1998 full Methods not audited."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3207686/",
+      "scope": "Selected original Rotation Assay and Torque Calibration Methods passages personally read; supports measured chemical conditions and frequency-dependent fluctuation calibration."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2877361/",
+      "scope": "Indexed original theoretical-study abstract/excerpt read: flashing-ratchet model with discrete substeps; not full-paper audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does F1-ATPase rotate in discrete steps",
+      "assessment": "Substantive core component present."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Three-fold discrete stepping",
+      "assessment": "Substantive core component present."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Marker load:** filament",
+      "assessment": "Substantive core component present."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "test single-peak (120°) vs multi-peak",
+      "assessment": "Critical event-inference or coupling overclaim prevents qualification; see exact deductions."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "taking one ~120° step per catalytic event",
+      "assessment": "Critical event-inference or coupling overclaim prevents qualification; see exact deductions."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

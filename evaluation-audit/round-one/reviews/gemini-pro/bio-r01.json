@@ -1,0 +1,108 @@
+{
+  "item_id": "bio-r01",
+  "model_code": "gemini-pro",
+  "response_id": "bio-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:14:10.785456+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "c243dfc195d63fedb954a28d7bd8473a0c7f2491c72857b74e82e8a7913d4167",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 1,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 1
+  },
+  "service_score": 46.25,
+  "reasoning_index": 37.5,
+  "errors": [
+    {
+      "quote": "Calculate the time-derivative of the chemical output ($d[ATP]/dt$)",
+      "issue": "With luciferase in the reaction, net concentration change includes reporter consumption. A standard intensity curve does not convert this derivative to gross synthesis; calibrate loss/response dynamics or collect quenched reporter-free product."
+    },
+    {
+      "quote": "Calibrate the rotational magnetic field to ensure the applied torque exceeds the theoretical energy required for ATP synthesis",
+      "issue": "Torque cannot directly be compared with energy. Integrate transmitted torque over angle, quantify dissipation and chemical free-energy demand; no operational actuator/torque calibration is supplied."
+    },
+    {
+      "quote": "buffer containing saturating concentrations of ADP and Pi, entirely devoid of initial ATP.",
+      "issue": "Neither saturation nor complete ATP absence is established. The recipe omits magnesium qualification, measured contamination limits and the finite bound-ATP pool that could be released."
+    },
+    {
+      "quote": "Repeat across $N = 50$ distinct single-molecule F1 preparations",
+      "issue": "The open shared reporter solution does not attribute ATP independently to each molecule. Define independent preparations/chambers, assay sensitivity and a hierarchy matched to chemical sampling."
+    },
+    {
+      "quote": "we conclude that F1 coupling is irreversible or slips under reverse mechanical strain",
+      "issue": "Verified marker rotation plus a nonsignificant ATP result does not establish irreversibility. Adequate work transmission, sensitivity, chemistry and retained activity must be demonstrated; the proposed controls do not provide those bounds."
+    },
+    {
+      "quote": "**C4 (No-Substrate Control):** Force reverse rotation in a buffer lacking ADP and Pi.",
+      "issue": "Both substrates are removed together, and there is no catalytically inactive F1 control. Separate substrate omissions and matched inactive/uncoupled controls are needed to distinguish phosphate-dependent synthesis from alternative chemistry."
+    }
+  ],
+  "rationale": "Finds the correct next question and includes simultaneous angle and chemical recording with a sensible empirical sign. The plan is too underqualified for the requested discrimination: reporter flux, torque-energy units, chemical prerequisites and independent chemical units require substantial redesign. The negative inference is overly strong.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The packet establishes ATP-associated directional motion, not an ATP-per-turn yield, torque, universal camera sign or completed reverse-synthesis experiment. Proposed numerical settings may earn credit when explicitly qualified.",
+    "Correct the draft reference by explicitly requiring magnesium/cofactor and nucleotide speciation qualification; its generic reaction inventory is not a complete buffer recipe.",
+    "Reverse operation should generate new ATP repeatedly beyond measured initial available/bound pools. Three catalytic sites are not a universal total ATP-contamination bound.",
+    "Luciferase is an acceptable chemical readout when its consumption, recovery and time response are calibrated. An intensity slope is not generally synthesis flux; chromatographic detection is an alternative, not mandatory.",
+    "Label incorporation can reflect exchange. Pair isotope provenance with net-product/material balance; account for reporter consumption and sample removal as appropriate.",
+    "Empirical direction, mixed surface orientations, actual rotor turns and transmitted torque are distinct quantities. Do not replace any with the nominal actuator command.",
+    "Mechanical input can drive ATP synthesis uphill. Low initial ATP may aid sensitivity but does not prove positive chemical-energy storage; energetic efficiency needs both work and chemical free energy.",
+    "ATP per turn is a coupling yield, not energetic efficiency. Inactive fractions, orientation, incomplete entrainment and analytical recovery can reduce apparent yield without establishing loose molecular coupling.",
+    "Separate ADP and phosphate controls help discriminate intended synthesis from alternative ATP production. Inhibitor effects require assay and enzyme specificity validation.",
+    "Matching is retrospective and applies all five predeclared components. A partially correct historical direction is recorded even when the experimental design is flawed; no claim of prospective novelty or uncontaminated holdout is made."
+  ],
+  "review_sources": [
+    {
+      "title": "Itoh et al. (2004): mechanically driven ATP synthesis by F1-ATPase",
+      "url": "https://www.columbia.edu/cu/biology/courses/w4070/Reading_List_Fernandez/ATP_synthesis_F1.pdf",
+      "scope": "Reviewer read main text, figure captions and Methods. Supports the reverse-rotation historical target, with documented orientation and reporter-response limitations. Supplements and numerical reanalysis remain unaudited; not provided to candidates."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does controlling the mechanical coordinate",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "forces conformational changes in the catalytic sites",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "physically forces the gamma subunit to rotate in the reverse direction",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "luminescence intensity via a photomultiplier tube",
+      "assessment": "Readout design is partial: missing inactive-enzyme discrimination and validated product attribution."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "A true reversible coupling signal strictly requires both the mechanical input and the chemical substrates",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

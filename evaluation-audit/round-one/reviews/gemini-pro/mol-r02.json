@@ -1,0 +1,107 @@
+{
+  "item_id": "mol-r02",
+  "response_id": "mol-r02",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:44:47.175115+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "436d5fceb763dc07676b532e18ff97c5a543e51ff10d0d11a1e41a34c1b1ff0f",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "The checkpoint is switched on via a damage-induced upregulation of RAD9.",
+      "issue": "Expression correlated with arrest does not establish necessity or sufficiency of induction. Perturb new synthesis or expression while measuring checkpoint function, with toxicity and cell-cycle controls."
+    },
+    {
+      "quote": "RAD9 is a constitutively present factor, implying the switch relies on a post-translational modification",
+      "issue": "Stable total abundance does not exclude required new synthesis balanced by degradation, another newly synthesized factor, or an undetected small pool. Verified synthesis inhibition during initiation and recovery is missing."
+    },
+    {
+      "quote": "If it fails to cause a delay, Mechanism B is heavily favored",
+      "issue": "A negative overexpression experiment can reflect inactive protein, inadequate expression, missing damage-dependent partners or poor assay timing. It is not strong evidence against an abundance contribution."
+    },
+    {
+      "quote": "normalized to a known constitutively expressed housekeeping gene",
+      "issue": "Validate normalization stability under irradiation and cell-cycle redistribution; normalize protein separately with a suitable protein/loading standard. A generic housekeeping gene is not automatically invariant for both RNA and protein."
+    },
+    {
+      "quote": "T=60 min (expected delay phase), and T=120+ min (expected repair and recovery phase)",
+      "issue": "The packet supplies no phase timing. Derive this schedule from measured checkpoint kinetics and include direct division/repair trajectories, rather than equating fixed sampling times with those states."
+    }
+  ],
+  "rationale": "Identifies the relevant expression-versus-existing-protein question, but tests abundance correlation rather than the necessary synthesis-dependence intervention. Conclusions are stronger than the observational design permits; full historical hit false.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Exact packet and full frozen reference read, including sealed target. Original rubric only; stricter requested penalties inactive. Alternative scientifically valuable research questions receive full quality consideration independently of retrospective match.",
+    "Sealed target requires a synthesis-versus-existing-protein switching question, verified synthesis perturbation, separate initiation/recovery and conditional predictions. General checkpoint on/off discussion or conditional RAD9 removal alone is not a joint match.",
+    "Packet permits repair during externally imposed delay; it does not prove all repair, fidelity or survival is restored or that RAD9 has no repair-related role.",
+    "New detailed tools may be proposed without claiming author methods. Calibrate unknown doses and windows; unsupported precision and unselected central tools are different limitations.",
+    "Physical lesion measurements, checkpoint state, actual division, survival and protein abundance are distinct readouts. Budding, foci or CFU cannot silently substitute for all of them.",
+    "Track original cohorts, damage dilution/selection and death as competing events. End-of-window living nondivision is censoring, not proof of permanent arrest.",
+    "Do not reject confirmatory outcomes merely because expected genotype effects fail. Restrict exclusions to independently verified technical failures.",
+    "Conditional switch nulls require validated function and kinetics. Repair manipulation may affect signaling directly; correlated lesion decline alone does not establish a causal sensed species.",
+    "Donorless HO breaks can undergo end joining; nuclease recutting, chromosome loss and surviving lineages require verification. Population measurements do not establish per-cell persistence.",
+    "Historical primary abstract and metadata verified, full original Methods not audited. Review is unblinded single-Codex assessment, not independent expert certification."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2247073/",
+      "scope": "Primary abstract and publication metadata personally read; verifies sealed 1990 target, not full historical methods."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8628283/",
+      "scope": "Indexed primary abstract excerpt verifies HO-break end joining; no full Methods audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "whether DNA damage induces the *de novo* expression",
+      "assessment": "Target component substantively present; see quality limitations separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "post-translational/functional activation of pre-existing RAD9 protein",
+      "assessment": "Target component substantively present; see quality limitations separately."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Isolate RNA and total protein from all samples.",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Quantify *RAD9* expression levels",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "*RAD9* expression levels remain constant and statistically indistinguishable",
+      "assessment": "Target component not satisfied by the full answer: no complete verified synthesis perturbation with separately interpretable initiation and recovery. Expression correlation, repair timing or conditional RAD9 removal does not substitute."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

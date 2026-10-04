@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:44:54.421060+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e78cf54c7aab0a4a1c7781a149df3c068853897f62644c9d224441d89f5dc959",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c73430930cc4373fee480a216ffd72700b5fb4c13c56f8333bcc07947bd3f416",
+  "primary_route": "Yeast-juice fractionation, chemical add-back and heat-dependent functional reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2376,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Proposed conclusion and scope",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior Methods, supplements or validated protocols and verify detailed-condition transfer before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Establish background",
+      "evidence_type": "exact_quote",
+      "reason": "Lists background/detection/recovery without an accuracy gate or derivation, gas-leak validation and failure action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "CO\u2082 production rate",
+      "evidence_type": "exact_quote",
+      "reason": "Primary recovery ratio is explicit, but weak/missing measurement rules and unnormalized product-rate units are incomplete."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Stop interpretation or redesign",
+      "evidence_type": "exact_quote",
+      "reason": "No refreeze and fresh independent confirmation after corrective changes, despite initial pilot/confirmation separation."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "ethanol accumulation",
+      "evidence_type": "exact_quote",
+      "reason": "Charge separation and cross-rescue are strong; independent fermentation-product validation only names ethanol without a method, matrix recovery or analyte specificity procedure."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record initial fermentation rate",
+      "evidence_type": "exact_quote",
+      "reason": "No linked raw-file/sample IDs and exact code/software/settings audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P02",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "operational conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Correct proposed evidence/identity limits; active/sham/process/omission/inactive and heating controls; qualified input; concrete buffer/ion/heat/rate calibration and locked pilots; independent nested batches with precision planning, coding/randomization; technical versus biological outcomes; paired interaction/equivalence CIs; conductivity limitation; cause-specific repair and conditional decisions.",
+  "item_score": 65
+}

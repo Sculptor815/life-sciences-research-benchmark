@@ -1,0 +1,126 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "claude-opus46",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:24:31.246258+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "7db604ef42e971eb217390def972d99e51d5e02b5979fec1a26077a6cf0a23ed",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 51.25,
+  "reasoning_index": 43.75,
+  "errors": [
+    {
+      "quote": "A cellular cofactor is required.",
+      "issue": "The no-leakage decision row declares requirement from a negative artificial system. Later caveats correctly acknowledge inactive protein and missing lipids, but the main decision tree still labels a negative as exclusion of autonomous action."
+    },
+    {
+      "quote": "That effector is the executioner, and GSDMD-NT is an upstream activator rather than the pore itself.",
+      "issue": "Protection by a knockout or inhibitor does not identify the lesion-forming component: delivery, lipid availability, repair and terminal rupture can explain it. No component-specific discrimination is supplied."
+    },
+    {
+      "quote": "Membrane mutant dead in vitro AND in cells",
+      "issue": "This is read as direct pore equals death mechanism without measuring mutant folding, abundance, cleavage or localization. General loss of functional protein remains an alternative."
+    },
+    {
+      "quote": "A macrophage-specific effector is required",
+      "issue": "Different killing across macrophages and HEK293T cells could reflect expression, delivery, lipid composition or repair. It does not establish a macrophage-specific executor."
+    },
+    {
+      "quote": "Necrosulfonamide (NSA)",
+      "issue": "Using NSA as a specific MLKL discriminator is not justified by showing a necroptosis positive control. Direct effects on GSDMD must also be tested in the purified system; later primary work confirms such an effect. The deduction concerns absent specificity controls, not failure to know a post-cutoff discovery."
+    },
+    {
+      "quote": "multi-method, internally controlled demonstration",
+      "issue": "Several listed assays do not supply the missing mock-purification, free-reporter, independent-preparation or mutant-integrity controls. No adequate replicate/analysis/exclusion plan accompanies the many provisional instrument settings."
+    }
+  ],
+  "rationale": "The proposed direction and orthogonal techniques are relevant, and numerical settings are eventually labeled starting points. Multiple central decision rules nevertheless overinterpret negative reconstitution, cell-type differences, mutant loss and inhibitor protection. General limitations at the end do not repair contradictory operational conclusions.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The fixed packet establishes genetic/cleavage dependence, not physical membrane agency. Do not require knowledge of later results, residue numbers, lipid ratios or historical instrument settings.",
+    "A protein requirement or co-reconstitution establishes dependence, not the identity of the lesion-forming component. A permissive cofactor can support direct GSDMD action.",
+    "Negative artificial reconstitution is qualified evidence, not proof of indirect action. An assay-positive control does not validate the test protein or all relevant membrane conditions.",
+    "Direct permeability, terminal rupture and cytokine release are distinct. Sufficiency in a minimal membrane need not exclude later cellular executors.",
+    "Trans inhibition by an isolated domain is conditional; intact-protein autoinhibition does not require it.",
+    "Historical direction is scored separately from study quality. Five target components are conjunctive within each component; a full Hit@1 requires all five. Equivalent cellular functional-complementation designs count as rescue.",
+    "Historical matching is not prospective novelty: source identifiers are visible and no exhaustive earlier-public-disclosure audit exists. Full source methods have not been independently audited.",
+    "The later paper erratum corrects a typeset received date from 2015 to 2016; it does not change its June 2016 publication date or report a biological-result correction."
+  ],
+  "review_sources": [
+    {
+      "title": "Original GSDMD cleavage study",
+      "url": "https://www.nature.com/articles/nature15514",
+      "scope": "Primary abstract and publication metadata"
+    },
+    {
+      "title": "Later gasdermin pore/autoinhibition study",
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary abstract, author metadata and accessible extended-figure captions; full methods not audited"
+    },
+    {
+      "title": "Later-paper erratum",
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher erratum text: received-date typesetting correction only"
+    },
+    {
+      "title": "NINJ1 and terminal membrane rupture",
+      "url": "https://www.nature.com/articles/s41586-021-03218-7",
+      "scope": "Post-cutoff primary abstract supports reviewer distinction of permeability and rupture; candidate is not required to name NINJ1"
+    },
+    {
+      "title": "Direct inhibition of GSDMD by necrosulfonamide",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6462819/",
+      "scope": "Post-cutoff primary abstract; confirms why target specificity controls matter, not required candidate foreknowledge"
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "forming pores or lesions in lipid bilayers",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "same residues needed for liposome permeabilization are needed in cells",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "A point mutant in a predicted membrane-interacting region",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Liposome Dye-Release Assay",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "direct pore = death mechanism",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

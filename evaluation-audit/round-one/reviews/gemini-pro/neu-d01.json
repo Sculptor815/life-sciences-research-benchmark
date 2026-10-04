@@ -1,0 +1,78 @@
+{
+  "item_id": "neu-d01",
+  "model_code": "gemini-pro",
+  "response_id": "neu-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:58:36.959951+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "c688685cf42e1bd8ffe9b39d17babd0537b5eeb27f2de824bbf3bcffab740937",
+  "service": {
+    "scientific_accuracy": 1,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 1
+  },
+  "service_score": 42.5,
+  "reasoning_index": 37.5,
+  "errors": [
+    {
+      "quote": "Implant an optic fiber over region P to target the somata of the P-to-Q projecting neurons.",
+      "issue": "This tests the Q-projecting cell population, including possible collateral outputs. Projection targeting does not isolate P-to-Q transmission; the answer repeatedly claims pathway necessity without this limitation."
+    },
+    {
+      "quote": "Targeting inhibitory opsin expression exclusively to P neurons that project to Q (O2) isolates the specific anatomical pathway.",
+      "issue": "O2 gives access to neurons defined by one target, not proof that those neurons lack other targets. O1 itself also does not establish single-neuron collateralization; it must be tested or bounded."
+    },
+    {
+      "quote": "start at a theoretical safe maximum (e.g., 10 mW) and reduce until behavioral or physiological effects titrate",
+      "issue": "An unspecified maximum is not a demonstrated safe or effective setting. A behavioral deficit cannot validate neural suppression; require independent physiology, timing/recovery and preparation-specific optical/thermal validation."
+    },
+    {
+      "quote": "and locomotor metrics remain unchanged, you can conclude the P-to-Q projection is specifically necessary for cue retrieval.",
+      "issue": "Motor measurements and reporter controls do not exclude inhibition-induced cue perception, attention or preparation deficits. There is no task-matched sensory probe, movement-free recovery gap or timing-control intervention."
+    },
+    {
+      "quote": "Percentage of correct choices on light-ON versus light-OFF trials.",
+      "issue": "The denominator, omissions/aborts, animal-level sample-size plan and precision/equivalence criteria are missing. These omissions materially limit both positive and negative interpretation."
+    },
+    {
+      "quote": "the optical shielding is insufficient, and the visible light is acting as a distracter.",
+      "issue": "A control-group deficit can also arise from heating, sound or other procedural effects. The observation identifies a nonspecific light-associated effect, not its unique sensory mechanism."
+    }
+  ],
+  "rationale": "Clear basic group-by-light design and animal-level mixed model, but the intervention does not answer the projection-specific question as claimed. Functional validation and the sensory/motor discrimination need substantial redesign; brevity itself is not penalized.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "O1 establishes that population P has two targets, not that every Q-projecting neuron collateralizes. Do not assume either overlap or disjointness; validate or retain the limitation.",
+    "Projection-defined somatic inhibition tests a population and all its affected outputs. Local Q-terminal intervention is preferable for a pathway claim but also needs actual transmission and off-target validation.",
+    "Suppression in neuronal somata does not guarantee suppression of terminal transmission. Validate physiological onset, sustained effect, offset recovery and rebound at the actual behavioral settings.",
+    "Reduced normal performance supports a conditional causal requirement, not memory storage or an exclusive retrieval computation. Cue perception, attention, maintenance and motor preparation remain alternatives.",
+    "Light offset is not necessarily inhibition offset. A choice made after light ends can correctly report an earlier retrieval deficit; outcome timing alone is not a rebound diagnosis.",
+    "Movement adjustment/matching after intervention and conditioning on response completion can bias inference. Report all randomized trials and use experimental motor/sensory dissociations.",
+    "A nonsignificant control effect is not equivalence. Predefine biologically meaningful bounds and obtain enough precision to exclude consequential confounds.",
+    "Two pathways or epochs can both be necessary. Effects in an other-projection control do not by themselves invalidate the tested pathway contribution.",
+    "Numbers missing from the packet may be proposed as pilot settings; no specific opsin, surgical coordinate or animal count is mandatory. Operational calibration and justified independent-animal sampling are required.",
+    "Reference correction: population-level divergence must not be described as demonstrated single-neuron collateralization. Terminal effects on intended local Q signaling are part of the intervention, not automatically an off-target artifact."
+  ],
+  "review_sources": [
+    {
+      "title": "Mahn et al. (2016): biophysical constraints of presynaptic optogenetic inhibition",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4926958/",
+      "scope": "Reviewer-only primary-source check of terminal efficacy, paradoxical release and offset rebound; no particular construct is required by the question."
+    },
+    {
+      "title": "Montgomery, Nyhan and Torres: post-treatment conditioning",
+      "url": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/",
+      "scope": "Authors summarize their methodological paper on adjustment/selection after treatment. Used only by reviewer, not candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

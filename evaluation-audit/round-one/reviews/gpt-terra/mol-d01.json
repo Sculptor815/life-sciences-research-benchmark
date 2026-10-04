@@ -1,0 +1,50 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "gpt-terra",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:53:34.913550+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "16ed5145b8132f03ca530cd632624539191697465962fe1526c0a20caa565c55",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 86.25,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "K-KD has no detectable catalytic activity.",
+      "issue": "A non-detect is assay-dependent. The conclusion that catalysis is dispensable needs an upper bound below activity capable of supporting the cellular response; the design assesses residual activity but does not relate assay sensitivity to a functional threshold."
+    },
+    {
+      "quote": "Use a quantitative immunoblot, immunoassay, or another validated measurement method.",
+      "issue": "This gives alternative assay classes instead of selecting and ordering an executable workflow. Preservation during lysis is correctly mentioned, but quench/lysis, normalization, specificity-control treatment and acquisition remain to be specified."
+    }
+  ],
+  "rationale": "Strong reciprocal separation-of-function logic and thoughtful qualification of folding, interactions, growth specificity, independent units and equivalence. Non-detectable residual catalysis is interpreted too strongly without a functional sensitivity bound, and core assay operations remain at outline level.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol."
+  ],
+  "overall_benchmark_score": null
+}

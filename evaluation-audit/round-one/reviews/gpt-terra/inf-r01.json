@@ -1,0 +1,99 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "gpt-terra",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:39:14.709246+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "62abc6e0ff8f0ff4a883107aea5b7896ae421cf181c80a214cdfd52d349f6615",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "The precise likelihood and normalization method are **not stated in the evidence packet** and must be recorded rather than assumed.",
+      "issue": "The task asks for a proposed method; it is appropriate to choose and label a count likelihood and normalization assumption. Leaving both unspecified prevents execution of the estimator and the simulations."
+    },
+    {
+      "quote": "The fitting method for \\(\\tau\\), the handling of outliers, and the exact posterior or penalized estimator are not supplied and must be fixed and reported.",
+      "issue": "These are central method design choices, not facts that must be supplied by the packet. Specify the estimator, hyperparameter fitting, uncertainty, convergence and failure policy to make this a complete research protocol."
+    },
+    {
+      "quote": "They must be justified by the biological decision context and fixed before execution.",
+      "issue": "The plan names acceptance margins, information and stability gates but gives neither proposed values nor a reproducible development-calibration rule. Deferral is honest, but the falsification and validation rules remain operationally incomplete."
+    },
+    {
+      "quote": "uncertainty calibration and interval coverage, if intervals are provided by the implementation;",
+      "issue": "Uncertainty assessment should be an explicit designed output here, not an optional feature of an unspecified implementation. State how to obtain and evaluate uncertainty or justify an alternative calibrated decision procedure."
+    }
+  ],
+  "rationale": "Scientifically careful distinction among bulk abundance, cell composition, biological replication and actual reproduction. However, the central statistical method is a skeleton: likelihood, normalization, prior fitting and acceptance rules are deferred rather than proposed. No heavy-tailed intervention is designed; this reduces actionability but is not penalized as a false scientific claim.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All six complete received final answers in this file, the exact question/packet and full reference were personally read. Output-truncated passages were recovered before scoring. No paid API judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "biologically material large effects",
+      "assessment": "Matches the biological-effect recovery objective."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Shrinkage can also bias genuine effects toward zero",
+      "assessment": "Recognizes the central tradeoff."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "applies a centered Normal prior to effects",
+      "assessment": "The primary intervention remains the original Normal prior; no adaptive heavy-tailed replacement is specified."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "uncertainty calibration and interval coverage",
+      "assessment": "Appropriate readout categories are named, although operational details are incomplete."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "a shrinkage estimator is a plausible candidate",
+      "assessment": "Predicts evaluation of the original shrinkage rationale, not improved large-effect preservation from the historical adaptive-tail intervention."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

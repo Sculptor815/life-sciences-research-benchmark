@@ -1,0 +1,255 @@
+{
+  "model_code": "kimi",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:18:56.157540+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e040c48821ce4dafe362bbea0263a51f7af160506a99dd2b84563b1cd60d2ebe",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "50629dcb5d4b4652656410280ee0119a81ddf6816f78b37c055ddc8b92f8f69c",
+  "primary_route": "Normal-prior NB model, high-replicate internal reference/downsampling, simulations and a separate independent biological cohort.",
+  "complete_final_answer_read": true,
+  "word_count": 3428,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Report the posterior mean or mode",
+      "evidence_type": "exact_quote",
+      "reason": "The estimator itself is not selected between mean/mode; normalization, prior-scale fitting and solver/calibration-to-acceptance remain unspecified."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "calibration remains acceptable",
+      "evidence_type": "exact_quote",
+      "reason": "Calibration is required but no coverage/error acceptance tolerance or concrete pilot-to-tolerance and failure-response procedure is defined."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Signed error against high-replicate reference.",
+      "evidence_type": "exact_quote",
+      "reason": "Reference-effect uncertainty and selection of strong reference genes are acknowledged qualitatively but not propagated in loss/coverage estimates. These reference errors are distinct from the shared-observation issue in P16."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Monte Carlo uncertainty is sufficiently small",
+      "evidence_type": "exact_quote",
+      "reason": "Independent biological units are explicit, but sufficiently-small Monte Carlo uncertainty has no numerical precision target and the 1,000-run starting point is not a stopping justification. Biological validation sample size has no power/precision procedure."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Eligibility intent is present but failed-fit/missing-measurement handling, all-eligible denominators and stopping/maximal acquisition rules remain unspecified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable primary method-difference uncertainty procedure and relevant multiplicity/error-control rule is fixed; listing metrics or interval outputs is insufficient."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Sensitivity scenarios are named, but bounded settings or a concrete derivation-and-lock procedure for the essential prior/filter/model choices are absent."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Possible failure modes are named without a diagnostic result linked to an ordered technical repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational iteration policy identifies what stays frozen, what may change and the fresh independent confirmation required after a change."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Fit the same model to all eligible high-replicate samples",
+      "evidence_type": "exact_quote",
+      "reason": "The full-data reference reuses observations in each small subset; acknowledging it is not fully independent does not correct this dependence. Use disjoint references or quantify dependence before comparing errors. Separate new-cohort validation is credited under P14."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Figure concepts do not supply numeric source tables plus a clean-environment rerun, numerical tolerances, resource/failure logs and source-difference audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "converted to a log2 fold change",
+      "evidence_type": "exact_quote",
+      "reason": "Correct NB coefficient-scale handling, relevant gene/pathway question, composition/noise alternatives and estimation-versus-testing distinction. Unknown implementation facts and proposed thresholds are labeled; 3,428 words satisfy format."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "blinded sample labels",
+      "evidence_type": "exact_quote",
+      "reason": "Blind prospective QC and masked independent validation limit selection bias. Distinct positive/negative/ambiguous gates require independent corroboration and retain biological failure; unspecified numerical calibration is charged to P03."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "blinded sample labels",
+      "evidence_type": "exact_quote",
+      "reason": "Blind prospective QC and masked independent validation limit selection bias. Distinct positive/negative/ambiguous gates require independent corroboration and retain biological failure; unspecified numerical calibration is charged to P03."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "immutable manifest",
+      "evidence_type": "exact_quote",
+      "reason": "New biological validation has prespecified gene strata, matched contrast and explicit composition follow-up. Checksums, commands, versions, environment, stored model state and machine-readable output tables support audit. Perfect confounding, outliers and composition are explicitly addressed."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "immutable manifest",
+      "evidence_type": "exact_quote",
+      "reason": "New biological validation has prespecified gene strata, matched contrast and explicit composition follow-up. Checksums, commands, versions, environment, stored model state and machine-readable output tables support audit. Perfect confounding, outliers and composition are explicitly addressed."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "immutable manifest",
+      "evidence_type": "exact_quote",
+      "reason": "New biological validation has prespecified gene strata, matched contrast and explicit composition follow-up. Checksums, commands, versions, environment, stored model state and machine-readable output tables support audit. Perfect confounding, outliers and composition are explicitly addressed."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong bounded biological interpretation, scale handling and independent cohort design. Shared reference dependence and operational uncertainty/calibration omissions remain significant.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Relevant stabilization question, mechanism and stratified simulation/independent validation readouts align. The primary estimator is still Normal; flexible mixtures are future alternatives with no adaptive heavy-tail intervention or matching predicted advantage over Normal. No hit.",
+  "item_score": 14.0
+}

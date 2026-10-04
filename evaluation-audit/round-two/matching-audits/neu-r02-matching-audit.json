@@ -1,0 +1,180 @@
+{
+  "at": "2026-10-04T08:31:22.585760+00:00",
+  "item_id": "neu-r02",
+  "policy": "Post-hoc strict v2; all five components jointly required. Valid alternatives receive quality credit independently. Candidate and v1 bytes preserved.",
+  "source": {
+    "title": "Single-cell responses in striate cortex of kittens deprived of vision in one eye",
+    "url": "https://journals.physiology.org/doi/10.1152/jn.1963.26.6.1003",
+    "date": "1963-11-01"
+  },
+  "reviews": [
+    {
+      "model_code": "claude-fable",
+      "candidate_sha256": "d1fcfe2b289a1ed60b7c0a40ac9d2dd05f89e6b66ee5cedc9d07d9ca4e5bcb4c",
+      "first_round_hit": false,
+      "second_round_hit": true,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "The unilateral-versus-normal/sham comparison predicts open-eye dominance with eye-specific cortical recording and mandatory peripheral/earlier-stage validation. This positive core matches all five sealed components. Errors in secondary naive-age/construction branches reduce quality without automatically nullifying this separately valid historical experiment."
+    },
+    {
+      "model_code": "claude-opus46",
+      "candidate_sha256": "2021c8ea8baaf67ab2dc48e8f1b60a51eb132ef816caff66d0716798b2932dfc",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, experience mechanism and unilateral deprivation match. Randomized eye sides are not aligned in the reported dominance index, and the causal comparison lacks sham/general afferent validation. These critical readout/control failures prevent a qualified experienced-eye-shift conclusion."
+    },
+    {
+      "model_code": "claude-opus48",
+      "candidate_sha256": "e1459fb8c6bd46cc83c8162c5a10f42e27833d9fe4c52c685fab45e28bcebc95",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, mechanism and unilateral manipulation match. The core MD treatment is treated as a mandatory positive control, missing upstream/sham safeguards and unaligned dominance scoring prevent the required unbiased readout; the resulting historical inference is not qualified."
+    },
+    {
+      "model_code": "deepseek",
+      "candidate_sha256": "adf90aef38eaa0a8be95222ec2cd5b065f5650ff20e12c81177b67380b563d0a",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The question/mechanism and unilateral intervention match. Primary recording still requires below-threshold deprived-eye input, with no common reopening/equivalent afferent input step or upstream comparator. This critical optical/peripheral confound makes the cortical historical readout and experienced-eye developmental conclusion unqualified."
+    },
+    {
+      "model_code": "gemini-pro",
+      "candidate_sha256": "830f6c7b9ac513690c4171f770fd7b257789da82f3e7006a5af781ceb64f9c6f",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The developmental question matches, but only bilateral deprivation is proposed. It does not test unilateral competitive redistribution or an experienced-eye directional shift, and lacks validated peripheral input. This is not the joint sealed historical direction."
+    },
+    {
+      "model_code": "glm",
+      "candidate_sha256": "b323eadec429f4789b88f57b7053d3973aa5b95a90a24ccd00f3354028e89b73",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Developmental question, experience mechanism and unilateral manipulation match. The proposed main feature readout has a non-identifying normalization rule and lacks the sealed peripheral/upstream control for cortical interpretation; an experienced-eye redistribution is secondary and not adequately validated. No qualified joint match."
+    },
+    {
+      "model_code": "gpt-astra",
+      "candidate_sha256": "bca53352df4ee8a0e5c168712f0a86645d51f7d1b703274b49414d596bc61a49",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The developmental experience question matches broadly, but the chosen intervention preserves each eye input and reverses spatial correspondence, measuring map offsets. It intentionally defers necessity/deprivation. It does not jointly propose unilateral deprivation, ocular-dominance redistribution and an experienced-eye shift, so is not the sealed historical direction. Quality is credited independently."
+    },
+    {
+      "model_code": "gpt-sol",
+      "candidate_sha256": "668beddea19af3b865a9b7df0cf8d99e291f42708b8d8a6a6c841178b6f1b17b",
+      "first_round_hit": true,
+      "second_round_hit": true,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "Controlled unilateral pattern attenuation versus sham, calibrated separate-eye cortical mapping and experienced-eye response shift match all five components. Optical removal and peripheral/precortical functional checks gate interpretation; independent age and recovery cohorts do not overstate synaptic localization. Strict operational deductions do not erase this valid positive core."
+    },
+    {
+      "model_code": "gpt-terra",
+      "candidate_sha256": "bfca147fa332f2f2d2163de1ffbb55379c519414127baebcae73317c8387277b",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The question, experience-dependent mechanism and monocular intervention are present. The cortical readout lacks the required peripheral/afferent functional control, relying on ocular observations/gross pathology. Its experienced-eye conclusion therefore does not jointly satisfy the sealed controlled-localization readout and prediction, although general quality and caution receive credit."
+    },
+    {
+      "model_code": "grok",
+      "candidate_sha256": "62bdb311c384b2da84da478e8cc786b9f4c5e9ff1b9bc276fa69b4c3593e3c98",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The question and conditional unilateral intervention are present. The mechanism logic wrongly requires a bilateral deficit before testing competition; the primary endpoint also lacks upstream functional controls. These critical gating/readout failures prevent a qualified historical direction even though an open-eye shift is mentioned."
+    },
+    {
+      "model_code": "kimi",
+      "candidate_sha256": "b6408338d962de5cf33e7a9074b51b0a9d947f1e915548e0b010623e5c933e76",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Unilateral deprivation and open-eye redistribution are proposed. No sham/upstream functional comparator validates a cortical rather than delivery/inflammatory effect, and the primary timeline/readout has unresolved contradictions. Those critical controls prevent a qualified historical result; v1 remains unchanged."
+    },
+    {
+      "model_code": "qwen",
+      "candidate_sha256": "7ec2582991ebae6418ad6c7de35bf4051d949730eaef6a71c388fe6fe37be806",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The broad experience question matches, but all primary deprivation groups are bilateral. There is no unilateral competition experiment or predicted experienced-eye redistribution. The missing peripheral functional check is an additional readout limitation; alternative quality is still credited."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "gpt-sol",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.795410+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "811a541a9dab5288e479a19739b88a7fccbcb9a3df68a1850deb13543145bd19",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Plot signal converted to product amount or substrate amount against time.",
+      "issue": "Conversion is specified but detector linearity or an independent calibration standard is not explicitly checked. This is a minor operational omission, not a wrong numerical answer."
+    }
+  ],
+  "rationale": "Sound calculation, assumptions and inhibition logic. Deduct one actionability level for an incomplete detector-validation check; evidence and conditional conclusions remain sound.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

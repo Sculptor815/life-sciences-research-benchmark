@@ -1,0 +1,239 @@
+{
+  "model_code": "qwen",
+  "item_id": "bio-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:51:10.477982+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "3d4f6abf38bb65ddf1ffe0cfc196db3cab79f4e5c74c35c530096b1bf2864862",
+  "question_sha256": "d93d3ae3a989ada01328cb28f05820c58b4ff3f4820b238c927b391e7bd7fa22",
+  "reference_sha256": "1e18498facff37adeca34fd379e7bba2833a775fd7b49bc1c8294cec6b9481cd",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "3d8439f5954422f553a16dee050e64952d245a9da8bb311eafe99811a189f996",
+  "primary_route": "Calibrated forced reverse gamma rotation in isolated F1 with ADP/phosphate and direct ATP measurement; motion, direction, enzyme and analytical controls.",
+  "complete_final_answer_read": true,
+  "word_count": 5976,
+  "first_round_scientific_quality": 60.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of primary Methods, supplements or validated mechanical-manipulation/ATP-assay protocols with verification of transfer to this system."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The complete answer contains 5,976 whitespace-delimited words against the 5,000-word limit, exceeding it by 976 words."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "must be chosen through pilot experiments",
+      "evidence_type": "exact_quote",
+      "reason": "Buffer/ions, substrate dose, timing, quench, torque and sampling settings remain lists of unknowns without concrete quantitative calibration-to-choice procedures."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent matrix standards, recovery and mechanics checks are present, but no objective acceptance rule (or procedure deriving it) and failure action gates the chemical/mechanical calibration."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparation/chamber hierarchy and pilot variance are identified, but no stated precision/power objective and calculation/simulation links nuisance variance to adequate confirmatory sample size."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Exclude trials failing the post-test.",
+      "evidence_type": "exact_quote",
+      "reason": "Automatically excluding post-rotation loss of activity can remove an intervention-induced biological failure. No full assigned-unit analysis or prospective attrition/stopping ledger prevents this selection; generic prior QC is insufficient."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary comparisons are named, but interval construction/model checking and multiplicity handling for the directional/control comparisons are not operationally specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot ranges or variables are supplied, but no complete bounded exploration and objective setting-selection/lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed/ambiguous exploratory work."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Isotopic phosphate labeling to prove de novo synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Phosphate incorporation does not by itself establish net synthesis: exchange with initially bound ATP followed by release remains possible. The plan measures solution baseline and total ATP but never inventories the bound/device pool or explicitly requires net gain beyond it; the decision repeatedly treats labeling as proof."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preparation/chamber/raw-trajectory/chemical-sample/calibration manifest linked to analysis versions/settings, deviations and outputs."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Strong empirical orientation, torque/angle tracking, factorial substrate and catalytic controls, chromatographic chemistry and orthogonal reporter calibration. Diagnosis-to-repair options are concrete. Isotope-exchange/initial-pool reasoning, post-treatment exclusions, excessive length and operational omissions remain.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, reverse-with-substrates intervention and nominal readout match the historical components. Mechanism/outcome fail the qualified repeated-net-synthesis requirement: the answer calls labeled phosphate proof of new synthesis but does not exclude exchange plus release from prebound ATP. Solution baseline alone is not a full initial inventory. Match [true,false,true,true,false]; original candidate and round-one review remain unchanged.",
+  "item_score": 16.0
+}

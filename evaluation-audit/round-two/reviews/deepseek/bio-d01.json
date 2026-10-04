@@ -1,0 +1,222 @@
+{
+  "model_code": "deepseek",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:15:35.347032+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "8101dacf496b5e3a04ccbfef7edcc74154ac4af8fb1b3d84b2951590c44dd268",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "2215dd7bbdde662df6a6fb109e83de510ebd68de3e1d558fc1df7bb5fe544cc0",
+  "primary_route": "Separate optical, reporter and target kinetics with substrate titration and proposed independent product validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2327,
+  "first_round_scientific_quality": 55.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Lead conclusion and next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior target/reporter Methods, supplements or a validated protocol before execution and check transfer of detailed conditions."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Reconstitute or dialyze",
+      "evidence_type": "exact_quote",
+      "reason": "No prerequisite authentication of enzyme/compound identities, purity and stock concentration; preparation and solubility alone are insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "same assay buffer",
+      "evidence_type": "exact_quote",
+      "reason": "Actual buffer/pH/cofactors/temperature and preparation quantities remain unspecified without a concrete choice/calibration procedure."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "product concentration",
+      "evidence_type": "exact_quote",
+      "reason": "Converts signal conceptually but does not fix product concentration/time units or complete weak/missing reporting rules."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "at least",
+      "evidence_type": "exact_quote",
+      "reason": "Independent preparations/days versus technical wells are distinguished, but fixed n=3 lacks variance/precision/effect-size justification."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "global inhibition models",
+      "evidence_type": "exact_quote",
+      "reason": "Correct equations/CI reporting, but no free-inhibitor/tight-binding applicability check or independent-run/nested-well inferential model."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "8\u201310 half-log",
+      "evidence_type": "exact_quote",
+      "reason": "Bounds dose and substrate grids but does not lock pilot-selected settings/windows/model choices before a confirmatory dataset."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "adjust enzyme concentration",
+      "evidence_type": "exact_quote",
+      "reason": "Calibration and troubleshooting repairs lack refreeze and new independent confirmation after changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "stop and conclude no target effect",
+      "evidence_type": "exact_quote",
+      "reason": "Two nonsignificant/no-dose-effect runs do not establish no consequential target effect without a precision/equivalence rule; target-stage chemical loss also is not separated from target inhibition."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Direct target readout (if available)",
+      "evidence_type": "exact_quote",
+      "reason": "LC-MS/absorbance/NMR and binding are named but analytical specificity, matrix effects, product recovery and quench validation are not operationalized."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record initial rates",
+      "evidence_type": "exact_quote",
+      "reason": "No linked raw-file/unit IDs, exact software/settings versions and reconstructable analysis audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Controls per plate",
+      "evidence_type": "exact_quote",
+      "reason": "Vehicle, enzyme/substrate omissions, reporter/product bypass, fluorophore spikes and conditional known inhibitors are prospective with discriminating roles."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Kinetic patterns suggest mechanisms but do not prove binding",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main kinetics/evidence map and explicit limits. Null and attribution overreach are charged only P13."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Kinetic patterns suggest mechanisms but do not prove binding",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main kinetics/evidence map and explicit limits. Null and attribution overreach are charged only P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Kinetic patterns suggest mechanisms but do not prove binding",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main kinetics/evidence map and explicit limits. Null and attribution overreach are charged only P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Kinetic patterns suggest mechanisms but do not prove binding",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main kinetics/evidence map and explicit limits. Null and attribution overreach are charged only P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Kinetic patterns suggest mechanisms but do not prove binding",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main kinetics/evidence map and explicit limits. Null and attribution overreach are charged only P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Kinetic patterns suggest mechanisms but do not prove binding",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main kinetics/evidence map and explicit limits. Null and attribution overreach are charged only P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Kinetic patterns suggest mechanisms but do not prove binding",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main kinetics/evidence map and explicit limits. Null and attribution overreach are charged only P13."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "vehicle CV \u226410\u201315%",
+      "evidence_type": "exact_quote",
+      "reason": "Calibrated standards/dynamic range and coupling plateau with numeric precision/linearity gates and corrective action are given."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "unblind after primary analysis",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized plate positions, coded preparations and primary analysis before unblinding."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "do not interpret precipitated wells",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective technical exclusion/stopping includes solubility, interference and assay validity; biological-null rule defect belongs to P13."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "composite function",
+      "evidence_type": "exact_quote",
+      "reason": "Explains detector/coupling/target relationships and kinetic signatures/limits."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Reporter rate-limiting",
+      "evidence_type": "exact_quote",
+      "reason": "Ordered diagnostic titration and repairs cover coupler limitation, depletion, optical interference and precipitation."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Good controls and mechanism map, but insufficient source-condition readiness, precision planning and independent analytical/negative-result validation.",
+  "item_score": 40
+}

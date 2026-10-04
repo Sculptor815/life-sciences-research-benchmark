@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "mol-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:37:23.738372+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "35a765516f3f35194a6bd41c2e5b915b5d06f4db8b6a2d8dd2be285ed8966df4",
+  "question_sha256": "453889fc4c24123999f74b4c6f72eadc43b6fce61807c6506eb014d807e733dc",
+  "reference_sha256": "87462fd94dc1131799114e1693589c1a9fc01f36afacfd6b8414af5f9c66b50c",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "75dff2a0bac74dc4d094ceaf5af8b8648596eeeb7b0b944e196261ec2da6f9eb",
+  "primary_route": "Acute isogenic p53 loss and near-endogenous rescue with damage, separate caffeine perturbation, longitudinal cell fate and fixed DNA/incorporation/death assays.",
+  "complete_final_answer_read": true,
+  "word_count": 2280,
+  "first_round_scientific_quality": 95.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation of prior detailed Methods/supplements or validated modern protocols with condition-transfer checks. Avoiding historical reconstruction does not remove this requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use an inducible depletion method",
+      "evidence_type": "exact_quote",
+      "reason": "The actual acute-depletion/delivery and staining/pulse workflows remain unspecified settings to calibrate; no concrete quantitative preparation recipe or calibration-to-choice procedure sets those conditions."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Define a lesion-equivalence margin from assay precision",
+      "evidence_type": "exact_quote",
+      "reason": "Positive/no-analogue/reference controls are useful, but no objective quantitative measurement-accuracy, DNA linearity/compensation or recovery criterion determines the assay acceptance limits from calibration."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Prespecify multiplicity control",
+      "evidence_type": "exact_quote",
+      "reason": "Correct clustered risk-difference and equivalence estimands are given, but no actual correction/gatekeeping procedure for necessity and rescue claims is specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "concentration-by-exposure-duration grid",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded agent/caffeine dose-time range or procedure deriving the exploration bounds/stopping point before locking the confirmatory settings."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No linked raw images/cytometry files, cell/well identifiers and exact segmentation/gating/model/code/settings versions for audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and evidentiary scope",
+      "evidence_type": "exact_quote",
+      "reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong proposed causal design: matched manipulation controls, authenticated p53-competent parent and dynamic rescue qualification; initial physical damage is distinguished from later repair. Original G1 cohort, death and unknown-outcome bounds prevent survivor-only inference. Independent allocation/variance planning, blinded randomization and technical exclusions are explicit. Calibration is excluded from confirmation, with retuning before confirmatory work. Necessity requires negligible residual damage-specific arrest, rescue equivalence and increased S entry rather than death. Live phase and registered fixed-cell readouts provide complementary validation; caffeine remains separate.",
+  "item_score": 65
+}

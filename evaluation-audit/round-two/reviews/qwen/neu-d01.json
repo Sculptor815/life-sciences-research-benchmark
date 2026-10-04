@@ -1,0 +1,222 @@
+{
+  "model_code": "qwen",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:08:24.008767+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "8927a05681570365d9ac53f087d37f58634ba49c79e940f9359c08c79c11fa32",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "dae07e8d644031a2980537e12e4877edb3f3a098703ad192d3ddcfe42eb3cf32",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 4289,
+  "first_round_scientific_quality": 53.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Returned answer has 4,289 whitespace-delimited words versus the frozen 3,500-word limit, a material overrun."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Coordinates, viral volume, titer",
+      "evidence_type": "exact_quote",
+      "reason": "The chosen viral implementation has no functional delivered dose, executable preparation or quantitative procedure that sets the unspecified core delivery values."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "This is optional but strengthens inference",
+      "evidence_type": "exact_quote",
+      "reason": "Independent physiological target-engagement calibration is optional. No required suppression/recovery acceptance or independently validated behavioral measurement accuracy precedes inference."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Binary outcome",
+      "evidence_type": "exact_quote",
+      "reason": "Omissions are measured separately but the primary choice denominator and missing/ambiguous tracking/event handling are not specified."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Increase trials per condition",
+      "evidence_type": "exact_quote",
+      "reason": "The precision pilot sizes trials per animal, not independent animals required for the group-level effect; more trials do not establish between-animal precision."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "movement covariates",
+      "evidence_type": "exact_quote",
+      "reason": "The initial primary model conditions on post-treatment movement; later caveats help but do not give assumptions identifying a direct effect. No explicit intervals or multiplicity procedure for confirmatory contrasts."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "preferentially test the P-to-Q synapse/output",
+      "evidence_type": "exact_quote",
+      "reason": "Anatomical localization alone does not rule out terminal-tool excitation or propagated collateral effects. No operational assay distinguishes intended synaptic block from these mechanisms before the pathway claim."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "putative inhibition-related behavioral effect",
+      "evidence_type": "exact_quote",
+      "reason": "Light is selected for a desired retrieval-specific behavioral dissociation, without bounded independently physiological calibration. This risks outcome-driven parameter selection."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "New calibration cohorts are mentioned, but revisions are not explicitly refrozen and followed by fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "absent or substantially smaller",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative equivalence/confound bound defines these decision states. Sensory/motor preservation cannot be established by apparent absence alone."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Linear track or open field",
+      "evidence_type": "exact_quote",
+      "reason": "A different locomotion setting and illumination during movement do not validate delayed motor effects of cue-window inhibition; no matched independent retrieval/perturbation validation is operational."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No linked raw trial/video/physiology manifest with identifiers and exact acquisition/tracking/code/environment/model versions."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Extensive proposed terminal design with identity/histology, relevant reporter/no-light/epoch controls, randomized stratified animals, blinded scoring, technical exclusions and welfare rules. It recognizes motion may be downstream and offers diagnostic revisions. Yet independent animal power, mandatory target engagement, outcome-independent tuning and auditable measurement/inference are incomplete; verbosity also materially exceeds the prompt limit.",
+  "item_score": 30
+}

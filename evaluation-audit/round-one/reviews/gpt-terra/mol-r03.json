@@ -1,0 +1,104 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "gpt-terra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.070019+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "5145191025d3e7b8f48aa690871b309e7c3b48e33d3b4ee95a6c65f5b908ea41",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "A cofactor should be called a required executioner only if:",
+      "issue": "Combination reconstitution, necessity and rescue identify a required component, but do not identify which molecule forms the damaging structure. A required activator/chaperone remains possible; later caveats acknowledge this but the executioner criterion is still insufficient."
+    },
+    {
+      "quote": "The exact lipid identities and molar ratios must be selected before the experiment and reported.",
+      "issue": "The central membrane formulations, protein production, cell model and assay working conditions remain deferred. The proposal supplies a detailed framework but not the requested concrete implementation."
+    },
+    {
+      "quote": "At least one orthogonal membrane-injury measurement supports the fluorescence result",
+      "issue": "The orthogonal assays strengthen the direction match. However, the primary fluorescence assay lacks explicit free-reporter-plus-protein and reporter-free-vesicle controls; normalization can otherwise confuse optical change with cargo passage."
+    },
+    {
+      "quote": "GSDMD-NT;",
+      "issue": "The cellular panel tests precursor/fragments and cleavage resistance, but lacks a membrane-binding or assembly separation-of-function mutant with folding/abundance checks to connect the in-vitro physical activity specifically to death."
+    }
+  ],
+  "rationale": "Direct protein-free injury is correctly distinguished from exclusive physiological execution. Conductance and single-vesicle integrity readouts qualify the pore-direction test without requiring a specific pore geometry. Mechanistic cell linkage, assay implementation and cofactor attribution remain incomplete.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does the inflammatory-caspase-generated amino-terminal fragment",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "binds to, inserts into, or otherwise disrupts lipid bilayers",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Protein-free membrane leakage assay",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Electrical conductance across a planar bilayer",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "GSDMD-NT is **biochemically sufficient to directly permeabilize the tested lipid membranes**",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

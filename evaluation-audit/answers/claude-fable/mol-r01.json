@@ -1,0 +1,13 @@
+{
+  "model_code": "claude-fable",
+  "model_label": "Claude Fable 5",
+  "item_id": "mol-r01",
+  "requested_model": "anthropic/claude-fable-5",
+  "returned_model": "anthropic/claude-fable-5",
+  "status": "completed",
+  "finish_reason": "content_filter",
+  "answer": "",
+  "answer_utf8_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "original_candidate_record_sha256": "4ef0d93a3f119c1d6b99a8962dc8d5429e3db94c525a2dfc93c48fae032b4567",
+  "scope": "Final answer only. No hidden reasoning, credentials, account metadata or raw provider envelope."
+}

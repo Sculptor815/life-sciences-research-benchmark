@@ -1,0 +1,112 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "claude-opus46",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:30:50.211211+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "611db81a3afdccbec24bccf81cffd77a4c1a1dfb333c7b136103c07d903de403",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 1,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 1,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 45.0,
+  "reasoning_index": 37.5,
+  "errors": [
+    {
+      "quote": "Elevated freezing *above* pre-pairing baseline",
+      "issue": "The ensemble and context were already fear-conditioned with the same footshock response. An increase can reflect strengthening, reconsolidation or generalization of that association; it does not identify a new association as claimed. Use neutral tagging or a distinguishable new outcome and outcome-specific assay."
+    },
+    {
+      "quote": "ON-Dox (labeling window open)",
+      "issue": "The table reverses the stated Fos-tTA/TRE gate: doxycycline suppresses tTA-dependent labeling. The later off-Dox timeline conflicts with this table; resolve before execution."
+    },
+    {
+      "quote": "Based on published contextual-fear effect sizes",
+      "issue": "No such published effect estimate is supplied or sourced. A retrieval effect size also does not establish power for the proposed acquisition interaction. Label the value as hypothetical and power the actual contrast from independent pilot data."
+    },
+    {
+      "quote": "BLA c-Fos in G1 > G2/G3/G4 after Context-A test",
+      "issue": "The specified terminal collection is 90 minutes after Test 3, the optical probe in C, not the Context-A test. Those samples cannot identify A-retrieval activity; use separate terminal cohorts."
+    },
+    {
+      "quote": "not* significantly elevated above other groups",
+      "issue": "A nonsignificant C difference does not rule out sensitization. Require the planned group-by-context contrast and a meaningful bound on generalization."
+    },
+    {
+      "quote": "does not generate a plasticity-competent signal capable of forming new associations",
+      "issue": "A null under one stimulation and learning schedule cannot establish inability to support plasticity. Validate sensitivity and bound the conclusion to the tested parameters."
+    },
+    {
+      "quote": "projection-defined DG→BLA neurons",
+      "issue": "A direct DG-to-BLA projection is neither established by this packet nor validated by this design. Do not assume the proposed retrograde target exists or equate regional c-Fos with a direct route."
+    }
+  ],
+  "rationale": "Includes controls, proposed settings and animal-level analysis, but its central same-context/same-fear increment cannot distinguish new association from modification of an old one. Contradictory gate instructions, unsupported published power premise, mismatched c-Fos sampling and overstrong null/generalization claims further reduce utility. Numerical detail alone does not repair identification.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "reactivation of a dentate gyrus (DG) engram ensemble during an aversive experience",
+      "assessment": "A broad acquisition question is present, but the implemented ensemble already carries fear and the proposed increment does not establish the held-out neutral-context association."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "the original fear memory",
+      "assessment": "A broad acquisition question is present, but the implemented ensemble already carries fear and the proposed increment does not establish the held-out neutral-context association."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Labeling session – Context A fear conditioning",
+      "assessment": "A broad acquisition question is present, but the implemented ensemble already carries fear and the proposed increment does not establish the held-out neutral-context association."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Context A re-exposure (no light, no shock)",
+      "assessment": "A broad acquisition question is present, but the implemented ensemble already carries fear and the proposed increment does not establish the held-out neutral-context association."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Elevated freezing *above* pre-pairing baseline",
+      "assessment": "A broad acquisition question is present, but the implemented ensemble already carries fear and the proposed increment does not establish the held-out neutral-context association."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

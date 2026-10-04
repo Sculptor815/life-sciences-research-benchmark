@@ -1,0 +1,222 @@
+{
+  "model_code": "glm",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:15:35.387372+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "60726b0bda3bcf0dd8e39d8f8fce42ba331d161731656e094096c5b6895a1dcf",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c34e31b345add97f82d2c8c0395bdb08fb0703500f162c4807636135bf58f70e",
+  "primary_route": "Separate optical, reporter and target kinetics with substrate titration and proposed independent product validation.",
+  "complete_final_answer_read": true,
+  "word_count": 1902,
+  "first_round_scientific_quality": 58.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Distinguishing Target Inhibition, Substrate Competition, and Reporter-System Interference",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior target/reporter Methods, supplements or a validated protocol before execution and check transfer of detailed conditions."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "at minimum, inner-filter artifact is present",
+      "evidence_type": "exact_quote",
+      "reason": "Fluorophore loss without enzyme is not specific for inner-filter absorption; chemical product loss or other quenching can cause it."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Compound characterization",
+      "evidence_type": "exact_quote",
+      "reason": "Spectra/solubility/activity qualification do not establish reagent identity/purity and authenticated compound stock concentration."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "exact assay buffer",
+      "evidence_type": "exact_quote",
+      "reason": "Buffer/pH/cofactors/temperature and reaction preparation remain unspecified without a concrete setting/calibration procedure."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "initial rates (v)",
+      "evidence_type": "exact_quote",
+      "reason": "No primary product amount/concentration and time unit convention and complete weak/missing quantitative reporting rule."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "\u22653 independent days",
+      "evidence_type": "exact_quote",
+      "reason": "Independent days and wells are distinguished, but the fixed replicate counts lack a variance/precision/effect-size justification."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "pooled data",
+      "evidence_type": "exact_quote",
+      "reason": "Pooled kinetic fits lack independent-day/nested uncertainty handling and free-inhibitor/depletion assumptions; Cheng-Prusoff applicability is not checked."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Arm B positive",
+      "evidence_type": "exact_quote",
+      "reason": "Reporter-only fluorescence loss is called enzyme inhibition without explicitly correcting that arm for optical attenuation (correction is assigned to Arm C). The central reporter measurement cannot identify catalytic loss on that basis."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Common compound series",
+      "evidence_type": "exact_quote",
+      "reason": "Bounded series and gates are present but no lock of pilot-selected settings/windows/model choice before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Stop and reformulate",
+      "evidence_type": "exact_quote",
+      "reason": "No refreeze and fresh independent confirmation after reformulation/repair."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "pure reporter interference",
+      "evidence_type": "exact_quote",
+      "reason": "Unchanged direct product is treated as exclusion of target inhibition without an equivalence/precision rule; reduced product needs substrate/product chemical alternatives excluded."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "same quench/stop conditions",
+      "evidence_type": "exact_quote",
+      "reason": "Matrix-processed standards help but no operational compound-dependent recovery/ion suppression/product stability validation establishes independent target chemistry accuracy."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "report fold-range",
+      "evidence_type": "exact_quote",
+      "reason": "No raw-file/unit identifiers, source provenance and exact code/software/settings audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Key controls on every plate",
+      "evidence_type": "exact_quote",
+      "reason": "Active vehicle, omissions, product/fluorophore controls and reporter bypass are prospectively distinguished; conditional known inhibitors are not assumed available."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "All mechanistic conclusions are conditional",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses main evidence, soluble-window/aggregation alternatives and kinetic comparison; specific optical/reporter attribution failures are charged only in G1/P09/P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "All mechanistic conclusions are conditional",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses main evidence, soluble-window/aggregation alternatives and kinetic comparison; specific optical/reporter attribution failures are charged only in G1/P09/P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "All mechanistic conclusions are conditional",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses main evidence, soluble-window/aggregation alternatives and kinetic comparison; specific optical/reporter attribution failures are charged only in G1/P09/P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "All mechanistic conclusions are conditional",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses main evidence, soluble-window/aggregation alternatives and kinetic comparison; specific optical/reporter attribution failures are charged only in G1/P09/P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "All mechanistic conclusions are conditional",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses main evidence, soluble-window/aggregation alternatives and kinetic comparison; specific optical/reporter attribution failures are charged only in G1/P09/P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "All mechanistic conclusions are conditional",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses main evidence, soluble-window/aggregation alternatives and kinetic comparison; specific optical/reporter attribution failures are charged only in G1/P09/P13."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "no-enzyme blanks <5%",
+      "evidence_type": "exact_quote",
+      "reason": "Standard linearity, blank and precision thresholds plus stop/switch on failed optical correction are defined."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "dilutions coded by a second person",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized plate positions and coded analyst with vehicle balancing."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "discarded regardless of the arm",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective solubility and technical suitability stops independent of favorable mechanism outcome."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "verified by titration",
+      "evidence_type": "exact_quote",
+      "reason": "Failure-specific reporter titration, optical path/readout repair and solubility checks include diagnostic tests."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Useful four-arm layout, but reporter attribution is optically confounded and several operational and inferential requirements are incomplete.",
+  "item_score": 30
+}

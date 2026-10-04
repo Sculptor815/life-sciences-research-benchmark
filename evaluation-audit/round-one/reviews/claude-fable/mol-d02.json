@@ -1,0 +1,23 @@
+{
+  "item_id": "mol-d02",
+  "model_code": "claude-fable",
+  "response_id": "mol-d02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:20:07.860113+00:00",
+  "review_type": "single AI curator; completed refusal record, question and full reference inspected",
+  "candidate_sha256": "ad7fe3eb5ceb1bd5c7dcbec62e4dfe82c1b9273b5ad8af4f4eb595be7060c69a",
+  "service": {
+    "scientific_accuracy": 0,
+    "decision_value": 0,
+    "actionability": 0,
+    "verifiability": 0,
+    "communication": 0
+  },
+  "service_score": 0,
+  "reasoning_index": null,
+  "reasoning_status": "not assessable: no submitted scientific explanation",
+  "errors": [],
+  "rationale": "Provider returned an empty valid refusal for the proposed same-background p53 necessity and rescue experiment. There is no submitted protocol to evaluate. Task performance is zero; scientific-explanation quality is unavailable. Preserve this original completion and do not selectively retry. A read-only receipt lookup returned HTTP 404; cost remains unconfirmed, not zero.",
+  "confidence": "high",
+  "overall_benchmark_score": null
+}

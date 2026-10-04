@@ -1,0 +1,34 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "qwen",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.806220+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "7886d8c4218850e17850c8f3ce85c61f66ba3190ed277b47b3d3c210d9be858d",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 85.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "the calculated rate is unchanged when enzyme concentration is reduced proportionally",
+      "issue": "The absolute rate should decrease with active enzyme amount. Only an explicitly enzyme-normalized rate should remain constant; the answer later contradicts itself by correctly requiring proportionality."
+    }
+  ],
+  "rationale": "Correct calculation and broad explanation, but internally inconsistent enzyme-dilution criterion and excessive repetition reduce reliability and usability. No penalty for failing to discuss obsolete multiple-choice distractors.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

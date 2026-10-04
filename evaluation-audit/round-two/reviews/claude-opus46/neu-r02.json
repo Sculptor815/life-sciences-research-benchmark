@@ -1,0 +1,239 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "neu-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:26:09.583075+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "2021c8ea8baaf67ab2dc48e8f1b60a51eb132ef816caff66d0716798b2932dfc",
+  "question_sha256": "59d29b23d93b7785f7e6965d9a23209f90e316836b9f4e9371b8b3a9f7e1c560",
+  "reference_sha256": "1206c206c57094dab8fe0b44054d81cf50a998470190499bd71d53a3d2d1ae0c",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "18f2c6076e420d82fc622ea5d878836479f967b1c133e07e5d456bef75fa5d78",
+  "primary_route": "Kitten monocular lid closure, neonatal baseline and cortical single-unit/conditional LGN recordings.",
+  "complete_final_answer_read": true,
+  "word_count": 3273,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of previous primary Methods, supplements or a validated technical protocol is proposed. Local pilots, welfare approval and promises to fill unknown settings do not meet this separate requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core exposure duration/intensity, stimulus timing and cortical acquisition/response settings remain a list to select later, without executable quantitative settings or a sufficiently specified calibration-to-setting procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Optical/stimulus and response calibration is named, but quantitative acceptance-to-action thresholds or a concrete derivation of tolerances for eye isolation, delivered contrast and mapping reliability are absent."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal/cluster replication and pilot variability are recognized, but no quantitative power or interval-width target is linked to the meaningful effect and independent-unit variance."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Age, exposure dose and stimulus-parameter exploration has no bounded candidate grid or objective range-selection/search-stop rule before locking."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly connect technical changes to a revised frozen procedure and fresh independent confirmation; ordinary initial pilot separation is insufficient."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-animal/unit-to-output manifest with calibration records, exact analysis versions/settings and all exclusions/deviations is specified."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "No intervention; normal binocular experience",
+      "evidence_type": "exact_quote",
+      "reason": "There is no handling/surgery sham for the causal unilateral manipulation, and afferent physiology is triggered only by visible corneal opacity. Normal-looking optics do not exclude altered upstream input; both are missing control-design safeguards."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "mean of all neurons",
+      "evidence_type": "exact_quote",
+      "reason": "The endpoint averages contralateral-to-ipsilateral categories without recoding by the randomized deprived eye, so opposite-eye animals can cancel a genuine deprivation effect. Mean score/7 is also not equivalent to a contralateral bias index. Weak denominator/classification rules are incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Its data are excluded and a replacement animal enrolled",
+      "evidence_type": "exact_quote",
+      "reason": "Welfare losses and low unit yield are automatically excluded/replaced without an assigned-animal outcome/attrition analysis; low yield can itself depend on the biological response."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "partial",
+      "evidence_type": "exact_quote",
+      "reason": "The adaptive rule uses a group-effect quantity (partial eta squared), not blinded nuisance variance; the secondary neuron-level permutation does not specify animal-level exchangeability. The proposed ANOVA/post-hoc family does not resolve these errors."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If still non-significant with n = 9",
+      "evidence_type": "exact_quote",
+      "reason": "A non-significant fixed maximum sample does not establish a small effect or experience independence. An interval excluding a meaningful effect is required."
+    },
+    {
+      "id": "G4",
+      "state": "unmet",
+      "points": 5,
+      "quote": "initial scaffold is innate",
+      "evidence_type": "exact_quote",
+      "reason": "Naive-age organization cannot identify genetic specification versus spontaneous-activity mechanisms, nor can absence at a younger age uniquely identify instructive experience rather than maturation/permissive activity."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The critical causal experiment has not been performed",
+      "evidence_type": "exact_quote",
+      "reason": "Absence of a result from the supplied packet is upgraded to a claim it has not been performed. The packet also does not establish oriented fields/columns as observed facts."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Independent units",
+      "evidence_type": "exact_quote",
+      "reason": "The developmental question and unilateral intervention are meaningful, model/welfare gates and animal-level replication are stated. Specific endpoint and causal errors are charged in their designated checks, not again as general omissions."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "lateral geniculate nucleus",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized litter/eye assignment with separately prepared coded recordings is credible. Anesthesia, alignment and eye defects have diagnostic actions; conditional LGN physiology is a useful orthogonal assay even though its restricted trigger fails the full causal-control requirement."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "lateral geniculate nucleus",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized litter/eye assignment with separately prepared coded recordings is credible. Anesthesia, alignment and eye defects have diagnostic actions; conditional LGN physiology is a useful orthogonal assay even though its restricted trigger fails the full causal-control requirement."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "lateral geniculate nucleus",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized litter/eye assignment with separately prepared coded recordings is credible. Anesthesia, alignment and eye defects have diagnostic actions; conditional LGN physiology is a useful orthogonal assay even though its restricted trigger fails the full causal-control requirement."
+    }
+  ],
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 50.0,
+  "explanation_reason": "Historically relevant intervention, but biased endpoint coding, control omissions, adaptive inference and null conclusions undermine the proposed result.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, experience mechanism and unilateral deprivation match. Randomized eye sides are not aligned in the reported dominance index, and the causal comparison lacks sham/general afferent validation. These critical readout/control failures prevent a qualified experienced-eye-shift conclusion.",
+  "item_score": 8.0
+}

@@ -1,0 +1,90 @@
+{
+  "item_id": "inf-d01",
+  "model_code": "gemini-pro",
+  "response_id": "inf-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:07:10.280156+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "1f4aafc3db91e52bad45991c091f59719ae53e05583deaaf9836d2bda9dcdcf0",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 1,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 1,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 1
+  },
+  "service_score": 45.0,
+  "reasoning_index": 31.25,
+  "errors": [
+    {
+      "quote": "using them to extract concordant, biologically meaningful metabolite signals while regressing out non-covarying technical noise",
+      "issue": "Cross-omic covariance does not distinguish biology from shared or time-aligned technical effects. Integration cannot rescue an unidentified metabolite treatment contrast by assuming RNA/protein are biological anchors."
+    },
+    {
+      "quote": "strictly relying on cross-omic covariance",
+      "issue": "Even in complete confounding, this is offered as an alternative to dropping the assay. The untested assumption that technical effects do not covary with RNA/protein does not identify the desired metabolite effect."
+    },
+    {
+      "quote": "Identify the factor(s) with the highest variance explained across all three omic layers.",
+      "issue": "High shared variance is not evidence of a mean treatment response; a factor may represent response heterogeneity or technical variation. Centered delta factors can omit a uniform treatment shift. Define a paired mean endpoint and assess technical associations."
+    },
+    {
+      "quote": "regress out known batch covariates (M2) *excluding* the primary treatment variable",
+      "issue": "This does not define an estimable nuisance model that preserves the paired biological contrast. State the rank/overlap check and separate technical effects without removing or fabricating the target mean."
+    },
+    {
+      "quote": "If metabolomic feature weights in the latent factor perfectly correlate with the technical batch",
+      "issue": "Feature loadings are indexed by features, while batch labels index samples. Correlate sample scores or residual measurements with batch, not incompatible vectors; perfect correlation is also an unjustifiably narrow trigger."
+    },
+    {
+      "quote": "Set the missingness threshold at the point where correlation drops below 0.85.",
+      "issue": "Random masking cannot validate informative missingness, and factor comparisons need sign/rotation alignment. The fixed threshold, 10% variance gate and factor-count rule lack case-specific error/precision calibration."
+    },
+    {
+      "quote": "Run joint pathway enrichment",
+      "issue": "Specify the measured/testable feature universe, annotation ambiguity, cross-layer dependence and testing family. Naming pathway databases and an FDR threshold is insufficient to make this stage reproducible."
+    }
+  ],
+  "rationale": "Recognizes paired patients, sealed external data and the existence of confounding, but its recommended core method attempts to solve confounding through unverified covariance assumptions. Factor selection, batch diagnostics and missing-data checks do not support the requested inference. Technical controls, nested selection and a reproducible scoring rule need substantial completion.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All twelve complete received final answers, the exact question/packet and full reference answer were personally read. No API judge or hidden reasoning was used; no real pipeline execution was performed.",
+    "M2 states that most post-treatment metabolomics samples share one batch, but does not specify how pretreatment samples are distributed. Check patient/time/batch design rank, overlap and precision; concentration alone is not proof of complete confounding.",
+    "Different batches across RNA and protein do not imply independent artifacts. Shared samples, handling, composition and time-aligned allocation can create cross-layer concordance.",
+    "The reference recommends paired contrasts as integration input. Centered delta factors describe between-patient heterogeneity and need not retain a mean shift; one delta row per patient has no pre/post label to classify. A sample-level score or explicit retained mean-effect model is a valid alternative.",
+    "The reference rule rejecting batch- or donor-dominated factors is too categorical. Association/variance dominance is diagnostic, not proof of artifact. For one delta per patient, a separate fixed effect for each donor is not a meaningful factor-association test.",
+    "Pairing alone does not justify sign permutations. Require a suitable null symmetry/exchangeability model, address technical dependence and rerun selection. Joint row permutations leave unsupervised covariance unchanged.",
+    "External projection with frozen weights cannot validate those same weights by correlation. Independent cohorts do not supply matched patient-score vectors; compare a defined population-level endpoint.",
+    "Missing-view algorithms do not identify MNAR mechanisms. Missing-platform renormalization changes the score definition. Refit learned processing within training folds and predefine external score applicability.",
+    "The reference protocol says stop and restart if external data were used for tuning. Restarting on the same exposed cohort does not restore independence; a revised program requires a new untouched evaluation.",
+    "The reference power wording must include biological paired variation, design and multiplicity. Technical replicates alone do not estimate biological sampling variability, and no universal n cutoff is inferred from 30 patients.",
+    "Measured/testable enrichment universes, dependence-aware tests and frozen annotations matter; a ranked analysis of all filtered tested features can satisfy this without a mandatory keyword. Late integration and pathway-first discovery are valid alternatives.",
+    "Purity changes can be part of the treatment-associated specimen response. Adjusting a post-treatment variable changes the estimand and does not automatically prove or remove confounding.",
+    "Original frozen keys and candidates remain unchanged. Corrections are disclosed here; reviews are provisional, unblinded and not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Argelaguet et al. (2018), Multi-Omics Factor Analysis",
+      "url": "https://link.springer.com/article/10.15252/msb.20178124",
+      "scope": "Original model overview, input/output definitions and initial validation passages inspected; no full supplementary audit or numerical rerun."
+    },
+    {
+      "title": "MOFA2 author documentation: FAQ",
+      "url": "https://biofam.github.io/MOFA2/faq.html",
+      "scope": "Read normalization, missingness, factor interpretation, group centering and covariate guidance. Background for model distinctions; no universal sample-size threshold imported."
+    },
+    {
+      "title": "MEFISTO author documentation",
+      "url": "https://biofam.github.io/MOFA2/MEFISTO.html",
+      "scope": "Read covariate-input, smooth-factor and multiple-group overview to distinguish temporal/spatial modeling from generic mixed-model batch adjustment."
+    }
+  ],
+  "overall_benchmark_score": null
+}

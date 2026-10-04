@@ -1,0 +1,222 @@
+{
+  "model_code": "glm",
+  "item_id": "bio-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:08:07.511731+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "d7683df9d0b98fd0cad8b90a0fc1f86143dde968e9542d638af243f8b8d41420",
+  "question_sha256": "9897959937c05bea4661cdf8b301b0b350235db1b56f302510fc8132468083b7",
+  "reference_sha256": "494bb9585a8ba22eeb3aa44162cd54a8b39534002dd77a6f77e38ec56d1ef0b6",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "d3cb781eb72861b28646f63ca476571c18d2e96f0abbc4e59fb79d6b11b6701d",
+  "primary_route": "Isotope tracing, step blockade/restoration and proposed biochemical reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2916,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "laboratory's validated method",
+      "evidence_type": "exact_quote",
+      "reason": "Naming an unspecified validated method is not an explicit plan to consult its detailed protocol and verify condition transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No matched sham wash or inactive/matched-protein add-back control for restoration; an enzyme-fraction-alone test addresses a different confound."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "activities in quenched aliquots",
+      "evidence_type": "exact_quote",
+      "reason": "Enzymatic quenching stops the reactions and commonly denatures enzymes; assaying active target/flanking enzyme flux in those quenched isotope aliquots is not a validated activity assay. Separate activity-preserving aliquots are required."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "standardized conditions",
+      "evidence_type": "exact_quote",
+      "reason": "No identifiable tissue/organelle preparation or defined source-resolution procedure despite detailed general QC."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Buffer/cofactor/temperature quantities remain unspecified, and intervention instructions add inhibitor both at the initial addition and again in the transition without defining distinct arms/timing."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Each vessel = one independent experimental unit",
+      "evidence_type": "exact_quote",
+      "reason": "Aliquots from one tissue preparation are described as independent despite common source; batch blocking alone does not supply independently prepared biological replication and preparation-level power."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "abandon preparation if A6 respiration exceeds",
+      "evidence_type": "exact_quote",
+      "reason": "Discarding preparations for genuine endogenous respiration selects against a biological alternative. Retain/model that contribution or explicitly limit the estimand; do not turn biological activity into technical exclusion."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A mixed-effects model and conjunctive tests are specified but no confidence interval/uncertainty procedure for G and rescue/flux estimates. Conjunction can control an intersection-union test, so no additional multiplicity penalty is imposed for that correct possibility."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "minimal dose giving a measurable",
+      "evidence_type": "exact_quote",
+      "reason": "Dose selection depends on obtaining stimulation, without a bounded range and declared retained-null rule; subsequent greater/lower doses are not a locked sensitivity design."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No repaired-protocol refreeze and fresh independent confirmation after changing pools, labels, inhibitor or enzyme amounts."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "uniquely supports H1",
+      "evidence_type": "exact_quote",
+      "reason": "Substrate-to-intermediate and intermediate-to-CO2 flux plus inhibitor rescue can occur in a linear/branched network. Pool filling can require the cut step, and an activator can also be metabolized. No identifiable mapped closed-return test supports unique assignment or the stated mandatory failures of the alternatives."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw instrument export and sample coding omit versioned model/code/settings and the complete sample-to-output audit trail."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Orthogonal Experiment: Distinguishing Catalytic Cycle Recycling from Pool Concentration, Respiration Alone, or Non-Cycling Activation",
+      "evidence_type": "exact_quote",
+      "reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Broad prospective proposed design with explicit isotope standards, recovery and target specificity gates, quantitative carbon endpoint, randomization/blinding and diagnostic repairs. Defined no-tissue enzyme assembly and incomplete mixture are proposed as orthogonal sufficiency checks. Main deficits are biological independence, reproducible execution and an over-strong cycling decision; causal overclaim is charged once under P13.",
+  "item_score": 30
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "kimi",
+  "item_id": "mol-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:00:08.268395+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "b5c33d8143433a49619c71cbe25b3fbb10f4b51df4857587eb80ef9a61795b85",
+  "question_sha256": "83f4992b8d828ae4516dfeb944e8921d0f4706164cf7443bb348714562bc468d",
+  "reference_sha256": "fe6cad42d8b330c2133bebe164b42f815489fc29ea2267094b0d0987154f9562",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "2343d0f5c9a714bf3a283dc3b7a5cb1477751bf9a4ec8f8759ca23d031c2212a",
+  "primary_route": "Controlled rescue, independent epitopes, MS, tagged target and candidate-antigen perturbation.",
+  "complete_final_answer_read": true,
+  "word_count": 1430,
+  "first_round_scientific_quality": 82.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "include empty-vector and expression controls",
+      "evidence_type": "exact_quote",
+      "reason": "Prospectively specifies parental/null/rescue and matched vector controls, explains genetic dependence and the distinct rescue interpretation; sufficient control roles for the selected essay-scale route."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "proposed experiments; none are reported in E1.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer-check prior Methods, supplements or a validated protocol before conducting the proposed validation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "replicates, quantification, and normalization were adequate",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective background/linearity calibration with an acceptance criterion and failed-calibration action for the proposed band measurement."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "replicates, quantification, and normalization were adequate",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative band-intensity definition with normalization denominator and weak/saturated-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Important distinction: this is",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer distinguishes target-locus dependence from target identity, gives alternatives and supplied-evidence limits, labels proposals and stays within 1500 words. Validation-identity overstatements are assessed specifically under P14."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Important distinction: this is",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer distinguishes target-locus dependence from target identity, gives alternatives and supplied-evidence limits, labels proposals and stays within 1500 words. Validation-identity overstatements are assessed specifically under P14."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Important distinction: this is",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer distinguishes target-locus dependence from target identity, gives alternatives and supplied-evidence limits, labels proposals and stays within 1500 words. Validation-identity overstatements are assessed specifically under P14."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Important distinction: this is",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer distinguishes target-locus dependence from target identity, gives alternatives and supplied-evidence limits, labels proposals and stays within 1500 words. Validation-identity overstatements are assessed specifically under P14."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Important distinction: this is",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer distinguishes target-locus dependence from target identity, gives alternatives and supplied-evidence limits, labels proposals and stays within 1500 words. Validation-identity overstatements are assessed specifically under P14."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Important distinction: this is",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer distinguishes target-locus dependence from target identity, gives alternatives and supplied-evidence limits, labels proposals and stays within 1500 words. Validation-identity overstatements are assessed specifically under P14."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Important distinction: this is",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer distinguishes target-locus dependence from target identity, gives alternatives and supplied-evidence limits, labels proposals and stays within 1500 words. Validation-identity overstatements are assessed specifically under P14."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If rescue restores the band but MS finds no target peptides",
+      "evidence_type": "exact_quote",
+      "reason": "An absent peptide result is interpreted as comigration/indirect expression without an adequate sensitivity and coverage gate; validated construct function is also missing from the negative-rescue rule."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "identifies the actual antigen; candidate can then be genetically tested",
+      "evidence_type": "exact_quote",
+      "reason": "The later candidate-perturbation proposal is useful, but the primary plan calls band MS decisive antigen identity and makes assignment from convergent presence without separating co-migrants/complex partners and antibody recognition. This is materially incomplete under the strict independent-validation requirement."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Good main genotype/identity distinction and broad validation controls; peptide absence and MS antigen assignment are overstated.",
+  "item_score": 70
+}

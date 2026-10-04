@@ -1,0 +1,239 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "mol-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:28:17.404678+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9e2e4f822d65bbc8fe11964dd30c99f76f7b7e5d6e2c89180d970d610921bff7",
+  "question_sha256": "18ef4462f4f6072b5cde3b86e735cd54dcfe8ff2616e3905276a619a2e8bee05",
+  "reference_sha256": "da4f395c3ac28e425be90cad5a96348ce8907930151791cf1c9eb7010890b847",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8207a1365c0a974e5619de276476a571597cfdb256cd4676718f94499a1e26fa",
+  "primary_route": "Classical dose/stage/repair-mutant tests, CFU-rescue repair-time proxy, conditional RAD9 temperature shifts and follow-up genetic screens.",
+  "complete_final_answer_read": true,
+  "word_count": 3278,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "same phenotype \u2192 same pathway",
+      "evidence_type": "exact_quote",
+      "reason": "Equivalent double-mutant phenotypes alone do not establish a single pathway or uniquely order components; saturation, pleiotropy and convergent parallel routes can produce the same epistasis pattern."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "what they lack is *time*",
+      "evidence_type": "exact_quote",
+      "reason": "Externally imposed delay allowing repair does not establish that RAD9 is not primarily a repair gene or lacks additional repair functions. The packet supports timing as protective, not this exclusive mechanistic attribution."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "method to be chosen from what the lab can perform",
+      "evidence_type": "exact_quote",
+      "reason": "Synchrony, conditional-allele switching and key assay operation lack executable conditions or concrete calibration-to-choice beyond screening intent. Proposed sampling times and survival-selected dose windows help but do not complete the core workflow."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "\u226590% concordance on division-timing bins",
+      "evidence_type": "exact_quote",
+      "reason": "Bins, timing ground-reference/resolution and assay recovery/dynamic-range calibration are unspecified. The 90% inter-scorer agreement threshold cannot alone validate timing accuracy or the CFU-as-repair measurement."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "n \u2265 3",
+      "evidence_type": "exact_quote",
+      "reason": "Independent cultures are correctly identified, but fixed n=3/4 has no meaningful-effect, variance-to-power or precision justification."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "a fourth only if two of three disagree",
+      "evidence_type": "exact_quote",
+      "reason": "Additional sampling is conditional on observed concordance, creating outcome-dependent stopping rather than a prepowered fixed or valid sequential rule. The later invitation to extend the observation window after a plateau also needs a separately declared exploratory study."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "right-censoring cells that never divide",
+      "evidence_type": "exact_quote",
+      "reason": "Dead and persistently undivided cells are lumped into right censoring; morphology/growth attempts do not provide a validated competing-death analysis. Culture-level contrasts, assumptions and multiplicity are not fully operationalized."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reduce dose until unirradiated doubling time",
+      "evidence_type": "exact_quote",
+      "reason": "Reducing irradiation dose cannot repair an unirradiated genotype growth defect. That diagnostic branch requires a different allele/system or explicit baseline adjustment and a retest; tightening temperature also requires renewed matched thermal validation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting and pilot separation are present, but no explicit change-control policy requires re-freezing the revised procedure and fresh independent confirmation after technical changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Arrest persists after shift \u2192 RAD9 acts at initiation only",
+      "evidence_type": "exact_quote",
+      "reason": "Persistent arrest does not prove initiation-only function without directly verifying rapid complete functional inactivation in already arrested cells. The restrictive-temperature pre-irradiation phenotype is not that verification."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "functionally",
+      "evidence_type": "exact_quote",
+      "reason": "The repair-time anchor is CFU rescue during imposed delay in rad9 and is called a genetics-free estimate of WT repair time. Survival saturation is not an independent physical lesion-clearance assay, and genotype-dependent protection/repair can differ. Direct lesion/intermediate confirmation is absent."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw movie/lineage/assay identifiers, exact analysis versions/settings and source-to-output records sufficient to reconstruct the study are not specified as a complete audit trail."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "M",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "obtain/replicate that method from the original authors",
+      "evidence_type": "exact_quote",
+      "reason": "The explicit prior-method retrieval and local E3 validation satisfy M. WT/rad9, sham, imposed-delay, matched temperature, conditional-state and independent allele controls are prospectively explained. The alternative timer/licensing/repair question and broad chain are meaningful; 3,278 words and proposed-status labeling meet format."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "every 15\u201320 min",
+      "evidence_type": "exact_quote",
+      "reason": "Division/nuclear/budding time and CFU outcomes have baseline comparisons, coded random aliquots and blinded scoring. A proposed five-dose survival ladder and fixed survival-selected operating windows provide bounded parameter exploration; physical repair confirmation is charged only to P14."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "every 15\u201320 min",
+      "evidence_type": "exact_quote",
+      "reason": "Division/nuclear/budding time and CFU outcomes have baseline comparisons, coded random aliquots and blinded scoring. A proposed five-dose survival ladder and fixed survival-selected operating windows provide bounded parameter exploration; physical repair confirmation is charged only to P14."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "every 15\u201320 min",
+      "evidence_type": "exact_quote",
+      "reason": "Division/nuclear/budding time and CFU outcomes have baseline comparisons, coded random aliquots and blinded scoring. A proposed five-dose survival ladder and fixed survival-selected operating windows provide bounded parameter exploration; physical repair confirmation is charged only to P14."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Useful classical-genetic alternatives and honest prerequisite risk, but repair-function exclusion, epistasis ordering, outcome-dependent replication and nonidentifying repair/switch readouts require major correction.",
+  "historical_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+  "item_score": 16.0
+}

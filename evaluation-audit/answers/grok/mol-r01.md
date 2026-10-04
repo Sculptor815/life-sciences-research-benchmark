@@ -1,0 +1,273 @@
+# Grok 4.7 / mol-r01
+
+Original final answer, shared by both scoring rounds.
+
+The decisive next question is whether the death-inducing amino-terminal fragment of GSDMD is itself sufficient to compromise a protein-free lipid bilayer, or whether membrane failure still requires another cellular protein. Run a staged sufficiency test: define that fragment molecularly, challenge synthetic protein-free membranes with orthogonal readouts, add cellular protein back only if the minimal system fails, and then demand that the same molecular features explain lytic death and cytokine release, but not cytokine processing, in the original cells.
+
+## Evidence, inference, and what is not yet concluded
+
+The supplied evidence supports four limited inferences and stops short of a membrane mechanism.
+
+1. Necessity is genetic and context-bound. A screen found GSDMD necessary for inflammatory-caspase-associated lytic death in the tested cells. That does not show that GSDMD is the pore, a lipase activator, a channel regulator, or the sole lytic protein in every cell.
+2. Cleavage converts an autoinhibited protein into an active death-inducing amino-terminal species. The intact protein does not kill; the liberated amino-terminal domain does. Cleavage is therefore an activation step, not proof of how the membrane fails.
+3. Cytokine processing and cytokine release are experimentally separable. Processing can be scored independently of membrane failure, and release must not be used as a surrogate for processing.
+4. The physical route from the active domain to loss of membrane integrity is undetermined. Direct lipid action and activation of another cellular effector both remain compatible with every supplied observation.
+
+The causal gap is between “this domain is sufficient to kill a cell” and “this domain directly breaches lipids.” Cellular sufficiency cannot close that gap, because a transfected or delivered fragment still has access to every cellular protein.
+
+## Unresolved question and competing mechanisms
+
+**Question.** After autoinhibition is relieved by proteolytic separation of the two domains, does the amino-terminal domain compromise membrane integrity by direct action on lipids, or by activating a distinct cellular effector that is the actual membrane-disrupting activity?
+
+Three execution models remain live. A fourth, hybrid model must be retained so that a partial result is not over-called.
+
+| Model | What actually breaches the membrane | Minimal prediction | Cellular prediction |
+| --- | --- | --- | --- |
+| M1, direct membrane action | The amino-terminal domain binds, inserts, and either pores or otherwise disrupts a bilayer without any other protein | Purified active domain permeabilizes protein-free synthetic vesicles of at least one defined lipid composition; intact protein and the carboxy-terminal domain do not | Alleles that abolish protein-free permeabilization abolish lytic death and cytokine release but spare cytokine processing |
+| M2, cellular effector | The amino-terminal domain activates or recruits another protein (channel, lipase, scramblase, or other lytic factor); that protein is necessary for membrane failure | No permeabilization of protein-free bilayers across a validated lipid and dose matrix; a specific protein fraction restores lysis only when the active domain is also present | Depletion of that effector blocks lytic death and release; the effector alone does not replace GSDMD |
+| M3, non-membrane or nonspecific toxicity | Death is aggregation, metabolic collapse, or assay artifact misread as lysis | No specific, cleavage-dependent, lipid-selective membrane activity; denatured or irrelevant proteins of similar gross properties mimic any weak signal | “Lysis” readouts dissociate from one another, or death persists when membrane dyes and large-protein release do not |
+| M4, hybrid | Lipid engagement is required but not sufficient; a cofactor completes disruption | Binding to protein-free membranes without robust permeabilization; permeabilization only after a defined cofactor is added | Mutations can separate lipid binding, cofactor binding, and death |
+
+M1 can itself be pore-like (size-limited aqueous conduits, possibly after oligomerization) or carpet/rupture-like (binding followed by catastrophic bilayer failure). Those sub-models predict different orthogonal signatures and should not be collapsed in advance.
+
+Distinct predictions that the study is built to separate:
+
+- Protein-free sufficiency favors M1 and argues against an obligate protein effector. It does not by itself prove that cells use that activity.
+- Protein-free failure plus a specific add-back favors M2, provided the added protein is inactive without the GSDMD domain and is necessary in cells.
+- Binding without leakage favors either a missing cofactor (M4) or a non-lytic membrane interaction.
+- Concordant allele behavior in liposomes and cells is the bridge from sufficiency to the cellular mechanism. Discordance falsifies the simple claim that the liposome activity is the cellular activity.
+- Cytokine processing should track the relevant protease pathway, not GSDMD membrane activity. Cytokine release and impermeant-dye entry should track membrane failure if release is a consequence of integrity loss.
+
+## Recommended study logic
+
+Do not begin with another cellular knockout. The screen already established necessity. The missing contrast is a system that cannot contain a hidden effector.
+
+Use five stages with explicit stop rules.
+
+1. Define the active molecular species and the cleavage event that produces it.
+2. Minimal reconstitution: protein-free synthetic membranes, dose and lipid matrices, cleavage-state controls.
+3. Orthogonal biophysics on the same preparations: population leakage, single-vesicle morphology, membrane recruitment, assembly state, and, if a lipid mixture is positive, electrical behavior.
+4. Conditional add-back of cellular protein only if stage 2 is negative or shows binding without permeabilization.
+5. Cellular validation in the original screen system, using alleles and effectors defined by stages 2–4, with processing and release scored separately.
+
+A positive stage 2 does not authorize skipping stage 5. A negative stage 2 is decisive against M1 only after the lipid, dose, buffer, and fragment-boundary matrices have been validated. One composition at one concentration is not a negative result.
+
+## Assumptions that the packet does not establish
+
+Label these as assumptions, not findings.
+
+- A1. The death-inducing preparation already in hand is a defined amino-terminal fragment rather than a mixture of cleavage products. Boundaries and the scissile bond are not in the evidence and must be measured.
+- A2. The protease that separates the domains in cells may be an inflammatory caspase, but the packet only places GSDMD downstream of inflammatory-caspase-associated death. Direct cleavage by that caspase is a separate hypothesis and is tested in stage 1, not assumed.
+- A3. “Compromises membrane integrity” means loss of the bilayer barrier to aqueous solutes, which is what lytic death requires. Scrambling, curvature change, or metabolic injury without barrier loss would not satisfy the question.
+- A4. Synthetic phospholipid bilayers are a fair minimal membrane. Failure on that system does not exclude a requirement for a rare lipid, a bilayer asymmetry, or a protein cofactor. The design therefore uses a lipid matrix and an add-back branch rather than one “physiological” recipe.
+- A5. Tags, detergents used in purification, and overexpression can create false activity or hide real activity. Every positive must survive an untagged or tag-removed preparation, and every cellular allele must be compared at similar abundance.
+- A6. The original stimulus and cell identity are not specified beyond “tested cells” and inflammatory-caspase-associated death. Cellular validation must reuse that stimulus and those cells rather than a substituted model.
+
+No numerical setting below is a historical result. Bracketed parameters are unreported and must be fixed by the validation criteria given with them.
+
+## Stage 1 — Define the reagent before any membrane claim
+
+**Purpose.** Make the liposome input identical to the species already shown to induce death, and separate proteolytic activation from membrane execution.
+
+**Operations that can be justified.**
+
+- Sequence the death-inducing amino-terminal preparation by mass spectrometry and, if the new amino terminus is free, amino-terminal sequencing. Record the first and last residues that are actually present. Do not assume a cleavage-site residue number; none is supplied.
+- In parallel, purify intact GSDMD and the carboxy-terminal domain using the same host, tag strategy, and final buffer. Confirm identity by intact mass and purity by a stained denaturing gel and a method that detects common contaminants (host proteins, nucleic acid, residual protease).
+- If the active species is produced by cleavage rather than by expressing a pre-truncated domain, run a minimal proteolysis reaction containing only the candidate inflammatory caspase and intact GSDMD. Omit cytosol, membranes, and other proteases. Stop the reaction and quantify cleavage by immunoblot or mass spectrometry. Include caspase alone, GSDMD alone, a protease-dead caspase if a catalytic mutant is available, and a protease inhibitor arm.
+- Map whether cleavage in that two-protein reaction generates the same amino terminus as the death-inducing cellular species.
+- Remove the protease before membrane assays, or inhibit it after cleavage, so later leakage cannot be attributed to proteolysis of a contaminant. Verify inhibition with a small fluorogenic or protein substrate appropriate to that caspase; the substrate identity and the concentration that achieves complete inhibition are unreported and must be titrated to a pre-specified residual-activity ceiling.
+- Hold the final protein in a buffer compatible with later dilution into the liposome buffer. Record pH, salt, reducing agent, and any detergent. Detergent must be quantified and diluted below its bilayer-solubilizing range, established with the detergent-only liposome control in stage 2.
+
+**Validation criteria, not invented set points.**
+
+- [P1] Protein concentration stock and working range: choose the stock so that the highest assay dose is still a small volume addition. The biological dose range is unreported. Titrate; do not copy an external concentration.
+- [P2] Cleavage time, temperature, and caspase:GSDMD ratio: unreported. Accept a condition only if it produces the mapped terminus without extensive secondary degradation.
+- [P3] Purity floor: pre-specify a maximum acceptable contaminant band intensity and a maximum residual protease activity. Those floors are not in the evidence.
+
+**Interpretation.**
+
+- If inflammatory caspase alone generates the same amino terminus that induces death, activation can be direct at the proteolytic step. That still says nothing about membrane execution.
+- If caspase alone does not cleave GSDMD, a cellular cofactor or a different protease produces the active domain. That is an activation-pathway result. Continue the membrane study with the already death-inducing fragment so the execution question is not held hostage to the activation question.
+- If the “amino-terminal domain” is heterogeneous, stop and subfractionate. A membrane result on a mixture cannot be assigned to one domain.
+
+## Stage 2 — Minimal reconstitution
+
+**Purpose.** Ask whether any protein other than GSDMD is required for barrier loss.
+
+**Membrane system.** Use only synthetic lipids, not tissue extracts. Tissue lipids can smuggle proteins into a supposedly protein-free assay. Prepare large unilamellar vesicles by hydration and extrusion, and a matched giant unilamellar vesicle set for stage 3. Encapsulate a membrane-impermeant hydrophilic probe and remove unencapsulated probe. Prove encapsulation by showing that probe fluorescence or quenching changes only after a solubilizing detergent, not after buffer alone, over the full assay window.
+
+**Lipid matrix, justified as a search rather than a recipe.** The permissive lipid, if any, is unknown. Test a pre-declared panel that varies the properties most likely to decide electrostatic recruitment versus bulk bilayer disruption:
+
+- zwitterionic bilayer-forming phospholipid alone;
+- the same bilayer plus anionic phospholipid at several mole fractions;
+- a series that varies anionic headgroup identity at matched charge and acyl chains;
+- a fluidity series at matched headgroup charge;
+- cholesterol or another sterol titration on one anionic and one zwitterionic background;
+- one mixture approximating an intracellular membrane and one approximating a plasma-membrane inner leaflet, built from synthetic components only.
+
+Exact mole percentages, acyl chains, and total lipid concentration are unreported parameters [L1–L4]. Fix them in a pilot by two non-biological criteria: vesicles remain sealed in buffer for the assay duration, and detergent produces a stable maximal signal without optical artifact. Then freeze that matrix before testing GSDMD. Do not add lipids after seeing a partial hit until the pre-declared panel is complete; adaptive expansion is allowed only as a labeled follow-up.
+
+**Protein arms, all on every lipid condition that passes quality control.**
+
+- buffer only;
+- intact GSDMD;
+- amino-terminal domain;
+- carboxy-terminal domain;
+- amino-terminal plus carboxy-terminal added as separate polypeptides, not as a cleaved heterodimer, to test whether simple coexistence restores autoinhibition;
+- intact GSDMD cleaved in vitro, protease then inhibited or removed;
+- heat-denatured amino-terminal domain;
+- an irrelevant protein of similar size and concentration, same buffer;
+- caspase or protease-inhibitor buffer without GSDMD;
+- detergent maximum, used only to define 100 percent release.
+
+**Assay.** Add protein to extravesicular buffer matched in osmolarity to the vesicle interior. Osmolarity mismatch alone can cause leakage and must be excluded with a solute control. Record probe signal continuously, not only at an endpoint, so lag, rate, and plateau are visible. Normalize each well to its own baseline and its own detergent maximum. Run a protein:lipid titration spanning substoichiometric to clearly excess protein. The numerical ratio bounds are unreported [P4]; the requirement is a curve, not a single dose.
+
+**Quality controls that decide whether a hit is allowed to count.**
+
+- Protease-treat and, separately, heat-treat an aliquot of the lipid stock. A true lipid requirement should survive protease treatment of the lipids. Protease-sensitive “lipid” activity indicates protein contamination; discard that batch.
+- Confirm by silver stain or mass spectrometry that vesicle preparations contain no detectable protein before GSDMD addition.
+- Show that the probe does not bind the amino-terminal domain in solution in a way that mimics dequenching.
+- Measure vesicle size distribution before and after protein. Massive aggregation can distort fluorescence without a pore.
+
+**Stage 2 outcomes, none of which should be treated as already observed.**
+
+- Positive for direct sufficiency: concentration-dependent probe release by the amino-terminal domain and by cleanly cleaved GSDMD, absent or far weaker with intact protein, carboxy-terminal domain, denatured domain, irrelevant protein, and protease alone, on at least one pre-declared composition, reproducible across independent protein and vesicle preparations.
+- Negative for direct sufficiency: no specific release across the full validated lipid matrix and dose curve. This licenses stage 4. It does not yet prove an effector; the fragment might require a missing lipid or a non-lamellar organization.
+- Binding-without-lysis, if a recruitment measurement from stage 3 is already available: favors M4 or a non-permeabilizing interaction. Do not call this M1.
+- Nonspecific positive: denatured protein or irrelevant protein matches the active domain, or release occurs on every lipid including those that fail quality control. This supports M3 or an assay artifact. Stop mechanistic claims and fix the assay.
+
+## Stage 3 — Orthogonal measurements on the same material
+
+Leakage alone cannot distinguish a pore, a rupture, fusion, or probe artifact. Run these on the compositions and doses selected by stage 2, including at least one non-permissive composition as an internal negative.
+
+**Single-vesicle morphology.** Use giant vesicles with a membrane dye and an external or internal aqueous dye of a different color. Score, vesicle by vesicle: no recruitment; stable recruitment without aqueous dye entry; dye entry with preserved vesicle outline; entry coincident with fragmentation; tubulation or shrinkage without entry. Pre-specify the observation window. Frame rate [T1] is unreported and should be set from a pilot so that entry and rupture are not aliased into one frame.
+
+Prediction split inside M1: entry while the outline persists favors a pore or a small stable defect; simultaneous fragmentation favors detergent-like dissolution. M2 predicts neither, unless an effector was inadvertently present.
+
+**Recruitment.** Separate membrane-bound from free protein by flotation or sedimentation through a density barrier, or image a fluorescently labeled domain on giant vesicles. Compare active domain, intact protein, and carboxy-terminal domain. Include a lipid that was negative for leakage. Fluorescent-label position and labeling stoichiometry [P5] are unreported; confirm that the label does not create the activity by testing unlabeled protein in the population leakage assay side by side.
+
+Interpretation rule: recruitment is not permeabilization. A mutant or condition that binds but does not release probe falsifies “binding equals lysis” and becomes the key reagent for stage 5.
+
+**Assembly.** Compare the domain in solution versus after membrane recruitment by native electrophoresis and by a chemical cross-link performed on the membrane-bound fraction only. Quench the cross-linker. Include a no-cross-link arm and a cross-link-in-solution arm. Oligomer size is unreported; do not assume a ring stoichiometry. Absence of a discrete oligomer does not refute M1 if stage 2 and electrical data show barrier loss; it weakens a stable-pore sub-model relative to a transient or carpet-like sub-model.
+
+**Size selectivity.** Repeat leakage with at least two encapsulated probes of clearly different hydrodynamic size, plus one larger reporter if encapsulation remains efficient. Probe identities and the size calibration standards are unreported [D1]. A pore-like M1 predicts a cutoff or a strong size preference that is stable over the assay window. Rupture predicts near-simultaneous loss of small and large probes. Establish the largest probe that the intact vesicles can retain before attributing failure to the protein.
+
+**Electrical behavior, conditional on a stage 2 positive lipid mixture.** Form a planar bilayer or an equivalent protein-free membrane from that mixture and add the active domain to one side, then the other, to test leaflet preference. Look for discrete conductance steps versus a noisy, irreversible conductance rise. Salt composition, voltage protocol, and recording duration [E1–E3] are unreported and must be chosen so that the bare bilayer is stable for longer than the protein recording. A known pore-forming protein may be used only as an assay-competence control; its identity and dose are not supplied and must be selected for that lipid system, then reported as a control rather than as a GSDMD result.
+
+Electrical steps in a protein-free bilayer are the strongest single support for a direct pore. Their absence does not refute direct action if dye entry and preserved vesicle outlines are clear; it may mean pores too unstable, too large, or too heterogeneous for step detection. Do not invent a conductance value.
+
+**Stage 3 decision rules.**
+
+- Leakage plus preserved-outline influx plus leaflet-restricted recruitment supports direct membrane action, pore-like if size-limited or electrically stepwise, rupture-like if not.
+- Leakage without recruitment is suspect (soluble probe artifact or vesicle destruction upstream of detectable binding). Repeat with an unlabeled orthogonal probe.
+- Recruitment and oligomerization without leakage do not establish execution. Move to stage 4.
+- No leakage, no recruitment, no electrical change across the matrix supports absence of direct action under the tested conditions and licenses stage 4.
+
+## Stage 4 — Effector add-back, only if the minimal system does not execute
+
+**Purpose.** Test M2/M4 without letting a fishing expedition redefine a positive minimal result. If stage 2 was a clean positive, do not require an effector. Optional later work may look for inhibitors or repair factors; those regulate a direct activity, they are not the activity.
+
+**Fractionation.** Prepare cytosol and a detergent-free membrane extract from the same cells used in the screen, under stimuli-naive and pathway-stimulated conditions. The stimulus name is unreported; use the screen stimulus. Clear debris by centrifugation. Heat-treat and protease-treat aliquots of each fraction.
+
+Add fractions to protein-free vesicles together with each GSDMD arm from stage 2. The decisive factorial is:
+
+- fraction alone;
+- amino-terminal domain alone;
+- fraction plus amino-terminal domain;
+- fraction plus intact GSDMD;
+- heat- or protease-killed fraction plus amino-terminal domain;
+- fraction plus denatured amino-terminal domain.
+
+A genuine effector should be protease- and heat-sensitive, inactive without the active domain, and inactive with the denatured domain. A lipid cofactor in the extract should survive protease treatment; if so, identify it by lipidomics rather than calling it a protein effector.
+
+**Resolution.** If activity appears, fractionate by standard biochemical separation (charge, size, hydrophobicity). The column series and salt gradients are unreported [F1] and should be chosen from the fraction’s behavior, not from a fixed historical protocol. At each step, keep the assay factorial so activity cannot be reassigned to a co-purifying lipid. Identify candidates by mass spectrometry. Confirm by immunodepletion and by adding back the recombinant candidate alone.
+
+**Sufficiency and necessity criteria.**
+
+- Sufficiency in vitro: recombinant candidate plus amino-terminal domain permeabilizes protein-free vesicles; either alone does not.
+- Necessity in vitro: depletion removes activity from the parent fraction; an unrelated abundant protein depletion does not.
+- Specificity: intact autoinhibited GSDMD must not activate the candidate unless it is cleaved.
+
+If many fractions give weak, non-titratable leakage, treat that as extract toxicity, not an effector. Pre-specify a fold-change and a requirement for dose dependence before a fraction is advanced. Those statistical thresholds are unreported [F2].
+
+## Stage 5 — Cellular validation tied to the reconstitution alleles
+
+**Purpose.** Test whether the activity that was sufficient in vitro is the activity that causes lytic death in the cells where GSDMD was necessary. This stage cannot be replaced by the liposome result.
+
+**Genetic background.** Use GSDMD-deficient cells from the original screen. Reintroduce, at comparable abundance:
+
+- intact GSDMD;
+- a non-cleavable variant once the stage 1 scissile bond is known; until then, do not invent the mutation;
+- the amino-terminal domain alone;
+- the carboxy-terminal domain alone;
+- any point mutant, from an unbiased substitution scan or from a loss-of-function series, that stage 2/3 assigned to one of these classes: loss of recruitment, recruitment without permeabilization, loss of oligomerization with preserved recruitment, or, if stage 4 found an effector, loss of effector binding with preserved lipid binding.
+
+Abundance matching matters. An overexpressed toxic fragment can kill by a route the endogenous dose never uses. Record expression relative to endogenous GSDMD in the parental cells; the acceptable expression window is unreported [C1].
+
+**Stimulus.** Apply the same stimulus that defined the screen phenotype. Include unstimulated cells, because the amino-terminal domain is predicted to bypass the need for cleavage if M1 or M2 is about the liberated domain rather than about an upstream signal. Intact GSDMD should still require the cleavage stimulus if autoinhibition is the only restraint.
+
+**Readouts that must be collected on the same samples, because the evidence already separates them.**
+
+- Cytokine processing: intracellular cleavage of the cytokine substrate, immunoblot or equivalent. This should report protease activity, not membrane failure.
+- Cytokine release: appearance of the cytokine outside the cell.
+- Small-molecule barrier loss: uptake of a membrane-impermeant dye.
+- Large-barrier loss: release of a large cytosolic enzyme or equivalently sized marker.
+- Morphology over time in a subset of wells: swelling and membrane ballooning versus quiet metabolic death.
+- Viability or metabolic activity only as a secondary endpoint. It is not specific for lysis.
+
+Time resolution [T2] is unreported. Sample often enough to see whether small-dye entry precedes large-protein release. That order is a prediction to test, not a fact from the packet.
+
+**Effector test in cells, conditional on stage 4.** Remove the candidate effector genetically or by acute depletion in cells that still contain GSDMD, and also challenge effector-deficient cells with the amino-terminal domain. Include a control depletion of an unrelated protein expressed at similar level. If no effector was found and liposomes were positive, test whether the amino-terminal domain still kills when other lytic programs are unavailable only if those programs were actually implicated; do not expand into an unfocused pathway survey. The original screen’s negative hits, if available, are the right specificity controls. Their identities are not in the packet.
+
+**Topology and localization, supportive but not decisive.** Localize the active domain with a tag that stage 2 showed is non-perturbing, and repeat one functional rescue untagged. The organelle of action is not in the evidence. Plasma-membrane, mitochondrial, and internal-membrane localization remain open. A liposome hit on a mitochondria-like mixture and a cell hit with mitochondrial localization would still need a plasma-membrane integrity measurement, because lytic death as usually scored is a cell-surface barrier failure. Mitochondrial permeabilization alone can kill without being the lytic step.
+
+**Optional competition test.** Delivery of permissive protein-free liposomes into the cytosol could, under M1, sequester the active domain and reduce dye uptake. This is easy to confound with delivery toxicity. Treat it as supportive only if empty non-permissive liposomes of matched dose do not protect, and if the protective liposomes recover bound domain. Doses [C2] are unreported.
+
+## Conditional conclusions
+
+Use this matrix after the data exist. Do not fill it in now.
+
+**Conclusion D, direct membrane action is the cellular mechanism.** All of the following are required.
+
+- Stage 1 defined a single death-inducing amino-terminal species.
+- That species, and caspase-cleaved GSDMD only if cleavage was clean, permeabilized protein-free synthetic membranes; intact protein and the carboxy-terminal domain did not.
+- Orthogonal readouts agreed that the barrier failed: population leakage plus single-vesicle aqueous entry, with recruitment. Electrical steps or a size cutoff further specify a pore but are not required to reject M2.
+- An allele series correlated quantitatively: loss of protein-free permeabilization tracked loss of dye uptake, large-marker release, and cytokine release; cytokine processing remained intact when the protease pathway was intact.
+- No protein cofactor was required for in vitro permeabilization. Cellular regulators may still change rate or threshold; they are not the effector if the protein-free system works and alleles concord.
+
+This still would not specify atomic pore architecture. It would establish direct membrane action and constrain pore-like versus rupture-like sub-models according to the orthogonal data.
+
+**Conclusion E, an effector is required.** All of the following are required.
+
+- The validated stage 2 matrix was negative for permeabilization, including cleaved and pre-truncated domain, across the dose curve.
+- A protease-sensitive cellular protein restored permeabilization only together with the active domain.
+- That protein was necessary in the extract and necessary in cells for lytic death and cytokine release.
+- Cytokine processing did not require that protein unless the protein unexpectedly sits upstream of the protease. If it does, reclassify it as an activation factor, not a membrane effector, and return to the execution question.
+- Direct lipid binding, if present, was insufficient (M4 rather than pure M2).
+
+**Conclusion N, the present contrast failed to decide.**
+
+- Liposomes positive, cells negative for the same alleles: possible membrane repair, wrong cellular lipid, tag or dose artifact, or a liposome activity that cells never reach. Do not claim M1 as the cellular mechanism. Next change: match lipids to the membrane where the domain actually localizes, lower expression into the endogenous range, and test repair-component depletion as a modifier, not as a new primary effector, only after localization is known.
+- Liposomes negative, cells positive, add-back negative: missing lipid, asymmetry, or bilayer curvature, not necessarily a protein effector. Next change: lipidomics of the membrane fraction to which the domain binds in cells, then reconstitute those synthetic lipids before concluding M2.
+- Both systems positive but allele rank order disagrees: more than one killing activity, or an in vitro artifact at high dose. Restrict interpretation to doses and alleles that preserve rank order.
+- Processing and release move together despite a membrane-dead allele: the experimental separation claimed in the evidence was not reproduced in this stimulus or cell. Re-establish that separation before using release as a membrane readout.
+- Activity only at the highest protein:lipid ratios, matched by denatured protein: nonspecific. Discard as evidence for M1 or M2.
+
+**What would falsify the recommended design itself.** If the death-inducing activity cannot be purified away from another protein, the “amino-terminal domain” preparation was never minimal, and stage 2 has not been performed. If every synthetic bilayer is too leaky to score release, switch the primary readout to giant-vesicle imaging or electrical recording rather than forcing a fluorescence assay. If the active domain cannot be produced in soluble form, cleave intact GSDMD after it is incubated with liposomes, with the protease-only and uncleavable-protein controls, and treat pre-cleaved protein as confirmatory rather than required.
+
+## Causal chain the study is designed to close
+
+Genetic necessity shows that GSDMD is required for lytic death in the tested cells. Domain separation shows that cleavage relieves autoinhibition and that the amino-terminal product is sufficient for death in a cell. Those facts locate the unknown step downstream of cleavage and upstream of, or at, membrane failure. Cytokine processing being separable from release supplies an internal control: a membrane-specific lesion should hit release and dye permeability without being required for processing.
+
+Protein-free permeabilization then tests sufficiency of direct lipid action. Add-back tests necessity of a hidden protein when that sufficiency fails. Orthogonal measurements assign the physical class of barrier loss. Cellular alleles test whether the in vitro activity is causally the same activity the screen discovered. Only concordance supports a mechanistic conclusion. Sufficiency alone, necessity alone, or cellular death alone each leave the original question open.
+
+## Limits and consequential uncertainties
+
+- The packet does not identify the cell, the stimulus, the cleavage site, the permissive lipid, or any concentration. Inventing those would fake precision. The protocol is usable only after the bracketed parameters are fixed by the stated quality criteria.
+- A synthetic bilayer omits leaflet asymmetry, protein crowding, and membrane tension. A positive result still shows that those features are not strictly required. A negative result does not show that direct action is impossible in a more native bilayer.
+- Direct action and a cellular effector can coexist. Cells may add repair or amplification on top of a real pore. The study assigns the basal breach; it does not claim the cell is a liposome.
+- Inflammatory-caspase association is not proof that the caspase is the GSDMD protease. Stage 1 keeps that uncertainty from contaminating the execution conclusion.
+- No structural claim, pore diameter, oligomer count, or lipid receptor is justified by the supplied evidence. Those are possible outputs of stages 2–3, not inputs.
+- Statistical power, replicate number, and blinding rules are unreported [S1]. Pre-specify them before scoring giant-vesicle categories, which are observer-sensitive.
+
+The recommendation would change if stage 1 found that the death-inducing activity is not a separable GSDMD fragment, or if a protein copurifies inseparably with it. In that case the decisive question would shift from membrane execution back to the identity of the active species. Under the evidence as given, that identity is sufficiently specified to make the protein-free reconstitution the mechanistically decisive next experiment, with cellular allele concordance required before the liposome result is allowed to explain the screen.

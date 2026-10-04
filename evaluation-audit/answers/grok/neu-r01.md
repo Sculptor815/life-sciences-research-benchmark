@@ -1,0 +1,234 @@
+# Grok 4.7 / neu-r01
+
+Original final answer, shared by both scoring rounds.
+
+The most informative next question is whether internal optical reactivation of a sparse, experience-defined dentate-gyrus population can serve as the cue that enters a new association, rather than only driving an already-formed defensive response. The supplied packet supports retrieval-related sufficiency only. It does not identify a population that has been shown to acquire a new association, and it does not separate acquisition from retrieval.
+
+No result below was observed. Every numerical setting is a proposed parameter and must be validated before confirmatory use.
+
+## Evidence, inference, and the limit of the current claim
+
+The packet states three facts and one explicit limit.
+
+1. An activity-dependent labeling method identifies a sparse dentate-gyrus population active during contextual fear learning.
+2. Later optical activation of that labeled population produces freezing in another setting.
+3. That pattern supports a sufficiency claim about retrieval-related activity.
+4. The same experiment does not establish whether an internally activated representation can participate in forming a new association. No later results are supplied.
+
+From fact 1, the warranted inference is narrow: cells active in dorsal or unspecified dentate gyrus during fear learning can be captured by an activity-dependent label, and the captured set is described as sparse. The packet gives no construct, labeling window, cell count, fraction, dorsal-versus-ventral boundary, or overlap statistic. “Sparse” remains qualitative.
+
+From fact 2, optical drive of that previously labeled population is sufficient to produce freezing outside the training setting. Fact 3 correctly limits the claim to sufficiency for retrieval-related behavior. It does not establish necessity, natural-pattern equivalence, a synaptic locus, or that freezing was retrieval of contextual content rather than direct drive of defensive output.
+
+The explicit negative in fact 4 defines the next question. A retrieval test that turns the same cells on and measures freezing cannot show that those cells can be used to form a new association. During that test the association already exists, and the optical stimulus is present while the behavior is measured. Acquisition and retrieval are confounded, and the population has already been defined during fear learning.
+
+## Unresolved question
+
+Can a sparse dentate-gyrus representation, identified by activity during a specified experience and later reactivated internally, participate as the conditioned cue in a new association, such that natural cues of the labeling experience later retrieve a newly acquired response in the absence of optical stimulation?
+
+That question is more informative than a necessity test of the original fear memory. Necessity would ask a different question, whether the labeled cells are required for expression. The packet’s stated gap is participation in new associative formation. Necessity, downstream pathway mapping, and natural-versus-artificial spike-pattern equivalence remain important, but they do not close this gap.
+
+## Competing explanations
+
+These accounts are all compatible with the packet. They make different predictions in the proposed experiment.
+
+**M1. Content-specific retrieval sufficiency.** The fear-learning label captured a contextual fear representation. Optical reactivation retrieves it and drives freezing. This account predicts freezing when a fear-labeled ensemble is reactivated, but it makes no prediction that a neutrally labeled ensemble, reactivated only during later shock, will create no-light freezing to the neutral context.
+
+**M2. Nonspecific defensive drive.** Driving labeled dentate cells, or nearby tissue, forces freezing regardless of what the label encoded. This predicts immediate freezing during optical stimulation even if labeling occurred in a neutral context and no shock is delivered.
+
+**M3. Performance artifact.** Light, heat, seizures, or motor suppression mimic freezing. This predicts the same “freezing” in opsin-negative animals, or electrographic or behavioral seizures, and no requirement for shock pairing.
+
+**M4. Labeled cells are fear-output cells, not an associable representation.** They can drive an already-learned response but cannot function as the cue that enters a new association. This predicts successful packet-style reactivation after real fear learning, but failure of pairing-specific, context-specific, no-light learning when a neutral ensemble is the only cue paired with shock.
+
+**M5. Internal reactivation can act as a conditioned cue.** Reinstating the context-defined pattern during an unconditioned stimulus allows that pattern to enter a new association. Later, natural cues that reinstate the same pattern retrieve the new response without light. This is the target account.
+
+**M6. Shock sensitization or context generalization.** Shock alone later increases freezing in any distinct context. This predicts high no-light freezing after shock even when the context-defined ensemble was not reactivated, and similar freezing in a never-labeled context.
+
+**M7. Stimulation-induced incubation.** Reactivation alone, without shock pairing, changes later behavior in the labeled context. This predicts elevated no-light freezing after light without shock.
+
+M5 is supported only if M2, M3, M6, and M7 are rejected in the same dataset and the manipulated population is physiologically identified. M1 can remain true of the packet experiment even if M5 is false.
+
+## Distinct predictions
+
+Let A be the labeling context, B the pairing context, and C a novel context that is not A or B. The primary retrieval tests use no light.
+
+- **Supportive of M5:** Light plus shock in B produces more later freezing in A than light without shock, and more than shock without light. Freezing is greater in A than in C. Opsin-negative and missed-window animals do not show that A-specific pattern. Light alone during B does not immediately produce packet-like freezing if labeling was neutral. Labeled cells, not unlabeled neighbors, are driven by light. On the no-light test, natural exposure to A reactivates the labeled set above the overlap seen in C.
+- **Disconfirming of M5, compatible with M4:** The manipulation check shows that light drove the labeled population, shock was behaviorally effective in B, and scoring was sensitive, but the no-light A test shows no pairing-specific, context-specific freezing increase.
+- **Supportive of M2 or M3 instead:** Light without shock freezes animals during stimulation, or opsin-negative animals match the opsin-positive effect, or seizures account for immobility.
+- **Supportive of M6 or M7:** Shock without light, or light without shock, fully accounts for later freezing in A, or A and C increase together.
+- **Ambiguous:** One control contrast passes and the other fails; the physiological identification fails; baseline generalization is already near ceiling; or the behavioral effect appears without preferential natural reactivation of the labeled cells.
+
+## Design logic
+
+The packet population was labeled during fear learning. Using that same population as the cue for a new shock association would make later freezing uninterpretable: it could be retrieval of the original fear memory. The acquisition experiment must therefore define a new ensemble during a neutral experience. That is a deliberate departure from the packet’s labeling epoch, not a claim that the packet already did this.
+
+A separate benchmark arm may repeat the packet’s fear-label and later optical-retrieval sequence. It calibrates the preparation. It is not the primary estimand, and its outcome must not be described as a new replication unless it is actually run.
+
+Acquisition and retrieval are separated by session rules.
+
+- Population identification occurs in A, without shock.
+- The acquisition manipulation occurs later, only in B, with light time-locked to the assigned shock condition.
+- The primary retrieval test occurs in A and C with the light off, so direct optical drive cannot explain freezing.
+- A light probe, if used to show that the implant can still drive cells, occurs only after primary scoring, in a separate context, or in a separate cohort. It is a manipulation check, not the acquisition endpoint.
+
+## Assumptions and unreported parameters
+
+The packet does not report species, construct, sex, age, sample size, variance, context durations, shock intensity, light power, wavelength, pulse width, frequency, fiber coordinates, labeling kinetics, or statistical results. The following are assumptions or proposed parameters, not evidence.
+
+- **Assumption A1.** The workable system is a laboratory mouse in which an activity-dependent, time-gated label can drive an excitatory opsin in dentate granule cells. If the original preparation was another species, the gate and opsin must be revalidated.
+- **Assumption A2.** “Another setting” in the packet means a context distinguishable from the training context. The new design uses three discriminable contexts.
+- **Assumption A3.** Freezing is the defensive readout that corresponds to the packet’s behavioral effect. It is not assumed to be the only possible memory expression.
+- **Assumption A4.** Neutral labeling does not itself create fear. This must be checked, not assumed, by the light-alone condition.
+- **Proposed labeling gate, P-label.** For a doxycycline-gated system, remove doxycycline for a pilot-validated interval before A, restore it immediately after A, and wait a pilot-validated expression interval before B. A starting calibration range is 24–48 h off doxycycline and 24–72 h expression. Lock one schedule only after the specificity pilot. A chemical-tag system would instead use a single post-A induction injection at a pilot-validated dose and latency. Do not treat either schedule as already validated.
+- **Proposed sparsity criterion, P-sparse.** In the satellite histology cohort, labeled cells are between 1% and 10% of dorsal dentate granule cells in counted sections, enriched relative to home-cage and missed-window animals. If the packet preparation was sparser or denser, replace this range with the preparation’s own pilot distribution before the confirmatory cohort.
+- **Proposed light, P-light.** 473 nm, 20 Hz, 10–15 ms pulses, delivered in trains spanning each planned shock window, at the lowest fiber-tip power that activates labeled cells by the physiological criterion below. Start the power ladder at approximately 1, 3, 5, and 10 mW at the tip. Exclude powers that produce seizure or tissue heating above 1 °C in calibration. These values are unvalidated.
+- **Proposed shock, P-shock.** A short alternating-current footshock series in B, starting calibration at 0.4, 0.6, and 0.8 mA, 1–2 s, 3–5 shocks, intershock interval 60–120 s. Lock the intensity at which shock without ensemble reactivation produces reliable freezing in B but does not, by itself, raise freezing in A or C above the prespecified generalization ceiling. A starting ceiling proposal is 20% time freezing in A after shock-only treatment. Validate that ceiling against pilot variance.
+- **Proposed session times, P-time.** A exposure 10 min; B exposure 5–8 min; retrieval tests 3–5 min; label-to-pairing interval and pairing-to-test interval each 24–48 h after expression is confirmed. Counterbalance A-then-C versus C-then-A on consecutive days.
+- **Proposed sample-size rule, P-N.** No variance is supplied. Run a pilot of 6–8 animals in each core arm only to estimate the standard deviation of no-light freezing in A. Then set confirmatory N for 80% power at two-sided alpha 0.05 for the two primary contrasts, inflate for the prespecified exclusion rate, and freeze N before confirmatory allocation. Do not use the pilot animals in the confirmatory analysis.
+
+## Ordered protocol
+
+### Stage 0 — calibration and lock
+
+Before confirmatory allocation, validate and lock P-label, P-sparse, P-light, P-shock, and P-time in animals that will not enter the confirmatory set.
+
+1. Confirm context discrimination with ordinary, non-optical contextual fear conditioning in a methods cohort: shock in one context, no shock in another. This only calibrates contexts and scoring. It is not evidence about the labeled population.
+2. Measure label specificity: on-window A versus home cage versus a different context versus missed window. Score dorsal dentate granule-cell labeling, off-target regions, and sparsity.
+3. Build a light dose-response curve in labeled animals: evoked activity, c-Fos in labeled versus unlabeled dentate cells, behavioral seizure score, and temperature at the fiber if measured. Lock the lowest effective non-seizing power.
+4. Build a shock ladder in unlabeled animals. Lock an intensity that conditions B and stays under the A/C generalization ceiling.
+5. Confirm automated freezing against a blinded manual audit on pilot video. Lock the motion threshold.
+6. Write the locked parameters, exclusion rules, and analysis code hash into a registration record before Stage 3.
+
+If no light power activates labeled cells without seizure, stop. A behavioral result would not identify the manipulated population.
+
+### Stage 1 — identify the manipulated population
+
+Surgery, under institutional animal-care approval and prespecified humane endpoints, places a fiber over dorsal dentate gyrus and provides genetic access to the activity-dependent opsin reporter. Coordinates and virus titer, if used, are unreported and must be taken from a pilot in which expression is restricted to dorsal dentate gyrus. Recovery is a proposed 10–14 days.
+
+The manipulated population is defined only by the conjunction of:
+
+- anatomical location in the dorsal dentate granule-cell layer under the fiber;
+- activity during the locked A window and not during the missed-window control;
+- reporter expression;
+- later physiological confirmation that optical stimulation increases activity in reporter-positive cells above neighboring reporter-negative cells.
+
+A satellite cohort, not used for the primary behavior claim, is processed after labeling to estimate sparsity and specificity. Home-cage and alternate-context animals define chance labeling. If A labeling is not above those controls, the main cohort using that batch is invalid for a representation claim.
+
+### Stage 2 — benchmark arm, interpretive only
+
+In a separate small cohort, label during actual contextual fear learning and later stimulate optically in a different setting, matching the packet’s procedure as closely as the locked hardware allows. This asks whether the local preparation can produce the supplied phenomenon. It does not answer the acquisition question.
+
+Interpret it only as a calibration outcome. Failure does not by itself falsify M5, but it makes a negative main result weak, because the preparation may be incapable of the packet effect. Success does not prove M5.
+
+### Stage 3 — acquisition manipulation
+
+Allocate animals only after surgery and health clearance, stratified by sex and surgical cohort if both sexes are used. Sex composition is unreported; do not assume a single-sex result generalizes.
+
+Core arms, all labeled in neutral A unless noted:
+
+1. **Pair.** Opsin, on-window label in A, light plus shock in B.
+2. **Light only.** Opsin, on-window label in A, light without shock in B.
+3. **Shock only.** Opsin, on-window label in A, shock without light in B.
+4. **No opsin.** Reporter without excitatory opsin, on-window label in A, light plus shock in B.
+5. **Missed window.** Opsin, labeling gate closed during A, light plus shock in B.
+6. **Wrong context label.** Opsin, label in A-prime rather than A, light plus shock in B, test A and A-prime.
+7. **Novel-context control** is within-animal for arms 1–6 by testing C, not a separate treatment.
+
+During B, record baseline locomotion before the first shock, shock reactivity, and immobility during light. Stimulation logs must show that light trains occurred only in assigned arms and were time-locked to shock in the pair arm. No light is delivered in A during this stage, and A’s cues are not present in B.
+
+### Stage 4 — retrieval, with acquisition and retrieval separated
+
+Primary tests are no-light exposures to A and C, order counterbalanced, scorer and analyst blind to arm. Secondary no-light exposure to B checks that shock was effective. Do not stimulate during these tests.
+
+Only after primary videos are archived and frozen-score files are written may a subset receive a light probe in a fourth context. That probe checks that the opsin can still drive behavior or c-Fos. It is not used to decide the acquisition claim. Animals used for test-day immediate-early-gene overlap must not receive this probe.
+
+### Stage 5 — physiological readouts
+
+Use split cohorts so one readout does not destroy another.
+
+- **Manipulation identity:** in a designated check cohort, light at the locked power induces activity marker expression, or evoked spikes, in labeled dentate cells above unlabeled neighbors and above no-opsin tissue. Proposed activity-marker interval is 60–90 min after stimulation. Validate that interval in pilot tissue before using it as a pass/fail rule.
+- **Natural reactivation:** after the no-light test in A or C, sacrifice a prespecified subset at the locked marker interval and measure overlap of the original label with test-active cells. The prediction under M5 is higher overlap after A than after C in the pair arm, and no such pairing-specific overlap pattern in shock-only and light-only arms.
+- **Placement:** every behavioral animal requires histological fiber confirmation. Off-target fibers are exclusions, not covariates to be adjusted post hoc.
+- **Seizure screen:** any convulsive behavior, or afterdischarge if electrographic recording is included in calibration, removes that animal from behavioral inference.
+
+Behavioral readouts are percent time freezing in prespecified bins, pre-shock locomotion, shock-evoked velocity, and an A-versus-C discrimination score. Physiological readouts are labeled-cell fraction, light-evoked activation probability, test-day overlap, and placement error in micrometers from the prespecified target. No readout is optional after registration except the explicitly secondary B test and the post-archive light probe.
+
+## Allocation, unit, exclusion, and analysis rules
+
+**Allocation.** Equal confirmatory N in arms 1–5. Arm 6 and satellite physiology cohorts may be smaller but must be powered for their own registered contrasts, not borrowed from the primary comparison. Use a prerecorded randomization seed. Conceal arm identity from the person scoring behavior. The person who sets light and shock sees the assignment only at session start and does not score.
+
+**Experimental unit.** The animal is the unit for every behavioral inference. Trials and time bins are repeated measures within animal. Cells are not independent behavioral units. Histological proportions are analyzed per animal, then across animals. Litter or cage, if multiple animals share a cage, is a random effect if more than one allocated animal is co-housed.
+
+**Exclusions, applied blind to outcome summaries.** Exclude an animal before unblinding group contrasts if any of the following is met: fiber outside the prespecified dorsal dentate zone; no detectable reporter in that zone; light power during the session drifted by more than 20% from the locked value; equipment log shows the wrong light or shock assignment; behavioral seizure; baseline freezing in the first test minute above a locked ceiling, proposed at 30% and requiring pilot validation; major health exclusion under the animal protocol; or video loss. Report every exclusion by arm. Do not replace animals after seeing outcomes. The missed-window and no-opsin arms are controls, not exclusions.
+
+**Primary analysis.** The primary endpoint is animal-level percent freezing during the no-light A test. Fit a prespecified model with arm as a fixed factor and cohort or sex as registered covariates only if stratified. Use two-sided tests and confidence intervals.
+
+The acquisition claim requires this conjunction, not a single pairwise p value:
+
+- Pair greater than light only on A.
+- Pair greater than shock only on A.
+- Pair shows greater freezing in A than in C.
+- The pair-versus-control pattern is absent in no-opsin and missed-window arms.
+- The manipulation-identity check passes.
+- Shock-only and pair arms both show elevated freezing in B relative to light only, confirming the shock was effective.
+
+Correct for the two primary control contrasts. Context, opsin, window, and overlap tests are secondary but required for the strong wording below. If automated and audited manual scores disagree beyond a locked tolerance, the result is not confirmatory until the scoring rule is rebuilt and the study rerun.
+
+No interim peek at confirmatory A-test contrasts is allowed. Pilot data do not enter the confirmatory model.
+
+## Conditional conclusions
+
+**Positive, strong.** All conjunction conditions pass, including A-over-C overlap in the pair arm and failed immediate freezing to light alone. The supported conclusion is stated in the next section. It still would not establish necessity or a synaptic mechanism.
+
+**Positive, behavioral only.** Behavioral conjunction passes, but test-day overlap does not differ between A and C, or the activity-marker cohort fails. Conclude only that the pairing procedure changed later freezing. Do not conclude that the identified dentate population carries the new association.
+
+**Negative, informative.** Manipulation identity passes, B freezing shows shock was effective, light alone does not freeze the animal, scores are not at floor or ceiling, and the primary A contrasts are absent with intervals excluding a prespecified scientifically meaningful increase. A starting proposal for that margin is 15 percentage points, to be replaced by the pilot-based smallest effect the study was powered to detect. This would count against M5 under the locked parameters and support M4 relative to those parameters. It would not prove that no stimulation pattern, shock intensity, or brain region could ever support such an association.
+
+**Negative, uninformative.** Identity check fails, benchmark and main physiology both fail, or shock does not condition B. Do not interpret the behavior as evidence against M5.
+
+**Artifact.** Opsin-negative animals, seizures, or heating account for immobility. This supports M3 and blocks a memory conclusion.
+
+**Nonspecific drive.** Neutral-label light without shock produces immediate freezing comparable to the packet benchmark. This supports M2 and undercuts a content-specific reading of optical freezing. The acquisition claim is then not interpretable from freezing alone.
+
+**Sensitization or generalization.** Shock only matches pair on A, or A and C rise together. This supports M6. If light only matches pair, this supports M7.
+
+**Mixed control failure.** Pair exceeds shock only but not light only, or the reverse. Treat as ambiguous. Do not select the favorable contrast after seeing the data.
+
+**Wrong-context result.** If labeling A-prime and testing A produces the same effect as labeling A, the association is not specific to the naturally defined representation. M5, as stated, fails. A broader claim about nonspecific dentate stimulation might remain, but it is a different claim and would need its own controls.
+
+**Order or sex dependence.** If the effect appears only for one test order or one sex and the study was not powered for that interaction, label it exploratory and do not generalize.
+
+## Strongest conclusion the experiment could support
+
+If and only if the strong positive conjunction were observed, the strongest warranted conclusion would be:
+
+Internal optical reactivation of a sparse dorsal dentate-gyrus population defined by activity in neutral context A, paired with shock in context B, is sufficient for natural cues of A to elicit conditioned freezing later, with the optical stimulus absent, above the effects of shock alone, reactivation alone, nonspecific light, and a missed labeling window, and with greater expression in A than in a novel context.
+
+That conclusion would support participation of an internally activated dentate representation in formation of a new association. It would also make direct optical drive an untenable explanation of that new no-light behavior. It would not rewrite the packet. The packet would still show only retrieval-related sufficiency for a fear-learning-defined population.
+
+## What the experiment could not establish
+
+Even a strong positive result could not establish:
+
+- Necessity of those cells for encoding or retrieval. No loss-of-function arm is included.
+- That the packet’s fear-learning-defined population has the same acquisition capacity. The informative design uses a neutral labeling epoch on purpose.
+- That optical stimulation reproduced the natural spike timing, sequence, or ensemble sparsity of context A.
+- The synaptic site of the new association. Dentate reactivation could index plasticity in CA3, amygdala, or elsewhere. This design does not isolate those synapses.
+- That the original packet freezing was true contextual retrieval rather than defensive drive. Only a separate benchmark, plus the neutral-label light-alone control, bears on that issue, and even those do not prove content.
+- A human-like false-memory phenomenology. The endpoint is rodent freezing.
+- Permanence, systems consolidation, valence generality, or generality beyond the locked light and shock parameters.
+- That every cell in the label, rather than a stimulated subset or a co-activated unlabeled population, is the causal carrier. Overlap is supportive, not cellular-resolution necessity.
+- A quantitative engram size, synaptic weight change, or rate code. None is measured.
+
+A strong negative result would be limited to the locked parameters and the identified dorsal dentate population. It would not show that internal representations in general cannot enter new associations.
+
+## What would change the recommendation
+
+Change the next experiment, rather than merely repeat it, if any of the following is true.
+
+- If neutral-label optical stimulation alone produces freezing, test nonspecific drive first, with opsin, frequency, and placement controls, before any acquisition claim.
+- If shock alone generalizes to every test context, change the unconditioned stimulus or contexts until a non-generalizing calibration exists. Do not interpret a ceilinged study.
+- If the scientific goal becomes necessity of the packet population, switch to a loss-of-function retrieval design. That is informative, but it is not the gap stated in the packet.
+- If the goal is specifically whether the fear-labeled packet population can enter a further association, do not use freezing as the new outcome. Pair its reactivation with an appetitive or otherwise non-freezing unconditioned stimulus and measure a different response, so old fear expression is not mistaken for new learning.
+- If fiber histology cannot restrict the effect to dorsal dentate gyrus, do not claim a dentate population result.
+
+The packet’s evidence stops at sufficiency of optical reactivation for freezing. The decisive next measurement is no-light, context-specific behavior after a controlled pairing, with the activated population identified independently of that behavior. Until those contrasts exist, an acquisition role remains an untested mechanism, not a conclusion.

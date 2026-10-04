@@ -1,0 +1,210 @@
+# Kimi K3 / mol-r03
+
+Original final answer, shared by both scoring rounds.
+
+**Recommended next action:** test whether the gasdermin D amino-terminal fragment (GSDMD-NT) is **sufficient to injure lipid membranes directly** in defined, protein-controlled systems, and whether pyroptotic plasma-membrane failure in cells is **necessarily mediated by that same activity** or instead requires an additional cellular executioner. This is the highest-value next question because the supplied packet establishes a causal chain up to “inflammatory caspase cleavage → GSDMD processing → N-terminal cytotoxic activity → pyroptotic death,” but not the physical step that converts GSDMD-NT into membrane injury. Resolving that step separates a direct pore/lipid-disruption model from cofactor, organelle-first, lipid-enzyme, and osmotic-threshold models.
+
+---
+
+## 1. Reported evidence, permitted inference, and unresolved question
+
+### Evidence supplied
+- Inflammatory caspases cleave gasdermin D.
+- Genetic loss and fragment-expression experiments link this processing to pyroptotic cell death.
+- The amino-terminal portion carries cytotoxic activity.
+- No purified-protein membrane experiments are supplied.
+- The packet does **not** specify the exact cleavage site, lipid targets, oligomeric state, pore size, subcellular itinerary, kinetics, or whether another protein/lipid pathway executes membrane injury.
+
+### Inference chain, stated explicitly
+1. **Evidence:** inflammatory caspases cleave GSDMD.  
+   **Inference:** cleavage is a regulated upstream event that can change GSDMD activity.  
+   **Limit:** cleavage alone does not prove that cleavage is the lethal event; it could be permissive, coincident, or one of several caspase outputs.
+
+2. **Evidence:** loss of GSDMD and expression of fragments connect processing to pyroptosis.  
+   **Inference:** GSDMD is genetically required for the tested pyroptotic phenotype, and fragment expression can phenocopy aspects of death.  
+   **Limit:** expression of a fragment can cause toxicity by mislocalization, aggregation, supraphysiologic concentration, or by activating endogenous pathways; necessity plus sufficiency of overexpression does not identify the physical lesion.
+
+3. **Evidence:** the N-terminal portion carries cytotoxic activity.  
+   **Inference:** cytotoxicity maps to GSDMD-NT rather than requiring the intact full-length protein in that assay.  
+   **Limit:** “cytotoxic activity” is an operational cell phenotype. It does not specify direct membrane binding, pore formation, ion flux, lipid oxidation, organelle damage, or recruitment of another executioner.
+
+4. **Missing evidence:** purified GSDMD-NT membrane experiments.  
+   **Conclusion:** the unresolved biological question is not “whether GSDMD matters,” but **what GSDMD-NT physically does and whether it is sufficient**.
+
+### Precise unresolved question
+Does cleavage-generated GSDMD-NT execute pyroptosis by **directly binding and permeabilizing membranes**, with plasma-membrane failure as the immediate lethal lesion, or is GSDMD-NT an upstream adapter that requires a cellular cofactor, organelle stress, lipid-enzyme pathway, or biophysical threshold to rupture the plasma membrane?
+
+---
+
+## 2. Competing mechanisms and discriminating predictions
+
+I label these as **hypotheses**, not reported results.
+
+| Mechanism | Core claim | Distinct positive predictions | Distinct negative predictions |
+|---|---|---|---|
+| **M1. Direct membrane executioner** | Cleaved GSDMD-NT binds specific lipids, oligomerizes, and forms a discrete permeability pathway in the plasma membrane. | Purified GSDMD-NT permeabilizes protein-free liposomes/GPMVs at concentrations matched to cell estimates; leakage is size-selective; planar bilayers show reproducible conductance states; activity depends on defined lipid composition; structure-guided mutations separably abolish lipid binding/oligomerization, in vitro leakage, and cell death in parallel. | No liposome/GPMV activity under validated conditions; no conductance; cell death persists despite loss of in vitro membrane activity; or in vitro activity requires nonphysiologic protein/detergent conditions. |
+| **M2. Proteinaceous cofactor/channel** | GSDMD-NT recruits or activates an endogenous membrane protein/channel/transporter; membrane injury is executed by that factor. | GSDMD-NT is inactive in pure liposomes but active in cell-derived membranes; depletion/KO of a candidate cofactor reduces plasma-membrane permeability and death while leaving GSDMD cleavage intact; co-reconstitution restores activity. | Pure liposomes are fully sufficient; systematic depletion of plausible cofactors does not separate cleavage from death; GSDMD-NT remains active in protein-free and minimal-membrane systems. |
+| **M3. Organelle-first injury** | GSDMD-NT first damages mitochondria, ER, lysosomes, or other organelles; plasma-membrane rupture is secondary to Ca2+, ROS, lipid peroxidation, or osmotic collapse. | Organelle depolarization/ROS/Ca2+/lysosomal leak precede detectable plasma-membrane dye influx; blocking the organelle pathway prevents death despite normal GSDMD cleavage; purified GSDMD-NT preferentially associates with organelle-mimetic lipids. | Plasma-membrane permeability begins before organelle readouts; organelle blockers do not prevent early ion/dye influx; lipid dependence matches plasma membrane rather than organelle signatures. |
+| **M4. Lipid-enzyme pathway** | GSDMD-NT activates lipases, scramblases, oxidases, or lipid remodeling that destroys bilayer integrity. | Cell membranes show biochemical lipid changes before bulk permeability; inhibitors/KO of the lipid pathway block death; protein-free liposomes are not permeabilized unless the enzyme/lipid substrate is supplied. | Lipid remodeling is absent or occurs after permeability; enzyme inhibition does not rescue; pure bilayer injury occurs without enzymatic machinery. |
+| **M5. Osmotic/ionic threshold** | GSDMD-NT creates small, perhaps heterogeneous permeability; death follows from failed ion/volume homeostasis rather than a fixed pore. | Small ions leak before large dextrans; extracellular osmoprotectants or ion substitutions delay death; conductance is heterogeneous; no sharp size cutoff; death correlates with net solute/water imbalance. | Large molecules pass rapidly; osmoprotection does not alter death despite changing swelling; conductance has a stable discrete cutoff inconsistent with gradual homeostatic failure. |
+| **M6. Cleavage is necessary but GSDMD-NT is not the sole cytotoxic moiety** | NT is required but cooperates with the C-terminal fragment, another caspase substrate, or full-length interactions. | NT alone is weak unless CT/full-length/other substrates are present; cleavage-site or interdomain-interface mutations dissociate cleavage from death; pure NT lacks activity even with favorable lipids. | NT alone recapitulates death at calibrated levels; CT adds no quantitative effect; other caspase substrates are dispensable. |
+
+**Key discriminating logic:** M1 predicts a transfer of activity from cells to defined membranes. M2–M4 predict loss of activity when cellular components are removed, unless the missing component is added back. M3/M5 are tested primarily by **order of events**: plasma-membrane permeability must precede organelle collapse and must not be explained only by swelling/homeostasis. M6 is tested by quantitative reconstitution of fragment combinations at matched abundance.
+
+---
+
+## 3. Proposed research program: ordered, auditable plan
+
+Everything below is a **proposal**. No result is claimed. Exact GSDMD cleavage-site residue, antibody epitopes, lipid receptor, pore dimensions, and author-specific methods are **not supplied** and must be measured or explicitly parameterized.
+
+### Phase 0 — Governance, definitions, and prerequisites
+**Objective:** make the experiment decidable before data collection.
+
+1. **Preregister question and endpoints.**  
+   Primary hypothesis: GSDMD-NT is sufficient to permeabilize defined membranes and this activity is necessary for early pyroptotic plasma-membrane failure.  
+   Primary endpoints:  
+   - in vitro membrane leakage/conductance by purified GSDMD-NT;  
+   - temporal order of plasma-membrane permeability vs organelle stress in cells;  
+   - rescue/correlation between in vitro membrane activity of mutants and cell death.
+
+2. **Define experimental units.**  
+   - Biophysics: independent protein preparation × independent membrane preparation is the unit; technical repeats within one prep are not biological replicates. Minimum proposed: ≥3 independent protein preps and ≥3 independent membrane preps per critical condition.  
+   - Cells: independently seeded and independently treated cultures are units; multiple fields from one well are technical repeats. Minimum proposed: ≥3 independent cultures per genotype/condition; key claims replicated by a second operator and, if feasible, a second cell system.
+
+3. **Sequence and cleavage audit.**  
+   - Verify constructs by full sequencing; record plasmid/lot IDs.  
+   - Map caspase cleavage empirically by mass spectrometry and N-terminal sequencing rather than assuming a residue. Generate: full-length WT, non-cleavable mutant at the mapped site, GSDMD-NT, GSDMD-CT, NT+CT co-expression, and tag-matched controls.  
+   - Acceptance gate: cleavage products confirmed by ≥2 orthogonal methods; non-cleavable control shows no detectable mapped-site cleavage above assay background.
+
+4. **Protein quality prerequisites.**  
+   - Endotoxin below a prespecified threshold for cell assays; record method.  
+   - Monodispersity assessed by SEC-MALS or equivalent; aggregation by DLS/turbidity; concentration by A280 plus a dye-binding orthogonal check because extinction assumptions may fail for oligomers.  
+   - Stop if a prep is >10–20% aggregated by prespecified criteria, has endotoxin above threshold, or fails identity/integrity checks.
+
+5. **Membrane system prerequisites.**  
+   Prepare increasing realism:  
+   A. protein-free large/giant unilamellar vesicles with defined lipids;  
+   B. planar lipid bilayers for conductance;  
+   C. supported bilayers for binding/assembly imaging if available;  
+   D. giant plasma-membrane vesicles or membrane sheets from GSDMD-null cells;  
+   E. intact cells.  
+   Lipid variables should be treated as hypotheses: net-neutral phosphatidylcholine baseline; anionic phosphatidylserine; phosphoinositide-enriched plasma-membrane-like mixtures; mitochondrial-like cardiolipin-containing mixtures; cholesterol high/low. Do not assume a physiological receptor before testing.
+
+6. **Calibration before inference.**  
+   - Dye-leakage calibration: encapsulated self-quenching dye and FRET/quench pairs; define 0% as buffer and 100% as detergent lysis of the same vesicle batch; verify linearity and absence of dye–protein artifacts.  
+   - Size cutoff: co-encapsulate graded fluorescent dextrans or equivalent probes; calibrate hydrodynamic radius independently.  
+   - Conductance: calibrate amplifier, bilayer capacitance, and known conductance standards; report filter, sampling, and event-detection thresholds.  
+   - Cell death: calibrate LDH linear range, real-time membrane-impermeant dye uptake, ATP/viability orthogonal assay, and imaging segmentation using positive/negative controls.  
+   - Protein abundance in cells: estimate molecules/cell by quantitative immunoblot with recombinant standards where feasible; flag if expression exceeds endogenous cleaved-fragment range by an order of magnitude.
+
+7. **Allocation and blinding.**  
+   Randomize treatment, genotype, liposome composition, plate position, and acquisition order using a seeded script retained in the audit trail. Acquire images and electrophysiology with coded sample labels. Analysis pipelines run before unblinding; genotype/condition revealed only after QC locks. For constructs with unavoidable visible toxicity, use separate blinded image analysts and automated thresholds.
+
+### Phase 1 — Does purified GSDMD-NT bind membranes?
+**Decision gate:** no binding under validated conditions weakens but does not fully exclude M1, because binding may require curvature, lipid packing defects, or a receptor.
+
+Steps:
+1. Incubate increasing, calibrated concentrations of purified GSDMD-NT, full-length WT, CT, and tag-matched irrelevant protein with vesicles of defined composition.  
+2. Measure binding by at least two orthogonal assays: co-sedimentation/flotation and a real-time surface method if available.  
+3. Include curvature/size series and membrane-defect controls; measure vesicle integrity before and after protein addition.  
+4. Blinding: coded lipid compositions; randomized plate order.  
+5. Controls: vesicles alone, protein alone, heat- or protease-damaged protein as a denatured control, CT, full-length, non-cleavable, irrelevant basic/acidic proteins to estimate nonspecific electrostatic binding, and detergent-lysed vesicles.  
+6. Analysis: fit binding isotherms only if signal is specific and saturable; report affinity estimates with confidence intervals and flag nonsaturable or aggregation-driven signal. Compare lipid conditions with prespecified multiplicity control.
+
+**Interpretation:** specific, saturable, composition-dependent binding supports but does not prove M1. Nonspecific binding to all charged membranes weakens physiological interpretation. No binding redirects effort to M2–M4 or to conditions not yet reproduced.
+
+### Phase 2 — Is binding sufficient for membrane permeabilization in protein-free systems?
+Steps:
+1. Encapsulate dye/quencher and size-graded probes in matched vesicle batches; confirm encapsulation and stability for the full assay window.  
+2. Add proteins across a calibrated concentration series; include cleavage-generated NT from full-length cleavage reactions and recombinant NT, asking whether they are quantitatively comparable after accounting for concentration and purity.  
+3. Measure leakage kinetics continuously and endpoint leakage normalized to detergent.  
+4. Test ionic strength, pH, divalent cations, reducing conditions, cholesterol, anionic lipid dose, membrane curvature, and protein:lipid ratio as factorial variables.  
+5. Planar bilayers: apply voltage clamps, record baseline for stability before protein addition, then quantify event frequency, conductance amplitudes, dwell times, ion selectivity by reversal potentials, and block/reversibility where possible. Do not convert conductance to pore diameter without stating geometric and access-resistance assumptions.  
+6. Oligomerization: assess by native PAGE/SEC-MALS/crosslinking under matched conditions and, if feasible, single-particle imaging of membrane-bound assemblies. Crosslinking must include dose-response to avoid over-crosslinking artifacts.  
+7. Mutational coupling: design charge-reversal, hydrophobic-surface, and oligomer-interface perturbations only after identifying candidate surfaces from sequence/biochemical data; treat them as proposed tools. Require that each mutant be folded and expressed comparably before mechanistic claims.
+
+Controls: detergent positive lysis; vesicle-only; CT/full-length/non-cleavable; irrelevant oligomeric protein; protein storage buffer; lipids without encapsulated dye to test scattering; dye plus protein without vesicles to test direct fluorescence effects; protease-treated NT after reaction where compatible.
+
+Analysis: prespecify primary kinetic metric, e.g., initial rate and plateau fraction normalized within batch. Use mixed-effects models with protein prep and vesicle prep as random effects. Estimate size cutoff by probe-size leakage logistic fit. Conductance events analyzed with automated detector plus blinded manual audit of a subset.
+
+**Stop/futility rules:** stop M1-sufficiency claim if no specific leakage above buffer across ≥3 independent preps despite validated positive controls, unless a defined missing condition is later identified. Stop all claims from any run where detergent control fails, vesicles leak spontaneously, bilayer baseline unstable, or protein prep fails QC.
+
+### Phase 3 — Cell-free plasma-membrane systems: is a missing cellular component required?
+Rationale: pure liposomes can be falsely negative if a receptor/cofactor is absent and falsely positive if charge/aggregation dominates.
+
+Steps:
+1. Generate giant plasma-membrane vesicles or apical/basolateral membrane preparations from GSDMD-null cells to avoid endogenous fragment contamination.  
+2. Compare purified GSDMD-NT activity on: protein-free liposomes, GPMVs, GPMVs after mild protein extraction, GPMVs reconstituted with candidate fractions, and liposomes spiked with purified candidate components.  
+3. Use fractionation/proximity labeling/proteomics only as **hypothesis-generating** to nominate cofactors; do not treat association as execution without perturbation.  
+4. CRISPR interference/KO or inducible degradation of nominated candidates in cells, then reconstitute minimal systems add-back.  
+5. Causal test: if candidate depletion blocks plasma-membrane permeability but preserves GSDMD cleavage and NT abundance, M2 is supported. If no depletion blocks death while pure membranes remain sufficient, M1 gains support.
+
+Controls: GSDMD-null donor membranes; membranes from rescued cells; mock fractionation; RNase/DNase where relevant to rule out nucleic-acid artifacts; protease protection of membrane proteins; candidate overexpression rescue specificity.
+
+### Phase 4 — Intact-cell causal order and necessity
+Objective: determine whether plasma-membrane permeability is the immediate lesion and whether in vitro-defined GSDMD-NT activities are necessary.
+
+Steps:
+1. Use GSDMD-null cells rescued with WT, non-cleavable, NT, CT, NT+CT, and mutants whose in vitro binding/leakage/conductance are known. Inducible expression is preferred to avoid selection during stable line generation.  
+2. Trigger inflammatory caspase activation with the packet-consistent biological model if available; otherwise use fragment expression systems clearly labeled as less physiological. Record that the supplied packet does not specify stimulus, species, or cell type.  
+3. Measure simultaneously where possible: caspase cleavage of GSDMD by immunoblot/MS; NT abundance; real-time membrane-impermeant dye influx; LDH release; cell volume/brightfield morphology; Na+/K+/Ca2+ indicators; mitochondrial potential/ROS; lysosomal integrity; ER stress markers; extracellular osmolarity manipulations.  
+4. Temporal test: define event times per cell using automated onset detection. Primary causal criterion: plasma-membrane dye/ion influx precedes organelle collapse and is not reversed by organelle blockers.  
+5. Necessity test: mutations that selectively reduce in vitro membrane binding/leakage should reduce early plasma-membrane permeability and death at matched expression. Mutations affecting expression, cleavage, or folding must be excluded from mechanism claims.  
+6. Osmotic/ionic tests: vary extracellular Na+/K+/Cl−/Ca2+, add osmoprotectants of graded size, inhibit volume-regulatory pathways as probes, and ask whether death tracks solute influx or merely swelling. Interpret blockers cautiously because specificity is often incomplete.  
+7. Repair/threshold: test whether membrane repair machinery or cytoskeletal changes modulate the phenotype as modifiers rather than executioners; classify effects as upstream, downstream, or parallel by timing and epistasis with GSDMD-NT mutants.
+
+Controls: uninduced/vehicle; GSDMD-null; cleavage-dead; catalytically inactive upstream protease control if relevant; membrane-impermeant dye without stimulus; ionomycin/detergent positive controls; osmoprotectant toxicity controls; indicator-only controls; expression-matched constructs verified by quantitative blot.
+
+Analysis: per-cell event-time alignment; competing-risk or survival models for death vs first permeability; hierarchical models nested by cell, culture, and operator; causal claims require consistency across ≥2 cell systems and ≥2 perturbation types. Correct for multiple comparisons across organelle markers.
+
+**Stop rules:** halt a cell line/condition if expression is unstable, basal toxicity exceeds prespecified limits before induction, cleavage cannot be detected despite positive stimulus control, or indicators show phototoxicity/dye artifacts. Stop mechanistic interpretation of a mutant if folding/expression is not matched.
+
+### Phase 5 — Integration, replication, and adversarial checks
+1. **Dose concordance:** compare estimated intracellular NT abundance after physiological cleavage with concentrations required in liposomes/GPMVs. If in vitro activity needs orders-of-magnitude higher protein, classify M1 as not demonstrated physiologically unless local concentration/membrane clustering is directly measured.  
+2. **Adversarial replication:** exchange blinded protein and membrane preps with an independent operator/lab; predefine concordance as same direction and overlapping confidence intervals for primary effects.  
+3. **Alternative falsifiers:** deliberately attempt to rescue pure-liposome-negative NT by adding candidate cofactors; attempt to block cell death with reagents predicted by each mechanism; seek conditions that break correlation between dye uptake and LDH to avoid assay equivalence assumptions.  
+4. **Data audit:** retain raw images/traces, analysis code version, randomization seeds, lot numbers, QC failures, and excluded runs with reasons. No post hoc endpoint changes without labeling as exploratory.
+
+### Troubleshooting matrix
+- **Purified NT aggregates:** reduce tag burden, change buffer ionic strength/redox/glycerol, use fresh SEC fractions, compare cleavage-generated vs recombinant NT, verify by SEC-MALS; do not interpret turbid preps.  
+- **Liposomes leak spontaneously:** remake lipids, verify hydration, osmolarity, dye encapsulation, oxidation state, temperature; discard batches outside stability criteria.  
+- **Dye signal without membrane injury:** test protein–dye interaction, detergent sensitivity, vesicle rupture vs fusion; use orthogonal probes.  
+- **Planar bilayer noise:** reject unstable baselines; confirm bilayer formation by capacitance; lower protein addition; blind event calling.  
+- **Overexpression toxicity before stimulus:** use tighter inducible systems, shorter induction, lower plasmid dose, compare to endogenous cleaved abundance.  
+- **KO compensation:** use acute degradation/CRISPRi and rescue; avoid clonal-only conclusions.  
+- **Antibody ambiguity:** validate in GSDMD-null lysate and with tagged constructs; use MS for cleavage-site confirmation.  
+- **Conflicting liposome vs cell results:** quantify concentration, lipid composition, curvature, post-translational modifications, and missing cofactors before declaring mechanism.
+
+---
+
+## 4. Conditional outcomes and strongest justified conclusions
+
+### Outcome A — Positive for direct membrane executioner
+**Pattern:** purified GSDMD-NT binds defined membranes specifically and permeabilizes protein-free and plasma-membrane vesicles at calibrated concentrations; planar bilayers show reproducible ionic permeability; size probes indicate a finite cutoff if present; mutations coordinately alter in vitro lipid binding/oligomerization/leakage and cellular plasma-membrane permeability/death; plasma-membrane influx precedes organelle collapse; depletion of nominated cofactors does not separate cleavage from death.
+
+**Strongest justified conclusion:** within the tested systems, cleavage converts GSDMD into an NT membrane-injury module that is sufficient for defined bilayer permeabilization and necessary for early pyroptotic plasma-membrane failure.  
+**Limits:** still does not prove the exact in vivo lipid receptor, atomic pore architecture, physiological pore diameter, human therapeutic tractability, or that all cell types use identical thresholds. Conductance-to-size claims remain model-dependent.
+
+### Outcome B — Negative for direct sufficiency
+**Pattern:** purified NT is inert on validated protein-free membranes despite positive detergent/standard controls, but remains cytotoxic in cells; cell-derived membranes restore activity; candidate cofactor depletion blocks plasma-membrane permeability while sparing GSDMD cleavage; add-back rescues.
+
+**Strongest justified conclusion:** GSDMD-NT is necessary but not sufficient; it likely licenses or recruits a cellular executioner or requires a cellular membrane context not captured by pure bilayers. The next target is identification and reconstitution of the minimal cofactor complex.  
+**Limits:** a pure-liposome negative cannot exclude unmet lipid curvature/packing/oxidation requirements; cofactor association must be separated from mere trafficking.
+
+### Outcome C — Organelle-first or lipid-enzyme support
+**Pattern:** mitochondrial/lysosomal/Ca2+/ROS or lipid-remodeling events precede membrane-impermeant dye influx; blocking that pathway rescues despite intact cleavage; pure bilayers are inert unless organelle-mimetic lipids or enzymes are supplied.
+
+**Strongest justified conclusion:** GSDMD-NT is upstream of a secondary lethal membrane process; pyroptosis in the tested system is not adequately explained by direct plasma-membrane poration alone.  
+**Limits:** organelle readouts can be parallel stress responses; rescue by inhibitors may reflect off-target cytoprotection. Require genetic perturbation and temporal precedence.
+
+### Outcome D — Ambiguous or mixed
+Possible patterns: leakage only at high protein:lipid ratios; binding without leakage; cell death without in vitro activity; partial cofactor dependence; small-ion flux with osmoprotection but no stable conductance; discordance between cell systems.
+
+**Required response:** do not choose a mechanism. Quantify the ambiguity: estimate lower/upper bounds of effect, compare absolute protein abundance, test local membrane concentration, expand lipid/curvature/cofactor space, and use orthogonal cell models. Report which mechanisms remain viable and what observation would next discriminate them.  
+**Strongest justified conclusion:** GSDMD-NT remains genetically linked to pyroptosis, but the packet plus these data do not establish the physical executor; mechanism is unresolved pending the named discriminating measurement.
+
+---
+
+## 5. Final evidence-to-conclusion boundary
+
+From the supplied packet alone, the justified conclusion is narrow: inflammatory caspase cleavage of GSDMD is associated with pyroptosis, and the N-terminal fragment is a cytotoxic entity. It is **not** justified to conclude that GSDMD-NT forms membrane pores, binds a specific lipid, acts without cofactors, damages mitochondria first, or kills by osmotic imbalance. The proposed program is designed so that each of those possibilities yields a different pattern across purified membranes, cell-derived membranes, temporal cell measurements, and mutant coupling. The decisive advance would be demonstrating—or refuting—transfer of GSDMD-NT cytotoxicity into defined membranes while preserving quantitative and genetic concordance with cellular pyroptosis.

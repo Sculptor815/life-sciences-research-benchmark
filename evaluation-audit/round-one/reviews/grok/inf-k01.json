@@ -1,0 +1,70 @@
+{
+  "item_id": "inf-k01",
+  "model_code": "grok",
+  "response_id": "inf-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:42:19.222287+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "9bfadfdef79e1f25890165dfb9abc0a78c68e8ffcefdcff1ad41aead2db5a8d2",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 80.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "fine mapping favoring a variant near H while only G perturbation matters",
+      "issue": "These observations are not inherently contradictory: a variant near H may regulate G. The answer correctly rejects nearest-gene assignment elsewhere; apply that rule here too."
+    },
+    {
+      "quote": "conditioning on the lead SNP would leave residual signal",
+      "issue": "Residual signal is not guaranteed with multiple causal alleles, and it can remain with one causal allele imperfectly tagged by the lead. Interpret conditional/joint models using LD, power and variant measurement."
+    },
+    {
+      "quote": "selective perturbation of the nominated gene that copies that effect",
+      "issue": "Phenocopy alone does not establish that the gene mediates the allele effect. Add a directionally appropriate rescue/epistasis or equivalent mediation test before claiming a causal pair."
+    },
+    {
+      "quote": "test colocalization before any perturbation",
+      "issue": "This can be an efficient proposed order, but should not be a universal requirement; direct functional evidence may precede or substitute for an unavailable molecular-QTL result."
+    }
+  ],
+  "rationale": "Clear, mostly accurate essay with sensible ancestry, multi-signal, pleiotropy and assay caveats. A false proximity-based contradiction, deterministic conditioning claim and incomplete mediation test weaken the final decision rules.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Judge this as a 1500-word conceptual essay, not a full experimental protocol. The supplied packet is synthetic and contains no numeric locus results.",
+    "The draft retains references to old multiple-choice choices and a sequencing-only claim absent from the final prompt. Do not demand rejection of an unasked WGS claim for full credit.",
+    "The lead SNP may itself be causal; calling it a marker does not establish noncausality. Controlled GWAS supports an associated locus under assumptions, not absolute proof of a direct causal mechanism.",
+    "A statistical credible set contains variants, not effector genes. Membership or proximity cannot alone assign a target; define coverage per model/signal and account for multiple effects.",
+    "High LD limits resolution; only exact collinearity creates the simple non-identifiability limit. Do not equate an arbitrary r-squared threshold or near-perfect LD with impossibility at any sample size.",
+    "Colocalization supports shared genetic signals, not molecular mediation. Absent evidence differs from evidence against a shared signal; context, power, priors and multiple signals matter.",
+    "Fine mapping, colocalization and functional assays are complementary and may inform each other. No fixed order or availability of a molecular QTL is universally necessary.",
+    "Allelic-expression measurement alone is observational. Allele editing, element deletion and gene loss/gain answer different questions; phenocopy alone does not establish mediation, and knockout alone does not establish sufficiency.",
+    "Use signal-specific joint/conditional models and appropriate ancestry/variant coverage. Removing a lead marker does not guarantee either persistence or disappearance of every true effect.",
+    "Reference simplifications are clarified in this review metadata; original frozen keys and all candidate responses remain unchanged. No raw-data execution is claimed."
+  ],
+  "review_sources": [
+    {
+      "title": "Giambartolomei et al. (2014), Bayesian Test for Colocalisation",
+      "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004383",
+      "scope": "Reviewer read introduction, model overview and interpretation/limitations passages, including shared-signal versus causality and low-power cautions. No full supplementary or numerical audit."
+    },
+    {
+      "title": "Watanabe et al. (2017), FUMA",
+      "url": "https://www.nature.com/articles/s41467-017-01261-5",
+      "scope": "Primary-source overview of positional, molecular-QTL and chromatin-interaction mapping inspected. No software run or full methods audit."
+    }
+  ],
+  "overall_benchmark_score": null
+}

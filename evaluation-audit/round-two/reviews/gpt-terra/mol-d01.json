@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "mol-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:23:27.684810+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "16ed5145b8132f03ca530cd632624539191697465962fe1526c0a20caa565c55",
+  "question_sha256": "977a901aa45a51e53beb3d5dfc1df4236d50dbabe47be214290304b663ddcfc5",
+  "reference_sha256": "4c10b3678ba1f5bc0060a9db770578e48e607d5100db658b12d6b95ee26dbab8",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "e15436e389a6ffe26820b132cc5bb66a7d20da94ade7c641142d016dce6334e4",
+  "primary_route": "K-loss plus matched WT/kinase-dead rescue, with conditionally validated orthogonal catalytic perturbation.",
+  "complete_final_answer_read": true,
+  "word_count": 3048,
+  "first_round_scientific_quality": 86.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult detailed prior Methods, supplements or validated protocols before execution and verify condition transfer. Generic established procedures or partner-literature lookup are insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unknown parameters requiring calibration",
+      "evidence_type": "exact_quote",
+      "reason": "Lists ligand, density, medium and time settings but does not provide quantities or an executable bounded calibration-to-condition choice procedure for preparation/delivery."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "specificity of the phospho-S signal where feasible",
+      "evidence_type": "exact_quote",
+      "reason": "Linearity, reproducibility and specificity are listed without concrete reference/blank accuracy thresholds and a procedure determining analytical acceptance."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "phospho-S normalized to total S",
+      "evidence_type": "exact_quote",
+      "reason": "No background and weak/below-limit/missing ratio handling; growth is cell-count based but division versus death is not operationally separated."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The study should be powered",
+      "evidence_type": "exact_quote",
+      "reason": "Independent populations/clones and technical nesting are correct, but a statement that the study should be powered is not a pilot variance/precision or sample-size procedure."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "blocking or random effects where appropriate",
+      "evidence_type": "exact_quote",
+      "reason": "A factorial structure and equivalence idea are named, but no confidence interval/uncertainty procedure or multiple primary-contrast correction is specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "a ligand dose range",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded dose/time/condition exploration and objective stopping/range-selection rule before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Stop or repeat rather than interpret",
+      "evidence_type": "exact_quote",
+      "reason": "Repetition after failures does not specify what changes, what is refrozen and what requires fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "K-KD has no detectable catalytic activity",
+      "evidence_type": "exact_quote",
+      "reason": "Declaring catalysis unnecessary from rescued phenotypes and undetectable activity lacks a bound relating assay sensitivity to activity sufficient for rescue. The assay must exclude functionally effective residual activity, not merely report nondetection."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sample/raw-file/code/model/version/settings chain for audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study objective and immediate recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong core rescue logic, explicit nonexclusive catalytic/scaffold functions, authenticated cell and construct qualification plan, independent genotype replication, randomized blinded blocks and technical stopping. Conditional orthogonal inhibitor/resistance rescue and complementary scaffold-defective variant address important alternatives. Existing construct validation and expression repair are actionable at the conceptual level, but quantitative execution and the nondetection decision remain incomplete; the latter is charged once under P13.",
+  "item_score": 45
+}

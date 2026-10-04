@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "bio-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:08:07.456314+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "4497d4683a3beb23f4c7c1ccbddb52e8eabade58dde2807c90efb311fb70a0d3",
+  "question_sha256": "9897959937c05bea4661cdf8b301b0b350235db1b56f302510fc8132468083b7",
+  "reference_sha256": "494bb9585a8ba22eeb3aa44162cd54a8b39534002dd77a6f77e38ec56d1ef0b6",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "2759f5ad3d8bcb0035a04cd0f8e582ff5417900b48c0edee1cd472ce4839ab4a",
+  "primary_route": "Isotope tracing, step blockade/restoration and proposed biochemical reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2092,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Historical identity lookup is not a plan to consult detailed prior Methods/protocols, select conditions and verify transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sham wash or inactive/matched-protein enzyme add-back control for the decisive restoration."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "excludes non-enzymatic/contaminant catalysis",
+      "evidence_type": "exact_quote",
+      "reason": "Heat inactivation can destroy contaminating enzymes too; a negative killed preparation cannot exclude enzymatic contamination in the live preparation."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "physiological buffer",
+      "evidence_type": "exact_quote",
+      "reason": "Generic tissue preparation with no identifiable tissue/system selection or concrete prerequisite resolution; batch numbering does not specify the preparation."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "physiological buffer",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative preparation/buffer/cofactor recipe or concrete calibration procedure to choose these conditions and sampling times."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use \u22653 independent preparations",
+      "evidence_type": "exact_quote",
+      "reason": "Correct independence but a fixed minimum of three has no precision, effect-size or pilot-variance justification."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "killed and no-substrate controls negative",
+      "evidence_type": "exact_quote",
+      "reason": "A positive no-added-substrate result can be genuine endogenous metabolism. Automatically invalidating such a run selects against a biological alternative rather than diagnosing measurement failure."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "stop when CIs",
+      "evidence_type": "exact_quote",
+      "reason": "Repeatedly stopping when an ordinary CI excludes a threshold or includes zero lacks a sequential-error/coverage rule; preregistration alone does not repair repeated peeking."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "heat-inactivated or inhibitor-locked",
+      "evidence_type": "exact_quote",
+      "reason": "A killed preparation cannot establish the maximum carbon obtainable by one-pass carrier oxidation; inhibition can also truncate that maximum. This yields a nonconservative ceiling, distinct from the separate label-replacement inference."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded carrier/substrate dose exploration with an objective selection criterion and confirmatory lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No refreeze and fresh independent confirmation after changing labels, pool depletion or inhibitor conditions."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "no residual ambiguity",
+      "evidence_type": "exact_quote",
+      "reason": "Carrier label loss with mass replacement and single-step dependence can also occur through parallel degradation/anaplerosis or partial routes. No operational atom-return or identifiable competing-flux test supports forced unique cycle assignment; zero added-carrier effect also need not mean no cycling."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "resolved/partially purified components",
+      "evidence_type": "exact_quote",
+      "reason": "Partially purified or one-enzyme-depleted tissue does not define the full enzyme inventory; the proposed independent confirmation leaves contaminating activities unresolved."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sample/raw-file/code/model/version/settings linkage sufficient to reproduce all contrasts."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line (all experiments proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only."
+    }
+  ],
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Clearly proposed two-tracer design with quantified gas recovery, isotope-dilution pools, normalized carbon endpoint, randomized blinded batches and concrete diagnostic repairs. Independent units are recognized, but replication justification, valid carbon ceiling, uniquely identifying return logic and fully defined confirmation are incomplete. Overclaim consequences are charged under P13 only.",
+  "item_score": 20
+}

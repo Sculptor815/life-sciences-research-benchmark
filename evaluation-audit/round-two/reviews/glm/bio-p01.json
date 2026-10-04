@@ -1,0 +1,134 @@
+{
+  "model_code": "glm",
+  "item_id": "bio-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:52:29.176236+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "2d5aee086e0973c7c14ac3dd99da1415e7a555ed5bd5043601a461d9436f8e1d",
+  "question_sha256": "494a90589de0a7f4835680716ae80a42c1929cd13afd3bd9c839808308015233",
+  "reference_sha256": "94437d80cb0bd66150414ab8fcca44209be263aa582a49077ce2d28ee89007e4",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c86d0aeb0b8de9c613193044ca1c16cd8bf6865ed0a9e6226c63cb43871f5a7a",
+  "primary_route": "Source authentication and defined peptide-transfer validation with cellular energy/viability and selectivity comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 1446,
+  "first_round_scientific_quality": 85.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Positive inhibition/vehicle or inactive-compound comparisons are specified prospectively with roles testing functional assay response and background; these are sufficient biological/procedural controls at essay scope, distinct from missing measurement calibration."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior experimental Methods/supplements or validated protocols and check condition transfer before executing follow-up assays. Bibliographic authentication does not meet this distinct requirement."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No product-reference/blank recovery or dynamic-range calibration with an acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The proposed measurement lacks a complete quantitative endpoint with units/denominator, background and weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the direct ribosomal claim is disproven or at least not supported",
+      "evidence_type": "exact_quote",
+      "reason": "Does not condition the negative inference on active assay/sensitivity and distinguish technical failure from biologic noninhibition; a positive-control label alone is not a decision criterion."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "required translation factors as appropriate",
+      "evidence_type": "exact_quote",
+      "reason": "Allows whole translation with factors or unspecified reporter without specifying a minimal loaded-substrate comparison, independently measured product or factor counter-assay; this does not isolate peptide-bond chemistry."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "positive-control peptide-bond inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Good source caution and confound identification, with insufficient separation of biochemical assay failure and target-specific reaction inhibition.",
+  "item_score": 70
+}

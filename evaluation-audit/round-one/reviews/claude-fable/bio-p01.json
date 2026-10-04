@@ -1,0 +1,23 @@
+{
+  "item_id": "bio-p01",
+  "model_code": "claude-fable",
+  "response_id": "bio-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.936582+00:00",
+  "review_type": "single AI curator; completed refusal record inspected",
+  "candidate_sha256": "d057ed08a736c5ec195ae16d46de7c713dd556d9ac1f7caeb6beeefc0ad765f1",
+  "service": {
+    "scientific_accuracy": 0,
+    "decision_value": 0,
+    "actionability": 0,
+    "verifiability": 0,
+    "communication": 0
+  },
+  "service_score": 0,
+  "reasoning_index": null,
+  "reasoning_status": "not assessable: no submitted scientific explanation",
+  "errors": [],
+  "rationale": "Provider returned a valid empty refusal. The requested task was not answered. Retain zero task-performance score and report refusal separately; do not infer accuracy of private reasoning or submit a selective retry.",
+  "confidence": "high",
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,86 @@
+{
+  "item_id": "inf-d01",
+  "model_code": "claude-fable",
+  "response_id": "inf-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:06:39.303653+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "5dfe449d80eaafffc57d8848e30aab0e6ce39c09a3b5aa15ec2632b944bce0c0",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 55.0,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "sign-flip within-patient deltas",
+      "issue": "Pairing alone does not make signs exchangeable under unequal batch effects, asymmetric errors or informative missingness. Specify a justified residual/model-based null and re-fit the complete selection pipeline rather than applying unqualified sign flips."
+    },
+    {
+      "quote": "sign-flip null distribution of the frozen score",
+      "issue": "The score was selected using these same patients. Holding the selected signature fixed under the discovery null omits selection and gives optimistic evidence; repeat selection or evaluate independent held-out patients."
+    },
+    {
+      "quote": "The metabolomics treatment effect is **not identifiable** in this dataset as described",
+      "issue": "Most post samples sharing a batch does not determine the full pre/post-by-batch layout. The earlier audit is appropriate, but this categorical conclusion exceeds M2; check rank and overlap before declaring non-identifiability."
+    },
+    {
+      "quote": "consistent sign across ≥~2/3 of patients",
+      "issue": "A centered factor fitted to paired deltas describes between-patient response heterogeneity; its arbitrary orientation and skew do not establish a mean treatment shift. Define an uncentered paired score endpoint or explicitly retain and test the mean effect."
+    },
+    {
+      "quote": "if the program vanishes, report it as confounded by tumor-content shift",
+      "issue": "Purity can be changed by treatment and can be part of the specimen-level response. Loss after adjustment need not establish confounding; distinguish total tissue response from cell-intrinsic effects."
+    },
+    {
+      "quote": "requiring that the sign-flip negative-control pipeline yields ~0 passing programs",
+      "issue": "Zero discoveries in selected null runs is not a calibrated general FDR rule, and power cannot be established from null simulations alone. Prespecify the error criterion and validate full-pipeline behavior under realistic null and alternative designs."
+    }
+  ],
+  "rationale": "Substantial useful detail, correct paired units, missingness inventory and external locking. However, the internal null, frozen-score selection test and factor-based treatment interpretation are invalid as written. It also overstates the batch conclusion and treats removal of post-treatment composition as proof of artifact. This is a full completion, not a refusal.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All twelve complete received final answers, the exact question/packet and full reference answer were personally read. No API judge or hidden reasoning was used; no real pipeline execution was performed.",
+    "M2 states that most post-treatment metabolomics samples share one batch, but does not specify how pretreatment samples are distributed. Check patient/time/batch design rank, overlap and precision; concentration alone is not proof of complete confounding.",
+    "Different batches across RNA and protein do not imply independent artifacts. Shared samples, handling, composition and time-aligned allocation can create cross-layer concordance.",
+    "The reference recommends paired contrasts as integration input. Centered delta factors describe between-patient heterogeneity and need not retain a mean shift; one delta row per patient has no pre/post label to classify. A sample-level score or explicit retained mean-effect model is a valid alternative.",
+    "The reference rule rejecting batch- or donor-dominated factors is too categorical. Association/variance dominance is diagnostic, not proof of artifact. For one delta per patient, a separate fixed effect for each donor is not a meaningful factor-association test.",
+    "Pairing alone does not justify sign permutations. Require a suitable null symmetry/exchangeability model, address technical dependence and rerun selection. Joint row permutations leave unsupervised covariance unchanged.",
+    "External projection with frozen weights cannot validate those same weights by correlation. Independent cohorts do not supply matched patient-score vectors; compare a defined population-level endpoint.",
+    "Missing-view algorithms do not identify MNAR mechanisms. Missing-platform renormalization changes the score definition. Refit learned processing within training folds and predefine external score applicability.",
+    "The reference protocol says stop and restart if external data were used for tuning. Restarting on the same exposed cohort does not restore independence; a revised program requires a new untouched evaluation.",
+    "The reference power wording must include biological paired variation, design and multiplicity. Technical replicates alone do not estimate biological sampling variability, and no universal n cutoff is inferred from 30 patients.",
+    "Measured/testable enrichment universes, dependence-aware tests and frozen annotations matter; a ranked analysis of all filtered tested features can satisfy this without a mandatory keyword. Late integration and pathway-first discovery are valid alternatives.",
+    "Purity changes can be part of the treatment-associated specimen response. Adjusting a post-treatment variable changes the estimand and does not automatically prove or remove confounding.",
+    "Original frozen keys and candidates remain unchanged. Corrections are disclosed here; reviews are provisional, unblinded and not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Argelaguet et al. (2018), Multi-Omics Factor Analysis",
+      "url": "https://link.springer.com/article/10.15252/msb.20178124",
+      "scope": "Original model overview, input/output definitions and initial validation passages inspected; no full supplementary audit or numerical rerun."
+    },
+    {
+      "title": "MOFA2 author documentation: FAQ",
+      "url": "https://biofam.github.io/MOFA2/faq.html",
+      "scope": "Read normalization, missingness, factor interpretation, group centering and covariate guidance. Background for model distinctions; no universal sample-size threshold imported."
+    },
+    {
+      "title": "MEFISTO author documentation",
+      "url": "https://biofam.github.io/MOFA2/MEFISTO.html",
+      "scope": "Read covariate-input, smooth-factor and multiple-group overview to distinguish temporal/spatial modeling from generic mixed-model batch adjustment."
+    }
+  ],
+  "overall_benchmark_score": null
+}

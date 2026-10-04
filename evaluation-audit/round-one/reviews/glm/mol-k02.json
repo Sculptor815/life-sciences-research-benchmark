@@ -1,0 +1,72 @@
+{
+  "item_id": "mol-k02",
+  "model_code": "glm",
+  "response_id": "mol-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:28:51.200466+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "00ba1a8b01ae5f6e08d5e13a79b5899e8c278503e7d17e893d62aea512c1e1a4",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 55.0,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "densitometry of a saturated band inflates control values.",
+      "issue": "Detector saturation generally compresses high control signal, underestimating rather than inflating the control/KO fold difference under the simple clipping model. More complex artifacts require an explicit mechanism."
+    },
+    {
+      "quote": "If the target protein's expected mass were, say, 75 kDa, the interpretation would flip.",
+      "issue": "Expected mass alone cannot reverse the ranking of genetic support. Cleavage, PTMs, anomalous migration and comigration remain possible; the 50-kDa signal still has the stronger plotted genotype dependence."
+    },
+    {
+      "quote": "the 50 kDa species persists when the protein is knocked down at the RNA level with no protein loss",
+      "issue": "Persistence of a protein band when there is no protein depletion does not falsify its identity. Confirm actual loss of the relevant protein/epitope and allow adequate turnover time."
+    },
+    {
+      "quote": "Single replicate implied.",
+      "issue": "The replicate structure is unknown, not implied to be n=1 by summary bars."
+    },
+    {
+      "quote": "normalization quality depends on the housekeeping signal",
+      "issue": "No housekeeping normalization is reported; total-protein or other justified normalization could have been used. The method remains unreported."
+    },
+    {
+      "quote": "MS identification of the 50 kDa band as a different protein",
+      "issue": "A different protein may comigrate with the target. Such a hit alone does not establish the source of antibody signal or automatically overturn assignment."
+    }
+  ],
+  "rationale": "Correct central band choice and many relevant controls, but several explicit mechanisms and decision rules are wrong. Saturation direction, expected-mass reversal and the RNA/protein falsification rule need substantive correction. Invented replication and normalization details also weaken traceability.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Codex personally read all twelve complete final answers, exact question and packet, full reference and displayed synthetic figure. No hidden reasoning, paid judge, laboratory experiment or candidate web access was used.",
+    "The chart gives approximate 100-to-5 signal at 50 kDa and 95-to-93 at 75 kDa, with equal loading and validated KO as stated premises. The relative genetic support favors 50 kDa; it does not establish direct antigen identity or universal antibody specificity. Small numerical approximations do not change this qualitative comparison.",
+    "Reference correction: no complete coding-sequence deletion is specified in the candidate packet. The sealed logic chain assumes one, but the figure only says validated KO. Escaping isoforms are legitimate conditional alternatives when the validation scope is unknown.",
+    "Reference correction: the candidate was not shown the draft-key editorial status or original multiple-choice distractors. Do not require mention of a draft key, expert-review status or rejection of choices absent from the open question.",
+    "Reference correction: a target-derived modified species cannot persist after confirmed complete protein elimination merely because it is modified. A persistent band may contain a separate comigrating protein; distinguish that from residual/escaping target and incomplete null validation.",
+    "Summary bars do not reveal n, statistical equivalence, noise, raw-blot integrity or normalization method. Equal loading is a premise here, not proof of equal extraction/transfer. Expected sequence mass alone cannot reverse the observed ranking.",
+    "Rescue strengthens genetic dependence but may also restore downstream proteins. Failed rescue needs verified expression, relevant isoform, epitope, localization and processing. Genetic or RNA loss alone need not prove protein-null status.",
+    "MS can establish target presence while a comigrating species or indirect interactor generates antibody signal. Non-detection requires sensitivity and peptide coverage before being decisive. Peptide blocking can affect shared epitopes and does not independently prove endogenous identity.",
+    "The original frozen reference and candidate records are preserved. Corrections are disclosed here and applied consistently. Reviews are unblinded single-AI provisional assessments, not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Uhlen et al. (2016), A proposal for validation of antibodies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+      "scope": "Read the genetic, independent-antibody, tagging, immunocapture-MS and additional-characterization sections. They support application-specific validation and note indirect capture, tag artifacts and peptide-blocking limitations. No supplementary audit or experimental replication performed."
+    }
+  ],
+  "overall_benchmark_score": null
+}

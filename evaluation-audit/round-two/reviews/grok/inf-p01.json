@@ -1,0 +1,134 @@
+{
+  "model_code": "grok",
+  "item_id": "inf-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:04:32.540035+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "cb59bd30fab7e5f48bc8fed6bad659268c6611c050b0dc0b510e4eb084df8720",
+  "question_sha256": "5da3fb54f9491d59b9c4ae45838ec32f8c3c831d012fdff21f3c2db66758729d",
+  "reference_sha256": "678e48fc0e62521f86b423c0fee59992496dd7ba82fb78a06d1e061d1d217b32",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "0a6e74a57a220db266bbb6e17ecca0563d21ec33ac2c7968870d706c922e2355",
+  "primary_route": "Source-provenance assessment and burden/enrichment reanalysis with technical/ancestry and testable-universe checks.",
+  "complete_final_answer_read": true,
+  "word_count": 1208,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior burden/enrichment Methods or versioned documentation to select detailed analysis conditions and verify transfer before execution. Citation/provenance lookup is separate."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Does not define a complete primary burden/enrichment estimand and model with uncertainty and a declared multiplicity family. Generic calibrated p-values, prespecification or parameter lists do not provide those inferential choices."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Direction of bias is unknown",
+      "evidence_type": "exact_quote",
+      "reason": "Explains aggregate variant burden, differential ascertainment and the eligible/testable-gene enrichment null rather than equating a small p-value with pathway causation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "A reanalysis in which the signal disappears",
+      "evidence_type": "exact_quote",
+      "reason": "Disappearance or loss of significance is treated as support/confirmation of artifact without comparing effect estimates and precision; reduced sample size, power or changed measurement can also cause it."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Specifies independent single-protocol replication using shared-callability/kinship and ancestry-checked burdens and an eligible-gene null; keeps association separate from mechanism."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "permutation of phenotype within center and ancestry strata",
+      "evidence_type": "exact_quote",
+      "reason": "Does not check that these strata contain both statuses or state how to handle complete center-status confounding; a permutation with no exchangeable labels is uninformative."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Non-comparability still stands",
+      "evidence_type": "exact_quote",
+      "reason": "Failure to demonstrate equivalence is not proof of non-equivalence; the answer acknowledges that center-specific filters might produce a common intersection."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "independent, single-protocol cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Good independent validation and bias-direction caution, but confuses unverifiable comparability with known noncomparability and omits precision/overlap decision rules.",
+  "item_score": 70
+}

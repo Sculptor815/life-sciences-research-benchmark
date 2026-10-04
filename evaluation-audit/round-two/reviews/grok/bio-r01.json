@@ -1,0 +1,239 @@
+{
+  "model_code": "grok",
+  "item_id": "bio-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:51:10.509106+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "fc360e77d5e320b7fe6402fb4492b641951bf2a3ea1656ba411388e434fe82bc",
+  "question_sha256": "d93d3ae3a989ada01328cb28f05820c58b4ff3f4820b238c927b391e7bd7fa22",
+  "reference_sha256": "1e18498facff37adeca34fd379e7bba2833a775fd7b49bc1c8294cec6b9481cd",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "7c9e78f2ed9a8c33569efc6d527cbea06d349f8ef3e33fe541cd062032071ef0",
+  "primary_route": "Calibrated forced reverse gamma rotation in isolated F1 with ADP/phosphate and direct ATP measurement; motion, direction, enzyme and analytical controls.",
+  "complete_final_answer_read": true,
+  "word_count": 4855,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of primary Methods, supplements or validated mechanical-manipulation/ATP-assay protocols with verification of transfer to this system."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Working concentrations are unreported parameters.",
+      "evidence_type": "exact_quote",
+      "reason": "Wash and direction calibration have concrete rules, but central substrate/ionic, temperature, timing and quench conditions remain unspecified without complete operational calibration-to-choice procedures."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent matrix standards, recovery and mechanics checks are present, but no objective acceptance rule (or procedure deriving it) and failure action gates the chemical/mechanical calibration."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparation/chamber hierarchy and pilot variance are identified, but no stated precision/power objective and calculation/simulation links nuisance variance to adequate confirmatory sample size."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective randomized/balanced assignment, order counterbalancing or blinded/coded acquisition and analysis. A fixed A-B-A sequence alone does not provide these bias controls."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Detachment and stall are exclusion events",
+      "evidence_type": "exact_quote",
+      "reason": "Stalls can be genuine intervention outcomes. Reporting their counts without a full assigned-unit analysis or a prespecified technical-versus-biological rule permits selective removal; stopping policy is also unspecified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary contrasts and error propagation are described, but no selected model, interval construction and multiplicity procedure operationalizes preparation/chamber dependence."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot ranges or variables are supplied, but no complete bounded exploration and objective setting-selection/lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed/ambiguous exploratory work."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the ATP was not made by F1 synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Loss of signal under a kinase inhibitor that preserves F1 hydrolysis does not prove synthesis was not by F1: inhibition can affect synthesis differently from hydrolysis. The otherwise strong direct route is retained, but this branch needs independent target-specificity or synthesis-compatibility evidence."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preparation/chamber/raw-trajectory/chemical-sample/calibration manifest linked to analysis versions/settings, deviations and outputs."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "**Recommended next action:** Keep the surface-anchored F1 and the gamma subunit as the mechanical coordinate, but do not treat the fluorescent actin marker as the torque handle. Calibrate the hydrolysis direction in that same attachment geometry, then impose a measured angular trajectory and torque on gamma in the opposite direction in ADP plus inorganic phosphate, and quantify ATP by a chemically identifying assay. The supplied observation does not show reverse coupling. A reversibility claim is justified only by a full pattern: synthesis-direction revolutions produce identified ATP, and the contamination, drift, and readout controls below do not.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong paired initial-nucleotide inventory and repeated turnover requirement, empirical handedness, actual motion/work distinction, independent chemical assays and constrained null/energy claims. A specific inhibitor branch overassigns cause, while missing execution, allocation and audit details remain. The valid main reverse-synthesis route still qualifies.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "All five components match the controlled primary route: externally forced reverse gamma synthesis question; repeated enzyme/substrate-dependent net ATP beyond measured bound inventory; empirical opposite-direction actuation with ADP/Pi; actual trajectories and separated chemical ATP with inactive/field/substrate/direction controls; outcome explicitly requires \"exceeds the pre-measured extractable nucleotide inventory\" and restored A-B-A production. The optional inhibitor-interpretation defect is scored under P13 but does not invalidate the independent direct-route evidence. Round-one hit retained.",
+  "item_score": 76.0
+}

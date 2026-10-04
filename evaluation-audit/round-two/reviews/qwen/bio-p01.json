@@ -1,0 +1,134 @@
+{
+  "model_code": "qwen",
+  "item_id": "bio-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:52:29.157860+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "4f2fe02bd131940113d066f720f1c8a29953f03ffdf4462a30ebca7d7672d3a3",
+  "question_sha256": "494a90589de0a7f4835680716ae80a42c1929cd13afd3bd9c839808308015233",
+  "reference_sha256": "94437d80cb0bd66150414ab8fcca44209be263aa582a49077ce2d28ee89007e4",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "5f4f8ab3bbe8f2247dc1b18a30889a4ae549fa29bca897f1f4184fd78e99694d",
+  "primary_route": "Source authentication and defined peptide-transfer validation with cellular energy/viability and selectivity comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 1666,
+  "first_round_scientific_quality": 85.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Positive control inhibitors of known mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Positive inhibition/vehicle or inactive-compound comparisons are specified prospectively with roles testing functional assay response and background; these are sufficient biological/procedural controls at essay scope, distinct from missing measurement calibration."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior experimental Methods/supplements or validated protocols and check condition transfer before executing follow-up assays. Bibliographic authentication does not meet this distinct requirement."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No product-reference/blank recovery or dynamic-range calibration with an acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The proposed measurement lacks a complete quantitative endpoint with units/denominator, background and weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "while positive controls do",
+      "evidence_type": "exact_quote",
+      "reason": "Qualifies noninhibition by functioning positive controls and softens the conclusion to strongly undermined; positive inhibition makes the claim plausible rather than establishes universal selectivity."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Specifies a minimal loaded donor/puromycin comparison independent of intact-cell metabolism with positive/vehicle controls and distinct counterscreens. Residual uncertainty remains in the qualified conclusion; sufficient at essay scope."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "N-acetyl-aminoacyl-tRNA",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 20,
+  "quality_score": 80,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong main logic and controlled minimal reaction. Some null wording is strong but immediately qualified. Whitespace count 1666 includes extensive headings/table tokens; no material content-format impairment is charged.",
+  "item_score": 80
+}

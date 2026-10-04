@@ -1,0 +1,140 @@
+# GLM 5.3 FlashX / inf-d01
+
+Original final answer, shared by both scoring rounds.
+
+# Design for Identifying a Reproducible Treatment-Associated Multi-Omics Program from Paired Tumor Samples
+
+## 1. Conclusion and recommended next action (lead)
+
+Use the 30 paired patients (M1) as the discovery set in a **patient-as-own-control, multi-omics integration design**: compute per-patient treatment-induced changes (post − pre) for RNA, protein and metabolite features, learn a small number of latent "program" factors that jointly explain variation across the three modalities, interpret those factors by pathway **enrichment**, and then — only after the analysis code is frozen — test whether the same program reproduces in the untouched second cohort (M4).
+
+The single most consequential design risk is **M2**: because RNA and protein were run in different batches and most post-treatment metabolomics samples share a batch, batch effects are partially confounded with treatment time in the metabolomics modality. The protocol below therefore treats metabolomics-derived program components as **secondary (supporting) evidence** unless the batch-time confounding can be quantitatively discounted, and it leans on the RNA and protein modalities — where treatment-related change can be estimated within-patient and batch is not time-confounded — as the primary discovery substrate.
+
+---
+
+## 2. Evidence-to-inference-to-conclusion chain
+
+| # | Evidence (from packet) | Inference | Conclusion embedded in the design |
+|---|---|---|---|
+| E1 | M1: 30 patients, pre- and post-treatment samples | Each patient can serve as their own control; paired Δ-scores remove inter-patient tumor heterogeneity | Analyze paired deltas, not cross-sectional group comparisons; patient is the independent unit |
+| E2 | M2: RNA and protein in different batches; most post-treatment metabolomics samples share a batch | (a) Between-modality differences may partly reflect batch, not biology; (b) in metabolomics, treatment effect and batch effect are confounded | Integrate modalities on standardized Δ-scores with explicit batch diagnostics; do not claim a metabolite component as treatment-associated unless batch can be modeled or excluded as explanation |
+| E3 | M3: some assays are missing | The data matrix is incomplete; pairwise-complete analyses can bias covariance estimates | Quantify missingness patterns first; use methods that tolerate missing data or restrict to a documented complete-case core; report sensitivity analyses |
+| E4 | M4: second small cohort must remain untouched during development | Any estimate tuned on M4 is no longer an independent validation; small size limits power | Lock the full pipeline (preprocessing parameters, number of factors, gene/metabolite sets, thresholds) on the discovery set only; run M4 exactly once, then report regardless of outcome |
+
+**Chain:** Paired sampling (E1) → within-patient deltas remove confounding by patient → multi-omics integration on deltas identifies coordinated RNA/protein/metabolite programs → enrichment gives the programs biological identity → external validation on M4 (E4) tests reproducibility, which is the pre-specified criterion for calling a program "treatment-associated." Batch structure (E2) and missingness (E3) constrain which parts of that chain are trustworthy, and they determine the modality hierarchy.
+
+---
+
+## 3. The three concepts in their correct relationships
+
+**Integration** is the *discovery engine*. It asks: is there a low-dimensional set of co-varying features across RNA, protein and metabolite Δ-scores that recurs across patients? Integration is what makes the result a "program" rather than a list — it links transcript, protein and metabolite levels of the same biology and reduces the multiple-testing burden from thousands of features to a few factors.
+
+**Enrichment** is the *interpretation layer*. It does not discover the program; it characterizes factors already learned by integration. Factor loadings (genes, proteins, metabolites ranked by weight) are tested against pathway/gene-set/metabolite-set databases. Enrichment converts an abstract factor into a testable biological claim (e.g., a hypoxia or nucleotide-synthesis program) and provides the labels that make the program reproducible and interpretable in M4.
+
+**External validation** is the *credibility test*. Because n = 30 with many features can produce factors that fit noise, the only decisive evidence that a program is real and reproducible is that the **frozen** pipeline — same normalization, same factor definition, same loading sign conventions — applied to the untouched M4 yields (a) the same enriched biology and (b) patient-level factor scores that behave consistently (e.g., separate defined patient subgroups or track the same clinical annotation used in discovery, if any exists). Validation is not a re-analysis; it is a prediction test.
+
+These are sequential and hierarchically dependent: integration → enrichment → external validation. Running enrichment before integration (testing every feature list) inflates false positives; touching M4 before freezing the pipeline destroys its evidentiary value.
+
+---
+
+## 4. Operational protocol (ordered)
+
+### Step 1 — Preparation and quality checks
+
+1.1. Build a manifest: patient ID, time point (pre/post), assay type, batch ID, run date, sample receive date. This makes M2 and M3 explicit rather than implicit.
+
+1.2. **Missingness audit (M3).** Produce a table of missing assays by patient × time point × modality. Distinguish (i) missing single features within a modality (imputable) from (ii) missing whole assay×timepoint combinations (structure loss — the paired delta cannot be computed). Report the count of patients with complete RNA/protein pairs, complete metabolomics pairs, and complete triads; these counts determine the effective n for each analysis tier. *Do not impute entire missing time points.* *Assumption to verify:* whether missingness is related to treatment response or outcome — if yes, complete-case analysis is biased and this must be reported.
+
+1.3. **Per-modality QC.** For each assay independently: distribution plots per batch, PCA colored by batch and by time point, detection of outlier samples (median absolute deviation of log-expression/-abundance), sample mix-up check via cross-modality genotype/sex-marker concordance if available (if not available, state this as unverifiable). *Unknown parameters — calibration procedure:* outlier thresholds and normalization method (e.g., TMM/DESeq2 size factors for RNA, quantile or variance-stabilizing normalization for proteomics, probabilistic quotient or total-signal normalization for metabolomics) are to be selected by pre-specifying a small candidate set and choosing the one that best removes within-condition technical variation (QC replicate/technical replicate CV) **without** collapsing known biological groups; document the choice before looking at treatment deltas.
+
+1.4. **Batch diagnostic (M2), decisive for the metabolomics tier.** In metabolomics, fit per-feature linear models of log-abundance on batch within the post-treatment samples, and on time within batches. Quantify: (a) variance explained by batch vs. time per feature; (b) whether any feature's time effect survives a model including batch (possible only if at least some pre- and post-treatment metabolomics samples share a batch — verify from the manifest; the packet says *most* post-treatment samples share a batch, implying some do not, which is the only lever against confounding). If time and batch are inseparable for a feature, that feature is flagged as non-attributable. *No invented fix (e.g., a particular batch-correction package) is assumed; candidate corrections (ComBat-type empirical Bayes, ratio-based normalization to shared-batch QC samples) are to be calibrated on technical replicates and on the pre/post samples that do share batches, with success criterion: post-correction, batch explains < a threshold set by a permutation null (see Step 7).*
+
+### Step 2 — Independent units
+
+The independent unit is the **patient** (n = 30; M1), not the sample or the feature. All statistical tests and resampling schemes (bootstrap, cross-validation) must be **clustered by patient** so pre and post measurements of one patient never appear in different folds. The effective sample size for a paired multi-omics factor analysis is ≤ 30, reduced further by the complete-case counts from 1.2. Any subgroup analysis (e.g., by response) has far less power and must be labeled exploratory.
+
+### Step 3 — Allocation and blinding
+
+This is an observational paired design — there is no treatment allocation to randomize, and any treatment heterogeneity across the 30 patients must be recorded and, if present, modeled as a covariate (its absence from the packet is an unreported parameter; obtain the treatment regimen and timing per patient — *calibration procedure: extract from clinical records; if regimens differ, stratify factors by regimen or include regimen as a covariate*).
+
+Blinding that *is* feasible and should be enforced:
+- Batch labels are withheld from the primary analyst during program discovery; batch diagnostics (Step 1.4) are run by a second person or scripted blind.
+- Analysts have no access to M4 at any point during development (E4); M4 resides in a separate location and is opened only under Step 8.
+- Feature selection and factor fitting are performed without reference to any post-hoc patient annotation, so the program is unsupervised and its validation is confirmatory, not exploratory.
+
+### Step 4 — Intervention and sampling
+
+Sampling structure is fixed by M1: one pretreatment and one post-treatment tumor sample per patient. Two unreported parameters matter and must be recovered from records rather than assumed: (a) **time between sampling and treatment start/end** — a program that tracks acute drug exposure differs from one tracking clonal selection; (b) **sample handling (ischemia time, snap-freeze vs. FFPE, tumor cellularity)**, since each modality is sensitive to these. *Calibration procedure:* extract from pathology and biobank logs; enter sampling-interval and tumor-purity as covariates in the delta models; if purity differs pre vs. post, adjust (e.g., deconvolution or purity-stratified analysis) before interpreting deltas as treatment effects.
+
+### Step 5 — Measurements and controls
+
+Per modality:
+- **RNA:** sequencing depth, mapping rate, duplication, ERCC if present; filter low-count genes; size-factor normalization.
+- **Protein:** peptide-level QC, log2 transform, median/quantile normalization, batch handled at the run level (RNA and protein batches differ — M2 — so **never merge raw modalities**; integrate only on standardized per-patient deltas).
+- **Metabolomics:** internal-standard signal drift correction, feature filtering by QC-sample CV (pre-specify CV cutoff via calibration on QC replicates: choose the cutoff that retains features whose QC CV is indistinguishable from a stable-reference distribution), annotation confidence levels recorded.
+
+**Controls to require/report:** technical replicates or pooled QC samples per batch (if absent, batch correction is unverifiable — state this as a limit); negative-control features (features expected to be stable); for metabolomics, pooled QC samples spanning both time points, which is the only instrument capable of partially unconfounding batch and time under M2.
+
+### Step 6 — Delta computation and integration
+
+6.1. Compute per-patient deltas: Δg = post − pre for each gene, protein, metabolite, on the normalized scale. Standardize each feature (center/scale using discovery-set parameters only — these parameters are later applied frozen to M4).
+
+6.2. **Multi-omics factor analysis** on the standardized Δ matrices. Use a method that (i) handles missing data gracefully (per M3), (ii) is unsupervised, and (iii) yields interpretable loadings per modality — e.g., a multi-omics factor model (MOFA-class), sparse canonical-correlation/iCluster variants, or simpler consensus PCA per modality followed by concatenation of top scores. *Unknown parameter — number of factors:* calibrate, do not guess — select by (a) likelihood/cross-validated reconstruction error with patient-clustered folds, (b) factor stability under bootstrap resampling of patients (retain factors reproducible in, e.g., ≥ a majority of resamples — set the exact threshold by examining where the stability curve separates signal factors from the permutation null, see Step 7), (c) interpretability (a factor with no enrichment signal in any modality is retained but reported as unannotated).
+
+6.3. **Sensitivity to missingness (M3):** rerun integration on the complete-triad subset and compare factor loadings to the full-analysis loadings; report concordance (e.g., loading correlation). Large divergence → the reported program is an artifact of the missingness pattern, not biology.
+
+6.4. **Batch sensitivity (M2):** rerun integration with (a) batch-corrected metabolomics deltas, (b) metabolomics excluded entirely. The headline program claim must rest on RNA/protein factors that are stable across these variants; metabolite loadings are reported as supportive only if stable under both.
+
+### Step 7 — Enrichment
+
+7.1. For each retained factor, take loadings from each modality separately (top-ranked genes, proteins, metabolites by |loading| with sign).
+
+7.2. Run modality-appropriate set tests: ranked gene-set enrichment (GSEA-style, using all gene loadings as the ranked list, not an arbitrary top-k) against MSigDB-class gene sets; protein loadings mapped to the same pathway space where possible; metabolite set enrichment against metabolite pathway databases with a stated annotation-confidence filter.
+
+7.3. Assign each factor a label only when enrichment directions are **concordant across modalities** (e.g., RNA up-loadings and protein up-loadings enrich the same pathway in the same direction). Discordant modalities are reported, not smoothed over — discordance itself is a finding (e.g., transcription without protein change).
+
+7.4. Multiple-testing control across factors × gene sets via permutation of patient labels **within** the factor framework (shuffle Δ-vectors across patients, preserving pairing) — this preserves feature correlation structure, which is what parametric FDR gets wrong in multi-omics data. *Acceptance threshold:* pre-specify family-wise or FDR threshold at the conventional 0.05 level but derive the empirical null by permutation (≥1,000 shuffles), not from theory.
+
+### Step 8 — External validation on M4
+
+8.1. Only now unfreeze M4. Apply the **identical frozen pipeline**: same feature filters, same normalization parameters, same gene/protein/metabolite sets, same factor definitions and loading signs, same enrichment gene-set universe.
+
+8.2. Project M4 patient deltas onto discovery factors (a projection, never a refit). Pre-specified success criteria (state them in the locked analysis plan before opening M4):
+ - **Program-level:** discovery–validation correlation of factor loading vectors (per modality), with threshold calibrated from the discovery data — specifically, the (e.g., 95th) percentile of loading-vector correlations obtained from the permutation null in Step 7.4. This makes the threshold derived from this dataset's noise floor, not invented.
+ - **Enrichment-level:** the same pathways enriched with concordant direction in M4 factor loadings, at the same pre-specified significance level.
+ - **Sample-level:** M4 patient factor scores reproduce the discovery-set patient structure (Procrustes/Mantel correlation of factor-score matrices), and, if a response annotation exists in M4, factor scores separate responses in the pre-specified direction with the test clustered by patient.
+
+8.3. Report the validation outcome whatever it is, including partial reproduction (e.g., RNA factor reproduces, metabolite loadings do not — expected under M2). Partial failure narrows the program claim; silence about it would misrepresent reproducibility.
+
+### Step 9 — Acceptance, stopping criteria and troubleshooting
+
+**Acceptance criteria (pre-specified):**
+- Factor stability under patient bootstrap exceeds the permutation-derived null threshold.
+- Program claim is stable under the batch-sensitivity and missingness-sensitivity variants (Step 6.3–6.4).
+- Enrichment is cross-modally concordant at FDR ≤ 0.05 (permutation-based).
+- M4 reproduction meets the Step 8.2 thresholds. A program meeting only discovery-side criteria is reported as "candidate, not validated."
+
+**Stopping/decision rules:** if fewer than ~20 patients have complete RNA+protein pairs, the integration is underpowered — stop and report per-modality paired analyses only, with an explicit power statement. If the metabolomics batch-time confounding check (1.4) shows no shared-batch samples spanning time points, drop metabolomics to descriptive status. If M4 is too small for the Procrustes test to detect the discovery effect size (compute this power before opening M4), downgrade the M4 analysis to consistency-of-direction reporting and say so.
+
+**Troubleshooting table:**
+- *Factor dominated by one modality or one batch →* re-run with modality weighting; verify with leave-one-batch-out factor stability.
+- *Delta driven by tumor purity change →* purity-adjusted deltas (Step 4).
+- *No factor stable →* report negative result; do not lower thresholds post hoc; the n is 30 and a null is a legitimate outcome.
+- *M4 diverges →* check for M4 processing-batch differences before declaring non-reproducibility; if M4 was processed differently, that is a batch difference, not a biological refutation, and must be stated.
+
+---
+
+## 5. Alternatives considered, and limits
+
+**Alternatives.**
+1. *Per-modality paired differential analysis* (DE genes, DA proteins, DA metabolites, then overlap). Simpler and robust, but overlap across modalities is a weak form of integration — it finds coincidences, not coordinated programs, and multiplies testing burden. Use as a sanity check alongside, not instead of, integration.
+2. *Supervised modeling against response outcome.* At n = 30 this will overfit and, worse, conflates "treatment-associated" with "response-associated" — a different claim. Reserved for a later, larger dataset.
+3. *Meta-analytic combination* (test each modality separately, combine p-values). Loses cross-modality covariance structure — the essence of a "program." Inferior for the stated goal.
+4. *Full joint modeling without deltas (using all 60 samples).* Loses the pairing advantage and inflates apparent sample size by treating samples as independent — violates E1's implication.
+
+**Limits.**
+- **M2 metabolomics confounding** is structural: no analysis fully rescues a design where treatment time and batch are nearly collinear. The honest ceiling is "metabolomics supports; RNA/protein carry the causal-inference weight."
+- **Sample size:** 30 paired patients supports a handful of stable factors, not a large factor atlas; subgroup claims are exploratory by construction.
+- **M4 is small:** validation power is limited; a validated program is strong evidence, a failed validation at low power is ambiguous and must be reported as such.
+- **Tumor sampling** (purity, region, ischemia) is a pervasive unmeasured-bias source unless the parameters in Step 4 are recovered.
+- **Batch correction itself can create artifacts** (it can absorb true treatment signal in metabolomics); that is why all correction is calibrated on QC/replicate data and subjected to the permutation-based null in Step 7.4, with uncertainty stated at every tier.

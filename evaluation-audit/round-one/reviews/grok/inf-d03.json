@@ -1,0 +1,61 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.014707+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "c1eecbf28b817f9d475bf5f8f3331604f648a2c015af31eec1657227aba0577f",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 75.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Uncapped inverse-variance weights can recreate pseudoreplication by letting large donors dominate.",
+      "issue": "Unequal donor weights do not themselves create fictitious independent replicates when variance is handled correctly. The key issues are informative precision/cluster size, changed estimand and calibration; a weight cap alone does not resolve them."
+    },
+    {
+      "quote": "Permute treatment labels at the donor level, keeping all cells of a donor together.",
+      "issue": "The earlier paired/stratified allocation also requires within-pair/stratum restricted permutations. Keeping each donor intact is necessary but insufficient; resample whole matched structures where appropriate."
+    },
+    {
+      "quote": "is evidence of pseudoreplication in the pipeline, not a biological finding",
+      "issue": "One significant naive negative-control test with a nonsignificant donor test can occur by chance. Demonstrate systematic miscalibration under repeated valid nulls rather than diagnosing the mechanism from one significance discrepancy."
+    },
+    {
+      "quote": "A4 intervals agree in sign with the primary estimate",
+      "issue": "Specify whether this means point-estimate direction or an interval excluding zero, and calibrate the joint acceptance rule. Correlated analysis agreement is not independent replication."
+    },
+    {
+      "quote": "",
+      "issue": "The complete answer contains 3840 whitespace-delimited words, exceeding the specified 3500-word limit; communication reduced under the original rubric."
+    }
+  ],
+  "rationale": "Extensive donor-level protocol, explicit null variance grid, appropriate no-holdout caveat, raw-count reporting and sensible troubleshooting. Some weighting claims are overbroad; restricted resampling and joint acceptance details need correction.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

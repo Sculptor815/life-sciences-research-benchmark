@@ -1,0 +1,238 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "inf-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:34:12.844450+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "3b98ca5b639e06f9836b3e15a72c7f3ffd60ee12cc0abe5c0f97edd64ce70d42",
+  "question_sha256": "defb2d5afa06ce05847814081f892e153c6478b102ec166da9bfa6e92bf0ca27",
+  "reference_sha256": "af8af736b20cfadbc10950d9e83db1e5582000b2afdae0d27e561d3998ee5974",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "7f48106c93386414ae93ed2e267a56ece0bf6979ed3b137750fd432957b326e3",
+  "primary_route": "Patient-paired multiomic treatment-associated program discovery, assay-specific preprocessing, primary late integration/enrichment and locked external cohort validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3388,
+  "first_round_scientific_quality": 88.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult original assay Methods, supplements or validated analysis protocols and check their transfer to the present inputs."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Normalize RNA using an approach appropriate",
+      "evidence_type": "exact_quote",
+      "reason": "No concrete platform-conditional transformation/normalization procedure or executable calibration-to-choice rule for the computational inputs."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Assay QC/reference types are enumerated but no quantitative reference-to-acceptance calibration procedure and failure action are operational."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The patient unit is correct, but no nuisance-variance-to-precision/detectable-effect calculation justifies the fixed 30-patient and external sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "an inferential test appropriate to cohort size",
+      "evidence_type": "exact_quote",
+      "reason": "The external primary test and interval method remain unspecified; the illustrative paired models do not settle this inferential choice or its assumptions."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded complexity/feature/weight parameter exploration with a range-derivation and stop rule before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Failed validation triggers diagnostics and prohibits retrospective signature changes, but revised analyses are not explicitly refrozen for fresh independent confirmation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Version control and raw data retention are useful but input hashes, pinned computational environment and exact execution commands are missing."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "standardize features within modality using development-set parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Nested resampling is mentioned but fitted transformations/filtering are not explicitly recomputed inside each training fold. Whole-development scaling can leak held-out patient information into internal evaluation."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "potentially informative missingness",
+      "evidence_type": "exact_quote",
+      "reason": "Informative missingness is named, but comparison to complete cases does not test plausible non-random observation mechanisms. No MAR assumption or explicit MNAR sensitivity/bounding scenario is operational."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment rerun, declared numerical output tolerances, resource/failure logs or source-difference audit for target plots/tables."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Objective and primary recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Useful patient-paired RNA/protein-first analysis with a batch-confounding gate, identity checks, calibrated association language and guarded external validation. Enrichment and late integration have distinct roles and missing modality scores are acknowledged. Internal preprocessing boundaries and informative-missingness sensitivity remain underdeveloped.",
+  "item_score": 40
+}

@@ -1,0 +1,57 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "kimi",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.014169+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "84b3a7f32a722b9c627218f338577c163e653a06139f52addeda369c13240903",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 4,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 80.0,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "If the donor count is below the calibrated requirement, the accepted conclusion should be limited to feasibility, variance estimation, and hypothesis generation.",
+      "issue": "Falling short of a planned power target does not automatically invalidate a prespecified calibrated confirmatory test. Report reduced precision/power and the actual interval rather than universally prohibit inference."
+    },
+    {
+      "quote": "Calculate a permutation interval or",
+      "issue": "A null permutation distribution is not directly a confidence interval for the effect. Specify inversion of tests under an explicit effect model or use an appropriate separately calibrated interval procedure."
+    },
+    {
+      "quote": "Use an outcome distribution and link appropriate to the measurement.",
+      "issue": "The broad prescription lacks an explicit outcome-specific example beyond a continuous equation and does not explain standardizing a nonlinear conditional coefficient to the average-donor primary estimand."
+    },
+    {
+      "quote": "",
+      "issue": "The complete answer contains 3643 whitespace-delimited words, exceeding the specified 3500-word limit; communication reduced under the original rubric."
+    }
+  ],
+  "rationale": "Strong estimand-aware aggregation, restricted randomization, complete-pipeline simulations across uncertain variance ranges, grouped holdout, missingness and honest failure reporting. Remaining gaps concern an overbroad below-target-n restriction, interval construction and nonlinear effect-scale comparability.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

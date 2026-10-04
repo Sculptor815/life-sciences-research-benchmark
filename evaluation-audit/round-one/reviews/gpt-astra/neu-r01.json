@@ -1,0 +1,83 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "gpt-astra",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:30:50.203184+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "0b8f53e18b644ff93857eb0232400731dd8742f5068b43d48fbc2fc9657f69fd",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Complete neutral-tagging acquisition experiment with direct physiological calibration, validated gate closure, equally familiar comparison contexts, separate first-test cohorts, actual delivery logs, independent units, interaction and simple contrasts, bounded nulls and clear causal limits. Explicitly recognizes residual trace/safety learning in unpaired controls and alternative mediated associations. No material deduction identified.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Can optical activation of a previously neutral",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Context-associated activity participates in new associative learning.",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Activate T-labeled neurons with shock temporally paired to activation.",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Each animal receives its assigned first test in T or U:",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "P animals freeze selectively in T without light",
+      "assessment": "Substantive target component present; study quality is evaluated separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

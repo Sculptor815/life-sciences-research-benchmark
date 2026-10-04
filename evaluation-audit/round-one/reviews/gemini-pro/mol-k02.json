@@ -1,0 +1,64 @@
+{
+  "item_id": "mol-k02",
+  "model_code": "gemini-pro",
+  "response_id": "mol-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:28:51.191612+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "1c8de4810b36df23c7b4e15ce8475a5424ce8a65902187106b38ce40a629bf01",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "restrict all future downstream analyses using this antibody strictly to the 50 kDa band",
+      "issue": "The synthetic plot supplies only provisional, application-specific genetic support, not authorization for every future assay or context. Validate direct identity and performance in the intended application first."
+    },
+    {
+      "quote": "this definitively overturns the \"downstream co-regulation\" alternative",
+      "issue": "Restoring the target can restore a downstream protein too. Rescue cannot definitively distinguish direct antibody recognition from indirect gene dependence."
+    },
+    {
+      "quote": "it suggests the loss of the 50 kDa band was a permanent artifact of the clonal selection process",
+      "issue": "Failed rescue can result from inadequate expression, wrong isoform, epitope, processing or localization. Check these before assigning failure to clonal artifacts."
+    },
+    {
+      "quote": "Detecting the target protein's peptides at 50 kDa will definitively confirm the antibody's specific binding.",
+      "issue": "A comigrating protein or an indirectly immunocaptured partner can supply those peptides. Target presence in the region does not definitively identify the antibody-reactive species or give a full binding profile."
+    }
+  ],
+  "rationale": "The plotted contrast and major alternative are recognized correctly, but the main proposed discrimination of that alternative is invalid. Absolute downstream-use, rescue and MS claims substantially weaken decision value and the usefulness of the experimental plan.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Codex personally read all twelve complete final answers, exact question and packet, full reference and displayed synthetic figure. No hidden reasoning, paid judge, laboratory experiment or candidate web access was used.",
+    "The chart gives approximate 100-to-5 signal at 50 kDa and 95-to-93 at 75 kDa, with equal loading and validated KO as stated premises. The relative genetic support favors 50 kDa; it does not establish direct antigen identity or universal antibody specificity. Small numerical approximations do not change this qualitative comparison.",
+    "Reference correction: no complete coding-sequence deletion is specified in the candidate packet. The sealed logic chain assumes one, but the figure only says validated KO. Escaping isoforms are legitimate conditional alternatives when the validation scope is unknown.",
+    "Reference correction: the candidate was not shown the draft-key editorial status or original multiple-choice distractors. Do not require mention of a draft key, expert-review status or rejection of choices absent from the open question.",
+    "Reference correction: a target-derived modified species cannot persist after confirmed complete protein elimination merely because it is modified. A persistent band may contain a separate comigrating protein; distinguish that from residual/escaping target and incomplete null validation.",
+    "Summary bars do not reveal n, statistical equivalence, noise, raw-blot integrity or normalization method. Equal loading is a premise here, not proof of equal extraction/transfer. Expected sequence mass alone cannot reverse the observed ranking.",
+    "Rescue strengthens genetic dependence but may also restore downstream proteins. Failed rescue needs verified expression, relevant isoform, epitope, localization and processing. Genetic or RNA loss alone need not prove protein-null status.",
+    "MS can establish target presence while a comigrating species or indirect interactor generates antibody signal. Non-detection requires sensitivity and peptide coverage before being decisive. Peptide blocking can affect shared epitopes and does not independently prove endogenous identity.",
+    "The original frozen reference and candidate records are preserved. Corrections are disclosed here and applied consistently. Reviews are unblinded single-AI provisional assessments, not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Uhlen et al. (2016), A proposal for validation of antibodies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+      "scope": "Read the genetic, independent-antibody, tagging, immunocapture-MS and additional-characterization sections. They support application-specific validation and note indirect capture, tag artifacts and peptide-blocking limitations. No supplementary audit or experimental replication performed."
+    }
+  ],
+  "overall_benchmark_score": null
+}

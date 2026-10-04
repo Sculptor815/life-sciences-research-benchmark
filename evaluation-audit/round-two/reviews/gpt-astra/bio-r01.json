@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "bio-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:46:04.475069+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "2de5a4392a14269c483ecb080796ea4e7b818ad6b850211f9de8126e424e60bc",
+  "question_sha256": "d93d3ae3a989ada01328cb28f05820c58b4ff3f4820b238c927b391e7bd7fa22",
+  "reference_sha256": "1e18498facff37adeca34fd379e7bba2833a775fd7b49bc1c8294cec6b9481cd",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6f090646f2912213720f42e2eaea531eaeba19cc644daa54ea8980eebaf0e81b",
+  "primary_route": "Calibrated forced reverse gamma rotation in isolated F1 with ADP/phosphate and direct ATP measurement; motion, direction, enzyme and analytical controls.",
+  "complete_final_answer_read": true,
+  "word_count": 2759,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of primary Methods, supplements or validated mechanical-manipulation/ATP-assay protocols with verification of transfer to this system."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent matrix standards, recovery and mechanics checks are present, but no objective acceptance rule (or procedure deriving it) and failure action gates the chemical/mechanical calibration."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparation/chamber hierarchy and pilot variance are identified, but no stated precision/power objective and calculation/simulation links nuisance variance to adequate confirmatory sample size."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Prospective quality review is proposed, but operational exclusion thresholds, stopping policy and complete technical attrition versus biological nonresponse accounting are not specified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary comparisons are named, but interval construction/model checking and multiplicity handling for the directional/control comparisons are not operationally specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot ranges or variables are supplied, but no complete bounded exploration and objective setting-selection/lock before independent confirmation."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Plausible diagnostic failure patterns are enumerated, but no ordered repair-and-retest workflow specifies how a diagnosed technical failure is corrected."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed/ambiguous exploratory work."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preparation/chamber/raw-trajectory/chemical-sample/calibration manifest linked to analysis versions/settings, deviations and outputs."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "P02",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next question",
+      "evidence_type": "exact_quote",
+      "reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong reverse-work question, actual rather than commanded trajectories, isotope plus net-inventory chemistry, initial bound-pool accounting and direction/substrate/inactive/uncoupled controls. Proposed buffer, concentration, time and relative-speed values are labeled honestly. Conditional energy and null interpretations are sound; the strict operational gaps remain separate from historical matching.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "All five match after full reread: question asks reverse gamma work driving sustained ADP/phosphate-to-ATP synthesis; mechanism requires repeated net substrate-derived output beyond initial bound ATP and external backgrounds; intervention imposes negative rotation relative to measured ATP-driven direction with ADP/phosphate; readout combines verified trajectories and chromatographic ATP/ADP/AMP with phosphate tracing and required controls; outcome requires substrate-, active-enzyme-, linkage- and direction-dependent production. Round-one hit retained.",
+  "item_score": 80.0
+}

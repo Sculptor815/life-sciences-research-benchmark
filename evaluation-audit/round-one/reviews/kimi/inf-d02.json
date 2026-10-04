@@ -1,0 +1,62 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "kimi",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:23:55.265753+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "a72a20d7d16934dd13d75376f4054a74d30ccf48254a45561ae079927a09389a",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "The exact link, offset handling, dispersion procedure, estimator and inference implementation must be taken from the pinned DESeq2 documentation and recorded.",
+      "issue": "A proposed plan can name the log link, normalization approach, test, FDR procedure and compatible shrinkage choice without inventing historical settings. Leaving these algorithmic choices unresolved makes the workflow less operational than the requested detailed proposal."
+    },
+    {
+      "quote": "If no calibration material exists, label the study feasibility work rather than inventing parameters.",
+      "issue": "Absence of a new pilot does not automatically rule out confirmatory inference. External validated information or a prespecified plausible-parameter sensitivity grid can justify a design, with uncertainty disclosed. Do not impose a pilot as a universal prerequisite."
+    },
+    {
+      "quote": "Stop condition:** treatment assignment is lost, non-independent, or completely confounded with donor or batch.",
+      "issue": "The later donor-level formula is appropriately identifiable. Qualify this general donor-confounding rule: independently allocated donor-constant treatment is valid at donor level; aliasing arises if saturated donor effects are included."
+    },
+    {
+      "quote": "A clean rerun must reproduce the declared plot-data digest.",
+      "issue": "Underlying plot data are the correct target, but exact byte hashes alone can reject scientifically identical row ordering/formatting or numerical round-off. Add canonicalization and prespecified numerical tolerances with a semantic discrepancy log."
+    }
+  ],
+  "rationale": "Excellent allocation hierarchy, explicit inference scope, model-rank checks, provenance and semantic source ledger. Operational analysis choices are excessively deferred, and pilot/donor-stop rules are unnecessarily restrictive. The 3456-word answer fits the 3500-word limit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete final answer was personally read separately in full, against the exact question, packet and frozen reference including clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than byte equality. Partial source access cannot establish full reproduction. Word counts: DeepSeek 2307, Gemini 1228, GLM 2436, Kimi 3456, Grok 3342, Qwen 3854; only Qwen exceeds 3500.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

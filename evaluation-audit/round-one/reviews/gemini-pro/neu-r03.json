@@ -1,0 +1,113 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:06:49.887649+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "748d775e753f4ec410a14402ce6c33a6cf4572e3761d30162ce99824420b130b",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 1,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 1
+  },
+  "service_score": 47.5,
+  "reasoning_index": 43.75,
+  "errors": [
+    {
+      "quote": "dopamine neurons strictly encode violations",
+      "issue": "The packet connects responses to prediction violations; it does not establish exclusive coding or strict silence in the delay. Baseline firing is not silence."
+    },
+    {
+      "quote": "calibrated by observing the established baseline physiological signatures",
+      "issue": "Brain location and a familiar response pattern do not independently identify dopamine neurons. Molecular/validated tagging or explicitly putative identity is required."
+    },
+    {
+      "quote": "The neuron must be excluded from the waiting-period analysis",
+      "issue": "Excluding cells for lacking an omission response circularly selects the established signal and can remove relevant uncertainty neurons."
+    },
+    {
+      "quote": "individually isolated single dopamine neurons",
+      "issue": "Animal/session nesting is absent from the power and ANOVA plan. Neuron count does not supply independent animal replication."
+    },
+    {
+      "quote": "uncertainty or expected value",
+      "issue": "The hypotheses conflate distinct variables. The post-hoc shape test helps, but no predefined value-matched contrast, reward magnitude control or competing quantitative models establish a specific uncertainty conclusion."
+    },
+    {
+      "quote": "specifically during the defined *waiting period*",
+      "issue": "No calibrated transient buffers, cue-identity counterbalancing, movement/licking tracking, delivery calibration or learned-behavior criterion is operationalized. Cue and behavioral confounds remain."
+    },
+    {
+      "quote": "Activity during the waiting period carries no additional information",
+      "issue": "A nonsignificant ANOVA in a selected50-neuron sample cannot establish absence of information. Report sensitivity-bounded inference and heterogeneous/time-resolved alternatives."
+    },
+    {
+      "quote": "exact animal model, specific brain coordinates",
+      "issue": "Most implementation, independent sample planning, approval/welfare, recording settings and quantitative troubleshooting remain missing from the requested detailed auditable plan."
+    }
+  ],
+  "rationale": "Recognizes the historical probability/anticipation topic and proposes0/50/100conditions, but response-selected identity, absent subject-level replication and strong null overclaims prevent a qualified core readout. Original quality reflects useful topic alignment and serious inferential/execution gaps.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does dopamine-neuron activity during the waiting period",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Sustained Uncertainty/Probability Encoding",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Cue A (0% reward), Cue B (50% reward), and Cue C (100% reward)",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "The neuron must be excluded from the waiting-period analysis",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "highest during maximum uncertainty (50%)",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,116 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "claude-opus46",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.071519+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "c0f13c079074592cedcbafdf540137479d48742cbb977a718a21c08ce7dcd87a",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "the C-terminal domain acts as an autoinhibitory cap",
+      "issue": "This is a hypothesis to test, not supplied evidence. The later audit table also upgrades inhibitory C-terminal function and named caspases to high-confidence packet-derived facts."
+    },
+    {
+      "quote": "all-or-none",
+      "issue": "All-or-none vesicle release does not uniquely diagnose non-pore disruption; a pore can empty a vesicle. Do not use this kinetic pattern as a binary mechanism discriminator."
+    },
+    {
+      "quote": "add low-concentration non-ionic surfactant to storage buffer",
+      "issue": "A surfactant can alter membrane behavior and protein insertion even without gross lysis. Require matched carryover titration and independent control after changing this reagent; the troubleshooting step omits them."
+    },
+    {
+      "quote": "Liposome co-sedimentation",
+      "issue": "No protein-without-liposomes control is specified here to separate pelleted aggregates from membrane binding. Free-reporter optical controls and caspase-alone controls for the later in-situ cleavage experiment are also absent."
+    },
+    {
+      "quote": "Pyroptotic membrane injury likely requires an additional cellular factor",
+      "issue": "The validated negative panel does not establish or preferentially identify an additional executioner. The subsequent folding/lipid caveats should constrain this conclusion rather than accompany an overstrong claim."
+    },
+    {
+      "quote": "at the most informative concentration",
+      "issue": "Select a primary dose/contrast independently of confirmatory outcomes, and account for protein/lipid preparations and repeated conditions. Ordinary condition-level ANOVA and post-selection effect sizes risk overstated precision."
+    },
+    {
+      "quote": "GSDMD-NT lacks intrinsic membrane-permeabilizing activity under the conditions tested.",
+      "issue": "A bounded nondetection needs a sensitivity/equivalence limit, not just nonsignificance. Also add matched cellular structure-function validation before attributing the purified activity to the original death phenotype."
+    }
+  ],
+  "rationale": "Concrete protein/lipid proposals and a substantive liposome-plus-EM/size-selectivity positive experiment match the historical direction. Packet overstatement, overinterpreted negative/kinetic patterns, absent artifact controls and analysis weaknesses substantially reduce scientific quality; the positive core remains distinguishable from these flaws.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does the Gasdermin D Amino-Terminal Fragment Directly Form Pores",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "oligomerizes to form transmembrane pores",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Main Liposome Leakage Assay",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Negative-stain transmission electron microscopy",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "If TEM shows ring/arc structures AND dextran release shows a size cutoff",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

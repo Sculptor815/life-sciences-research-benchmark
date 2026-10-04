@@ -1,0 +1,112 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "qwen",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.078429+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "6cd31cdf4af25fd626b35fb7d8f4eb5daf06f78c8cfad034432cbdd34067e5dc",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 70.0,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Protection of part or all of the fragment in intact liposomes suggests insertion or internalization.",
+      "issue": "Protease resistance can also reflect compact fold, aggregates, inaccessible sites or enzyme inhibition. Include protein-only digestion and independent insertion/topology controls; fully exposed digestion also does not exclude an inserted but exposed domain."
+    },
+    {
+      "quote": "Fraction-alone activity must be subtracted or controlled.",
+      "issue": "Simple subtraction cannot identify NT-specific cofactor activity when leakage is nonlinear, saturating or synergistic. Use the full factorial contrast in a calibrated range and purified candidate validation."
+    },
+    {
+      "quote": "It would mean that the supplied minimal system lacks a required lipid, protein, modification, geometry, ionic condition, or other factor.",
+      "issue": "A negative assay can also reflect absence of the hypothesized direct activity or inadequate sensitivity. It does not establish that a missing factor necessarily explains it."
+    },
+    {
+      "quote": "Then the direct-execution hypothesis should be subordinated to testing that factor.",
+      "issue": "A required gene can regulate trafficking, membrane lipids or repair rather than execute injury. A genetic screen hit should not by itself displace a biochemically established direct mechanism."
+    },
+    {
+      "quote": "The exact concentration range should be set during calibration",
+      "issue": "Central protein production, membrane formulations, dose/time working ranges and cell implementation remain unspecified despite the length of the answer. Add calibrated membrane-activity mutant folding/abundance checks and a direct native-cleavage activation comparison."
+    },
+    {
+      "quote": "",
+      "issue": "Complete answer contains 5442 whitespace-delimited words, exceeding the 5000-word limit."
+    }
+  ],
+  "rationale": "Broad and mostly careful minimal-system, electrical and cell program qualifies for the historical direction. Protease-protection/cofactor inference, deferred quantitative implementation and excessive length limit original quality.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Is the inflammatory-caspase-generated",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "discrete, size-selective conduits",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "purified GSDMD fragments and defined protein-free membranes",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Planar lipid bilayer electrophysiology",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "Reproducible stepwise conductance increases.",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

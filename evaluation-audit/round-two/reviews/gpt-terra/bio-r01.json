@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "bio-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:46:04.483281+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c006f4221b2d06851a2e52c5a74e6da7f24b34df2bd3ee7f5420355caef6e493",
+  "question_sha256": "d93d3ae3a989ada01328cb28f05820c58b4ff3f4820b238c927b391e7bd7fa22",
+  "reference_sha256": "1e18498facff37adeca34fd379e7bba2833a775fd7b49bc1c8294cec6b9481cd",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "0f976869c36a7d6c5d52e8b15aa067f3d619c95d3220398f147f6d58f842e6cf",
+  "primary_route": "Calibrated forced reverse gamma rotation in isolated F1 with ADP/phosphate and direct ATP measurement; motion, direction, enzyme and analytical controls.",
+  "complete_final_answer_read": true,
+  "word_count": 3441,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of primary Methods, supplements or validated mechanical-manipulation/ATP-assay protocols with verification of transfer to this system."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "a chemically defined buffer",
+      "evidence_type": "exact_quote",
+      "reason": "Buffer/ions (including magnesium), dose, temperature, flow, quench and drive durations are deferred without executable quantitative choices or concrete calibration-to-choice algorithms."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent matrix standards, recovery and mechanics checks are present, but no objective acceptance rule (or procedure deriving it) and failure action gates the chemical/mechanical calibration."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparation/chamber hierarchy and pilot variance are identified, but no stated precision/power objective and calculation/simulation links nuisance variance to adequate confirmatory sample size."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Prospective quality review is proposed, but operational exclusion thresholds, stopping policy and complete technical attrition versus biological nonresponse accounting are not specified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary comparisons are named, but interval construction/model checking and multiplicity handling for the directional/control comparisons are not operationally specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot ranges or variables are supplied, but no complete bounded exploration and objective setting-selection/lock before independent confirmation."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Plausible diagnostic failure patterns are enumerated, but no ordered repair-and-retest workflow specifies how a diagnosed technical failure is corrected."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed/ambiguous exploratory work."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preparation/chamber/raw-trajectory/chemical-sample/calibration manifest linked to analysis versions/settings, deviations and outputs."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next mechanistic question",
+      "evidence_type": "exact_quote",
+      "reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "The core reverse-work experiment has empirical handedness, isotope identity/exchange validation, net flow-and-inventory mass balance, actual motion, inactive/uncoupled/substrate controls and appropriately limited null conclusions. The quantitative execution and development-to-confirmation workflow remain largely future obligations.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "All five match: reverse gamma-coordinate ATP-production question; mechanically coupled, direction/substrate/enzyme-dependent net output above backgrounds; imposed opposite empirical rotation with ADP/phosphate; actual trajectories plus chromatographic isotope-resolved ATP and all required counterfactuals; predicted sustained net output in reverse-driven active complete-substrate preparations, absent from matched controls. Round-one hit retained; no exact historical instrument or settings required.",
+  "item_score": 78.0
+}

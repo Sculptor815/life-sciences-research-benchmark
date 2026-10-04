@@ -1,0 +1,46 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "gpt-astra",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:53:34.911591+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "c9d066d096a069e07d7edcff1d03e7b9631e2a1564e97fb2f8243a1d81095afa",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Validate assay specificity and linearity, including a phosphorylation-specificity control where appropriate.",
+      "issue": "The assay section remains a specification rather than an executable sample-processing protocol. It does not select and order a phospho-S assay workflow with harvest/quench, phosphatase-preserving lysis, normalization and specificity-control processing. Unknown K/ligand settings properly require calibration, but the general handling sequence could still be stated."
+    }
+  ],
+  "rationale": "Excellent causal design: distinguishes ligand-dependent from basal growth, neither treats noncatalytic rescue as proof of scaffolding nor catalytic necessity as scaffold dispensability, addresses functionally relevant residual activity, qualifies inhibitors and floor effects, and prespecifies equivalence and no-meaningful-rescue bounds. The remaining limitation is operational assay detail, rather than the causal logic.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol."
+  ],
+  "overall_benchmark_score": null
+}

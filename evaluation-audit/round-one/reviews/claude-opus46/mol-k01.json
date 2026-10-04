@@ -1,0 +1,52 @@
+{
+  "item_id": "mol-k01",
+  "model_code": "claude-opus46",
+  "response_id": "mol-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:58:41.196630+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "e69862db084fb5c9fa7e33f5e3976cae136c8397f811e629dd4ca2692b431b82",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "confirms the band is a direct product of the target gene (not an indirect effect of the KO).",
+      "issue": "Untagged rescue can restore a downstream cross-reactive protein; this does not distinguish direct antigen identity from indirect dependence."
+    },
+    {
+      "quote": "the signal is lost if, and only if, the cognate gene is ablated.",
+      "issue": "The supplied one-way perturbation does not establish an if-and-only-if relationship."
+    },
+    {
+      "quote": "identifies the cross-reactive species and closes the assignment gap.",
+      "issue": "A gel region can contain multiple proteins; peptide identification supplies candidate identities, not automatic assignment of the immunoreactive antigen."
+    }
+  ],
+  "rationale": "Correctly selects 50 kDa and acknowledges indirect effects, but its decisive proposed rescue interpretation contradicts that caveat. Mass-spectrometry and competition interpretations are also overconfident. These errors materially impair the requested discrimination.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Comparable loading does not establish antigen identity or guarantee equivalent transfer of each species.",
+    "No expected target molecular mass is supplied. Do not assume 50 kDa is the predicted full-length mass.",
+    "Untagged rescue may restore either the target or an indirectly dependent antigen.",
+    "Gel-slice proteomics and native immunoprecipitation can contain co-migrating proteins or partners; identity of a constituent is not automatically identity of the immunoreactive species.",
+    "No requirement to mention private draft status or obsolete multiple-choice distractors.",
+    "Complete coding deletion blocks new target synthesis; pre-existing protein and signal mixtures are possible caveats when timing and turnover are unspecified, not established explanations.",
+    "A reference list of methods does not make any single validation approach infallible."
+  ],
+  "validation_framework_source": "https://pmc.ncbi.nlm.nih.gov/articles/10335836/",
+  "overall_benchmark_score": null
+}

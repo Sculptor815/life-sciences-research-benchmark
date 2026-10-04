@@ -1,0 +1,222 @@
+{
+  "model_code": "kimi",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:15:35.374445+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "6d46482b3652293305b6bc942867a26075a5a7448ee94960e298d4f56067df27",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "7236a58bc284ed8d137cfe820d5c2d9339dfe54980795cd6b7a13fe9d7c0d5ec",
+  "primary_route": "Separate optical, reporter and target kinetics with substrate titration and proposed independent product validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2728,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "**Recommended next action:** do **not** call the compound a target inhibitor from the existing signal drop. The fixed packet is compatible with target inhibition, but also with reporter-enzyme inhibition, fluorophore/product quenching, absorbance/inner-filter attenuation, endpoint nonlinearity, precipitation/aggregation, or substrate-dependent apparent potency. Run a **decoupled, kinetic, blinded panel** in parallel: **optical-only**, **reporter-only/bypass**, **target-only orthogonal**, and **full coupled** arms, using multiple substrate concentrations and time points. Classify mechanism only after optical correction and orthogonal confirmation.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior target/reporter Methods, supplements or a validated protocol before execution and check transfer of detailed conditions."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unknown tolerances are calibrated, not assumed",
+      "evidence_type": "exact_quote",
+      "reason": "Lists buffer/ions/temperature/volume settings to record but no concrete calibration-to-choice procedure resolves them before confirmation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified tolerance",
+      "evidence_type": "exact_quote",
+      "reason": "Matrix standards and recovery are appropriate, but fluorescence/orthogonal quantitative recovery/accuracy pass bounds or their derivation remain unspecified. Enzyme-lot activity tolerance does not validate measurement accuracy."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "model absolute rates",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit product amount/concentration and time unit convention or complete weak/saturated/missing rate reporting rules."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "fit rates across [S] and [I]",
+      "evidence_type": "exact_quote",
+      "reason": "Run effects, CIs and multiplicity are strong, but no free-versus-total inhibitor/depletion applicability check for the standard competitive models; time-dependent binding mention alone does not supply it."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Either redesign",
+      "evidence_type": "exact_quote",
+      "reason": "No required refreeze and fresh independent confirmation after assay repairs or ambiguous results."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record for every well",
+      "evidence_type": "exact_quote",
+      "reason": "Records useful raw acquisition/reagent details but no explicit unique raw-file/sample linkage plus exact code/software/settings versions sufficient for rerun."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Controls checklist",
+      "evidence_type": "exact_quote",
+      "reason": "Complete prospective role-defined controls, including omissions, active preparations, product spikes, reporter bypass and source-conditional known inhibitors."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "causal locus is unassigned",
+      "evidence_type": "exact_quote",
+      "reason": "Evidence-grounded chain, chemical/product alternatives and conditional target claims; specific execution omissions only."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "causal locus is unassigned",
+      "evidence_type": "exact_quote",
+      "reason": "Evidence-grounded chain, chemical/product alternatives and conditional target claims; specific execution omissions only."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "causal locus is unassigned",
+      "evidence_type": "exact_quote",
+      "reason": "Evidence-grounded chain, chemical/product alternatives and conditional target claims; specific execution omissions only."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "causal locus is unassigned",
+      "evidence_type": "exact_quote",
+      "reason": "Evidence-grounded chain, chemical/product alternatives and conditional target claims; specific execution omissions only."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "causal locus is unassigned",
+      "evidence_type": "exact_quote",
+      "reason": "Evidence-grounded chain, chemical/product alternatives and conditional target claims; specific execution omissions only."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "causal locus is unassigned",
+      "evidence_type": "exact_quote",
+      "reason": "Evidence-grounded chain, chemical/product alternatives and conditional target claims; specific execution omissions only."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "causal locus is unassigned",
+      "evidence_type": "exact_quote",
+      "reason": "Evidence-grounded chain, chemical/product alternatives and conditional target claims; specific execution omissions only."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Confirm identity/purity",
+      "evidence_type": "exact_quote",
+      "reason": "Enzyme and compound identity, purity, stock integrity, active assay qualification and stability/solubility prerequisites are explicit."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "finalize n by pilot CV",
+      "evidence_type": "exact_quote",
+      "reason": "Independent mixtures/dilutions and technical nesting with consequential-effect pilot planning; coded allocation/acquisition/analysis, balanced randomized plates and a lock before decoding."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "finalize n by pilot CV",
+      "evidence_type": "exact_quote",
+      "reason": "Independent mixtures/dilutions and technical nesting with consequential-effect pilot planning; coded allocation/acquisition/analysis, balanced randomized plates and a lock before decoding."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "mark them invalid for potency",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective technical gates and stops retain limits instead of imputing mechanism from invalid concentrations."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Target enzyme rate \u2192 product formation",
+      "evidence_type": "exact_quote",
+      "reason": "Explains cascade identifiability and the necessity of independent target chemistry and initial rates."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "starting range adjusted after pilot Km",
+      "evidence_type": "exact_quote",
+      "reason": "Bounded Km/solubility/optical-range and vehicle pilots with acceptance criteria and locked analysis before unblinding; unresolved core buffer-setting details charged P02."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "fresh dilutions",
+      "evidence_type": "exact_quote",
+      "reason": "Cause-specific repair/retest for solubility, photon interference, reporter capacity and nonlinear time courses."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Equivalence for",
+      "evidence_type": "exact_quote",
+      "reason": "Supports negative claims with consequential-effect equivalence/CI bounds, explicit target/reporter/optical and unresolved branches, and product chemical-loss checks."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Calibrate with authentic product standards prepared in quenched assay matrix",
+      "evidence_type": "exact_quote",
+      "reason": "Independent target assay with matrix effects, recovery, detection limits/carryover and standard spikes; explicitly unresolved if no validated independent route."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong discrimination, material authentication, quantitative uncertainty and operational orthogonal validation; several transferable-condition and audit requirements remain incomplete.",
+  "item_score": 60
+}

@@ -1,0 +1,74 @@
+{
+  "item_id": "bio-d01",
+  "model_code": "deepseek",
+  "response_id": "bio-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:39:43.205305+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "8101dacf496b5e3a04ccbfef7edcc74154ac4af8fb1b3d84b2951590c44dd268",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 55.0,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "use at least two time points to confirm linearity.",
+      "issue": "Any two points define a line; at least three suitably spaced points and residual/shorter-window checks are needed to detect curvature. This cannot validate an initial-rate interval."
+    },
+    {
+      "quote": "If no dose-dependent effect in two independent full coupled runs, stop and conclude no target effect under tested conditions.",
+      "issue": "Two null composite-readout runs cannot exclude a consequential target effect masked by reporter/optical behavior. Use a qualified target-only assay and prespecified precision/equivalence bounds."
+    },
+    {
+      "quote": "If correction is incomplete, suspect quenching or reporter inhibition.",
+      "issue": "This rule immediately follows a fluorophore-only test. Reporter-enzyme inhibition cannot explain a residual effect when the reporter enzyme is absent; chemical fluorophore loss is another candidate."
+    },
+    {
+      "quote": "If signal is unchanged, the target step is affected.",
+      "issue": "A clean post-addition signal only bounds immediate downstream interference under that timing. It does not prove target inhibition or exclude slower reporter/fluorophore effects."
+    },
+    {
+      "quote": "repeat the target reaction with compound and substrate titration.",
+      "issue": "The optional orthogonal arm lacks quench, compound-matched analytical recovery and matrix-effect validation. The no-enzyme substrate control records background rather than measuring chemical substrate loss; target assignment remains vulnerable."
+    }
+  ],
+  "rationale": "Useful diagnostic arms and correct standard kinetic equations, with separation of technical and independent experiments. Several stopping and attribution rules nevertheless overclaim, one linearity rule is mathematically invalid, and the direct analytical validation is too thin for confident mechanism assignment.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "D3 establishes spectral proximity, not the magnitude of inner filtering. Fluorophore-only signal loss does not distinguish absorption, quenching and chemical conversion.",
+    "Substrate-competitive inhibition is a kinetic subclass of target inhibition; it is not necessarily active-site occupancy. Substrate sequestration and chemical loss require separate controls.",
+    "Reporter-only inhibition and true target inhibition can coexist. Do not force mutually exclusive categories or subtract arbitrary effect percentages.",
+    "A fully validated staged reporter calibration can be informative; a specific analytical instrument is not mandatory. Target quenching, matrix matching, product recovery and chemical stability must justify the inference.",
+    "Orthogonal methods can have their own compound-dependent artifacts, including ion suppression. Nonfluorescence alone does not establish specificity.",
+    "Independent preparations/days support reproducibility; technical wells cannot substitute for them. A null significance test is not equivalence; margins should be scientifically justified.",
+    "Simple inner-filter correction formulas depend on optical geometry. For f=F_without/F_with, attenuation correction multiplies signal by f, not by 1/f.",
+    "The draft reference uses reporter Km as a preparation item, but full reporter Michaelis-Menten characterization is not universally essential if empirical capacity and relevant intermediate concentrations are validated.",
+    "No fixed concentrations, replicate counts, Z-prime or R-squared thresholds are supplied by the packet. Proposed pilot settings are acceptable when labeled and validated; they are not historical facts.",
+    "The Fable response is nonempty but ends mid-protocol with provider content_filter/native refusal. Assess only submitted content, preserve its cost and hash, and do not retry."
+  ],
+  "review_sources": [
+    {
+      "title": "Assay Guidance Manual: fluorescence and absorbance interference",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK343429/?report=printable",
+      "scope": "Official guidance: concentration/matrix-dependent interference. No candidate access."
+    },
+    {
+      "title": "Lakowicz and Weber: fluorescence quenching by oxygen",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6959846/",
+      "scope": "Primary paper, equations and lifetime discussion: static and dynamic intensity effects require discrimination. No candidate access."
+    }
+  ],
+  "overall_benchmark_score": null
+}

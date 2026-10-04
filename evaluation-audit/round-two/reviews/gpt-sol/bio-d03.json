@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "bio-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:50:54.040877+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e2111b2ba25b4bae401ccba7383568a6552853f827e35f053f0ce3d6f3cd985e",
+  "question_sha256": "9897959937c05bea4661cdf8b301b0b350235db1b56f302510fc8132468083b7",
+  "reference_sha256": "494bb9585a8ba22eeb3aa44162cd54a8b39534002dd77a6f77e38ec56d1ef0b6",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "e6b3bc540e9b46ec02154381d6d58289f72baadf72047b87d2464b53d56b97d3",
+  "primary_route": "Isotope-resolved pulse tracking, regeneration-step interruption/restoration and defined reconstitution with carbon balance.",
+  "complete_final_answer_read": true,
+  "word_count": 2508,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended proposed experiment",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution consultation of prior primary Methods/supplements or validated tracer, inhibitor and reconstitution protocols with detailed-condition transfer checks."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Exact identities, labels",
+      "evidence_type": "exact_quote",
+      "reason": "Atom mapping and dose criteria are strong, but buffer/cofactor/temperature and quantitative preparation settings remain generic calibration requirements without an executable selection procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Establish an acceptable recovery interval",
+      "evidence_type": "exact_quote",
+      "reason": "Standards, spike recovery and closed-vessel controls are named, but no quantitative accuracy/recovery acceptance rule or objective derivation fixes what passes before confirmation."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Reject or stratify preparations",
+      "evidence_type": "exact_quote",
+      "reason": "Rejecting outlying endogenous pools as an alternative to stratification is not tied to an independent technical failure; biological pool variation must be retained/modelled rather than discarded for a convenient cycling test."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Revisit atom mapping",
+      "evidence_type": "exact_quote",
+      "reason": "No refreeze and fresh independent confirmation after changing labels, sampling or perturbation in response to failures."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record tissue source",
+      "evidence_type": "exact_quote",
+      "reason": "Material details and blinded identifiers lack linked raw files and exact model/code/environment/settings versions needed to reconstruct all contrasts."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "No single signature is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Sound mapped-label, pool and net-flux reasoning with no historical overclaim. Source recorded and preparation integrity qualified; prospective sham/inactive/omission/restoration controls. Absolute moles-based turnover, enrichment/gas-partition/blank correction and unquantifiable-data stop are specified. Independent nested preparations with pilot power, randomized coding and paired interaction/equivalence uncertainty. Low-dose pilot bounded by detectability, toxicity and substrate/oxygen limits; time selection follows observed transit/quality. Diagnoses residual inhibitor versus damage and exchange; conditional decision requires joint isotope, restoration, balance and defined-enzyme omission/add-back with measured contamination limits.",
+  "item_score": 65
+}

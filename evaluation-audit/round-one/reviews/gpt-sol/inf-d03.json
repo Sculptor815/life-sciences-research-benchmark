@@ -1,0 +1,49 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "gpt-sol",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:16:47.928627+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "1d61308b88369556a2b635378e844388c85c14e5e096dc6ae1f4e7961b1ebf50",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 3,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 93.75,
+  "reasoning_index": 93.75,
+  "errors": [
+    {
+      "quote": "an effect interval that does not rule out the prespecified meaningful effect criterion",
+      "issue": "This compatibility gate can be passed by an extremely imprecise held-out estimate that includes zero, important harm and important benefit. Specify a validation precision/effect criterion that distinguishes supportive replication from merely failing to contradict a meaningful effect; a prespecified weak rule remains weak evidence."
+    },
+    {
+      "quote": "design-respecting permutation or another demonstrably calibrated method would receive greater weight",
+      "issue": "Explicitly state the null targeted by the randomization test. Exact sharp-null inference is not automatically exact for a weak average-effect null with heterogeneous effects; do not prefer a permutation result solely because it respects allocation. The simulated calibration and actual-scheme caveat reduce this concern."
+    }
+  ],
+  "rationale": "Very strong donor-level design, informative cluster size, biological-versus-sampling zero distinctions, hierarchical support, blocked resampling, full-pipeline null simulation and independent validation. The main deduction is the overly permissive held-out compatibility criterion; clarify randomization-null scope as well.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

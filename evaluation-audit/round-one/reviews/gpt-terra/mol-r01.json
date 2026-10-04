@@ -1,0 +1,118 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "gpt-terra",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:24:16.200556+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "a8e8a09c403db35e5585470fc4824a8d5f379ce6ef5cbd4a761c4946f1e40848",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "This sequence would establish that the candidate is not merely associated with the process, but is functionally required downstream of activated GSDMD.",
+      "issue": "This establishes a requirement after cleavage, but does not determine whether the factor is an executor or a permissive cofactor. The final table appropriately retains that ambiguity; the study still needs a component-specific experiment to resolve the central agency question."
+    },
+    {
+      "quote": "GSDMD-deficient cells expressing the cleavage-equivalent amino-terminal domain;",
+      "issue": "The cellular bridge compares activation states but never tests a validated membrane-action-defective, otherwise functional GSDMD variant. Killing by the fragment in cells does not show that its reconstituted membrane activity is the activity used there."
+    },
+    {
+      "quote": "Tracer release from protein-free vesicles.",
+      "issue": "The proposed leakage protocol lacks a membrane-free reporter interference control and the binding assay lacks protein-only aggregate/recovery controls. Orthogonal measurements help, but do not replace these assay-specific controls."
+    },
+    {
+      "quote": "number of independent protein preparations and biological replicates;",
+      "issue": "Replication is deferred without prespecified primary contrasts, analysis of nested measurements, exclusions, randomization or blinded imaging. The ordered study is useful but needs substantial operational development."
+    }
+  ],
+  "rationale": "Good reagent qualification, restrained interpretation of negative assays and a clearly staged lipid/leakage/physical-assay program. Unlike the stronger answers, it does not connect a selective loss of membrane activity to cellular function, and its add-back branch leaves the identity of the physical executor unresolved.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The fixed packet establishes genetic/cleavage dependence, not physical membrane agency. Do not require knowledge of later results, residue numbers, lipid ratios or historical instrument settings.",
+    "A protein requirement or co-reconstitution establishes dependence, not the identity of the lesion-forming component. A permissive cofactor can support direct GSDMD action.",
+    "Negative artificial reconstitution is qualified evidence, not proof of indirect action. An assay-positive control does not validate the test protein or all relevant membrane conditions.",
+    "Direct permeability, terminal rupture and cytokine release are distinct. Sufficiency in a minimal membrane need not exclude later cellular executors.",
+    "Trans inhibition by an isolated domain is conditional; intact-protein autoinhibition does not require it.",
+    "Historical direction is scored separately from study quality. Five target components are conjunctive within each component; a full Hit@1 requires all five. Equivalent cellular functional-complementation designs count as rescue.",
+    "Historical matching is not prospective novelty: source identifiers are visible and no exhaustive earlier-public-disclosure audit exists. Full source methods have not been independently audited.",
+    "The later paper erratum corrects a typeset received date from 2015 to 2016; it does not change its June 2016 publication date or report a biological-result correction."
+  ],
+  "review_sources": [
+    {
+      "title": "Original GSDMD cleavage study",
+      "url": "https://www.nature.com/articles/nature15514",
+      "scope": "Primary abstract and publication metadata"
+    },
+    {
+      "title": "Later gasdermin pore/autoinhibition study",
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary abstract, author metadata and accessible extended-figure captions; full methods not audited"
+    },
+    {
+      "title": "Later-paper erratum",
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher erratum text: received-date typesetting correction only"
+    },
+    {
+      "title": "NINJ1 and terminal membrane rupture",
+      "url": "https://www.nature.com/articles/s41586-021-03218-7",
+      "scope": "Post-cutoff primary abstract supports reviewer distinction of permeability and rupture; candidate is not required to name NINJ1"
+    },
+    {
+      "title": "Direct inhibition of GSDMD by necrosulfonamide",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6462819/",
+      "scope": "Post-cutoff primary abstract; confirms why target specificity controls matter, not required candidate foreknowledge"
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "direct membrane permeabilization",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "Direct-mechanism cellular prediction",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "cleavage-resistant full-length GSDMD",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Structural membrane analysis",
+      "assessment": "Substantive target direction present; see quality deductions separately."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Whether this is the dominant mechanism in cells",
+      "assessment": "Only partial target evidence: no validated separation-of-function bridge to cell death."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

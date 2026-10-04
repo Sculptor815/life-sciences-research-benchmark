@@ -1,0 +1,180 @@
+{
+  "at": "2026-10-04T09:00:57.820449+00:00",
+  "item_id": "inf-r02",
+  "policy": "All five historical components jointly required; valid alternative research earns scientific quality independently. Original answers and v1 preserved.",
+  "source": {
+    "title": "Integrated analysis of multimodal single-cell data",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34062119/",
+    "date": "2021-05-31"
+  },
+  "reviews": [
+    {
+      "model_code": "gpt-astra",
+      "candidate_sha256": "66e9175a2dd74db34f0f66a6ae39f629238413ec4e3e3f42f403c0c9b66bf588",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "gpt-sol",
+      "candidate_sha256": "72fb8c7b103980db2f3e0212e7ad0b06569f6ebab974d4ba43a72a46e63601f4",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "gpt-terra",
+      "candidate_sha256": "4327f50090bbdc85c47e3acf5e3109698fc13422b624a38d712c296126e421b4",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "claude-fable",
+      "candidate_sha256": "8075a8eb3a82024737e8a6ebdb40240cd8eabb1e570d23907e91b55f91484106",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "claude-opus46",
+      "candidate_sha256": "7092efcb8f1e2b881be9913306c52fabcc7143c207e307c506b8aa5c7ad49547",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "claude-opus48",
+      "candidate_sha256": "40d28ea80d4ae1a5cb938fbad9b64cc02dbdf33689bfbe6fa843ebce48cf611d",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "gemini-pro",
+      "candidate_sha256": "c2ddadeea5873b8db8e88a1756f17ff92aa7eb0888e73a8b828b64dc418e3978",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "deepseek",
+      "candidate_sha256": "35a778cf6cf6f6cafd0de695a919268f15f76c9359fea88bf71f8f894072b6cc",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "qwen",
+      "candidate_sha256": "048ee593b20aa8277942e5d8e293a90a483c5565bc8896e605aa896cc7224f14",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "kimi",
+      "candidate_sha256": "ec08149fe8f804caec189c03065c21c3263c8e2242983029ae68c930fba64805",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "glm",
+      "candidate_sha256": "0bf334389a437e613829e8ffe72bfbd5c9ff5177aac6ca28e8cec69f7fb6a155",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    },
+    {
+      "model_code": "grok",
+      "candidate_sha256": "be5af1f56a7c1372ff548895a71cf2b0db4ce085caa71f2f2b5e053d26f3453a",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The biological value of complementary RNA/protein measurements is recognized, but the chosen direction is discordance kinetics and mechanism. It does not propose local cell-specific predictive modality weights, adaptive multimodal neighborhoods, a matched single/fixed/adaptive comparison or the corresponding held-out integration gain. A valid alternative biological study earns scientific credit, not the sealed integration-direction hit."
+    }
+  ]
+}

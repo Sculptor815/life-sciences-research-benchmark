@@ -1,0 +1,116 @@
+{
+  "item_id": "bio-r02",
+  "response_id": "bio-r02",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:08:52.455347+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "60f574100b641648ffaff44d34189ac50f4238307679882732cc8717e5af7608",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Measure mean-squared angular displacement versus lag time and estimate the rotational drag coefficient",
+      "issue": "For a tethered/confined passive probe, long-lag displacement does not obey free rotational diffusion. Validate a free-diffusion/high-frequency regime or fit stiffness and relaxation with exposure corrections before treating the empirical estimate as definitive."
+    },
+    {
+      "quote": "using batch pairing and the measured active fraction",
+      "issue": "Active-fraction correction alone does not guarantee matching ATP-consuming nonrotating molecules to the imaged rotating subset. The claimed measured stoichiometry remains an ensemble estimate unless that population decomposition is identified."
+    },
+    {
+      "quote": "If speed falls with length but not with viscogen at matched empirical drag, the length effect is optical or compliance, not load.",
+      "issue": "These manipulations can change wall proximity, attachment geometry and catalytic kinetics differently. Discordance does not uniquely identify optics/compliance even after a bulk ATPase inhibition check."
+    },
+    {
+      "quote": "the brief angular transition remains fast across a modest load range",
+      "issue": "A power stroke can slow with load and a gated ratchet can retain discrete tight coupling. This timing rule does not uniquely separate the two physical mechanisms."
+    },
+    {
+      "quote": "Record pH, Mg2+, ionic strength",
+      "issue": "Recording is not maintaining free magnesium/MgATP across ATP titration. The proposed inhibitor, construct/attachment, working buffer and ATP/load ranges also remain unselected."
+    },
+    {
+      "quote": "Do not convert that estimate into thermodynamic efficiency",
+      "issue": "Appropriate restraint, but no work integration or actual chemical free-energy measurement is supplied for the reference energetic extension."
+    }
+  ],
+  "rationale": "Well-controlled core stepping/ATP/load study with inspection denominators, null movies, explicit batches and important alternative load manipulations. Empirical-drag assumptions, population stoichiometry and over-specific mechanism discrimination limit quality; core historical hit qualifies.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full original question, packet, reference and sealed historical target read before grading. Every available final answer personally read; no hidden reasoning. Original quality rubric only; strict-round deductions remain inactive.",
+    "Qualified match follows the reference explicit core: resolved stepping, ATP/load discrimination, conditional directional prediction and credible measurement controls. All five fields must qualify. A forced 120-degree prior or name alone fails; an unbiased predicted recurring-step experiment need not invent the historical angle from the packet.",
+    "Work/free-energy comparison is a reference extension and earns quality credit when operationally supplied; its absence is not an additional binary gate beyond the explicit core qualification. Unsupported efficiency claims would be penalized. Preserve this interpretation across models.",
+    "The packet reports rotation with ATP, not a supplied minus-ATP experiment, exact catalytic symmetry, step angle or energetic result. Distinguish background hypotheses from packet evidence.",
+    "A fixed step is not automatically one ATP. Bulk ATPase and selected imaged motors require matched populations and active-fraction accounting. Binding, hydrolysis and product release are different event identities; timing alone does not identify the energetic driver.",
+    "Brownian-ratchet and power-stroke descriptions do not uniquely separate by fixed angles or backward events. Gated stochastic models can be discretely and tightly coupled.",
+    "Angle states must be inferred without forcing the sequel. Validate dynamic measurement response and step inference against continuous/noise controls, temporal blur, probe compliance and per-molecule angular origins.",
+    "Surface-confined or torsionally trapped Brownian probes require a suitable fluctuation/response or relaxation model; naive long-lag free diffusion cannot provide drag. Wall geometry and load-dependent optics must be controlled.",
+    "Control free magnesium/MgATP and nucleotide/product composition across nominal ATP changes. Viscogens can affect chemistry as well as drag.",
+    "Independent molecules are nested in chambers and enzyme preparations. Technical repeats, excluded inactive molecules and long biological pauses require explicit denominators/estimands and nonselective retention.",
+    "The 1998 primary abstract and metadata verify historical direction; complete 1998 Methods not audited. Selected 2011 original Methods passages support calibration guardrails, not required historical settings. No candidate sees this evidence."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9657145/",
+      "scope": "Complete primary abstract and author/publication metadata read; 1998 full Methods not audited."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3207686/",
+      "scope": "Selected original Rotation Assay and Torque Calibration Methods passages personally read; supports measured chemical conditions and frequency-dependent fluctuation calibration."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2877361/",
+      "scope": "Indexed original theoretical-study abstract/excerpt read: flashing-ratchet model with discrete substeps; not full-paper audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "whether ATP turnover causes discrete",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "tightly coupled rotary catalysis",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Length series at constant viscosity",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "False-discovery behavior is taken from the tracking-null control.",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "waiting times dependent on ATP at limiting concentration",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

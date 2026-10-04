@@ -1,0 +1,112 @@
+{
+  "item_id": "bio-r02",
+  "response_id": "bio-r02",
+  "model_code": "kimi",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:08:52.458351+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "4c4cb2bc7df73eb89ddf4f42311d49fae4a3930af5f98b67a4709ca6f18896b2",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 75.0,
+  "reasoning_index": 87.5,
+  "errors": [
+    {
+      "quote": "If cleavage precedes motion, M1 is favored.",
+      "issue": "Cleavage also precedes motion in a release-gated model. Temporal precedence alone does not identify the energetic driver; require validated selective kinetic perturbations and a joint mechanochemical model."
+    },
+    {
+      "quote": "Broad angular-transition distributions and frequent backward fluctuations.",
+      "issue": "These are possible, not necessary features of a Brownian ratchet. Tight fixed-angle coupling can coexist with gated diffusion; the listed mechanism signatures overlap."
+    },
+    {
+      "quote": "a reporter that distinguishes uncleaved from cleaved nucleotide",
+      "issue": "This central assay and the single-molecule phosphate capture system are not concretely implemented. Defining ideal reporters and validation criteria does not demonstrate a feasible executable simultaneous experiment."
+    },
+    {
+      "quote": "irreversible pause longer than a preregistered multiple",
+      "issue": "Finite observation cannot establish irreversibility, and a long pause is a possible biological state. Censoring by outcome is informative; retain the state and define the likelihood/censoring estimand rather than rely on generic missing-data handling."
+    },
+    {
+      "quote": "ATP concentrations spanning:",
+      "issue": "No actual starting ATP/load ranges, construct/attachment or buffer chemistry is chosen. Explicitly control MgATP/free magnesium and nucleotide products; nominal concentration alone does not isolate binding availability."
+    }
+  ],
+  "rationale": "Extensive rigorous program with injection recovery, chemical-event identity/capture, null timing, hierarchical units and conditional energetics. Strong historical match. Unimplemented central reporters, temporal-versus-causal interpretation and outcome-dependent censoring remain material gaps.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full original question, packet, reference and sealed historical target read before grading. Every available final answer personally read; no hidden reasoning. Original quality rubric only; strict-round deductions remain inactive.",
+    "Qualified match follows the reference explicit core: resolved stepping, ATP/load discrimination, conditional directional prediction and credible measurement controls. All five fields must qualify. A forced 120-degree prior or name alone fails; an unbiased predicted recurring-step experiment need not invent the historical angle from the packet.",
+    "Work/free-energy comparison is a reference extension and earns quality credit when operationally supplied; its absence is not an additional binary gate beyond the explicit core qualification. Unsupported efficiency claims would be penalized. Preserve this interpretation across models.",
+    "The packet reports rotation with ATP, not a supplied minus-ATP experiment, exact catalytic symmetry, step angle or energetic result. Distinguish background hypotheses from packet evidence.",
+    "A fixed step is not automatically one ATP. Bulk ATPase and selected imaged motors require matched populations and active-fraction accounting. Binding, hydrolysis and product release are different event identities; timing alone does not identify the energetic driver.",
+    "Brownian-ratchet and power-stroke descriptions do not uniquely separate by fixed angles or backward events. Gated stochastic models can be discretely and tightly coupled.",
+    "Angle states must be inferred without forcing the sequel. Validate dynamic measurement response and step inference against continuous/noise controls, temporal blur, probe compliance and per-molecule angular origins.",
+    "Surface-confined or torsionally trapped Brownian probes require a suitable fluctuation/response or relaxation model; naive long-lag free diffusion cannot provide drag. Wall geometry and load-dependent optics must be controlled.",
+    "Control free magnesium/MgATP and nucleotide/product composition across nominal ATP changes. Viscogens can affect chemistry as well as drag.",
+    "Independent molecules are nested in chambers and enzyme preparations. Technical repeats, excluded inactive molecules and long biological pauses require explicit denominators/estimands and nonselective retention.",
+    "The 1998 primary abstract and metadata verify historical direction; complete 1998 Methods not audited. Selected 2011 original Methods passages support calibration guardrails, not required historical settings. No candidate sees this evidence."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9657145/",
+      "scope": "Complete primary abstract and author/publication metadata read; 1998 full Methods not audited."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3207686/",
+      "scope": "Selected original Rotation Assay and Torque Calibration Methods passages personally read; supports measured chemical conditions and frequency-dependent fluctuation calibration."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2877361/",
+      "scope": "Indexed original theoretical-study abstract/excerpt read: flashing-ratchet model with discrete substeps; not full-paper audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "are elementary angular movements of the central subunit",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Tight composite stepping",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Passive-load series",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Compare step-plus-dwell models against continuous drift-plus-diffusion models",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "If three equal steps and three chemical turnovers per revolution were observed",
+      "assessment": "Substantive target component present in a proposed ATP/load-discriminating stepping experiment. Quality weaknesses remain separately scored."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

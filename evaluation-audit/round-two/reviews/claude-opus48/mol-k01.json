@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "mol-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:00:08.257838+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "b7b8ee81a9f43599e230d2efc3bc7371d2fc880b9ea090831713ad4379e00b58",
+  "question_sha256": "83f4992b8d828ae4516dfeb944e8921d0f4706164cf7443bb348714562bc468d",
+  "reference_sha256": "fe6cad42d8b330c2133bebe164b42f815489fc29ea2267094b0d0987154f9562",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "887e21864ff0b5186da4b2ef6a76205850e7bcd927121397a4b640aa6c3dc4f6",
+  "primary_route": "Rescue, independent antibody, MS and candidate knockdown.",
+  "complete_final_answer_read": true,
+  "word_count": 1157,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "re-introduce the target coding sequence",
+      "evidence_type": "exact_quote",
+      "reason": "Genetic validation is proposed without necessary matched rescue-delivery/vector and detection-background controls and their roles; the supplied existing null/loading observation does not constitute those prospective procedural controls."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "These are **proposed experiments**",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult and transfer-check prior Methods, supplements or a validated protocol before conducting the proposed validation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "dose-responsive dependence, consistent with direct identity.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective background/linearity calibration with an acceptance criterion and failed-calibration action for the proposed band measurement."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "dose-responsive dependence, consistent with direct identity.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative band-intensity definition with normalization denominator and weak/saturated-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion alone cannot *formally exclude* an indirect mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Provides the requested main genetic chain, unknown-band distinction and indirect alternative; within the word limit and separates proposals from packet facts. Contradictory conclusive statements are penalized below."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion alone cannot *formally exclude* an indirect mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Provides the requested main genetic chain, unknown-band distinction and indirect alternative; within the word limit and separates proposals from packet facts. Contradictory conclusive statements are penalized below."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion alone cannot *formally exclude* an indirect mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Provides the requested main genetic chain, unknown-band distinction and indirect alternative; within the word limit and separates proposals from packet facts. Contradictory conclusive statements are penalized below."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion alone cannot *formally exclude* an indirect mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Provides the requested main genetic chain, unknown-band distinction and indirect alternative; within the word limit and separates proposals from packet facts. Contradictory conclusive statements are penalized below."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion alone cannot *formally exclude* an indirect mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Provides the requested main genetic chain, unknown-band distinction and indirect alternative; within the word limit and separates proposals from packet facts. Contradictory conclusive statements are penalized below."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "the deletion alone cannot *formally exclude* an indirect mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Provides the requested main genetic chain, unknown-band distinction and indirect alternative; within the word limit and separates proposals from packet facts. Contradictory conclusive statements are penalized below."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Indirect loss (not the case for the 50-kDa band",
+      "evidence_type": "exact_quote",
+      "reason": "Excludes an indirect mechanism in the interpretation of the supplied data even though the same answer later correctly admits it remains possible."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "raises the possibility the original loss was indirect, prompting reinvestigation.",
+      "evidence_type": "exact_quote",
+      "reason": "A failed rescue is not distinguished from absent/nonfunctional or incorrectly processed rescue expression. Its biological interpretation needs a technical-success condition."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "confirms the band is encoded by the target (direct identity)",
+      "evidence_type": "exact_quote",
+      "reason": "Re-expression cannot distinguish a restored downstream protein from target recognition. MS is also presented as definitively assigning antigen despite possible co-migrating/captured proteins; these are one incomplete orthogonal-identity requirement."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "Correct initial choice, but excludes indirect loss prematurely and repeatedly treats rescue or protein detection as definitive antigen identity.",
+  "item_score": 55
+}

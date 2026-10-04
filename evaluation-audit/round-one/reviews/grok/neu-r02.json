@@ -1,0 +1,110 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:23:22.498624+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "62bdb311c384b2da84da478e8cc786b9f4c5e9ff1b9bc276fa69b4c3593e3c98",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 56.25,
+  "reasoning_index": 68.75,
+  "errors": [
+    {
+      "quote": "competitive instruction is unlikely if removing both eyes",
+      "issue": "This gate is invalid. Removing both inputs can preserve balance while unilateral deprivation reveals competition; a bilateral null cannot license stopping the unilateral test or conclude experience independence."
+    },
+    {
+      "quote": "only if Stage A shows an early, sham-controlled deficit",
+      "issue": "The historical unilateral experiment is contingent on a bilateral deficit that is not logically necessary. Include the unilateral contrast independently rather than dropping it on a non-discriminating null."
+    },
+    {
+      "quote": "media clarity, pupil response",
+      "issue": "These do not fully establish matched optical access or normal retinal/precortical function. The acute deprivation endpoints never explicitly remove their occluders; recovery restoration does not repair that comparison."
+    },
+    {
+      "quote": "restoration withheld until the late-start age",
+      "issue": "Delayed restoration also prolongs deprivation and changes endpoint age. Matched restoration duration alone does not isolate closure of a sensitive window; separate age, deprivation duration and cumulative injury/adaptation."
+    },
+    {
+      "quote": "The litter term matters more than neuron count",
+      "issue": "Litter-aware inference is useful, but no power or sample-size calculation and no concrete model, intervention, stimulus/acquisition settings or effect thresholds are provided. More cells do not replace animals, and an unspecified sequential probability threshold is not a finished design."
+    },
+    {
+      "quote": "M1 is uniquely all-null.",
+      "issue": "These mechanism signatures are not unique. A permissive mechanism or weak/late manipulation can yield a null, and competition can change relative weight without absolute open-eye gain. Treat models quantitatively with overlapping predictions."
+    }
+  ],
+  "rationale": "Careful evidence labeling, raw-data retention and nested inference. A major bilateral-first stopping error can prevent the very unilateral experiment needed for the target, while peripheral endpoint and recovery timing confounds persist; no qualified hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "whether patterned visual experience is causally necessary",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Relative patterned input from the two eyes instructs ocular influence",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "only if Stage A shows an early, sham-controlled deficit",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "media clarity, pupil response",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "competitive instruction is unlikely if removing both eyes",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

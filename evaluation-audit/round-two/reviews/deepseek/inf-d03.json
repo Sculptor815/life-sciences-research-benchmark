@@ -1,0 +1,238 @@
+{
+  "model_code": "deepseek",
+  "item_id": "inf-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:28:12.466149+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "020cbe7ab133a66a8e3942d13091a3a0feb2719b089ead7010b1626e1793f51d",
+  "question_sha256": "8138345556a001f3fc4bac1a0c5986dac661ae6888f5a3dbc53bb26d7b98aa09",
+  "reference_sha256": "912190a8c7d04d1735a11f4798b4464c402e57d4430430d189830cd0e29fdd0d",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "bdc9193e3f7ed834be9176a377c73bd4cc5b85ba8f9f7d029b2c6e79b0b546c3",
+  "primary_route": "Proposed donor-average treatment contrast with hierarchical comparison, donor-grouped resampling and null calibration, and protected donor-level validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2566,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original experimental Methods/supplements to verify allocation and sampling conditions and release-specific model protocols. Reconstructing identifiers and naming prior evidence alone is insufficient."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Effective sample size is approximately donor n divided by design effect.",
+      "evidence_type": "exact_quote",
+      "reason": "Two independent substantive errors: (1) this design-effect approximation divides the total observational count, not donor n, by the design effect; (2) the proposed secondary question whether treated cells differ within a donor is not estimable when that donor has only one assigned treatment. Neither changes the central correct recommendation to use donor-level inference."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "two-sample t-test, Welch t-test, or Wilcoxon rank-sum",
+      "evidence_type": "exact_quote",
+      "reason": "The primary route remains an unresolved menu without an operational selection rule. The specified continuous mixed-model equation does not resolve the primary donor-summary test or preprocessing."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No objective reference/control calibration-to-acceptance procedure and corresponding failure action."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The independent unit is correct, but no minimum meaningful effect or stated precision/power objective connects the pilot variance to a donor sample-size decision."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Exclude low-cell donors and repeat primary analysis.",
+      "evidence_type": "exact_quote",
+      "reason": "No rule separates biological low yield from technical loss, and no operational missing-donor handling is specified. A low-cell exclusion sensitivity alone does not protect biological nonresponses."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "resampling-based FDR or hierarchical shrinkage",
+      "evidence_type": "exact_quote",
+      "reason": "Hierarchical shrinkage alone does not specify multiplicity control, and no explicit FDR algorithm/family or primary test decision is selected."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Random slope for treatment if treatment effects vary by donor.",
+      "evidence_type": "exact_quote",
+      "reason": "Donor-specific treatment slopes are not separately identifiable from donor intercepts with only one treatment per donor absent additional identifying restrictions; the answer supplies none."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit refreeze and fresh independent confirmation after a changed failed protocol."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No immutable inputs, pinned executable environment and exact commands sufficient for audit."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Include batch in design/random effects; sensitivity analysis; report limitations.",
+      "evidence_type": "exact_quote",
+      "reason": "No rank/overlap gate prohibits inference under complete treatment-batch aliasing; generic adjustment cannot recover that information. Missingness stress is also not operational."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical rerun with tolerances and runtime/resource/failure logs."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "All items below are **proposed**; no experiments or analyses have been performed. Exact donor/animal numbers, cells/fields per donor, effect sizes, ICCs, and variance components are unavailable and must be calibrated rather than assumed.",
+      "evidence_type": "exact_quote",
+      "reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "The core donor-unit rule, explicit Gaussian hierarchical model, restricted donor permutations, nested grouped preprocessing and quantitative held-out prediction checks are useful. The written plan distinguishes prespecified full-data inference from predictive validation. Effective-sample-size arithmetic, within-donor treatment comparisons and an unidentifiable random-slope extension require correction.",
+  "item_score": 30
+}

@@ -1,0 +1,372 @@
+{
+  "created_at": "2026-10-04T07:59:35.369838+00:00",
+  "rule": "The five matching components are assessed on the proposed historical-direction experiment. Secondary-branch quality errors do not automatically erase a valid positive-core experiment; critical failure of that core does. Apply identically across companies.",
+  "reviews": [
+    {
+      "model": "claude-fable",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "9e2e4f822d65bbc8fe11964dd30c99f76f7b7e5d6e2c89180d970d610921bff7"
+    },
+    {
+      "model": "claude-opus46",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "0d9a6ffbfd6f1101584b4dcc14d026e1fc452cc6c077d362c57fd5549fcdb6dc"
+    },
+    {
+      "model": "claude-opus48",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "37de3813eb5ee0a4c170d6b056199d847c189bc72b8a898b64e2dfc0df6aba2c"
+    },
+    {
+      "model": "deepseek",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "e6ea9b9c6695892109c5c82337ac2c100950dfb5080a4f3696347e45c7175300"
+    },
+    {
+      "model": "gemini-pro",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The abundance-versus-existing-protein question and proposed biochemical activation model align partly with the historical direction. There is no verified synthesis block, no separate initiation/recovery-under-block readout, and no qualified conditional prediction; constant abundance does not establish new-synthesis independence.",
+      "candidate_sha256": "436d5fceb763dc07676b532e18ff97c5a543e51ff10d0d11a1e41a34c1b1ff0f"
+    },
+    {
+      "model": "glm",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "99da38279fd27104a318c8b6169b12a68d4a3518de0d5f97801a5a8d8cee4e47"
+    },
+    {
+      "model": "gpt-astra",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "7dcd441f8641d342f097ee9cc3b4e90534d8cca5dae16276e2c42642a1798a05"
+    },
+    {
+      "model": "gpt-sol",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "6d49daafbd3d0280f53f3d582edab475580797260a9b4349f91c286272881990"
+    },
+    {
+      "model": "gpt-terra",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "9f76005f2672f01260d3df446de4565a559faa1040fdefb070ef5d3b97baa0cd"
+    },
+    {
+      "model": "grok",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The secondary synthesis-versus-existing-protein question and mechanism are explicitly present. However, the establishment inhibitor starts immediately AFTER irradiation without verifying suppression before checkpoint induction; the post-arrest arm is explicitly not the main off-switch test. There is no separately verified checkpoint recovery during ongoing synthesis inhibition and the inhibitor decision ignores general cell-cycle/short-lived-factor effects. The intervention/readout/qualified prediction therefore fail; merely mentioning synthesis is not a full historical hit.",
+      "candidate_sha256": "4ebe54cd283102a1259a9f83a916212196f60ffa9d67a3a56b4cb42fdfb97100"
+    },
+    {
+      "model": "kimi",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "e3ca54b186a25592fcae6d7d39e4c2ff8cce7d3a641ce50e9d903b1b91bc21de"
+    },
+    {
+      "model": "qwen",
+      "item": "mol-r02",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+      "candidate_sha256": "f6248aabe6f287eefcf86bd23f64e9b4a08123bbb9080ae5bc35c6aa0402bba2"
+    },
+    {
+      "model": "claude-fable",
+      "item": "mol-r03",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "No substantive answer: none of the five historical-direction components is present.",
+      "candidate_sha256": "86d38bf93c58c59cf45f7bf583e219840df0a3cfe52dcd7c85c2a01a7df3025f"
+    },
+    {
+      "model": "claude-opus46",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "Direct pore question, intrinsic assembly mechanism, purified NT/FL on defined lipid panels, TEM plus size-selective passage, and the explicit joint positive prediction match the continuation. Numerical/optical/selection gaps reduce Q2; they do not eliminate the independent structural-plus-functional positive-core experiment. No exact historical lipid recipe or pore dimension is required.",
+      "candidate_sha256": "c0f13c079074592cedcbafdf540137479d48742cbb977a718a21c08ce7dcd87a"
+    },
+    {
+      "model": "claude-opus48",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "The positive direct-pore branch supplies all five matching components, including independent NT production, pure membranes, electrical and structural corroboration and a cell mutant bridge. The separate cofactor branch and cleavage-mixture controls require correction and lower Q2; the independently expressed NT plus orthogonal pore branch remains capable of the historical finding.",
+      "candidate_sha256": "6d8e5640a409fa2014699aad3abb1cc328f54a18a0c14ecf6f141128fb3d4eba"
+    },
+    {
+      "model": "deepseek",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "Direct pore question/mechanism, purified NT with matched fragment/caspase/mock controls, pure membranes, current plus size discrimination and conditional pore prediction are all present. The incorrect negative/cofactor branch is a quality deduction; it does not invalidate the correctly controlled positive pore branch. Apply the same positive-core rule used for Opus and Sol.",
+      "candidate_sha256": "45b1de26b75bc0dedabb1b4e201f51a404805ebda40dbdd7ad5bd83b071ee298"
+    },
+    {
+      "model": "gemini-pro",
+      "item": "mol-r03",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": false,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Direct-versus-indirect question and purified-lipid intervention align, but pore, extraction and detergent action are bundled without discrimination. Only fluorescence leakage is measured, with no orthogonal pore evidence; the outcome claims direct execution rather than an identified pore mechanism.",
+      "candidate_sha256": "a3b778611e5cd237bfb67986d18c6016464c93ac6e913d8153be57d05ca3db66"
+    },
+    {
+      "model": "glm",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "The positive primary branch includes purified NT membrane action, independently assessed rings/structures and functional size cutoff with explicit fragment/irrelevant-protein controls. These jointly match all five historical components. The reversed auxiliary cellular osmoprotection prediction is penalized under P09; it does not invalidate the independent correct structural-plus-size positive pore branch. Use the same positive-core/secondary-error distinction as for the other models.",
+      "candidate_sha256": "9d63c7de23b4270ce197b4fca7e76c659e8e9cef896b7f0d8ebcb381e8af9d62"
+    },
+    {
+      "model": "gpt-astra",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "Direct-versus-indirect execution and pore mechanism, purified NT/FL/CT and cleavage comparison, controlled minimal membranes, convergent conductance/size/structural readouts and conditional selective cellular loss all match the historical direction. Missing Methods consultation and numerical execution gates do not invalidate the causal direction.",
+      "candidate_sha256": "7337821a18b20e9ef73fdb2201c0f50d434191389f13d54e8a75360623865942"
+    },
+    {
+      "model": "gpt-sol",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "The direct pore question/mechanism, purified authentic NT and cleavage/CT comparisons, controlled protein-free bilayers, conductance plus intact size-selective passage and conditional pore prediction jointly match. A cell bridge would strengthen physiological scope, but its absence does not erase the demonstrated minimal-reconstitution historical direction under the stated five-component rule.",
+      "candidate_sha256": "1174a08b7e24d512183b28829b9f2e2fbfda6b42e457925a9d6e5dfeddfb4752"
+    },
+    {
+      "model": "gpt-terra",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question and direct membrane mechanism and purified-fragment intervention align. Readouts establish leakage, membrane injury and generic conductance, explicitly leaving physical lesion architecture unresolved; there is no operational combined pore-versus-nonspecific-rupture decision or corresponding pore-specific prediction. This earns scientific credit for a valid precursor study, not a qualified full pore-discovery hit.",
+      "candidate_sha256": "5145191025d3e7b8f48aa690871b309e7c3b48e33d3b4ee95a6c65f5b908ea41"
+    },
+    {
+      "model": "grok",
+      "item": "mol-r03",
+      "round_one_hit": false,
+      "round_two_hit": false,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The direct membrane question, potential size-limited pore and minimal fragment/cleavage intervention match. Structural testing is explicitly deferred and no electrical pore measurement substitutes; two reporters plus turbidity support a size-limited lesion but do not operationally provide orthogonal pore evidence. The final conditional claim deliberately remains direct permeability, so the full historical pore readout/prediction does not qualify.",
+      "candidate_sha256": "807d8b181fe337db2bc45dfc6d85453ca819c422fadb731d3ded822168ef235a"
+    },
+    {
+      "model": "kimi",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "Direct pore mechanism, purified membranes, controlled NT and cleavage/fragment contrasts, conductance/size-selective assembly and preserved-folding mutant linkage supply all five historical components. Atomic architecture is not required. The positive branch remains qualified despite incomplete numerical execution and broad secondary hypotheses.",
+      "candidate_sha256": "e7e956b844052df9ce2d376156f37d38990a5080173055720543bcecdf816044"
+    },
+    {
+      "model": "qwen",
+      "item": "mol-r03",
+      "round_one_hit": true,
+      "round_two_hit": true,
+      "round_two_components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "All five positive-core elements are present: intrinsic pore/conduit question, direct lipid action, purified fragments and controls, electrical characteristic states plus size/morphology discrimination, and a restricted conditional conduit prediction. Generic operating details and negative-branch limits reduce Q2 without erasing this correct positive branch.",
+      "candidate_sha256": "6cd31cdf4af25fd626b35fb7d8f4eb5daf06f78c8cfad034432cbdd34067e5dc"
+    }
+  ],
+  "reviewer_sources": [
+    "https://www.nature.com/articles/nature18590",
+    "https://link.springer.com/article/10.15252/embj.201694696",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2998612/"
+  ],
+  "source_scope": "Nature abstract/figure descriptions and primary experimental search excerpts; not a full supplement or code audit."
+}

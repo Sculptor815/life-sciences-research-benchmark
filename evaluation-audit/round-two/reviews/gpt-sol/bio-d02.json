@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:44:54.445415+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "f818d85e63ca8506f366878a2bbe0e223bf51c989bc73649647e45fc0c25da23",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "aa9ffe14ac75526a23d6be40587798f2df2a1456c39798f1fb06008e7c88627d",
+  "primary_route": "Yeast-juice fractionation, chemical add-back and heat-dependent functional reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2709,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended proposed test",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior Methods, supplements or validated protocols and verify detailed-condition transfer before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Define the lower limit of quantification",
+      "evidence_type": "exact_quote",
+      "reason": "No actual product/gas reference-standard recovery/accuracy gate, leakage test and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "expressed per fixed retentate enzyme-protein amount",
+      "evidence_type": "exact_quote",
+      "reason": "Fixed denominator but no product amount/time unit convention or weak/missing reporting rules."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Stop or redesign",
+      "evidence_type": "exact_quote",
+      "reason": "No refreeze and fresh independent confirmation after repair."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "orthogonal proposed separation of the filtrate",
+      "evidence_type": "exact_quote",
+      "reason": "Separates F further but does not independently generate the enzyme-depleted pool from fresh input; shared primary separation effects remain. Ethanol/CO2 assay accuracy is not operationalized."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Retain endpoint samples",
+      "evidence_type": "exact_quote",
+      "reason": "No raw-file/sample linkage and exact versioned analysis/settings audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P02",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Do **not** conclude",
+      "evidence_type": "exact_quote",
+      "reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Sound evidence, operational nonidentity scope and controls; source activity/cell-free/material QC; buffer-pKa/ion/heat/membrane calibration with locked pilot pools; independent preparations/power and technical nesting; coded randomized balanced assessment; technical gates; factorial interaction, CIs/equivalence/multiplicity; phosphate chemistry limits; failure diagnostics and meaningful positive/negative/ambiguous decisions.",
+  "item_score": 65
+}

@@ -1,0 +1,116 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "glm",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.074514+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "9d63c7de23b4270ce197b4fca7e76c659e8e9cef896b7f0d8ebcb381e8af9d62",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "small osmoprotectants block cell swelling, large ones do not",
+      "issue": "The usual impermeant-osmoprotectant logic is reversed: solutes excluded by the pore can balance external osmotic pressure, while permeant small solutes do not sustain protection. The same reversed prediction recurs in the cellular phase."
+    },
+    {
+      "quote": "confirming sufficiency",
+      "issue": "Extract enhancement or lack of enhancement does not define sufficiency. Activity of purified NT in a controlled protein-free membrane is the relevant contrast."
+    },
+    {
+      "quote": "Full-length protein contamination of N-fragment prep",
+      "issue": "This is not the principal general explanation of false-positive isolated-NT membrane activity if intact protein is assumed inactive. Check active contaminants, residual protease/detergent, protein aggregation and reporter interference directly."
+    },
+    {
+      "quote": "mixed-effects with plate as random effect",
+      "issue": "Plate blocking alone does not model crossed protein and liposome preparation dependence. The primary inference must preserve those preparation-level units."
+    },
+    {
+      "quote": "Buffer-only or denatured-protein controls exceed",
+      "issue": "Heat-denatured protein can itself injure membranes; its activity is a biological comparator result, not automatically invalid liposomes. Keep it and investigate without deleting the whole plate based on the desired negative-control outcome."
+    },
+    {
+      "quote": "compositions chosen a priori and documented",
+      "issue": "Actual lipid fractions, protein preparation, dose/time ranges and cellular procedures remain unspecified. Explicit caspase-alone, free-reporter/protein, aggregate-binding and mutant-folding controls are missing."
+    },
+    {
+      "quote": "Mechanism C becomes primary",
+      "issue": "Failed lipid scanning/fraction rescue does not uniquely favor indirect physiology; inactive reagents or an untested enabling condition remain possible."
+    }
+  ],
+  "rationale": "Positive branch proposes purified membranes, controlled protein comparisons and blinded structural/size readouts, so the historical pore direction is present. Reversed osmoprotection is a material scientific error in an additional validation branch; inference, exclusions and quantitative implementation also need correction.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does the caspase-generated amino-terminal fragment",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Direct autonomous pore formation",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "purified GSDMD-N on defined liposomes",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "negative-stain EM / cryo-EM / AFM",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "the fragment is a direct membrane-effector pore-forming protein",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

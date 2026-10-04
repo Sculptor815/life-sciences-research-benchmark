@@ -1,0 +1,134 @@
+{
+  "model_code": "kimi",
+  "item_id": "mol-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:10:03.330571+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "66f7a76dbd25c22ed83a5ef357709a1d038bdaec662839f2704649af6d9f8f9f",
+  "question_sha256": "d146829a6bb5de322059582a33379ff36e788aa1589d548746134187d31d27cb",
+  "reference_sha256": "dd442b3242e242a35d2168378a4d72e173bded24e637145d4fd6829c1eeea1a0",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "a3f9a1090a4deae6ce6fe953e143e8caec40926f238b74f0bcfe0e359f28b858",
+  "primary_route": "Rescue, independent epitope, IP-MS and endogenous tagging.",
+  "complete_final_answer_read": true,
+  "word_count": 912,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "reintroduce the wild-type cDNA",
+      "evidence_type": "exact_quote",
+      "reason": "No complete prospective matched rescue-delivery/detection-background control design with the relevant roles; existing genotype/loading claims are insufficient for the new validation."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recommended inference",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit consultation and transfer-check of prior Methods or validated protocols before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommended inference",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No assay-specific reference calibration with acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommended inference",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Descriptive plotted values do not provide a prospective fixed-window, background/normalization endpoint with weak, saturated and missing-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "band-level, conditional inference",
+      "evidence_type": "exact_quote",
+      "reason": "Correct ranking and conditional direct/indirect distinction, summary-image limitations and unknown provenance; no invented observed validation. Specific identity and negative-outcome defects are assessed below."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "band-level, conditional inference",
+      "evidence_type": "exact_quote",
+      "reason": "Correct ranking and conditional direct/indirect distinction, summary-image limitations and unknown provenance; no invented observed validation. Specific identity and negative-outcome defects are assessed below."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "band-level, conditional inference",
+      "evidence_type": "exact_quote",
+      "reason": "Correct ranking and conditional direct/indirect distinction, summary-image limitations and unknown provenance; no invented observed validation. Specific identity and negative-outcome defects are assessed below."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "band-level, conditional inference",
+      "evidence_type": "exact_quote",
+      "reason": "Correct ranking and conditional direct/indirect distinction, summary-image limitations and unknown provenance; no invented observed validation. Specific identity and negative-outcome defects are assessed below."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "band-level, conditional inference",
+      "evidence_type": "exact_quote",
+      "reason": "Correct ranking and conditional direct/indirect distinction, summary-image limitations and unknown provenance; no invented observed validation. Specific identity and negative-outcome defects are assessed below."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "band-level, conditional inference",
+      "evidence_type": "exact_quote",
+      "reason": "Correct ranking and conditional direct/indirect distinction, summary-image limitations and unknown provenance; no invented observed validation. Specific identity and negative-outcome defects are assessed below."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "band-level, conditional inference",
+      "evidence_type": "exact_quote",
+      "reason": "Correct ranking and conditional direct/indirect distinction, summary-image limitations and unknown provenance; no invented observed validation. Specific identity and negative-outcome defects are assessed below."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Rescue fails to restore 50 kDa despite restored target expression.",
+      "evidence_type": "exact_quote",
+      "reason": "Expression alone does not establish function, correct processing or epitope retention; a failed rescue is not necessarily a biological contradiction. Expected mass or a different protein in MS alone also cannot overturn the band identity."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "direct identification would convert positional inference into molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "Gel/IP-MS detects present proteins, which may be co-migrants or associated partners. Co-migration with an endogenous tag is useful but does not by itself identify the antibody-bound antigen."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Correct conditional main inference, but mass/peptide presence and failed-rescue outcomes are overstated.",
+  "item_score": 60
+}

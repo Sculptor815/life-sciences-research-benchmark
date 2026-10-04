@@ -1,0 +1,39 @@
+{
+  "item_id": "bio-p01",
+  "model_code": "gpt-astra",
+  "response_id": "bio-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:38:07.601137+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "310c355907b4457577fcb2c2ca83104d2ef2e6ec830b451231c45f4a8d3583f3",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Correctly separates lower labeling from reaction-specific inhibition, preserves causal uncertainty in ATP/viability changes, does not compare percentages as a mechanistic decomposition, and treats the citation as unverified. A minimal peptide-transfer assay, orthogonal detection and explicitly bounded selectivity panel directly address the central concern.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The reported endpoint is puromycin incorporation. Do not require candidates to assert independently established protein synthesis suppression.",
+    "Concurrent 50% ATP and 60% incorporation reductions do not establish causal order or a quantitative transfer function. ATP amount is not adenylate energy charge.",
+    "A full cell-free translation assay can be inhibited outside the peptide-transfer reaction. Isolate the reaction or separately control charging, factors and regeneration.",
+    "A negative assay constrains its tested species, chemical form and conditions. It is not a universal refutation; positive controls alone do not cover every context mismatch.",
+    "Biochemical direct action and the cause of a cellular phenotype are distinct. ATP rescue or early timing alone does not exclude mixed mechanisms.",
+    "Selectivity requires a defined comparison scope. Cross-species ribosome activity need not contradict selectivity for peptide transfer over unrelated targets.",
+    "No DOI supplied is not no DOI exists. No recorded notice is not proof of reliability. Existence, provenance, editorial status and scientific support remain separate.",
+    "The reference suggestions about ATP matching and complete cell-free negatives are prospective checks, not uniquely identifying interventions."
+  ],
+  "overall_benchmark_score": null
+}

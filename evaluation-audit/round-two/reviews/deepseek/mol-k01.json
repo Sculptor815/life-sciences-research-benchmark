@@ -1,0 +1,135 @@
+{
+  "model_code": "deepseek",
+  "item_id": "mol-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T18:49:04.272712+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "2a54b75913038f9f4f9f3999211946eb36c8fa8f32f6f58bf654886cad8485b2",
+  "question_sha256": "83f4992b8d828ae4516dfeb944e8921d0f4706164cf7443bb348714562bc468d",
+  "reference_sha256": "fe6cad42d8b330c2133bebe164b42f815489fc29ea2267094b0d0987154f9562",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c2cad46cc618f9da1fa363086027159eaf863c9f3423b8192d38685be47a6f6a",
+  "primary_route": "Genetic band assignment followed by rescue, independent antibody, tagging and proteomic validation.",
+  "complete_final_answer_read": true,
+  "word_count": 1165,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Rescue: express deletion-resistant target cDNA in knockout",
+      "evidence_type": "exact_quote",
+      "reason": "Genetic controls are proposed, but the new rescue/antibody validation lacks necessary matched delivery/empty-vector and detection-background controls with prospective roles; existing loading comparability is not a design for those procedural controls."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Unreported parameters that matter include:",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Lists missing assay information without proposing consultation and transfer verification of prior Methods or a validated protocol before execution."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "target-dependent but not necessarily the target antigen.",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly gives the main genotype-to-band inference, distinguishes an indirect cross-reactive protein, covers both bands and orthogonal tests, remains within 1500 words and labels experiments as proposals. Specific validation overclaims are charged below rather than as additional factual or task-omission penalties."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "target-dependent but not necessarily the target antigen.",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly gives the main genotype-to-band inference, distinguishes an indirect cross-reactive protein, covers both bands and orthogonal tests, remains within 1500 words and labels experiments as proposals. Specific validation overclaims are charged below rather than as additional factual or task-omission penalties."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "target-dependent but not necessarily the target antigen.",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly gives the main genotype-to-band inference, distinguishes an indirect cross-reactive protein, covers both bands and orthogonal tests, remains within 1500 words and labels experiments as proposals. Specific validation overclaims are charged below rather than as additional factual or task-omission penalties."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "target-dependent but not necessarily the target antigen.",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly gives the main genotype-to-band inference, distinguishes an indirect cross-reactive protein, covers both bands and orthogonal tests, remains within 1500 words and labels experiments as proposals. Specific validation overclaims are charged below rather than as additional factual or task-omission penalties."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "target-dependent but not necessarily the target antigen.",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly gives the main genotype-to-band inference, distinguishes an indirect cross-reactive protein, covers both bands and orthogonal tests, remains within 1500 words and labels experiments as proposals. Specific validation overclaims are charged below rather than as additional factual or task-omission penalties."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "target-dependent but not necessarily the target antigen.",
+      "evidence_type": "exact_quote",
+      "reason": "The full answer correctly gives the main genotype-to-band inference, distinguishes an indirect cross-reactive protein, covers both bands and orthogonal tests, remains within 1500 words and labels experiments as proposals. Specific validation overclaims are charged below rather than as additional factual or task-omission penalties."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 0,
+      "quote": "If only 50-kDa returns, 50 is target-derived and 75 is not.",
+      "evidence_type": "exact_quote",
+      "reason": "This identity overclaim arises from treating the proposed rescue as uniquely identifying antigen; charge the specific orthogonal-validation defect once.",
+      "covered_by": "P14"
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Loading is comparable",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective dilution/exposure linearity, detection background, acceptance criterion or failure action is supplied for the validation readout."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "50-kDa band reappears",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative band endpoint, background/loading denominator or weak/saturated-signal rule is defined."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the 50-kDa band does not return upon rescue.",
+      "evidence_type": "exact_quote",
+      "reason": "The invalidating-result rule omits rescue expression/function validation; a failed rescue alone cannot invalidate the original genetic dependence. This is distinct from the identity claimed after a successful rescue."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Directly identifies which band carries target sequence.",
+      "evidence_type": "exact_quote",
+      "reason": "Tag co-migration, rescue and band proteomics are treated as directly identifying the antibody antigen without guarding against restored downstream proteins or co-migrating/captured species; the proposed tests are useful but their identity interpretation remains materially incomplete."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correct locus-dependence and indirect-effect distinction, but several validation outcomes overstate identity and treat failed rescue as invalidation without validating rescue competence.",
+  "item_score": 60
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "kimi",
+  "item_id": "mol-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:56:43.696680+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e7e956b844052df9ce2d376156f37d38990a5080173055720543bcecdf816044",
+  "question_sha256": "bf00c28a6e92add5751c281d77d4c3490535449c784810d44640a95c1cb7f695",
+  "reference_sha256": "691bdf29d87b44088c4c14b684a72ae289dd778c52bb1d20cc108695c93a7735",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "2b2d64af8d333c1e8143a1a0e4760b15648bf24bfdb59d5571972fca03043318",
+  "primary_route": "Minimal membrane binding/leakage/conductance with structure-function mutant coupling to cellular permeability, followed by conditional cofactor/organelle studies.",
+  "complete_final_answer_read": true,
+  "word_count": 3379,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of prior primary Methods, supplements or validated protocols; local validation and acknowledging absent packet methods do not by themselves satisfy this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core protein preparation/cleavage and lipid formulation/buffer conditions remain unresolved lists rather than a quantitative preparation-to-intervention workflow or a concrete source/calibration-to-setting procedure. Proposed protein concentration series alone does not specify the essential reconstitution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "verify linearity and absence of dye",
+      "evidence_type": "exact_quote",
+      "reason": "Assay standards and optical artifacts are recognized, but leak/recovery/detection/segmentation acceptance tolerances and a concrete procedure for deriving them are not supplied; protein aggregate thresholds alone do not validate these measurements."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparations and a pilot are recognized, but no quantitative power/precision target with an effect/variance-to-sample-size decision is supplied; a proposed three/six-preparation floor is not a justified confirmatory sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The main contrast and model are named, but model assumptions/diagnostics and a fully specified uncertainty/multiplicity procedure for the panel are incomplete. Naming a mixed model is not sufficient execution detail."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A concentration/lipid/time range is proposed without a bounded ladder or concrete derivation of bounds, an objective selection criterion and a lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly delimit permitted changes, refreeze the revised procedure and require fresh independent confirmation after such changes."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not convert conductance to pore diameter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved physical executor question, prospective fragment/cleavage/storage/irrelevant-protein/dye controls and mutant folding/abundance checks are sound. Conductance/size assumptions and membrane-context limits are explicit; auxiliary mechanism possibilities are hypotheses, not packet facts."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "analysis code version",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized within-batch leakage, current events and matched-expression early permeability endpoints are paired with seeded randomization and coded locked processing. QC stops and retention of excluded/failed runs preserve negatives. Diagnostic repair steps and orthogonal current/size assays plus mutation-coupled cellular confirmation are operational; raw traces, lot IDs, code versions and seeds support audit. Positive mutant-coupled sufficiency is bounded to tested systems; pure-negative, organelle-first and mixed outcomes retain context/trafficking uncertainty and explicitly refrain from choosing a mechanism in ambiguous cases."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "analysis code version",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized within-batch leakage, current events and matched-expression early permeability endpoints are paired with seeded randomization and coded locked processing. QC stops and retention of excluded/failed runs preserve negatives. Diagnostic repair steps and orthogonal current/size assays plus mutation-coupled cellular confirmation are operational; raw traces, lot IDs, code versions and seeds support audit. Positive mutant-coupled sufficiency is bounded to tested systems; pure-negative, organelle-first and mixed outcomes retain context/trafficking uncertainty and explicitly refrain from choosing a mechanism in ambiguous cases."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "analysis code version",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized within-batch leakage, current events and matched-expression early permeability endpoints are paired with seeded randomization and coded locked processing. QC stops and retention of excluded/failed runs preserve negatives. Diagnostic repair steps and orthogonal current/size assays plus mutation-coupled cellular confirmation are operational; raw traces, lot IDs, code versions and seeds support audit. Positive mutant-coupled sufficiency is bounded to tested systems; pure-negative, organelle-first and mixed outcomes retain context/trafficking uncertainty and explicitly refrain from choosing a mechanism in ambiguous cases."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "analysis code version",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized within-batch leakage, current events and matched-expression early permeability endpoints are paired with seeded randomization and coded locked processing. QC stops and retention of excluded/failed runs preserve negatives. Diagnostic repair steps and orthogonal current/size assays plus mutation-coupled cellular confirmation are operational; raw traces, lot IDs, code versions and seeds support audit. Positive mutant-coupled sufficiency is bounded to tested systems; pure-negative, organelle-first and mixed outcomes retain context/trafficking uncertainty and explicitly refrain from choosing a mechanism in ambiguous cases."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "analysis code version",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized within-batch leakage, current events and matched-expression early permeability endpoints are paired with seeded randomization and coded locked processing. QC stops and retention of excluded/failed runs preserve negatives. Diagnostic repair steps and orthogonal current/size assays plus mutation-coupled cellular confirmation are operational; raw traces, lot IDs, code versions and seeds support audit. Positive mutant-coupled sufficiency is bounded to tested systems; pure-negative, organelle-first and mixed outcomes retain context/trafficking uncertainty and explicitly refrain from choosing a mechanism in ambiguous cases."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "analysis code version",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized within-batch leakage, current events and matched-expression early permeability endpoints are paired with seeded randomization and coded locked processing. QC stops and retention of excluded/failed runs preserve negatives. Diagnostic repair steps and orthogonal current/size assays plus mutation-coupled cellular confirmation are operational; raw traces, lot IDs, code versions and seeds support audit. Positive mutant-coupled sufficiency is bounded to tested systems; pure-negative, organelle-first and mixed outcomes retain context/trafficking uncertainty and explicitly refrain from choosing a mechanism in ambiguous cases."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "analysis code version",
+      "evidence_type": "exact_quote",
+      "reason": "Normalized within-batch leakage, current events and matched-expression early permeability endpoints are paired with seeded randomization and coded locked processing. QC stops and retention of excluded/failed runs preserve negatives. Diagnostic repair steps and orthogonal current/size assays plus mutation-coupled cellular confirmation are operational; raw traces, lot IDs, code versions and seeds support audit. Positive mutant-coupled sufficiency is bounded to tested systems; pure-negative, organelle-first and mixed outcomes retain context/trafficking uncertainty and explicitly refrain from choosing a mechanism in ambiguous cases."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Broad, well-controlled direct-mechanism program with independent modalities and cellular bridge; causal timing has detection-limit caveats and many operating/precision decisions are still deferred.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "Direct pore mechanism, purified membranes, controlled NT and cleavage/fragment contrasts, conductance/size-selective assembly and preserved-folding mutant linkage supply all five historical components. Atomic architecture is not required. The positive branch remains qualified despite incomplete numerical execution and broad secondary hypotheses.",
+  "item_score": 84.0
+}

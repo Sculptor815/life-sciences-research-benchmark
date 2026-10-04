@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "bio-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:52:29.128897+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "09f018f3c8856dd6c1ef7b18326351a956bb02ef0000ded217f843f1d0e20441",
+  "question_sha256": "494a90589de0a7f4835680716ae80a42c1929cd13afd3bd9c839808308015233",
+  "reference_sha256": "94437d80cb0bd66150414ab8fcca44209be263aa582a49077ce2d28ee89007e4",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "1a33e42e8363ebac0e8b8ff6bdbb187b910223194463f6961d8cb7c7341e4566",
+  "primary_route": "Source authentication and defined peptide-transfer validation with cellular energy/viability and selectivity comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 1137,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "exact_quote",
+      "reason": "Does not prospectively define the roles and comparisons of an active-assay positive, vehicle/background negative and necessary procedural controls; generic suitable controls or an ATP comparison alone are incomplete."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior experimental Methods/supplements or validated protocols and check condition transfer before executing follow-up assays. Bibliographic authentication does not meet this distinct requirement."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No product-reference/blank recovery or dynamic-range calibration with an acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The proposed measurement lacks a complete quantitative endpoint with units/denominator, background and weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the indirect-energy explanation is falsified",
+      "evidence_type": "exact_quote",
+      "reason": "Supplying nucleotides does not ensure the regenerating machinery, factors or reporter remain active under Q. Negative and ambiguous purified-assay outcomes are not resolved."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reconstituted translation assay",
+      "evidence_type": "exact_quote",
+      "reason": "Whole reconstituted translation and toeprinting can reflect other translation steps; no factor-independent product comparison or orthogonal control distinguishes PTC chemistry."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "disproves the reliability concern",
+      "evidence_type": "exact_quote",
+      "reason": "Successful retrieval and a clean retraction check resolve identity/status, not scientific reliability."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the discriminating experiments do not exist",
+      "evidence_type": "exact_quote",
+      "reason": "The dossier says these experiments are unavailable, not nonexistent."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Supply saturating ATP/GTP",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correctly separates source status and mechanism initially, but later overstates what nucleotide supplementation and an unretracted retrieved record establish.",
+  "item_score": 50
+}

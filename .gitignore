@@ -12,3 +12,9 @@ reviews/
 reports/
 .test-work/
 .coverage
+
+# Explicitly authorized public scoring review exports.
+!evaluation-audit/round-one/reviews/
+!evaluation-audit/round-one/reviews/**
+!evaluation-audit/round-two/reviews/
+!evaluation-audit/round-two/reviews/**

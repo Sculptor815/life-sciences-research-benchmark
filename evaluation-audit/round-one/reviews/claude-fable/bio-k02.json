@@ -1,0 +1,69 @@
+{
+  "item_id": "bio-k02",
+  "model_code": "claude-fable",
+  "response_id": "bio-k02",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:22:48.307883+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "afd403e0c94b764fdb48bb72a6b8dedfbc2071c4234f97f831b408714622908f",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "Apparent substrate affinity reduced ~3-fold",
+      "issue": "A threefold increase in apparent Km is a threefold increase in the substrate concentration for half-maximal rate. It does not establish a threefold change in the intrinsic equilibrium substrate dissociation constant; explain that distinction."
+    },
+    {
+      "quote": "all of which are *asserted by the synthetic framing (E1) rather than demonstrated*",
+      "issue": "E1 stipulates ideal initial-rate curves, not all the subsequently listed biochemical conditions, including known inhibitor concentration. Separate the stipulated curve model from extra assumptions for a particular molecular mechanism."
+    },
+    {
+      "quote": "weak uncompetitive character (α′ large but finite)",
+      "issue": "The symbol is undefined. In the usual modifier notation alpha-prime=1+[I]/Ki-prime, weak ES binding makes alpha-prime close to one, not large; Ki-prime is large. If a dissociation/linkage parameter is intended, define it rather than confusing it with the rate-law modifier."
+    },
+    {
+      "quote": "a perturbation footprint distant from the catalytic residues would reveal allosteric mutual exclusion",
+      "issue": "HDX protection and chemical-shift changes can propagate from a distant binding site. A distal perturbation alone does not identify direct ligand contacts or establish mutual exclusion. Combine contact/occupancy evidence with functional linkage tests."
+    },
+    {
+      "quote": "loss of inhibitor potency tracks with the real site.",
+      "issue": "A mutation can change folding, catalytic competence or long-range coupling rather than a ligand contact. Preserve and measure those properties and use convergent localization evidence."
+    }
+  ],
+  "rationale": "Correct numerical image reading, main competitive model and a broad experimental menu. Deductions concern confusing apparent Km with affinity, attributing unreported assumptions to E1, unclear modifier notation and overconfident localization from indirect biophysical/mutational effects. These weaken the proposed decision rules despite the correct central interpretation.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All twelve complete final answers, the exact question, E1 packet, full sealed reference and synthetic figure were personally read. No paid judge, hidden reasoning or candidate web access was used.",
+    "The supplied shared asymptote is 100 nmol/min. Approximate half-maximal crossings are 20 and 60 micromolar, giving a threefold shift. At 300 micromolar the curves are about 94 and 83, not at the common asymptote. Accept reasonable approximate ranges; do not demand unreported fit precision.",
+    "Reference correction: the old required-concept/limitation text saying the shift cannot be quantified is too strong. The graphical shift can be estimated; exact fitted uncertainty and Ki remain unavailable. The updated paragraph already permits approximate 20-to-60 readings. Frozen original keys are preserved.",
+    "The synthetic ideal-MM/shared-asymptote premise is sufficient for the requested compatible kinetic classification. Proposed tests concern transfer to real data; no candidate must pretend experiments or error bars exist.",
+    "Reference correction: mutational effects are not necessary proof of active-site occupancy. Retained function, folding, direct binding and convergent contact evidence are needed; changes can be indirect. HDX or chemical-shift perturbations alone do not necessarily map ligand contacts.",
+    "Km generally combines binding and catalytic rates, not simply equilibrium Kd. Apparent affinity shorthand should not imply an intrinsic threefold Kd change.",
+    "Notation guardrail: in v=Vmax*S/(alpha*Km+alpha-prime*S), alpha=1+[I]/Ki and alpha-prime=1+[I]/Ki-prime. Pure competition has alpha-prime=1 and Ki-prime infinite. Other authors use a linkage alpha equal to a ratio of dissociation constants; accept a clearly defined alternative convention rather than penalizing a symbol alone.",
+    "An inactive ternary ESI complex is not equivalent to mutually exclusive ligand occupancy. Under the simple mixed model it decreases Vmax. A remote inhibitor can be kinetically competitive through mutual exclusion.",
+    "Incomplete recovery after dilution can be slow reversible dissociation or assay instability as well as irreversible inhibition. Competition binding and indirect mutational effects do not by themselves localize a pocket.",
+    "No actual enzyme experiments were run. The scores assess the written scientific explanation and proposed checks; this single unblinded AI review remains provisional and requires human review."
+  ],
+  "review_sources": [
+    {
+      "title": "Assay Guidance Manual: Mechanism of Action Assays for Enzymes",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK92001/",
+      "scope": "Search-indexed author-manual extracts corroborate kinetic competition without pocket identity and free-ligand/fit checks. Full page access returned a browser challenge; no claim of full-page inspection. Scoring primarily uses the supplied figure and explicit rate-law algebra; different alpha conventions are distinguished."
+    }
+  ],
+  "overall_benchmark_score": null
+}

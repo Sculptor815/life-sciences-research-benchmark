@@ -1,0 +1,361 @@
+﻿model,model_code,item_id,category,quality_score,historical_hit,item_score,explanation_index
+GPT-6 Astra,gpt-astra,mol-k01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,mol-d01,experimental_design,95.0,,95.0,100.0
+GPT-6 Astra,gpt-astra,mol-r01,research_reasoning,95.0,True,98.0,100.0
+GPT-6 Astra,gpt-astra,mol-p01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,bio-k01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,bio-d01,experimental_design,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,bio-r01,research_reasoning,100.0,True,100.0,100.0
+GPT-6 Astra,gpt-astra,bio-p01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,neu-k01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,neu-d01,experimental_design,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,neu-r01,research_reasoning,100.0,True,100.0,100.0
+GPT-6 Astra,gpt-astra,neu-p01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,inf-k01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,inf-d01,experimental_design,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,inf-r01,research_reasoning,95.0,False,38.0,100.0
+GPT-6 Astra,gpt-astra,inf-p01,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,mol-k02,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,bio-k02,essay,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,mol-d02,experimental_design,95.0,,95.0,100.0
+GPT-6 Astra,gpt-astra,bio-d02,experimental_design,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,bio-d03,experimental_design,95,,95,100
+GPT-6 Astra,gpt-astra,neu-d02,experimental_design,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,inf-d02,experimental_design,95.0,,95.0,100.0
+GPT-6 Astra,gpt-astra,inf-d03,experimental_design,100.0,,100.0,100.0
+GPT-6 Astra,gpt-astra,mol-r02,research_reasoning,95.0,False,38.0,100.0
+GPT-6 Astra,gpt-astra,mol-r03,research_reasoning,95.0,True,98.0,100.0
+GPT-6 Astra,gpt-astra,bio-r02,research_reasoning,81.25,True,92.5,93.75
+GPT-6 Astra,gpt-astra,neu-r02,research_reasoning,90.0,False,36.0,100.0
+GPT-6 Astra,gpt-astra,neu-r03,research_reasoning,90.0,True,96.0,100.0
+GPT-6 Astra,gpt-astra,inf-r02,research_reasoning,90.0,False,36.0,100.0
+GPT-5.6 Sol,gpt-sol,mol-k01,essay,86.25,,86.25,87.5
+GPT-5.6 Sol,gpt-sol,mol-d01,experimental_design,86.25,,86.25,87.5
+GPT-5.6 Sol,gpt-sol,mol-r01,research_reasoning,71.25,True,88.5,75.0
+GPT-5.6 Sol,gpt-sol,mol-p01,essay,96.25,,96.25,93.75
+GPT-5.6 Sol,gpt-sol,bio-k01,essay,95.0,,95.0,100.0
+GPT-5.6 Sol,gpt-sol,bio-d01,experimental_design,86.25,,86.25,81.25
+GPT-5.6 Sol,gpt-sol,bio-r01,research_reasoning,95.0,True,98.0,93.75
+GPT-5.6 Sol,gpt-sol,bio-p01,essay,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,neu-k01,essay,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,neu-d01,experimental_design,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,neu-r01,research_reasoning,95.0,True,98.0,87.5
+GPT-5.6 Sol,gpt-sol,neu-p01,essay,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,inf-k01,essay,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,inf-d01,experimental_design,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,inf-r01,research_reasoning,71.25,False,28.5,75.0
+GPT-5.6 Sol,gpt-sol,inf-p01,essay,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,mol-k02,essay,85.0,,85.0,81.25
+GPT-5.6 Sol,gpt-sol,bio-k02,essay,100.0,,100.0,100.0
+GPT-5.6 Sol,gpt-sol,mol-d02,experimental_design,81.25,,81.25,81.25
+GPT-5.6 Sol,gpt-sol,bio-d02,experimental_design,76.25,,76.25,81.25
+GPT-5.6 Sol,gpt-sol,bio-d03,experimental_design,76.25,,76.25,81.25
+GPT-5.6 Sol,gpt-sol,neu-d02,experimental_design,90.0,,90.0,87.5
+GPT-5.6 Sol,gpt-sol,inf-d02,experimental_design,81.25,,81.25,81.25
+GPT-5.6 Sol,gpt-sol,inf-d03,experimental_design,93.75,,93.75,93.75
+GPT-5.6 Sol,gpt-sol,mol-r02,research_reasoning,76.25,False,30.5,81.25
+GPT-5.6 Sol,gpt-sol,mol-r03,research_reasoning,76.25,True,90.5,81.25
+GPT-5.6 Sol,gpt-sol,bio-r02,research_reasoning,81.25,True,92.5,93.75
+GPT-5.6 Sol,gpt-sol,neu-r02,research_reasoning,77.5,True,91.0,87.5
+GPT-5.6 Sol,gpt-sol,neu-r03,research_reasoning,77.5,True,91.0,87.5
+GPT-5.6 Sol,gpt-sol,inf-r02,research_reasoning,77.5,False,31.0,87.5
+GPT-5.6 Terra,gpt-terra,mol-k01,essay,95.0,,95.0,87.5
+GPT-5.6 Terra,gpt-terra,mol-d01,experimental_design,86.25,,86.25,87.5
+GPT-5.6 Terra,gpt-terra,mol-r01,research_reasoning,71.25,False,28.5,81.25
+GPT-5.6 Terra,gpt-terra,mol-p01,essay,96.25,,96.25,93.75
+GPT-5.6 Terra,gpt-terra,bio-k01,essay,86.25,,86.25,81.25
+GPT-5.6 Terra,gpt-terra,bio-d01,experimental_design,62.5,,62.5,62.5
+GPT-5.6 Terra,gpt-terra,bio-r01,research_reasoning,71.25,True,88.5,75.0
+GPT-5.6 Terra,gpt-terra,bio-p01,essay,90.0,,90.0,87.5
+GPT-5.6 Terra,gpt-terra,neu-k01,essay,95.0,,95.0,93.75
+GPT-5.6 Terra,gpt-terra,neu-d01,experimental_design,80.0,,80.0,81.25
+GPT-5.6 Terra,gpt-terra,neu-r01,research_reasoning,95.0,False,38.0,93.75
+GPT-5.6 Terra,gpt-terra,neu-p01,essay,95.0,,95.0,93.75
+GPT-5.6 Terra,gpt-terra,inf-k01,essay,98.75,,98.75,100.0
+GPT-5.6 Terra,gpt-terra,inf-d01,experimental_design,88.75,,88.75,87.5
+GPT-5.6 Terra,gpt-terra,inf-r01,research_reasoning,80.0,False,32.0,81.25
+GPT-5.6 Terra,gpt-terra,inf-p01,essay,87.5,,87.5,87.5
+GPT-5.6 Terra,gpt-terra,mol-k02,essay,80.0,,80.0,81.25
+GPT-5.6 Terra,gpt-terra,bio-k02,essay,91.25,,91.25,87.5
+GPT-5.6 Terra,gpt-terra,mol-d02,experimental_design,76.25,,76.25,81.25
+GPT-5.6 Terra,gpt-terra,bio-d02,experimental_design,76.25,,76.25,81.25
+GPT-5.6 Terra,gpt-terra,bio-d03,experimental_design,80.0,,80.0,87.5
+GPT-5.6 Terra,gpt-terra,neu-d02,experimental_design,83.75,,83.75,87.5
+GPT-5.6 Terra,gpt-terra,inf-d02,experimental_design,76.25,,76.25,81.25
+GPT-5.6 Terra,gpt-terra,inf-d03,experimental_design,96.25,,96.25,93.75
+GPT-5.6 Terra,gpt-terra,mol-r02,research_reasoning,76.25,False,30.5,81.25
+GPT-5.6 Terra,gpt-terra,mol-r03,research_reasoning,71.25,True,88.5,81.25
+GPT-5.6 Terra,gpt-terra,bio-r02,research_reasoning,81.25,True,92.5,93.75
+GPT-5.6 Terra,gpt-terra,neu-r02,research_reasoning,71.25,False,28.5,81.25
+GPT-5.6 Terra,gpt-terra,neu-r03,research_reasoning,71.25,True,88.5,81.25
+GPT-5.6 Terra,gpt-terra,inf-r02,research_reasoning,71.25,False,28.5,81.25
+Claude Fable 5,claude-fable,mol-k01,essay,71.25,,71.25,62.5
+Claude Fable 5,claude-fable,mol-d01,experimental_design,0,,0,
+Claude Fable 5,claude-fable,mol-r01,research_reasoning,0,False,0.0,
+Claude Fable 5,claude-fable,mol-p01,essay,58.75,,58.75,56.25
+Claude Fable 5,claude-fable,bio-k01,essay,62.5,,62.5,62.5
+Claude Fable 5,claude-fable,bio-d01,experimental_design,45.0,,45.0,56.25
+Claude Fable 5,claude-fable,bio-r01,research_reasoning,55.0,False,22.0,50.0
+Claude Fable 5,claude-fable,bio-p01,essay,0,,0,
+Claude Fable 5,claude-fable,neu-k01,essay,62.5,,62.5,62.5
+Claude Fable 5,claude-fable,neu-d01,experimental_design,0,,0,
+Claude Fable 5,claude-fable,neu-r01,research_reasoning,0,,0.0,
+Claude Fable 5,claude-fable,neu-p01,essay,62.5,,62.5,62.5
+Claude Fable 5,claude-fable,inf-k01,essay,86.25,,86.25,81.25
+Claude Fable 5,claude-fable,inf-d01,experimental_design,55.0,,55.0,56.25
+Claude Fable 5,claude-fable,inf-r01,research_reasoning,56.25,True,82.5,50.0
+Claude Fable 5,claude-fable,inf-p01,essay,57.5,,57.5,62.5
+Claude Fable 5,claude-fable,mol-k02,essay,56.25,,56.25,50.0
+Claude Fable 5,claude-fable,bio-k02,essay,76.25,,76.25,75.0
+Claude Fable 5,claude-fable,mol-d02,experimental_design,0,,0,
+Claude Fable 5,claude-fable,bio-d02,experimental_design,0,,0,
+Claude Fable 5,claude-fable,bio-d03,experimental_design,0,,0,
+Claude Fable 5,claude-fable,neu-d02,experimental_design,0,,0,
+Claude Fable 5,claude-fable,inf-d02,experimental_design,76.25,,76.25,81.25
+Claude Fable 5,claude-fable,inf-d03,experimental_design,76.25,,76.25,81.25
+Claude Fable 5,claude-fable,mol-r02,research_reasoning,57.5,False,23.0,56.25
+Claude Fable 5,claude-fable,mol-r03,research_reasoning,0,False,0.0,
+Claude Fable 5,claude-fable,bio-r02,research_reasoning,52.5,False,21.0,56.25
+Claude Fable 5,claude-fable,neu-r02,research_reasoning,62.5,False,25.0,62.5
+Claude Fable 5,claude-fable,neu-r03,research_reasoning,0,False,0.0,
+Claude Fable 5,claude-fable,inf-r02,research_reasoning,52.5,False,21.0,56.25
+Claude Opus 4.6,claude-opus46,mol-k01,essay,62.5,,62.5,56.25
+Claude Opus 4.6,claude-opus46,mol-d01,experimental_design,57.5,,57.5,50.0
+Claude Opus 4.6,claude-opus46,mol-r01,research_reasoning,51.25,False,20.5,43.75
+Claude Opus 4.6,claude-opus46,mol-p01,essay,36.25,,36.25,37.5
+Claude Opus 4.6,claude-opus46,bio-k01,essay,62.5,,62.5,62.5
+Claude Opus 4.6,claude-opus46,bio-d01,experimental_design,51.25,,51.25,43.75
+Claude Opus 4.6,claude-opus46,bio-r01,research_reasoning,55.0,False,22.0,50.0
+Claude Opus 4.6,claude-opus46,bio-p01,essay,52.5,,52.5,50.0
+Claude Opus 4.6,claude-opus46,neu-k01,essay,62.5,,62.5,62.5
+Claude Opus 4.6,claude-opus46,neu-d01,experimental_design,55.0,,55.0,50.0
+Claude Opus 4.6,claude-opus46,neu-r01,research_reasoning,45.0,False,18.0,37.5
+Claude Opus 4.6,claude-opus46,neu-p01,essay,52.5,,52.5,50.0
+Claude Opus 4.6,claude-opus46,inf-k01,essay,63.75,,63.75,56.25
+Claude Opus 4.6,claude-opus46,inf-d01,experimental_design,51.25,,51.25,43.75
+Claude Opus 4.6,claude-opus46,inf-r01,research_reasoning,51.25,False,20.5,43.75
+Claude Opus 4.6,claude-opus46,inf-p01,essay,56.25,,56.25,50.0
+Claude Opus 4.6,claude-opus46,mol-k02,essay,76.25,,76.25,75.0
+Claude Opus 4.6,claude-opus46,bio-k02,essay,76.25,,76.25,75.0
+Claude Opus 4.6,claude-opus46,mol-d02,experimental_design,40.0,,40.0,37.5
+Claude Opus 4.6,claude-opus46,bio-d02,experimental_design,42.5,,42.5,43.75
+Claude Opus 4.6,claude-opus46,bio-d03,experimental_design,33.75,,33.75,37.5
+Claude Opus 4.6,claude-opus46,neu-d02,experimental_design,42.5,,42.5,43.75
+Claude Opus 4.6,claude-opus46,inf-d02,experimental_design,48.75,,48.75,50.0
+Claude Opus 4.6,claude-opus46,inf-d03,experimental_design,57.5,,57.5,56.25
+Claude Opus 4.6,claude-opus46,mol-r02,research_reasoning,33.75,False,13.5,37.5
+Claude Opus 4.6,claude-opus46,mol-r03,research_reasoning,57.5,True,83.0,56.25
+Claude Opus 4.6,claude-opus46,bio-r02,research_reasoning,57.5,False,23.0,50.0
+Claude Opus 4.6,claude-opus46,neu-r02,research_reasoning,57.5,False,23.0,50.0
+Claude Opus 4.6,claude-opus46,neu-r03,research_reasoning,57.5,False,23.0,50.0
+Claude Opus 4.6,claude-opus46,inf-r02,research_reasoning,40.0,False,16.0,43.75
+Claude Opus 4.8,claude-opus48,mol-k01,essay,62.5,,62.5,56.25
+Claude Opus 4.8,claude-opus48,mol-d01,experimental_design,58.75,,58.75,56.25
+Claude Opus 4.8,claude-opus48,mol-r01,research_reasoning,55.0,False,22.0,50.0
+Claude Opus 4.8,claude-opus48,mol-p01,essay,58.75,,58.75,56.25
+Claude Opus 4.8,claude-opus48,bio-k01,essay,95.0,,95.0,100.0
+Claude Opus 4.8,claude-opus48,bio-d01,experimental_design,51.25,,51.25,50.0
+Claude Opus 4.8,claude-opus48,bio-r01,research_reasoning,46.25,False,18.5,43.75
+Claude Opus 4.8,claude-opus48,bio-p01,essay,62.5,,62.5,62.5
+Claude Opus 4.8,claude-opus48,neu-k01,essay,43.75,,43.75,43.75
+Claude Opus 4.8,claude-opus48,neu-d01,experimental_design,55.0,,55.0,50.0
+Claude Opus 4.8,claude-opus48,neu-r01,research_reasoning,71.25,True,88.5,68.75
+Claude Opus 4.8,claude-opus48,neu-p01,essay,62.5,,62.5,62.5
+Claude Opus 4.8,claude-opus48,inf-k01,essay,61.25,,61.25,56.25
+Claude Opus 4.8,claude-opus48,inf-d01,experimental_design,55.0,,55.0,50.0
+Claude Opus 4.8,claude-opus48,inf-r01,research_reasoning,56.25,False,22.5,56.25
+Claude Opus 4.8,claude-opus48,inf-p01,essay,80.0,,80.0,81.25
+Claude Opus 4.8,claude-opus48,mol-k02,essay,76.25,,76.25,75.0
+Claude Opus 4.8,claude-opus48,bio-k02,essay,80.0,,80.0,81.25
+Claude Opus 4.8,claude-opus48,mol-d02,experimental_design,52.5,,52.5,56.25
+Claude Opus 4.8,claude-opus48,bio-d02,experimental_design,52.5,,52.5,50.0
+Claude Opus 4.8,claude-opus48,bio-d03,experimental_design,52.5,,52.5,50.0
+Claude Opus 4.8,claude-opus48,neu-d02,experimental_design,57.5,,57.5,56.25
+Claude Opus 4.8,claude-opus48,inf-d02,experimental_design,57.5,,57.5,56.25
+Claude Opus 4.8,claude-opus48,inf-d03,experimental_design,57.5,,57.5,56.25
+Claude Opus 4.8,claude-opus48,mol-r02,research_reasoning,57.5,False,23.0,56.25
+Claude Opus 4.8,claude-opus48,mol-r03,research_reasoning,76.25,True,90.5,75.0
+Claude Opus 4.8,claude-opus48,bio-r02,research_reasoning,52.5,False,21.0,56.25
+Claude Opus 4.8,claude-opus48,neu-r02,research_reasoning,52.5,False,21.0,50.0
+Claude Opus 4.8,claude-opus48,neu-r03,research_reasoning,62.5,True,85.0,62.5
+Claude Opus 4.8,claude-opus48,inf-r02,research_reasoning,58.75,False,23.5,62.5
+Gemini 3.1 Pro Preview,gemini-pro,mol-k01,essay,52.5,,52.5,50.0
+Gemini 3.1 Pro Preview,gemini-pro,mol-d01,experimental_design,38.75,,38.75,37.5
+Gemini 3.1 Pro Preview,gemini-pro,mol-r01,research_reasoning,47.5,False,19.0,43.75
+Gemini 3.1 Pro Preview,gemini-pro,mol-p01,essay,58.75,,58.75,56.25
+Gemini 3.1 Pro Preview,gemini-pro,bio-k01,essay,62.5,,62.5,62.5
+Gemini 3.1 Pro Preview,gemini-pro,bio-d01,experimental_design,52.5,,52.5,56.25
+Gemini 3.1 Pro Preview,gemini-pro,bio-r01,research_reasoning,46.25,False,18.5,37.5
+Gemini 3.1 Pro Preview,gemini-pro,bio-p01,essay,56.25,,56.25,56.25
+Gemini 3.1 Pro Preview,gemini-pro,neu-k01,essay,62.5,,62.5,62.5
+Gemini 3.1 Pro Preview,gemini-pro,neu-d01,experimental_design,42.5,,42.5,37.5
+Gemini 3.1 Pro Preview,gemini-pro,neu-r01,research_reasoning,50.0,False,20.0,56.25
+Gemini 3.1 Pro Preview,gemini-pro,neu-p01,essay,62.5,,62.5,62.5
+Gemini 3.1 Pro Preview,gemini-pro,inf-k01,essay,55.0,,55.0,50.0
+Gemini 3.1 Pro Preview,gemini-pro,inf-d01,experimental_design,45.0,,45.0,31.25
+Gemini 3.1 Pro Preview,gemini-pro,inf-r01,research_reasoning,42.5,False,17.0,31.25
+Gemini 3.1 Pro Preview,gemini-pro,inf-p01,essay,51.25,,51.25,37.5
+Gemini 3.1 Pro Preview,gemini-pro,mol-k02,essay,56.25,,56.25,50.0
+Gemini 3.1 Pro Preview,gemini-pro,bio-k02,essay,67.5,,67.5,62.5
+Gemini 3.1 Pro Preview,gemini-pro,mol-d02,experimental_design,43.75,,43.75,43.75
+Gemini 3.1 Pro Preview,gemini-pro,bio-d02,experimental_design,37.5,,37.5,37.5
+Gemini 3.1 Pro Preview,gemini-pro,bio-d03,experimental_design,33.75,,33.75,31.25
+Gemini 3.1 Pro Preview,gemini-pro,neu-d02,experimental_design,33.75,,33.75,31.25
+Gemini 3.1 Pro Preview,gemini-pro,inf-d02,experimental_design,48.75,,48.75,50.0
+Gemini 3.1 Pro Preview,gemini-pro,inf-d03,experimental_design,52.5,,52.5,56.25
+Gemini 3.1 Pro Preview,gemini-pro,mol-r02,research_reasoning,52.5,False,21.0,56.25
+Gemini 3.1 Pro Preview,gemini-pro,mol-r03,research_reasoning,52.5,False,21.0,56.25
+Gemini 3.1 Pro Preview,gemini-pro,bio-r02,research_reasoning,48.75,False,19.5,56.25
+Gemini 3.1 Pro Preview,gemini-pro,neu-r02,research_reasoning,47.5,False,19.0,50.0
+Gemini 3.1 Pro Preview,gemini-pro,neu-r03,research_reasoning,47.5,False,19.0,43.75
+Gemini 3.1 Pro Preview,gemini-pro,inf-r02,research_reasoning,52.5,False,21.0,56.25
+DeepSeek V4.1 Flash,deepseek,mol-k01,essay,71.25,,71.25,75.0
+DeepSeek V4.1 Flash,deepseek,mol-d01,experimental_design,55.0,,55.0,56.25
+DeepSeek V4.1 Flash,deepseek,mol-r01,research_reasoning,56.25,False,22.5,56.25
+DeepSeek V4.1 Flash,deepseek,mol-p01,essay,67.5,,67.5,62.5
+DeepSeek V4.1 Flash,deepseek,bio-k01,essay,86.25,,86.25,81.25
+DeepSeek V4.1 Flash,deepseek,bio-d01,experimental_design,55.0,,55.0,56.25
+DeepSeek V4.1 Flash,deepseek,bio-r01,research_reasoning,62.5,True,85.0,56.25
+DeepSeek V4.1 Flash,deepseek,bio-p01,essay,62.5,,62.5,62.5
+DeepSeek V4.1 Flash,deepseek,neu-k01,essay,76.25,,76.25,75.0
+DeepSeek V4.1 Flash,deepseek,neu-d01,experimental_design,76.25,,76.25,68.75
+DeepSeek V4.1 Flash,deepseek,neu-r01,research_reasoning,71.25,False,28.5,75.0
+DeepSeek V4.1 Flash,deepseek,neu-p01,essay,86.25,,86.25,81.25
+DeepSeek V4.1 Flash,deepseek,inf-k01,essay,80.0,,80.0,81.25
+DeepSeek V4.1 Flash,deepseek,inf-d01,experimental_design,71.25,,71.25,68.75
+DeepSeek V4.1 Flash,deepseek,inf-r01,research_reasoning,56.25,False,22.5,50.0
+DeepSeek V4.1 Flash,deepseek,inf-p01,essay,80.0,,80.0,81.25
+DeepSeek V4.1 Flash,deepseek,mol-k02,essay,80.0,,80.0,81.25
+DeepSeek V4.1 Flash,deepseek,bio-k02,essay,95.0,,95.0,93.75
+DeepSeek V4.1 Flash,deepseek,mol-d02,experimental_design,52.5,,52.5,56.25
+DeepSeek V4.1 Flash,deepseek,bio-d02,experimental_design,57.5,,57.5,56.25
+DeepSeek V4.1 Flash,deepseek,bio-d03,experimental_design,52.5,,52.5,56.25
+DeepSeek V4.1 Flash,deepseek,neu-d02,experimental_design,66.25,,66.25,62.5
+DeepSeek V4.1 Flash,deepseek,inf-d02,experimental_design,76.25,,76.25,81.25
+DeepSeek V4.1 Flash,deepseek,inf-d03,experimental_design,57.5,,57.5,56.25
+DeepSeek V4.1 Flash,deepseek,mol-r02,research_reasoning,52.5,False,21.0,56.25
+DeepSeek V4.1 Flash,deepseek,mol-r03,research_reasoning,56.25,True,82.5,62.5
+DeepSeek V4.1 Flash,deepseek,bio-r02,research_reasoning,52.5,True,81.0,62.5
+DeepSeek V4.1 Flash,deepseek,neu-r02,research_reasoning,52.5,False,21.0,50.0
+DeepSeek V4.1 Flash,deepseek,neu-r03,research_reasoning,58.75,False,23.5,62.5
+DeepSeek V4.1 Flash,deepseek,inf-r02,research_reasoning,52.5,False,21.0,56.25
+Qwen3.8 Max (0902),qwen,mol-k01,essay,90.0,,90.0,87.5
+Qwen3.8 Max (0902),qwen,mol-d01,experimental_design,60.0,,60.0,68.75
+Qwen3.8 Max (0902),qwen,mol-r01,research_reasoning,61.25,True,84.5,75.0
+Qwen3.8 Max (0902),qwen,mol-p01,essay,81.25,,81.25,75.0
+Qwen3.8 Max (0902),qwen,bio-k01,essay,85.0,,85.0,81.25
+Qwen3.8 Max (0902),qwen,bio-d01,experimental_design,61.25,,61.25,75.0
+Qwen3.8 Max (0902),qwen,bio-r01,research_reasoning,60.0,True,84.0,62.5
+Qwen3.8 Max (0902),qwen,bio-p01,essay,85.0,,85.0,81.25
+Qwen3.8 Max (0902),qwen,neu-k01,essay,83.75,,83.75,81.25
+Qwen3.8 Max (0902),qwen,neu-d01,experimental_design,53.75,,53.75,56.25
+Qwen3.8 Max (0902),qwen,neu-r01,research_reasoning,73.75,False,29.5,81.25
+Qwen3.8 Max (0902),qwen,neu-p01,essay,98.75,,98.75,100.0
+Qwen3.8 Max (0902),qwen,inf-k01,essay,77.5,,77.5,81.25
+Qwen3.8 Max (0902),qwen,inf-d01,experimental_design,73.75,,73.75,68.75
+Qwen3.8 Max (0902),qwen,inf-r01,research_reasoning,62.5,False,25.0,62.5
+Qwen3.8 Max (0902),qwen,inf-p01,essay,87.5,,87.5,87.5
+Qwen3.8 Max (0902),qwen,mol-k02,essay,61.25,,61.25,56.25
+Qwen3.8 Max (0902),qwen,bio-k02,essay,67.5,,67.5,62.5
+Qwen3.8 Max (0902),qwen,mol-d02,experimental_design,50.0,,50.0,56.25
+Qwen3.8 Max (0902),qwen,bio-d02,experimental_design,65.0,,65.0,62.5
+Qwen3.8 Max (0902),qwen,bio-d03,experimental_design,57.5,,57.5,56.25
+Qwen3.8 Max (0902),qwen,neu-d02,experimental_design,71.25,,71.25,75.0
+Qwen3.8 Max (0902),qwen,inf-d02,experimental_design,70.0,,70.0,75.0
+Qwen3.8 Max (0902),qwen,inf-d03,experimental_design,68.75,,68.75,75.0
+Qwen3.8 Max (0902),qwen,mol-r02,research_reasoning,60.0,False,24.0,75.0
+Qwen3.8 Max (0902),qwen,mol-r03,research_reasoning,70.0,True,88.0,81.25
+Qwen3.8 Max (0902),qwen,bio-r02,research_reasoning,71.25,True,88.5,81.25
+Qwen3.8 Max (0902),qwen,neu-r02,research_reasoning,61.25,False,24.5,68.75
+Qwen3.8 Max (0902),qwen,neu-r03,research_reasoning,61.25,True,84.5,68.75
+Qwen3.8 Max (0902),qwen,inf-r02,research_reasoning,53.75,False,21.5,68.75
+Kimi K3,kimi,mol-k01,essay,82.5,,82.5,81.25
+Kimi K3,kimi,mol-d01,experimental_design,86.25,,86.25,87.5
+Kimi K3,kimi,mol-r01,research_reasoning,80.0,False,32.0,87.5
+Kimi K3,kimi,mol-p01,essay,58.75,,58.75,56.25
+Kimi K3,kimi,bio-k01,essay,100.0,,100.0,100.0
+Kimi K3,kimi,bio-d01,experimental_design,80.0,,80.0,81.25
+Kimi K3,kimi,bio-r01,research_reasoning,55.0,True,82.0,50.0
+Kimi K3,kimi,bio-p01,essay,96.25,,96.25,93.75
+Kimi K3,kimi,neu-k01,essay,86.25,,86.25,87.5
+Kimi K3,kimi,neu-d01,experimental_design,86.25,,86.25,81.25
+Kimi K3,kimi,neu-r01,research_reasoning,91.25,False,36.5,87.5
+Kimi K3,kimi,neu-p01,essay,86.25,,86.25,81.25
+Kimi K3,kimi,inf-k01,essay,85.0,,85.0,81.25
+Kimi K3,kimi,inf-d01,experimental_design,76.25,,76.25,68.75
+Kimi K3,kimi,inf-r01,research_reasoning,71.25,False,28.5,75.0
+Kimi K3,kimi,inf-p01,essay,95.0,,95.0,93.75
+Kimi K3,kimi,mol-k02,essay,80.0,,80.0,81.25
+Kimi K3,kimi,bio-k02,essay,80.0,,80.0,81.25
+Kimi K3,kimi,mol-d02,experimental_design,76.25,,76.25,81.25
+Kimi K3,kimi,bio-d02,experimental_design,52.5,,52.5,56.25
+Kimi K3,kimi,bio-d03,experimental_design,76.25,,76.25,81.25
+Kimi K3,kimi,neu-d02,experimental_design,81.25,,81.25,81.25
+Kimi K3,kimi,inf-d02,experimental_design,71.25,,71.25,75.0
+Kimi K3,kimi,inf-d03,experimental_design,80.0,,80.0,87.5
+Kimi K3,kimi,mol-r02,research_reasoning,76.25,False,30.5,81.25
+Kimi K3,kimi,mol-r03,research_reasoning,76.25,True,90.5,81.25
+Kimi K3,kimi,bio-r02,research_reasoning,75.0,True,90.0,87.5
+Kimi K3,kimi,neu-r02,research_reasoning,52.5,False,21.0,56.25
+Kimi K3,kimi,neu-r03,research_reasoning,62.5,False,25.0,68.75
+Kimi K3,kimi,inf-r02,research_reasoning,71.25,False,28.5,87.5
+GLM 5.3 FlashX,glm,mol-k01,essay,62.5,,62.5,56.25
+GLM 5.3 FlashX,glm,mol-d01,experimental_design,51.25,,51.25,43.75
+GLM 5.3 FlashX,glm,mol-r01,research_reasoning,71.25,True,88.5,75.0
+GLM 5.3 FlashX,glm,mol-p01,essay,82.5,,82.5,75.0
+GLM 5.3 FlashX,glm,bio-k01,essay,62.5,,62.5,62.5
+GLM 5.3 FlashX,glm,bio-d01,experimental_design,58.75,,58.75,56.25
+GLM 5.3 FlashX,glm,bio-r01,research_reasoning,55.0,True,82.0,50.0
+GLM 5.3 FlashX,glm,bio-p01,essay,85.0,,85.0,81.25
+GLM 5.3 FlashX,glm,neu-k01,essay,47.5,,47.5,43.75
+GLM 5.3 FlashX,glm,neu-d01,experimental_design,42.5,,42.5,37.5
+GLM 5.3 FlashX,glm,neu-r01,research_reasoning,71.25,False,28.5,75.0
+GLM 5.3 FlashX,glm,neu-p01,essay,62.5,,62.5,56.25
+GLM 5.3 FlashX,glm,inf-k01,essay,66.25,,66.25,62.5
+GLM 5.3 FlashX,glm,inf-d01,experimental_design,45.0,,45.0,43.75
+GLM 5.3 FlashX,glm,inf-r01,research_reasoning,56.25,False,22.5,56.25
+GLM 5.3 FlashX,glm,inf-p01,essay,62.5,,62.5,56.25
+GLM 5.3 FlashX,glm,mol-k02,essay,55.0,,55.0,50.0
+GLM 5.3 FlashX,glm,bio-k02,essay,66.25,,66.25,62.5
+GLM 5.3 FlashX,glm,mol-d02,experimental_design,52.5,,52.5,43.75
+GLM 5.3 FlashX,glm,bio-d02,experimental_design,32.5,,32.5,25.0
+GLM 5.3 FlashX,glm,bio-d03,experimental_design,52.5,,52.5,50.0
+GLM 5.3 FlashX,glm,neu-d02,experimental_design,57.5,,57.5,56.25
+GLM 5.3 FlashX,glm,inf-d02,experimental_design,52.5,,52.5,50.0
+GLM 5.3 FlashX,glm,inf-d03,experimental_design,57.5,,57.5,56.25
+GLM 5.3 FlashX,glm,mol-r02,research_reasoning,71.25,False,28.5,81.25
+GLM 5.3 FlashX,glm,mol-r03,research_reasoning,52.5,True,81.0,56.25
+GLM 5.3 FlashX,glm,bio-r02,research_reasoning,52.5,False,21.0,56.25
+GLM 5.3 FlashX,glm,neu-r02,research_reasoning,58.75,False,23.5,62.5
+GLM 5.3 FlashX,glm,neu-r03,research_reasoning,37.5,False,15.0,31.25
+GLM 5.3 FlashX,glm,inf-r02,research_reasoning,52.5,False,21.0,56.25
+Grok 4.7,grok,mol-k01,essay,91.25,,91.25,87.5
+Grok 4.7,grok,mol-d01,experimental_design,62.5,,62.5,75.0
+Grok 4.7,grok,mol-r01,research_reasoning,66.25,False,26.5,68.75
+Grok 4.7,grok,mol-p01,essay,91.25,,91.25,87.5
+Grok 4.7,grok,bio-k01,essay,86.25,,86.25,81.25
+Grok 4.7,grok,bio-d01,experimental_design,67.5,,67.5,75.0
+Grok 4.7,grok,bio-r01,research_reasoning,80.0,True,92.0,75.0
+Grok 4.7,grok,bio-p01,essay,86.25,,86.25,81.25
+Grok 4.7,grok,neu-k01,essay,86.25,,86.25,81.25
+Grok 4.7,grok,neu-d01,experimental_design,61.25,,61.25,56.25
+Grok 4.7,grok,neu-r01,research_reasoning,56.25,False,22.5,56.25
+Grok 4.7,grok,neu-p01,essay,86.25,,86.25,81.25
+Grok 4.7,grok,inf-k01,essay,80.0,,80.0,81.25
+Grok 4.7,grok,inf-d01,experimental_design,76.25,,76.25,75.0
+Grok 4.7,grok,inf-r01,research_reasoning,80.0,False,32.0,81.25
+Grok 4.7,grok,inf-p01,essay,80.0,,80.0,81.25
+Grok 4.7,grok,mol-k02,essay,80.0,,80.0,81.25
+Grok 4.7,grok,bio-k02,essay,85.0,,85.0,81.25
+Grok 4.7,grok,mol-d02,experimental_design,57.5,,57.5,56.25
+Grok 4.7,grok,bio-d02,experimental_design,67.5,,67.5,68.75
+Grok 4.7,grok,bio-d03,experimental_design,76.25,,76.25,81.25
+Grok 4.7,grok,neu-d02,experimental_design,75.0,,75.0,81.25
+Grok 4.7,grok,inf-d02,experimental_design,71.25,,71.25,75.0
+Grok 4.7,grok,inf-d03,experimental_design,75.0,,75.0,81.25
+Grok 4.7,grok,mol-r02,research_reasoning,66.25,False,26.5,75.0
+Grok 4.7,grok,mol-r03,research_reasoning,71.25,False,28.5,81.25
+Grok 4.7,grok,bio-r02,research_reasoning,76.25,True,90.5,81.25
+Grok 4.7,grok,neu-r02,research_reasoning,56.25,False,22.5,68.75
+Grok 4.7,grok,neu-r03,research_reasoning,62.5,False,25.0,68.75
+Grok 4.7,grok,inf-r02,research_reasoning,52.5,False,21.0,62.5

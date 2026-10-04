@@ -1,0 +1,72 @@
+{
+  "item_id": "bio-d02",
+  "response_id": "bio-d02",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:38:02.551069+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "bb5cfc18b9618dbf1e982f9d626ba23e6ab5d28a1a36f57e800eda1cb06b73b1",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 1,
+    "actionability": 1,
+    "verifiability": 1,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 1
+  },
+  "service_score": 37.5,
+  "reasoning_index": 37.5,
+  "errors": [
+    {
+      "quote": "a unique, heat-stable separable factor",
+      "issue": "Functional complementation does not establish a unique or single molecule; multiple required components can produce the same pattern."
+    },
+    {
+      "quote": "Aliquot the Retentate (R), Filtrate (F), Boiled Extract (BE), and synthesized control buffers into independent, identical reaction vessels.",
+      "issue": "Randomized aliquots permit within-preparation comparisons, but vessels from one fractionation do not replace independently prepared and fractionated batches. No independent-batch sampling/power or nesting plan is supplied."
+    },
+    {
+      "quote": "Subject active yeast juice to a molecular weight-based filtration",
+      "issue": "Only one separation is proposed. The requested second method based on a different separation principle and its reconstitution/cross-rescue checks are absent."
+    },
+    {
+      "quote": "Demonstration of conserved baseline enzyme activity confirms the retentate is undamaged",
+      "issue": "One robust enzyme marker cannot establish integrity of the full fermentative machinery. Add a common excess-complement capacity assay and independent component checks, and avoid declaring all damage excluded."
+    },
+    {
+      "quote": "Retentate + Volume-matched distilled water.",
+      "issue": "Equal volume alone does not match pH, individual ions, phosphate or protein. Match these jointly across core and control arms, including a combined inorganic/protein control, and remeasure after heating; conductivity alone cannot reconstruct ion composition."
+    },
+    {
+      "quote": "The protocol data is only valid if",
+      "issue": "Requiring both isolated fractions to be inactive as a validity gate conditions acceptance on the hypothesized outcome. Report residual activity and failed depletion as findings, with technical QC separated from biological conclusions."
+    }
+  ],
+  "rationale": "Recognizes core artifact classes and identity limits, but lacks independent biological replication, a second separation and an operationally adequate matched assay. Overclaimed uniqueness/integrity and biological-outcome validity gates further weaken inference.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All eleven complete received nonempty final answers were personally read, against the exact question, evidence packet and full frozen reference including curator corrections. The initial combined key/Astra output truncated part of the key; the reference answer was intact, the remaining correction fields were recovered and Astra was reread separately in full. No paid judge, hidden reasoning or actual experiment was used.",
+    "Exact historical buffer/ion values are unavailable. Accept calibrated proposed settings and scientifically justified equivalent methods; do not require an invented source recipe or a chemically defined structural analog for an unidentified activity.",
+    "The key contains preliminary protocol gates that can sound outcome-selective. Its curator clarification governs: successful reconstitution is an inferential outcome, not an exclusion rule. Preserve failed confirmatory recoveries and report residual activity.",
+    "The key preliminary normalization language conflicts with its corrected primary analysis. Fixed original-extract/enzyme input and final volume with absolute rates are primary; normalization by variable added inactive protein must not drive apparent recovery.",
+    "Boiled complementary activity rescues an intact enzyme fraction; it does not replace destroyed enzymes. Heat survival does not establish NAD identity, a single molecule, non-protein composition or lack of catalytic action.",
+    "Use matching of actual relevant ions, not conductivity as proof of composition. Restore evaporated water without automatically adding solutes; validate matrix after heat and separation. Dialysis may remove the unknown diffusible factor.",
+    "Preserved sentinel enzymes do not prove integrity of an entire pathway. Excess common complement, independent component measures and matched sham handling provide complementary evidence; rescue alone cannot eliminate reversible stabilization.",
+    "Inactive/depleted fractions require an inhibition check with active complement. Multiple biological preparations differ from technical aliquots or repeated processing of one batch. Same-principle methods can test device artifacts but provide weaker orthogonality than an independent physicochemical partition.",
+    "Word counts: Astra 2376, Sol 2709, Terra 2784, Opus46 2362, Opus48 2912, DeepSeek 2079, Gemini 1065, GLM 2541, Kimi 2776, Grok 3034, Qwen 4323. Only Qwen exceeds 3500.",
+    "Primary-author historical account inspected in Harden 1914 Chapter IV excerpts on dialysis, gelatin filtration, recombination and recovery loss (approximately lines 750-770), plus adjacent indexed assay discussion. Original 1906 DOI was inaccessible. This is not a full 1906 methods/supplement audit, and historical recipes were not imposed on candidates."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.gutenberg.org/cache/epub/44985/pg44985-images.html",
+      "scope": "Primary author Arthur Harden, Alcoholic Fermentation (1914), Chapter IV selected dialysis/filtration/reconstitution and recovery-loss passages; not the full book or full 1906 original."
+    }
+  ],
+  "overall_benchmark_score": null
+}

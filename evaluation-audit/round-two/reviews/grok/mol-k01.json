@@ -1,0 +1,134 @@
+{
+  "model_code": "grok",
+  "item_id": "mol-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T18:49:04.280306+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "bdc79ee4762641bb21b359f4111e0026045696c8944bbd92bb9aadb253c9255a",
+  "question_sha256": "83f4992b8d828ae4516dfeb944e8921d0f4706164cf7443bb348714562bc468d",
+  "reference_sha256": "fe6cad42d8b330c2133bebe164b42f815489fc29ea2267094b0d0987154f9562",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "e75ca3cf1ec8f80b1252b1a723cbb8d32f088ca7525c76337d8c53a58b7b36db",
+  "primary_route": "Independent perturbation, near-endogenous rescue, separate-epitope antibody and candidate-protein perturbation after proteomics.",
+  "complete_final_answer_read": true,
+  "word_count": 1100,
+  "first_round_scientific_quality": 91.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Re-expression of the target coding sequence in the null, ideally near endogenous level",
+      "evidence_type": "exact_quote",
+      "reason": "No prospective matched rescue-delivery/empty-vector and detection-background controls are supplied for the newly proposed validation. The roles of the available null/loading observations are clear, but required procedural controls remain incomplete."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "These are proposed experiments, not completed results.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult and transfer-check previous Methods or a validated protocol before performing these experiments."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Disappearance after knockout shows dependence on the locus, not molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer correctly bounds genetic dependence, identifies indirect effects and unassigned signal, supplies discriminating validation, acknowledges absent replicate/raw evidence, stays within the word limit and separates proposals from observations. No additional distinct material content failure is identified."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Disappearance after knockout shows dependence on the locus, not molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer correctly bounds genetic dependence, identifies indirect effects and unassigned signal, supplies discriminating validation, acknowledges absent replicate/raw evidence, stays within the word limit and separates proposals from observations. No additional distinct material content failure is identified."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Disappearance after knockout shows dependence on the locus, not molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer correctly bounds genetic dependence, identifies indirect effects and unassigned signal, supplies discriminating validation, acknowledges absent replicate/raw evidence, stays within the word limit and separates proposals from observations. No additional distinct material content failure is identified."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Disappearance after knockout shows dependence on the locus, not molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer correctly bounds genetic dependence, identifies indirect effects and unassigned signal, supplies discriminating validation, acknowledges absent replicate/raw evidence, stays within the word limit and separates proposals from observations. No additional distinct material content failure is identified."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Disappearance after knockout shows dependence on the locus, not molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer correctly bounds genetic dependence, identifies indirect effects and unassigned signal, supplies discriminating validation, acknowledges absent replicate/raw evidence, stays within the word limit and separates proposals from observations. No additional distinct material content failure is identified."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Disappearance after knockout shows dependence on the locus, not molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer correctly bounds genetic dependence, identifies indirect effects and unassigned signal, supplies discriminating validation, acknowledges absent replicate/raw evidence, stays within the word limit and separates proposals from observations. No additional distinct material content failure is identified."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Disappearance after knockout shows dependence on the locus, not molecular identity.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer correctly bounds genetic dependence, identifies indirect effects and unassigned signal, supplies discriminating validation, acknowledges absent replicate/raw evidence, stays within the word limit and separates proposals from observations. No additional distinct material content failure is identified."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "effect size and variance are unreported.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Acknowledges missing measurement data but gives no assay calibration, background/linearity acceptance or response to failed calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Report and quantify only the 50-kDa candidate",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Does not operationalize the intensity endpoint, loading/background denominator or rules for weak and saturated bands."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Outcome against identity: no restoration, or restoration of a band at a different mass.",
+      "evidence_type": "exact_quote",
+      "reason": "No restoration is treated as evidence against identity without first validating successful, functional near-endogenous rescue; technical failure and genuine contradiction are not fully separated."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Proteins identified at 75 kDa are candidates only; assign that band only if an independent perturbation of the identified protein removes it",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly treats proteomic hits as candidates and requires independent candidate-protein perturbation, alongside separate-epitope recognition and controlled rescue; retains identity uncertainty."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong bounded genetic interpretation and independent antigen-perturbation logic. Negative rescue is not fully separated from failed rescue delivery/function; quantitative calibration remains absent.",
+  "item_score": 65
+}

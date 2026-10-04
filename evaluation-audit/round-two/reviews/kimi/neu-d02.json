@@ -1,0 +1,222 @@
+{
+  "model_code": "kimi",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:30:20.156928+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "f95cddd719938917c071c137e999ad567b5b6a7f852bdf69ef985ea202dfe50d",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c374a9c753ce00cd6a0a1ac66d430b713a2d3dccbf0dbfc2a56221883410f753",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2308,
+  "first_round_scientific_quality": 81.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Titration is proposed but actual preparation/delivery amount and expression timing lack an executable workflow or concrete derivation procedure."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "sample-size precision targets",
+      "evidence_type": "exact_quote",
+      "reason": "The animal/cell hierarchy and held-out-animal design are explicit, but no pilot variance-to-independent-animal replication calculation or equivalent concrete precision allocation is provided."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "saturation in the relevant firing range",
+      "evidence_type": "exact_quote",
+      "reason": "The stop-or-exclude list mixes indicator saturation, a true performance failure, with invalid technical measurements. Logging attrition does not by itself retain that biological failure in reported validation performance."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Visual-response replication and motion-regressor checks lack a specified response contrast test and multiplicity control."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "plausible coefficients",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded neuropil coefficient search or procedure deriving its bounds/grid and stopping rule before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "General recalibration/transportability is proposed, but changes after a failed validation lack a specific refreeze and new independent confirmation requirement."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "not correlated with detected events",
+      "evidence_type": "exact_quote",
+      "reason": "Real activity can covary with movement. Requiring motion residuals to be uncorrelated with all detected events, without conditioning on paired electrical activity, is not a valid artifact acceptance gate; the later warning against blind behavior subtraction does not repair this gate."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw data, transforms and IDs are retained, but exact code/environment/processing versions sufficient for a rerun are missing."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Strong paired ground truth, known-count challenges, single-color and phantom calibration, hierarchical held-out-animal validation and explicit sparse-event metrics. Proxy and spine limits are acknowledged. Invalid correlation-based acceptance and removal of genuine saturation failures weaken otherwise useful causal explanation.",
+  "item_score": 50
+}

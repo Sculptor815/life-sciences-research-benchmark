@@ -1,0 +1,134 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "bio-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:52:29.138728+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "1ab2e14393dfd7183cebb863c2d0c6b9badac39f06dfdfaef86156ce785e07e5",
+  "question_sha256": "494a90589de0a7f4835680716ae80a42c1929cd13afd3bd9c839808308015233",
+  "reference_sha256": "94437d80cb0bd66150414ab8fcca44209be263aa582a49077ce2d28ee89007e4",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "2fba37225634f5b1a044c5a661ec268bbb7c69102461f0f7602c9570a1f93594",
+  "primary_route": "Source authentication and defined peptide-transfer validation with cellular energy/viability and selectivity comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 939,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Purified Cell-Free Translation Assay",
+      "evidence_type": "exact_quote",
+      "reason": "Does not prospectively define the roles and comparisons of an active-assay positive, vehicle/background negative and necessary procedural controls; generic suitable controls or an ATP comparison alone are incomplete."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior experimental Methods/supplements or validated protocols and check condition transfer before executing follow-up assays. Bibliographic authentication does not meet this distinct requirement."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No product-reference/blank recovery or dynamic-range calibration with an acceptance criterion and failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The proposed measurement lacks a complete quantitative endpoint with units/denominator, background and weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Purified Cell-Free Translation Assay",
+      "evidence_type": "exact_quote",
+      "reason": "No technically validated negative and ambiguous purified-assay branch distinguishes failure to inhibit from an inactive/insensitive system or unsuitable conditions."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "an exogenous GTP/ATP regeneration system",
+      "evidence_type": "exact_quote",
+      "reason": "A complete cell-free translation mixture can be inhibited through regeneration, factors or detection; no minimal peptide-transfer/product comparison and independent validation identify the ribosomal reaction."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "exact_quote",
+      "reason": "Assigns Q to a causal metabolic/cytotoxic mechanism although temporal order and mixed/direct effects are unresolved. This also covers the same upstream-versus-downstream overinterpretation; no duplicate G3 charge."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "generic cytotoxin or metabolic disruptor",
+      "evidence_type": "exact_quote",
+      "reason": "Complete answer distinguishes source verification from mechanism, identifies cellular energy/viability confounding and proposes biological/source checks. No additional distinct content error or material format breach beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "The confound is real, but the answer turns it into an assigned causal mechanism and proposes a non-identifying biochemical test.",
+  "item_score": 55
+}

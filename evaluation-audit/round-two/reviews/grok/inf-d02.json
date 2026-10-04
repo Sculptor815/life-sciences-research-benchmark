@@ -1,0 +1,238 @@
+{
+  "model_code": "grok",
+  "item_id": "inf-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:12:07.812096+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "b5dab6e940b11a516dfcf7f461382c8ddb4a378bf6100c27dba0c8cf67aebc69",
+  "question_sha256": "122b241adf77142ecf3caf672be24312c4394332738d1101387cacbc816a0746",
+  "reference_sha256": "528edd1fac3b3ef20cda836348178f2de01ee2d3cf73221ce429b8146fbb35e5",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "00586e57d08da70edba65e77d7b2ea03749501f047d74f410e88ea48e05968a9",
+  "primary_route": "Proposed fixed-design bulk RNA-seq negative-binomial treatment-minus-control inference at independent allocation level, with immutable workflow and source-difference audit; no executed data or predictive training task.",
+  "complete_final_answer_read": true,
+  "word_count": 3342,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original RNA-seq Methods, supplements and release-specific validated tool/import protocols to select and verify transferable settings. Future source comparison or recording chosen settings is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "SIZE_FACTOR_METHOD_PLACEHOLDER",
+      "evidence_type": "exact_quote",
+      "reason": "The count/import and normalization candidate set remains unnamed; calibration objectives do not specify the executable preprocessing choices from which settings will be selected."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Read/library QC screens are named, but no independent reference/pilot-to-acceptance procedure specifies quantitative assay accuracy/precision or false-rejection criteria."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "TEST_PLACEHOLDER",
+      "evidence_type": "exact_quote",
+      "reason": "The primary Wald or likelihood-ratio test remains undecided, without a rule specifying the coefficient or reduced-model comparison and its assumptions."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "one pre-declared alternative shrinkage option",
+      "evidence_type": "exact_quote",
+      "reason": "The comparative scoring criterion is useful, but actual bounded filter/normalization/shrinkage candidates or a procedure deriving their bounds remain unspecified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Changed models become preregistered revisions, but no explicit refreeze and fresh independent confirmation follows a failed or ambiguous analysis."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Flag any design that treats well rows as independent treatment replicates.",
+      "evidence_type": "exact_quote",
+      "reason": "This unconditional fidelity-audit flag contradicts the correctly recognized case of independently randomized wells. It would reject a valid within-donor allocation-level analysis; the flag must apply to technical/subsample wells only."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Clean-session plot-data verification is useful, but numeric tolerance handling and runtime/memory/resource-failure logs are not specified."
+    },
+    {
+      "id": "P16",
+      "state": "not_applicable",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Primary route is prospectively specified count-contrast inference, not prediction or feature-selection performance assessment. Its blinded pilot/calibration and frozen confirmatory specification are described; predictive train/test leakage is not an additional deduction. Independent/orthogonal confirmation is assessed separately under P14."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "All analyses below are proposed only. No count matrix, sample sheet, reference file, or software lockfile was supplied, so nothing was executed and no differential-expression result is claimed.",
+      "evidence_type": "exact_quote",
+      "reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong count mean/size-factor explanation, allocation-unit handling, immutable execution contract, conditional exchangeability/simulation calibration and same-contrast alternative model check. Scope is appropriately conditional. The contradictory audit gate and unresolved implementation choices remain material.",
+  "item_score": 55
+}

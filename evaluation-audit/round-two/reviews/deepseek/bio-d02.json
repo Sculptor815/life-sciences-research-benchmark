@@ -1,0 +1,222 @@
+{
+  "model_code": "deepseek",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:44:54.505944+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "2667112989753e27e2ed2c828bdbbaccdf32ff74f1803bdcad2e27279d49207a",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "511634f957f70e5ca9c8a368e909c76e10a575d7f1b90763f858ca21f76b2278",
+  "primary_route": "Yeast-juice fractionation, chemical add-back and heat-dependent functional reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2079,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "All experiments below are **proposed**. The evidence packet does not provide exact buffer, ion, phosphate, protein, volume, dilution, or assay values; those must be calibrated, not assumed.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior Methods, supplements or validated protocols and verify detailed-condition transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "verified to fail to restore",
+      "evidence_type": "exact_quote",
+      "reason": "Inactive fraction may contain introduced inhibitor: no active-F spike rescue. Mock starts with already separated retentate, so misses original separation damage."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "calibrate linear range, detection limit",
+      "evidence_type": "exact_quote",
+      "reason": "No reference-standard recovery/leak accuracy gate or its objective derivation."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "CO\u2082 per mg protein per min",
+      "evidence_type": "exact_quote",
+      "reason": "Protein/time denominator given but product amount/volume convention, blank correction and weak/missing rules absent."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "at least three independent batches",
+      "evidence_type": "exact_quote",
+      "reason": "Correct nesting but n=3 or more with variability lacks precision/power/effect-size selection."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Only use batches where retentate can be reactivated",
+      "evidence_type": "exact_quote",
+      "reason": "Selects batches on successful reconstitution rather than independently diagnosing technical damage and retaining biological failures."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "include them as covariates",
+      "evidence_type": "exact_quote",
+      "reason": "Covariate adjustment cannot necessarily remove arm-confounded composition differences; no overlap/identifiability requirement or multiplicity family."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "conductivity and pH as calibrated surrogates",
+      "evidence_type": "exact_quote",
+      "reason": "Equal conductivity/pH does not establish individual ion equivalence."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Test a range",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded exploration and explicit setting lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "recalibrate with a different independent method",
+      "evidence_type": "exact_quote",
+      "reason": "No refreeze and fresh confirmation after changed conditions."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "a non-membrane method",
+      "evidence_type": "exact_quote",
+      "reason": "Second principle and direct product confirmation remain unspecified, with no operational recovery validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record batch identity",
+      "evidence_type": "exact_quote",
+      "reason": "No raw-file linkage and exact versioned analysis/settings audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "P02",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "listed alternatives remain unresolved",
+      "evidence_type": "exact_quote",
+      "reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Conditional nonidentity scope and evidence are sound; source IDs/material integrity QC; ordered workflow with pH/substrate/dose calibration; coded randomized batch assessment; cause-specific failures/repairs and unresolved/negative outcomes. Invalid matching and eligibility have specific owners.",
+  "item_score": 30
+}

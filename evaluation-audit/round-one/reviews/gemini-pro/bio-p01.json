@@ -1,0 +1,52 @@
+{
+  "item_id": "bio-p01",
+  "model_code": "gemini-pro",
+  "response_id": "bio-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:38:07.604659+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "1ab2e14393dfd7183cebb863c2d0c6b9badac39f06dfdfaef86156ce785e07e5",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "best classified as a generic cytotoxin or metabolic disruptor that secondarily halts translation by starving the cell of ATP.",
+      "issue": "The packet does not establish that ATP loss is upstream or identify Q as a generic cytotoxin. A direct effect with downstream toxicity remains possible."
+    },
+    {
+      "quote": "This removes the cellular ATP depletion confounder (E2) and directly tests the claim of ribosomal inhibition (E3).",
+      "issue": "A full cell-free translation assay may be affected through charging, factors, substrates or the regeneration system; it does not uniquely localize peptide-bond inhibition."
+    },
+    {
+      "quote": "the benign alternative (unindexed internal report) is proven correct.",
+      "issue": "Receiving a local file with methods does not establish its publication/indexing history or authentic provenance. Those require separate verification."
+    }
+  ],
+  "rationale": "The opening unsupported-claim conclusion and local-record retrieval are useful. However, a speculative metabolic mechanism is presented as the preferred classification, the selectivity plan is incomplete, and neither the coupled assay nor receipt of a document is as decisive as claimed.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The reported endpoint is puromycin incorporation. Do not require candidates to assert independently established protein synthesis suppression.",
+    "Concurrent 50% ATP and 60% incorporation reductions do not establish causal order or a quantitative transfer function. ATP amount is not adenylate energy charge.",
+    "A full cell-free translation assay can be inhibited outside the peptide-transfer reaction. Isolate the reaction or separately control charging, factors and regeneration.",
+    "A negative assay constrains its tested species, chemical form and conditions. It is not a universal refutation; positive controls alone do not cover every context mismatch.",
+    "Biochemical direct action and the cause of a cellular phenotype are distinct. ATP rescue or early timing alone does not exclude mixed mechanisms.",
+    "Selectivity requires a defined comparison scope. Cross-species ribosome activity need not contradict selectivity for peptide transfer over unrelated targets.",
+    "No DOI supplied is not no DOI exists. No recorded notice is not proof of reliability. Existence, provenance, editorial status and scientific support remain separate.",
+    "The reference suggestions about ATP matching and complete cell-free negatives are prospective checks, not uniquely identifying interventions."
+  ],
+  "overall_benchmark_score": null
+}

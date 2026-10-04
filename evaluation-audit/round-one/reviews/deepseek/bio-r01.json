@@ -1,0 +1,104 @@
+{
+  "item_id": "bio-r01",
+  "model_code": "deepseek",
+  "response_id": "bio-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:14:10.785456+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "a7f5c417324f2add1533ecd7f821c40699add660b63eb1f0abd8eb4ab95cd9fe",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "ATP detection not eliminated by apyrase/hexokinase, or not reproduced by a second assay.",
+      "issue": "This is listed as a contamination signature, but contaminating authentic ATP is also consumed by apyrase/hexokinase and detected by orthogonal ATP assays. These tests support chemical identity, not synthesis provenance."
+    },
+    {
+      "quote": "Use linear mixed-effects models with fixed effects for direction, frequency, turn number, substrate, and genotype, and random effects for preparation and bead.",
+      "issue": "The chemical signal is collected from a shared chamber/effluent, not assigned independently to each of 20–50 tracked beads. Independent chambers and their sampling hierarchy are required; bead-level random effects do not create chemical replication."
+    },
+    {
+      "quote": "Then wash into synthesis buffer.",
+      "issue": "No quantitative wash-completion criterion or starting bound-nucleotide inventory is specified after ATP-based calibration. Require repeated product beyond the measured initial pool, and distinguish isotope exchange from net newly formed ATP."
+    },
+    {
+      "quote": "Negative requires no significant −H signal above controls",
+      "issue": "A nonsignificant contrast is not an informative bound on synthesis. Specify the minimum detectable/meaningful output, confidence interval, active fraction and retained activity after forcing."
+    },
+    {
+      "quote": "ATP synthesis should be abolished.",
+      "issue": "The mutant/inhibitor branch assumes synthesis inhibition from a chosen F1 inhibitor without validating its effect on reverse chemistry and on each assay. A hydrolysis inhibitor is not automatically a synthesis-specific control."
+    }
+  ],
+  "rationale": "Correct research direction with actual motion, separate substrate omissions, orthogonal total ATP and phosphate tracing, and recognition of reporter consumption. However, authentic ATP contamination is misclassified, chemical units are confused with tracked beads, and carryover/bound-pool and null-result rules need repair.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The packet establishes ATP-associated directional motion, not an ATP-per-turn yield, torque, universal camera sign or completed reverse-synthesis experiment. Proposed numerical settings may earn credit when explicitly qualified.",
+    "Correct the draft reference by explicitly requiring magnesium/cofactor and nucleotide speciation qualification; its generic reaction inventory is not a complete buffer recipe.",
+    "Reverse operation should generate new ATP repeatedly beyond measured initial available/bound pools. Three catalytic sites are not a universal total ATP-contamination bound.",
+    "Luciferase is an acceptable chemical readout when its consumption, recovery and time response are calibrated. An intensity slope is not generally synthesis flux; chromatographic detection is an alternative, not mandatory.",
+    "Label incorporation can reflect exchange. Pair isotope provenance with net-product/material balance; account for reporter consumption and sample removal as appropriate.",
+    "Empirical direction, mixed surface orientations, actual rotor turns and transmitted torque are distinct quantities. Do not replace any with the nominal actuator command.",
+    "Mechanical input can drive ATP synthesis uphill. Low initial ATP may aid sensitivity but does not prove positive chemical-energy storage; energetic efficiency needs both work and chemical free energy.",
+    "ATP per turn is a coupling yield, not energetic efficiency. Inactive fractions, orientation, incomplete entrainment and analytical recovery can reduce apparent yield without establishing loose molecular coupling.",
+    "Separate ADP and phosphate controls help discriminate intended synthesis from alternative ATP production. Inhibitor effects require assay and enzyme specificity validation.",
+    "Matching is retrospective and applies all five predeclared components. A partially correct historical direction is recorded even when the experimental design is flawed; no claim of prospective novelty or uncontaminated holdout is made."
+  ],
+  "review_sources": [
+    {
+      "title": "Itoh et al. (2004): mechanically driven ATP synthesis by F1-ATPase",
+      "url": "https://www.columbia.edu/cu/biology/courses/w4070/Reading_List_Fernandez/ATP_synthesis_F1.pdf",
+      "scope": "Reviewer read main text, figure captions and Methods. Supports the reverse-rotation historical target, with documented orientation and reporter-response limitations. Supplements and numerical reanalysis remain unaudited; not provided to candidates."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Can an externally imposed rotation",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "External torque drives gamma through the reverse catalytic sequence",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Reverse rotation",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Measure 32P-ATP and total ATP by orthogonal assays.",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "ATP synthesis requires ADP and Pi, active F1, Mg2+, and an intact gamma rotor.",
+      "assessment": "Historical target component substantively present; see study-quality deductions separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

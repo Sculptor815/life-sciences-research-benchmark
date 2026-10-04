@@ -1,0 +1,52 @@
+{
+  "item_id": "mol-p01",
+  "model_code": "claude-opus48",
+  "response_id": "mol-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.925770+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "8bafbd9047fbac248dcc14e45b156468761b09e7f80b5ee7a91783f6878f5ef6",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 58.75,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Disproves the claim if:** endogenous co-IP fails",
+      "issue": "A negative co-IP can reflect sensitivity, extraction, epitope access or condition mismatch. It does not generally disprove the claimed biology."
+    },
+    {
+      "quote": "binding disappears when a candidate bridging partner is depleted",
+      "issue": "A partner may stabilize or localize genuinely direct binders. Loss after partner depletion does not uniquely establish an indirect A-B interaction."
+    },
+    {
+      "quote": "the problem reduces to a **mis-linked identifier** (benign)",
+      "issue": "Finding a differently identified work would help establish identity, but does not establish how or why the mismatch occurred. The dossier-only scope also prevents an external name match from authenticating the internal mapping."
+    }
+  ],
+  "rationale": "Strong opening separation and explicit rejection of an intent finding. However, its decisive experimental falsification rules overclaim negative results and partner depletion, and its external lookup cannot by itself authenticate a synthetic dossier record.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Dossier-only identifiers cannot be authenticated by finding or failing to find similarly named real publications. Underlying dossier documents and curation records can resolve the mismatch.",
+    "A complete registry entry establishes its recorded fields, not that its mapping is necessarily correct. An error is not proof of intent.",
+    "Included controls are not reported successful control outcomes. Grade the principal co-IP conclusion while recording any unreported-result assertion.",
+    "Not supplied does not mean never performed. Untested does not mean false.",
+    "Purified binding and endogenous co-IP address complementary questions; their combination is strong support but not automatically proof of direct contact in an unmodified cell.",
+    "Negative assays require sensitivity, reagent competence and relevant conditions. Depleting a bridge can disturb localization or stability even when A and B also bind directly.",
+    "The reference suggestion that all direct binding must survive bridge disruption is overstrong. Do not require it.",
+    "No misconduct probability can be inferred by treating author, title and year mismatches as three independent random errors."
+  ],
+  "overall_benchmark_score": null
+}

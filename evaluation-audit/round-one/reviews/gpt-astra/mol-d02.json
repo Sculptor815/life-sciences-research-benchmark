@@ -1,0 +1,55 @@
+{
+  "item_id": "mol-d02",
+  "response_id": "mol-d02",
+  "model_code": "gpt-astra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:55:59.646999+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "35a765516f3f35194a6bd41c2e5b915b5d06f4db8b6a2d8dd2be285ed8966df4",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Use an inducible depletion method whose kinetics can be measured.",
+      "issue": "The core manipulation remains an unspecified method. Select a proposed acute depletion architecture and its corresponding resistant rescue construction/validation workflow. The strong outcome and calibration plan does not fully specify this central intervention."
+    }
+  ],
+  "rationale": "Excellent starting-cohort estimand, death/unknown-outcome accounting, initial versus later injury distinction, lesion-matched versus common-exposure scope, independent replication and explicit loss/rescue equivalence criteria. The proposed manipulation architecture is the principal operational omission. No penalty for not inventing historical doses or results.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The exact candidate question/packet, complete frozen reference including its curator clarification, and all three complete final answers were personally read. No hidden reasoning, paid judge or actual experiment was used.",
+    "The reference body retains survivor-only and damage-recalibration language. Its explicit clarification takes precedence: use starting-cohort denominators and competing death outcomes; match initial delivered injury without removing later repair differences caused by p53.",
+    "A partial loss of arrest supports contribution to the response. Full necessity for the defined response requires evidence that meaningful damage-induced arrest is absent after effective loss, with uncertainty and rescue specificity. Do not demand exact zero or universal dependence.",
+    "Common external exposure and state-specific lesion matching estimate different effects. Neither is rejected categorically if justified and reported. Merely adjusting for a post-treatment mediator is not automatically a matched-damage causal experiment.",
+    "Near-endogenous rescue includes damage-induced kinetics and cell-to-cell abundance; successful damage-dependent rescue does not prove p53-alone sufficiency. Assay/dose calibration proposals are legitimate because identities and timings were not supplied.",
+    "Predetermined outcome-based rejection can still select confirmatory results. Distinguish technical failure from biological death, lesion burden or negative arrest outcomes and preserve the latter in reporting.",
+    "Live tracking must distinguish S entry followed by death, no S entry before death, persistent viable G1, and unresolved tracking. No informative-loss mechanism is cured by labeling all loss censoring.",
+    "All three answers are within the 3500-word limit. Proposed means, timing rules and calibrated margins are not penalized for differing from unprovided historical methods.",
+    "The source audit here is limited to indexed primary-paper abstract/metadata excerpts; PubMed/PMC full-page access was challenged. No full historical methods audit is claimed. Scoring follows the supplied hypothetical packet rather than unavailable methods."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1933891/",
+      "scope": "Indexed primary-paper abstract excerpt and bibliographic record: 1991 p53, irradiation and caffeine associations. Full-page text unavailable."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1323840/",
+      "scope": "Indexed primary-paper abstract excerpt: 1992 genetic gain/loss and irradiation checkpoint experiments; no full-methods audit."
+    }
+  ],
+  "overall_benchmark_score": null
+}

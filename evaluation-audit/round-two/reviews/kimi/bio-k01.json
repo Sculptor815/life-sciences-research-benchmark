@@ -1,0 +1,134 @@
+{
+  "model_code": "kimi",
+  "item_id": "bio-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:04:59.292741+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "d0401ddc61062414674e6d9fbae23bd4d4801dc703d4829aa2edca0db5a385ae",
+  "question_sha256": "e5a45dec0d2517d68cec2cb721477e214452d8543683d6d377e1be872cfc40d4",
+  "reference_sha256": "425acfdd9f006f0f842223fef2b6ad93f510268641fee28dd344f907f5ecda04",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "a3bdc533da59d269b521d93a4d33162ec7e122222a2143a8d2ede56a5744dac3",
+  "primary_route": "Window tests, product addition, stability, enzyme loading and detector checks.",
+  "complete_final_answer_read": true,
+  "word_count": 846,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "include blanks and standards.",
+      "evidence_type": "exact_quote",
+      "reason": "Blanks and standards are named without specifying their composition or positive/negative/procedural comparison roles; validation responsibilities remain generic."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "so multiplying",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit prior-Methods or validated-protocol consultation with transfer checks before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "so multiplying",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete detector/product-reference calibration, acceptance rule and action on failed recovery or linearity."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "so multiplying",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Amount-rate units are present, but no complete blank/baseline-normalized endpoint with weak, saturated or missing measurement rules."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "so multiplying",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent chemistry/readout confirmation; the proposed time and enzyme checks rely on the same measurement."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "If any check fails",
+      "evidence_type": "exact_quote",
+      "reason": "Supportive stable slopes/low conversion and failed checks lead to withholding the measured-rate interpretation, with concrete shorter-window and lower-enzyme remedies."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation but at least two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct units/arithmetic and quasi-steady-state interpretation, sufficient alternative-parameter reasoning, clearly proposed checks and unreported-data limits within the word limit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation but at least two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct units/arithmetic and quasi-steady-state interpretation, sufficient alternative-parameter reasoning, clearly proposed checks and unreported-data limits within the word limit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation but at least two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct units/arithmetic and quasi-steady-state interpretation, sufficient alternative-parameter reasoning, clearly proposed checks and unreported-data limits within the word limit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation but at least two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct units/arithmetic and quasi-steady-state interpretation, sufficient alternative-parameter reasoning, clearly proposed checks and unreported-data limits within the word limit."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation but at least two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct units/arithmetic and quasi-steady-state interpretation, sufficient alternative-parameter reasoning, clearly proposed checks and unreported-data limits within the word limit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation but at least two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct units/arithmetic and quasi-steady-state interpretation, sufficient alternative-parameter reasoning, clearly proposed checks and unreported-data limits within the word limit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "one equation but at least two unknowns",
+      "evidence_type": "exact_quote",
+      "reason": "Complete read: correct units/arithmetic and quasi-steady-state interpretation, sufficient alternative-parameter reasoning, clearly proposed checks and unreported-data limits within the word limit."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Sound mathematical and conditional experimental interpretation; strict control/calibration/independence omissions are recorded separately.",
+  "item_score": 65
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "mol-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:28:17.356205+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7dcd441f8641d342f097ee9cc3b4e90534d8cca5dae16276e2c42642a1798a05",
+  "question_sha256": "18ef4462f4f6072b5cde3b86e735cd54dcfe8ff2616e3905276a619a2e8bee05",
+  "reference_sha256": "da4f395c3ac28e425be90cad5a96348ce8907930151791cf1c9eb7010890b847",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "5980116dcbacf907b2f7aff3c57277803ac694d97f764203c43aeab726d1bf54",
+  "primary_route": "Reversible repair slowing/restoration with physical damage and founder-cell division/death, plus optional early-processing and conditional RAD9 experiments.",
+  "complete_final_answer_read": true,
+  "word_count": 3293,
+  "first_round_scientific_quality": 95.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-experiment consultation/check of original Methods, supplements or validated protocols to select and transfer detailed conditions; establishing local prerequisites alone is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The central repair/conditional-switch/damage-assay technologies and operating conditions remain unspecified without a concrete tool-selection and quantitative calibration-to-execution procedure. Qualitative validation gates do not make the proposed main intervention directly executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Damage/measurement calibration names background, dynamic range or controls but does not supply quantitative acceptance thresholds or a concrete procedure to derive tolerances and act on failed calibration."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use time-to-event methods",
+      "evidence_type": "exact_quote",
+      "reason": "Death as a competing event and culture clustering are correctly required, but the concrete estimator/assumption checks and multiplicity handling of B/A and C/A primary comparisons are not specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dose/duration/switch parameters are described as a range or to be calibrated without a bounded ladder or a concrete range-derivation and acceptance-to-lock procedure. This differs from independent assay calibration in P03."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting and pilot separation are present, but no explicit change-control policy requires re-freezing the revised procedure and fresh independent confirmation after technical changes."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "where feasible",
+      "evidence_type": "exact_quote",
+      "reason": "The principal lesion assay has no mandatory operational orthogonal check; the second repair perturbation and physical assay are optional aspirations without a concrete confirmation decision. Restoring a manipulation is useful but does not independently exclude its damage-dependent off-target mechanism."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "timer repeatedly refreshed by ongoing damage",
+      "evidence_type": "exact_quote",
+      "reason": "A meaningful alternative mechanism study explicitly recognizes nonidentifiability, damage-specific drug effects, strain identity and repair-versus-division distinctions. Sham, vehicle, handling, rad9/restored and independent external-delay controls are planned prospectively. Proposed numbers are labeled and 3,293 words meet format."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Founder-based division/death and DNA-normalized damage endpoints, an effect of 0.25T0 with pilot-informed 90% power, culture/aliquot nesting, concealed keys, randomized balanced processing and blinded scoring are explicit. Landmark eligibility precedes intervention; all deaths/censoring and fixed observation/technical stops are retained."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Founder-based division/death and DNA-normalized damage endpoints, an effect of 0.25T0 with pilot-informed 90% power, culture/aliquot nesting, concealed keys, randomized balanced processing and blinded scoring are explicit. Landmark eligibility precedes intervention; all deaths/censoring and fixed observation/technical stops are retained."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Founder-based division/death and DNA-normalized damage endpoints, an effect of 0.25T0 with pilot-informed 90% power, culture/aliquot nesting, concealed keys, randomized balanced processing and blinded scoring are explicit. Landmark eligibility precedes intervention; all deaths/censoring and fixed observation/technical stops are retained."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Founder-based division/death and DNA-normalized damage endpoints, an effect of 0.25T0 with pilot-informed 90% power, culture/aliquot nesting, concealed keys, randomized balanced processing and blinded scoring are explicit. Landmark eligibility precedes intervention; all deaths/censoring and fixed observation/technical stops are retained."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Versioned analysis code",
+      "evidence_type": "exact_quote",
+      "reason": "Troubleshooting maps failed delivery/assay/repair/rescue to corrective checks, while positive/negative/ambiguous interpretations remain bounded. Independent culture prediction, raw images/lineages, calibrations, dosimetry and versioned code support audit; precise null bounds are required rather than nonsignificance."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Versioned analysis code",
+      "evidence_type": "exact_quote",
+      "reason": "Troubleshooting maps failed delivery/assay/repair/rescue to corrective checks, while positive/negative/ambiguous interpretations remain bounded. Independent culture prediction, raw images/lineages, calibrations, dosimetry and versioned code support audit; precise null bounds are required rather than nonsignificance."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "Versioned analysis code",
+      "evidence_type": "exact_quote",
+      "reason": "Troubleshooting maps failed delivery/assay/repair/rescue to corrective checks, while positive/negative/ambiguous interpretations remain bounded. Independent culture prediction, raw images/lineages, calibrations, dosimetry and versioned code support audit; precise null bounds are required rather than nonsignificance."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong alternative repair-versus-timer reasoning, explicit survivor-bias avoidance and appropriate causal limits. Operational specificity, statistical implementation and independent artifact confirmation remain incomplete.",
+  "historical_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The primary question concerns repair-state versus timer control and temporal RAD9 requirement. It does not ask whether checkpoint initiation AND recovery require new protein synthesis, nor propose verified translation inhibition with corresponding drug controls and both switching readouts. These are scientifically legitimate alternative directions, but none of the five specific synthesis-versus-existing-protein historical components is supplied. Q2 is assessed separately.",
+  "item_score": 24.0
+}

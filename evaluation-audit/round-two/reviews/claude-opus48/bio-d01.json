@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:15:35.302564+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c7d3b67d35446d50740d2f271ec9be63ac0fee3a9702ce0cb141e75c583cb317",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6df988bb770c54cde23ea4b1472bf386b2541c4f90c95cd1a009c7c23dd21ac5",
+  "primary_route": "Separate optical, reporter and target kinetics with substrate titration and proposed independent product validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2065,
+  "first_round_scientific_quality": 51.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line / recommended approach",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior target/reporter Methods, supplements or a validated protocol before execution and check transfer of detailed conditions."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Apply the inverse factor",
+      "evidence_type": "exact_quote",
+      "reason": "Defines f=unquenched/quenched signal, then applies its inverse. Correct restoration multiplies observed signal by f; inversion further suppresses the signal."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Confirm enzyme identities/concentrations",
+      "evidence_type": "exact_quote",
+      "reason": "Enzyme identity/activity checks are specified, but compound identity, purity and authenticated stock integrity are not."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Prepare compound as a DMSO",
+      "evidence_type": "exact_quote",
+      "reason": "No actual buffer/cofactor/pH/temperature/volume selection or calibration-to-setting procedure; kinetic titrations alone do not resolve these unknown conditions."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Measure reporter initial velocity",
+      "evidence_type": "exact_quote",
+      "reason": "No primary product amount/concentration/time unit convention or complete treatment of weak/missing rate measurements."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Run \u22653 independent plates",
+      "evidence_type": "exact_quote",
+      "reason": "Fixed plate/day counts and a generic request to power the study do not give a variance/effect-size/precision method for choosing replication."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "select by AIC/BIC",
+      "evidence_type": "exact_quote",
+      "reason": "No free-inhibitor/tight-binding applicability check and no stated run-level/nested uncertainty model before mechanistic comparison."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "0.25\u20135",
+      "evidence_type": "exact_quote",
+      "reason": "Defines kinetic grids and QC but no pilot-to-confirmation lock of selected windows, concentrations and fitting decisions."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Stop/redesign triggers",
+      "evidence_type": "exact_quote",
+      "reason": "Redesign instructions do not require refreeze plus new independent confirmation after altered conditions."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "true target inhibition confirmed",
+      "evidence_type": "exact_quote",
+      "reason": "Orthogonal product loss is declared target inhibition without excluding substrate consumption/sequestration or product destruction in the target incubation; unchanged reporter rates lack an equivalence decision."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "LC-MS/HPLC quantification",
+      "evidence_type": "exact_quote",
+      "reason": "Orthogonal methods are named but no actual product-recovery/quench/matrix-interference validation makes that confirmation operational."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Treat plate as a block",
+      "evidence_type": "exact_quote",
+      "reason": "No raw-file/unit IDs and exact software/code/settings audit manifest."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Controls (summary)",
+      "evidence_type": "exact_quote",
+      "reason": "Vehicle, omission, product-spike, reporter-only, known-inhibitor and coupling capacity controls are planned with purpose."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Mixed outcomes are possible",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied evidence, nested competition, mixed artifacts and uncertainty. More specific correction and attribution defects are not charged twice."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Mixed outcomes are possible",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied evidence, nested competition, mixed artifacts and uncertainty. More specific correction and attribution defects are not charged twice."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Mixed outcomes are possible",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied evidence, nested competition, mixed artifacts and uncertainty. More specific correction and attribution defects are not charged twice."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Mixed outcomes are possible",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied evidence, nested competition, mixed artifacts and uncertainty. More specific correction and attribution defects are not charged twice."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Mixed outcomes are possible",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied evidence, nested competition, mixed artifacts and uncertainty. More specific correction and attribution defects are not charged twice."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Mixed outcomes are possible",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied evidence, nested competition, mixed artifacts and uncertainty. More specific correction and attribution defects are not charged twice."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "80\u2013120%",
+      "evidence_type": "exact_quote",
+      "reason": "Specifies product-standard recovery acceptance and switch detection on failure; the incorrect factor is charged only G1."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "score coded wells blind",
+      "evidence_type": "exact_quote",
+      "reason": "Randomized positions, plate controls and coded blind analysis explicitly reduce allocation/analysis bias."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "otherwise switch detection mode",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective recovery, rate-linearity and solubility/interpretability stops."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "reporter step is rate-limiting",
+      "evidence_type": "exact_quote",
+      "reason": "Explains rate limitation, detector interference and kinetic model patterns; no extra tool error beyond listed defects."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "re-confirm plateau",
+      "evidence_type": "exact_quote",
+      "reason": "Failure-specific reporter titration, correction recovery checks, photobleaching controls and alternative readout repairs."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Sound layered design but the optical correction is inverted, and independent analytical validation and causal-null safeguards are incomplete.",
+  "item_score": 35
+}

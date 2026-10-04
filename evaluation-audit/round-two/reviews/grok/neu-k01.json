@@ -1,0 +1,134 @@
+{
+  "model_code": "grok",
+  "item_id": "neu-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:54:48.608840+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "8a755ee94c14d614d6a29381faf8018f7a0c0a9d3031e2a10ac385c5d6578a57",
+  "question_sha256": "ec00f761d65e7dc493f76bf3a693e16f99e119bd7fef3c082e32437257928dbf",
+  "reference_sha256": "d3cf3f452f3c4b05f1d454b87ab4898000e3b8dcbf3d370dd6c8b8d93bb580df",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "518b83c19ea1785f56823afb1929751457a90a34790b309e58da8e6a88b49744",
+  "primary_route": "Same-cell electrophysiology and calcium imaging with spike-pattern calibration and optical-reference/motion comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 1189,
+  "first_round_scientific_quality": 86.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "TTX abolition",
+      "evidence_type": "exact_quote",
+      "reason": "Defines independently recorded spikes as the positive reference, matched-count/timing or absent-spike comparisons as the biological negative/null, and motion/structural reference checks as procedural controls. These role-defined comparisons suffice for the chosen B-minus-A validation; a literal web search is not required."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of indicator/paired-recording Methods or validated protocols to select detailed conditions and verify transfer. A generic published calibration mention is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Proposes spike/fluorescence calibration but does not specify a measurement-error/noise or recovery acceptance criterion and the action if calibration fails; a fitted curve or plateau inspection alone is incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No fully defined endpoint with baseline/background calculation, units/denominator and weak/near-zero/saturated/missing-signal handling. Naming delta-F/F and spike counts is not the complete measurement rule."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the operating point is near saturation",
+      "evidence_type": "exact_quote",
+      "reason": "Compressed increments in evoked spike/fluorescence responses are compatible with saturation but can also reflect changed calcium entry, clearance or kinetics; the decision locates saturation without discriminating these alternatives."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Operational simultaneous electrical spike recording and imaging of the same cell provides an independent measurement; comparisons of count/timing and fluorescence, with acknowledged optical/calcium ambiguities, meet essay-scale validation. Extra optional reporters are not treated as independent ground truth."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Decision rules, stated in advance",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 25,
+  "quality_score": 75,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Clear optical-only conclusion and independent spike comparison; one saturation decision is more definite than its measurement permits.",
+  "item_score": 75
+}

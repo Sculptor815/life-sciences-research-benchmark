@@ -1,0 +1,222 @@
+{
+  "model_code": "qwen",
+  "item_id": "mol-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:30:03.425109+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c485fe2c258ae3bae1cb33e6f5024b1f3c33b258098650b80ee483e956a31749",
+  "question_sha256": "977a901aa45a51e53beb3d5dfc1df4236d50dbabe47be214290304b663ddcfc5",
+  "reference_sha256": "4c10b3678ba1f5bc0060a9db770578e48e607d5100db658b12d6b95ee26dbab8",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "84718bf02b38988353bc2458c535cbdc740f00b8d7f30e9bd63cb78b62304cd1",
+  "primary_route": "Matched wild-type versus kinase-dead K rescue in K-loss cells; proposed orthogonal confirmation assessed where used.",
+  "complete_final_answer_read": true,
+  "word_count": 4157,
+  "first_round_scientific_quality": 60.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit prior Methods/supplement/validated-protocol consultation and detailed condition-transfer verification before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No matched non-targeting editing control despite the extensive parental/rescue/assay panel; independent KO guides do not replace that procedural comparison."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "K is required for normal ligand-induced S phosphorylation",
+      "evidence_type": "exact_quote",
+      "reason": "The initial pooled-KO observation is treated as established requirement before guide/on-target attribution. This exceeds the packet even though later validation is extensive."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The complete returned answer is 4,157 whitespace-delimited words against the frozen 3,500-word limit, a material overrun (about 19%)."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Preparation/delivery, medium and conditioning quantities/times remain unspecified without a concrete calibration-to-choice procedure. Long ordered headings do not supply executable settings."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Pre-specify a stability acceptance band",
+      "evidence_type": "exact_quote",
+      "reason": "Assay variability, standards and specificity controls are named, but objective quantitative accuracy/acceptance criteria or a derivation procedure are not fixed for the primary phospho-S assay."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Normalize phospho-S to total S and loading",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit background/weak/below-limit/missing or saturated ratio rule; listing absolute values does not resolve unreliable denominators."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "at least three independently derived",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly distinguishes independently derived lines from wells, but the minimum three has no independent-unit variance/precision/power justification or sample-size plan."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Total S remains unchanged across main groups",
+      "evidence_type": "exact_quote",
+      "reason": "Biological changes in total S are made an inference go/no-go requirement rather than retained and decomposed from phosphorylation. Repeating until this quantity remains unchanged risks selection against genuine effects."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "not significantly below wild-type K",
+      "evidence_type": "exact_quote",
+      "reason": "Nonsignificance is used as full-rescue/equivalence evidence, including expression matching. No equivalence interval/test or multiple-primary-contrast correction is specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "a serial dilution of ligand",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded range/range-selection rule and confirmatory parameter lock for ligand, expression and timing exploration."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Alternative tags, promoters, knock-ins, alleles and doses lack refreeze and fresh independent confirmation after repair."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "not distinguishable from blank/background",
+      "evidence_type": "exact_quote",
+      "reason": "An activity result indistinguishable from background does not bound residual activity below the minimum sufficient for rescue. Blank variance alone is not a biologically informative catalytic-null gate."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If an inhibitor is available",
+      "evidence_type": "exact_quote",
+      "reason": "Inhibitor calibration checks engagement and scaffold behavior, but no operational null/insensitive/resistant-allele specificity comparison separates off-target effects. Other orthogonal approaches are proposed without executing their validation logic."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No sample/raw-data/code/version/settings provenance sufficient for independent reconstruction."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation."
+    }
+  ],
+  "deductions_uncapped": 85,
+  "quality_score": 15,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Detailed construct qualification, cell identity checks, correct inhibitor-scaffold caveats, blinded randomized processing and substantial diagnostic repairs. Multiple important statistical/decision gaps remain, especially nonsignificance-as-equivalence and an uninformative inactivity limit. The full answer was read including the initially truncated middle; the length penalty is based on the actual final text, not a display truncation.",
+  "item_score": 15
+}

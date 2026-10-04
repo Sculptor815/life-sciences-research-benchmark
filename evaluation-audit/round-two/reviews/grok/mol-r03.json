@@ -1,0 +1,239 @@
+{
+  "model_code": "grok",
+  "item_id": "mol-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:56:43.711700+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "807d8b181fe337db2bc45dfc6d85453ca819c422fadb731d3ded822168ef235a",
+  "question_sha256": "bf00c28a6e92add5751c281d77d4c3490535449c784810d44640a95c1cb7f695",
+  "reference_sha256": "691bdf29d87b44088c4c14b684a72ae289dd778c52bb1d20cc108695c93a7735",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "240062e0636e364440dd9f55d32e566e368a6954b53e66c26948678648d94aa2",
+  "primary_route": "Purified NT and in-situ cleavage versus matched controls on a locked lipid panel; two-tracer leakage, turbidity and activity co-fractionation.",
+  "complete_final_answer_read": true,
+  "word_count": 3967,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of prior primary Methods, supplements or validated protocols; local validation and acknowledging absent packet methods do not by themselves satisfy this action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core protein preparation/cleavage and lipid formulation/buffer conditions remain unresolved lists rather than a quantitative preparation-to-intervention workflow or a concrete source/calibration-to-setting procedure. Proposed protein concentration series alone does not specify the essential reconstitution."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent preparations and a pilot are recognized, but no quantitative power/precision target with an effect/variance-to-sample-size decision is supplied; a proposed three/six-preparation floor is not a justified confirmatory sample size."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The main contrast and model are named, but model assumptions/diagnostics and a fully specified uncertainty/multiplicity procedure for the panel are incomplete. Naming a mixed model is not sufficient execution detail."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Turbidity and a second tracer are included for that reason",
+      "evidence_type": "exact_quote",
+      "reason": "Aqueous-tracer leakage can miss lipid scrambling, but adding turbidity and a second aqueous tracer does not assay leaflet lipid translocation either. A leaflet-specific scrambling measurement would be needed for this stated measurement rationale."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A concentration/lipid/time range is proposed without a bounded ladder or concrete derivation of bounds, an objective selection criterion and a lock before independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "no gasdermin D-specific direct mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Both NT and CT being active does not automatically establish nonspecific disruption or negate a gasdermin-specific direct mechanism; CT could itself have genuine membrane activity in the tested system. Requiring inactive CT without an independent artifact discriminator makes this outcome rule too categorical."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Do not add electron microscopy or structural determination",
+      "evidence_type": "exact_quote",
+      "reason": "The decisive study uses fluorescence cargo variants/turbidity and biochemical association; no operational independent physical/electrical or structural pore test is provided. Co-fractionation addresses contaminants but does not independently identify a membrane pore or resolve the same cargo-readout artifact."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-unit-to-output audit trail with sample identifiers, exact analysis versions/settings and preserved failed/excluded runs is specified."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Caspase alone permeabilizes",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective native/recombinant, caspase-alone, inactive-fragment, buffer, identity and contamination controls support a useful membrane-sufficiency question. Proposed values and packet limitations are clear; specific tool/outcome defects are charged only at P09/P13."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "spontaneous leak under 15 percent",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric spontaneous/maximum-release gates with re-locking, reporter linearity and interference tests, normalized primary contrast, randomized coded QC-before-unblind processing and no unexpected-direction exclusions define a credible permeability screen. Technical/futility stops remain distinct from mechanism conclusions."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "spontaneous leak under 15 percent",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric spontaneous/maximum-release gates with re-locking, reporter linearity and interference tests, normalized primary contrast, randomized coded QC-before-unblind processing and no unexpected-direction exclusions define a credible permeability screen. Technical/futility stops remain distinct from mechanism conclusions."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "spontaneous leak under 15 percent",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric spontaneous/maximum-release gates with re-locking, reporter linearity and interference tests, normalized primary contrast, randomized coded QC-before-unblind processing and no unexpected-direction exclusions define a credible permeability screen. Technical/futility stops remain distinct from mechanism conclusions."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "spontaneous leak under 15 percent",
+      "evidence_type": "exact_quote",
+      "reason": "Numeric spontaneous/maximum-release gates with re-locking, reporter linearity and interference tests, normalized primary contrast, randomized coded QC-before-unblind processing and no unexpected-direction exclusions define a credible permeability screen. Technical/futility stops remain distinct from mechanism conclusions."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "fresh locked confirmation",
+      "evidence_type": "exact_quote",
+      "reason": "Contamination, tag, aggregation and cleavage failures trigger identified diagnostic fixes. Discoveries outside the locked panel explicitly require a new hypothesis and fresh locked confirmation; negative conclusions stay within tested conditions."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "fresh locked confirmation",
+      "evidence_type": "exact_quote",
+      "reason": "Contamination, tag, aggregation and cleavage failures trigger identified diagnostic fixes. Discoveries outside the locked panel explicitly require a new hypothesis and fresh locked confirmation; negative conclusions stay within tested conditions."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Careful limited sufficiency screen with good re-freezing discipline, but not a complete pore-discovery experiment; some measurement/outcome claims and protocol/audit details need correction.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The direct membrane question, potential size-limited pore and minimal fragment/cleavage intervention match. Structural testing is explicitly deferred and no electrical pore measurement substitutes; two reporters plus turbidity support a size-limited lesion but do not operationally provide orthogonal pore evidence. The final conditional claim deliberately remains direct permeability, so the full historical pore readout/prediction does not qualify.",
+  "item_score": 20.0
+}

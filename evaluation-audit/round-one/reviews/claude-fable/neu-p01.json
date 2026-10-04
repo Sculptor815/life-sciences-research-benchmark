@@ -1,0 +1,58 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "claude-fable",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:08:42.699960+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "566c9c35a277d63d5f86774315846c556c59898eb6ab047e6f35bdda3ca353a8",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "benign explanations make independent replication likely to succeed",
+      "issue": "Benign intent or clerical origin does not make the biological effect likely to replicate. An honest error can change the result, and a real effect can coexist with serious record errors; the packet supplies no replication probability."
+    },
+    {
+      "quote": "a null replication would support the concern that the original effect was an artifact of the identity problem.",
+      "issue": "A null new study does not identify the original error mechanism. Precision, inhibition efficacy, context and design differences matter; it cannot attribute failure to animal misidentification."
+    },
+    {
+      "quote": "A replicated deficit would reinstate the biological conclusion",
+      "issue": "A replicated performance deficit with traceable animals still needs acquisition-versus-retrieval and sensory/motor specificity controls before establishing learning necessity."
+    },
+    {
+      "quote": "the uncertainty applies to the whole dataset by default.",
+      "issue": "The notice does not identify every affected analysis. A conservative decision to withhold reliance is reasonable, but the scope of the identity defect remains unknown rather than established as dataset-wide."
+    }
+  ],
+  "rationale": "Good initial caution and an explicit provenance-to-pseudoreplication chain, plus a meaningful record audit. The benign-alternative and replication branches then overstate probability, original-error attribution and biological reinstatement. Those are central to the requested disconfirming-check logic.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

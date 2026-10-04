@@ -1,0 +1,238 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "inf-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:34:12.832403+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e3d1531e1089c2e41712b2c4e70465b611e3f3f587090e69867e250577b171e5",
+  "question_sha256": "defb2d5afa06ce05847814081f892e153c6478b102ec166da9bfa6e92bf0ca27",
+  "reference_sha256": "af8af736b20cfadbc10950d9e83db1e5582000b2afdae0d27e561d3998ee5974",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "bb0dc30e409747aa398fa7053f4dee4ac1ae11b69ee9d398a1b49f0c118f7095",
+  "primary_route": "Patient-paired multiomic treatment-associated program discovery, assay-specific preprocessing, primary late integration/enrichment and locked external cohort validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3150,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult original assay Methods, supplements or validated analysis protocols and check their transfer to the present inputs."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Normalize using a method appropriate to the measurement scale.",
+      "evidence_type": "exact_quote",
+      "reason": "No concrete platform-conditional normalization/transformation implementation or calibration-to-choice procedure supplies executable preprocessing."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "confidence test",
+      "evidence_type": "exact_quote",
+      "reason": "No selected primary confidence/test procedure or explicit multiplicity implementation is specified. Generic partial pooling, intervals and correction do not determine the numerical inference."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded feature/weight/regularization search or concrete procedure deriving its range and stop before lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Do not revise it using cohort 2 and retest in the same cohort.",
+      "evidence_type": "exact_quote",
+      "reason": "The ban on reusing cohort 2 is correct, but a changed protocol/program is not explicitly refrozen and assigned a fresh independent confirmation set."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Software versions and manifests are requested, but immutable input hashes, executable environment and exact commands are missing."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment reproduction of numerical output tables/figures with tolerance and resource/failure/source-difference logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong paired estimand, condition/rank check, blinded technical QC, precision simulations, dependence-preserving enrichment/integration and missing-not-at-random sensitivity. The external cohort is protected, reduced-block scores are treated as different estimands, and generic correction cannot rescue complete confounding. Implementation and repeat-confirmation details remain incomplete.",
+  "item_score": 60
+}

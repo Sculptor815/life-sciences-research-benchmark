@@ -1,0 +1,34 @@
+# Qwen3.8 Max (0902): answers and both reviews
+
+| Question | Final answer | Round one | Round two | Q1 | Q2 | Item v1 | Item v2 |
+|---|---|---|---|---:|---:|---:|---:|
+| [mol-k01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-k01.md) | [Review](../round-one/reviews/qwen/mol-k01.json) | [Review](../round-two/reviews/qwen/mol-k01.json) | 90.00 | 60.00 | 90.00 | 60.00 |
+| [mol-d01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-d01.md) | [Review](../round-one/reviews/qwen/mol-d01.json) | [Review](../round-two/reviews/qwen/mol-d01.json) | 60.00 | 15.00 | 60.00 | 15.00 |
+| [mol-r01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-r01.md) | [Review](../round-one/reviews/qwen/mol-r01.json) | [Review](../round-two/reviews/qwen/mol-r01.json) | 61.25 | 35.00 | 84.50 | 74.00 |
+| [mol-p01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-p01.md) | [Review](../round-one/reviews/qwen/mol-p01.json) | [Review](../round-two/reviews/qwen/mol-p01.json) | 81.25 | 60.00 | 81.25 | 60.00 |
+| [bio-k01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-k01.md) | [Review](../round-one/reviews/qwen/bio-k01.json) | [Review](../round-two/reviews/qwen/bio-k01.json) | 85.00 | 60.00 | 85.00 | 60.00 |
+| [bio-d01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-d01.md) | [Review](../round-one/reviews/qwen/bio-d01.json) | [Review](../round-two/reviews/qwen/bio-d01.json) | 61.25 | 40.00 | 61.25 | 40.00 |
+| [bio-r01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-r01.md) | [Review](../round-one/reviews/qwen/bio-r01.json) | [Review](../round-two/reviews/qwen/bio-r01.json) | 60.00 | 40.00 | 84.00 | 16.00 |
+| [bio-p01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-p01.md) | [Review](../round-one/reviews/qwen/bio-p01.json) | [Review](../round-two/reviews/qwen/bio-p01.json) | 85.00 | 80.00 | 85.00 | 80.00 |
+| [neu-k01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/neu-k01.md) | [Review](../round-one/reviews/qwen/neu-k01.json) | [Review](../round-two/reviews/qwen/neu-k01.json) | 83.75 | 70.00 | 83.75 | 70.00 |
+| [neu-d01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/neu-d01.md) | [Review](../round-one/reviews/qwen/neu-d01.json) | [Review](../round-two/reviews/qwen/neu-d01.json) | 53.75 | 30.00 | 53.75 | 30.00 |
+| [neu-r01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/neu-r01.md) | [Review](../round-one/reviews/qwen/neu-r01.json) | [Review](../round-two/reviews/qwen/neu-r01.json) | 73.75 | 50.00 | 29.50 | 20.00 |
+| [neu-p01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/neu-p01.md) | [Review](../round-one/reviews/qwen/neu-p01.json) | [Review](../round-two/reviews/qwen/neu-p01.json) | 98.75 | 60.00 | 98.75 | 60.00 |
+| [inf-k01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/inf-k01.md) | [Review](../round-one/reviews/qwen/inf-k01.json) | [Review](../round-two/reviews/qwen/inf-k01.json) | 77.50 | 85.00 | 77.50 | 85.00 |
+| [inf-d01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/inf-d01.md) | [Review](../round-one/reviews/qwen/inf-d01.json) | [Review](../round-two/reviews/qwen/inf-d01.json) | 73.75 | 35.00 | 73.75 | 35.00 |
+| [inf-r01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/inf-r01.md) | [Review](../round-one/reviews/qwen/inf-r01.json) | [Review](../round-two/reviews/qwen/inf-r01.json) | 62.50 | 30.00 | 25.00 | 12.00 |
+| [inf-p01](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/inf-p01.md) | [Review](../round-one/reviews/qwen/inf-p01.json) | [Review](../round-two/reviews/qwen/inf-p01.json) | 87.50 | 70.00 | 87.50 | 70.00 |
+| [mol-k02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-k02.md) | [Review](../round-one/reviews/qwen/mol-k02.json) | [Review](../round-two/reviews/qwen/mol-k02.json) | 61.25 | 55.00 | 61.25 | 55.00 |
+| [bio-k02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-k02.md) | [Review](../round-one/reviews/qwen/bio-k02.json) | [Review](../round-two/reviews/qwen/bio-k02.json) | 67.50 | 45.00 | 67.50 | 45.00 |
+| [mol-d02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-d02.md) | [Review](../round-one/reviews/qwen/mol-d02.json) | [Review](../round-two/reviews/qwen/mol-d02.json) | 50.00 | 40.00 | 50.00 | 40.00 |
+| [bio-d02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-d02.md) | [Review](../round-one/reviews/qwen/bio-d02.json) | [Review](../round-two/reviews/qwen/bio-d02.json) | 65.00 | 25.00 | 65.00 | 25.00 |
+| [bio-d03](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-d03.md) | [Review](../round-one/reviews/qwen/bio-d03.json) | [Review](../round-two/reviews/qwen/bio-d03.json) | 57.50 | 25.00 | 57.50 | 25.00 |
+| [neu-d02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/neu-d02.md) | [Review](../round-one/reviews/qwen/neu-d02.json) | [Review](../round-two/reviews/qwen/neu-d02.json) | 71.25 | 40.00 | 71.25 | 40.00 |
+| [inf-d02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/inf-d02.md) | [Review](../round-one/reviews/qwen/inf-d02.json) | [Review](../round-two/reviews/qwen/inf-d02.json) | 70.00 | 50.00 | 70.00 | 50.00 |
+| [inf-d03](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/inf-d03.md) | [Review](../round-one/reviews/qwen/inf-d03.json) | [Review](../round-two/reviews/qwen/inf-d03.json) | 68.75 | 40.00 | 68.75 | 40.00 |
+| [mol-r02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-r02.md) | [Review](../round-one/reviews/qwen/mol-r02.json) | [Review](../round-two/reviews/qwen/mol-r02.json) | 60.00 | 40.00 | 24.00 | 16.00 |
+| [mol-r03](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/mol-r03.md) | [Review](../round-one/reviews/qwen/mol-r03.json) | [Review](../round-two/reviews/qwen/mol-r03.json) | 70.00 | 40.00 | 88.00 | 76.00 |
+| [bio-r02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/bio-r02.md) | [Review](../round-one/reviews/qwen/bio-r02.json) | [Review](../round-two/reviews/qwen/bio-r02.json) | 71.25 | 45.00 | 88.50 | 18.00 |
+| [neu-r02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/neu-r02.md) | [Review](../round-one/reviews/qwen/neu-r02.json) | [Review](../round-two/reviews/qwen/neu-r02.json) | 61.25 | 30.00 | 24.50 | 12.00 |
+| [neu-r03](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/neu-r03.md) | [Review](../round-one/reviews/qwen/neu-r03.json) | [Review](../round-two/reviews/qwen/neu-r03.json) | 61.25 | 45.00 | 84.50 | 18.00 |
+| [inf-r02](../../benchmark-30/QUESTIONS.md) | [Answer](../answers/qwen/inf-r02.md) | [Review](../round-one/reviews/qwen/inf-r02.json) | [Review](../round-two/reviews/qwen/inf-r02.json) | 53.75 | 35.00 | 21.50 | 14.00 |

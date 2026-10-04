@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "bio-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:03:49.123234+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "8c547213c228e89077cd026d6ed4bfde5dce6841ca92dfbe4c2a9eadf8bdfae0",
+  "question_sha256": "1a2f38bc4a291e966598faece6d609fa8591d54539f53a2f49f3a56c3116856b",
+  "reference_sha256": "8282d415ac922ab3df37704b68f9314a3cf0a493392b6b5995af7ead2893d7e3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "88c32aa5b39d905097e88d9b6cb3251115c0921455c2a2be448a1328c8ca1056",
+  "primary_route": "Synchronized angular/turnover-linked reporter across calibrated loads and ATP; mechanics-only fallback and no work/free-energy experiment.",
+  "complete_final_answer_read": true,
+  "word_count": 4197,
+  "first_round_scientific_quality": 81.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult/check prior primary Methods or a validated protocol for detailed pre-execution conditions and transfer. Recording unknown settings and developing an assay locally do not satisfy this distinct requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core immobilization/shaft attachment, solution chemistry (including nucleotide/free-magnesium conditions), recording settings and load manipulation lack an executable quantitative workflow or a concrete calibration-to-setting procedure. Lists of parameters to select later are insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Angular/temporal/chemical calibration tasks are named but no quantitative event-recovery/false-call or signal acceptance-to-action criterion, or concrete derivation of such tolerance, is specified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary estimands and hierarchical/held-out comparisons are present, but exact model assumptions/diagnostics and multiplicity control for the several primary load/coupling/event tests are incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "ATP/load/acquisition optimization is not bounded by an explicit ladder or objective range-derivation/search-stop rule before the lock. A promise to select a spanning range from pilots is not a fully specified exploration policy."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot separation and troubleshooting are described, but technical changes do not explicitly trigger a revised freeze and fresh independent confirmatory data under a defined change-control policy."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "binding reporter must not be described as a direct hydrolysis reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The unresolved question, discrete/continuous/load models and biochemical attribution limits are sound. Prospective active/inactive, no-enzyme/ATP, reporter/background/attachment controls specify causal purposes. Proposed rather than supplied methods and constrained same-molecule conclusions are explicit."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "for example 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Defined angle/event-ratio/lag and unresolved-event endpoints, nested independent units, pilot variance/effect simulation targeting 90% power, balanced factorial randomization, independently locked coded event lists, fixed sample/time and retention of biological stalls are supplied."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "for example 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Defined angle/event-ratio/lag and unresolved-event endpoints, nested independent units, pilot variance/effect simulation targeting 90% power, balanced factorial randomization, independently locked coded event lists, fixed sample/time and retention of biological stalls are supplied."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "for example 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Defined angle/event-ratio/lag and unresolved-event endpoints, nested independent units, pilot variance/effect simulation targeting 90% power, balanced factorial randomization, independently locked coded event lists, fixed sample/time and retention of biological stalls are supplied."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "for example 90%",
+      "evidence_type": "exact_quote",
+      "reason": "Defined angle/event-ratio/lag and unresolved-event endpoints, nested independent units, pilot variance/effect simulation targeting 90% power, balanced factorial randomization, independently locked coded event lists, fixed sample/time and retention of biological stalls are supplied."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "an independently implemented method",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic table maps optical, sensor, drift and multi-motor failure to correction. Independent extraction, held-out preparations and calibrated chemical checks challenge mechanical inference. Positive/negative/ambiguous outcomes remain conditional and energy is correctly unclaimed. Raw timestamped movies and analysis versions/metadata are preserved."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "an independently implemented method",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic table maps optical, sensor, drift and multi-motor failure to correction. Independent extraction, held-out preparations and calibrated chemical checks challenge mechanical inference. Positive/negative/ambiguous outcomes remain conditional and energy is correctly unclaimed. Raw timestamped movies and analysis versions/metadata are preserved."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "an independently implemented method",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic table maps optical, sensor, drift and multi-motor failure to correction. Independent extraction, held-out preparations and calibrated chemical checks challenge mechanical inference. Positive/negative/ambiguous outcomes remain conditional and energy is correctly unclaimed. Raw timestamped movies and analysis versions/metadata are preserved."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "an independently implemented method",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic table maps optical, sensor, drift and multi-motor failure to correction. Independent extraction, held-out preparations and calibrated chemical checks challenge mechanical inference. Positive/negative/ambiguous outcomes remain conditional and energy is correctly unclaimed. Raw timestamped movies and analysis versions/metadata are preserved."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Good prospective design and non-identifying-result limits, including a quantitative power target; calibration tolerances and complete operating/change-control details remain missing.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, stepping mechanism and ATP-by-load intervention match the mechanochemical part. The proposal explicitly leaves torque/work/efficiency unmeasured: no torque-angle work calculation or ATP/ADP/phosphate free-energy comparison supports the historical energetic result. Thus the joint stepping-plus-energetics readout and prediction are incomplete; not assuming a 120-degree answer is good practice and is NOT the reason for the miss.",
+  "item_score": 26.0
+}

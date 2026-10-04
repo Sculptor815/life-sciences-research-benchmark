@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:44:54.472406+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "3d372e40f4ea80f9dfa1584dd73aec9ff8a587489c84f443a4f4b7e29dfa65c3",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "98b416d62972f9b889b0b04ecda1f3cb511ca0f7bde3d41b2f80c60ede94f408",
+  "primary_route": "Yeast-juice fractionation, chemical add-back and heat-dependent functional reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2362,
+  "first_round_scientific_quality": 42.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Fractionation and Reconstitution Protocol: Testing Whether a Heat-Stable Separable Factor Is Required for Yeast-Juice Fermentative Activity",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior Methods, supplements or validated protocols and verify detailed-condition transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Inactive-Analog Control Preparation",
+      "evidence_type": "exact_quote",
+      "reason": "No active-F spike rescue in the treated inactive matrix to exclude introduced inhibitors; no adequate handling-matched unseparated control."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Matched to YJ",
+      "evidence_type": "exact_quote",
+      "reason": "Full-strength DRB plus native fractions is not a final-composition add-back calculation; equal final volume does not hold R enzyme dose constant when F replaces R volume. No evaporation correction."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Precision target",
+      "evidence_type": "exact_quote",
+      "reason": "Precision targets do not calibrate gas accuracy/leakage or product recovery against standards with failure actions."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Cumulative CO\u2082 at 120 min",
+      "evidence_type": "exact_quote",
+      "reason": "Units partly specified, but no blank/time-zero carried-product subtraction and weak/missing/saturated endpoint handling."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "same YJ batch",
+      "evidence_type": "exact_quote",
+      "reason": "Triplicate vessels and two membranes from one batch are not independent source preparations; no power/precision plan."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "selectively in inactive arms",
+      "evidence_type": "exact_quote",
+      "reason": "Integrity validity depends on which arms are biologically inactive rather than an outcome-independent technical rule."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "pooling triplicates",
+      "evidence_type": "exact_quote",
+      "reason": "Nonsignificant interaction does not establish equivalent methods for pooling; no CI/multiplicity plan. Replication defect is separately P05."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "UV\u2082\u2086\u2080",
+      "evidence_type": "exact_quote",
+      "reason": "Unknown factor depletion cannot be measured by nucleotide UV260 disappearance alone."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "10 kDa and 30 kDa",
+      "evidence_type": "exact_quote",
+      "reason": "Pilot ranges given but no lock before separate independent confirmatory data."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "must be repeated",
+      "evidence_type": "exact_quote",
+      "reason": "Repairs lack refreeze and fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "A5 is excluded",
+      "evidence_type": "exact_quote",
+      "reason": "Two marker enzymes and failure of BSA rescue cannot exclude damage to unmeasured fermentative enzymes/all stabilizers."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "different membrane chemistries",
+      "evidence_type": "exact_quote",
+      "reason": "Both share size-separation biases; proposed ethanol confirmation lacks matrix-recovery validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "all raw data are recorded",
+      "evidence_type": "exact_quote",
+      "reason": "No raw-file/unit linkage and exact versioned analysis/provenance audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments described herein are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties."
+    }
+  ],
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Covers packet, requested mechanisms and nonidentity/proposed scope; identifies source preparation with initial activity/material checks, randomized coded blinded readout, and cause-specific precipitation/handling repairs. Procedural owners capture errors without duplicate G penalties.",
+  "item_score": 20
+}

@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "mol-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:23:27.696337+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "804029cfee41d135fc58819cc201a4a4f024cc133d3ccccdbc521d94abd4ef10",
+  "question_sha256": "977a901aa45a51e53beb3d5dfc1df4236d50dbabe47be214290304b663ddcfc5",
+  "reference_sha256": "4c10b3678ba1f5bc0060a9db770578e48e607d5100db658b12d6b95ee26dbab8",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "0f586d217e688a14bf13598f701fd1b35e644cc508eb172d4d10d54d0dad357c",
+  "primary_route": "K-loss plus matched WT/kinase-dead rescue, with conditionally validated orthogonal catalytic perturbation.",
+  "complete_final_answer_read": true,
+  "word_count": 2724,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult detailed prior Methods, supplements or validated protocols before execution and verify condition transfer. Generic established procedures or partner-literature lookup are insufficient."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No non-targeting editing/selection control alongside parental and KO rescue arms. Independent clones from the same editing route do not control common editing/delivery effects."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "scaffolding is sufficient",
+      "evidence_type": "exact_quote",
+      "reason": "The pooled knockout is treated as proven K necessity before off-target attribution, and noncatalytic rescue is repeatedly equated with scaffold-specific sufficiency. Rescue in a KO also does not automatically remove overexpression artifacts; context-limited attribution is required."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use the same cancer cell line",
+      "evidence_type": "exact_quote",
+      "reason": "No cell authentication/mycoplasma/passage integrity gate for the chosen cancer-cell route; correct construct sequencing does not qualify the cell preparation."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Transduce K-knockout cells with lentivirus",
+      "evidence_type": "exact_quote",
+      "reason": "Chosen viral route lacks functional titer/delivered dose, target-cell number, exposure and expression timing or a concrete calibration plan setting them. Suggested time points elsewhere do not supply this preparation protocol."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Controls internal to each blot",
+      "evidence_type": "exact_quote",
+      "reason": "Lysate comparison controls do not provide an assay dilution/accuracy/background and phospho-specificity calibration gate. No measurement acceptance rule protects saturation and interference."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "phospho-S / total S ratio",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit background/weak/missing-signal ratio rules; growth counts lack a separate death/proliferation interpretation measurement."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "power the main experiment for Contrast 2",
+      "evidence_type": "exact_quote",
+      "reason": "Pilot WT-versus-EV effect is used to power KD-versus-EV, although the decisive WT-versus-KD contrast and full-rescue equivalence may have different meaningful effects. A powered test of the required contrast/equivalence is missing."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Randomize the order of sample processing",
+      "evidence_type": "exact_quote",
+      "reason": "Processing-order randomization and blinding are present, but condition allocation to wells/plate positions is not randomized or balanced; subsequent edge-well exclusion shows a material spatial-bias route."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "exclude edge wells",
+      "evidence_type": "exact_quote",
+      "reason": "High observed growth variance triggers edge exclusion without a prospectively defined technical eligibility/attrition rule; retain assigned denominators and do not choose exclusions after outcomes."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "indistinguishable from WT-K rescue",
+      "evidence_type": "exact_quote",
+      "reason": "Nonsignificance is treated as full rescue without an equivalence margin/test; the signaling ANOVA also lacks ligand interaction and biological-unit nesting/uncertainty. These are statistical-model defects, charged once here."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "dose\u2013response pilot needed",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded ligand/doxycycline range, evaluation criterion and locked sensitivity design; increasing expression until rescue can select the desired phenotype."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Mutation, dose and cell-line repairs lack refrozen settings and fresh independent confirmation after development."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "interaction competence and/or thermal stability",
+      "evidence_type": "exact_quote",
+      "reason": "The KD gate allows folding OR interaction qualification, while neither establishes the other; an arbitrary residual activity <=5% also does not exclude activity sufficient for rescue. Thus the actual qualification/decision rule does not isolate catalysis."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "preserving scaffold function",
+      "evidence_type": "exact_quote",
+      "reason": "The orthogonal inhibitor/AS arm assumes protein presence preserves scaffold function without measuring localization/complex assembly under drug. Inhibitors can alter those properties (primary example: https://www.nature.com/articles/nature08833); on-target catalytic inhibition alone is not a clean scaffold-preserving intervention."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No raw-file/sample linkage and exact analysis-code/version/settings audit trail."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Discriminating Catalytic from Scaffolding Functions of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14."
+    }
+  ],
+  "deductions_uncapped": 90,
+  "quality_score": 10,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Useful detailed rescue workflow and multiple plausible diagnostics, with attention to KD instability, clone heterogeneity and directness limits. However the main KD qualification accepts inadequate separation, causal attribution and scaffold sufficiency are overstated, and the apparently detailed protocol lacks multiple required quantitative and statistical safeguards. General chain/alternative penalties are not duplicated with P13/P14.",
+  "item_score": 10
+}

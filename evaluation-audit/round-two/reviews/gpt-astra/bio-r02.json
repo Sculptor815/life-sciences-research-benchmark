@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "bio-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:03:49.108990+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "457d5cdb2c05e5df2369d07d350fe5754c21801b6dc0d3c90a524467956bdbbc",
+  "question_sha256": "1a2f38bc4a291e966598faece6d609fa8591d54539f53a2f49f3a56c3116856b",
+  "reference_sha256": "8282d415ac922ab3df37704b68f9314a3cf0a493392b6b5995af7ead2893d7e3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "e3456c17aef45e7720a1a98c216fc1dfd595c2d7af969b06972cef1afa4624f2",
+  "primary_route": "Calibrated ATP-by-load angular study with conditional same-enzyme product/turnover measurement; no energy measurement.",
+  "complete_final_answer_read": true,
+  "word_count": 3197,
+  "first_round_scientific_quality": 81.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult/check prior primary Methods or a validated protocol for detailed pre-execution conditions and transfer. Recording unknown settings and developing an assay locally do not satisfy this distinct requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core immobilization/shaft attachment, solution chemistry (including nucleotide/free-magnesium conditions), recording settings and load manipulation lack an executable quantitative workflow or a concrete calibration-to-setting procedure. Lists of parameters to select later are insufficient."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent-preparation/chamber/molecule hierarchy is present, but the sample-size pilot does not specify a quantitative precision/power target linked to meaningful effect and between-preparation variance."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary estimands and hierarchical/held-out comparisons are present, but exact model assumptions/diagnostics and multiplicity control for the several primary load/coupling/event tests are incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "ATP/load/acquisition optimization is not bounded by an explicit ladder or objective range-derivation/search-stop rule before the lock. A promise to select a spanning range from pilots is not a fully specified exploration policy."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "A directional Brownian mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful unresolved stepping/turnover question and competing continuous, multistage, slipping and marker models. Prospective no-ATP/restoration, motor-free, sensor-free, known-product and attachment controls have clear purposes. Reporter identity/occupancy/compliance and binding-versus-turnover principles are explicit; no energy or exact-step claim is invented."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "at least 90% of implanted events",
+      "evidence_type": "exact_quote",
+      "reason": "Synthetic step/continuous and timing/optical controls must achieve 90% recovery and <=5% false calls per record. Per-enzyme angular/count endpoints retain inactive/irregular reporters, missingness, ambiguity and all terminations. Randomized balanced preparation/exposure sequences, coded/locked scoring and fixed duration/sampling are explicit."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "at least 90% of implanted events",
+      "evidence_type": "exact_quote",
+      "reason": "Synthetic step/continuous and timing/optical controls must achieve 90% recovery and <=5% false calls per record. Per-enzyme angular/count endpoints retain inactive/irregular reporters, missingness, ambiguity and all terminations. Randomized balanced preparation/exposure sequences, coded/locked scoring and fixed duration/sampling are explicit."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "at least 90% of implanted events",
+      "evidence_type": "exact_quote",
+      "reason": "Synthetic step/continuous and timing/optical controls must achieve 90% recovery and <=5% false calls per record. Per-enzyme angular/count endpoints retain inactive/irregular reporters, missingness, ambiguity and all terminations. Randomized balanced preparation/exposure sequences, coded/locked scoring and fixed duration/sampling are explicit."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "at least 90% of implanted events",
+      "evidence_type": "exact_quote",
+      "reason": "Synthetic step/continuous and timing/optical controls must achieve 90% recovery and <=5% false calls per record. Per-enzyme angular/count endpoints retain inactive/irregular reporters, missingness, ambiguity and all terminations. Randomized balanced preparation/exposure sequences, coded/locked scoring and fixed duration/sampling are explicit."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "new confirmatory dataset",
+      "evidence_type": "exact_quote",
+      "reason": "Failure diagnoses distinguish chemical occupancy, loading/compliance, optical and biological nulls. Development records/settings are frozen before a new confirmation set; held-out enzymes, alternative extraction and optional calibrated chemistry independently challenge the model. Conditional conclusions retain detection/coupling limits. Raw movies, IDs, versions, exclusions and calibration kernels support audit."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "new confirmatory dataset",
+      "evidence_type": "exact_quote",
+      "reason": "Failure diagnoses distinguish chemical occupancy, loading/compliance, optical and biological nulls. Development records/settings are frozen before a new confirmation set; held-out enzymes, alternative extraction and optional calibrated chemistry independently challenge the model. Conditional conclusions retain detection/coupling limits. Raw movies, IDs, versions, exclusions and calibration kernels support audit."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "new confirmatory dataset",
+      "evidence_type": "exact_quote",
+      "reason": "Failure diagnoses distinguish chemical occupancy, loading/compliance, optical and biological nulls. Development records/settings are frozen before a new confirmation set; held-out enzymes, alternative extraction and optional calibrated chemistry independently challenge the model. Conditional conclusions retain detection/coupling limits. Raw movies, IDs, versions, exclusions and calibration kernels support audit."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "new confirmatory dataset",
+      "evidence_type": "exact_quote",
+      "reason": "Failure diagnoses distinguish chemical occupancy, loading/compliance, optical and biological nulls. Development records/settings are frozen before a new confirmation set; held-out enzymes, alternative extraction and optional calibrated chemistry independently challenge the model. Conditional conclusions retain detection/coupling limits. Raw movies, IDs, versions, exclusions and calibration kernels support audit."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "new confirmatory dataset",
+      "evidence_type": "exact_quote",
+      "reason": "Failure diagnoses distinguish chemical occupancy, loading/compliance, optical and biological nulls. Development records/settings are frozen before a new confirmation set; held-out enzymes, alternative extraction and optional calibrated chemistry independently challenge the model. Conditional conclusions retain detection/coupling limits. Raw movies, IDs, versions, exclusions and calibration kernels support audit."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong cautious mechanochemical study with calibrated event-identification criteria; quantitative preparation/exploration and statistical specifications remain incomplete.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, stepping mechanism and ATP-by-load intervention match the mechanochemical part. The proposal explicitly leaves torque/work/efficiency unmeasured: no torque-angle work calculation or ATP/ADP/phosphate free-energy comparison supports the historical energetic result. Thus the joint stepping-plus-energetics readout and prediction are incomplete; not assuming a 120-degree answer is good practice and is NOT the reason for the miss.",
+  "item_score": 28.0
+}

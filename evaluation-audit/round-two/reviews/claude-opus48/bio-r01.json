@@ -1,0 +1,239 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "bio-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:47:49.788504+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "39a4d0e5b17a2aef529a5d5345b922a5970f3dc90aea4144e89fe5aa8dd6aa78",
+  "question_sha256": "d93d3ae3a989ada01328cb28f05820c58b4ff3f4820b238c927b391e7bd7fa22",
+  "reference_sha256": "1e18498facff37adeca34fd379e7bba2833a775fd7b49bc1c8294cec6b9481cd",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "055d0fca84fc6d2643900cdf42377869e83f0027687de7004e5030bdcbecc75f",
+  "primary_route": "Calibrated forced reverse gamma rotation in isolated F1 with ADP/phosphate and direct ATP measurement; motion, direction, enzyme and analytical controls.",
+  "complete_final_answer_read": true,
+  "word_count": 2900,
+  "first_round_scientific_quality": 46.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of primary Methods, supplements or validated mechanical-manipulation/ATP-assay protocols with verification of transfer to this system."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Omit ADP (no substrate for synthesis)",
+      "evidence_type": "exact_quote",
+      "reason": "No independent phosphate-omission control establishes that detected ATP derives from ADP plus inorganic phosphate rather than another ADP-dependent reaction."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "net synthesis is only measurable if the buffer sits below ATP-synthesis equilibrium",
+      "evidence_type": "exact_quote",
+      "reason": "Two independent substantive errors: (1) external work can drive uphill synthesis above chemical equilibrium; below-equilibrium composition is not necessary for measurable synthesis. (2) the separate claim that PK/PEP would consume ATP reverses that regeneration reaction: it phosphorylates ADP. Repeated versions of either error count once."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "parameters to be set and calibrated",
+      "evidence_type": "exact_quote",
+      "reason": "Core substrate/magnesium, buffer, dose, torque and time settings lack concrete calibration-to-choice procedures; example turn counts and temperature do not make the primary route executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "photon flux \u221d ATP",
+      "evidence_type": "exact_quote",
+      "reason": "A static photon-flux calibration omits ATP-consuming reporter kinetics and matrix-specific acceptance/failure gates. The direction section also conflates opposing viewing geometries rather than validating optical handedness against the actual preparation."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Molecules/preparations and a target count are supplied without pilot-variance, meaningful-effect and precision/power justification; the bulk-versus-confined allocation hierarchy is also not fully specified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Prospective quality review is proposed, but operational exclusion thresholds, stopping policy and complete technical attrition versus biological nonresponse accounting are not specified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary comparisons are named, but interval construction/model checking and multiplicity handling for the directional/control comparisons are not operationally specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot ranges or variables are supplied, but no complete bounded exploration and objective setting-selection/lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed/ambiguous exploratory work."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "statistically absent",
+      "evidence_type": "exact_quote",
+      "reason": "Non-significant control output is not established absence without a sensitivity/equivalence bound. The positive rule also lacks measured initial bound/free ATP and repeated production beyond that inventory; negative interpretation overidentifies a rectifier from verified motion alone."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preparation/chamber/raw-trajectory/chemical-sample/calibration manifest linked to analysis versions/settings, deviations and outputs."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Testing Reverse Mechanochemical Coupling in F1-ATPase",
+      "evidence_type": "exact_quote",
+      "reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference."
+    }
+  ],
+  "deductions_uncapped": 75,
+  "quality_score": 25,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "The historical reverse-work question and simultaneous tracking are present, with randomized direction and independent sensor confirmation. Re-purification, coupling audit and detector recalibration provide useful troubleshooting. Thermodynamic and regeneration errors, missing phosphate control, ambiguous handedness and consuming-reporter interpretation prevent a qualified synthesis inference.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question and intended intervention are present, with an opening empirical hydrolysis definition, but mechanism/readout/predicted outcome fail qualification: no phosphate counterfactual, no net initial-pool accounting, and static luciferase conversion. The contradictory viewing conventions further weaken verification. Match [true,false,true,false,false]; nominal intervention receives credit but cannot rescue the conjunctive hit.",
+  "item_score": 10.0
+}

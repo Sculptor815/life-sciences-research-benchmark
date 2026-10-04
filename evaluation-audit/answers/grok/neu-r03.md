@@ -1,0 +1,153 @@
+# Grok 4.7 / neu-r03
+
+Original final answer, shared by both scoring rounds.
+
+The most valuable next question is whether cue–outcome delay activity in the same dopamine neurons carries information about outcome probability or uncertainty beyond event-locked reward-prediction violations. Do not treat that as established: the packet contains no probability manipulation and no waiting-period result. Run a replication-gated, fixed-timing probability experiment whose decisive contrasts separate expected value from uncertainty, and interpret only pre-registered outcomes.
+
+## Evidence, inference, and what is not yet a conclusion
+
+Packet evidence is limited to three qualitative observations. During learning, dopamine-neuron responses to rewards diminish as rewards become predicted. Activation occurs when reward timing is unexpected. Depression occurs when an expected reward is omitted. The packet connects these event-locked patterns with violations of reward prediction. It explicitly does not establish that waiting-period activity carries additional information about variable outcomes. No probability-manipulation experiment, parameter set, species, recording method, interval, or result is included.
+
+Inference from that evidence: the reported signals are timed to outcomes or to their unexpected absence or timing. They are consistent with a signed, event-locked prediction-violation signal under deterministic expectation. They are silent on the interval between a predictive cue and a timed outcome once outcomes are allowed to vary. Diminishing reward responses show that prediction can suppress an outcome-time response. They do not show what, if anything, is represented while the animal waits, or whether that activity depends on outcome variability rather than on time or movement.
+
+Conclusion that is justified now: the informational gap named in the packet is the highest-value next biological question. A causal test of whether delay activity teaches, motivates, or is necessary for learning is logically later. If delay activity carries no extra outcome information, a causal “delay teaching” experiment answers a different question than the one left open.
+
+Assumption, not packet evidence: “dopamine-neuron” means the same class of cells in which the three packet phenomena can be replicated. The packet does not supply identification criteria, region, or species. Cross-preparation generalization is not justified.
+
+## Unresolved question
+
+When cue–outcome timing is held fixed and expected, and reward occurrence probability varies across otherwise matched cues, does delay-period activity carry additional information about the outcome distribution—expected value, uncertainty, both, or neither—after cue-locked and outcome-locked responses, movement, sensory artifacts, and trial history are accounted for?
+
+“Additional” is operational, not rhetorical. Delay-epoch activity must improve held-out prediction of the programmed distribution, or show a pre-specified rate pattern across probabilities, beyond models that use only cue-epoch activity, outcome-epoch activity, and nuisance covariates. Information about the distribution is not the same as illicit prediction of the particular trial’s reward.
+
+## Competing mechanisms and discriminating predictions
+
+These accounts all survive the packet. Event-locked activation and omission depression do not distinguish them.
+
+**M1. Event-locked prediction violation only.** Delay rate returns to baseline and does not vary with probability or uncertainty. Cue-time activity may still increase with expected value, and outcome-time activity may still fall as probability rises. The packet does not test the cue-time half of this account.
+
+**M2. Sustained expected value.** With magnitude fixed, delay rate increases monotonically with probability. The equal-uncertainty pair differs: rate at 0.75 exceeds rate at 0.25. Rate at probability 1 exceeds rate at 0. Uncertainty explains no unique delay variance.
+
+**M3. Sustained uncertainty.** Delay rate is an inverted-U in probability, highest at 0.5, and matched for equal variances: 0.25 equals 0.75, and 0 and 1 are both low if a floor is shared. Expected value may still govern cue and outcome transients. Delay activity must not predict the sampled outcome within a probability.
+
+**M4. Temporal expectation scaled by value.** A ramp or late-delay rise tracks subjective hazard as the expected time approaches. Probability effects load on the late window and follow expected value or timing uncertainty, not variance. Middle-delay rates, far from cue offset and outcome onset, are flat across probabilities.
+
+**M5. Measurement confound.** Apparent delay modulation is anticipatory movement, device sensory leakage, averaging of jittered phasic spikes, satiation, or cue sensory offset. It collapses after movement regression, yoked sensory controls, single-trial sustained-rate metrics, and within-probability outcome splits.
+
+**M6. Joint value and uncertainty.** Unique coefficients on both probability and probability times one minus probability are nonzero, possibly in different sub-epochs. Neither pure contrast is sufficient.
+
+**M7. Heterogeneous or distributional coding, secondary.** Neurons differ in gain or reversal point, so a population mean can look null, monotonic, or inverted-U while single neurons still carry distributional information. This is a pre-specified secondary reading of heterogeneity, not the primary endpoint.
+
+Decisive contrasts, magnitude fixed:
+
+- Equal uncertainty, unequal value: 0.25 versus 0.75. M2 predicts a difference; pure M3 predicts none.
+- Equal uncertainty at the extremes, unequal value: 0 versus 1. M2 predicts a difference; pure M3 predicts both low and similar.
+- Maximum uncertainty: 0.5 above both 0.25 and 0.75. Required for M3; not predicted by pure M2.
+- Middle versus late delay: a probability effect confined to the late window favors M4 over M3.
+- Within each probability, rewarded versus unrewarded trials, using only spikes before outcome: a difference favors M5 leakage, not M3.
+- Positive controls, required before any delay claim: outcome-time reward responses decrease as probability increases; omission depressions are deeper at higher probability; unexpected timing still activates; omission at an expected time still depresses.
+
+## What would change the recommendation
+
+Change the next question if a separated delay epoch cannot be measured, if the three packet phenomena do not replicate in the intended cells, or if those cells cannot be identified independently of the delay hypothesis. In those cases the next work is interval design, task replication, or identification, not a probability claim. Prefer a later causal perturbation only after a positive informational result. Prefer a magnitude-variance experiment only after occurrence probability has been resolved, or sooner if occurrence probability cannot be delivered without sensory confounds that magnitude variation avoids. Prefer an explicit timing-uncertainty experiment only if the scientific target shifts from variable reward occurrence at expected times to variable time itself; the packet already links unexpected timing to activation and does not identify that as the open gap.
+
+## Proposed protocol
+
+No step below was reported in the packet. Parameters marked proposed are unreported and must be locked before confirmatory recording. No outcome in this plan has been observed.
+
+### 1. Prerequisites
+
+Use one preparation in which chronic or acute recordings can resolve single-neuron spike times aligned to cue, scheduled outcome, and actual reward with millisecond-scale event logs. Obtain ethics approval and a welfare stop. Confirm hardware can omit reward without adding a unique omission cue, and can deliver a yoked sensory event on omission trials if the reward device is audible or visible. Record an independent behavioral anticipation measure such as lick, saccade, or orienting. Video or kinematic capture during the delay is required, not optional, because M5 is a live alternative.
+
+Do not import identification criteria from outside the packet as if they were author methods. Proposed identification gate, applied before probability unblinding: waveform and baseline-rate criteria fixed in a written rubric; a phasic response to unpredicted reward; and, in the replication block only, suppression of that response when the same reward is fully predicted. Do not use delay-period probability modulation to classify a cell as dopaminergic.
+
+### 2. Replication gate, before probability training
+
+Proposed calibration block, separate from the probability set. Train one cue to deterministic reward at a fixed interval and one cue to no reward. After a pre-registered learning criterion on behavior, record:
+
+- predicted reward at the trained time;
+- omission of that predicted reward;
+- reward at an unexpected time;
+- unpredicted reward outside the cue relationship.
+
+Advance only if the packet pattern is present in the cells that will be used: diminished response to predicted versus unpredicted reward, activation at unexpected time, depression at expected omission. Proposed numerical gate, to be locked rather than taken from data not in the packet: the unpredicted-reward response exceeds the predicted-reward response in the same neuron, and omission firing falls below pre-outcome baseline, in a pre-set fraction of qualified neurons across at least two animals. If the gate fails, stop the probability study and troubleshoot identification, salience, or timing. Do not relax the gate after seeing delay data, because no delay data should exist yet.
+
+### 3. Calibration
+
+Proposed timing: choose one fixed cue–outcome interval long enough that a cue window, a middle-delay window, and an outcome window do not overlap. A starting candidate of about 2 seconds is a proposal only; pilot behavioral timing precision and transient width, then lock the interval. If transients occupy the whole interval, stop and lengthen it or abandon the delay question in this task.
+
+Proposed probabilities: 0, 0.25, 0.50, 0.75, and 1.0. Five levels are required for the equal-uncertainty contrasts. Fewer levels leave M2 and M3 collinear. Hold reward magnitude constant. Measure delivered volume and solenoid latency, including trial-to-trial latency variance, and exclude sessions outside a pre-set coefficient of variation.
+
+Match cue duration and intensity. Counterbalance cue identity to probability across animals so sensory features are not the probability code. Jitter intertrial intervals widely enough that elapsed time is a weak reward predictor relative to the cue. Log every device event, including dummy solenoid or masked sensory events on omissions.
+
+Proposed epoch lock, adjusted only in the pilot and then frozen: baseline before cue; cue transient after cue onset; middle delay excluding both cue offset transients and a pre-outcome hazard window; late delay immediately before scheduled outcome; outcome window split by reward versus omission; unexpected-time window from the replication block. Exact millisecond bounds are unreported in the packet and must not be chosen after inspecting probability contrasts.
+
+### 4. Independent units, allocation, and blinding
+
+Primary biological unit: neuron nested in animal. Trials are repeated measures, not independent inferential units. Sessions are blocks within animal. Pre-specify a hierarchical model with animal-level and neuron-level random effects. A claim based only on pooled trials is not confirmatory.
+
+Proposed allocation: interleave all five probabilities within session. Use pseudorandom sequences with a maximum run length so local reward rate does not replace cue probability. Set trial counts so each neuron is targeted to contribute a pre-registered minimum of rewarded and unrewarded trials at 0.25, 0.50, and 0.75, and matched cue trials at 0 and 1. Because 0.25 yields few rewards and 0.75 few omissions, session length is planned from those rare cells, not from average trials.
+
+Blinding: sort spikes and apply inclusion metrics without probability labels. Code probabilities as arbitrary labels until the primary model and exclusion list are locked. Automate behavioral scoring. Do not drop neurons for weak delay modulation. Permissible pre-unblinding exclusions are isolation failure, lost timing alignment, incomplete probability coverage, and failure of the identification rubric.
+
+No effect size is in the packet. Do not invent one. Two-stage sample size, proposed: stage 1 is a pilot to estimate variance of middle-delay rate and behavioral learning time, and is not used for the primary claim. From that variance, power stage 2 for a smallest effect of interest defined before stage 2 as a fraction of each neuron’s own unpredicted-reward transient measured in the replication block. A suggested locking value is one-fifth of that transient; it is a proposal, not a result. If pilot variance makes that effect unmeasurable at feasible N, stop or widen the interval and repeat the pilot. Do not switch the endpoint to whatever contrast the pilot found significant.
+
+### 5. Training and controls
+
+Train to a behavioral criterion before confirmatory neural inclusion: anticipatory behavior must distinguish probability 1 from 0, and should order intermediate probabilities if the measure is graded. Failure after a pre-set training maximum stops the study for that animal.
+
+Controls, each tied to a mechanism:
+
+- Probability 0 and 1 cues separate value from uncertainty and provide sensory-matched anchors.
+- Replication-block unexpected timing and omission keep the packet phenomena in view in the same cells.
+- Yoked device cues on omission trials test sensory leakage.
+- Within-probability, pre-outcome comparison of eventually rewarded versus unrewarded trials tests illicit outcome prediction.
+- Movement and lick or saccade rate in the same bins test M5.
+- Time-in-session and recent reward history test satiation and local revaluation.
+- Optional later block, not part of the primary claim: match expected value with different probabilities by changing magnitude, only if a monotonic delay effect needs to be separated from probability per se.
+
+### 6. Measurements
+
+For every trial store spike times, cue onset, scheduled outcome time, actual reward time, omission flag, probability label, cue identity, kinematic and consummatory traces, trial history, and session time. Store isolation metrics. Align rasters to cue and to scheduled outcome. Estimate both binned counts and a sustained-rate metric that is insensitive to a single burst, so an averaged phasic artifact is visible as high latency variance rather than a tonic elevation.
+
+### 7. Analysis, in locked order
+
+Analyze positive controls first. If they fail, do not interpret delay coefficients.
+
+Control A: on rewarded trials, outcome-window rate decreases with probability. Control B: on unrewarded trials, outcome-window rate is lower at higher probability. Control C: replication-block timing activation and omission depression remain in the recorded set. Control D: behavior still tracks probability.
+
+Primary delay model, middle-delay counts, magnitude fixed so probability is expected value:
+
+rate ~ value + uncertainty + movement + recent reward rate + time-in-session + cue identity, with uncertainty defined as probability times one minus probability, and with neuron and animal random effects.
+
+Compare nested models: covariates only; value only; uncertainty only; both; and a saturated categorical probability model. Pre-specify the primary test as the unique uncertainty contribution in the middle-delay epoch, plus the two equal-uncertainty contrasts (0.25 vs 0.75 and 0 vs 1). Value in the cue epoch is a positive control, not the primary endpoint. Late-delay coefficients are secondary and are the M4 check.
+
+Decoding, secondary but required for an “information” wording: cross-validated prediction of probability and of uncertainty from middle-delay activity after residualizing movement and cue-epoch rate. Nulls are label shuffles within animal. A mean difference without held-out information is a weaker claim and must be worded as a rate modulation, not as demonstrated information.
+
+Neuron-level fits are reported so M7 heterogeneity is visible. The primary population claim does not require every neuron to match the mean pattern. It does require the hierarchical estimate, not a selected subset.
+
+Normalization is locked in the pilot. Do not z-score within session in a way that forces probabilities to a common mean. Baseline subtraction using the pre-cue window is the default proposal.
+
+### 8. Stop rules
+
+Stop for welfare, lost alignment, or isolation below the locked threshold. Stop the probability claim if the replication gate fails. Stop an animal if behavioral criterion is unmet at the training cap. In stage 2, stop for futility if the positive controls are absent at a pre-set interim look, using an alpha-spending rule chosen before that look. Do not interim-look the uncertainty contrast to decide whether to add trials unless that look was in the spending plan. Exclude post-hoc epoch redraws. A movement-mediated signal does not authorize fishing in other windows; it triggers the matched-movement sensitivity analysis already specified.
+
+### 9. Troubleshooting, without moving the endpoint
+
+If classic outcome responses are absent, recheck reward salience, timing logs, and identification. Do not redefine dopamine neurons by the delay pattern. If behavior fails while neural cue responses scale with probability, report a neural–behavioral dissociation and do not claim the animal’s waiting state is known. If delay effects exist only with movement, analyze movement-matched trial subsets; if the effect vanishes, conclude M5 for those data. If dummy sensory cues abolish the effect, conclude leakage. If single-trial latency variance accounts for the average, treat the average as a phasic artifact. If only the late window is modulated, report M4, not uncertainty. If 0.25 and 0.75 cannot be estimated because of too few trials, the study is under-allocated; collect the missing cells or stop, and do not collapse probabilities into low versus high.
+
+## Conditional outcomes and the strongest justified conclusion
+
+**Positive for additional uncertainty information.** Positive controls pass. Middle-delay activity is highest at 0.5, 0.25 matches 0.75, and 0 matches 1 at a low level, or the uncertainty term adds unique out-of-sample predictive value. The pattern survives movement, yoked cues, history, and sustained-rate metrics, and pre-outcome rate does not predict the trial’s own reward within probability. Strongest justified conclusion: in this task and these cells, waiting-period activity carries information about outcome uncertainty beyond event-locked prediction-violation responses. Not justified: that the signal is dopamine release, that it causes learning, that it is the animal’s only uncertainty code, or that it generalizes to magnitude risk or timing risk.
+
+**Positive for expected value, not uncertainty.** Positive controls pass. Middle-delay rate is monotonic in probability, 0.75 exceeds 0.25, and uncertainty adds no unique prediction. Conclusion: delay activity carries expected-value information, which is additional to a purely transient account but is not additional information about variability as such. The packet’s “variable outcomes” gap is only partly closed.
+
+**Joint or heterogeneous positive.** Both terms contribute, or neuron-level fits split into monotonic and inverted-U classes with a pre-registered heterogeneity test. Conclusion: delay activity can carry both value and uncertainty, or the population is mixed. Do not average them into a single mechanism. M7 remains possible if gains differ systematically; say so as a limit, not as a demonstrated distributional code, unless the secondary tiling analysis was locked and met.
+
+**Negative.** Positive controls pass, coverage is adequate, and neither value nor uncertainty in the middle or late delay exceeds the locked smallest effect or improves held-out prediction. Strongest conclusion: under this fixed-timing occurrence-probability design, waiting-period spiking did not carry detectable additional information about variable outcomes. Not justified: that no dopamine release, subthreshold state, other task, or other brain region does so.
+
+**Ambiguous.** Positive controls fail; the effect is movement- or leakage-bound; modulation is only a late ramp; equal-uncertainty contrasts are underpowered; or only a post-hoc subset of neurons shows an effect. Strongest conclusion: the study does not answer the question. Report which gate failed and which pre-specified branch follows. Do not describe this as evidence for or against uncertainty coding.
+
+## Limits and alternatives
+
+The packet supports only an association between event-time dopamine-neuron activity and reward-prediction violations. It does not identify a circuit, a learning rule, a species, or a delay code. This proposal cannot convert a future correlation into function. Spike rate is not release. Fixed timing does not test variable timing. Occurrence probability does not test magnitude variance. Interleaved probabilities teach a cue-specific distribution; a block design would ask a different, history-dependent question and is an alternative, not a silent substitute. If stage 2 is positive for uncertainty, the justified subsequent question is whether selective perturbation of that delay activity, without changing cue or outcome transients, alters later cue value or choice. That experiment is not the next one, and it is not licensed by the packet.

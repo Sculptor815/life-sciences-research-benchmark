@@ -1,0 +1,53 @@
+{
+  "item_id": "neu-d02",
+  "response_id": "neu-d02",
+  "model_code": "gpt-astra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:13:15.611390+00:00",
+  "review_type": "single AI curator; complete final answer personally read; model identity visible; original rubric",
+  "candidate_sha256": "2b5672df39176425fb6aa7f68aaf87bcad395e46875b086fc6fe309615bde205",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Fully addresses the supplied calibration task under the original rubric. Particularly strong same-cell pairing, verified rather than commanded counts, response-memory-aware negatives, one-to-one event matching, clustered uncertainty, held-out preparations, prevalence-aware precision, 3D recoverability, expression-proxy caution, and explicit spine/soma distinction. Unknown numerical settings are appropriately calibrated rather than invented. No material original-rubric deduction identified; this is not a claim of experimental validation or satisfaction of the later stricter rubric.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read every full received final answer and the exact question, packet, complete frozen reference and curator operational extension. Recovered tool-truncated passages before scoring. No hidden reasoning, paid judge or new candidate generation.",
+    "Original first-round rubric only. New user-requested 10/5 deductions will be formalized and applied separately only after this round is complete.",
+    "Unknown indicator identities, spike counts, rates and thresholds may be calibrated. Do not require an invented historical recipe or arbitrary universal numeric cutoffs; judge calibration procedures and operational inferential validity.",
+    "Somatic electrical spikes ground somatic spike inference, not local spine synaptic calcium. A spine event without a somatic spike may be real. Calcium without a spike can still be a false positive for the declared somatic-spike output.",
+    "Blank stimulation is not electrical silence. Silent periods may retain calcium from previous spikes. Use calibrated temporal windows, matching and explicit denominators; false discovery proportion is not true-negative-based FPR.",
+    "Reference intensity ratios are conditional optical proxies, not automatic expression concentrations. Baseline calcium, reference abundance and spectral attenuation matter. A 2D channel alone cannot reconstruct arbitrary 3D motion.",
+    "Motion/neuropil correlations can include genuine neural activity. Validate correction against paired ground truth and structural recoverability rather than excluding on desired functional outcomes.",
+    "Maintain saturation and poor inference as performance failures. Report unavailable technical intervals and operating-range coverage separately. Never tune validation preprocessing using its electrical labels unless an explicitly separate per-cell calibration protocol is the claimed deployment.",
+    "New-neuron and new-animal validation differ from held-out trials in a calibrated cell. Cells/trials/spines must retain animal and parent-cell clustering. No actual experiment or raw-data pipeline was executed.",
+    "Reviewer inspected the primary 2013 publisher abstract and figure titles, plus indexed primary spike-inference benchmark excerpts; full historical Methods and supplements were not audited. Historical numeric details are not claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature12354",
+      "use": "Primary indicator paper",
+      "scope": "Publisher abstract and figure titles only; no complete source-methods audit."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27151639/",
+      "use": "Primary spike-inference benchmark",
+      "scope": "Indexed abstract excerpt only."
+    }
+  ],
+  "overall_benchmark_score": null
+}

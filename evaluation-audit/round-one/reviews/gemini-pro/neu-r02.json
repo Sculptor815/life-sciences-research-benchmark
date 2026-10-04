@@ -1,0 +1,110 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:23:22.497618+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "830f6c7b9ac513690c4171f770fd7b257789da82f3e7006a5af781ceb64f9c6f",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 1,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 47.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "Binocular Deprivation (BD) via dark-rearing",
+      "issue": "There is no unilateral deprivation arm or directional relative-eye prediction. Bilateral deprivation can test a related developmental question but does not match the sealed unilateral ocular-dominance follow-up."
+    },
+    {
+      "quote": "The basic organization of visual cortex receptive fields and binocular integration is innate",
+      "issue": "Statistical indistinguishability is not equivalence or proof of innate specification. Specify animal-level power, meaningful bounds, manipulation validation and limited timing-specific null conclusions."
+    },
+    {
+      "quote": "entirely genetically and developmentally hardwired",
+      "issue": "Experience-independent development can include spontaneous activity and intrinsic developmental processes; it is not equivalent to entirely genetic hardwiring. The alternatives are too absolute."
+    },
+    {
+      "quote": "Leave the Control group unmanipulated",
+      "issue": "The proposed suturing arm lacks a procedure-matched sham. Normal littermates alone do not control anesthesia, handling, inflammation and stress."
+    },
+    {
+      "quote": "If the eyes of sutured animals show corneal damage",
+      "issue": "Opening lids before recording is correctly specified, but appearance-based exclusion does not establish matched optics, retinal function or reliable eye-specific cortical sampling. Add independent functional controls and retain all biologically weak units."
+    },
+    {
+      "quote": "assumed to be optimized based on standard neurobiological practices",
+      "issue": "The model, exposure schedule, acquisition/stimulus settings, effect-size/power and quantitative analysis rules remain largely unspecified. There is no experimental recovery or later-onset arm despite the initial maintenance/refinement question."
+    }
+  ],
+  "rationale": "Concise relevant developmental experiment and genuine single-unit readout, with animal-level analysis and endpoint lid opening. It misses the historical unilateral manipulation and overstates null results; substantial controls and operational detail are absent.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Is visual experience required for the initial development",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Innate Scaffold with Experience-Dependent Refinement",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Binocular Deprivation (BD) via dark-rearing",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Record single-unit action potentials.",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Animals deprived of visual experience will lack organized receptive fields",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

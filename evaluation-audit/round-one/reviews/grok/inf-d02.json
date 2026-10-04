@@ -1,0 +1,62 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:23:55.269241+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "b5dab6e940b11a516dfcf7f461382c8ddb4a378bf6100c27dba0c8cf67aebc69",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "Flag any design that treats well rows as independent treatment replicates.",
+      "issue": "This unconditional audit flag contradicts the answer's own correct rule that individually allocated wells can be treatment units. Flag only nonindependent wells or unjustified donor-population claims."
+    },
+    {
+      "quote": "Size-factor estimator, Cook’s-distance or outlier policy, independent-filtering statistic, and log-fold-change shrinkage method are unreported.",
+      "issue": "Distinguish unknown historical settings from choices this proposed plan should make. Select a proposed primary normalization/test/shrinker and operational fallback rules, without claiming the original study used them."
+    },
+    {
+      "quote": "recording the false-positive fraction at the proposed alpha",
+      "issue": "Define the metric precisely. The fraction of all genes rejected under a complete-null permutation is not FDR; under the complete null FDP is one whenever any rejection occurs. Estimate the relevant FDP/FDR or familywise event, and use realistic mixtures of null/non-null effects for broader calibration."
+    },
+    {
+      "quote": "Outputs are a gene-by-allocation count matrix of non-negative integers",
+      "issue": "The transcript-quantification option needs an explicit compatible importer, gene aggregation and length-offset/count-scaling handling. Estimated counts need not originate as integers; do not simply round/import incompatible abundance values."
+    }
+  ],
+  "rationale": "Strong unit-aware primary rules, appropriate exception for intended between-donor allocation, count equation, plot-data verification and provenance. An unconditional well-replication audit rule, deferred central algorithms and ambiguous null-calibration metric reduce operational trustworthiness. The 3342-word answer fits the limit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Each complete final answer was personally read separately in full, against the exact question, packet and frozen reference including clarification. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than byte equality. Partial source access cannot establish full reproduction. Word counts: DeepSeek 2307, Gemini 1228, GLM 2436, Kimi 3456, Grok 3342, Qwen 3854; only Qwen exceeds 3500.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

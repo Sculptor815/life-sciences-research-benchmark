@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:16:56.252571+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "b38cb6523c251fd1178d0195e1c67c08729849c376c171ba1f4e7e9294cae1b5",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "08201c4b627e6bd596121678aa0761e2ddfa389bc41d7d2e6450839daf93b3c7",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3465,
+  "first_round_scientific_quality": 90.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The biological indicator expression/preparation route and functional delivered quantity are unresolved; no concrete lookup/calibration-to-choice procedure makes the preparation executable."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "stop or be marked invalid",
+      "evidence_type": "exact_quote",
+      "reason": "Marking sessions invalid for indicator saturation can remove a genuine performance failure. Technical detector corruption must be separated from valid high-rate indicator failure, retained and counted in validation coverage."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified test comparing stimulus and baseline",
+      "evidence_type": "exact_quote",
+      "reason": "No actual response test or multiplicity procedure for visual responsiveness across cells/stimuli is supplied, despite appropriate clustered detection uncertainty."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified range of plausible correction strengths",
+      "evidence_type": "exact_quote",
+      "reason": "No actual bounded neuropil parameter exploration or procedure deriving its bounds/grid and selection stop."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw/intermediate traces and recorded instrument settings are useful, but stable animal/cell/trial linkage and exact code/environment/processing versions are not specified."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed calibration and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation."
+    }
+  ],
+  "deductions_uncapped": 35,
+  "quality_score": 65,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Careful same-cell calibration with actual electrically verified counts, structural single-channel controls, common-clock timing, 3D reference/known-shift validation and held-out animals. Independent animal precision, blinded processing, expression-proxy caveats, one-to-one matching and false-positive denominators are good. Application-specific confidence-bound acceptance and a fresh validation cohort after changes support disciplined iteration. The session-invalidity rule must preserve biological saturation failures; specific checks own that limitation.",
+  "item_score": 65
+}

@@ -1,0 +1,114 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:01:23.987097+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "e1459fb8c6bd46cc83c8162c5a10f42e27833d9fe4c52c685fab45e28bcebc95",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "if the **positive control G2 shows no detectable shift**",
+      "issue": "The central unknown experimental effect is made its own required positive control. Halting whenever a validated monocular manipulation yields a null circularly excludes the hypothesis being tested; use an independent measurement-sensitivity control."
+    },
+    {
+      "quote": "contralateral/ipsilateral bias index",
+      "issue": "With deprivation eye randomized, an anatomical left/right or contra/ipsi index must be recoded relative to deprived eye and hemisphere. No such recoding is specified; averaging can cancel the primary effect."
+    },
+    {
+      "quote": "the **presence/absence of a critical period**",
+      "issue": "Permissive processes can be age dependent and instructive processes can persist into adulthood. Timing alone cannot separate those mechanisms."
+    },
+    {
+      "quote": "Dark-reared vs normal** tests permissiveness and critical-period extension",
+      "issue": "One endpoint comparison cannot demonstrate extension of a plasticity window; require timed deprivation challenges against age-matched ordinarily reared controls."
+    },
+    {
+      "quote": "pupil/retinal inspection, light-response check",
+      "issue": "These do not establish normal retinal or thalamic signal transmission. Add functional upstream measurements and withhold cortical localization if unequal peripheral input remains."
+    },
+    {
+      "quote": "Patterned binocular experience **instructs**",
+      "issue": "Deprivation and competition effects can establish experience dependence but not uniquely instruction, bounded critical-period limits or a specific activity-selection mechanism. The conclusion is stronger than the proposed contrasts."
+    },
+    {
+      "quote": "a standard mammalian visual-cortex model",
+      "issue": "Model, intervention ages/duration, acquisition/stimulus parameters and actual quantitative thresholds remain unselected. Sham handling is absent, and reverse occlusion alone does not measure ordinary binocular recovery."
+    }
+  ],
+  "rationale": "Relevant monocular/bilateral/timing program with reopening checks, nested inference and equivalence intent. Circular positive-control stopping, unaligned ocular index and insufficient peripheral validation prevent a qualified core readout/prediction.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does Visual Experience Instruct",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Instructive / Experience-Dependent",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Monocular deprivation (MD",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "contralateral/ipsilateral bias index",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "a large OD shift toward the open eye",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

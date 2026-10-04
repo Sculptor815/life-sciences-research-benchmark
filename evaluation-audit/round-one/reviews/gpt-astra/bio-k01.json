@@ -1,0 +1,29 @@
+{
+  "item_id": "bio-k01",
+  "model_code": "gpt-astra",
+  "response_id": "bio-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:38:39.795410+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "994ac80f566422b728d6721028fb29291e01a4d6019d78264e56c85991861ed5",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Correct calculation and units; explicit identifiability example; separates transient from initial steady state; calibrates signal and gives volume-dependent depletion check. Fully satisfies this bounded essay rubric.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "overall_benchmark_score": null
+}

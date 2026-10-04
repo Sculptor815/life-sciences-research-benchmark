@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:05:21.261749+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "aa18c872c0427393eb5d7f050a14a03873bc99c814ab6cbf1c2027683156294f",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "6c8406656d277ba684a21e86d864be21deac1857a9d392d902806bc271b7289a",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 2979,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use the available projection-targeting strategy",
+      "evidence_type": "exact_quote",
+      "reason": "No executable construct/delivery quantities, functional dose, expression interval and preparation workflow or concrete procedure that resolves these settings."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reliable inhibition",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative physiological acceptance/accuracy criterion, inhibition recovery validation or independently scored movement-detector calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "All randomized outcomes and omissions are retained, but missing/corrupted tracking/events and ambiguous choice measurements lack a specified handling rule."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Allocate animals before behavioral testing",
+      "evidence_type": "exact_quote",
+      "reason": "Trial randomization and blinded scoring are explicit, but between-animal opsin/control allocation is not randomized or concealed by a specified procedure."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No actual multiplicity control or gatekeeping for the several timing, motor and sensory comparisons."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Increase only until terminal inhibition is verified",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded power/duration range or procedure deriving safe search bounds; stopping indefinite escalation alone does not define a bounded pilot."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Revised timing/illumination is not explicitly refrozen and confirmed using fresh independent data."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete linked raw video/event/calibration files and exact analysis/acquisition/version provenance."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Conclusion and recommended design",
+      "evidence_type": "exact_quote",
+      "reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Clear proposed terminal experiment with anatomical checks and appropriate physiology/collateral caveats. Prospective animal-level power, technical exclusions, all-trial outcomes, sensory probes, temporal task modification and practical-effect confidence bounds are strengths. It avoids post-light movement adjustment and distinguishes cue perception from retrieval. Operational calibration, allocation and audit requirements remain incomplete.",
+  "item_score": 50
+}

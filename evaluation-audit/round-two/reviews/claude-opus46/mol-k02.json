@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "mol-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:07:30.756843+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "17f304b80817bb6cb6dd5798a4180ec4310802fa070a984613ae3fc21101aa42",
+  "question_sha256": "d146829a6bb5de322059582a33379ff36e788aa1589d548746134187d31d27cb",
+  "reference_sha256": "dd442b3242e242a35d2168378a4d72e173bded24e637145d4fd6829c1eeea1a0",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "badfce969b8bf2bfb237ce1ddd04257c81c7f7e8724eebf2348681bd11a0ec15",
+  "primary_route": "Genetic rescue/knockdown, separate antibody, recombinant control and MS.",
+  "complete_final_answer_read": true,
+  "word_count": 1276,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recombinant protein positive control.",
+      "evidence_type": "exact_quote",
+      "reason": "Genetic and loading comparisons are discussed, but the proposed rescue/detection route lacks matched vector or detection-background procedural controls and their roles before collection."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The 50 kDa band has the stronger",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior Methods/supplements or validated protocols and verify transfer before validation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The 50 kDa band has the stronger",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No specified detector/dilution reference acceptance criterion and failed-calibration action; naming exposure or linearity checks is incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The 50 kDa band has the stronger",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Reports descriptive bar ratios but does not operationally define a background/normalization denominator with weak, saturated or missing-signal treatment for the proposed validation."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Under most interpretive frameworks, a \u226590% reduction is considered strong validation",
+      "evidence_type": "exact_quote",
+      "reason": "An unsupported general 90-percent validation standard is introduced without a supplied source or assay calibration; no universal reduction threshold establishes antigen specificity."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the antibody's on-target reactivity is represented by the 50 kDa species.",
+      "evidence_type": "exact_quote",
+      "reason": "Converts genetic dependence into established on-target identity despite later acknowledging the indirect-antigen alternative."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "not raw blot images",
+      "evidence_type": "exact_quote",
+      "reason": "Correct relative band ranking, summary-image limits and alternative mechanisms with proposed follow-up; approximate 95 rather than 100 control reading does not materially alter the interpretation. No raw-image features or measured validation outcomes are fabricated."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "not raw blot images",
+      "evidence_type": "exact_quote",
+      "reason": "Correct relative band ranking, summary-image limits and alternative mechanisms with proposed follow-up; approximate 95 rather than 100 control reading does not materially alter the interpretation. No raw-image features or measured validation outcomes are fabricated."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "not raw blot images",
+      "evidence_type": "exact_quote",
+      "reason": "Correct relative band ranking, summary-image limits and alternative mechanisms with proposed follow-up; approximate 95 rather than 100 control reading does not materially alter the interpretation. No raw-image features or measured validation outcomes are fabricated."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "not raw blot images",
+      "evidence_type": "exact_quote",
+      "reason": "Correct relative band ranking, summary-image limits and alternative mechanisms with proposed follow-up; approximate 95 rather than 100 control reading does not materially alter the interpretation. No raw-image features or measured validation outcomes are fabricated."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "not raw blot images",
+      "evidence_type": "exact_quote",
+      "reason": "Correct relative band ranking, summary-image limits and alternative mechanisms with proposed follow-up; approximate 95 rather than 100 control reading does not materially alter the interpretation. No raw-image features or measured validation outcomes are fabricated."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "would directly refute the assumption",
+      "evidence_type": "exact_quote",
+      "reason": "Finding another protein in a band does not exclude a co-migrating target; negative/ambiguous assay outcomes lack sensitivity and successful-rescue gates."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "would confirm molecular identity",
+      "evidence_type": "exact_quote",
+      "reason": "Peptides confirm protein presence, not the unique immunoreactive antigen; proposed gel/IP-MS interpretations fail to separate co-migration or captured partners."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Correct band ranking with indirect alternatives, but unsupported validation standard and definitive antigen assignment/confirmation claims.",
+  "item_score": 50
+}

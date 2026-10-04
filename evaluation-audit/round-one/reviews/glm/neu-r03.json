@@ -1,0 +1,109 @@
+{
+  "item_id": "neu-r03",
+  "response_id": "neu-r03",
+  "model_code": "glm",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:47:28.333194+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "df886b7e150312b332b1479a114140961a97391bb8fb685781c1830f2bac7ba5",
+  "service": {
+    "scientific_accuracy": 1,
+    "decision_value": 1,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 1,
+    "evidence_grounding": 1,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 37.5,
+  "reasoning_index": 31.25,
+  "errors": [
+    {
+      "quote": "dopamine activation at the originally expected time",
+      "issue": "The packet predicts a depression when reward is omitted at the expected time, followed by activation on the unexpectedly delayed delivery. The answer reverses that sign repeatedly and makes the wrong result a required preparation-validation gate."
+    },
+    {
+      "quote": "confirm activation at omitted expected time",
+      "issue": "This repeats the central packet reversal in the analysis rule. A valid omission depression could be incorrectly rejected, invalidating the stipulated stop/replication decision."
+    },
+    {
+      "quote": "large for p=0 rewarded \"lucky\" trials",
+      "issue": "Rewards at nominal probability zero and omissions at probability one change the experienced contingencies. Separate probes and model their learned conditional probabilities instead of treating them as outcomes from unchanged certainty anchors."
+    },
+    {
+      "quote": "a small reward is delivered after the p=0 cue",
+      "issue": "An unexpected reward after the waiting window does not prospectively decorrelate licking from value in that same window. Repeated delivery instead changes learned cue value; regression alone does not supply the intended independent manipulation."
+    },
+    {
+      "quote": "excluding movement-onset-aligned windows",
+      "issue": "Removing neural windows according to behavior can select on a consequence of expectation and discard real neural signals. Use independently defined recording-quality gates and report the estimand/selection consequences."
+    },
+    {
+      "quote": "their information content is confined to prediction violations at outcome",
+      "issue": "A flat monotonic probability coefficient does not exclude nonlinear uncertainty coding, heterogeneous signals or insufficient sensitivity. The negative conclusion exceeds the tested contrast."
+    },
+    {
+      "quote": "putative dopamine neurons identified by waveform criteria and/or",
+      "issue": "Waveform and anatomical location do not establish chemical identity. The possible tagging route is not operationalized, and the actual species, identity validation, reward volume and task/analysis calibration remain insufficiently specified."
+    }
+  ],
+  "rationale": "A prospective-value alternative is biologically meaningful but misses the specific uncertainty/intermediate-maximum continuation. More seriously, the obligatory timing-control sign is reversed relative to the packet, and the proposed behavior-decorrelation intervention does not identify its target. Original quality scores reflect these concrete failures, not model identity or strict second-round deductions.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All three complete final answers personally read against full question/reference/target; truncated Grok tail and Qwen middle sections separately read. Original rubric only; strict round inactive.",
+    "Historical qualification follows explicit reference core: uncertainty versus value, probability manipulation, separated phasic/delay readouts, intermediate-versus-endpoint prediction. Matched-value/magnitude challenges improve scientific identification; their incomplete implementation limits quality without silently becoming an extra binary gate.",
+    "Ramping or late pre-outcome activity can be an uncertainty correlate. Its timing alone cannot select hazard. Assess joint probability-by-time models and timing controls; never reject the historical direction solely because its signal grows near outcome.",
+    "Physiological dopamine identity is putative unless independently validated; selecting cells for event responses biases the sampled population. A preparation-level assay check is distinct from per-neuron response selection.",
+    "Fixed-magnitude inverted-U activity distinguishes certain prespecified linear/value models, not every nonlinear value, salience, temporal or movement model. Correlated covariate adjustment and held-out decoding do not alone identify cause.",
+    "Probability probes and run-limited schedules alter experienced contingencies. Preserve actual conditional probabilities, history and all valid anticipatory trials; future-outcome splits are diagnostics, not grounds for outcome-based neural selection.",
+    "The primary paper itself documents incomplete intermediate-probability coverage in a subset of cells. This is a limitation to disclose, not proof of fabrication or a reason to copy the sampling bias. Reference guardrails remain modern proposed controls, not claims that the historical study implemented them.",
+    "Source depth: primary PDF abstract, experiment description, Results and figure captions through Fig. 3 personally read. Supporting Methods not audited. Do not certify the paper or reconstruct missing procedures from those excerpts."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/FiorilloSchultz2003.pdf",
+      "scope": "Primary paper PDF: abstract, probability experiment, neural identification, phasic/delay Results and Fig. 1-3 captions; supporting Methods not audited."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "probability or magnitude",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "Prospective value coding",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "p = 0, 0.25, 0.5, 0.75, 1",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "confirm activation at omitted expected time",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Waiting-period firing increases monotonically with p",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

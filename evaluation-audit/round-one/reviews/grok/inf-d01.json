@@ -1,0 +1,78 @@
+{
+  "item_id": "inf-d01",
+  "model_code": "grok",
+  "response_id": "inf-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:07:10.284713+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "37feb2a4517d920c36693a76d19401a515124fd368549af328a85fd9e26b2b94",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "Standardize scores using discovery-fold means and SDs.",
+      "issue": "These are already paired-delta scores. Subtracting their training means makes the mean training score zero and changes an external zero test into a test against the development mean. Preserve the absolute zero-change baseline or explicitly restore the offset before testing mean paired change."
+    },
+    {
+      "quote": "Start with equal weights among observed platforms so missingness does not require imputation.",
+      "issue": "Reweighting by observed platforms produces different score definitions for different missingness patterns. Prespecify calibrated pattern-specific scores and validate their comparability, or retain a fixed estimand with uncertainty; missingness-dependent renormalization is not automatically benign."
+    },
+    {
+      "quote": "Where almost all post-treatment metabolite samples share a batch (M2), declare the metabolite treatment contrast non-identified unless a bridge exists.",
+      "issue": "Near concentration is a warning, not proof of non-identifiability without the pre/post layout. Earlier statements correctly require rank and overlap; apply that conditional rule consistently."
+    },
+    {
+      "quote": "patient bootstrap intervals are the default uncertainty",
+      "issue": "If shared batch effects induce residual correlation across patients, independent patient resampling can understate uncertainty. Specify how batch clustering is handled when it remains after adjustment, with limitations for few batches."
+    }
+  ],
+  "rationale": "Strong evidence hierarchy, explicit protection against invalid batch permutation, nested selection and independent testing. Correct the centering of delta scores, missing-modality estimand and residual clustering rule; those details affect the numerical endpoint even with otherwise careful safeguards.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All twelve complete received final answers, the exact question/packet and full reference answer were personally read. No API judge or hidden reasoning was used; no real pipeline execution was performed.",
+    "M2 states that most post-treatment metabolomics samples share one batch, but does not specify how pretreatment samples are distributed. Check patient/time/batch design rank, overlap and precision; concentration alone is not proof of complete confounding.",
+    "Different batches across RNA and protein do not imply independent artifacts. Shared samples, handling, composition and time-aligned allocation can create cross-layer concordance.",
+    "The reference recommends paired contrasts as integration input. Centered delta factors describe between-patient heterogeneity and need not retain a mean shift; one delta row per patient has no pre/post label to classify. A sample-level score or explicit retained mean-effect model is a valid alternative.",
+    "The reference rule rejecting batch- or donor-dominated factors is too categorical. Association/variance dominance is diagnostic, not proof of artifact. For one delta per patient, a separate fixed effect for each donor is not a meaningful factor-association test.",
+    "Pairing alone does not justify sign permutations. Require a suitable null symmetry/exchangeability model, address technical dependence and rerun selection. Joint row permutations leave unsupervised covariance unchanged.",
+    "External projection with frozen weights cannot validate those same weights by correlation. Independent cohorts do not supply matched patient-score vectors; compare a defined population-level endpoint.",
+    "Missing-view algorithms do not identify MNAR mechanisms. Missing-platform renormalization changes the score definition. Refit learned processing within training folds and predefine external score applicability.",
+    "The reference protocol says stop and restart if external data were used for tuning. Restarting on the same exposed cohort does not restore independence; a revised program requires a new untouched evaluation.",
+    "The reference power wording must include biological paired variation, design and multiplicity. Technical replicates alone do not estimate biological sampling variability, and no universal n cutoff is inferred from 30 patients.",
+    "Measured/testable enrichment universes, dependence-aware tests and frozen annotations matter; a ranked analysis of all filtered tested features can satisfy this without a mandatory keyword. Late integration and pathway-first discovery are valid alternatives.",
+    "Purity changes can be part of the treatment-associated specimen response. Adjusting a post-treatment variable changes the estimand and does not automatically prove or remove confounding.",
+    "Original frozen keys and candidates remain unchanged. Corrections are disclosed here; reviews are provisional, unblinded and not expert validation."
+  ],
+  "review_sources": [
+    {
+      "title": "Argelaguet et al. (2018), Multi-Omics Factor Analysis",
+      "url": "https://link.springer.com/article/10.15252/msb.20178124",
+      "scope": "Original model overview, input/output definitions and initial validation passages inspected; no full supplementary audit or numerical rerun."
+    },
+    {
+      "title": "MOFA2 author documentation: FAQ",
+      "url": "https://biofam.github.io/MOFA2/faq.html",
+      "scope": "Read normalization, missingness, factor interpretation, group centering and covariate guidance. Background for model distinctions; no universal sample-size threshold imported."
+    },
+    {
+      "title": "MEFISTO author documentation",
+      "url": "https://biofam.github.io/MOFA2/MEFISTO.html",
+      "scope": "Read covariate-input, smooth-factor and multiple-group overview to distinguish temporal/spatial modeling from generic mixed-model batch adjustment."
+    }
+  ],
+  "overall_benchmark_score": null
+}

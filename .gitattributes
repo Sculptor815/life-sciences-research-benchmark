@@ -1,0 +1,2 @@
+# Preserve exact published audit bytes and checksums on every platform.
+evaluation-audit/** -text

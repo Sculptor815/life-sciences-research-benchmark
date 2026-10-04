@@ -1,0 +1,238 @@
+{
+  "model_code": "glm",
+  "item_id": "inf-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:28:12.498834+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "ad336a9d4287b2082a201dc0a77cf17bb9cc202b743fa8f90412c6c0b31b071c",
+  "question_sha256": "8138345556a001f3fc4bac1a0c5986dac661ae6888f5a3dbc53bb26d7b98aa09",
+  "reference_sha256": "912190a8c7d04d1735a11f4798b4464c402e57d4430430d189830cd0e29fdd0d",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "0ee15daf7fabf239902b66f7e5c49ab48bd38252f1e1e81d1c752f099933dc3c",
+  "primary_route": "Proposed donor-average treatment contrast with hierarchical comparison, donor-grouped resampling and null calibration, and protected donor-level validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2787,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original experimental Methods/supplements to verify allocation and sampling conditions and release-specific model protocols. Reconstructing identifiers and naming prior evidence alone is insufficient."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "with 4 vs 4 donors the floor is",
+      "evidence_type": "exact_quote",
+      "reason": "For the stated exhaustive balanced two-sided calculation, 2 / choose(8,4) = 2/70 = 0.02857, not the claimed approximately 0.014. The latter is 1/70."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "set initial values from a pilot or from the first blindable batch",
+      "evidence_type": "exact_quote",
+      "reason": "No objective reference calibration-to-acceptance criterion and failure response defines those QC values."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Cell count per donor becomes a covariate or weight in analysis.",
+      "evidence_type": "exact_quote",
+      "reason": "The target is not fixed as equal-donor versus cell/precision-weighted, and using post-treatment yield as a covariate can change the estimand. No explicit rule protects the intended donor-average effect."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the donor-level noncentrality is approximately",
+      "evidence_type": "exact_quote",
+      "reason": "For equal two-arm sizes and an effect standardized by donor-summary SD, noncentrality is delta*sqrt(n/2), not delta*sqrt(n) followed by another cell-level design-effect adjustment. The proposed planning approximation can misstate donor requirements despite the useful simulation plan."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational donor attrition/missingness policy or explicit separation of biological low viability/yield from technical failure in the exclusion rules."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "permute treatment labels **across donors**",
+      "evidence_type": "exact_quote",
+      "reason": "The permutation implementation does not preserve the proposed blocked allocation. No high-dimensional multiplicity method/family is specified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit refreeze and fresh independent confirmation after revising failed or ambiguous procedures."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No immutable raw-input hashes, pinned executable environment and exact analysis command provenance."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "all cells of a donor stay in the same fold",
+      "evidence_type": "exact_quote",
+      "reason": "Grouping alone is insufficient: fitted preprocessing, QC tuning and features are not explicitly restricted to each internal training fold."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "labels randomly permuted within donors",
+      "evidence_type": "exact_quote",
+      "reason": "Treatment is constant within each donor: permuting those labels within a donor is either a no-op or changes the randomization unit. It is not a valid treatment null calibration. Complete batch-confounding and informative-missingness stress are also not operational."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical rerun with tolerances and runtime/resource/failure logs."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P02",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Explicit grouped units, simulation-based test selection, a finite ICC range and donor-level holdout are useful. The two-sided permutation floor and donor-power approximation are incorrect, and within-donor label permutation cannot provide the proposed null. Primary continuous fitting alternatives have a concrete calibration-based selection rule, so P02 is not charged merely for proposed values.",
+  "item_score": 35
+}

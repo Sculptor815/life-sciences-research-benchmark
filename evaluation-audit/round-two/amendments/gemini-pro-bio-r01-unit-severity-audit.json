@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-04T06:51:58.656471+00:00",
+  "reason": "Consistent substantive-error threshold: do not charge an incidental coordinate-unit label again when the intended method is unambiguous. Retain the torque-versus-energy calibration error.",
+  "before_sha256": "dec74d85748ea02da398c8b48a95140ca89236c0b91ef1b6abcad1a2bbaa3702",
+  "after_sha256": "4e558c2a689c93dce4ac3e0ad420c9582674e8bc0ffd63ebe5da34e29a2659ab",
+  "Q2_before": 15,
+  "Q2_after": 20,
+  "item_before": 6,
+  "item_after": 8
+}

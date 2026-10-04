@@ -1,0 +1,112 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.071519+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "6d8e5640a409fa2014699aad3abb1cc328f54a18a0c14ecf6f141128fb3d4eba",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "consistent with fragment‑expression toxicity but full‑length tolerance",
+      "issue": "Full-length tolerance is not reported in the packet. C-terminal autoinhibition is a justified proposed mechanism, not an established packet-derived observation."
+    },
+    {
+      "quote": "Dose–response cooperativity (Hill > 1)",
+      "issue": "A Hill slope above one is not necessary for pore formation and does not establish oligomer stoichiometry. Requiring it in the positive decision rule can reject a real direct pore mechanism."
+    },
+    {
+      "quote": "a distinct host component executes membrane injury",
+      "issue": "Native-membrane dependence, fraction rescue and candidate deletion do not distinguish an executor from a lipid/assembly regulator. Selective removal can also alter membrane composition; use matched membrane-integrity controls and purified-component causal tests."
+    },
+    {
+      "quote": "Positive pore‑forming control (e.g., a well‑characterized pore‑former or detergent titration)",
+      "issue": "Detergent calibrates release, not pore formation. Include explicit active-caspase-alone, free-dye/protein and no-liposome binding controls; cleavage-resistant substrate plus caspase and two protein lineages reduce but do not replace these checks."
+    },
+    {
+      "quote": "correct localization",
+      "issue": "A lipid-binding mutant may legitimately lose localization; require preservation of properties not targeted by the mutation, especially folding, abundance and cleavage. Do not impose retained membrane localization on a binding-loss mechanism."
+    },
+    {
+      "quote": "e.g., 0–several µM",
+      "issue": "Dose range, lipid molar formulations and cell working conditions remain insufficiently specified for direct implementation."
+    }
+  ],
+  "rationale": "Broad direct-pore program with two protein production routes, native cleavage, EM, conductance and cell validation; correct early-permeability versus terminal-rupture separation. Several inference/control and operational gaps remain, but core historical direction is clearly tested.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does the gasdermin D N‑terminal fragment",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Direct, intrinsic, lipid‑selective pore former.",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "sufficiency on protein‑free bilayers",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Electrical pore characterization",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "an intrinsic, lipid‑selective pore‑forming protein",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    }
+  },
+  "historical_direction_hit_at_1": true,
+  "overall_benchmark_score": null
+}

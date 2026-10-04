@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "neu-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:22:50.496072+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "bca53352df4ee8a0e5c168712f0a86645d51f7d1b703274b49414d596bc61a49",
+  "question_sha256": "59d29b23d93b7785f7e6965d9a23209f90e316836b9f4e9371b8b3a9f7e1c560",
+  "reference_sha256": "1206c206c57094dab8fe0b44054d81cf50a998470190499bd71d53a3d2d1ae0c",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "114d2f92317f45c2a47d8b6a86adfd4d29a16f89ac9b232d1cced792218daf92",
+  "primary_route": "Sign-reversed binocular spatial correspondence manipulation, matched marginal visual statistics and gaze-corrected receptive-field maps.",
+  "complete_final_answer_read": true,
+  "word_count": 3190,
+  "first_round_scientific_quality": 90.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of previous primary Methods, supplements or a validated technical protocol is proposed. Local pilots, welfare approval and promises to fill unknown settings do not meet this separate requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core exposure duration/intensity, stimulus timing and cortical acquisition/response settings remain a list to select later, without executable quantitative settings or a sufficiently specified calibration-to-setting procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Optical/stimulus and response calibration is named, but quantitative acceptance-to-action thresholds or a concrete derivation of tolerances for eye isolation, delivered contrast and mapping reliability are absent."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Contrasts and clustering are recognized, but the actual response/distribution model, assumption diagnostics and specified multiplicity policy remain incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Age, exposure dose and stimulus-parameter exploration has no bounded candidate grid or objective range-selection/search-stop rule before locking."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Sign-following displacement",
+      "evidence_type": "exact_quote",
+      "reason": "Sound focused instructive-versus-permissive question with a justified feasibility-gated model, sham/normal and reversed-offset controls, optical/eye-alignment confounds and carefully bounded inference. No claim of packet-supplied developmental results."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Angular displacement estimand and binocular/unresponsive denominators are explicit. Pilot independent-unit variance targets 90% power, cluster allocation is respected, recordings/analysis are coded and balanced, and technical/welfare loss is distinguished from biological loss."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Angular displacement estimand and binocular/unresponsive denominators are explicit. Pilot independent-unit variance targets 90% power, cluster allocation is respected, recordings/analysis are coded and balanced, and technical/welfare loss is distinguished from biological loss."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Angular displacement estimand and binocular/unresponsive denominators are explicit. Pilot independent-unit variance targets 90% power, cluster allocation is respected, recordings/analysis are coded and balanced, and technical/welfare loss is distinguished from biological loss."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "90% power",
+      "evidence_type": "exact_quote",
+      "reason": "Angular displacement estimand and binocular/unresponsive denominators are explicit. Pilot independent-unit variance targets 90% power, cluster allocation is respected, recordings/analysis are coded and balanced, and technical/welfare loss is distinguished from biological loss."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "new approved study",
+      "evidence_type": "exact_quote",
+      "reason": "Delivery/mapping/state faults have specific diagnostic actions; changed delivery requires a new approved study, with protocol/software/calibration freeze before confirmation. Complementary monocular maps and binocular offset response challenge the result. Raw IDs, calibration, code versions and exclusions are retained; no-effect and selected-survivor limitations are explicit."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "new approved study",
+      "evidence_type": "exact_quote",
+      "reason": "Delivery/mapping/state faults have specific diagnostic actions; changed delivery requires a new approved study, with protocol/software/calibration freeze before confirmation. Complementary monocular maps and binocular offset response challenge the result. Raw IDs, calibration, code versions and exclusions are retained; no-effect and selected-survivor limitations are explicit."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "new approved study",
+      "evidence_type": "exact_quote",
+      "reason": "Delivery/mapping/state faults have specific diagnostic actions; changed delivery requires a new approved study, with protocol/software/calibration freeze before confirmation. Complementary monocular maps and binocular offset response challenge the result. Raw IDs, calibration, code versions and exclusions are retained; no-effect and selected-survivor limitations are explicit."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "new approved study",
+      "evidence_type": "exact_quote",
+      "reason": "Delivery/mapping/state faults have specific diagnostic actions; changed delivery requires a new approved study, with protocol/software/calibration freeze before confirmation. Complementary monocular maps and binocular offset response challenge the result. Raw IDs, calibration, code versions and exclusions are retained; no-effect and selected-survivor limitations are explicit."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "new approved study",
+      "evidence_type": "exact_quote",
+      "reason": "Delivery/mapping/state faults have specific diagnostic actions; changed delivery requires a new approved study, with protocol/software/calibration freeze before confirmation. Complementary monocular maps and binocular offset response challenge the result. Raw IDs, calibration, code versions and exclusions are retained; no-effect and selected-survivor limitations are explicit."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "A valuable alternative causal study, with strong allocation and inference safeguards; execution/calibration ranges and detailed statistical decisions remain deferred.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The developmental experience question matches broadly, but the chosen intervention preserves each eye input and reverses spatial correspondence, measuring map offsets. It intentionally defers necessity/deprivation. It does not jointly propose unilateral deprivation, ocular-dominance redistribution and an experienced-eye shift, so is not the sealed historical direction. Quality is credited independently.",
+  "item_score": 28.0
+}

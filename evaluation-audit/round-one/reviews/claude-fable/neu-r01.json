@@ -1,0 +1,30 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "claude-fable",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:58:42.156904+00:00",
+  "review_type": "single AI curator; completed refusal record, question and reference inspected",
+  "candidate_sha256": "81717c015a80fed9b56c056a8977507dfeec8c90ec243c6eb3219dbc0afa22fa",
+  "service": {
+    "scientific_accuracy": 0,
+    "decision_value": 0,
+    "actionability": 0,
+    "verifiability": 0,
+    "communication": 0
+  },
+  "service_score": 0,
+  "reasoning_index": null,
+  "reasoning_status": "not assessable: no submitted scientific explanation",
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "errors": [],
+  "rationale": "Provider returned an empty valid refusal for the proposed neural-ensemble acquisition study. There is no submitted answer or historical-direction proposal to assess. Task performance and direction hit are zero; explanation quality is unavailable. Preserve the completion and do not selectively retry.",
+  "confidence": "high",
+  "overall_benchmark_score": null
+}

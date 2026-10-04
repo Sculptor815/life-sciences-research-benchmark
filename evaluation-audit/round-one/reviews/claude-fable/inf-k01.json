@@ -1,0 +1,66 @@
+{
+  "item_id": "inf-k01",
+  "model_code": "claude-fable",
+  "response_id": "inf-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:42:19.215577+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "176069449f3165f979bd0e351079594caf623b4eb9d6881589a4491b34348411",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 86.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "within which the causal variant(s) almost certainly lie",
+      "issue": "An appreciable-r-squared neighborhood is not a calibrated causal confidence region, and no LD threshold or locus statistics are supplied. Its coverage cannot be called almost certain; use complete variant coverage and model-based fine mapping."
+    },
+    {
+      "quote": "a specific sequence element or allele is *sufficient* to alter expression",
+      "issue": "The listed interventions include deletion and CRISPRi, which test effects of loss and can support necessity under conditions, not automatically sufficiency of the sequence. Match the causal claim to the intervention."
+    },
+    {
+      "quote": "that modulating that gene alters a relevant cellular phenotype",
+      "issue": "Separate allele-to-expression and gene-to-phenotype effects do not alone establish mediation of the allele phenotype through that gene. Add an appropriate rescue/epistasis or equivalent mediation test; retain the otherwise useful model-system limitations."
+    }
+  ],
+  "rationale": "Strong and mostly well-qualified essay, including pleiotropy, multiple signals, ancestry and model limitations. The main corrections are overconfident LD-region coverage and conflating sequence sufficiency or parallel perturbation effects with the complete mediation chain. The 1510-word whitespace count is only marginally above the limit and is not separately penalized.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Judge this as a 1500-word conceptual essay, not a full experimental protocol. The supplied packet is synthetic and contains no numeric locus results.",
+    "The draft retains references to old multiple-choice choices and a sequencing-only claim absent from the final prompt. Do not demand rejection of an unasked WGS claim for full credit.",
+    "The lead SNP may itself be causal; calling it a marker does not establish noncausality. Controlled GWAS supports an associated locus under assumptions, not absolute proof of a direct causal mechanism.",
+    "A statistical credible set contains variants, not effector genes. Membership or proximity cannot alone assign a target; define coverage per model/signal and account for multiple effects.",
+    "High LD limits resolution; only exact collinearity creates the simple non-identifiability limit. Do not equate an arbitrary r-squared threshold or near-perfect LD with impossibility at any sample size.",
+    "Colocalization supports shared genetic signals, not molecular mediation. Absent evidence differs from evidence against a shared signal; context, power, priors and multiple signals matter.",
+    "Fine mapping, colocalization and functional assays are complementary and may inform each other. No fixed order or availability of a molecular QTL is universally necessary.",
+    "Allelic-expression measurement alone is observational. Allele editing, element deletion and gene loss/gain answer different questions; phenocopy alone does not establish mediation, and knockout alone does not establish sufficiency.",
+    "Use signal-specific joint/conditional models and appropriate ancestry/variant coverage. Removing a lead marker does not guarantee either persistence or disappearance of every true effect.",
+    "Reference simplifications are clarified in this review metadata; original frozen keys and all candidate responses remain unchanged. No raw-data execution is claimed."
+  ],
+  "review_sources": [
+    {
+      "title": "Giambartolomei et al. (2014), Bayesian Test for Colocalisation",
+      "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004383",
+      "scope": "Reviewer read introduction, model overview and interpretation/limitations passages, including shared-signal versus causality and low-power cautions. No full supplementary or numerical audit."
+    },
+    {
+      "title": "Watanabe et al. (2017), FUMA",
+      "url": "https://www.nature.com/articles/s41467-017-01261-5",
+      "scope": "Primary-source overview of positional, molecular-QTL and chromatin-interaction mapping inspected. No software run or full methods audit."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,184 @@
+# GLM 5.3 FlashX / inf-d03
+
+Original final answer, shared by both scoring rounds.
+
+# Proposed Analysis and Validation Protocol for Studies with Treatment Assigned at the Donor/Animal Level and Many Cells or Fields Measured Per Unit
+
+**Status: fully proposed. No experiments or analyses have been performed. Exact donor numbers, cell counts, effect sizes, and variance components are unavailable and must be calibrated empirically as described below.**
+
+---
+
+## 1. Core Inference Principle and Evidence-to-Inference Chain
+
+**Evidence (from the pseudoreplication record):**
+1. Pseudoreplication is inference that treats treatment subsamples or dependent observations as independent replication.
+2. The randomized treatment level defines the experimental unit.
+3. Observational units (cells, fields) and biological units (donors, animals) can differ.
+4. Very small independent *n* affects precision and robustness but does not automatically invalidate every model-based test.
+5. Clustering may alter uncertainty without changing a point estimate; high intraclass correlation (ICC) or loss of significance after clustering does not by itself prove a false biological effect.
+
+**Inference chain adopted by this protocol:**
+- Because treatment is assigned to donors/animals, donors/animals are the experimental units; the treatment *p*-value and confidence interval must be calibrated against variation **between** randomized units, not variation between cells within a unit (from points 1–2).
+- Cells/fields are observational units; they contribute information about within-donor measurement structure and can legitimately increase precision of donor-level estimates, but they do not multiply the number of treatment replicates (point 3).
+- Therefore the analysis must report two sample sizes: the number of observed cells (describing measurement density) and the number of randomized units (describing inferential replication). Tests with few randomized units remain informative but must be interpreted with widened uncertainty; failing to reach significance under a clustered analysis is not evidence that the original clustered-cell result was a false positive, and a large ICC is not evidence of fraud or artifact — it is expected structure to be modeled (points 4–5).
+
+**Conclusion governing the protocol:** every confirmatory claim about treatment is a **donor-level claim**, analyzed with methods whose resampling, mixed-model, or aggregation structure respects the randomization hierarchy, validated on held-out donors, with null calibration appropriate to the small number of randomized units.
+
+---
+
+## 2. Ordered Operational Protocol
+
+### Step 1 — Preparation and Quality Checks
+
+1. **Pre-register the analysis plan** (or a dated internal analysis protocol) before data collection, specifying: primary endpoint, primary model, donor as randomization unit, cell as observational unit, planned grouped resampling scheme, and acceptance criteria (Section 3).
+2. **Define the experimental unit explicitly in writing**: "One experimental unit = one donor (or animal) to which treatment is assigned." Record this in the protocol and in every results table.
+3. **Define cell/field-level QC rules before unblinding**: e.g., segmentation quality thresholds, viability markers, field exclusion criteria, minimum cells per donor for donor-level summaries. These thresholds are unknown a priori; set initial values from a pilot or from the first blindable batch, freeze them, and document any post hoc changes as exploratory.
+4. **Assess batching**: record donor processing date, batch, operator, reagent lot, and instrument run. Batch will enter the analysis as a covariate or blocking factor.
+5. **Power/calibration planning (proposed, not executed)**: because donor numbers, ICC, and effect sizes are unknown, run the simulation calibration in Step 8.1 *before* finalizing sample size commitments where feasible; if data collection has begun, treat early donors as a training/calibration set and exclude them from confirmatory inference unless the protocol is frozen beforehand.
+
+### Step 2 — Independent Units and Sampling Design
+
+1. **Recruit/assign donors at the unit that matches the treatment mechanism.** If treatment acts on the donor (systemic drug, disease status, genotype), the donor is the unit. If treatment is applied to split samples from one donor (e.g., ex vivo stimulation of cells from a single donor in two conditions), the **donor is still the unit for the treatment contrast** — the paired within-donor comparison is analyzed with donor-paired methods, never as 2 × (cells per donor) replicates.
+2. **Balance the design**: randomize donors to treatment arms, stratifying where possible on available covariates (sex, age band, batch). Record the allocation sequence.
+3. **Set cell sampling density per donor**: a fixed target number of cells or fields per donor (e.g., a target *m* with a minimum acceptable *m*<sub>min</sub>) rather than letting cell counts differ arbitrarily across donors. Cell count per donor becomes a covariate or weight in analysis. The specific target *m* is calibrated via the variance-component simulation (Step 8.1): choose *m* at the point where the donor-level standard error stops improving materially, given a plausible ICC.
+
+### Step 3 — Allocation, Blinding, and Randomization
+
+1. **Randomize at the donor level** with a documented, reproducible randomization scheme (seeded, block-randomized if batch is a concern).
+2. **Blind**: operators acquiring images/measurements and analysts running QC and analysis should be blinded to treatment until the analysis dataset is locked.
+3. **Lock the dataset**: freeze QC-passed data, the analysis script, and acceptance criteria before unblinding. Any change after lock is labeled exploratory.
+
+### Step 4 — Intervention and Sampling
+
+1. Apply the intervention **at the donor/animal level**, following the treatment schedule appropriate to the biology; document timing relative to sampling.
+2. Sample cells/fields from each donor using a **pre-specified sampling plan** (number of fields, imaging positions, or sorted-cell targets) that is identical across treatment arms to avoid confounding sampling effort with treatment.
+3. Include technical controls per batch (staining/isotype controls, reference donor if feasible) to allow batch adjustment.
+
+### Step 5 — Measurements
+
+1. Acquire measurements (flow cytometry, imaging, scRNA-seq, etc.) under locked acquisition settings.
+2. Record for every observation: donor ID, treatment arm, batch, field/plate position, and cell-level features. The donor ID is mandatory in the analysis dataset; analyses that drop it are prohibited.
+3. Apply the pre-specified cell-level QC, then compute **donor-level summaries** (pseudobulk aggregates: donor means, medians, proportions, or pseudobulk gene/feature profiles).
+
+### Step 6 — Controls
+
+1. **Negative/vehicle controls** randomized at the same donor level.
+2. **Positive controls** (if available) to verify assay sensitivity; positive-control results validate the assay but are analyzed separately from the primary treatment contrast.
+3. **Technical replicates** (re-run wells, duplicate stains) may be averaged at the measurement level; they are not experimental replicates.
+4. **Reference-standard or pooled sample** run across batches to quantify batch drift.
+
+---
+
+## 3. Analysis Plan (Step 7)
+
+All analyses below are proposed. The **primary analysis** is donor-level (7.2/7.3). Cell-level analyses are secondary and descriptive of within-donor structure.
+
+### 7.1 Dataset structure
+Long-format table: one row per cell, columns for donor ID (the clustering key), treatment (donor-level), batch, and cell features. One row per donor in the pseudobulk table.
+
+### 7.2 Pseudobulk / aggregate donor-level comparison (primary option A)
+Aggregate cells to donor-level summary statistics (means, proportions, or pseudobulk profiles for -omics). Compare treatment arms using the donor-level summaries:
+- Two groups: two-sample *t*-test or Wilcoxon on donor summaries (use Wilcoxon when randomized-unit counts are small and normality of donor summaries is doubtful; note the calibration limits in 8.3).
+- Covariates: linear model on donor summaries with batch/sex as covariates.
+- For high-dimensional data: differential features tested on pseudobulk profiles with donor as the replicate (analogous to standard bulk-RNA-seq differential expression with *n* = number of donors).
+
+### 7.3 Hierarchical (mixed-effects) model (primary option B)
+Fit a model with treatment as a **donor-level fixed effect** and a **donor random intercept**:
+
+  response ~ treatment + covariates + (1 | donor)  [+ (1 | batch)]
+
+Report the treatment fixed-effect estimate, its standard error, CI, and *p*-value with denominator degrees of freedom appropriate to the number of donors (e.g., Satterthwaite/Kenward–Roger). For non-Gaussian outcomes (proportions, counts), use GLMM with the same structure.
+
+### 7.4 Grouped resampling (cluster bootstrap / permutation at the donor level)
+- **Cluster bootstrap**: resample **donors with replacement** within each treatment arm, recompute the aggregate or refit the model, and build CIs (e.g., percentile or BCa) from the donor-level bootstrap distribution. Cells travel with their donor; cells are never resampled independently.
+- **Donor-label permutation**: permute treatment labels **across donors** (not cells), recompute the test statistic, and locate the observed statistic in the label-permuted distribution. This is the preferred primary inference when donor counts are very small, because it makes no distributional assumption beyond exchangeability under the null.
+
+### 7.5 Null calibration
+Because small donor counts make asymptotic *p*-values unreliable:
+1. **Permutation null**: as in 7.4; the minimum achievable two-sided permutation *p*-value is 2 / C(n<sub>1</sub>+n<sub>2</sub>, n<sub>1</sub>) — acknowledge this floor in the protocol (e.g., with 4 vs 4 donors the floor is ≈ 0.014 at best for exhaustive enumeration; with fewer donors, exact significance at α = 0.05 may be unattainable, and results must be reported as effect estimates with CIs rather than significance claims).
+2. **Negative-control calibration**: apply the full pipeline (including cell-level aggregation and clustering) to a feature known to be unaffected by treatment, or to labels randomly permuted within donors, to verify that the procedure's false-positive rate is controlled.
+3. **Simulation-based calibration** (Step 8.1): simulate hierarchical data under the null with the estimated ICC and donor counts, run the full analysis, and confirm nominal type-I error.
+
+### 7.6 Held-out validation
+1. **Donor-level split**: if donor counts permit, reserve a fraction of donors (proposed: ≥ 25–30%, stratified by treatment arm) as a held-out set, unused during model/QC tuning and feature selection.
+2. Fit/tune on the training donors; evaluate the pre-specified effect in the held-out donors once, unblinded only at the end.
+3. If donor counts are too small to split (< ~10–12 total), substitute **leave-one-donor-out cross-validation** for stability assessment and report that a fully independent held-out confirmation was not feasible — do not present cross-validated results as independent replication.
+4. Any predictive model built on cells must be evaluated with **donor-grouped cross-validation** (all cells of a donor stay in the same fold); cell-level random folds are prohibited because they leak donor information.
+
+### 7.7 Secondary, cell-level analyses
+Cell-level distributions, subpopulation frequencies, and within-donor heterogeneity are reported descriptively or with hierarchical models as above, and are **never** accompanied by unclustered cell-level significance claims about treatment.
+
+---
+
+## 4. Calibration Procedures for Unknown Parameters (Step 8)
+
+All parameters below are currently **unreported/unknown**; the protocol prescribes how to obtain them, it does not assume values.
+
+### 8.1 Variance components (donor-level variance σ²<sub>b</sub>, cell-level variance σ²<sub>w</sub>; ICC = σ²<sub>b</sub>/(σ²<sub>b</sub>+σ²<sub>w</sub>))
+- **Procedure**: fit the mixed model of 7.3 to pilot data (or the first blinded batch) to estimate σ²<sub>b</sub>, σ²<sub>w</sub>, and ICC for the primary endpoint. If no pilot exists, assume a range of plausible ICCs (e.g., 0.05–0.8, spanning weak to strong donor clustering) and design against the upper range, since high ICC inflates donor-level uncertainty most.
+- **Design implication**: for a target donor-level standardized effect δ, the donor-level noncentrality is approximately δ·√(n<sub>donors per arm</sub>) adjusted by the design effect; the number of cells per donor *m* reduces within-donor noise of the donor summary as σ²<sub>w</sub>/m but cannot reduce σ²<sub>b</sub>. Choose *m* where the marginal gain inverts (diminishing-returns point), then allocate remaining resources to **more donors**, which is the only lever that increases independent replication.
+
+### 8.2 Number of donors
+- **Procedure**: run a simulation-based power analysis using the calibrated variance components: simulate donor-level data under a range of effect sizes (minimum biologically meaningful effect specified by the investigator, not assumed from literature), analyze each simulated dataset with the planned pipeline, and select the donor count achieving target power (proposed: ≥ 80% at α = 0.05) or state plainly that the achievable donor count limits power, and pre-specify that the study is exploratory.
+
+### 8.3 Test selection under small donor counts
+- **Procedure**: in the simulation framework, compare candidate tests (mixed-model with Satterthwaite df; permutation test; Wilcoxon on donor summaries) for type-I error control and power at the actual planned donor counts. Select the test with controlled type-I error; where the permutation floor exceeds α, plan the primary result as an effect estimate with a bootstrap or Bayesian CI rather than a dichotomous significance call. Note the known limitation that with very few donors, Wilcoxon cannot reach *p* < 0.05 in a two-sided test below modest *n*; this is a property of small independent *n* affecting precision and robustness (evidence point 4), not a flaw unique to any one test.
+
+### 8.4 Resampling scheme tuning
+- **Procedure**: fix the number of bootstrap/permutation resamples (proposed: ≥ 10,000 permutations; ≥ 2,000 bootstrap replicates for stable percentile CIs) and verify in simulation that Monte Carlo error in the *p*-value is well below α.
+
+---
+
+## 5. Acceptance, Stopping, and Troubleshooting Criteria (Step 9 — proposed)
+
+### Acceptance criteria (pre-specified)
+1. Primary treatment effect tested at the donor level passes the pre-specified threshold (permutation *p* or model-based CI excluding the null) **and** shows the same direction of effect in the held-out donors (or consistent sign in ≥ a pre-specified fraction of leave-one-donor-out folds).
+2. Negative-control calibration shows nominal type-I error (95% CI of simulated false-positive rate includes α, or no inflated significant findings on null features).
+3. Both counts reported: **observed cells** (n<sub>cells</sub>) and **randomized units** (n<sub>donors</sub>) for every arm and every analysis.
+
+### Stopping rules
+- Stop enrollment when the simulated/sequential power target is met or when the pre-committed maximum donor count is reached.
+- Interim looks (if any) require α-spending; a blinded QC look is permitted without inference.
+
+### Troubleshooting decision table (proposed actions, not results)
+
+| Observed problem | Possible cause | Proposed action |
+|---|---|---|
+| ICC very high; clustered analysis loses significance | True donor dominance of variance; or confounding of donor with batch | Report honestly; check batch–treatment balance; increase donor *n*; per evidence point 5, loss of significance after clustering does not by itself prove the cell-level effect was false — report both analyses with the clustered one as primary |
+| Cluster bootstrap CIs unstable | Too few donors | Switch primary inference to exhaustive donor-label permutation; report effect size with wide CI; label the study exploratory |
+| Permutation floor > 0.05 | Too few donors for dichotomous testing | Pre-plan (as here) to lead with estimates/CIs; consider Bayesian hierarchical model with weakly informative priors as sensitivity analysis |
+| Mixed-model convergence failure | Sparse data, boundary variance components | Simplify random-effects structure; fall back to pseudobulk donor-summary test; document |
+| Held-out donors contradict training donors | Small-sample instability or true heterogeneity | Report both; investigate donor-level covariates (batch, metadata); do not pool post hoc to manufacture significance |
+| Cell counts differ wildly across donors | Sampling failure | Use donor summaries with weights (e.g., precision weights) or cap cells per donor; verify no association of cell count with treatment |
+
+---
+
+## 6. Reporting Requirements
+
+Every result must state, side by side:
+- **Observed-cell count** per arm (measurement density; *not* the replicate count).
+- **Randomized-unit count** (donors/animals per arm; the inferential replicate count).
+- The method by which uncertainty was computed (cluster bootstrap, permutation, mixed-model df), with the resampling key named (donor).
+- Whether the analysis was confirmatory (pre-locked) or exploratory.
+- Estimated ICC and variance components for the primary endpoint.
+
+Language template: "Treatment was assigned to *N* donors per arm; *M* cells were measured in total (median *m* per donor). The treatment effect was tested at the donor level by [method]; the effect estimate was [estimate] ([CI]) with donor-level *p* = [*p*]."
+
+---
+
+## 7. Alternatives Considered and Limits
+
+**Alternatives**
+1. *Naïve cell-level test* (t-test on all cells): rejected as primary — the defining pseudoreplication error.
+2. *GEE with donor clusters*: valid alternative to mixed models, gives population-averaged effects; useful as a sensitivity analysis but requires reasonable donor counts for robust variance estimation.
+3. *Bayesian hierarchical model*: attractive when donor counts are very small (partial pooling stabilizes estimates); proposed as sensitivity/secondary, with priors pre-specified and sensitivity-tested.
+4. *Aggregate-then-test at a different level* (e.g., field means): valid only if fields are independent subsamples of the donor; the donor remains the unit for the treatment contrast.
+
+**Limits**
+- With very few donors, no analysis fully rescues precision; the honest output is a well-calibrated estimate with a wide CI, or an explicitly exploratory finding requiring an adequately powered replication.
+- Permutation tests assume exchangeability of donors under the null; violations (strong confounding of donor covariates with treatment) break this.
+- Held-out validation with small donor splits has high variance itself; it reduces but does not eliminate the risk of overfitting.
+- Variance-component estimates from pilots are uncertain; calibration conclusions should be reported as ranges across plausible ICCs.
+- If treatment is applied ex vivo to split samples from one donor, inference is limited to that donor's cells under those conditions — it cannot be generalized to a donor population without multiple donors.
+
+**Key uncertainty to carry forward**: all design parameters (donor *n*, cells per donor, ICC, effect size) are unknown and must come from the Step 8 calibration on pilot data before the confirmatory analysis is frozen. Until then, every element above remains a proposal.

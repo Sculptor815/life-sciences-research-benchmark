@@ -1,0 +1,87 @@
+{
+  "item_id": "inf-r01",
+  "model_code": "gpt-astra",
+  "response_id": "inf-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T13:39:14.709246+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "ae58e0e021a20f8c2ce3c887634b917402ec539becd2554ce60a269edfb62e16",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Record optimizer starts, tolerances, boundary solutions, and failures.",
+      "issue": "The two-scale mixture is a concrete proposal, but a fully operational research protocol also needs the scale/weight constraints, how starts and tolerances are selected, a stopping/convergence rule and boundary/failure handling. Merely recording these after fitting leaves a modest implementation gap."
+    }
+  ],
+  "rationale": "Strong count-likelihood formulation with correct log2 conversion, leakage-resistant splitting, normalization limits, matched comparisons, joint error/coverage gates and explicit reference uncertainty. The finite two-Normal mixture is a scientifically defensible alternative and receives quality credit, but it is not literally an adaptive heavy-tailed family: it has Gaussian asymptotic tails. Thus the strict predeclared historical intervention component is only partial, independently of the high study-quality score.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All six complete received final answers in this file, the exact question/packet and full reference were personally read. Output-truncated passages were recovered before scoring. No paid API judge, hidden reasoning or raw-data execution was used.",
+    "The packet supplies a generic count model and Normal effect prior; it does not explicitly supply a NB likelihood, a dataset, a calendar cutoff or biological facts. Proposed NB, numerical grids and development thresholds are legitimate when labeled; do not demand invented accession IDs or future-paper names.",
+    "Separate scientific proposal quality from strict five-component historical matching. A coherent alternative can score highly without reproducing the later adaptive heavy-tailed intervention. A finite Normal mixture has Gaussian asymptotic tails; it is a related flexible-scale direction, not literally a heavy-tailed distribution.",
+    "The key itself leaves algorithm tolerances, datasets and prior fitting unresolved. Apply the operational-detail criterion consistently rather than treating the draft as an executed or complete protocol. A missing source audit is a limitation, not evidence of fabricated data.",
+    "More flexible nested models can have worse finite-sample predictive risk. Correct-prior Bayes optimality does not mean zero conditional bias at each effect size. Prior fitting and dispersion estimation must use only the allowed training/small-sample data.",
+    "Coefficient information depends on both groups, dispersion and design; count abundance alone is not sufficient. In the standard NB log link, weights involve mu/(1+phi*mu). Keep natural-log and log2 effect scales explicit.",
+    "Reference estimates are uncertain. Reusing observations, selecting reference extremes and treating correlated splits as independent can bias evaluation. Same-sample orthogonal assays check measurement agreement; new biological units test biological reproducibility.",
+    "Define false-sign events, selected-set versus per-gene denominators, interval coverage and false strong-effect calls separately. Protein effects do not constitute interchangeable ground truth for RNA effects. Ranking or visually smooth plots do not establish uncertainty calibration.",
+    "Historical matching is retrospective and not a novelty test. The later journal article is verified; earliest-public-disclosure and full supplement/code audits remain incomplete. Original candidate records and frozen references are preserved."
+  ],
+  "review_sources": [
+    {
+      "title": "Zhu, Ibrahim and Love: Heavy-tailed prior distributions for sequence count data",
+      "url": "https://academic.oup.com/bioinformatics/article/35/12/2084/5159452",
+      "scope": "Read primary abstract, introduction and model/prior methods through scale adaptation and MAP computation. These establish the adaptive Cauchy/NB historical direction and the natural-log coefficient scale. No full supplement, code execution or numerical reproduction audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "which apparent large transcriptional responses represent reproducible regulation",
+      "assessment": "Matches the biological question about reliable effects under limited replication."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "assessment": "Matches the proposed tradeoff mechanism."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Proposed challenger: two-scale Normal mixture",
+      "assessment": "Related adaptive-tail-mass direction, but a finite Normal mixture remains thin-tailed asymptotically; it does not meet the predeclared heavy-tailed intervention component."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "False strong-effect claims and false signs among selected genes.",
+      "assessment": "The full protocol also measures bias, error, ranking, interval coverage and independent validation."
+    },
+    "predicted_outcome": {
+      "matched": true,
+      "quote": "allowing heterogeneous effect scales better preserves supported strong responses",
+      "assessment": "Conditional predicted outcome matches preservation with protection against unstable extremes."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

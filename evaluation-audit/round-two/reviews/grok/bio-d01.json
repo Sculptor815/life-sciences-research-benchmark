@@ -1,0 +1,222 @@
+{
+  "model_code": "grok",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:15:35.400092+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7a09eeb12a1ddb4b8af375200aa0d676749716c558a5a5a0ce5e2f4635233d98",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "15b4312f02f142fbc145c95754f14c64a39dab24969feaad530e8c9c6715a51f",
+  "primary_route": "Separate optical, reporter and target kinetics with substrate titration and proposed independent product validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2976,
+  "first_round_scientific_quality": 67.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The existing single-substrate, 30-minute coupled endpoint cannot be interpreted as target inhibition. Run a pre-specified four-module study on the purified enzymes: enzyme-free optical/fluorophore interference, reporter-enzyme-only activity, an orthogonal non-fluorescence readout of target product, and\u2014only if a target effect remains\u2014substrate-varied initial-rate tests of competitive versus other inhibition modes. Attribute the signal loss only after each upstream contribution is measured and subtracted or excluded.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior target/reporter Methods, supplements or a validated protocol before execution and check transfer of detailed conditions."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Prepare independent stocks",
+      "evidence_type": "exact_quote",
+      "reason": "Activity/solubility/lot checks do not verify enzyme/compound identities, purity or authenticated stock concentrations."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "assay buffer, vehicle",
+      "evidence_type": "exact_quote",
+      "reason": "Explicitly assumes the original buffer is known, but gives no source lookup or concrete buffer/cofactor/pH/temperature/amount calibration procedure if that unavailable prerequisite fails."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "replaced by the pilot if instrument noise is larger",
+      "evidence_type": "exact_quote",
+      "reason": "Equivalence margin is widened to instrument noise/achievable CI width rather than fixed to the largest scientifically negligible effect. More replication or an inconclusive decision is needed if the meaningful margin cannot be resolved."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Fix solubility or reagents and repeat",
+      "evidence_type": "exact_quote",
+      "reason": "Describes repairs and new days after an initial pilot, but does not require refreezing a revised failed protocol and fresh independent confirmation after subsequent changes."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "standard curve has been built",
+      "evidence_type": "exact_quote",
+      "reason": "Independent direct chromatography is required, but matrix-specific recovery, quench efficiency and compound/product interference validation are not operationally specified."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "analysis code",
+      "evidence_type": "exact_quote",
+      "reason": "Locked code and raw observations lack a linked raw-file/unit/provenance manifest and exact executable software/settings versions."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Required on every day",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective active, omission, optical/product bypass and qualified inactivation controls with stated interpretive roles."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "not as a fact",
+      "evidence_type": "exact_quote",
+      "reason": "Correct evidence, kinetic versus structural distinction, optical correction limits, substrate chemical-loss and mixed-mechanism alternatives; statistical margin defect charged P08 only."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "not as a fact",
+      "evidence_type": "exact_quote",
+      "reason": "Correct evidence, kinetic versus structural distinction, optical correction limits, substrate chemical-loss and mixed-mechanism alternatives; statistical margin defect charged P08 only."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "not as a fact",
+      "evidence_type": "exact_quote",
+      "reason": "Correct evidence, kinetic versus structural distinction, optical correction limits, substrate chemical-loss and mixed-mechanism alternatives; statistical margin defect charged P08 only."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "not as a fact",
+      "evidence_type": "exact_quote",
+      "reason": "Correct evidence, kinetic versus structural distinction, optical correction limits, substrate chemical-loss and mixed-mechanism alternatives; statistical margin defect charged P08 only."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "not as a fact",
+      "evidence_type": "exact_quote",
+      "reason": "Correct evidence, kinetic versus structural distinction, optical correction limits, substrate chemical-loss and mixed-mechanism alternatives; statistical margin defect charged P08 only."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "not as a fact",
+      "evidence_type": "exact_quote",
+      "reason": "Correct evidence, kinetic versus structural distinction, optical correction limits, substrate chemical-loss and mixed-mechanism alternatives; statistical margin defect charged P08 only."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "not as a fact",
+      "evidence_type": "exact_quote",
+      "reason": "Correct evidence, kinetic versus structural distinction, optical correction limits, substrate chemical-loss and mixed-mechanism alternatives; statistical margin defect charged P08 only."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "recommend 5% deviation",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit standards/dynamic range and empirical correction accuracy tolerance with switch/stop on failure, plus detector geometry calibration."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Report effects as ratios to vehicle with confidence intervals",
+      "evidence_type": "exact_quote",
+      "reason": "Primary endpoint is a dimensionless initial-rate ratio to matched vehicle, blank/optical corrected; invalid/saturated/failed rates are excluded by technical gates and never imputed."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "n must count days, not wells",
+      "evidence_type": "exact_quote",
+      "reason": "Independent mixture/day versus wells, pilot-variance precision planning, blocking, coded randomized acquisition and locked fits before unblinding."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "n must count days, not wells",
+      "evidence_type": "exact_quote",
+      "reason": "Independent mixture/day versus wells, pilot-variance precision planning, blocking, coded randomized acquisition and locked fits before unblinding."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Reject the day",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective activity/solubility/blank gates independent of favorable biological effect with explicit non-imputation."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "free inhibitor and total inhibitor",
+      "evidence_type": "exact_quote",
+      "reason": "Explains cascade/kinetic assumptions, tight-binding ambiguity and a concentration-dependence test rather than structural overinterpretation."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "the exact grid is set in the pilot",
+      "evidence_type": "exact_quote",
+      "reason": "Bounded soluble initial-rate/Km grids and objective identifiability/linearity criteria locked before mechanism data."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "recalibrate t_linear",
+      "evidence_type": "exact_quote",
+      "reason": "Failure-cause-diagnostic-repair sequences for nonlinear rates, coupler limitation, aggregation and slow-onset inhibition."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Call mixed mechanism",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit supported/negative-equivalence/unresolved and mixed outcomes; chemical substrate tests and technical stops. Margin-setting defect is exclusively P08."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong controls, explicit ratios and bounded pilots; equivalence margin depends incorrectly on noise and analytical/audit readiness is incomplete.",
+  "item_score": 60
+}

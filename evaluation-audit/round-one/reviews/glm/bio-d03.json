@@ -1,0 +1,82 @@
+{
+  "item_id": "bio-d03",
+  "response_id": "bio-d03",
+  "model_code": "glm",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T23:05:47.778523+08:00",
+  "review_type": "single AI curator; complete received final answer personally read; model identity visible; original rubric",
+  "candidate_sha256": "d7683df9d0b98fd0cad8b90a0fc1f86143dde968e9542d638af243f8b8d41420",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "only the former predicts quantitative rescue",
+      "issue": "A reversible off-target effect or inhibition of a linear pathway can also be rescued. Rescue validates reversibility with appropriate specificity checks; it does not uniquely identify cycling."
+    },
+    {
+      "quote": "H2 predicts τ → ∞",
+      "issue": "A finite or open metabolite pool can turn over, and allosteric activation can coexist with exchange. Finite turnover and step dependence alone do not discriminate closed cycling; fit alternative atom-mapped networks rather than assigning these fixed signatures."
+    },
+    {
+      "quote": "target-step and flanking-step activities in quenched aliquots",
+      "issue": "The stated cold-acid/organic metabolic quench is not suitable for assaying preserved enzyme activity. Reserve separate functional aliquots with a validated compatible handling procedure."
+    },
+    {
+      "quote": "titrate to restore ≥80% of target-step flux in inhibited vessels",
+      "issue": "Adding the same susceptible enzyme while inhibitor remains is not missing-enzyme restoration. Use a genuinely depleted defined system or remove inhibitor/validate a resistant functional replacement, with sham and inactive add-back controls."
+    },
+    {
+      "quote": "abandon dose if P₀ ≥ 50% of n_int",
+      "issue": "This arbitrary ratio does not make cycling untestable. Quantify/model dilution and finite-pool bounds; a high endogenous pool is biological information. The earlier suggestion to lower the added dose worsens this particular ratio."
+    },
+    {
+      "quote": "blocked step's enzyme plus the minimal adjacent activities",
+      "issue": "Adjacent reactions alone need not form the full proposed loop. Specify the complete route, cofactors and alternate activity bounds. An abstract mini-cycle does not yet establish the requested defined reconstitution."
+    }
+  ],
+  "rationale": "Detailed calibration and blocked allocation, direct enzyme specificity checks, pool measurements and an intended defined-system confirmation. The principal causal signatures remain nonunique, and several rescue, activity-assay and pool rules are not valid.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read the complete final answer, exact question/packet and entire frozen reference answer including its curator clarification. No hidden reasoning, paid judge or laboratory execution.",
+    "This uses the existing first-round rubric. The owner requested a stricter second round only after completion of this round; new 10/5-point deductions have not been applied.",
+    "The packet explicitly says the 1937 full text and figures were not read. Do not attribute proposed experimental details to the historical paper or penalize absence of invented historical settings.",
+    "The preliminary key mentions a noncycling analog and a small fixed discovery n. Its clarification permits omission/restoration where no validated analog exists. Independent sample size should be powered/calibrated; no particular small n is required.",
+    "Do not demand a positive addition effect in an already saturated endogenous pool. Failure to meet a proposed support gate limits the conclusion and does not automatically falsify cycling.",
+    "Adding downstream carbon around an irreversible block does not restore the missing reaction. Label exchange or appearance in one pool does not establish net cycle flux; respiration alone is insufficient.",
+    "Initial pools, mobilizable reserves, carbon sources, washout losses, cofactor-regeneration reactions and reversible exchange need accounting. Carbon closure alone cannot distinguish all network topologies.",
+    "Unknown numeric settings can be calibrated; concrete proposed biochemical routes are nevertheless useful. No complete primary-source methods audit is claimed.",
+    "Additional correction: isotope enrichment or residual starting tracer is not return flux; one-way replenishment and reversible exchange can coexist with oxidation. Stable carrier amount can coexist with loss of its original carbon atoms.",
+    "A closed-cycle proposal needs appropriate carbon mapping, multi-turn dynamics and identifiable alternative networks. CO2 release can be partial decarboxylation. Define stoichiometric units and handle a near-zero ratio denominator explicitly.",
+    "No-substrate controls do not guarantee additive endogenous flux under added substrate. Include measured convertible pools and mobilizable reserves in finite-pool alternatives. Biological background is not an automatic QC exclusion.",
+    "Heat-inactivated controls do not exclude contaminating enzymes in an active preparation. Washed or enzyme-depleted crude fractions are not automatically compositionally defined enzyme reconstitutions.",
+    "Unknown settings may be calibrated and scientifically valid equivalent contrasts accepted; no fixed author recipe, unavailable analog, mandatory small n, or new round-two deductions imposed.",
+    "Reviewer checked indexed primary-paper excerpts on arsenite inhibition of both PDH and KGDH and on exchanging pools in TCA isotope modeling. PMC full-page access was challenged; no full-text or source-methods audit is claimed."
+  ],
+  "review_sources": [
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20161290/",
+      "use": "Primary-paper indexed excerpt"
+    },
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/6863451/",
+      "use": "Primary-paper indexed excerpt"
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "grok",
+  "item_id": "mol-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:50:04.434057+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "b358085c3350621b64670dfcd7abf90741400dd72709a6cddd6e1d6568a6486d",
+  "question_sha256": "8336e3f569f2c33ebe28b768216257dbd3c1094d4c46554acf1fa9d413a8c468",
+  "reference_sha256": "d4a8671d7ff96e0b1d48dfdcc75a37a350fb817d4d06c1a19ca7b52d6c70b6ef",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "40feee9f470693ce16f9a57b56cec68fee28f6bcbaec1cbc5604753a13b6d3b1",
+  "primary_route": "Source-identity audit and endogenous association plus purified/direct-contact validation.",
+  "complete_final_answer_read": true,
+  "word_count": 972,
+  "first_round_scientific_quality": 91.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "input, negative-binding, and specificity controls",
+      "evidence_type": "exact_quote",
+      "reason": "Explains limits of existing input/IgG controls, but does not prospectively specify a complete role-defined positive, negative and procedural control comparison for its proposed biological validation."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Inspection of source identity or omitted results is not a plan to consult detailed Methods/validated protocols and verify transfer of conditions before the proposed new validation experiment."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No measurement-reference/blank calibration, acceptance criterion and action after failed calibration for the proposed binding/association check."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative association/binding endpoint with normalization or denominator, background and weak/saturated/missing-signal handling."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "Gives evidence that would strengthen the claim but no interpretable negative/ambiguous assay branch separating biological absence from failure of the validation measurement."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "purified A and B",
+      "evidence_type": "exact_quote",
+      "reason": "Independent techniques are proposed, but an operational comparison with remaining uncertainty is incomplete; endogenous association plus cell-free binding does not alone establish direct contact in the native cellular context."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Title wording is not a result.",
+      "evidence_type": "exact_quote",
+      "reason": "The complete answer separates supplied citation identity from biological support, explains co-complex versus direct/native evidence, considers benign alternatives and proposes checks. No additional distinct content, format or execution-status defect beyond the separately recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Strong citation and evidence reasoning, with a broad rather than operational biological validation route.",
+  "item_score": 60
+}

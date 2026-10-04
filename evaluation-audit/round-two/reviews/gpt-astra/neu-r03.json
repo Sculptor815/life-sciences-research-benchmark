@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:34:48.160190+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c6153d0118f77cf05b9e3d112e931a68875ea98819393ffc89f94b341d4701db",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "473f2fcbf36955ed13ba2fd0e97053007f28f9b744b3ac18189aa2fdbcac396a",
+  "primary_route": "Nine probability-by-magnitude conditions, separated delay spikes, value/timing controls and held-out-animal model comparison.",
+  "complete_final_answer_read": true,
+  "word_count": 3195,
+  "first_round_scientific_quality": 90.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dopamine identity must be independent of reward responses, but no actual anatomical/genetic/molecular recording-identification strategy or its validation route is selected. A list of possible criteria remains an unresolved core identity prerequisite."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timing, delivery, identity and stability checks lack numerical acceptance-to-action thresholds or a concrete derivation of tolerances before the main contrast."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal-level pilot variance and meaningful effect planning are present, but no numerical power or confidence-width target is specified for the confirmatory sample."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Reward variance",
+      "evidence_type": "exact_quote",
+      "reason": "Clear uncertainty/value/transient/timing alternatives; occurrence entropy and amount variance are distinguished. Endpoints, independent identity, event-response, apparatus-precursor, cue, history and behavior controls have explicit purposes. The protocol labels assumptions and limits recording to correlational inference."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Waiting-period spike count divided by its duration",
+      "evidence_type": "exact_quote",
+      "reason": "Defined rate/epoch contrasts and simultaneous intervals, categorical probability count modeling with dispersion checks, nested units and model diagnostics are specified. The five-probability by R/2R grid bounds the main condition search. Coded balanced randomization and fixed technical/learning limits retain nonresponses and attrition."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Waiting-period spike count divided by its duration",
+      "evidence_type": "exact_quote",
+      "reason": "Defined rate/epoch contrasts and simultaneous intervals, categorical probability count modeling with dispersion checks, nested units and model diagnostics are specified. The five-probability by R/2R grid bounds the main condition search. Coded balanced randomization and fixed technical/learning limits retain nonresponses and attrition."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Waiting-period spike count divided by its duration",
+      "evidence_type": "exact_quote",
+      "reason": "Defined rate/epoch contrasts and simultaneous intervals, categorical probability count modeling with dispersion checks, nested units and model diagnostics are specified. The five-probability by R/2R grid bounds the main condition search. Coded balanced randomization and fixed technical/learning limits retain nonresponses and attrition."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "Waiting-period spike count divided by its duration",
+      "evidence_type": "exact_quote",
+      "reason": "Defined rate/epoch contrasts and simultaneous intervals, categorical probability count modeling with dispersion checks, nested units and model diagnostics are specified. The five-probability by R/2R grid bounds the main condition search. Coded balanced randomization and fixed technical/learning limits retain nonresponses and attrition."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "Waiting-period spike count divided by its duration",
+      "evidence_type": "exact_quote",
+      "reason": "Defined rate/epoch contrasts and simultaneous intervals, categorical probability count modeling with dispersion checks, nested units and model diagnostics are specified. The five-probability by R/2R grid bounds the main condition search. Coded balanced randomization and fixed technical/learning limits retain nonresponses and attrition."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Treat amended work as a revised study",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic repair/recalibration, revised-study handling after changes, held-out-animal predictions and independent cue/timing conditions support confirmation. Positive/null/heterogeneous decisions are bounded by meaningful-effect intervals. Full raw identifiers, timestamps, seeds, calibration and code versions are archived."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "Treat amended work as a revised study",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic repair/recalibration, revised-study handling after changes, held-out-animal predictions and independent cue/timing conditions support confirmation. Positive/null/heterogeneous decisions are bounded by meaningful-effect intervals. Full raw identifiers, timestamps, seeds, calibration and code versions are archived."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Treat amended work as a revised study",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic repair/recalibration, revised-study handling after changes, held-out-animal predictions and independent cue/timing conditions support confirmation. Positive/null/heterogeneous decisions are bounded by meaningful-effect intervals. Full raw identifiers, timestamps, seeds, calibration and code versions are archived."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Treat amended work as a revised study",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic repair/recalibration, revised-study handling after changes, held-out-animal predictions and independent cue/timing conditions support confirmation. Positive/null/heterogeneous decisions are bounded by meaningful-effect intervals. Full raw identifiers, timestamps, seeds, calibration and code versions are archived."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "Treat amended work as a revised study",
+      "evidence_type": "exact_quote",
+      "reason": "Diagnostic repair/recalibration, revised-study handling after changes, held-out-animal predictions and independent cue/timing conditions support confirmation. Positive/null/heterogeneous decisions are bounded by meaningful-effect intervals. Full raw identifiers, timestamps, seeds, calibration and code versions are archived."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong uncertainty identification and inference design; core preparation/identity implementation, calibration tolerances and quantitative precision target remain unresolved.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "All five components match: uncertainty versus value, p=0/0.25/0.5/0.75/1 plus two magnitudes and matched means, separate delay/phasic readouts, movement/history controls and a replicated intermediate-peaked prediction. No causal necessity or universal exact-entropy claim is made.",
+  "item_score": 88.0
+}

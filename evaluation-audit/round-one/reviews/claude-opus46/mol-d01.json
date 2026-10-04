@@ -1,0 +1,66 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "claude-opus46",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:56:17.686269+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "804029cfee41d135fc58819cc201a4a4f024cc133d3ccccdbc521d94abd4ef10",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "K is required (necessary) for ligand-induced S phosphorylation and proliferation",
+      "issue": "A single pooled knockout does not establish on-target necessity, and slower growth is not itself proof of decreased proliferation or of ligand-dependent growth."
+    },
+    {
+      "quote": "KD-K activity must be ≤5% of WT-K activity.",
+      "issue": "Five percent residual activity may support signaling. This uncalibrated percentage cannot establish catalytic dispensability; bound activity below a functionally relevant level."
+    },
+    {
+      "quote": "phospho-S and growth indistinguishable from WT-K rescue",
+      "issue": "The proposed difference-testing plan does not define an equivalence margin or test. Non-significance cannot establish equivalent rescue. Likewise, non-significance versus empty vector does not establish no meaningful rescue."
+    },
+    {
+      "quote": "This blocks catalytic activity without removing the protein (preserving scaffold function).",
+      "issue": "Physical protein retention does not show retained scaffold function. Inhibitor-induced conformational or interaction changes require measurement, alongside on-target and off-target controls."
+    },
+    {
+      "quote": "This eliminates expression-level confounds entirely",
+      "issue": "Endogenous knock-in reduces ectopic-expression concerns but mutations can still alter stability, abundance, splicing and selection. It does not eliminate expression confounds entirely."
+    },
+    {
+      "quote": "If KD-K fully rescues, **scaffolding is sufficient**.",
+      "issue": "Noncatalytic rescue need not specifically be scaffolding, and catalytic necessity does not demonstrate scaffold dispensability. A qualified reciprocal scaffold perturbation is needed for that distinction."
+    }
+  ],
+  "rationale": "Useful ordered rescue protocol with phosphorylation-preserving lysis, controls and construct-QC gates. However, the starting necessity assertion, residual-activity threshold, absent equivalence design and scaffold-preservation claims weaken causal attribution. Repeated outcome tables and the final summary present stronger conclusions than the caveats warrant, making the practical decision rule inconsistent.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol."
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,255 @@
+{
+  "model_code": "glm",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:18:56.170812+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "5c186c011fe54dddb78166f4446eb6231466f525c23cf4d174b9fdaee265b7a2",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "525710d741d5ee8be9e2afb1b65c57b789040ba3cb5dcb638b9d8140e8d5b2a0",
+  "primary_route": "Normal-prior count estimator versus unpenalized baseline; small subsets compared with full-data reference and optional cross-platform/cross-study validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2735,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "unbiased for large effects when the model is correct",
+      "evidence_type": "exact_quote",
+      "reason": "Correct model specification does not make a finite-sample NB log-fold-change MLE unbiased, especially with sparse or zero counts. Asymptotic behavior is not exact finite-sample unbiasedness."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "document index and parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Tools are examples, while normalization, exact NB fitting/prior-scale estimation and numerical stopping/calibration are not implemented. Recording settings is not an executable selection procedure."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "or top-decile unshrunken",
+      "evidence_type": "exact_quote",
+      "reason": "Top-decile unshrunk magnitude with only a count/dispersion heuristic does not define well-supported strong truth. Reference uncertainty and selection bias are not propagated in the 70% magnitude/80% sign criterion."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Biological replication is recognized, but a justified meaningful-effect/precision or power calculation and simulation Monte Carlo precision/stopping rule are absent."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational randomized/balanced processing or masked QC/estimator-comparison plan, nor justified equivalent bias control, is specified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "base mean below the filter threshold",
+      "evidence_type": "exact_quote",
+      "reason": "The low-information audit explicitly includes genes below the primary filtering threshold without a defined retained-universe/denominator policy. Failed fits, attrition and stopping are also unspecified; prospective sample outlier intent alone is insufficient."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable primary method-difference uncertainty procedure and relevant multiplicity/error-control rule is fixed; listing metrics or interval outputs is insufficient."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Technical/batch noise masquerading as biology",
+      "evidence_type": "exact_quote",
+      "reason": "The table treats technical/batch effects as concentrated at low counts and suppressible by shrinkage. Confounding can yield precise, high-count effects that survive shrinkage; the core model/normalization assumptions do not identify global shifts without a scale anchor."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "\u00b1 2\u00d7",
+      "evidence_type": "exact_quote",
+      "reason": "Some n/filter/scale ranges are proposed, but no concrete development selection/acceptance procedure freezes the estimator before confirmation; negative scale notation is ambiguous and should be resolved as a positive multiplier, not used literally."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Possible failure modes are named without a diagnostic result linked to an ordered technical repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational iteration policy identifies what stays frozen, what may change and the fresh independent confirmation required after a change."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "No benefit anywhere",
+      "evidence_type": "exact_quote",
+      "reason": "Near-equal results do not establish no benefit without a precision/equivalence bound, and a failed effect-recovery test alone does not identify prior misspecification rather than normalization/likelihood/reference error."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "matched proteomics log-ratios",
+      "evidence_type": "exact_quote",
+      "reason": "Protein abundance is not interchangeable with RNA effect truth; post-transcriptional regulation and turnover can change direction/magnitude. Cross-study RNA validation is useful but does not justify the explicitly proposed protein truth comparison."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "every panel regenerable from a single script",
+      "evidence_type": "exact_quote",
+      "reason": "Checksums, versions and figure code are present, but exact executable commands/environment and immutable sample-to-count/output manifests remain incomplete."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "test recovery of the full-data calls",
+      "evidence_type": "exact_quote",
+      "reason": "The alleged held-out validation compares a small subset to a full-data reference containing it. It neither holds out reference observations nor accounts for dependence, and fold-specific nuisance fitting is not required."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "explicit acknowledgment that they are unmodeled",
+      "evidence_type": "exact_quote",
+      "reason": "Acknowledgment of unmodeled confounding does not make a treatment contrast identifiable; no exclusion for perfect confounding, appropriate restricted null or missingness/composition stress plan is supplied."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Figure concepts do not supply numeric source tables plus a clean-environment rerun, numerical tolerances, resource/failure logs and source-difference audit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Everything below is a *protocol*",
+      "evidence_type": "exact_quote",
+      "reason": "Meaningful noisy-expression question and distinct alternatives, raw-read eligibility and overall argument are provided. Numerical choices are proposed and no execution is claimed; 2,735 words meet the limit. Specific wrong model assumptions and decisions are charged to P09/P13, not duplicated."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "M1 must retain \u2265 80%",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth scenarios and quantitative preservation/null-comparison targets provide a calibration structure and failure action; reference definition errors are charged to P04."
+    }
+  ],
+  "deductions_uncapped": 95,
+  "quality_score": 5,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Useful declared scenarios and proposed thresholds, but confounding, biased validation and RNA/protein equivalence require substantial correction. Scope statements do not repair those identifying failures.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question and broad shrinkage tradeoff match. Adaptive heavy tails appear only as an optional unspecified comparator, not the proposed intervention. Overlapping full-data validation and protein/RNA substitution prevent qualified identifying readout and predicted outcome.",
+  "item_score": 2.0
+}

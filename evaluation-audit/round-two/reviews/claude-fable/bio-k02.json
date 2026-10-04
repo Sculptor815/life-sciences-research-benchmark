@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "bio-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:13:41.761801+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "afd403e0c94b764fdb48bb72a6b8dedfbc2071c4234f97f831b408714622908f",
+  "question_sha256": "d576679cb0522006ae6a3f256e6d4d1ed7180289149160eaf9054837dc1f2a1e",
+  "reference_sha256": "537c9e482a9662f10c65fb2f21594beb86fbd037d481e97efd72e3c550773802",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "37128f82fbd4a6022b780cd2c78291c7ef3145307a761863b61a3f9ef957980a",
+  "primary_route": "Inhibitor/global kinetics, enzyme/recovery tests, binding, structure, footprinting and mutations.",
+  "complete_final_answer_read": true,
+  "word_count": 1438,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Progress-curve linearity",
+      "evidence_type": "exact_quote",
+      "reason": "Vehicle or enzyme-only comparisons are insufficient: no complete positive product-recovery/negative/procedural control design with defined roles before collection."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "The pattern",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No pre-execution plan to consult prior Methods/supplements or validated protocols and verify transfer."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The pattern",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete matrix-matched detector/product calibration with acceptance criterion and failed-calibration action. Model fitting or progress-curve checks do not replace it."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The pattern",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Parameter values and rate units are described, but the proposed measurements lack baseline correction and weak/saturated/missing-signal rules."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "weak uncompetitive character (\u03b1\u2032 large but finite)",
+      "evidence_type": "exact_quote",
+      "reason": "Two independent errors: weak uncompetitive contribution corresponds to alpha-prime near 1, not large; apparent Km is not generally a substrate dissociation constant, so calling the change a threefold affinity decrease is unjustified."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "graphical readings of a teaching construct",
+      "evidence_type": "exact_quote",
+      "reason": "Correct graphical estimates, main competitive pattern and nonlocalization concept with alternatives and proposed experiments. Specific assay/mapping claims are handled under the corresponding checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "graphical readings of a teaching construct",
+      "evidence_type": "exact_quote",
+      "reason": "Correct graphical estimates, main competitive pattern and nonlocalization concept with alternatives and proposed experiments. Specific assay/mapping claims are handled under the corresponding checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "graphical readings of a teaching construct",
+      "evidence_type": "exact_quote",
+      "reason": "Correct graphical estimates, main competitive pattern and nonlocalization concept with alternatives and proposed experiments. Specific assay/mapping claims are handled under the corresponding checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "graphical readings of a teaching construct",
+      "evidence_type": "exact_quote",
+      "reason": "Correct graphical estimates, main competitive pattern and nonlocalization concept with alternatives and proposed experiments. Specific assay/mapping claims are handled under the corresponding checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "graphical readings of a teaching construct",
+      "evidence_type": "exact_quote",
+      "reason": "Correct graphical estimates, main competitive pattern and nonlocalization concept with alternatives and proposed experiments. Specific assay/mapping claims are handled under the corresponding checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "graphical readings of a teaching construct",
+      "evidence_type": "exact_quote",
+      "reason": "Correct graphical estimates, main competitive pattern and nonlocalization concept with alternatives and proposed experiments. Specific assay/mapping claims are handled under the corresponding checks."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "dependence mandates Morrison quadratic analysis",
+      "evidence_type": "exact_quote",
+      "reason": "Enzyme-dependent IC50 can also reflect aggregation, adsorption or assay effects; it does not uniquely mandate a tight-binding model. The decision omits discrimination before switching the model."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "map the inhibitor's contact surface",
+      "evidence_type": "exact_quote",
+      "reason": "HDX/NMR changes and mutation sensitivity may reflect remote conformational changes; they do not uniquely map contacts or prove that potency loss tracks the physical binding site without integrity/direct-contact checks."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correct main curve interpretation but affinity/mixed-model errors and overstrong diagnostic/localization rules.",
+  "item_score": 50
+}

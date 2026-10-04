@@ -1,0 +1,222 @@
+{
+  "model_code": "glm",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:30:20.168565+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "34336997823df905a3232572e602d951c59a366624f271bdeda0a125bbdff701",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "ecb76a4ed4df35aaa2eeccd578c162d260a8f14eaf127ecea3d45fcd6324c55b",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2759,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No concrete indicator preparation/delivery dose and timing workflow or procedure deriving them before confirmation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the indicator's own structural signal",
+      "evidence_type": "exact_quote",
+      "reason": "The indicator itself is offered as a structural reference without an independent activity-insensitivity/spectral calibration. Co-registration of a static target alone does not establish that independence."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No unique event-to-spike matching tolerance or residual-decay rule for electrically silent false-event windows; time-normalized false events alone do not settle those labels."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "primary independent unit is the *cell",
+      "evidence_type": "exact_quote",
+      "reason": "Cell-session/cell independence is asserted for cell-type conclusions. Mentioning animal counts and reporting clustering does not supply an animal-level independent allocation/variance model for precision."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "restrict claims to high-SNR cells",
+      "evidence_type": "exact_quote",
+      "reason": "Performance-driven restriction is suggested without preserving low-SNR failures and all attempted-cell/time denominators in validation coverage."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Visual-response curve correlations lack a primary inferential comparison, uncertainty procedure and multiplicity handling."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "acellular neuropil",
+      "evidence_type": "exact_quote",
+      "reason": "Neuropil contains neuronal processes and can have genuine activity without soma spikes. Its event rate is not a false-positive ground truth. The proposed decay-time Nyquist shortcut also does not establish event bandwidth; charge these core measurement-assumption limitations once here."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "0 to a high fraction",
+      "evidence_type": "exact_quote",
+      "reason": "The coefficient/annulus sweep lacks a concrete bounded search and stopping procedure; a high fraction chosen from unspecified ratios is not an executable range-to-lock procedure."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit refreeze and fresh independent confirmation after repairs or validation-driven parameter changes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "spike-locked component survives these regressions",
+      "evidence_type": "exact_quote",
+      "reason": "Survival after nuisance regression is demanded without resolving neural signals genuinely correlated with movement/neuropil. Their removal cannot alone falsify neural origin; a ground-truth-conditioned acceptance test is needed."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "50\u201370% of cell\u2013sessions",
+      "evidence_type": "exact_quote",
+      "reason": "The split can place cells/sessions from the same animal in training and test; per-cell silent-label coefficient fitting is also not explicitly restricted to independent calibration blocks. This does not establish the intended out-of-preparation optical validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No stable raw-data/sample/event identifier manifest and exact processing/code/environment versions."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a Genetically Encoded Calcium Indicator (GECI) with Simultaneous Electrophysiology",
+      "evidence_type": "exact_quote",
+      "reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "A structured proposed paired-calibration sequence with silent controls, deliberate known focus offsets, expression strata and failure diagnostics. Important core assumptions remain unresolved: activity-independent reference, neuropil null interpretation, clustered validation and neural-correlated nuisance subtraction. Specific checks own these defects without duplicate general deductions.",
+  "item_score": 30
+}

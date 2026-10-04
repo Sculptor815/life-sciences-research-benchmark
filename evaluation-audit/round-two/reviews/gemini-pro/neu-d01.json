@@ -1,0 +1,223 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:05:21.296107+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c688685cf42e1bd8ffe9b39d17babd0537b5eeb27f2de824bbf3bcffab740937",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "86b864486cfdb588929008f6e9b13de89877fe3e98ebe7b57834971960a1cc07",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 1229,
+  "first_round_scientific_quality": 42.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Light-OFF trials interleaved",
+      "evidence_type": "exact_quote",
+      "reason": "No off-window inhibition or task-matched sensory/motor control tests the stated retrieval specificity; locomotor measurement and light-negative animals alone are insufficient procedural comparisons."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Calibrate injection volumes",
+      "evidence_type": "exact_quote",
+      "reason": "Tracer spread alone does not set the actual functional viral dose, expression interval or quantitative surgical/assay preparation workflow."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "behavioral or physiological effects",
+      "evidence_type": "exact_quote",
+      "reason": "No required quantitative physiological inhibition/recovery acceptance or calibrated behavior-detector accuracy. Behavioral change cannot substitute for target-engagement calibration."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Percentage of correct choices",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit eligible-trial/omission denominator or handling of missing/corrupted video/events."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal unit is correct, but no independent replication count or pilot precision/power plan."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "absent_after_full_read",
+      "reason": "GLMM structure is given, but no effect-size uncertainty intervals or multiplicity handling for choice and several motor outcomes."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Implant an optic fiber over region P",
+      "evidence_type": "exact_quote",
+      "reason": "Q-projecting somata may collateralize. Projection-defined expression and somatic inhibition do not isolate P-to-Q transmission."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "theoretical safe maximum",
+      "evidence_type": "exact_quote",
+      "reason": "A proposed 10 mW maximum is not a system-calibrated safe bound, and selecting on behavioral effects can tune toward the desired result rather than independently verified inhibition."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "optical shielding is insufficient",
+      "evidence_type": "exact_quote",
+      "reason": "A control-group deficit could be heat, sensory interference or hardware effects, not necessarily shielding failure. No discriminating diagnostic/retest sequence separates these before repair."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Repairs are not explicitly refrozen and tested on new independent confirmation data."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Control group shows no difference",
+      "evidence_type": "exact_quote",
+      "reason": "No meaningful-effect/equivalence bound defines absence of sensory or motor confounds; a null test is not proof that they are absent."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent or orthogonal validation of projection-specific retrieval inference."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No raw trial/video/physiology manifest, stable identifiers and exact analysis/acquisition/code versions."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "### Recommended Next Action and Conclusion",
+      "evidence_type": "exact_quote",
+      "reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties."
+    }
+  ],
+  "central_false_premise": "The answer explicitly claims projection-defined expression isolates P-to-Q while choosing P-soma illumination. Possible collateral output remains suppressed, so the central pathway-isolation premise is false.",
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "Clearly proposed same-surgery reporter control with randomized animals/trials, blinded processing and postmortem anatomical eligibility. Basic motor measures and welfare stopping are included. Nevertheless the chosen soma manipulation cannot identify the specified projection, and control/measurement/statistical requirements are insufficient. Specific deductions are not repeated as general inference penalties.",
+  "item_score": 20
+}

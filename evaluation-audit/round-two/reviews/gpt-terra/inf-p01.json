@@ -1,0 +1,134 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "inf-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:04:32.446071+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "87001727174ba1010ebd7eedebd05f63fee6046d0914475e11a788e97a5142ed",
+  "question_sha256": "5da3fb54f9491d59b9c4ae45838ec32f8c3c831d012fdff21f3c2db66758729d",
+  "reference_sha256": "678e48fc0e62521f86b423c0fee59992496dd7ba82fb78a06d1e061d1d217b32",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "e339e1aa4a54b1cd4b3c86d88fee71a2bcc6ce260cd5fbcf2bd9653c7722f40b",
+  "primary_route": "Source-provenance assessment and burden/enrichment reanalysis with technical/ancestry and testable-universe checks.",
+  "complete_final_answer_read": true,
+  "word_count": 1676,
+  "first_round_scientific_quality": 87.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "prespecified model",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior burden/enrichment Methods or versioned documentation to select detailed analysis conditions and verify transfer before execution. Citation/provenance lookup is separate."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified model",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Does not define a complete primary burden/enrichment estimand and model with uncertainty and a declared multiplicity family. Generic calibrated p-values, prespecification or parameter lists do not provide those inferential choices."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "direction and magnitude are unreported",
+      "evidence_type": "exact_quote",
+      "reason": "Explains aggregate variant burden, differential ascertainment and the eligible/testable-gene enrichment null rather than equating a small p-value with pathway causation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If the signal attenuates, disappears",
+      "evidence_type": "exact_quote",
+      "reason": "Disappearance or loss of significance is treated as support/confirmation of artifact without comparing effect estimates and precision; reduced sample size, power or changed measurement can also cause it."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "independently sequenced, similarly controlled cohort",
+      "evidence_type": "exact_quote",
+      "reason": "Proposes independent replication applying the common-filter/callability and ancestry/center-controlled analysis. The unresolved complete-confounding branch is charged once under P17."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "matches or stratifies participants by ancestry and sequencing center",
+      "evidence_type": "exact_quote",
+      "reason": "Does not address complete center-by-case-status confounding: adjustment or within-center stratification cannot identify a disease effect when no center contains both statuses. No overlap check and concrete balanced-data remedy are supplied."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "prespecified model",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "prespecified model",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "prespecified model",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "prespecified model",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "prespecified model",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "prespecified model",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "prespecified model",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    }
+  ],
+  "deductions_uncapped": 25,
+  "quality_score": 75,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Good source and ascertainment reasoning; no explicit remedy for lack of case-control overlap, and the disappearance rule ignores precision. Formatting-heavy 1676-token length is not material.",
+  "item_score": 75
+}

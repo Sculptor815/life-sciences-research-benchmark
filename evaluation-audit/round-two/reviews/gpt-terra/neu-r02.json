@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "neu-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:22:50.520562+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "bfca147fa332f2f2d2163de1ffbb55379c519414127baebcae73317c8387277b",
+  "question_sha256": "59d29b23d93b7785f7e6965d9a23209f90e316836b9f4e9371b8b3a9f7e1c560",
+  "reference_sha256": "1206c206c57094dab8fe0b44054d81cf50a998470190499bd71d53a3d2d1ae0c",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "3a0662febd6f215184cd303ddea8c7ff3d85d59159051348bb1f30af630422a6",
+  "primary_route": "Bilateral and unilateral patterned-input reduction with recovery and conditional altered-correlation cohorts.",
+  "complete_final_answer_read": true,
+  "word_count": 3363,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation and transfer check of previous primary Methods, supplements or a validated technical protocol is proposed. Local pilots, welfare approval and promises to fill unknown settings do not meet this separate requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core exposure duration/intensity, stimulus timing and cortical acquisition/response settings remain a list to select later, without executable quantitative settings or a sufficiently specified calibration-to-setting procedure."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Optical/stimulus and response calibration is named, but quantitative acceptance-to-action thresholds or a concrete derivation of tolerances for eye isolation, delivered contrast and mapping reliability are absent."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal/cluster replication and pilot variability are recognized, but no quantitative power or interval-width target is linked to the meaningful effect and independent-unit variance."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Contrasts and clustering are recognized, but the actual response/distribution model, assumption diagnostics and specified multiplicity policy remain incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Age, exposure dose and stimulus-parameter exploration has no bounded candidate grid or objective range-selection/search-stop rule before locking."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting does not explicitly connect technical changes to a revised frozen procedure and fresh independent confirmation; ordinary initial pilot separation is insufficient."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-animal/unit-to-output manifest with calibration records, exact analysis versions/settings and all exclusions/deviations is specified."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "ocular observations",
+      "evidence_type": "exact_quote",
+      "reason": "Cortical interpretation is not supported by an operational retinal/precortical functional comparison: eye health, optics and gross pathology do not exclude altered afferent signaling. This missing causal control is charged once here."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "exact metric must be fixed",
+      "evidence_type": "exact_quote",
+      "reason": "The central map-order/binocular organization measures remain unspecified indices: no actual estimator, units/denominator rule or noise criterion is defined for these primary outcomes."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "gross pathology",
+      "evidence_type": "exact_quote",
+      "reason": "No independent/orthogonal physiological validation of the cortical response inference is operationalized; gross pathology and repeat recording with the same primary mapping procedure are not that check."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "would not by itself prove instruction",
+      "evidence_type": "exact_quote",
+      "reason": "Useful necessary-versus-instructive alternatives, feasible model criteria and welfare gates. Correctly limits deprivation evidence and recognizes peripheral and measurement ambiguity; its missing functional control is assessed only at C."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "no outcome-driven stopping",
+      "evidence_type": "exact_quote",
+      "reason": "Animal/cluster allocation, coded analysis and fixed confirmation prevent neuronal pseudoreplication and optional stopping. Fault-specific troubleshooting, retained loss of mapping and qualified negative/ambiguous outcomes are explicit."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "no outcome-driven stopping",
+      "evidence_type": "exact_quote",
+      "reason": "Animal/cluster allocation, coded analysis and fixed confirmation prevent neuronal pseudoreplication and optional stopping. Fault-specific troubleshooting, retained loss of mapping and qualified negative/ambiguous outcomes are explicit."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "no outcome-driven stopping",
+      "evidence_type": "exact_quote",
+      "reason": "Animal/cluster allocation, coded analysis and fixed confirmation prevent neuronal pseudoreplication and optional stopping. Fault-specific troubleshooting, retained loss of mapping and qualified negative/ambiguous outcomes are explicit."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "no outcome-driven stopping",
+      "evidence_type": "exact_quote",
+      "reason": "Animal/cluster allocation, coded analysis and fixed confirmation prevent neuronal pseudoreplication and optional stopping. Fault-specific troubleshooting, retained loss of mapping and qualified negative/ambiguous outcomes are explicit."
+    }
+  ],
+  "deductions_uncapped": 65,
+  "quality_score": 35,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Coherent developmental comparison, but central endpoint definitions and peripheral functional localization controls remain insufficiently operational.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The question, experience-dependent mechanism and monocular intervention are present. The cortical readout lacks the required peripheral/afferent functional control, relying on ocular observations/gross pathology. Its experienced-eye conclusion therefore does not jointly satisfy the sealed controlled-localization readout and prediction, although general quality and caution receive credit.",
+  "item_score": 14.0
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "mol-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:36:36.500089+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "a54df1a6a987fe460bef0fb49182e77e3b952f27c0da84f866c902465a35751f",
+  "question_sha256": "5488a7e9eeb816e751e05687b8eaccb3a13670fa0f369c0936aa85b2a8ed7d4d",
+  "reference_sha256": "998c31eb8371578c1997cee1c0aaacd811239d380b47eab3eb182fac993df05a",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "31565659de8c8f70eb483cc6a21fb42d9f6a2ef5cf9b87c7fcddcf059a348471",
+  "primary_route": "Direct GSDMD N-terminal membrane action tested by purified protein/defined lipid reconstitution, orthogonal physical permeability and qualified mutant cellular rescue; conditional indirect-effector branch.",
+  "complete_final_answer_read": true,
+  "word_count": 3695,
+  "first_round_scientific_quality": 55.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original Methods, supplements or validated protein/membrane/cell protocols to select and verify transferable conditions. Naming unknown settings and proposing local validation does not meet this separate lookup requirement."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "the only protein present is purified GSDMD-NT",
+      "evidence_type": "exact_quote",
+      "reason": "The reaction instead liberates NT in situ with protease and complementary fragment present. Protease-only controls do not establish that NT is the sole necessary protein without separation/carryover or defined add-back controls. The mutant is also used as a structural specificity control without verifying preserved folding/abundance. One combined prospective-control deduction."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "avoiding non-native N-termini",
+      "evidence_type": "exact_quote",
+      "reason": "The cleavage liberating the native amino-terminal domain defines its C-terminal boundary; it does not generate that domain's N terminus. The two-route justification confuses which terminus is produced."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Buffer, pH, temperature, ionic strength: **VALIDATE**",
+      "evidence_type": "exact_quote",
+      "reason": "Most central lipid/protein, timing, electrophysiology and imaging settings remain a VALIDATE list without operational pilot-to-choice procedures."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No free reporter/protein optical-interference control or objective assay reference/recovery/noise acceptance and failure gates."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Readout assays and thresholds for \"lysis\"",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative original-cell denominators or baseline/maximal-release normalization and weak/saturated/missing measurement rules are given for the cellular bridge."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Independent protein/lipid batches and cultures and justified precision/power replication are not specified; two liberation routes are not a sample-size plan."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No randomized/balanced processing, allocation concealment or blinded field/trace scoring or justified equivalent."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No prospective inclusion/exclusion, attrition, stopping or all-field/trace retention policy."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No primary statistical contrast/model, uncertainty construction or multiplicity handling."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "include at least ~3 log steps",
+      "evidence_type": "exact_quote",
+      "reason": "A count of dose steps is not a bounded range or concrete range-derivation, evaluation criterion and lock; lipid/ion/pH exploration remains unspecified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Troubleshooting identifies assay failure modes but no revised-procedure refreeze and fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "identify and characterize the effector",
+      "evidence_type": "exact_quote",
+      "reason": "Candidate loss preserving cleavage does not distinguish a physical executor from a permissive factor; abolish-versus-accelerate is not a general executor/modifier discriminator. Negative reconstitution and obligatory trans-CT suppression are also overinterpreted in the decision rules."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Orthogonal cellular reconstitution",
+      "evidence_type": "exact_quote",
+      "reason": "The cellular plan uses NT expression and effector depletion, but never tests a qualified loss of the purified membrane-binding/assembly activity in a matched GSDMD-deficient rescue. Concordant localization/size cutoff cannot substitute for this selective causal validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete construct/preparation/cell/raw-acquisition manifest, analysis versions/settings and exclusion provenance."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match."
+    }
+  ],
+  "deductions_uncapped": 85,
+  "quality_score": 15,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "The answer articulates direct, indirect and cofactor-assisted hypotheses and includes lipid binding, conductance and structural readouts. Its decisive tests nevertheless conflate component necessity with physical agency and omit a selective cellular bridge. Missing execution safeguards are assessed separately from the direction match.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question matches: \"binding lipids and forming a transmembrane conductance by itself\". Intervention nominally matches purified active/inhibited states, varied lipids and a proposed oligomerization/binding mutant. Mechanism and predicted-outcome components fail because that mutant is neither qualified nor connected to cellular loss-of-function/rescue. Readouts include flotation, leakage and membrane assemblies but no qualified GSDMD functional-complementation bridge. Match [true,false,true,false,false], so no qualified Hit@1; molecular-necessity claims alone cannot identify the executor.",
+  "item_score": 6.0
+}

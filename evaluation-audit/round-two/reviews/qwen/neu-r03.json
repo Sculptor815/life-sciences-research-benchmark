@@ -1,0 +1,239 @@
+{
+  "model_code": "qwen",
+  "item_id": "neu-r03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:43:00.899507+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "a94fb404c93ab73d691b5ae3a4c22ed91603200c11277ee2ddd99a3e71b2d105",
+  "question_sha256": "64cc5d2555b026eed1ebbea98388a7cffc92423666ea8b670305fbb8570291dc",
+  "reference_sha256": "3f109410ee4530c8292cf00ae6b8206a6c7f093053f491419ab28c7e7ea11b49",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "61d3e6a3f2dc43e5a86189719217e6fe546f20fe0b5a14888174db2529e32e6b",
+  "primary_route": "Five-probability fixed-magnitude task, separate timing/probe phases and hierarchical delay decoding.",
+  "complete_final_answer_read": true,
+  "word_count": 5475,
+  "first_round_scientific_quality": 61.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit commitment to consult/check prior primary Methods or a validated technical protocol for pre-execution settings and transfer is made; local calibration and preregistration alone do not meet M."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Dopamine identity must be independent of reward responses, but no actual anatomical/genetic/molecular recording-identification strategy or its validation route is selected. A list of possible criteria remains an unresolved core identity prerequisite."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Core preparation/recording, delivery magnitude and behavioral acquisition settings lack a complete executable quantitative workflow or concrete calibration-to-setting procedure; listing parameters to freeze later is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timing, delivery, identity and stability checks lack numerical acceptance-to-action thresholds or a concrete derivation of tolerances before the main contrast."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Animal-level pilot variance and meaningful effect planning are present, but no numerical power or confidence-width target is specified for the confirmatory sample."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The hierarchical conceptual model does not specify a likelihood/dispersion decision with diagnostics and a concrete multiplicity procedure across the several primary comparisons."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Repair/redesigned pilot suggestions do not explicitly require a revised frozen procedure and fresh independent confirmatory data after parameter changes."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete raw-trial/unit manifest with exact analysis/acquisition versions/settings, calibration records and all technical/biological losses is specified."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "activity may be spike rate",
+      "evidence_type": "exact_quote",
+      "reason": "The primary outcome remains a list of possible signal types with unspecified baseline normalization/weak-signal rules. A named epoch and optional z-score do not identify an executable measurement with fixed units."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The final answer contains 5,475 whitespace-delimited words, materially above the 5,000-word limit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Counterbalance",
+      "evidence_type": "exact_quote",
+      "reason": "Event/certainty/device/cue controls, independent behavioral learning and motor/timing alternatives are planned. Probability versus curved uncertainty comparison is meaningful at fixed magnitude; proposal/evidence limits and observational caveats are retained."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "animal-level or session-level splits",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced interleaving/cue mappings, masked processing and finite technical/learning rules are described. The five-point probability ladder bounds exploration, diagnostics address timing/delivery/motion/learning, and explicit session/animal-held-out validation avoids mere trial replication. Null conclusions are appropriately phrased as no evidence under measured sensitivity."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "animal-level or session-level splits",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced interleaving/cue mappings, masked processing and finite technical/learning rules are described. The five-point probability ladder bounds exploration, diagnostics address timing/delivery/motion/learning, and explicit session/animal-held-out validation avoids mere trial replication. Null conclusions are appropriately phrased as no evidence under measured sensitivity."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "animal-level or session-level splits",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced interleaving/cue mappings, masked processing and finite technical/learning rules are described. The five-point probability ladder bounds exploration, diagnostics address timing/delivery/motion/learning, and explicit session/animal-held-out validation avoids mere trial replication. Null conclusions are appropriately phrased as no evidence under measured sensitivity."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "animal-level or session-level splits",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced interleaving/cue mappings, masked processing and finite technical/learning rules are described. The five-point probability ladder bounds exploration, diagnostics address timing/delivery/motion/learning, and explicit session/animal-held-out validation avoids mere trial replication. Null conclusions are appropriately phrased as no evidence under measured sensitivity."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "animal-level or session-level splits",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced interleaving/cue mappings, masked processing and finite technical/learning rules are described. The five-point probability ladder bounds exploration, diagnostics address timing/delivery/motion/learning, and explicit session/animal-held-out validation avoids mere trial replication. Null conclusions are appropriately phrased as no evidence under measured sensitivity."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "animal-level or session-level splits",
+      "evidence_type": "exact_quote",
+      "reason": "Balanced interleaving/cue mappings, masked processing and finite technical/learning rules are described. The five-point probability ladder bounds exploration, diagnostics address timing/delivery/motion/learning, and explicit session/animal-held-out validation avoids mere trial replication. Null conclusions are appropriately phrased as no evidence under measured sensitivity."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Comprehensive probability study, but much implementation is deferred, response length exceeds the limit, and no matched-value confirmation is actually proposed.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, probability grid, delay/phasic separation and intermediate-peak prediction are present. The plan deliberately fixes magnitude throughout and never proposes the required matched-expected-value distribution challenge. It supports a narrower curved probability association, not the complete sealed value-separated historical criterion.",
+  "item_score": 18.0
+}

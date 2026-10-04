@@ -1,0 +1,180 @@
+{
+  "at": "2026-10-04T09:00:57.820449+00:00",
+  "item_id": "neu-r03",
+  "policy": "All five historical components jointly required; valid alternative research earns scientific quality independently. Original answers and v1 preserved.",
+  "source": {
+    "title": "Discrete coding of reward probability and uncertainty by dopamine neurons",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12649484/",
+    "date": "2003-03-21"
+  },
+  "reviews": [
+    {
+      "model_code": "gpt-astra",
+      "candidate_sha256": "c6153d0118f77cf05b9e3d112e931a68875ea98819393ffc89f94b341d4701db",
+      "first_round_hit": true,
+      "second_round_hit": true,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "All five components match: uncertainty versus value, p=0/0.25/0.5/0.75/1 plus two magnitudes and matched means, separate delay/phasic readouts, movement/history controls and a replicated intermediate-peaked prediction. No causal necessity or universal exact-entropy claim is made."
+    },
+    {
+      "model_code": "gpt-sol",
+      "candidate_sha256": "3e90e137058ee997b7bef6962b671c20b043dc6f40a6c80fd02d0821d5528ef2",
+      "first_round_hit": true,
+      "second_round_hit": true,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "The fixed-magnitude certainty/intermediate probability grid, matched-value challenge, separate middle-delay and cue/outcome responses, movement/history/cue controls and inverted-U directional prediction jointly match the sealed later study. Operational deductions remain separate from the valid historical core."
+    },
+    {
+      "model_code": "gpt-terra",
+      "candidate_sha256": "7597924eb1083c918ac69fa2a607f8e97c10aa795c5973fdf480d9ddb15225bd",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": false,
+        "readout": true,
+        "predicted_outcome": false
+      },
+      "reason": "The uncertainty/value question and separated delay/phasic readout match. The actual core includes only p=.25/.5/.75; exact p=0 and p=1 are optional and interchangeable with .10/.90. It therefore does not commit to the sealed intermediate-versus-certainty intervention/prediction, though its alternative curvature/value experiment earns quality credit. This is not a penalty for failing to guess the historical result."
+    },
+    {
+      "model_code": "claude-fable",
+      "candidate_sha256": "6ba0d6d6648aeac6116dc5a51fa793eac46399b347e349e6ed2a42563e11ffe0",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": false,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "No substantive answer: none of the five historical-direction components is present."
+    },
+    {
+      "model_code": "claude-opus46",
+      "candidate_sha256": "06ffbdccd3894caa0cf6367c14d20ebff170d3521ccd3160d7eca72a74d4f67e",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The question/mechanism and intermediate probability intervention are historically related. The design lacks a certain-reward anchor and matched-value test, selects neurons by significant RPE responses, and lacks an independently validated uncertainty readout. These critical selection/control failures prevent a qualified joint historical prediction."
+    },
+    {
+      "model_code": "claude-opus48",
+      "candidate_sha256": "7a6937d6eb4d7b4a07e35ae2435d51b9ba18be61ba2139546092d09e0dfb0c1d",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "All nominal historical topics are present, but the certain fixed-time anchor is altered by unmodeled timing/omission probes and the varying-magnitude variance prediction is misdefined. These critical control/readout-prediction defects prevent a qualified match."
+    },
+    {
+      "model_code": "gemini-pro",
+      "candidate_sha256": "748d775e753f4ec410a14402ce6c33a6cf4572e3761d30162ce99824420b130b",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The 0/.5/1 delay-peak topic is present, but cells are selected on reward-error responses and neither independent identity nor value/behavior/cue controls qualify the readout. A generic 50% peak is insufficient for the joint historical match."
+    },
+    {
+      "model_code": "deepseek",
+      "candidate_sha256": "a612c7c4de556eb169ebe998ef286ccb856ae06c1873f6073e8163ad1e916779",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The uncertainty-versus-value question and matched-mean manipulation are present. The main equal-mean series has its largest amount variance at p=.25, not a fixed-magnitude half-probability maximum, and the required cue/learned-contingency controls are absent. The joint validated historical readout and half-versus-endpoint prediction are not satisfied."
+    },
+    {
+      "model_code": "qwen",
+      "candidate_sha256": "a94fb404c93ab73d691b5ae3a4c22ed91603200c11277ee2ddd99a3e71b2d105",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": false,
+        "readout": true,
+        "predicted_outcome": false
+      },
+      "reason": "Question, probability grid, delay/phasic separation and intermediate-peak prediction are present. The plan deliberately fixes magnitude throughout and never proposes the required matched-expected-value distribution challenge. It supports a narrower curved probability association, not the complete sealed value-separated historical criterion."
+    },
+    {
+      "model_code": "kimi",
+      "candidate_sha256": "9fa0f92a4290ba123148ac59d5dd1480c098014c175762b49ced71389c612726",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Nominally all historical contrasts and the positive intermediate-peak hypothesis are supplied, with excellent independent distributional replication. However the explicit SURE-transient requirement rejects valid predicted-reward nonresponses and gates all interpretation on that response-selected preparation. This critical population/positive-control failure prevents a qualified readout/prediction; a negative sign itself is NOT the reason for the miss."
+    },
+    {
+      "model_code": "glm",
+      "candidate_sha256": "df886b7e150312b332b1479a114140961a97391bb8fb685781c1830f2bac7ba5",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": false,
+        "mechanism": false,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": false
+      },
+      "reason": "The chosen question and primary model concern monotonic prospective value versus event-only signaling, not uncertainty separated from value. No intermediate-peaked uncertainty prediction is tested. Five probabilities and separated epochs alone do not create a direction hit; the reversed expected-time control is an additional critical defect."
+    },
+    {
+      "model_code": "grok",
+      "candidate_sha256": "86a90e9059b55923562b35a4f16db982c83b316704e0108d54b600c84de0b437",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The probability/uncertainty topic and intermediate-peak contrast match. Response-based identity/replication selection, deferred rather than committed matched-value controls, and automatic rejection of late-only uncertainty signals prevent the full validated historical readout and prediction."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "item_id": "mol-r02",
+  "response_id": "mol-r02",
+  "model_code": "gpt-astra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:33:36.033456+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "7dcd441f8641d342f097ee9cc3b4e90534d8cca5dae16276e2c42642a1798a05",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 95.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Its molecular target and implementation are **unreported and must be selected and validated experimentally**.",
+      "issue": "The central perturbation remains unspecified, as do the concrete damage/intermediate assay and lesion platform. Explicit calibration is appropriate, but the especially detailed requested plan should nominate a feasible proposed implementation rather than defer all central biological tools. This is an actionability gap, not a penalty for choosing a different research direction."
+    }
+  ],
+  "rationale": "Excellent alternative question with discriminating timer/repair hypotheses, late-intervention landmark analysis, reversible repair manipulation, death competing risks, matched cohort caveats and strong causal limits. Main remaining gap is selecting concrete tools. No synthesis-dependence experiment, so no historical-direction hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Exact packet and full frozen reference read, including sealed target. Original rubric only; stricter requested penalties inactive. Alternative scientifically valuable research questions receive full quality consideration independently of retrospective match.",
+    "Sealed target requires a synthesis-versus-existing-protein switching question, verified synthesis perturbation, separate initiation/recovery and conditional predictions. General checkpoint on/off discussion or conditional RAD9 removal alone is not a joint match.",
+    "Packet permits repair during externally imposed delay; it does not prove all repair, fidelity or survival is restored or that RAD9 has no repair-related role.",
+    "New detailed tools may be proposed without claiming author methods. Calibrate unknown doses and windows; unsupported precision and unselected central tools are different limitations.",
+    "Physical lesion measurements, checkpoint state, actual division, survival and protein abundance are distinct readouts. Budding, foci or CFU cannot silently substitute for all of them.",
+    "Track original cohorts, damage dilution/selection and death as competing events. End-of-window living nondivision is censoring, not proof of permanent arrest.",
+    "Do not reject confirmatory outcomes merely because expected genotype effects fail. Restrict exclusions to independently verified technical failures.",
+    "Conditional switch nulls require validated function and kinetics. Repair manipulation may affect signaling directly; correlated lesion decline alone does not establish a causal sensed species.",
+    "Donorless HO breaks can undergo end joining; nuclease recutting, chromosome loss and surviving lineages require verification. Population measurements do not establish per-cell persistence.",
+    "Historical primary abstract and metadata verified, full original Methods not audited. Review is unblinded single-Codex assessment, not independent expert certification."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2247073/",
+      "scope": "Primary abstract and publication metadata personally read; verifies sealed 1990 target, not full historical methods."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8628283/",
+      "scope": "Indexed primary abstract excerpt verifies HO-break end joining; no full Methods audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "Does the RAD9-dependent division delay end because repair removes the signal that maintains it, or because a damage-triggered timer expires?",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "Does the RAD9-dependent division delay end because repair removes the signal that maintains it, or because a damage-triggered timer expires?",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Does the RAD9-dependent division delay end because repair removes the signal that maintains it, or because a damage-triggered timer expires?",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Does the RAD9-dependent division delay end because repair removes the signal that maintains it, or because a damage-triggered timer expires?",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Does the RAD9-dependent division delay end because repair removes the signal that maintains it, or because a damage-triggered timer expires?",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

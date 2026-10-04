@@ -1,10 +1,53 @@
 # Life Sciences Research Benchmark
 
+![Scoring-standard overview](docs/assets/scoring-standard-overview.png)
+
+[High-resolution diagram](docs/assets/scoring-standard-overview.png) | [SVG](docs/assets/scoring-standard-overview.svg) | [PDF](docs/assets/scoring-standard-overview.pdf)
+
+The diagram describes the strict second-round rubric. First-round scoring uses the original dimension-weighted rubric; both processes and all review records are [open for inspection](evaluation-audit/README.md).
+
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
 **Current comparison:** the strict second round is complete: **12 models, 30 questions each, 360 reviewed responses**. I carefully reviewed all 30 questions and original reference answers. The [complete second-round results](docs/second-round-20261004/SCORECARD.md) are the final scoring version for this run; the [first-round results](docs/first-round-20261003/SCORECARD.md) remain archived. All answers were reused without new candidate or judge API calls. The [open question set](benchmark-30/README.md) includes both reference versions and the [final rubric](benchmark-30/v2/RUBRIC.md). Revised references await my review. See [status and provenance](docs/CURRENT_EVALUATION.md).
 
+## First-round results (archived)
+
+| Model | Essay | Design | Research | Total /100 |
+|---|---:|---:|---:|---:|
+| GPT-6 Astra | 100.00 | 98.00 | 73.25 | **86.03** |
+| GPT-5.6 Sol | 96.25 | 87.12 | 73.95 | **82.36** |
+| GPT-5.6 Terra | 91.50 | 80.62 | 54.40 | **69.69** |
+| Claude Fable 5 | 59.38 | 25.25 | 19.45 | **29.17** |
+| Claude Opus 4.6 | 60.12 | 48.00 | 26.25 | **39.55** |
+| Claude Opus 4.8 | 68.25 | 55.00 | 41.55 | **50.92** |
+| Gemini 3.1 Pro Preview | 58.50 | 42.88 | 19.50 | **34.31** |
+| DeepSeek V4.1 Flash | 78.50 | 62.00 | 40.85 | **54.73** |
+| Qwen3.8 Max (0902) | 81.75 | 63.12 | 55.40 | **62.99** |
+| Kimi K3 | 85.00 | 76.62 | 46.45 | **63.21** |
+| GLM 5.3 FlashX | 65.25 | 50.25 | 41.15 | **48.70** |
+| Grok 4.7 | 85.25 | 69.00 | 38.70 | **57.10** |
+
+[All first-round reviews](evaluation-audit/round-one/reviews) | [Scores and provenance](docs/first-round-20261003/SCORECARD.md)
+
+The four charts compare the same 30 questions for every model. Essay, design and research category means carry 20/30/50 weights. Research items combine 60% qualified historical-direction hit and 40% scientific quality, under the documented post-hoc amendment. Provider colors are green for OpenAI, copper for Anthropic and slate blue for other providers; colors do not affect scoring.
+
+| Answer quality | API expense |
+|---|---|
+| ![First-round answer quality](docs/first-round-20261003/common_score.png) | ![Confirmed run cost](docs/first-round-20261003/common_cost_confirmed_usd.png) |
+| Response time | Scientific explanation quality |
+| ![Mean response time](docs/first-round-20261003/common_mean_response_seconds.png) | ![Written explanation quality](docs/first-round-20261003/explanation_mean.png) |
+
+**360 question scores:** R marks a refusal; P marks a partial answer. Research cells already include the 60/40 direction/quality weighting.
+
+![Reviewed question scores for all 12 models and 30 questions](docs/first-round-20261003/reviewed-item-scores.png)
+
+[Four-chart high-resolution overview](docs/first-round-20261003/four-metric-overview.png) · [Scalable overview](docs/first-round-20261003/four-metric-overview.svg) · [Scalable heatmap](docs/first-round-20261003/reviewed-item-scores.svg) · [Metrics CSV](docs/first-round-20261003/model-summary.csv)
+
+Confirmed run charges are **$35.6704**, with **16 unresolved bills** excluded. Means include provider/network waiting; they are not wall-clock completion times. Explanation scores concern visible scientific arguments, not hidden reasoning; Fable's mean uses 19 assessable answers out of 30. These are exploratory results from one unblinded Codex referee, not an independently validated leaderboard.
+
 ## Second-round results
+
+[All second-round reviews](evaluation-audit/round-two/reviews) | [Exact deduction evidence](evaluation-audit/round-two/checks.csv)
 
 Scores use 20% essay, 30% experimental-design and 50% research-reasoning category means. Each research item combines 60% qualified historical-direction Hit@1 and 40% strict scientific quality. The rubric and direction weighting are post-hoc; scoring was performed by one unblinded Codex referee. A valid alternative research direction can receive quality credit without matching the selected historical continuation.
 
@@ -41,29 +84,15 @@ Model order follows the frozen roster. All selected answer hashes, 7,560 checkli
 
 PNG exports are 300 DPI; SVG and PDF versions preserve vector detail. Provider colors match the first round. R marks an empty refusal; P marks a partial answer. Other zero scores are rubric outcomes. Expense is from original selected answers, with unresolved bills excluded; rescoring added $0 in candidate/judge API charges.
 
-## Archived first-round results
+## Open scoring records and process
 
-The four charts compare the same 30 questions for every model. Essay, design and research category means carry 20/30/50 weights. Research items combine 60% qualified historical-direction hit and 40% scientific quality, under the documented post-hoc amendment. Provider colors are green for OpenAI, copper for Anthropic and slate blue for other providers; colors do not affect scoring.
-
-| Answer quality | API expense |
-|---|---|
-| ![First-round answer quality](docs/first-round-20261003/common_score.png) | ![Confirmed run cost](docs/first-round-20261003/common_cost_confirmed_usd.png) |
-| Response time | Scientific explanation quality |
-| ![Mean response time](docs/first-round-20261003/common_mean_response_seconds.png) | ![Written explanation quality](docs/first-round-20261003/explanation_mean.png) |
-
-**360 question scores:** R marks a refusal; P marks a partial answer. Research cells already include the 60/40 direction/quality weighting.
-
-![Reviewed question scores for all 12 models and 30 questions](docs/first-round-20261003/reviewed-item-scores.png)
-
-[Four-chart high-resolution overview](docs/first-round-20261003/four-metric-overview.png) · [Scalable overview](docs/first-round-20261003/four-metric-overview.svg) · [Scalable heatmap](docs/first-round-20261003/reviewed-item-scores.svg) · [Metrics CSV](docs/first-round-20261003/model-summary.csv)
-
-Confirmed run charges are **$35.6704**, with **16 unresolved bills** excluded. Means include provider/network waiting; they are not wall-clock completion times. Explanation scores concern visible scientific arguments, not hidden reasoning; Fable's mean uses 19 assessable answers out of 30. These are exploratory results from one unblinded Codex referee, not an independently validated leaderboard.
+Both rounds are fully inspectable: **720 reviews**, the **360 final answers** used in both rounds, and all **7,560 second-round check decisions**. Browse [answers and reviews by model](evaluation-audit/README.md), read the [scoring process](evaluation-audit/PROCESS.md), or [recompute both rounds](evaluation-audit/verify_scores.py). Original and amended review snapshots are preserved; this release changes no score.
 
 ## Open questions, references and scoring
 
 [Read all 30 questions](benchmark-30/QUESTIONS.md) and follow each question's links to its original and revised reference answers. The [reference revision log](benchmark-30/v2/REFERENCE-CHANGES.md) records scientific corrections and added execution detail. The [first rubric](benchmark-30/v1/RUBRIC.md) remains available alongside the [final strict rubric](benchmark-30/v2/RUBRIC.md). New reference revisions await owner review; the confirmed human review applies to the original versions.
 
-![Strict scoring workflow](docs/assets/scoring-workflow-v2.svg)
+[Detailed scoring workflow](docs/assets/scoring-workflow-v2.svg)
 
 The opened 30-question comparison is separate from the older pilot below. Its published answers and historical targets make it an exposed evaluation set, not a secret held-out test. Credentials and original provider response records are excluded from this release.
 

@@ -1,0 +1,112 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "grok",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.074514+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "807d8b181fe337db2bc45dfc6d85453ca819c422fadb731d3ded822168ef235a",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "Do not add electron microscopy or structural determination to the decisive test.",
+      "issue": "The answer intentionally stops the core experiment at direct leakage and only mentions later structure generically. Size-dependent leakage and turbidity do not substitute for the sealed orthogonal pore readout; no electrical or operational structural pore test is provided."
+    },
+    {
+      "quote": "Amino-terminal and carboxy-terminal fragments both active: no gasdermin D-specific direct mechanism.",
+      "issue": "Both related domains being active does not establish nonspecific injury. Determine preparation identity, concentration dependence and physical mechanisms before excluding a direct GSDMD mechanism."
+    },
+    {
+      "quote": "must have the same direction in every QC-passed preparation",
+      "issue": "A rigid unanimous-sign rule can reject real effects under expected sampling variability. Prespecify preparation-level effect/uncertainty and heterogeneity rather than declare discordance necessarily contamination."
+    },
+    {
+      "quote": "one protein preparation crossed with one liposome batch and run on one day",
+      "issue": "Pairings sharing protein lots, lipid lots or day are correlated. The later random-effects proposal helps, but retain crossed dependence rather than label each pairing independent."
+    },
+    {
+      "quote": "two pre-set mole fractions",
+      "issue": "The actual lipid fractions, protein-to-lipid ranges, durations and production choices are deferred. The especially detailed requested design remains operationally incomplete."
+    },
+    {
+      "quote": "heated or protease-destroyed",
+      "issue": "Define removal/inactivation of residual protease and match its carryover. Destruction controls can otherwise alter reporters or membranes independently."
+    }
+  ],
+  "rationale": "Strongly bounded direct-sufficiency study with independent purification and cleavage/carryover checks, but deliberately limited mechanistic reach. Missing orthogonal pore experiment prevents the joint historical hit; leakage and binding receive partial component credit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "sufficient to injure a protein-free lipid bilayer",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "size-limited pore",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "Primary comparison",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Do not add electron microscopy or structural determination",
+      "assessment": "The full answer does not operationally supply an orthogonal pore test and its artifact-controlled directional result. Direct leakage alone is insufficient."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Small-tracer release with large-tracer retention and preserved turbidity favors a size-limited aqueous lesion",
+      "assessment": "The full answer does not operationally supply an orthogonal pore test and its artifact-controlled directional result. Direct leakage alone is insufficient."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "grok",
+  "item_id": "neu-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:58:34.964293+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "97b74d9d296e725001b25b2a7259b387b4d7ac33e1063c6df44e0260d51971f0",
+  "question_sha256": "4c2268fa61eddebd0815be795d74eda3915b8fb4d10a5114cc77da1e8979793b",
+  "reference_sha256": "e933f1f0f95c95d268287ea90ea23a591a5994e448bdcfe9e9db676ca0323086",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "feb71608dcea3334e79b38e3fdd30230a6f9b793ae137edd5b811986e7ebfec6",
+  "primary_route": "Contemporaneous identity/allocation audit and proposed independent projection-necessity validation.",
+  "complete_final_answer_read": true,
+  "word_count": 948,
+  "first_round_scientific_quality": 86.25,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "sparing performance controls",
+      "evidence_type": "exact_quote",
+      "reason": "No complete prospective role-defined perturbation-efficacy positive, sham/inactive negative and matched procedural/performance-control design. Generic appropriate or matched controls do not specify those comparisons."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "locked identities",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior perturbation/behavior Methods or validated protocols and verify transfer of detailed conditions before the proposed biological follow-up; identity-file recovery is a different action."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "locked identities",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No independent behavioral scoring/suppression measurement calibration with a reference, acceptance criterion and failure action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "locked identities",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No quantitative behavioral endpoint with trial/animal denominator, baseline and timeout/weak/missing-measurement handling."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "would disconfirm necessity as a general claim",
+      "evidence_type": "exact_quote",
+      "reason": "Preserved learning after an unspecified replication does not refute necessity without verified effective inhibition and adequate sensitivity/precision; the negative decision omits those conditions."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "locked identities",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Identity reconciliation can audit the old comparison, but the biological validation is generic or absent. No operational independent perturbation/behavior comparison separates acquisition from task expression with remaining target-specific uncertainty."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "locked identities",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "locked identities",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "locked identities",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "locked identities",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "locked identities",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "locked identities",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "locked identities",
+      "evidence_type": "exact_quote",
+      "reason": "Correctly identifies the dossier-scoped source match and specific record-identity problem, distinguishes unsupported biology from proven falsity/intent, and considers benign provenance alternatives. No additional distinct failure beyond the recorded content and procedural checks."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Clearly separates provenance repair from new biology and learning from performance; biological validation lacks operational and null-result prerequisites.",
+  "item_score": 60
+}

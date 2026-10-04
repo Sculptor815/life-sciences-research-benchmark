@@ -1,0 +1,255 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:13:08.320450+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "b6ec69b3489e0046e883120f0b26eadb030b198e45b8ba7127928731669ff106",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "35b2e70d3277b4c3a5e943406e32e63f054048579cd32fe4a1ba3909b6b9823d",
+  "primary_route": "Normal-prior shrinkage evaluation with simulations, disjoint stability splits, overlapping larger-reference subsampling and optional orthogonal assays.",
+  "complete_final_answer_read": true,
+  "word_count": 2944,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Shrinkage magnitude scales inversely",
+      "evidence_type": "exact_quote",
+      "reason": "Absolute |raw-shrunk| does not monotonically decrease with information across genes when true effect size varies. The proposed unconditional monotonic Figure-2 gate confounds effect magnitude with information; compare fixed-effect strata or relative shrinkage."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Fit the count model",
+      "evidence_type": "exact_quote",
+      "reason": "The likelihood, normalization, empirical-Bayes prior fitting, numerical solver and actual pipeline settings/calibration-to-choice are unspecified."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "near identity, within a pre-set tolerance",
+      "evidence_type": "exact_quote",
+      "reason": "Tolerances are promised but not specified or derived by a concrete calibration procedure, and independent measurement calibration/failure action is absent."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "low-count nominal extremes must shrink toward zero",
+      "evidence_type": "exact_quote",
+      "reason": "The simulation explicitly includes genuine strong low-count effects, yet the rejection rule broadly demands low-count nominal extremes shrink to zero. Truth-zero noisy extremes and true low-count shifts need separate denominators and uncertainty, not a universal collapse criterion."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "many independent simulated datasets",
+      "evidence_type": "exact_quote",
+      "reason": "Independent units are recognized but replication count, Monte Carlo precision target and biological validation power/precision procedure are missing."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No masked comparison/QC or randomized and balanced processing equivalent is specified. Merely registering thresholds does not provide bias control."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Samples failing QC are excluded",
+      "evidence_type": "exact_quote",
+      "reason": "One proposed mapping gate and exclusion logging are present, but failed fits, missing validation, all-eligible denominators and stopping rules are not defined."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "multiple-testing-adjusted value",
+      "evidence_type": "exact_quote",
+      "reason": "No correction method, primary method-difference uncertainty procedure, sign-probability or interval calibration is specified. Uncertainty bars from overlapping subsampling are not operationally defined."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Increase simulation replicates",
+      "evidence_type": "exact_quote",
+      "reason": "Scenarios give some n values but no bounded effect/prior/filter exploration or development criterion and lock; increase/add-scenarios is open ended."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "check against Fig 8 convergence",
+      "evidence_type": "exact_quote",
+      "reason": "Possible failure causes and plots are discussed without a failed-calibration diagnosis linked to ordered repair/retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Alternatives if the plan fails to discriminate",
+      "evidence_type": "exact_quote",
+      "reason": "Changing priors, ranking targets or scenarios has no frozen-versus-changeable plan and fresh independent confirmation requirement."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "shrinkage neither helps nor harms",
+      "evidence_type": "exact_quote",
+      "reason": "No meaningful difference without a sufficiently precise equivalence margin is not evidence of neither benefit nor harm. The positive decision also leaves tolerance/error inflation bounds unspecified."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "matched qPCR, protein, or an independent platform",
+      "evidence_type": "exact_quote",
+      "reason": "Protein direction/magnitude is not an interchangeable truth anchor for RNA abundance, owing to translation and turnover. The independent RNA split is useful, but explicitly deferring to any orthogonal result can give invalid gene-level confirmation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record accessions, checksums",
+      "evidence_type": "exact_quote",
+      "reason": "Raw checksums and tool versions are present, but exact commands, executable environment/code and numerical table/output mapping are not supplied or specified as an immutable audit package."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "then subsample to few replicates",
+      "evidence_type": "exact_quote",
+      "reason": "The high-replicate reference contains the small-sample observations. Calling the full estimate a proxy and forbidding tuning do not remove this shared-data dependence; use disjoint reference samples or model that dependence."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "comparison is more robust",
+      "evidence_type": "exact_quote",
+      "reason": "Perfect confounding is appropriately excluded, but missingness, composition, outliers and batch-generating stress tests are only caveats; relative performance need not be robust to the same misspecification."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Every figure will carry error bars",
+      "evidence_type": "exact_quote",
+      "reason": "No numerical source-table exports, clean-environment rerun, tolerances, resource/failure ledger or source-difference audit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "This is a **methods-direction forecast**",
+      "evidence_type": "exact_quote",
+      "reason": "A relevant biological question, competing estimation behaviors and broad chain from simulation to external checks are explicit. Unknown source details and unperformed status are acknowledged; 2,944 words meet the limit. Count/prior regularization principles are conceptually explained; implementation and specific calibration errors are assigned to their dedicated checks."
+    }
+  ],
+  "deductions_uncapped": 95,
+  "quality_score": 5,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Good organization and explicit non-execution limits, but effect/information confusion, overlapping validation and protein-versus-RNA truth undermine identifying evaluation. The score assesses those substantive defects, not the model identity.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question and selective regularization motivation match; the specified estimator remains Normal and the heavier-tail comparison is an unimplemented future option. Shared-data reference dependence and protein-as-RNA validation prevent a qualified identifying readout/outcome. Same overall non-hit as v1.",
+  "item_score": 2.0
+}

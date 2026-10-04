@@ -1,0 +1,255 @@
+{
+  "model_code": "grok",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:18:56.182483+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9a655e90f5f5992133ec2ae6d3b77145c1aa5d9cad03e5c26c203cfb27870f26",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "9aa93d80857efe204688b36989e106cf10bc3d9e6ca351ed882f40cda9c656f3",
+  "primary_route": "Generic overdispersed count model with Normal effects, simulations and a completely independent RNA reference arm.",
+  "complete_final_answer_read": true,
+  "word_count": 3274,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Those are unreported parameters.",
+      "evidence_type": "exact_quote",
+      "reason": "The generic count family, normalization, dispersion moderation and Normal-prior estimator remain unspecified, without a concrete lookup/calibration-to-executable choice procedure. The protocol correctly avoids inventing source facts but must still operationalize proposed choices."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "lock numerical values before fitting",
+      "evidence_type": "exact_quote",
+      "reason": "Information cutpoints and calibration criteria are promised without a method to derive them, assess simulator/implementation accuracy or act on calibration failure."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "lower-noise proxy, not as absolute truth",
+      "evidence_type": "exact_quote",
+      "reason": "Reference uncertainty is acknowledged, but no propagation or selection-bias correction enters reference-based loss/attenuation; weak/unbounded estimates are not assigned an operational quantitative handling rule."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Biological replication is recognized, but a justified meaningful-effect/precision or power calculation and simulation Monte Carlo precision/stopping rule are absent."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational randomized/balanced processing or masked QC/estimator-comparison plan, nor justified equivalent bias control, is specified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Eligibility intent is present but failed-fit/missing-measurement handling, all-eligible denominators and stopping/maximal acquisition rules remain unspecified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable primary method-difference uncertainty procedure and relevant multiplicity/error-control rule is fixed; listing metrics or interval outputs is insufficient."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Sensitivity scenarios are named, but bounded settings or a concrete derivation-and-lock procedure for the essential prior/filter/model choices are absent."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Possible failure modes are named without a diagnostic result linked to an ordered technical repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational iteration policy identifies what stays frozen, what may change and the fresh independent confirmation required after a change."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "quantification procedure and version once chosen",
+      "evidence_type": "exact_quote",
+      "reason": "Input checksum/sample provenance is useful, but exact command/environment/code/output-table mapping and an immutable executable audit package are missing."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Figure concepts do not supply numeric source tables plus a clean-environment rerun, numerical tolerances, resource/failure logs and source-difference audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not pool them to estimate the prior",
+      "evidence_type": "exact_quote",
+      "reason": "Sound regularization and identifiability explanation, a relevant question and competing noise/prior/dispersion/confounding hypotheses. Proposed status and biological limits are explicit; 3,274 words meet format. Implementation deferral is charged to P02 rather than as a factual error."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "withheld entirely",
+      "evidence_type": "exact_quote",
+      "reason": "True independent samples have a matched RNA estimand and frozen comparison. Prior/dispersion/normalization are not pooled across arms; paired design and confounding eligibility are recognized. Null, heavy-tail and dispersion stress plus joint preservation/error decisions are present; uncertainty and missingness details are charged specifically elsewhere."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "withheld entirely",
+      "evidence_type": "exact_quote",
+      "reason": "True independent samples have a matched RNA estimand and frozen comparison. Prior/dispersion/normalization are not pooled across arms; paired design and confounding eligibility are recognized. Null, heavy-tail and dispersion stress plus joint preservation/error decisions are present; uncertainty and missingness details are charged specifically elsewhere."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "withheld entirely",
+      "evidence_type": "exact_quote",
+      "reason": "True independent samples have a matched RNA estimand and frozen comparison. Prior/dispersion/normalization are not pooled across arms; paired design and confounding eligibility are recognized. Null, heavy-tail and dispersion stress plus joint preservation/error decisions are present; uncertainty and missingness details are charged specifically elsewhere."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "withheld entirely",
+      "evidence_type": "exact_quote",
+      "reason": "True independent samples have a matched RNA estimand and frozen comparison. Prior/dispersion/normalization are not pooled across arms; paired design and confounding eligibility are recognized. Null, heavy-tail and dispersion stress plus joint preservation/error decisions are present; uncertainty and missingness details are charged specifically elsewhere."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Careful explanation keeps biological mechanism, statistical recovery and reproduction separate, and correctly prevents validation leakage. Missing implementation/precision details lower Q2 without making the conceptual argument false.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, regularization tradeoff and proposed stratified readouts align. The primary method retains Normal shrinkage, and heavier tails are a distinct future proposal rather than an adaptive intervention. The prediction is Normal-versus-unshrunk performance, not the historical heavy-tail improvement. No qualified hit.",
+  "item_score": 12.0
+}

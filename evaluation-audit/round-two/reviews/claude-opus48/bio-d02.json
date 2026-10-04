@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:44:54.483768+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7d140626d68a1c9969bcf397518dcb986cc0ca649de9d9b08639517602c07d68",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "b09b5bc111095134c84b9612413b8c8c8c470af6b1e0292b9b328c3371e1ddd5",
+  "primary_route": "Yeast-juice fractionation, chemical add-back and heat-dependent functional reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 2912,
+  "first_round_scientific_quality": 52.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Protocol: Testing for a Heat-Stable Separable Factor in Yeast-Juice Fractions",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior Methods, supplements or validated protocols and verify detailed-condition transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "treated buffer alone",
+      "evidence_type": "exact_quote",
+      "reason": "Testing treated buffer does not rule out inhibitors created in treated factor material; need active-F rescue in that matrix. No adequate sham process control."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Equilibrate (by dialysis",
+      "evidence_type": "exact_quote",
+      "reason": "Dialyzing every fraction can remove the unknown diffusible factor; no retention/recovery protection, evaporation correction or concrete preparation settings."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "QC acceptance",
+      "evidence_type": "exact_quote",
+      "reason": "CV/linearity do not establish gas/product reference accuracy, recovery/leak control and failure action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "volumetric gas/CO\u2082",
+      "evidence_type": "exact_quote",
+      "reason": "No fixed analyte amount/time convention, blank correction or weak/missing handling."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "single large batch",
+      "evidence_type": "exact_quote",
+      "reason": "Different process occasions all derive from one large source batch, with no independent source-preparation replication or explicit restriction of inference."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the \"inactive alone\" premise must hold",
+      "evidence_type": "exact_quote",
+      "reason": "Residual single-fraction activity is treated as a reason to optimize until absent, although an interaction contrast remains interpretable; preserve biological nonresponses."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Pre-register the contrasts",
+      "evidence_type": "exact_quote",
+      "reason": "Mixed model/CIs present, but multiple specificity contrasts lack a multiplicity family/handling."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "verified by conductivity",
+      "evidence_type": "exact_quote",
+      "reason": "Conductivity does not uniquely determine individual ion composition or exclude salt-specific effects."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "repeat with corrected matching",
+      "evidence_type": "exact_quote",
+      "reason": "No refreeze and fresh independent confirmation after repair."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "statistically indistinguishable",
+      "evidence_type": "exact_quote",
+      "reason": "Nonsignificant marker differences do not establish intact-enzyme equivalence; a few markers/stabilizers do not exclude all damage."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "e.g., size-exclusion",
+      "evidence_type": "exact_quote",
+      "reason": "No operational second-method recovery/independent depleted pool or independently validated fermentation-product assay."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unblind only after rates are recorded",
+      "evidence_type": "exact_quote",
+      "reason": "No raw-file/unit ID and exact versioned analysis/settings audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "All experiments below are proposed",
+      "evidence_type": "exact_quote",
+      "reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once."
+    }
+  ],
+  "deductions_uncapped": 75,
+  "quality_score": 25,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "Covers supplied hypothesis, alternatives and nonidentity limits; source QC, randomized interleaved coded assessment, measurable pH/heat/phosphate pilots and prospective choice, and cause-specific repair. Specific control/measurement/inference defects charged once.",
+  "item_score": 25
+}

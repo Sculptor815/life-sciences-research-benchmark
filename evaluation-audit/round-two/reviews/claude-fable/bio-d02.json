@@ -1,0 +1,217 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T18:48:37.763325+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c0c529bcc7d30f2ec0d861de712f74517e30beeab55a85b1d77f39168132f8a4",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "924489ec20d51674243506f09b51ed7919c84321daba24419e2d19cc1644864d",
+  "primary_route": "No substantive final answer; saved provider record marks a valid refusal.",
+  "complete_final_answer_read": true,
+  "word_count": 0,
+  "first_round_scientific_quality": 0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "M",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "G1",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "G2",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "G3",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "G4",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "G5",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "G6",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "G7",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P01",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P02",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P03",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P04",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P05",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P06",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P07",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P08",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P09",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P10",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P11",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P12",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P13",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P14",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    },
+    {
+      "id": "P15",
+      "state": "not_applicable",
+      "points": 0,
+      "reason": "Empty-refusal task-zero override; no scientific propositions or protocol were returned.",
+      "evidence_type": "empty_final_answer",
+      "quote": ""
+    }
+  ],
+  "override": "Empty valid refusal; task score 0, explanation not assessable.",
+  "quality_score": 0,
+  "deductions_uncapped": 0,
+  "explanation_scores": null,
+  "explanation_index": null,
+  "item_score": 0
+}

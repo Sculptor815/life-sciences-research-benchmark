@@ -1,0 +1,239 @@
+{
+  "model_code": "claude-fable",
+  "item_id": "bio-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:46:04.503180+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "e74e6e933e7a66edcc460021e2b15b187355d973df89767a1f61156825c7b811",
+  "question_sha256": "d93d3ae3a989ada01328cb28f05820c58b4ff3f4820b238c927b391e7bd7fa22",
+  "reference_sha256": "1e18498facff37adeca34fd379e7bba2833a775fd7b49bc1c8294cec6b9481cd",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "77354edbd2991ea53622197f384d500382e50e2532823b9b46d552092f598a7f",
+  "primary_route": "Calibrated forced reverse gamma rotation in isolated F1 with ADP/phosphate and direct ATP measurement; motion, direction, enzyme and analytical controls.",
+  "complete_final_answer_read": true,
+  "word_count": 2751,
+  "first_round_scientific_quality": 55.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of primary Methods, supplements or validated mechanical-manipulation/ATP-assay protocols with verification of transfer to this system."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Each arm is a sealed chamber",
+      "evidence_type": "exact_quote",
+      "reason": "The enumerated counterfactual arms omit separate ADP- and phosphate-omission tests. ADP/phosphate are supplied, but substrate dependence cannot be demonstrated by active/dead and field controls alone."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "No contamination or drift mechanism plausibly tracks this schedule.",
+      "evidence_type": "exact_quote",
+      "reason": "A schedule-correlated detector response, mixing, temperature or release process is not logically excluded by temporal alignment; the categorical artifact exclusion exceeds these observations."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "in the same buffer system validated for rotation",
+      "evidence_type": "exact_quote",
+      "reason": "Essential buffer/ionic, quench/product-recovery and torque settings lack concrete values or an operational calibration-to-selection rule. The proposed bead/speed/substrate ranges do not resolve those prerequisites."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Convert luminescence to [ATP](t) via the calibration curve",
+      "evidence_type": "exact_quote",
+      "reason": "Continuous luciferase consumes ATP. A static concentration calibration and lag spike do not recover production or distinguish accumulation from detector consumption/carryover. A kinetic ATP-balance calibration with acceptance/failure criteria is missing."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Replicate counts and nested chambers are named, but no pilot-variance, meaningful-effect and precision/power justification for confirmatory replication."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Prospective quality review is proposed, but operational exclusion thresholds, stopping policy and complete technical attrition versus biological nonresponse accounting are not specified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary comparisons are named, but interval construction/model checking and multiplicity handling for the directional/control comparisons are not operationally specified."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot ranges or variables are supplied, but no complete bounded exploration and objective setting-selection/lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit revised-procedure refreeze and fresh independent confirmation after failed/ambiguous exploratory work."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "either coupling is unidirectional/ratcheted (M2) or the imposed angle does not control the catalytic sites",
+      "evidence_type": "exact_quote",
+      "reason": "The decision rule does not exclude finite prebound ATP release by measuring the initial pool and demonstrating repeated net product beyond it. The negative branch also overnarrows explanations despite unresolved load/substrate/detector conditions; later caveats limit but do not repair the proposed discriminating test."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete preparation/chamber/raw-trajectory/chemical-sample/calibration manifest linked to analysis versions/settings, deviations and outputs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Next Mechanistic Question and Experimental Design: Forced Reverse Rotation of F1 and Direct Detection of ATP Synthesis",
+      "evidence_type": "exact_quote",
+      "reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correct historical question, reverse magnetic actuation, empirical direction, ATP reporter and numerous prospective controls. Quantitative concentrations/speeds are honestly proposed, and direction-audit/lag diagnostics are useful. Missing substrate counterfactuals, ATP-consumption calibration and initial-pool accounting prevent a qualified synthesis claim; optional chromatography can corroborate identity but does not repair production kinetics.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question and intervention match reverse gamma work with ADP/phosphate. Mechanism, readout and outcome fail the qualified target: no ADP/phosphate omission controls establish substrate dependence, static luminescence-to-ATP conversion ignores continuous detector consumption, and initial bound ATP is not inventoried/exceeded. Thus a controlled repeated net synthesis result is not identified. Match [true,false,true,false,false]; first-round records remain untouched.",
+  "item_score": 12.0
+}

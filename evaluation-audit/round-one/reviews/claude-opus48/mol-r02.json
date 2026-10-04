@@ -1,0 +1,107 @@
+{
+  "item_id": "mol-r02",
+  "response_id": "mol-r02",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:33:36.037422+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "37de3813eb5ee0a4c170d6b056199d847c189bc72b8a898b64e2dfc0df6aba2c",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "a homologous donor → repairable single break",
+      "issue": "The paired donorless arm is labeled unrepairable, but absence of homologous donor does not exclude end joining or other escape/repair routes. Characterize repair products, nuclease shutoff/recleavage and chromosome retention; bulk persistence alone does not establish every dividing lineage retains the break."
+    },
+    {
+      "quote": "gate single cells on confirmed arrest morphology",
+      "issue": "Selecting cells for an arrest phenotype biases the primary test of whether the lesion induces arrest. Gate only on independently measured exposure/technical quality and retain outcome heterogeneity."
+    },
+    {
+      "quote": "If *rad9Δ* unexpectedly also arrests, the assay/strain is compromised",
+      "issue": "This can be a real lesion-specific RAD9-independent response, not necessarily technical failure. Excluding it by expected biology biases the experiment; investigate with independent genotype/exposure checks."
+    },
+    {
+      "quote": "Correlate individual-cell release time with physical repair status (repaired vs still-broken) using paired fixed-timepoint samples.",
+      "issue": "Bulk matched destructive samples do not establish individual-lineage repair status. Limit inference to culture-level association unless lesion state is measured in the same lineage or a valid lineage-linked strategy."
+    },
+    {
+      "quote": "RAD9 senses a repair intermediate",
+      "issue": "A processing perturbation can affect signaling functions independently of its DNA product; preserved cutting alone does not establish the intermediate is the sensed causal signal or that RAD9 directly senses it."
+    }
+  ],
+  "rationale": "Valuable concrete defined-lesion approach and physical repair/processing controls. Outcome gating, unrepairability assumptions and lineage-level overinterpretation are critical defects. This alternative can earn quality credit but does not test synthesis-dependent switching.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Exact packet and full frozen reference read, including sealed target. Original rubric only; stricter requested penalties inactive. Alternative scientifically valuable research questions receive full quality consideration independently of retrospective match.",
+    "Sealed target requires a synthesis-versus-existing-protein switching question, verified synthesis perturbation, separate initiation/recovery and conditional predictions. General checkpoint on/off discussion or conditional RAD9 removal alone is not a joint match.",
+    "Packet permits repair during externally imposed delay; it does not prove all repair, fidelity or survival is restored or that RAD9 has no repair-related role.",
+    "New detailed tools may be proposed without claiming author methods. Calibrate unknown doses and windows; unsupported precision and unselected central tools are different limitations.",
+    "Physical lesion measurements, checkpoint state, actual division, survival and protein abundance are distinct readouts. Budding, foci or CFU cannot silently substitute for all of them.",
+    "Track original cohorts, damage dilution/selection and death as competing events. End-of-window living nondivision is censoring, not proof of permanent arrest.",
+    "Do not reject confirmatory outcomes merely because expected genotype effects fail. Restrict exclusions to independently verified technical failures.",
+    "Conditional switch nulls require validated function and kinetics. Repair manipulation may affect signaling directly; correlated lesion decline alone does not establish a causal sensed species.",
+    "Donorless HO breaks can undergo end joining; nuclease recutting, chromosome loss and surviving lineages require verification. Population measurements do not establish per-cell persistence.",
+    "Historical primary abstract and metadata verified, full original Methods not audited. Review is unblinded single-Codex assessment, not independent expert certification."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2247073/",
+      "scope": "Primary abstract and publication metadata personally read; verifies sealed 1990 target, not full historical methods."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8628283/",
+      "scope": "Indexed primary abstract excerpt verifies HO-break end joining; no full Methods audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "What molecular feature of DNA damage does the RAD9 pathway actually sense",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "What molecular feature of DNA damage does the RAD9 pathway actually sense",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "What molecular feature of DNA damage does the RAD9 pathway actually sense",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "What molecular feature of DNA damage does the RAD9 pathway actually sense",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "What molecular feature of DNA damage does the RAD9 pathway actually sense",
+      "assessment": "The complete answer proposes a different checkpoint mechanism. It does not jointly test initiation and recovery under verified protein-synthesis inhibition; generic timing readouts do not constitute the specified target readout."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

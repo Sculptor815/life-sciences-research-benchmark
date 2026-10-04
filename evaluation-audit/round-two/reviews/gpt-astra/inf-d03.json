@@ -1,0 +1,238 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "inf-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:22:37.373673+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "f0c928e0eaffa983b26a2699b749d754d231455d0b26e309fa9a13ed393dadb4",
+  "question_sha256": "8138345556a001f3fc4bac1a0c5986dac661ae6888f5a3dbc53bb26d7b98aa09",
+  "reference_sha256": "912190a8c7d04d1735a11f4798b4464c402e57d4430430d189830cd0e29fdd0d",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "726d5cad0ca346168f6d684b870cf5d3eb1f867635c6dff5c9f76383200d7bae",
+  "primary_route": "Proposed donor-average treatment contrast with hierarchical comparison, donor-grouped resampling and null calibration, and protected donor-level validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2383,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommendation and status",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original experimental Methods/supplements to verify allocation and sampling conditions and release-specific model protocols. Reconstructing identifiers and naming prior evidence alone is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "They would be selected through assay considerations and proposed pilot checks.",
+      "evidence_type": "exact_quote",
+      "reason": "Outcome distribution/link and fitting choices remain an open future selection without a concrete conditional algorithm or calibration-to-choice rule; the generic equations do not make the primary analysis executable."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Quality thresholds would be calibrated against measurement reliability",
+      "evidence_type": "exact_quote",
+      "reason": "No operational reference-to-acceptance procedure, precision/error target or calibrated assay failure gate is given."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "multiplicity-adjusted analyses clearly distinguished",
+      "evidence_type": "exact_quote",
+      "reason": "Randomization testing and grouped bootstrap are explained, but no explicit secondary multiplicity family/procedure or operational confidence-interval construction is selected."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "sensitivity to donor influence and plausible modeling alternatives",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded parameter/model sensitivity set or procedure deriving search bounds and stopping before lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Revise the development procedure and recalibrate before validation",
+      "evidence_type": "exact_quote",
+      "reason": "Development recalibration is useful, but the protocol does not explicitly require a revised procedure to be refrozen and confirmed on fresh independent donors after a failed validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation and status",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No immutable raw-input hashes, exact computational environment, commands and linked analysis provenance sufficient for a new analyst to reconstruct all outputs."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "grouped cross-validation or leave-one-donor-out validation",
+      "evidence_type": "exact_quote",
+      "reason": "The outer donor holdout is protected; in the proposed internal cross-validation, all preprocessing and feature selection are not explicitly refitted inside each training fold."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation and status",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical reproduction of estimates/calibration plots with tolerances, runtime/resource and failure logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation and status",
+      "evidence_type": "exact_quote",
+      "reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong equal-donor estimand, conditional-versus-marginal contrast distinction, allocation-constrained sharp-null testing and Monte Carlo precision planning. Simulations rerun the full pipeline and stress informative sampling, while counts and exclusion levels remain explicit. Missing operational choices and reproducibility obligations are scored separately.",
+  "item_score": 50
+}

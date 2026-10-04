@@ -1,0 +1,223 @@
+{
+  "model_code": "glm",
+  "item_id": "mol-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T03:30:03.448827+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7c30fbe9a6a825cb77a076459d35361778a3998225a4e0ef3491e6a25bd315e3",
+  "question_sha256": "977a901aa45a51e53beb3d5dfc1df4236d50dbabe47be214290304b663ddcfc5",
+  "reference_sha256": "4c10b3678ba1f5bc0060a9db770578e48e607d5100db658b12d6b95ee26dbab8",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "8854b0454534a068a1e90908defce8397e75d6af338e1f20e82f42248c356d5a",
+  "primary_route": "Matched wild-type versus kinase-dead K rescue in K-loss cells; proposed orthogonal confirmation assessed where used.",
+  "complete_final_answer_read": true,
+  "word_count": 2210,
+  "first_round_scientific_quality": 51.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit prior Methods/supplement/validated-protocol consultation and detailed condition-transfer verification before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No matched non-targeting editing control. A second sgRNA guards guide-specific effects but not common editing/selection procedures."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "K catalytic activity, not scaffolding, is required",
+      "evidence_type": "exact_quote",
+      "reason": "Catalytic necessity does not establish scaffold dispensability. Failed WT rescue also does not prove the phenotype was never on-target: adaptation or expression/context failure remain possible, as the answer itself partly notes."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No cell identity/mycoplasma/passage integrity gate; locus sequencing alone does not qualify the cancer-line preparation."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "safe-harbor or low-copy integration",
+      "evidence_type": "exact_quote",
+      "reason": "No quantitative delivery, induction exposure, culture or sampling-preparation recipe or concrete calibration-to-choice workflow for those conditions."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Titrate ligand on WT lysate",
+      "evidence_type": "exact_quote",
+      "reason": "Ligand titration on lysate is not a valid cellular receptor-stimulation calibration. Serial blot dilution is useful but lacks a quantitative accuracy/specificity gate and its failure rule. This assay-calibration defect is charged here, not again under G1."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "and to K construct abundance",
+      "evidence_type": "exact_quote",
+      "reason": "The primary signal is normalized to K abundance in a K-null/empty-vector arm, creating a zero or near-zero denominator. No alternate estimand or denominator-bound rule is supplied, so the central cross-genotype endpoint is invalid."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "KO+EV shows a measurable difference",
+      "evidence_type": "exact_quote",
+      "reason": "Choosing assay length partly to obtain a KO-EV difference without a bounded outcome-independent rule selects the expected result; true small/null differences must be retained."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Significance and multiple-time-point corrections are specified, but full/equal rescue and catalytic dispensability have no equivalence margin/test. A nonsignificant difference cannot establish those decisions."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Time grid and expression window are concrete, but ligand/induction/inhibitor dose exploration has no bounded range or range-selection/stopping procedure and lock before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Re-engineering, dose and assay changes do not require refreeze and fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "K protein loss \u226590%",
+      "evidence_type": "exact_quote",
+      "reason": "Accepting up to 10% endogenous K without a functional upper bound can leave enough activity for rescue. KD catalytic nondetection likewise is not linked to a biologically effective activity threshold; the primary separation gate is insufficient."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Dose-response for pS suppression in WT",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed orthogonal inhibitor dose is chosen from the same downstream pS outcome, without independent cellular target inhibition, resistance/null specificity and scaffold-preservation validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete sample/raw-data/code/version/settings audit trail."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Study Design: Catalytic Activity vs. Scaffolding Function of Kinase K in Ligand-Induced Signaling and Growth",
+      "evidence_type": "exact_quote",
+      "reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties."
+    }
+  ],
+  "central_false_premise": "The principal cross-genotype endpoint divides by K abundance even in the K-null empty-vector condition. That denominator is zero or near zero, so the stated primary comparison cannot support the main conclusion.",
+  "deductions_uncapped": 80,
+  "quality_score": 20,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Useful multi-guide design, randomized coded allocation, pilot power, concrete starting time grid and diagnostic assay alternatives. However the primary normalization is undefined in the essential null arm, the catalytic-null gate is not functionally bounded, and inference overstates scaffold exclusion. Specific defects are charged under P03/P04/P13/P14 without duplicate general inference penalties.",
+  "item_score": 20
+}

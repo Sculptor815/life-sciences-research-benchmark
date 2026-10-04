@@ -1,0 +1,95 @@
+{
+  "item_id": "inf-r02",
+  "response_id": "inf-r02",
+  "model_code": "gpt-astra",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:15:53.268132+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "66e9175a2dd74db34f0f66a6ae39f629238413ec4e3e3f42f403c0c9b66bf588",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 2,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 90.0,
+  "reasoning_index": 100.0,
+  "errors": [
+    {
+      "quote": "Exact times and doses are **unreported parameters to be determined**",
+      "issue": "The plan does not nominate a concrete cell population, target/antibody, reversible cue, starting dose/time grid or working assay conditions. Its disciplined calibration is valuable, but the especially detailed executable experiment still requires substantial choices."
+    },
+    {
+      "quote": "Use a prespecified donor-blocked model or donor-level paired contrasts.",
+      "issue": "No actual observation likelihood/fitting workflow, preprocessing choices, implementation or numeric operating criteria are provided. The mechanistic ODE correctly distinguishes latent abundance from counts, but remains a model sketch rather than a runnable analysis."
+    },
+    {
+      "quote": "Introduce a brief, validated intervention",
+      "issue": "Protein-synthesis/transport interventions and joint orthogonal assay are left as validated future selections; reagent/platform, target engagement and operational workflow are not specified."
+    }
+  ],
+  "rationale": "Strong alternative causal-discordance study: orthogonal same-cell validation, total-versus-surface separation, composition controls, donor/randomization distinction, measurement-error caveats and bounded mechanism claims. Its scientific merit is separate from historical matching. No adaptive cell-specific multimodal neighborhood method or its external comparison is proposed, so the historical hit is false.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Complete final answer, packet, reference and sealed target personally read. Original rubric only; strict-round penalties not active.",
+    "Cell-specific learned modality utility and an explicit integrated neighborhood construction are essential for this historical target; generic calibrated weighting or a graph mention is insufficient.",
+    "Donor splitting must precede fitted transformations and tuning. Condition blinding does not replace independent endpoint validation or prevent marker-label circularity.",
+    "A technical-null mismatch need not define a new cell state. Low-count/QC correlation does not prove artifact. Use known-control calibration, independent phenotypes and quantitative sensitivity analyses.",
+    "The supplied assessment contains no raw data; a plan is not actual figure reproduction. Accessions should be sought in primary records, never invented.",
+    "Primary abstract, Figure 1 caption and indexed WNN construction Methods excerpt verified. Complete paper, supplement and raw-data execution not audited."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34062119/",
+      "scope": "Complete indexed primary abstract and Figure 1 caption read."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238499/",
+      "scope": "Indexed primary Methods excerpt for cell-specific weighted similarity and WNN graph construction read; no whole-paper/raw-data audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does a reversible biological perturbation generate reproducible RNA–surface-protein discordance",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Detection, specificity, or processing artifact",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Retain the two modalities separately during the primary analysis",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Use models to generate held-out temporal or intervention predictions.",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "the selected RNA–surface-protein mismatch reports a reproducible temporal feature",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

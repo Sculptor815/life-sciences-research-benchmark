@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "inf-p01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:04:32.457101+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "fc1809031416b644725a4202ad7a23c02a2a719ce176abc76baf6b96829ef49b",
+  "question_sha256": "5da3fb54f9491d59b9c4ae45838ec32f8c3c831d012fdff21f3c2db66758729d",
+  "reference_sha256": "678e48fc0e62521f86b423c0fee59992496dd7ba82fb78a06d1e061d1d217b32",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "04150f7498e8976029be91ed7074bd1d0c34c0766dd7456718ff1bf3ff61bb77",
+  "primary_route": "Source-provenance assessment and burden/enrichment reanalysis with technical/ancestry and testable-universe checks.",
+  "complete_final_answer_read": true,
+  "word_count": 1163,
+  "first_round_scientific_quality": 56.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "No benign alternative survives",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior burden/enrichment Methods or versioned documentation to select detailed analysis conditions and verify transfer before execution. Citation/provenance lookup is separate."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "No benign alternative survives",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Does not define a complete primary burden/enrichment estimand and model with uncertainty and a declared multiplicity family. Generic calibrated p-values, prespecification or parameter lists do not provide those inferential choices."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "reported pathway enrichment is biased upward",
+      "evidence_type": "exact_quote",
+      "reason": "An all-annotated universe can bias enrichment upward or downward depending on pathway eligibility; untestable genes are not necessarily exclusively non-pathway genes."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "the causal-pathway claim is refuted",
+      "evidence_type": "exact_quote",
+      "reason": "Disappearance or loss of significance is treated as support/confirmation of artifact without comparing effect estimates and precision; reduced sample size, power or changed measurement can also cause it."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Re-run the burden test after",
+      "evidence_type": "exact_quote",
+      "reason": "Independent replication is absent or only named, without defining how the independent comparison avoids the original center/ancestry/ascertainment problem; reprocessing the same dataset alone is not independent validation."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Matching cases and controls on ancestry principal components",
+      "evidence_type": "exact_quote",
+      "reason": "Does not address complete center-by-case-status confounding: adjustment or within-center stratification cannot identify a disease effect when no center contains both statuses. No overlap check and concrete balanced-data remedy are supplied."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "No benign alternative survives scrutiny",
+      "evidence_type": "exact_quote",
+      "reason": "The packet leaves true association and equivalent effective filters possible; the answer itself admits filter equivalence is possible. Claiming all benign alternatives are eliminated exceeds the evidence."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "No benign alternative survives",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "No benign alternative survives",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "No benign alternative survives",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "No benign alternative survives",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "No benign alternative survives",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "No benign alternative survives",
+      "evidence_type": "exact_quote",
+      "reason": "Separates the affirmative teaching-record provenance from analysis validity and does not infer real-person misconduct. The supplied confound/ascertainment issues are considered without any additional distinct content defect beyond the recorded checks."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "Correct fictional-source classification, but enrichment direction and null/reanalysis interpretation are overconfident, with no independent balanced validation.",
+  "item_score": 60
+}

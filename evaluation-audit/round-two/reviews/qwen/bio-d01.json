@@ -1,0 +1,222 @@
+{
+  "model_code": "qwen",
+  "item_id": "bio-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:15:35.361850+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "680d7a99162a48ec1b603275dce65a9b8cbb1e17ab3de15d00a0aa90a5f9d485",
+  "question_sha256": "dbffc3996e7205cfbfead4d99fa7ff5221ca5a79110f321bf73b1e23a3eba3ac",
+  "reference_sha256": "31f071d317003a0d5332e22bd77e5c239ebb5fefc2b0a57162243e7f78e83f7b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "641f2279c80700cf1ea137ba30fd4714160ade693277babd159729c5ccc10b99",
+  "primary_route": "Separate optical, reporter and target kinetics with substrate titration and proposed independent product validation.",
+  "complete_final_answer_read": true,
+  "word_count": 4293,
+  "first_round_scientific_quality": 61.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Bottom line / recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior target/reporter Methods, supplements or a validated protocol before execution and check transfer of detailed conditions."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Final decision framework",
+      "evidence_type": "exact_quote",
+      "reason": "The returned 4,293-word answer materially exceeds the 3,500-word limit; repeated frameworks add substantial length."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Reagents and compound handling",
+      "evidence_type": "exact_quote",
+      "reason": "Checks activity/solubility/stability but not prerequisite enzyme/compound identity/purity and authenticated stock concentration."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use one defined assay buffer",
+      "evidence_type": "exact_quote",
+      "reason": "Lists unspecified buffer/pH/cofactor/temperature conditions without a concrete selection/calibration-to-setting procedure or reaction amounts/timing."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "within a predefined tolerance",
+      "evidence_type": "exact_quote",
+      "reason": "Good matrix-spike concept but no tolerance value or a procedure deriving acceptable recovery/precision from an explicit accuracy requirement; repeated predefine instructions leave the pass rule unknown."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Calculate activity as initial rate relative to vehicle",
+      "evidence_type": "exact_quote",
+      "reason": "No primary product/rate unit convention and complete weak/missing measurement reporting rules beyond saturation/nonlinearity exclusion."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Fit initial-rate data",
+      "evidence_type": "exact_quote",
+      "reason": "No free-versus-total inhibitor/depletion check or explicit run-level/nested-well uncertainty model for kinetic comparisons."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Expand substrate range",
+      "evidence_type": "exact_quote",
+      "reason": "Repairs/expansion do not specify a refrozen amended protocol and fresh independent confirmatory dataset."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "target-generated product is unchanged",
+      "evidence_type": "exact_quote",
+      "reason": "No-change classifications lack an explicit adequate-precision/equivalence negative decision, despite a useful ambiguous-mechanism branch."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If the coupled fluorescence assay is compromised",
+      "evidence_type": "exact_quote",
+      "reason": "Primary two-step route reuses reporter chemistry; chromatography/MS alternatives remain a list without operational quench/matrix/analyte-recovery validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record raw fluorescence",
+      "evidence_type": "exact_quote",
+      "reason": "Raw/blank/corrected data are retained but no raw-file/unit IDs and versioned executable code/settings audit."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Required controls",
+      "evidence_type": "exact_quote",
+      "reason": "Role-defined controls cover active/omission, optical/product and reporter bypass plus target substrate/product chemistry."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate sequestration",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses supplied facts, kinetics and substrate chemical alternatives with appropriately limited target-step language; specific omissions charged once."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate sequestration",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses supplied facts, kinetics and substrate chemical alternatives with appropriately limited target-step language; specific omissions charged once."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate sequestration",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses supplied facts, kinetics and substrate chemical alternatives with appropriately limited target-step language; specific omissions charged once."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate sequestration",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses supplied facts, kinetics and substrate chemical alternatives with appropriately limited target-step language; specific omissions charged once."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate sequestration",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses supplied facts, kinetics and substrate chemical alternatives with appropriately limited target-step language; specific omissions charged once."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "substrate sequestration",
+      "evidence_type": "exact_quote",
+      "reason": "Addresses supplied facts, kinetics and substrate chemical alternatives with appropriately limited target-step language; specific omissions charged once."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "pilot variability",
+      "evidence_type": "exact_quote",
+      "reason": "Explicit independent batches/days versus technical wells with pilot-variance confidence-interval precision planning."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "prelocked analysis rules",
+      "evidence_type": "exact_quote",
+      "reason": "Randomization/balanced controls, coding through QC and locked analysis equivalence if full blinding is impractical."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Define these before analyzing",
+      "evidence_type": "exact_quote",
+      "reason": "Outcome-independent technical gates cover recovery, rate validity, solubility and interference; quantitative calibration details are separately P03."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "conceptually",
+      "evidence_type": "exact_quote",
+      "reason": "Composite signal is explained as a conceptual model and kinetics is conditioned on validated reporter and optical behavior."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "documented before hypothesis testing",
+      "evidence_type": "exact_quote",
+      "reason": "Dose upper bounds follow measured solubility/detector validity, Km-bracketing and linear-window pilots, with prelocked rules before testing. Missing buffer-setting procedure remains P02."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Poor Michaelis-Menten fits",
+      "evidence_type": "exact_quote",
+      "reason": "Failure/cause/repair table includes substrate sequestration, enzyme instability, reporter interference and model ambiguity."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 93.75,
+  "explanation_reason": "Careful conceptual alternatives and replication plan; overlong and still leaves key calibration, analytical confirmation and audit conditions unspecified.",
+  "item_score": 40
+}

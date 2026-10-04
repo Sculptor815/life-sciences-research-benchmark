@@ -1,0 +1,255 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:09:43.457163+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "ae58e0e021a20f8c2ce3c887634b917402ec539becd2554ce60a269edfb62e16",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "26edd0392e6d21f8926fe88dd177256650832e9bbb2e2fe3ba3ce96bde32f1bb",
+  "primary_route": "NB likelihood with matched Normal and finite two-scale Normal-mixture priors; simulations plus disjoint larger-reference and independent biological cohorts.",
+  "complete_final_answer_read": true,
+  "word_count": 3210,
+  "first_round_scientific_quality": 95.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record optimizer starts, tolerances, boundary solutions, and failures.",
+      "evidence_type": "exact_quote",
+      "reason": "The count model and mixture are specified, but hyperparameter constraints, start selection, solver stopping and convergence-to-acceptance rules are not supplied or derived by a concrete calibration procedure. Raw-read QC cutoffs are likewise only promised. This is one workflow implementation deduction."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "investigate normalization, confounding, dispersion modeling, outliers, and replication",
+      "evidence_type": "exact_quote",
+      "reason": "This is an investigation list without a defined diagnostic result linked to an ordered repair and retest. The statistical rejection gates are credited elsewhere."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "specify the additional samples or design changes needed.",
+      "evidence_type": "exact_quote",
+      "reason": "Ambiguity prompts additional data/design changes, but there is no operational iteration policy identifying which failed settings may change, which remain frozen and the fresh confirmation required after a change."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Generate every figure directly from saved analysis tables",
+      "evidence_type": "exact_quote",
+      "reason": "Numerical figure tables and versioned scripts are strong, but a clean-environment raw-input rerun, numerical agreement tolerances, resource/failure ledger and source-difference audit are not specified."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "A broader prior component could reduce that attenuation but might also admit noisy extremes.",
+      "evidence_type": "exact_quote",
+      "reason": "A scientifically coherent alternative with a correctly scaled NB model, explicit normalization limits, meaningful expression question and competing noise/prior/confounding explanations. Proposed values are labeled, the 3,210-word format is within limit, and forecast is distinguished from reproduction."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "Low-information false-extreme frequency no greater than 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth simulations, explicit information strata and joint error/coverage/retention gates provide statistical calibration and falsifiable decisions. Boundary estimates and low-information cases are retained/flagged. Paired study-level uncertainty, bounded count/dispersion/n/depth scenarios and a frozen robustness set are specified."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Low-information false-extreme frequency no greater than 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth simulations, explicit information strata and joint error/coverage/retention gates provide statistical calibration and falsifiable decisions. Boundary estimates and low-information cases are retained/flagged. Paired study-level uncertainty, bounded count/dispersion/n/depth scenarios and a frozen robustness set are specified."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "Low-information false-extreme frequency no greater than 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth simulations, explicit information strata and joint error/coverage/retention gates provide statistical calibration and falsifiable decisions. Boundary estimates and low-information cases are retained/flagged. Paired study-level uncertainty, bounded count/dispersion/n/depth scenarios and a frozen robustness set are specified."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "Low-information false-extreme frequency no greater than 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth simulations, explicit information strata and joint error/coverage/retention gates provide statistical calibration and falsifiable decisions. Boundary estimates and low-information cases are retained/flagged. Paired study-level uncertainty, bounded count/dispersion/n/depth scenarios and a frozen robustness set are specified."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Low-information false-extreme frequency no greater than 5%",
+      "evidence_type": "exact_quote",
+      "reason": "Known-truth simulations, explicit information strata and joint error/coverage/retention gates provide statistical calibration and falsifiable decisions. Boundary estimates and low-information cases are retained/flagged. Paired study-level uncertainty, bounded count/dispersion/n/depth scenarios and a frozen robustness set are specified."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "Monte Carlo standard errors exceed 0.01",
+      "evidence_type": "exact_quote",
+      "reason": "Independent biological units and paired splits are distinguished from technical replication; simulation replication has an explicit precision-based stopping rule. Blinded QC, a random primary split, balanced identifiable eligibility and all-failure/filtered-gene ledgers limit selection bias."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Monte Carlo standard errors exceed 0.01",
+      "evidence_type": "exact_quote",
+      "reason": "Independent biological units and paired splits are distinguished from technical replication; simulation replication has an explicit precision-based stopping rule. Blinded QC, a random primary split, balanced identifiable eligibility and all-failure/filtered-gene ledgers limit selection bias."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Monte Carlo standard errors exceed 0.01",
+      "evidence_type": "exact_quote",
+      "reason": "Independent biological units and paired splits are distinguished from technical replication; simulation replication has an explicit precision-based stopping rule. Blinded QC, a random primary split, balanced identifiable eligibility and all-failure/filtered-gene ledgers limit selection bias."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Reference and validation outcomes must not inform its size factors.",
+      "evidence_type": "exact_quote",
+      "reason": "Disjoint discovery/reference/new biological validation roles keep fitting inside subsets; independent validation is operational and reference uncertainty is explicit. Immutable checksums, versions, environments and commands support audit; batch, composition, outlier and model-misspecification stress tests are included."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "Reference and validation outcomes must not inform its size factors.",
+      "evidence_type": "exact_quote",
+      "reason": "Disjoint discovery/reference/new biological validation roles keep fitting inside subsets; independent validation is operational and reference uncertainty is explicit. Immutable checksums, versions, environments and commands support audit; batch, composition, outlier and model-misspecification stress tests are included."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "Reference and validation outcomes must not inform its size factors.",
+      "evidence_type": "exact_quote",
+      "reason": "Disjoint discovery/reference/new biological validation roles keep fitting inside subsets; independent validation is operational and reference uncertainty is explicit. Immutable checksums, versions, environments and commands support audit; batch, composition, outlier and model-misspecification stress tests are included."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "Reference and validation outcomes must not inform its size factors.",
+      "evidence_type": "exact_quote",
+      "reason": "Disjoint discovery/reference/new biological validation roles keep fitting inside subsets; independent validation is operational and reference uncertainty is explicit. Immutable checksums, versions, environments and commands support audit; batch, composition, outlier and model-misspecification stress tests are included."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong and carefully bounded scientific explanation with a genuine joint test of retaining supported effects and suppressing noise. Operational omissions are scored separately from explanatory validity.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The question, shrinkage tradeoff, stratified readouts and predicted improvement match. The specified challenger is a finite two-Normal mixture: it has Gaussian asymptotic tails, not the predeclared adaptive heavy-tailed intervention. This retains the v1 matching judgment and does not diminish the scientific legitimacy of the alternative.",
+  "item_score": 28.0
+}

@@ -1,0 +1,78 @@
+{
+  "item_id": "neu-d01",
+  "model_code": "claude-opus46",
+  "response_id": "neu-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:58:36.956712+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "afce183176877b7fe3d8507bf4324b0c248d7a04112a5e374926c5c89d73df7a",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 55.0,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "somatic inhibition is preferred given O2",
+      "issue": "Projection-defined somatic inhibition also suppresses any collateral outputs. The late collateral caveat is correct but does not govern the repeated pathway-specific positive conclusion. A local validated terminal manipulation or a population-scoped claim is required."
+    },
+    {
+      "quote": "expect <5% overlap to confirm specificity",
+      "issue": "A small fraction of double-projecting cells can be behaviorally important, and incomplete retrograde labeling can underestimate overlap. This arbitrary anatomical threshold cannot establish functional pathway specificity."
+    },
+    {
+      "quote": "No significant difference confirms adequate masking.",
+      "issue": "Failure to reject a light effect does not establish behavioral invisibility or exclude a consequential confound. Use a calibrated detection assay and confidence/equivalence bounds; background light alone does not guarantee masking."
+    },
+    {
+      "quote": "Locomotion speed and omission rate are not significantly impaired during cue-epoch inhibition (ruling out motor confound).",
+      "issue": "Nonsignificance does not rule out meaningful motor effects. No task-matched same-epoch instructed-movement control or cue-detection test separates inhibition-induced sensory/attention effects from retrieval."
+    },
+    {
+      "quote": "turns OFF at cue offset (or at go signal if a delay is included)",
+      "issue": "The pilot permits recovery up to 500 ms and rebound up to 1 s, yet the design can start movement at light offset. A calibrated washout must separate physiological suppression/rebound from the movement period."
+    },
+    {
+      "quote": "If suppression was confirmed, accept the negative result.",
+      "issue": "Verified suppression alone is insufficient: achieved population coverage, residual activity and confidence intervals relative to a meaningful effect are needed. The later incomplete-silencing caveat does not repair this categorical rule."
+    }
+  ],
+  "rationale": "Provides useful randomized conditions, physiology, histology and hierarchical analysis, but the chosen somatic manipulation cannot carry the central projection claim. Several core exclusions rely on null significance tests, and physiological recovery is not aligned with the proposed task. Late caveats earn partial credit but contradict operative acceptance rules.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "O1 establishes that population P has two targets, not that every Q-projecting neuron collateralizes. Do not assume either overlap or disjointness; validate or retain the limitation.",
+    "Projection-defined somatic inhibition tests a population and all its affected outputs. Local Q-terminal intervention is preferable for a pathway claim but also needs actual transmission and off-target validation.",
+    "Suppression in neuronal somata does not guarantee suppression of terminal transmission. Validate physiological onset, sustained effect, offset recovery and rebound at the actual behavioral settings.",
+    "Reduced normal performance supports a conditional causal requirement, not memory storage or an exclusive retrieval computation. Cue perception, attention, maintenance and motor preparation remain alternatives.",
+    "Light offset is not necessarily inhibition offset. A choice made after light ends can correctly report an earlier retrieval deficit; outcome timing alone is not a rebound diagnosis.",
+    "Movement adjustment/matching after intervention and conditioning on response completion can bias inference. Report all randomized trials and use experimental motor/sensory dissociations.",
+    "A nonsignificant control effect is not equivalence. Predefine biologically meaningful bounds and obtain enough precision to exclude consequential confounds.",
+    "Two pathways or epochs can both be necessary. Effects in an other-projection control do not by themselves invalidate the tested pathway contribution.",
+    "Numbers missing from the packet may be proposed as pilot settings; no specific opsin, surgical coordinate or animal count is mandatory. Operational calibration and justified independent-animal sampling are required.",
+    "Reference correction: population-level divergence must not be described as demonstrated single-neuron collateralization. Terminal effects on intended local Q signaling are part of the intervention, not automatically an off-target artifact."
+  ],
+  "review_sources": [
+    {
+      "title": "Mahn et al. (2016): biophysical constraints of presynaptic optogenetic inhibition",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4926958/",
+      "scope": "Reviewer-only primary-source check of terminal efficacy, paradoxical release and offset rebound; no particular construct is required by the question."
+    },
+    {
+      "title": "Montgomery, Nyhan and Torres: post-treatment conditioning",
+      "url": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/",
+      "scope": "Authors summarize their methodological paper on adjustment/selection after treatment. Used only by reviewer, not candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

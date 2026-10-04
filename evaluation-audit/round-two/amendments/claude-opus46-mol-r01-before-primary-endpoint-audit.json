@@ -1,0 +1,240 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "mol-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:34:50.040421+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "7db604ef42e971eb217390def972d99e51d5e02b5979fec1a26077a6cf0a23ed",
+  "question_sha256": "5488a7e9eeb816e751e05687b8eaccb3a13670fa0f369c0936aa85b2a8ed7d4d",
+  "reference_sha256": "998c31eb8371578c1997cee1c0aaacd811239d380b47eab3eb182fac993df05a",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "5eb0a29786ebbbebec9d9dd4d3cbabfc814199ddefc8d44d7be65e9928b7e8cb",
+  "primary_route": "Direct GSDMD N-terminal membrane action tested by purified protein/defined lipid reconstitution, orthogonal physical permeability and qualified mutant cellular rescue; conditional indirect-effector branch.",
+  "complete_final_answer_read": true,
+  "word_count": 3271,
+  "first_round_scientific_quality": 51.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original Methods, supplements or validated protein/membrane/cell protocols to select and verify transferable conditions. Naming unknown settings and proposing local validation does not meet this separate lookup requirement."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "One specific knockout or inhibitor fully rescues",
+      "evidence_type": "exact_quote",
+      "reason": "Prospective control design does not establish intervention specificity before assigning a physical executor: no candidate knockout-rescue/specificity controls or qualified mutant-folding controls exclude permissive/off-target effects. A necroptosis positive control does not exclude direct inhibition of GSDMD. Direct reconstitution also lacks matched mock-purification/protease carryover controls. This is one combined control deduction."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "explaining autoinhibition at the intact-cell level",
+      "evidence_type": "exact_quote",
+      "reason": "Selective access to inner-leaflet lipids is a membrane-topology restriction; it is not the molecular autoinhibition of intact GSDMD established by the packet. The answer conflates these distinct mechanisms."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No free-tracer/protein optical-interference test or objective fluorescence recovery/baseline and electrical-noise calibration acceptance gate. Positive complete release does not address reporter interference."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "LDH release, propidium iodide uptake",
+      "evidence_type": "exact_quote",
+      "reason": "Cellular readouts are named and timed but lack quantitative original-cell denominators/background and maximal-release normalization rules, saturation or missing-cell handling."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "triplicate",
+      "evidence_type": "exact_quote",
+      "reason": "The only stated repeat is plate triplicate; independent protein/lipid preparations and cultures, their sample sizes and a justified precision/power pilot are unspecified."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No randomized/balanced processing, allocation concealment or blinded image/trace analysis or equivalent bias-control plan."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No outcome-independent exclusion, attrition, all-field/trace inclusion and stopping policy."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No selected primary statistical contrast/model, confidence-interval method or multiplicity handling."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "using the lipid composition that gave the strongest signal",
+      "evidence_type": "exact_quote",
+      "reason": "Ranges are supplied, but selection by strongest signal lacks a predefined technical evaluation criterion and lock before independent confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Requires repetition with fresh reagents",
+      "evidence_type": "exact_quote",
+      "reason": "Fresh reagents are proposed after discordance, but what is frozen versus changed and fresh independent confirmatory batches after optimization are not specified."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "GSDMD-NT is NOT an autonomous pore-former.",
+      "evidence_type": "exact_quote",
+      "reason": "The decision diagram turns negative artificial reconstitution into proof of non-autonomy despite later caveats; rescue by an inhibitor/knockout is also taken to identify an executor rather than a permissive factor. The supportive/negative decision logic is not discriminating."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 0,
+      "quote": "Membrane mutant dead in vitro AND in cells",
+      "evidence_type": "exact_quote",
+      "reason": "This causal bridge lacks demonstrated mutant folding, soluble abundance, cleavage/delivery and functional complementation. Shared loss of activity can reflect generic destabilization. This charge concerns the non-identifying validation claim; the absent prospective controls are owned by C.",
+      "covered_by": "C"
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No linked raw-data/construct/preparation/cell manifest, versions/settings and analysis/exclusion provenance."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "P02",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Mechanistically Decisive Follow-Up: Does the GSDMD N-Terminal Domain Directly Permeabilize Membranes or Does It Require a Cellular Effector?",
+      "evidence_type": "exact_quote",
+      "reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue."
+    }
+  ],
+  "deductions_uncapped": 75,
+  "quality_score": 25,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "The answer proposes useful defined membranes, lipid/protein ranges and electrical/structural assays, labeling numerical settings as starting points. However, the core decision rules overinterpret negative reconstitution and inhibitor/knockout protection, and the unqualified mutant bridge cannot establish selective membrane activity as the cellular cause. Reviewer source https://pubmed.ncbi.nlm.nih.gov/30143556/ confirms that NSA can directly inhibit GSDMD; candidates are not required to know that later discovery, but must propose specificity controls rather than infer MLKL agency from rescue.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The biological question matches direct lipid-dependent pore action. The proposed purified-state/lipid/mutant experiment nominally matches the intervention category, but the mechanism and predicted-outcome components are not qualified: no mutant folding/activation/abundance controls establish selective loss of membrane action, and cellular protection is treated as physical executor identification. Readouts include leakage, electrophysiology and structural imaging, but lack a qualified cellular rescue/complementation bridge. Match [true,false,true,false,false]; no qualified Hit@1. This is assessed from the full answer, not from model identity or a required named future paper.",
+  "item_score": 10.0
+}

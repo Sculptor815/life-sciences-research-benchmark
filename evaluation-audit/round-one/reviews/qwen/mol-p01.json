@@ -1,0 +1,48 @@
+{
+  "item_id": "mol-p01",
+  "model_code": "qwen",
+  "response_id": "mol-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.930264+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "27bec2d153df01dfdac424cff1ee170fa522a1244c1a74d27bd4ca27dcd8bef1",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 81.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "an endogenous or purified-protein direct binding experiment demonstrating A-B interaction without overexpression or tags.",
+      "issue": "Endogenous co-IP and purified-protein binding address different requirements; either alone is not decisive for direct binding in unmodified cells."
+    },
+    {
+      "quote": "Query the registry or publisher for LS-M17.",
+      "issue": "The identifier is internal to this teaching dossier. The appropriate first source is its underlying record and curation trail, not an assumed external publisher namespace."
+    }
+  ],
+  "rationale": "Accurate core inference, benign alternatives and recognition that omitted data might exist. The final either-or check weakens the otherwise correct two-part evidence plan. Repetition and a lengthy list of overlapping checks reduce clarity.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Dossier-only identifiers cannot be authenticated by finding or failing to find similarly named real publications. Underlying dossier documents and curation records can resolve the mismatch.",
+    "A complete registry entry establishes its recorded fields, not that its mapping is necessarily correct. An error is not proof of intent.",
+    "Included controls are not reported successful control outcomes. Grade the principal co-IP conclusion while recording any unreported-result assertion.",
+    "Not supplied does not mean never performed. Untested does not mean false.",
+    "Purified binding and endogenous co-IP address complementary questions; their combination is strong support but not automatically proof of direct contact in an unmodified cell.",
+    "Negative assays require sensitivity, reagent competence and relevant conditions. Depleting a bridge can disturb localization or stability even when A and B also bind directly.",
+    "The reference suggestion that all direct binding must survive bridge disruption is overstrong. Do not require it.",
+    "No misconduct probability can be inferred by treating author, title and year mismatches as three independent random errors."
+  ],
+  "overall_benchmark_score": null
+}

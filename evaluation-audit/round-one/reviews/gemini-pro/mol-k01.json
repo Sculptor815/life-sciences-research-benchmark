@@ -1,0 +1,52 @@
+{
+  "item_id": "mol-k01",
+  "model_code": "gemini-pro",
+  "response_id": "mol-k01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T09:58:41.199723+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "b793748f4d853f7cd4fd2d06594dc4a8bbd6c416d24b93574f71dca8ebe76576",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "it is definitively translated from a distinct, unknown locus in the genome.",
+      "issue": "The evidence leaves the antigen unassigned; it does not establish translation from a different locus or exclude a technical detection species."
+    },
+    {
+      "quote": "the persistent 75-kDa off-target protein will generate false-positive signals.",
+      "issue": "Western-blot cross-reactivity does not prove the same binding in different fixation, conformation and detection conditions. Those applications require their own validation."
+    },
+    {
+      "quote": "This indicates the antibody binds a secondary downstream protein",
+      "issue": "An unshifted rescued band can also reflect cleavage or processing of the tagged target. Tag retention and construct integrity must be checked before this conclusion."
+    }
+  ],
+  "rationale": "Correctly recognizes genetic dependence versus molecular identity, but invents a definitive identity class for the other band and overgeneralizes application failure. Proposed tag and proteomics outcomes omit important discriminating controls.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Comparable loading does not establish antigen identity or guarantee equivalent transfer of each species.",
+    "No expected target molecular mass is supplied. Do not assume 50 kDa is the predicted full-length mass.",
+    "Untagged rescue may restore either the target or an indirectly dependent antigen.",
+    "Gel-slice proteomics and native immunoprecipitation can contain co-migrating proteins or partners; identity of a constituent is not automatically identity of the immunoreactive species.",
+    "No requirement to mention private draft status or obsolete multiple-choice distractors.",
+    "Complete coding deletion blocks new target synthesis; pre-existing protein and signal mixtures are possible caveats when timing and turnover are unspecified, not established explanations.",
+    "A reference list of methods does not make any single validation approach infallible."
+  ],
+  "validation_framework_source": "https://pmc.ncbi.nlm.nih.gov/articles/10335836/",
+  "overall_benchmark_score": null
+}

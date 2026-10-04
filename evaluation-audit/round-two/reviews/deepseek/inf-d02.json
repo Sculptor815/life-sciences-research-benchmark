@@ -1,0 +1,238 @@
+{
+  "model_code": "deepseek",
+  "item_id": "inf-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:07:01.018749+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "4994e63f35b1522f0b6a3c14357f4ad46bd1300a027349fb42dd5c2d97fd3036",
+  "question_sha256": "122b241adf77142ecf3caf672be24312c4394332738d1101387cacbc816a0746",
+  "reference_sha256": "528edd1fac3b3ef20cda836348178f2de01ee2d3cf73221ce429b8146fbb35e5",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "ff8b2b0efac8d320849910fc27587a619d40e97cc1b57860ec4c77a21ca1c1cb",
+  "primary_route": "Proposed fixed-design bulk RNA-seq negative-binomial treatment-minus-control inference at independent allocation level, with immutable workflow and source-difference audit; no executed data or predictive training task.",
+  "complete_final_answer_read": true,
+  "word_count": 2307,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original RNA-seq Methods, supplements and release-specific validated tool/import protocols to select and verify transferable settings. Future source comparison or recording chosen settings is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "<MIN_COUNT>",
+      "evidence_type": "exact_quote",
+      "reason": "Low-count eligibility and normalization settings are to be recorded, but there is no concrete procedure selecting the minimum-count/prevalence configuration for the input before confirmation. The required unknown values themselves are not penalized."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "derive from pilot QC distributions",
+      "evidence_type": "exact_quote",
+      "reason": "No explicit reference-to-pass threshold/error target or calibration failure rule operationalizes that proposal."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Randomization/concealment/blinding are requested, but prospective balancing or randomized processing across treatment and batches is not specified for the proposed experiment."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "log(mu_ij) = beta_i0",
+      "evidence_type": "exact_quote",
+      "reason": "The stated count mean omits the library/composition offset and does not explain normalization assumptions. Estimating size factors in a later list does not explain what the depth-adjusted contrast identifies or the global-shift limitation."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded low-count/normalization/model sensitivity range or derivation and stopping rule before lock."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit refreeze and fresh independent confirmation after revisions following failed or ambiguous analysis."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The primary/secondary count audit is concrete, but no fresh clean-environment numerical rerun and runtime/memory/resource-failure verification is specified."
+    },
+    {
+      "id": "P16",
+      "state": "not_applicable",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Primary route is prospectively specified count-contrast inference, not prediction or feature-selection performance assessment. Its blinded pilot/calibration and frozen confirmatory specification are described; predictive train/test leakage is not an additional deduction. Independent/orthogonal confirmation is assessed separately under P14."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "Recommended next action: do **not** run differential expression yet. First instantiate a locked, read-only input manifest and sample sheet that define the experimental unit as the independent treatment allocation unit. If treatment is allocated at donor/animal level, the donor/animal is the unit; if treatment is allocated only to wells within one donor, inference is limited to that donor\u2019s wells and cannot be generalized across donors. The following is a **proposed, unexecuted** protocol. No count matrices, sample sheets, file versions, or results were supplied.",
+      "evidence_type": "exact_quote",
+      "reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Correct donor-parallel versus crossed design, actual independent unit, explicit Wald/BH contrast and pilot simulation. Source differences are traced through alternative quantification and annotation into gene-level changes. Main remaining gaps concern executable calibration, count-model assumptions and fresh confirmation/rerun logistics.",
+  "item_score": 55
+}

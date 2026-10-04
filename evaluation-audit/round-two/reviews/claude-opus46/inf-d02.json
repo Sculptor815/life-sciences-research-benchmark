@@ -1,0 +1,238 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "inf-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:07:00.985723+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c747dc118098f83dfc4323c0366dd034cea57249745218e34df70c60ad9e8a2d",
+  "question_sha256": "122b241adf77142ecf3caf672be24312c4394332738d1101387cacbc816a0746",
+  "reference_sha256": "528edd1fac3b3ef20cda836348178f2de01ee2d3cf73221ce429b8146fbb35e5",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "5a7448e5f1e14b61b0281833ff2a429912e80dcefb6ffd53b88af266c77fd700",
+  "primary_route": "Proposed fixed-design bulk RNA-seq negative-binomial treatment-minus-control inference at independent allocation level, with immutable workflow and source-difference audit; no executed data or predictive training task.",
+  "complete_final_answer_read": true,
+  "word_count": 2100,
+  "first_round_scientific_quality": 48.75,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original RNA-seq Methods, supplements and release-specific validated tool/import protocols to select and verify transferable settings. Future source comparison or recording chosen settings is insufficient."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "STAR {ver}",
+      "evidence_type": "exact_quote",
+      "reason": "The STAR/featureCounts and Salmon alternatives do not specify the distinct genome versus transcriptome/index and compatible tximport/offset route. Estimated transcript counts cannot simply be asserted to be the same integer gene matrix."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "flag samples with >30 % adapter or mean Q < 25",
+      "evidence_type": "exact_quote",
+      "reason": "Illustrative numeric cutoffs have no reference/pilot-to-acceptance procedure or validated error/precision target; invented precision does not replace assay calibration."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "those wells are technical (or at best pseudo-) replicates",
+      "evidence_type": "exact_quote",
+      "reason": "Independently allocated wells can be valid treatment units for a within-donor estimand. Counting only donors regardless of actual allocation conflates donor generalization with conditional treatment replication."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Donor randomization and sample coding are proposed, but no prospective balancing or randomized processing allocation across batches is supplied for this new experiment."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "likelihood-ratio or Wald test against that threshold",
+      "evidence_type": "exact_quote",
+      "reason": "DESeq2 results with nonzero lfcThreshold use Wald tests and overwrite LRT p-values; the two tests are not interchangeable here. Verified against the official API: https://github.com/thelovelab/DESeq2/blob/devel/R/results.R ."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Donor as random effect",
+      "evidence_type": "exact_quote",
+      "reason": "The alternative describes a DESeq2 donor formula as a random effect; standard donor terms there are fixed effects. A distinct mixed-model implementation and sufficient donor replication are required."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No bounded, locked preprocessing/filter/normalization sensitivity exploration and evaluation rule; named alternative methods are not a defined parameter-search protocol. DESeq2 independent filtering itself is not penalized."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Rerunning after exclusions or changed analysis does not explicitly require refreezing and fresh independent confirmation."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "it cannot be included and this must be reported as a limitation",
+      "evidence_type": "exact_quote",
+      "reason": "When treatment and batch are inseparable, merely omitting batch and reporting a limitation cannot identify the treatment effect. The primary inferential contrast must be blocked or explicitly reduced to the confounded association."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "must produce identical plots",
+      "evidence_type": "exact_quote",
+      "reason": "Bit-identical plot guarantees are too strong despite the later floating-point caveat. No numeric tolerance/data-behind-plot verification and memory/runtime/resource failure logs are operational."
+    },
+    {
+      "id": "P16",
+      "state": "not_applicable",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "Primary route is prospectively specified count-contrast inference, not prediction or feature-selection performance assessment. Its blinded pilot/calibration and frozen confirmatory specification are described; predictive train/test leakage is not an additional deduction. Independent/orthogonal confirmation is assessed separately under P14."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Reproducible Bulk RNA-seq Differential-Expression Analysis Plan",
+      "evidence_type": "exact_quote",
+      "reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "The answer offers concrete provenance, counts, prospective randomization, BH results and alternative inference methods. Its treatment-unit branch incorrectly collapses independently allocated wells, and several model/import assumptions require correction. Hash-only guarantees do not establish numerical reproducibility.",
+  "item_score": 40
+}

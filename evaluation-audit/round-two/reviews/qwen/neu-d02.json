@@ -1,0 +1,222 @@
+{
+  "model_code": "qwen",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:30:20.141981+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "a8b3e783a47f826d317b68291db40b5f4b687ff310e63dd4ef6c340f52cfb315",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "214e63aa8cbfa47b02faa11ff1bd3842c6bd50c20b277d42ed82c0d4cfb2848a",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 4026,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Returned answer has 4,026 whitespace-delimited words, materially exceeding the 3,500-word limit."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable indicator preparation/delivery amount, expression timing or concrete calibration-to-choice procedure for those biological conditions."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No unique event-to-spike matching window or rule handling calcium persisting after preceding spikes in electrically silent false-event windows."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "indicator saturation prevents distinct spike-count discrimination",
+      "evidence_type": "exact_quote",
+      "reason": "The stop-or-exclude rule can discard a valid indicator performance failure. Keep this failure in the validation denominator and distinguish it from corrupted detector measurements."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No actual visual-response inference test and multiplicity handling across response claims, despite useful hierarchical calibration statistics."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Baseline functional/structural brightness is used to stratify expression without accounting for resting calcium and reference stoichiometry; it does not identify indicator abundance alone."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Neuropil correction exploration is described as plausible but its bounds/grid and rule deriving them are unspecified."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The original calibration/validation split is present, but modified conditions after failure lack explicit refreezing and fresh independent confirmation."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Identify candidate baseline epochs using electrophysiological silence",
+      "evidence_type": "exact_quote",
+      "reason": "This preprocessing instruction is not restricted to calibration cells. Selecting validation baselines using their hidden electrical labels leaks ground truth into the optical predictor; the separately promised threshold freeze does not resolve that step."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommended next action",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No full raw-file/sample/event provenance linkage with exact acquisition, processing and code/environment versions."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommended next action",
+      "evidence_type": "exact_quote",
+      "reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "The answer supplies useful prospective calibration controls, spectral/3D reference checks, nested pilot precision, randomization and failure diagnostics. Its proposed scope and saturation limits are mostly careful. Validation preprocessing and selective removal of saturation failures remain substantive limitations, separately owned by the relevant checks.",
+  "item_score": 40
+}

@@ -1,0 +1,238 @@
+{
+  "model_code": "kimi",
+  "item_id": "inf-d03",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:28:12.489369+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "84b3a7f32a722b9c627218f338577c163e653a06139f52addeda369c13240903",
+  "question_sha256": "8138345556a001f3fc4bac1a0c5986dac661ae6888f5a3dbc53bb26d7b98aa09",
+  "reference_sha256": "912190a8c7d04d1735a11f4798b4464c402e57d4430430d189830cd0e29fdd0d",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "4e68ee30e830911bfe7f065761a8dd85503a35d13c3ea633f69478071f731fb8",
+  "primary_route": "Proposed donor-average treatment contrast with hierarchical comparison, donor-grouped resampling and null calibration, and protected donor-level validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3643,
+  "first_round_scientific_quality": 80.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original experimental Methods/supplements to verify allocation and sampling conditions and release-specific model protocols. Reconstructing identifiers and naming prior evidence alone is insufficient."
+    },
+    {
+      "id": "G6",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The returned answer contains 3,643 whitespace-delimited words against the frozen 3,500-word limit, exceeding it by 143 words."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use an outcome distribution and link appropriate to the measurement.",
+      "evidence_type": "exact_quote",
+      "reason": "No executable conditional choice of primary outcome family/link and fitting/test procedure or concrete calibration-to-choice algorithm."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Assay repeatability and neutral reference material are proposed, but no objective reference-to-acceptance rule and calibration failure threshold/action are operational."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Control or clearly describe error across multiple endpoints",
+      "evidence_type": "exact_quote",
+      "reason": "No selected multiplicity method/family or explicit interval construction is given."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Repeat over a range of plausible intraclass correlations",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded parameter/sensitivity candidate set or concrete derivation of bounds and stopping before confirmation."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "do not tune the pipeline on the holdout and revalidate repeatedly",
+      "evidence_type": "exact_quote",
+      "reason": "The ban on reusing a holdout is correct, but a revised procedure is not explicitly refrozen and assigned fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "The donor-level effect estimate and uncertainty interval are reported.",
+      "evidence_type": "exact_quote",
+      "reason": "Reporting an estimate and satisfying process checks is not a discriminating rule for supportive, negative and ambiguous treatment outcomes; the positive-effect/equivalence decision remains unspecified."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Raw records and IDs are retained, but no immutable input manifest, pinned executable environment and exact commands enable computational reconstruction."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numerical rerun with tolerances and runtime/resource/failure logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P16",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    },
+    {
+      "id": "P17",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed analysis and validation protocol",
+      "evidence_type": "exact_quote",
+      "reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Careful equal-donor weighting, uncertain-variance design simulations, prospective exclusions preserving biological outliers, allocation concealment, restricted null simulation and same-contrast donor holdout. Nested grouped validation with training-only choices protects separation. Operational test/calibration choices and scientific decision thresholds remain incomplete.",
+  "item_score": 45
+}

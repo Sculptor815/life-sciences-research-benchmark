@@ -1,0 +1,100 @@
+{
+  "item_id": "neu-r01",
+  "model_code": "glm",
+  "response_id": "neu-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T12:32:00.880455+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "9cf9ca517695596f6e245f0a776cb31080560662fc0e02da3e114057641ec326",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 71.25,
+  "reasoning_index": 75.0,
+  "errors": [
+    {
+      "quote": "Detectable no-opsin response to light, indicating artifact.",
+      "issue": "This is an animal-level exclusion rule and removes the very control outcomes that diagnose artifact. Treat it as a pilot redesign/stop criterion, or retain all such outcomes in the assigned confirmatory analysis."
+    },
+    {
+      "quote": "corticosterone elevation after T+ versus T−",
+      "issue": "A sample after a mixed T+/T− session cannot assign endocrine output to individual cues. Use separate randomized single-cue sessions/cohorts with validated response kinetics, or report a session-level measure."
+    },
+    {
+      "quote": "Randomize eligible animals to experimental groups.",
+      "issue": "This occurs after different fear/neutral tagging experiences and construct choices. Assign those factors before the corresponding procedures, then randomize later contingency within strata; do not claim retrospective randomization."
+    },
+    {
+      "quote": "The exact tamoxifen or labeling window",
+      "issue": "A validated window is mentioned, but closure before subsequent surgery/recovery and pairing is not explicitly checked. Prevent those later events from changing the manipulated population."
+    }
+  ],
+  "rationale": "Substantive alternative internal-reinforcer experiment with differential cues, no-light retrieval, appropriate units and careful late-probe separation. Main corrections concern removing outcome-based artifact exclusions, assigning endocrine measurements to the proper sampling unit, prospective allocation and label-window closure. Historical mismatch alone does not reduce its quality score.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Score scientific quality independently of historical matching. The open prompt permits defensible internal-outcome/second-order designs; these can earn high quality scores without matching the held-out neutral-context-as-CS experiment.",
+    "The draft target duplicates predicted_outcome text under mechanism. Interpret mechanism as a neutral context-associated ensemble acting as an internal conditioned cue; preserve the original key and disclose this clarification.",
+    "A previously fearful context gaining more freezing after additional same-valence conditioning does not uniquely identify a new association. Neutral labeling or a distinguishable new outcome is needed for that specific claim.",
+    "Doxycycline suppresses the proposed Fos-tTA/TRE label. Gate closure, expression maturation and neutral-context identity require separate validation; do not invent historical numerical settings.",
+    "Natural-context reactivation can occur without shock pairing; total tag counts do not establish context identity. Activity-marker overlap is supportive, not proof of storage, direct projections or subjective experience.",
+    "Matched unpaired exposure addresses contingency. Components-only controls do not fully replace it. Explicitly unpaired schedules can themselves support trace or safety learning, so retain other controls.",
+    "Primary no-light tests must precede potentially learning-altering optical probes or use independent cohorts. Slow terminal/endocrine measures after mixed events do not assign responses to a particular event.",
+    "Never remove artifact-positive control animals or high-freezing retrieval outcomes simply to satisfy a registered threshold. Retain assignment-based outcomes and explain technical/biological selection.",
+    "A null requires adequate assay validation and precision; source methods need not be copied. Broadly justified equivalent proposed methods earn credit.",
+    "Historical hits remain retrospective and do not certify novelty or an uncontaminated holdout. Earliest public disclosure and supplements are not fully audited."
+  ],
+  "review_sources": [
+    {
+      "title": "Ramirez et al. (2013), Creating a False Memory in the Hippocampus",
+      "url": "https://www.scienceintheclassroom.org/sites/default/files/research-papers/science-2013-ramirez-387-91.pdf",
+      "scope": "Reviewer read main article and figure captions; excluded preceding unrelated article. Confirms neutral-context target and Dox gate direction. Supplementary methods, raw data and image integrity not audited. Reviewer-only source."
+    }
+  ],
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": false,
+      "quote": "pair an initially neutral tone",
+      "assessment": "An internal-outcome tone-conditioning study, rather than the held-out neutral-context-as-CS study."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "internal-reinforcer conditioning experiment",
+      "assessment": "An internal-outcome tone-conditioning study, rather than the held-out neutral-context-as-CS study."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "T+",
+      "assessment": "An internal-outcome tone-conditioning study, rather than the held-out neutral-context-as-CS study."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Percentage freezing during T+ minus percentage freezing during T−",
+      "assessment": "An internal-outcome tone-conditioning study, rather than the held-out neutral-context-as-CS study."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Artificial reactivation of the contextual-fear–active dentate-gyrus population can act as an internal event",
+      "assessment": "An internal-outcome tone-conditioning study, rather than the held-out neutral-context-as-CS study."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

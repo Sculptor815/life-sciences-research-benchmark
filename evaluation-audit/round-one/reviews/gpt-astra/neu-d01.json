@@ -1,0 +1,53 @@
+{
+  "item_id": "neu-d01",
+  "model_code": "gpt-astra",
+  "response_id": "neu-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:58:36.951322+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "9a7085296492b9cfd7904e6144765159ce4f3948abc624c8add42bb4a9c8a61f",
+  "service": {
+    "scientific_accuracy": 4,
+    "decision_value": 4,
+    "actionability": 4,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "service_score": 100.0,
+  "reasoning_index": 100.0,
+  "errors": [],
+  "rationale": "Complete, carefully scoped protocol. Distinguishes population divergence from demonstrated single-neuron collateralization; validates terminal transmission and recovery before movement; includes same-cue-window perturbation in an instructed motor control, sensory probes, matched visible light, independent-animal inference and equivalence bounds. Keeps all eligible trials and does not infer retrieval, storage or absence of a pathway role from an inadequately controlled effect or null. No material deduction identified.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "O1 establishes that population P has two targets, not that every Q-projecting neuron collateralizes. Do not assume either overlap or disjointness; validate or retain the limitation.",
+    "Projection-defined somatic inhibition tests a population and all its affected outputs. Local Q-terminal intervention is preferable for a pathway claim but also needs actual transmission and off-target validation.",
+    "Suppression in neuronal somata does not guarantee suppression of terminal transmission. Validate physiological onset, sustained effect, offset recovery and rebound at the actual behavioral settings.",
+    "Reduced normal performance supports a conditional causal requirement, not memory storage or an exclusive retrieval computation. Cue perception, attention, maintenance and motor preparation remain alternatives.",
+    "Light offset is not necessarily inhibition offset. A choice made after light ends can correctly report an earlier retrieval deficit; outcome timing alone is not a rebound diagnosis.",
+    "Movement adjustment/matching after intervention and conditioning on response completion can bias inference. Report all randomized trials and use experimental motor/sensory dissociations.",
+    "A nonsignificant control effect is not equivalence. Predefine biologically meaningful bounds and obtain enough precision to exclude consequential confounds.",
+    "Two pathways or epochs can both be necessary. Effects in an other-projection control do not by themselves invalidate the tested pathway contribution.",
+    "Numbers missing from the packet may be proposed as pilot settings; no specific opsin, surgical coordinate or animal count is mandatory. Operational calibration and justified independent-animal sampling are required.",
+    "Reference correction: population-level divergence must not be described as demonstrated single-neuron collateralization. Terminal effects on intended local Q signaling are part of the intervention, not automatically an off-target artifact."
+  ],
+  "review_sources": [
+    {
+      "title": "Mahn et al. (2016): biophysical constraints of presynaptic optogenetic inhibition",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4926958/",
+      "scope": "Reviewer-only primary-source check of terminal efficacy, paradoxical release and offset rebound; no particular construct is required by the question."
+    },
+    {
+      "title": "Montgomery, Nyhan and Torres: post-treatment conditioning",
+      "url": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/",
+      "scope": "Authors summarize their methodological paper on adjustment/selection after treatment. Used only by reviewer, not candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "neu-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:54:48.549617+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "37dbfabf38d1a5e1274f112652df88d70fedc0dca9c4a558a7e5900700d737a6",
+  "question_sha256": "ec00f761d65e7dc493f76bf3a693e16f99e119bd7fef3c082e32437257928dbf",
+  "reference_sha256": "d3cf3f452f3c4b05f1d454b87ab4898000e3b8dcbf3d370dd6c8b8d93bb580df",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "ee122082ea9ff6b93ca6effec3b14048a4cd538af8b63104579a1844527db22d",
+  "primary_route": "Same-cell electrophysiology and calcium imaging with spike-pattern calibration and optical-reference/motion comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 1038,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Inject current to drive strictly controlled numbers",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed validation lacks a complete role-defined positive, negative/null and optical procedural control set. Motion discussion or generic calibration alone does not prospectively design all necessary comparisons."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of indicator/paired-recording Methods or validated protocols to select detailed conditions and verify transfer. A generic published calibration mention is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Proposes spike/fluorescence calibration but does not specify a measurement-error/noise or recovery acceptance criterion and the action if calibration fails; a fitted curve or plateau inspection alone is incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No fully defined endpoint with baseline/background calculation, units/denominator and weak/near-zero/saturated/missing-signal handling. Naming delta-F/F and spike counts is not the complete measurement rule."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Analysis and Inference",
+      "evidence_type": "exact_quote",
+      "reason": "The validation gives a calibration example but no negative/ambiguous outcome branch separating motion, non-spike calcium and technical calibration failure."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "exact_quote",
+      "reason": "Operational simultaneous electrical spike recording and imaging of the same cell provides an independent measurement; comparisons of count/timing and fluorescence, with acknowledged optical/calcium ambiguities, meet essay-scale validation. Extra optional reporters are not treated as independent ground truth."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "finite number of binding sites, characterized by their dissociation constant",
+      "evidence_type": "exact_quote",
+      "reason": "Two independent errors: Kd describes affinity, not binding-site number/capacity; an indicator does not report total intracellular calcium (free, bound and sequestered pools)."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "exact_quote",
+      "reason": "An unspecified optical response with possible motion does not establish an integrated calcium-bound quantity."
+    },
+    {
+      "id": "G7",
+      "state": "unmet",
+      "points": 5,
+      "quote": "specific synthetic indicator (E1)",
+      "evidence_type": "exact_quote",
+      "reason": "E1 labels the teaching figures synthetic; it does not specify that the indicator is a synthetic chemical sensor."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "higher level of time-integrated intracellular calcium binding",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Recognizes spike ambiguity but promotes the optical measurement to a biochemical integral and adds unsupported sensor facts.",
+  "item_score": 45
+}

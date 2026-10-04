@@ -1,0 +1,78 @@
+{
+  "item_id": "bio-d03",
+  "response_id": "bio-d03",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T23:05:47.776519+08:00",
+  "review_type": "single AI curator; complete received final answer personally read; model identity visible; original rubric",
+  "candidate_sha256": "4497d4683a3beb23f4c7c1ccbddb52e8eabade58dde2807c90efb311fb70a0d3",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "cycle-blocked* preparation (heat-inactivated or inhibitor-locked",
+      "issue": "A killed or pathway-blocked preparation need not oxidize all carrier carbon and can yield zero CO2. Its observed yield is not a valid maximal one-pass ceiling. Use a chemically justified carbon/stoichiometric bound with recovery uncertainty."
+    },
+    {
+      "quote": "jointly forces assignment to one of the four hypotheses with no residual ambiguity",
+      "issue": "Label dilution plus CO2 and stable carrier mass can arise from exchange, separate replenishment and parallel oxidation. The later bypass caveat is real and contradicts unique assignment. Fit competing cyclic, branched and exchange models with informative atom mapping."
+    },
+    {
+      "quote": "no amplification in heat-inactivated prep → excludes non-enzymatic/contaminant catalysis",
+      "issue": "Heat inactivates contaminating enzymes too; a negative killed control does not exclude enzymatic contamination in active preparations."
+    },
+    {
+      "quote": "resolved/partially purified components (or the preparation depleted of one target enzyme E)",
+      "issue": "A partial fraction or single-enzyme-depleted extract is not compositionally defined reconstitution. List a concrete route, components, cofactors and residual activity/pool bounds."
+    },
+    {
+      "quote": "killed and no-substrate controls negative. Any gate failed → run excluded",
+      "issue": "Endogenous oxidation is a biological alternative to quantify, not a universal exclusion. Also T_net near zero can reflect saturation of an existing active cycle, as the troubleshooting text acknowledges; it cannot uniquely assign respiration alone."
+    }
+  ],
+  "rationale": "Useful reciprocal tracers, direct enzyme activity calibration, washout checks and blocked biological analysis. However the core signatures do not uniquely identify a closed cycle, its empirical ceiling is invalid, and some validity gates select the biological answer.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read the complete final answer, exact question/packet and entire frozen reference answer including its curator clarification. No hidden reasoning, paid judge or laboratory execution.",
+    "This uses the existing first-round rubric. The owner requested a stricter second round only after completion of this round; new 10/5-point deductions have not been applied.",
+    "The packet explicitly says the 1937 full text and figures were not read. Do not attribute proposed experimental details to the historical paper or penalize absence of invented historical settings.",
+    "The preliminary key mentions a noncycling analog and a small fixed discovery n. Its clarification permits omission/restoration where no validated analog exists. Independent sample size should be powered/calibrated; no particular small n is required.",
+    "Do not demand a positive addition effect in an already saturated endogenous pool. Failure to meet a proposed support gate limits the conclusion and does not automatically falsify cycling.",
+    "Adding downstream carbon around an irreversible block does not restore the missing reaction. Label exchange or appearance in one pool does not establish net cycle flux; respiration alone is insufficient.",
+    "Initial pools, mobilizable reserves, carbon sources, washout losses, cofactor-regeneration reactions and reversible exchange need accounting. Carbon closure alone cannot distinguish all network topologies.",
+    "Unknown numeric settings can be calibrated; concrete proposed biochemical routes are nevertheless useful. No complete primary-source methods audit is claimed.",
+    "Additional correction: isotope enrichment or residual starting tracer is not return flux; one-way replenishment and reversible exchange can coexist with oxidation. Stable carrier amount can coexist with loss of its original carbon atoms.",
+    "A closed-cycle proposal needs appropriate carbon mapping, multi-turn dynamics and identifiable alternative networks. CO2 release can be partial decarboxylation. Define stoichiometric units and handle a near-zero ratio denominator explicitly.",
+    "No-substrate controls do not guarantee additive endogenous flux under added substrate. Include measured convertible pools and mobilizable reserves in finite-pool alternatives. Biological background is not an automatic QC exclusion.",
+    "Heat-inactivated controls do not exclude contaminating enzymes in an active preparation. Washed or enzyme-depleted crude fractions are not automatically compositionally defined enzyme reconstitutions.",
+    "Unknown settings may be calibrated and scientifically valid equivalent contrasts accepted; no fixed author recipe, unavailable analog, mandatory small n, or new round-two deductions imposed.",
+    "Reviewer checked indexed primary-paper excerpts on arsenite inhibition of both PDH and KGDH and on exchanging pools in TCA isotope modeling. PMC full-page access was challenged; no full-text or source-methods audit is claimed."
+  ],
+  "review_sources": [
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20161290/",
+      "use": "Primary-paper indexed excerpt"
+    },
+    {
+      "scope": "Search-indexed passage only; full PMC page access challenged. Not a complete methods audit.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/6863451/",
+      "use": "Primary-paper indexed excerpt"
+    }
+  ],
+  "overall_benchmark_score": null
+}

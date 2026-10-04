@@ -1,0 +1,50 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "kimi",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:09:20.364963+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "42fb89afd76f73a1bceab75cd580c2c46f99327004a2e755f61c4e287845b91d",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 4,
+    "actionability": 3,
+    "verifiability": 4,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 86.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "inhibition proves off-target/non-reversible",
+      "issue": "Irreversibility alone does not invalidate a properly controlled necessity experiment; persistent lesions or genetic interventions can be informative, with their own adaptation limits. This decision branch conflates a method property with a demonstrated confound."
+    },
+    {
+      "quote": "Required but unreported here:",
+      "issue": "The subsequent list treats rescue, reversibility and independent replication as universal requirements for any necessity inference. These can greatly strengthen evidence, but the minimum identifying controls depend on the scoped design. Separate essentials from corroboration."
+    }
+  ],
+  "rationale": "Strong scoped authentication, explicit candidate error mechanisms, performance-versus-learning distinction and a thorough original-record/replication plan. Its follow-up is somewhat overprescriptive, and its irreversibility branch would incorrectly reject some informative designs. No unsupported attribution of intent or of original errors from replication outcomes.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

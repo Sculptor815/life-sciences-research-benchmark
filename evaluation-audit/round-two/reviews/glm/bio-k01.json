@@ -1,0 +1,134 @@
+{
+  "model_code": "glm",
+  "item_id": "bio-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:04:59.295609+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "fed5b0b195a1bd96d184c1b7e6b4575e005da3d274f60d350187895865320c6f",
+  "question_sha256": "e5a45dec0d2517d68cec2cb721477e214452d8543683d6d377e1be872cfc40d4",
+  "reference_sha256": "425acfdd9f006f0f842223fef2b6ad93f510268641fee28dd344f907f5ecda04",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "06706649e4abeb9c0e64f65dd4aeaae3885a99a16cc434cde87f0ff10ab8764c",
+  "primary_route": "Time courses, conversion, enzyme and substrate changes with blank subtraction.",
+  "complete_final_answer_read": true,
+  "word_count": 1179,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "No-enzyme and heat-inactivated controls",
+      "evidence_type": "exact_quote",
+      "reason": "Negative-control roles are stated, but no known positive response or detection/procedural comparison establishes assay competence before interpretation."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Unit consistency check:",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit prior-Methods or validated-protocol consultation with transfer checks before execution."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unit consistency check:",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete detector/product-reference calibration, acceptance rule and action on failed recovery or linearity."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unit consistency check:",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Amount-rate units are present, but no complete blank/baseline-normalized endpoint with weak, saturated or missing measurement rules."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unit consistency check:",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent chemistry/readout confirmation; the proposed time and enzyme checks rely on the same measurement."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 10,
+      "quote": "One measurement at 10 \u00b5M cannot distinguish a 2-fold competitive Km shift from a 1.5-fold Vmax decrease",
+      "evidence_type": "exact_quote",
+      "reason": "Two errors: the given examples predict 18 and 20 nmol/min, respectively; S=Km/2 is not in a nearly linear first-order regime (local substrate elasticity is 2/3 and the low-S approximation predicts 45 rather than 30)."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Repeat at lower [S]; if curvature appears earlier, substrate depletion is the cause.",
+      "evidence_type": "exact_quote",
+      "reason": "Earlier curvature does not uniquely identify depletion versus concentration-dependent assay or product effects. The repeated demand for a true t=0 tangent also conflates pre-steady-state and initial steady-state measurement."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "This experiment is",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main amount-rate calculation and single-point identifiability reasoning, proposed rather than reported validation and synthetic-data limits. Specific false model/decision statements are charged above without repeating a general overclaim penalty."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "This experiment is",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main amount-rate calculation and single-point identifiability reasoning, proposed rather than reported validation and synthetic-data limits. Specific false model/decision statements are charged above without repeating a general overclaim penalty."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "This experiment is",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main amount-rate calculation and single-point identifiability reasoning, proposed rather than reported validation and synthetic-data limits. Specific false model/decision statements are charged above without repeating a general overclaim penalty."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "This experiment is",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main amount-rate calculation and single-point identifiability reasoning, proposed rather than reported validation and synthetic-data limits. Specific false model/decision statements are charged above without repeating a general overclaim penalty."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "This experiment is",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main amount-rate calculation and single-point identifiability reasoning, proposed rather than reported validation and synthetic-data limits. Specific false model/decision statements are charged above without repeating a general overclaim penalty."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "This experiment is",
+      "evidence_type": "exact_quote",
+      "reason": "Correct main amount-rate calculation and single-point identifiability reasoning, proposed rather than reported validation and synthetic-data limits. Specific false model/decision statements are charged above without repeating a general overclaim penalty."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correct headline calculation but incorrect numerical equivalence, regime approximation and causal diagnostic rule.",
+  "item_score": 50
+}

@@ -1,0 +1,257 @@
+{
+  "model_code": "qwen",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:16:18.075851+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "830870110e9180004c51ee577158ec4c0ba4e28004756bf64d283d72ef18f4e7",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c27153a7e3b5cac599753d16a2e8cf50946c7b385c8f8336704609441120ba1e",
+  "primary_route": "Generic overdispersed count model with Normal shrinkage; simulations and alternative spike-in/same-sample RNA assay/new-cohort validation.",
+  "complete_final_answer_read": true,
+  "word_count": 4474,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Any instantiated overdispersed count model must be recorded and justified.",
+      "evidence_type": "exact_quote",
+      "reason": "The likelihood, normalization, robust prior-width estimation and numerical solver/calibration procedure remain unspecified despite the requested proposed complete method."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Biological replication is recognized, but a justified meaningful-effect/precision or power calculation and simulation Monte Carlo precision/stopping rule are absent."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational randomized/balanced processing or masked QC/estimator-comparison plan, nor justified equivalent bias control, is specified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Exclusion of samples after inspection must be documented",
+      "evidence_type": "exact_quote",
+      "reason": "Documentation alone does not make post-inspection exclusions prospective and outcome independent. No full failed-fit/missing-data denominator or stopping rule is given."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable primary method-difference uncertainty procedure and relevant multiplicity/error-control rule is fixed; listing metrics or interval outputs is insufficient."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Sensitivity scenarios are named, but bounded settings or a concrete derivation-and-lock procedure for the essential prior/filter/model choices are absent."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Possible failure modes are named without a diagnostic result linked to an ordered technical repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational iteration policy identifies what stays frozen, what may change and the fresh independent confirmation required after a change."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Validation option C: independent replicate cohort",
+      "evidence_type": "exact_quote",
+      "reason": "The frozen criterion permits independent OR orthogonal validation. The answer provides both same-RNA orthogonal measurements and a separate biological-cohort option, with measurement uncertainty limitations. Same-sample assays are not new biological replication, but that distinction alone is not a P14 failure. This corrects an overstrict initial second-round interpretation; no candidate or v1 content changed."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Software versions and command-line parameters.",
+      "evidence_type": "exact_quote",
+      "reason": "A useful checksum/command manifest is supplied, but the executable environment/code and immutable source-table-to-figure output mapping are not specified."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "pre-specified rules",
+      "evidence_type": "exact_quote",
+      "reason": "There is no explicit separation of prior/normalization/simulation tuning from independent validation and no rule keeping all fitted transformations inside resampling folds."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "batch structure if present",
+      "evidence_type": "exact_quote",
+      "reason": "Perfect confounding is excluded, but missingness and composition/outlier stress are not operationalized; simply recording a batch model does not provide those tests."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Figure concepts do not supply numeric source tables plus a clean-environment rerun, numerical tolerances, resource/failure logs and source-difference audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "observed information",
+      "evidence_type": "exact_quote",
+      "reason": "The primary inverse-variance information definition and quadratic-shrinkage approximation are sound. The question, competing noise/prior/confounding explanations, source eligibility and explicit non-execution status are present; 4,474 words meet the limit. The generic likelihood/normalization implementation gap is charged to P02, not as a factual error."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "Among genes with true nonzero effects",
+      "evidence_type": "exact_quote",
+      "reason": "False-sign and false-extreme denominators, true-effect preservation, explicit interval-coverage gates and supportive/negative/ambiguous conditions are defined. Simulations/spike-ins provide statistical calibration; the biological-independence problem is separately P14."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Among genes with true nonzero effects",
+      "evidence_type": "exact_quote",
+      "reason": "False-sign and false-extreme denominators, true-effect preservation, explicit interval-coverage gates and supportive/negative/ambiguous conditions are defined. Simulations/spike-ins provide statistical calibration; the biological-independence problem is separately P14."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Among genes with true nonzero effects",
+      "evidence_type": "exact_quote",
+      "reason": "False-sign and false-extreme denominators, true-effect preservation, explicit interval-coverage gates and supportive/negative/ambiguous conditions are defined. Simulations/spike-ins provide statistical calibration; the biological-independence problem is separately P14."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "The paired preservation/error criteria and explicit false-sign definition are useful. The main scientific qualification is that same-sample orthogonal confirmation is not independent biological replication; operational and leakage boundaries remain underspecified.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, tradeoff and stratified truth/error/sign readouts match at a conceptual level. The implemented proposal retains the Normal prior; heavier tails are a future option requiring separate evaluation. Its principal predicted improvement is Normal versus unshrunk, not adaptive heavy tails versus Normal. No qualified hit.",
+  "item_score": 12.0,
+  "amended_at": "2026-10-04T07:23:32.901359+00:00",
+  "amendment_reason": "Restore P14 credit consistently with the frozen independent-or-orthogonal criterion."
+}

@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-terra",
+  "item_id": "bio-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:03:49.135203+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "75f9a903d7905583882120fbf6083726db971873201360db4139561e9fe6e00b",
+  "question_sha256": "1a2f38bc4a291e966598faece6d609fa8591d54539f53a2f49f3a56c3116856b",
+  "reference_sha256": "8282d415ac922ab3df37704b68f9314a3cf0a493392b6b5995af7ead2893d7e3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "4deec78279d2f8aac9df6ce6a555adc72de24b84d82e5e64e6cc5fc3d567820d",
+  "primary_route": "Angular discrete-versus-continuous ATP/load study, matched ensemble turnover followed by conditional same-motor reporter; no energetics.",
+  "complete_final_answer_read": true,
+  "word_count": 4000,
+  "first_round_scientific_quality": 81.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult/check prior primary Methods or a validated protocol for detailed pre-execution conditions and transfer. Recording unknown settings and developing an assay locally do not satisfy this distinct requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core immobilization/shaft attachment, solution chemistry (including nucleotide/free-magnesium conditions), recording settings and load manipulation lack an executable quantitative workflow or a concrete calibration-to-setting procedure. Lists of parameters to select later are insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Angular/temporal/chemical calibration tasks are named but no quantitative event-recovery/false-call or signal acceptance-to-action criterion, or concrete derivation of such tolerance, is specified."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent-preparation/chamber/molecule hierarchy is present, but the sample-size pilot does not specify a quantitative precision/power target linked to meaningful effect and between-preparation variance."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary estimands and hierarchical/held-out comparisons are present, but exact model assumptions/diagnostics and multiplicity control for the several primary load/coupling/event tests are incomplete."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "ATP/load/acquisition optimization is not bounded by an explicit ladder or objective range-derivation/search-stop rule before the lock. A promise to select a spanning range from pilots is not a fully specified exploration policy."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot separation and troubleshooting are described, but technical changes do not explicitly trigger a revised freeze and fresh independent confirmatory data under a defined change-control policy."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "fixed average stoichiometry alone",
+      "evidence_type": "exact_quote",
+      "reason": "Well-chosen question, clear alternative mechanisms and identification limits. Prospective motor-free, no-ATP, fixed-marker, marker-free and biochemical blanks address artifacts. Construct/geometry/reporter prerequisites and bulk nonrotator confounding are explicitly recognized; no unmeasured energy or exact angle is claimed."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not exclude traces because",
+      "evidence_type": "exact_quote",
+      "reason": "Per-molecule angular/dwell/backstep and count-normalized apparent turnover measures retain raw uncertainty, technical loss and active fraction. Balanced randomized chamber order, coded analysis and fixed confirmation/registered extension prevent outcome-driven selection."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not exclude traces because",
+      "evidence_type": "exact_quote",
+      "reason": "Per-molecule angular/dwell/backstep and count-normalized apparent turnover measures retain raw uncertainty, technical loss and active fraction. Balanced randomized chamber order, coded analysis and fixed confirmation/registered extension prevent outcome-driven selection."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "Do not exclude traces because",
+      "evidence_type": "exact_quote",
+      "reason": "Per-molecule angular/dwell/backstep and count-normalized apparent turnover measures retain raw uncertainty, technical loss and active fraction. Balanced randomized chamber order, coded analysis and fixed confirmation/registered extension prevent outcome-driven selection."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "code versions should be retained",
+      "evidence_type": "exact_quote",
+      "reason": "Specific failure diagnostics, held-out preparations/alternative acquisition and an independently calibrated turnover tier support confirmation. Outcomes distinguish resolution limits, marker effects and uncertain bulk coupling. Raw movies/coordinates/flags/versions plus sample identifiers make reconstruction possible."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "code versions should be retained",
+      "evidence_type": "exact_quote",
+      "reason": "Specific failure diagnostics, held-out preparations/alternative acquisition and an independently calibrated turnover tier support confirmation. Outcomes distinguish resolution limits, marker effects and uncertain bulk coupling. Raw movies/coordinates/flags/versions plus sample identifiers make reconstruction possible."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "code versions should be retained",
+      "evidence_type": "exact_quote",
+      "reason": "Specific failure diagnostics, held-out preparations/alternative acquisition and an independently calibrated turnover tier support confirmation. Outcomes distinguish resolution limits, marker effects and uncertain bulk coupling. Raw movies/coordinates/flags/versions plus sample identifiers make reconstruction possible."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "code versions should be retained",
+      "evidence_type": "exact_quote",
+      "reason": "Specific failure diagnostics, held-out preparations/alternative acquisition and an independently calibrated turnover tier support confirmation. Outcomes distinguish resolution limits, marker effects and uncertain bulk coupling. Raw movies/coordinates/flags/versions plus sample identifiers make reconstruction possible."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Coherent step/load/coupling study with correct uncertainty and ensemble caveats; most numerical execution and precision gates are still deferred.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, stepping mechanism and ATP-by-load intervention match the mechanochemical part. The proposal explicitly leaves torque/work/efficiency unmeasured: no torque-angle work calculation or ATP/ADP/phosphate free-energy comparison supports the historical energetic result. Thus the joint stepping-plus-energetics readout and prediction are incomplete; not assuming a 120-degree answer is good practice and is NOT the reason for the miss.",
+  "item_score": 24.0
+}

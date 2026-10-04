@@ -1,0 +1,87 @@
+{
+  "item_id": "mol-d02",
+  "response_id": "mol-d02",
+  "model_code": "glm",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:05:23.413688+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "d55329e73aac3938e843a535691d9488d2b1c1b67dd18f4a580b73f6be6d7976",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 43.75,
+  "errors": [
+    {
+      "quote": "excluded from the arrest denominator, so the arrest fraction cannot be inflated by death",
+      "issue": "This is false: removing deaths from the denominator is precisely how selective death can inflate a survivor arrest fraction. Use the original eligible starting-G1 cohort and joint S-entry/death outcomes. Naming deaths separately does not remove selection bias."
+    },
+    {
+      "quote": "a direct damage marker (e.g., γH2AX or 53BP1 foci",
+      "issue": "These are damage-response recruitment/signaling markers, not interchangeable direct delivered-lesion counts. Choose an agent-appropriate immediate physical assay, avoid equalizing away later p53-dependent repair, and distinguish the changed estimand under state-specific dose matching."
+    },
+    {
+      "quote": "that locates the arrest downstream of PIKK-dependent damage signaling",
+      "issue": "Pleiotropic caffeine suppression does not uniquely locate the arrest in a PIKK pathway; toxicity, altered injury and other targets can produce the same result. The later weak-localization caveat does not justify this stronger causal claim."
+    },
+    {
+      "quote": "odds ratio for rescue vs depletion in the *damage-induced increment*",
+      "issue": "A logistic interaction is a ratio of odds ratios, not the additive difference-in-differences initially defined. Obtain standardized marginal probabilities for that estimand. A positive interaction or 70% restoration also permits residual arrest and incomplete rescue, so does not establish full necessity/restoration."
+    },
+    {
+      "quote": "sensitivity analysis repeating the primary test among cells tracked ≥ a longer minimum duration",
+      "issue": "Selecting even longer complete trajectories can strengthen informative selection. Use starting-cohort counts, explicit missingness assumptions and worst-case or model-based informative-loss sensitivity analyses."
+    },
+    {
+      "quote": "Continuous low-dose label through the analysis window is preferred because it also measures *rate*",
+      "issue": "Cumulative analog labeling measures synthesis/entry over an interval, not a unique synthesis rate without uptake, duration and kinetic calibration. Long exposure also requires label-perturbation controls."
+    },
+    {
+      "quote": "recoded or epitope-tagged silent-mutation version",
+      "issue": "Select a specific depletion mechanism and corresponding resistant rescue. Synonymous recoding may evade a sequence-targeted reagent but does not by itself evade protein-degron recognition; adding an epitope tag is not a general resistance mechanism."
+    }
+  ],
+  "rationale": "Useful factorial structure, time ordering, live history and clustering plan, but the central survivor-denominator claim is incorrect. Injury matching, pathway placement, logistic estimand, missingness sensitivity and depletion/rescue specification require substantial correction. The answer fits the word limit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "All four complete final answers, the exact candidate question/packet and complete frozen reference including curator clarification were personally read. No paid judge, hidden reasoning or actual experiment was used.",
+    "The reference body retains survivor-only and damage-recalibration language. Its explicit clarification takes precedence: use starting-cohort denominators and competing death outcomes; match initial delivered injury without removing later repair differences caused by p53.",
+    "A partial loss of arrest supports contribution to the response. Full necessity for the defined response requires evidence that meaningful damage-induced arrest is absent after effective loss, with uncertainty and rescue specificity. Do not demand exact zero or universal dependence.",
+    "Common external exposure and state-specific lesion matching estimate different effects. Neither is rejected categorically if justified and reported. Merely adjusting for a post-treatment mediator is not automatically a matched-damage causal experiment.",
+    "Near-endogenous rescue includes damage-induced kinetics and cell-to-cell abundance; successful damage-dependent rescue does not prove p53-alone sufficiency. Assay/dose calibration proposals are legitimate because identities and timings were not supplied.",
+    "Predetermined outcome-based rejection can still select confirmatory results. Distinguish technical failure from biological death, lesion burden or negative arrest outcomes and preserve the latter in reporting.",
+    "Live tracking must distinguish S entry followed by death, no S entry before death, persistent viable G1, and unresolved tracking. No informative-loss mechanism is cured by labeling all loss censoring.",
+    "The source audit here is limited to indexed primary-paper abstract/metadata excerpts; PubMed/PMC full-page access was challenged. No full historical methods audit is claimed. Scoring follows the supplied hypothetical packet rather than unavailable methods.",
+    "AID-mediated depletion recognizes a protein tag: synonymous recoding does not make an otherwise identical tagged protein resistant. Untagged rescue is a valid alternative. The AID2 paper abstract, introduction and initial results through the reporter comparisons were read, not its full supplementary protocol.",
+    "GLM and Kimi fit 3500 words; Grok is approximately 3602 and Qwen 4460 whitespace-delimited words. Length affects communication only, not a substitute for scientific scoring.",
+    "Primary starting-cohort definitions receive credit where specified. Competing-risk S-entry incidence includes dependence on death; it is not an intervention eliminating death. Lists of S entry, later death and division need an event hierarchy.",
+    "Marker agreement at equal nominal exposure does not validate marker independence. Direct lesion measurement may differ because delivered damage truly differs. Early phenotype matching is not lesion matching.",
+    "Overlapping lesion distributions alone do not show equivalence. Post-treatment restriction/adjustment requires a shared observation unit and explicit causal assumptions."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1933891/",
+      "scope": "Indexed primary-paper abstract excerpt and bibliographic record: 1991 p53, irradiation and caffeine associations. Full-page text unavailable."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1323840/",
+      "scope": "Indexed primary-paper abstract excerpt: 1992 genetic gain/loss and irradiation checkpoint experiments; no full-methods audit."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-020-19532-z",
+      "scope": "Abstract, introduction and early reporter results: protein degron/TIR1/ligand architecture and AID2 OsTIR1(F74G)-5-Ph-IAA pairing. No full supplementary audit."
+    }
+  ],
+  "overall_benchmark_score": null
+}

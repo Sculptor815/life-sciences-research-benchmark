@@ -1,0 +1,239 @@
+{
+  "model_code": "qwen",
+  "item_id": "bio-r02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T08:14:47.805826+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "db4872f8c3ca4833f6089cee2468f266fdc490cdbb8b2d3a8bd688c3a75f268a",
+  "question_sha256": "1a2f38bc4a291e966598faece6d609fa8591d54539f53a2f49f3a56c3116856b",
+  "reference_sha256": "8282d415ac922ab3df37704b68f9314a3cf0a493392b6b5995af7ead2893d7e3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "767477c3def5aa55e4c7cfbb28cef21a3e32cb657ee633b50ea4fb88ea00d6f1",
+  "primary_route": "ATP/load angular and simulation study, conditional torque/power and optional nucleotide reporters; no work/free-energy comparison.",
+  "complete_final_answer_read": true,
+  "word_count": 4842,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit proposal to consult/check prior primary Methods or a validated protocol for detailed pre-execution conditions and transfer. Recording unknown settings and developing an assay locally do not satisfy this distinct requirement."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The core immobilization/shaft attachment, solution chemistry (including nucleotide/free-magnesium conditions), recording settings and load manipulation lack an executable quantitative workflow or a concrete calibration-to-setting procedure. Lists of parameters to select later are insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "false-positive rate",
+      "evidence_type": "exact_quote",
+      "reason": "Static angular thresholds and synthetic error rates are described, but there is no numerical false-call/recovery or temporal acceptance-to-action rule for the main event detector."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct independent-preparation/chamber/molecule hierarchy is present, but the sample-size pilot does not specify a quantitative precision/power target linked to meaningful effect and between-preparation variance."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "predefined duration or until photobleaching",
+      "evidence_type": "exact_quote",
+      "reason": "Technical exclusions are logged but no registered full-sample/precision/finite extension stopping rule or original inspected inactive-molecule denominator is supplied."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Primary estimands and hierarchical/held-out comparisons are present, but exact model assumptions/diagnostics and multiplicity control for the several primary load/coupling/event tests are incomplete."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If the enzyme can be locked or inhibited",
+      "evidence_type": "exact_quote",
+      "reason": "Free rotational diffusion D=kBT/drag cannot be applied to an enzyme-locked, elastically confined probe without identifying the short-time free regime or fitting confinement/compliance. A rigid locked object does not freely diffuse; the stated empirical drag estimator lacks this correction."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "ATP/load/acquisition optimization is not bounded by an explicit ladder or objective range-derivation/search-stop rule before the lock. A promise to select a spanning range from pilots is not a fully specified exploration policy."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Pilot separation and troubleshooting are described, but technical changes do not explicitly trigger a revised freeze and fresh independent confirmatory data under a defined change-control policy."
+    },
+    {
+      "id": "G4",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Invariant step size with slowed dwells supports discrete power strokes",
+      "evidence_type": "exact_quote",
+      "reason": "Preferred step angles, backward fluctuations and ATP-dependent dwells cannot by themselves distinguish power strokes from Brownian ratchets; a tightly coupled ratchet can show the same regular steps. The proposed central mechanism discriminator is non-identifying. Primary model example: https://pmc.ncbi.nlm.nih.gov/articles/PMC4052363/ ."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "Ionic-strength/osmolarity controls",
+      "evidence_type": "exact_quote",
+      "reason": "The question is meaningful, identity/labeling and catalytic feasibility are checked, and ATP/dead-enzyme/attachment/analog/solution controls are planned prospectively. Packet and proposals are distinguished; specific drag and force-mechanism errors are charged only at P09/G4."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "Freeze analysis code and parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Quantified angular/dwell/MSAD/rate endpoints, recorded units/conditions, randomized blocked coded runs, diagnostic repairs, simulation nulls and independent preparations support an auditable bounded mechanics inference. Exact ATP stoichiometry is explicitly not proven by the optional reporter suggestion. Raw files, IDs, code/parameter freeze and logs preserve provenance."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "Freeze analysis code and parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Quantified angular/dwell/MSAD/rate endpoints, recorded units/conditions, randomized blocked coded runs, diagnostic repairs, simulation nulls and independent preparations support an auditable bounded mechanics inference. Exact ATP stoichiometry is explicitly not proven by the optional reporter suggestion. Raw files, IDs, code/parameter freeze and logs preserve provenance."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "Freeze analysis code and parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Quantified angular/dwell/MSAD/rate endpoints, recorded units/conditions, randomized blocked coded runs, diagnostic repairs, simulation nulls and independent preparations support an auditable bounded mechanics inference. Exact ATP stoichiometry is explicitly not proven by the optional reporter suggestion. Raw files, IDs, code/parameter freeze and logs preserve provenance."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "Freeze analysis code and parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Quantified angular/dwell/MSAD/rate endpoints, recorded units/conditions, randomized blocked coded runs, diagnostic repairs, simulation nulls and independent preparations support an auditable bounded mechanics inference. Exact ATP stoichiometry is explicitly not proven by the optional reporter suggestion. Raw files, IDs, code/parameter freeze and logs preserve provenance."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "Freeze analysis code and parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Quantified angular/dwell/MSAD/rate endpoints, recorded units/conditions, randomized blocked coded runs, diagnostic repairs, simulation nulls and independent preparations support an auditable bounded mechanics inference. Exact ATP stoichiometry is explicitly not proven by the optional reporter suggestion. Raw files, IDs, code/parameter freeze and logs preserve provenance."
+    },
+    {
+      "id": "P15",
+      "state": "met",
+      "points": 0,
+      "quote": "Freeze analysis code and parameters",
+      "evidence_type": "exact_quote",
+      "reason": "Quantified angular/dwell/MSAD/rate endpoints, recorded units/conditions, randomized blocked coded runs, diagnostic repairs, simulation nulls and independent preparations support an auditable bounded mechanics inference. Exact ATP stoichiometry is explicitly not proven by the optional reporter suggestion. Raw files, IDs, code/parameter freeze and logs preserve provenance."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Well-organized proposed mechanics study, but locked-probe drag inference and power-stroke/ratchet discrimination need correction; many numerical decisions remain unspecified.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "Question, stepping mechanism and ATP/load intervention align. Torque and power are conditional, but no torque-angle work versus actual ATP/ADP/phosphate chemical-free-energy experiment or its supported energetic prediction is supplied. Thus the joint historical readout/prediction is incomplete, independently of the exact step angle.",
+  "item_score": 18.0
+}

@@ -1,0 +1,80 @@
+{
+  "item_id": "mol-d01",
+  "model_code": "glm",
+  "response_id": "mol-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:03:32.542496+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "7c30fbe9a6a825cb77a076459d35361778a3998225a4e0ef3491e6a25bd315e3",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 2,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 51.25,
+  "reasoning_index": 43.75,
+  "errors": [
+    {
+      "quote": "Phenotype is not K-dependent",
+      "issue": "Failure of both WT and KD rescue is inconclusive. It can arise from defective reconstitution, irreversible adaptation or missing regulation even when K loss caused the original effect."
+    },
+    {
+      "quote": "K catalytic activity, not scaffolding, is required",
+      "issue": "Catalytic necessity and retained-scaffold insufficiency do not establish scaffold dispensability. Both functions may be required; a reciprocal qualified scaffold perturbation is needed."
+    },
+    {
+      "quote": "and to K construct abundance.",
+      "issue": "Normalizing phospho-S by K across null and rescued groups divides by zero or near-zero K in the empty-vector null and imposes an unsupported linear relationship. Match or model expression, but do not use K as that universal denominator."
+    },
+    {
+      "quote": "target: >90% reduction of K protein",
+      "issue": "Greater than 90% depletion is not a null. Residual endogenous K could support a mutant rescue or contribute sufficient catalytic activity; the relevant alleles and residual functional bound must be checked."
+    },
+    {
+      "quote": "Titrate ligand on WT lysate",
+      "issue": "Ligand responsiveness should be calibrated in intact cells under the relevant stimulation conditions. Adding ligand to lysate is not the stated cellular signaling assay."
+    },
+    {
+      "quote": "Both functions contribute",
+      "issue": "Partial rescue alone does not establish two contributions; residual activity, incomplete scaffold preservation and expression effects remain compatible. The repeated categorical table gives a stronger conclusion than the later limitations."
+    }
+  ],
+  "rationale": "Useful multi-guide design and several relevant QC measures, but central outcome rules misclassify failed rescue and confuse catalytic necessity with scaffold dispensability. Invalid endpoint normalization and a depletion-as-null threshold would compromise implementation. The tables are readable yet conflict with the stated limits.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "M1 is a pooled-K-loss phenotype, not independently established on-target necessity. Growth is not stated to be ligand-induced; include a ligand-by-genotype comparison.",
+    "Catalytic necessity does not imply scaffolding dispensability; both can contribute. Noncatalytic rescue is not specific proof of scaffolding.",
+    "An activity non-detect or fixed percentage-of-WT threshold does not exclude biologically sufficient residual catalysis. Bound residual activity relative to functional sensitivity.",
+    "S is not established as a K substrate or binding partner. S immunoprecipitates can contain other active components; direct phosphotransfer needs defined components and controls.",
+    "The reference calls for biallelic disruption, but cancer cell lines may have more than two relevant copies. Validate all relevant endogenous alleles/protein rather than assuming diploidy.",
+    "A non-significant KD-versus-WT difference is not equivalence, and a non-significant KD-versus-empty contrast is not proof of no meaningful rescue.",
+    "A folding or binding check does not prove all scaffold functions intact. Mutation and inhibitor conformation effects remain limitations.",
+    "Phospho-S rescue and growth rescue are separate outcomes. A discordant pattern does not by itself establish S phosphorylation necessity or absence.",
+    "Operational detail is assessed against the actual candidate instruction. Unknown identity-specific doses should be calibrated; general sample handling and assay operations can nevertheless be specified.",
+    "The reference is a draft and also lacks a fully executable bench procedure. It is not treated as an exhaustive, error-free protocol.",
+    "Protein presence during catalytic inhibition does not establish functional scaffold preservation. Conformation and interactions can change.",
+    "Lack of an inhibitor effect in null cells does not establish selectivity: floor effects and changed dependency can hide off-target actions.",
+    "Do not normalize the pathway endpoint by K abundance across null and rescued cells; division by absent K is undefined and implies an unjustified linear correction.",
+    "Fold-proxy similarity is not proof of identical tertiary structure or preservation of every interaction."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature08833",
+      "use": "Primary evidence that ATP-competitive RAF inhibitors can alter dimerization; protein presence alone does not ensure unchanged interaction functions. Not an assertion that fictional K is RAF."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-017-01274-0",
+      "use": "Primary study of inhibitor-induced RAF conformation and RAS interaction, supporting the need to qualify noncatalytic consequences."
+    }
+  ],
+  "overall_benchmark_score": null
+}

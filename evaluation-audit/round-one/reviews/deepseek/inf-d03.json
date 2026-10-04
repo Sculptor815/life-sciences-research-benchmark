@@ -1,0 +1,61 @@
+{
+  "item_id": "inf-d03",
+  "response_id": "inf-d03",
+  "model_code": "deepseek",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T15:27:16.011665+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original rubric",
+  "candidate_sha256": "020cbe7ab133a66a8e3942d13091a3a0feb2719b089ead7010b1626e1793f51d",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 3,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 57.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Effective sample size is approximately donor n divided by design effect.",
+      "issue": "For the stated equal-cluster design-effect approximation the numerator is the total observation count, not donor count. This expression double-penalizes clustering and can imply fewer effective observations as cells increase."
+    },
+    {
+      "quote": "Random slope for treatment if treatment effects vary by donor.",
+      "issue": "Each donor receives only one treatment; an ordinary donor-specific treatment slope cannot separately identify counterfactual donor treatment heterogeneity from a donor intercept without additional design or assumptions."
+    },
+    {
+      "quote": "within a donor, do treated cells differ?",
+      "issue": "There is no within-donor treatment contrast in the specified between-donor assignment. A mixed model cannot create that contrast."
+    },
+    {
+      "quote": "Wald or likelihood-ratio tests with Kenward–Roger or Satterthwaite degrees of freedom",
+      "issue": "These corrections are not generic interchangeable add-ons to likelihood-ratio tests or all GLMMs; specify a supported outcome/model-specific test and calibrate it."
+    },
+    {
+      "quote": "Include batch in design/random effects; sensitivity analysis; report limitations.",
+      "issue": "This response to batch confounding does not distinguish estimable imbalance from complete treatment-batch aliasing, which covariate or random-effect adjustment cannot identify without extra assumptions."
+    }
+  ],
+  "rationale": "Broad and often useful donor-level workflow, restricted permutation, grouped validation and reporting. Major formula and identifiability errors undermine the interpretation; conditional versus donor-average effects and null calibration need clearer specification.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Personally read complete candidate answers, exact question/packet, full frozen reference and curator operational extension. Only original-round rubric applied; later 10/5 deductions remain inactive.",
+    "Independent treatment replication is at the assignment level; subsamples can improve donor measurement without creating assignments. Between-donor treatment regression is identifiable; saturated donor fixed indicators would instead absorb donor-constant treatment.",
+    "High ICC or loss of significance is not proof of a false effect. Small independent n limits precision and approximation robustness, not automatic invalidation of every prespecified model.",
+    "Equal-donor, observed-cell-weighted and nonlinear conditional coefficients can have different estimands. State normalization, link and standardization before comparing methods.",
+    "Ordinary bootstrap is not a null sample. Null simulations need explicit no-effect generation, parameter uncertainty and repeated datasets to assess false-positive frequency; a single permuted dataset is not an empirical FPR estimate.",
+    "Respect actual randomization restrictions and joint pair/block sampling. Sharp-null randomization exactness does not automatically transfer to all average-effect nulls. Report coarse attainable p resolution with few assignments.",
+    "Held-out prediction and confirmatory effect inference differ. A lack of external holdout limits validation but does not invalidate a prespecified calibrated treatment test. All data-dependent preprocessing must remain inside development folds.",
+    "Frozen reference corrections are disclosed; no actual data analysis or full primary-methods audit performed. The source packet does not specify a concrete assay, outcome distribution or numerical design values, so appropriate calibrated alternatives are accepted."
+  ],
+  "review_sources": [],
+  "overall_benchmark_score": null
+}

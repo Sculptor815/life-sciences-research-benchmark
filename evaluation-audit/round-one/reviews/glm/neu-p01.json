@@ -1,0 +1,58 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "glm",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:09:20.361776+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "dadacdc2d1ea8608135b5b478ddbfd0672d94da2ef6935640e3c1159b689bfdd",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 62.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "confirming that the original effect was likely an artifact of the very record failures N1 describes.",
+      "issue": "A new negative replication cannot identify the original record failure as the cause. Adequate efficacy, precision and matching conditions are needed even for a scoped biological null."
+    },
+    {
+      "quote": "the concern about NS-12 is shown to be a documentation problem, not a scientific one",
+      "issue": "Successful replication does not determine whether the original allocations or analysis were valid. A true biological effect can coexist with results-altering original errors."
+    },
+    {
+      "quote": "the claim reverts to",
+      "issue": "Recovering records can improve evidential assessment but does not itself remove or reverse the retraction status. The recovered comparison still needs reanalysis and learning-specific controls."
+    },
+    {
+      "quote": "the same learned-performance assay",
+      "issue": "The proposed replication needs phase-specific inhibition and tests for performance confounds; repeating the same outcome with new IDs does not isolate learning."
+    }
+  ],
+  "rationale": "Good initial source/notice distinctions and several concrete possible data errors. The central replication decision rules then make unsupported claims about the cause of original defects and falsification of the biology. The sensitivity-audit suggestion is conditional and useful, but does not repair those causal overclaims.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

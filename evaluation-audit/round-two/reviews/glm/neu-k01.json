@@ -1,0 +1,134 @@
+{
+  "model_code": "glm",
+  "item_id": "neu-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T01:54:48.597480+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "14495568dad738107bbb0f3a4f4bbc8942635a7bce04846dd3efb9ce570fcef0",
+  "question_sha256": "ec00f761d65e7dc493f76bf3a693e16f99e119bd7fef3c082e32437257928dbf",
+  "reference_sha256": "d3cf3f452f3c4b05f1d454b87ab4898000e3b8dcbf3d370dd6c8b8d93bb580df",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c38fdccbc0a1337aefb312adc780bc4fc88cc0bc261772729f4a490af3ccc22c",
+  "primary_route": "Same-cell electrophysiology and calcium imaging with spike-pattern calibration and optical-reference/motion comparisons.",
+  "complete_final_answer_read": true,
+  "word_count": 1143,
+  "first_round_scientific_quality": 47.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Complementary controls (proposed)",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed validation lacks a complete role-defined positive, negative/null and optical procedural control set. Motion discussion or generic calibration alone does not prospectively design all necessary comparisons."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of indicator/paired-recording Methods or validated protocols to select detailed conditions and verify transfer. A generic published calibration mention is insufficient."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Proposes spike/fluorescence calibration but does not specify a measurement-error/noise or recovery acceptance criterion and the action if calibration fails; a fitted curve or plateau inspection alone is incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No fully defined endpoint with baseline/background calculation, units/denominator and weak/near-zero/saturated/missing-signal handling. Naming delta-F/F and spike counts is not the complete measurement rule."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "if spike count is higher in B, the fluorescence difference reflects spiking",
+      "evidence_type": "exact_quote",
+      "reason": "Co-occurring greater spike count does not show it explains the optical difference unless the calibrated model and artifact comparisons account for it; the direct decision is too strong."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "exact_quote",
+      "reason": "Operational simultaneous electrical spike recording and imaging of the same cell provides an independent measurement; comparisons of count/timing and fluorescence, with acknowledged optical/calcium ambiguities, meet essay-scale validation. Extra optional reporters are not treated as independent ground truth."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "F_min at rest",
+      "evidence_type": "exact_quote",
+      "reason": "Indicator Fmin is the calcium-free/minimum state, not necessarily resting fluorescence at nonzero basal calcium."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "A larger indicator response establishes a larger calcium event",
+      "evidence_type": "exact_quote",
+      "reason": "Motion and indicator-state alternatives explicitly remain unresolved; a directional calcium event or calcium influx is not established."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "calcium influx, hence spiking",
+      "evidence_type": "exact_quote",
+      "reason": "Connects kinetics, calibration, motion and saturation to an independent validation proposal; the principal spike-count inference is limited. No additional distinct content, evidence-status or format defect beyond the recorded deductions."
+    }
+  ],
+  "deductions_uncapped": 45,
+  "quality_score": 55,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 62.5,
+  "explanation_reason": "Discusses all requested factors but repeatedly asserts a calcium-level conclusion its own artifact discussion does not support.",
+  "item_score": 55
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "mol-p01",
+  "model_code": "gemini-pro",
+  "response_id": "mol-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.929258+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "51ae00d95beac25a698dda81035e8744bec92979dc1b4052d857073de65d6705",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 58.75,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "directly contradicting the claim that the phenomenon occurs in \"unmodified cells.\"",
+      "issue": "Testing engineered cells leaves native-cell occurrence unestablished; it does not contradict the possibility that the phenomenon also occurs in unmodified cells."
+    },
+    {
+      "quote": "Search external literature databases using the title",
+      "issue": "These names and identifiers are dossier-only. A matching or absent external publication cannot authenticate the internal citation mapping without dossier provenance."
+    },
+    {
+      "quote": "the scientific concern would be disproved and the claim validated.",
+      "issue": "Endogenous co-IP plus purified binding supports native association and direct binding capability, but does not by itself prove direct A-B contact in the assayed unmodified cells."
+    }
+  ],
+  "rationale": "Identifies the mismatch and two evidentiary gaps, but conflates an untested condition with contradiction, proposes an inapplicable identity check, and overstates the combined assays as conclusive. It correctly avoids inferring intent.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Dossier-only identifiers cannot be authenticated by finding or failing to find similarly named real publications. Underlying dossier documents and curation records can resolve the mismatch.",
+    "A complete registry entry establishes its recorded fields, not that its mapping is necessarily correct. An error is not proof of intent.",
+    "Included controls are not reported successful control outcomes. Grade the principal co-IP conclusion while recording any unreported-result assertion.",
+    "Not supplied does not mean never performed. Untested does not mean false.",
+    "Purified binding and endogenous co-IP address complementary questions; their combination is strong support but not automatically proof of direct contact in an unmodified cell.",
+    "Negative assays require sensitivity, reagent competence and relevant conditions. Depleting a bridge can disturb localization or stability even when A and B also bind directly.",
+    "The reference suggestion that all direct binding must survive bridge disruption is overstrong. Do not require it.",
+    "No misconduct probability can be inferred by treating author, title and year mismatches as three independent random errors."
+  ],
+  "overall_benchmark_score": null
+}

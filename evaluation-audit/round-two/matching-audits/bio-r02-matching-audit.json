@@ -1,0 +1,180 @@
+{
+  "at": "2026-10-04T08:31:22.585760+00:00",
+  "item_id": "bio-r02",
+  "policy": "Post-hoc strict v2; all five components jointly required. Valid alternatives receive quality credit independently. Candidate and v1 bytes preserved.",
+  "source": {
+    "title": "F1-ATPase is a highly efficient molecular motor that rotates with discrete 120 degree steps",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9657145/",
+    "date": "1998-06-26"
+  },
+  "reviews": [
+    {
+      "model_code": "claude-fable",
+      "candidate_sha256": "0d3420e170cf69cfb5d6fd58bfe3d5af4d80c610a87d28b7b7f6933f830f1363",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": false
+      },
+      "reason": "Question/mechanism/intervention/readouts include stepping, ATP/load discrimination, drag-derived work and condition-specific chemical free energy. However, the joint positive conclusion assigns one ATP per 120-degree step from bulk rate matching with unknown active fraction and ATP-dependent waiting. Its own caveat concedes stoichiometry is assumed. That critical coupling-to-efficiency inference prevents a qualified predicted-outcome hit; merely naming 120 degrees does not rescue it."
+    },
+    {
+      "model_code": "claude-opus46",
+      "candidate_sha256": "3f7093539c42db3e6a37d98d9092431a92f7578bc0bea62bfeec827d5020dae3",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The stepping/ATP/load question and intervention align, but no ATP/ADP/phosphate free-energy estimate or supported work-per-turnover comparison is made. The primary histogram null and one-ATP-per-step assignment are also non-identifying. Thus joint historical readout and prediction fail despite naming 120 degrees."
+    },
+    {
+      "model_code": "claude-opus48",
+      "candidate_sha256": "c198a3339bde1c67be82b6599e29385c3f896e8ded9a7d4a9fcf6834ab18bd70",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, stepping mechanism and ATP/load intervention match. Work/chemical-free-energy energetics are explicitly deferred, and one turnover per step is inferred rather than validated. Consequently the joint historical readout and qualified prediction fail."
+    },
+    {
+      "model_code": "deepseek",
+      "candidate_sha256": "f2b06ae569b7c3814bb620f00b2cc767ffca9ca3a5d3a8d0dabf40d9e405b9b0",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Step question/mechanism and ATP/load intervention align. There is no torque-angle work and actual hydrolysis-free-energy comparison, and bulk-turnover attribution is not resolved. The full historical readout/prediction is therefore missing; no requirement to guess 120 degrees was imposed."
+    },
+    {
+      "model_code": "gemini-pro",
+      "candidate_sha256": "2fb23daeed44905a8cd2d84db980aa9538ea29b8c80d06830c9b4901b1097431",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "The mechanical question and ATP/load manipulation align, but neither calibrated work/chemical free energy nor credible chemical coupling is measured. Step-finder output alone lacks independent validation; complete historical readout/prediction does not qualify."
+    },
+    {
+      "model_code": "glm",
+      "candidate_sha256": "df0cad3d29d42f3b7abf05b196e839784a382586be1ce3b644f58c1998b3fd02",
+      "first_round_hit": false,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Step/coupling question and ATP/load manipulation match. No actual chemical-free-energy comparison is made; angular periodicity and rate dependencies also cannot establish the asserted 1:1 nucleotide event. Joint historical energetic readout and qualified prediction are missing."
+    },
+    {
+      "model_code": "gpt-astra",
+      "candidate_sha256": "457d5cdb2c05e5df2369d07d350fe5754c21801b6dc0d3c90a524467956bdbbc",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, stepping mechanism and ATP-by-load intervention match the mechanochemical part. The proposal explicitly leaves torque/work/efficiency unmeasured: no torque-angle work calculation or ATP/ADP/phosphate free-energy comparison supports the historical energetic result. Thus the joint stepping-plus-energetics readout and prediction are incomplete; not assuming a 120-degree answer is good practice and is NOT the reason for the miss."
+    },
+    {
+      "model_code": "gpt-sol",
+      "candidate_sha256": "8c547213c228e89077cd026d6ed4bfde5dce6841ca92dfbe4c2a9eadf8bdfae0",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, stepping mechanism and ATP-by-load intervention match the mechanochemical part. The proposal explicitly leaves torque/work/efficiency unmeasured: no torque-angle work calculation or ATP/ADP/phosphate free-energy comparison supports the historical energetic result. Thus the joint stepping-plus-energetics readout and prediction are incomplete; not assuming a 120-degree answer is good practice and is NOT the reason for the miss."
+    },
+    {
+      "model_code": "gpt-terra",
+      "candidate_sha256": "75f9a903d7905583882120fbf6083726db971873201360db4139561e9fe6e00b",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, stepping mechanism and ATP-by-load intervention match the mechanochemical part. The proposal explicitly leaves torque/work/efficiency unmeasured: no torque-angle work calculation or ATP/ADP/phosphate free-energy comparison supports the historical energetic result. Thus the joint stepping-plus-energetics readout and prediction are incomplete; not assuming a 120-degree answer is good practice and is NOT the reason for the miss."
+    },
+    {
+      "model_code": "grok",
+      "candidate_sha256": "60f574100b641648ffaff44d34189ac50f4238307679882732cc8717e5af7608",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, stepping/coupling mechanism and ATP/load intervention align. The proposal explicitly forbids converting torque to efficiency and supplies no actual ATP/ADP/phosphate free-energy or work-per-step comparison. Thus the joint historical energetic readout/prediction is incomplete; a valid narrower program still receives scientific-quality credit."
+    },
+    {
+      "model_code": "kimi",
+      "candidate_sha256": "4c4cb2bc7df73eb89ddf4f42311d49fae4a3930af5f98b67a4709ca6f18896b2",
+      "first_round_hit": true,
+      "second_round_hit": true,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": true,
+        "predicted_outcome": true
+      },
+      "reason": "The proposal supplies stepping/coupling question and mechanism, ATP/load interventions with credible angular/chemical controls, measured steps and conditional torque-clamp work using actual ATP/ADP/phosphate free energy, and a conditional three-step/three-turnover outcome. The explicit efficiency-calculation gate prevents unsupported energy claims. This matches the historical stepping-plus-energetics direction without requiring the candidate to assert an unobserved exact efficiency or 120-degree answer in advance."
+    },
+    {
+      "model_code": "qwen",
+      "candidate_sha256": "db4872f8c3ca4833f6089cee2468f266fdc490cdbb8b2d3a8bd688c3a75f268a",
+      "first_round_hit": true,
+      "second_round_hit": false,
+      "components": {
+        "biological_question": true,
+        "mechanism": true,
+        "intervention": true,
+        "readout": false,
+        "predicted_outcome": false
+      },
+      "reason": "Question, stepping mechanism and ATP/load intervention align. Torque and power are conditional, but no torque-angle work versus actual ATP/ADP/phosphate chemical-free-energy experiment or its supported energetic prediction is supplied. Thus the joint historical readout/prediction is incomplete, independently of the exact step angle."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "item_id": "inf-d02",
+  "response_id": "inf-d02",
+  "model_code": "claude-fable",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T14:11:45.857441+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "887b86c9b5a777a5af06488c3d7e33f75b5d78b5d31184ba0fe639badbf88431",
+  "service": {
+    "scientific_accuracy": 3,
+    "decision_value": 3,
+    "actionability": 3,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 76.25,
+  "reasoning_index": 81.25,
+  "errors": [
+    {
+      "quote": "stop and redesign (do not analyse for inference) if treatment is fully confounded with batch or donor",
+      "issue": "Treatment constant within each of several independently allocated donors is a valid between-donor design, not automatically nonidentifiable. It becomes aliased if saturated donor fixed effects are included. Retain the proposed paired design as an option, but offer an identifiable donor-level analysis for between-donor allocation rather than treating all donor-constant treatment as design failure."
+    },
+    {
+      "quote": "This makes donor a blocking factor and permits across-donor generalisation.",
+      "issue": "Multiple donors permit assessment of donor variation, but a fixed-donor intercept and more within-donor allocation units do not alone validate population generalization or account for donor-specific treatment effects. Specify donor sampling/target population and treatment-effect heterogeneity or suitably scoped common-effect assumptions."
+    },
+    {
+      "quote": "QC thresholds (mapping rate, assignment rate, rRNA fraction):** set empirically as robust lower bounds",
+      "issue": "Higher rRNA fraction is generally the direction of potential contamination/low informative yield, so a lower-bound rule does not implement the needed check. Define metric-specific directions and assay-dependent acceptance rules rather than applying one lower-bound recipe to all QC metrics."
+    },
+    {
+      "quote": "All QC outputs written to `qc/` and hashed.",
+      "issue": "Add explicit read-pair integrity/identifier checks, sample-sheet versus count-column order checks, and a compatible transcript-quantification import/offset path if the pseudo-aligner option is used. Hashing records outputs but does not verify those biological and matrix relationships."
+    },
+    {
+      "quote": "estimate latent factors (e.g., surrogate-variable approach)",
+      "issue": "For this proposed sensitivity route, define how the biological contrast is protected during factor estimation and how rank/remaining degrees of freedom are checked. A p-value histogram pattern alone does not uniquely diagnose unwanted variation and an unprotected factor model can remove the target signal."
+    }
+  ],
+  "rationale": "Strong immutable manifests, allocation-unit accounting, paired-design proposal, separate shrinkage versus testing, numerical rerun tolerances and external-output audit. The generic donor-confounding stop rule, donor-generalization claim, QC direction and some input/latent-factor safeguards need correction. A legitimate between-donor study should not be rejected because the proposed paired fixed-effects formula is inappropriate.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Both full received final answers, the exact candidate question/packet and full frozen reference including curator clarification were personally read. A truncated initial combined output was followed by reading the complete Fable answer alone. No paid judge, hidden reasoning or actual pipeline execution was used.",
+    "All versions, numerical settings and paths are explicitly hypothetical/placeholders in the packet. Do not demand an invented source version, real files or executed results. Proposed named algorithms and conditional design rules can nevertheless be specified.",
+    "Reference body says to stop if randomization history is unavailable; its clarification distinguishes documented allocation from randomized assignment. Observational association can be estimated with suitable assumptions; do not require randomization for every descriptive/associational analysis.",
+    "Treatment assigned between independent donors is estimable using donor-level replicates and appropriate covariates. Saturated donor indicators would absorb a donor-constant treatment; paired donor-plus-condition formulas require within-donor treatment representation.",
+    "Wells can be independent treatment-allocation units when individually assigned. They are not additional independent donors. Compatible technical library repeats may be merged; biologically distinct times or subpopulations must not be collapsed indiscriminately.",
+    "A no-significant-gene result is not invalidity. FDR families, unavailable tests, point-estimate shrinkage and minimum-effect hypotheses must be distinguished. Count inputs must be compatible raw/estimated counts with appropriate offsets, not TPM or transformed expression.",
+    "Numeric plot data and semantic provenance differences matter more than image byte equality alone. Partial source access cannot be presented as full article reproduction. Both answers fit the 3500-word limit.",
+    "Official DESeq2 vignette excerpts for input alignment, technical-replicate collapsing and model-rank/nested-individual designs were inspected. No entire vignette/supplement audit or software run is claimed."
+  ],
+  "review_sources": [
+    {
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/vignettes/DESeq2/inst/doc/DESeq2.html",
+      "scope": "Official vignette mirror: inspected count-matrix input/order and technical replicate excerpts, model rank and grouped-individual design passages. Method corroboration, not a version prescribed to candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

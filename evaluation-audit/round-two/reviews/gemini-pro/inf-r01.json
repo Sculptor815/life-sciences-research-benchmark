@@ -1,0 +1,256 @@
+{
+  "model_code": "gemini-pro",
+  "item_id": "inf-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T07:16:18.038102+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "c51d05f320b3e4f57d68bdd33e3605898dc28fa6bbb07bc6ec8df8bbc3a46331",
+  "question_sha256": "e5b05c255ab6400e7314906517611c40e8a0dd0d8fe4bf6c537b1e9b7236aeb9",
+  "reference_sha256": "ee472d076dcd12954298145fa8170eab5a4a687f4434fcd5391f07da0c5f107b",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c113a458b4916ca23002f4d0a15b08e29c0497013b1dee6323cc4125874d1e22",
+  "primary_route": "Scale observed empirical counts, subsample, fit Normal shrinkage and compare to injected labels; no independent real-data validation.",
+  "complete_final_answer_read": true,
+  "word_count": 1171,
+  "first_round_scientific_quality": 42.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult and verify primary Methods, supplements or validated tool protocols and transfer their settings to the selected dataset. Documenting settings or calling a method standard is not that action."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 5,
+      "quote": "assumes most genes do not change significantly",
+      "evidence_type": "exact_quote",
+      "reason": "A zero-centered Normal prior does not imply most genes are statistically nonsignificant, nor does it classify extreme values as strictly noise; its scale and likelihood determine shrinkage."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Process the sub-sampled",
+      "evidence_type": "exact_quote",
+      "reason": "No selected normalization, fitted dispersion/prior algorithm, numerical convergence criteria or concrete executable calibration workflow is specified."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Root Mean Square Error",
+      "evidence_type": "exact_quote",
+      "reason": "An accuracy metric is supplied, but measurement/simulator calibration, an acceptance tolerance and action on calibration failure are absent."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Biological replication is recognized, but a justified meaningful-effect/precision or power calculation and simulation Monte Carlo precision/stopping rule are absent."
+    },
+    {
+      "id": "P06",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational randomized/balanced processing or masked QC/estimator-comparison plan, nor justified equivalent bias control, is specified."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Eligibility intent is present but failed-fit/missing-measurement handling, all-eligible denominators and stopping/maximal acquisition rules remain unspecified."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No executable primary method-difference uncertainty procedure and relevant multiplicity/error-control rule is fixed; listing metrics or interval outputs is insufficient."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "mathematically scaling their baseline counts",
+      "evidence_type": "exact_quote",
+      "reason": "Multiplying observed counts does not generate new NB counts with a known specified mean-variance law; assigning selected genes a null effect also does not erase pre-existing condition differences. The proposed central spike/recovery truth is not constructed as claimed."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Sensitivity scenarios are named, but bounded settings or a concrete derivation-and-lock procedure for the essential prior/filter/model choices are absent."
+    },
+    {
+      "id": "P11",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Possible failure modes are named without a diagnostic result linked to an ordered technical repair and retest."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational iteration policy identifies what stays frozen, what may change and the fresh independent confirmation required after a change."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "sharing information across genes",
+      "evidence_type": "exact_quote",
+      "reason": "The negative/ambiguous conclusions uniquely attribute failure to prior or dispersion sharing, without identifying tests separating likelihood, normalization, simulation and irreducible low-information causes."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Independent Validation: Testing Preservation vs. Shrinkage",
+      "evidence_type": "exact_quote",
+      "reason": "This section only scores the same synthetic data against injected labels. No independent real cohort or orthogonal assay is proposed."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "raw, un-normalized count matrices",
+      "evidence_type": "exact_quote",
+      "reason": "The raw-read-to-sample manifest, checksums, reference releases, pipeline commands/environment and figure-source records requested by the prompt are absent; a count matrix is not raw-read provenance."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Sub-sample the",
+      "evidence_type": "exact_quote",
+      "reason": "No discovery/development/validation separation or within-split nuisance fitting is defined; the same empirical data calibrate and evaluate the synthetic construction."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "True Nulls",
+      "evidence_type": "exact_quote",
+      "reason": "Known nulls are not validly constructed, and there is no confounding/missingness/composition stress plan. The invalid simulator itself is charged only to P09; this check concerns absent external confounding and missing-data controls."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Figure concepts do not supply numeric source tables plus a clean-environment rerun, numerical tolerances, resource/failure logs and source-difference audit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "methods-direction forecast",
+      "evidence_type": "exact_quote",
+      "reason": "The question, noise-versus-real-change alternatives and prospective/non-reproduction distinction are relevant. A count-data platform is identifiable and stratified log2-RMSE endpoints are explicit; 1,171 words meet the limit. The claimed chain has a clear form, with its specific false calibration/inference steps charged to P09/P13 rather than again here."
+    }
+  ],
+  "central_false_premise": "The main falsification design treats scaled observed counts and reassigned null labels as a newly generated known-truth count experiment. Existing condition effects and altered mean-variance sampling prevent the claimed truth-based comparison.",
+  "deductions_uncapped": 95,
+  "quality_score": 5,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "explanation_index": 56.25,
+  "explanation_reason": "The central simulation cannot establish known expression truth as written, and an internal synthetic check is called independent validation. Accurate non-execution labeling and the relevant question receive credit.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_hit": false,
+  "historical_match_reason": "The relevant question and tradeoff are recognized. The intervention still fits a Normal prior, with heavy tails only in hypothetical generated effects or a later suggestion. Invalid injected truth and absent independent validation prevent qualified readout/prediction matching.",
+  "item_score": 2.0
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "mol-k02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:07:30.749532+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "bc168235d0ee98cbe4ee50cb369ae49aa004d7d659b35603a0a1179c9ca02d9e",
+  "question_sha256": "d146829a6bb5de322059582a33379ff36e788aa1589d548746134187d31d27cb",
+  "reference_sha256": "dd442b3242e242a35d2168378a4d72e173bded24e637145d4fd6829c1eeea1a0",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "1c28b05c7bec92f0eb1ef5a935d739bb53c01d98ad9886c861e73b7481d8ca36",
+  "primary_route": "Raw-data/dilution audit, near-endogenous rescue, independent recognition and MS.",
+  "complete_final_answer_read": true,
+  "word_count": 1184,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Perform a controlled rescue.",
+      "evidence_type": "exact_quote",
+      "reason": "Genetic and loading comparisons are discussed, but the proposed rescue/detection route lacks matched vector or detection-background procedural controls and their roles before collection."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "most of the measured 50 kDa signal",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No plan to consult prior Methods/supplements or validated protocols and verify transfer before validation."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "most of the measured 50 kDa signal",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No specified detector/dilution reference acceptance criterion and failed-calibration action; naming exposure or linearity checks is incomplete."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "most of the measured 50 kDa signal",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Reports descriptive bar ratios but does not operationally define a background/normalization denominator with weak, saturated or missing-signal treatment for the proposed validation."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "These are descriptive comparisons, not statistical findings.",
+      "evidence_type": "exact_quote",
+      "reason": "Accurately reads the synthetic figure, separates summary values from raw blots and dependence from identity, conditions escape-isoform possibilities on the unspecified edit, labels proposals and remains within the word limit."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "These are descriptive comparisons, not statistical findings.",
+      "evidence_type": "exact_quote",
+      "reason": "Accurately reads the synthetic figure, separates summary values from raw blots and dependence from identity, conditions escape-isoform possibilities on the unspecified edit, labels proposals and remains within the word limit."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "These are descriptive comparisons, not statistical findings.",
+      "evidence_type": "exact_quote",
+      "reason": "Accurately reads the synthetic figure, separates summary values from raw blots and dependence from identity, conditions escape-isoform possibilities on the unspecified edit, labels proposals and remains within the word limit."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "These are descriptive comparisons, not statistical findings.",
+      "evidence_type": "exact_quote",
+      "reason": "Accurately reads the synthetic figure, separates summary values from raw blots and dependence from identity, conditions escape-isoform possibilities on the unspecified edit, labels proposals and remains within the word limit."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "These are descriptive comparisons, not statistical findings.",
+      "evidence_type": "exact_quote",
+      "reason": "Accurately reads the synthetic figure, separates summary values from raw blots and dependence from identity, conditions escape-isoform possibilities on the unspecified edit, labels proposals and remains within the word limit."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "These are descriptive comparisons, not statistical findings.",
+      "evidence_type": "exact_quote",
+      "reason": "Accurately reads the synthetic figure, separates summary values from raw blots and dependence from identity, conditions escape-isoform possibilities on the unspecified edit, labels proposals and remains within the word limit."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "These are descriptive comparisons, not statistical findings.",
+      "evidence_type": "exact_quote",
+      "reason": "Accurately reads the synthetic figure, separates summary values from raw blots and dependence from identity, conditions escape-isoform possibilities on the unspecified edit, labels proposals and remains within the word limit."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "failure to detect target peptides would be decisive only if sensitivity and peptide coverage were adequate.",
+      "evidence_type": "exact_quote",
+      "reason": "Supportive, negative and ambiguous rescue and peptide outcomes include construct-function and detection-sensitivity gates."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "mixed proteins in an excised region would still complicate attribution",
+      "evidence_type": "exact_quote",
+      "reason": "Combines independent recognition, endogenous tagging and molecular identification, retaining co-migration, cross-reactivity and rescue-indirectness limits."
+    }
+  ],
+  "deductions_uncapped": 30,
+  "quality_score": 70,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Correct bounded image interpretation and orthogonal outcome logic; missing execution-specific controls/calibration are charged separately.",
+  "item_score": 70
+}

@@ -1,0 +1,134 @@
+{
+  "model_code": "claude-opus46",
+  "item_id": "bio-k01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-03T19:01:49.026453+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "492306dccb2b51b73ea4c3a55c1ea24d4977a7ecb6de4d7c59f7ff8b50a0b968",
+  "question_sha256": "e5a45dec0d2517d68cec2cb721477e214452d8543683d6d377e1be872cfc40d4",
+  "reference_sha256": "425acfdd9f006f0f842223fef2b6ad93f510268641fee28dd344f907f5ecda04",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "e9903b8f8e298f681722d25b17233e8aaeaa7945c738c2db876122e1b79b5ade",
+  "primary_route": "Initial product progress curves, enzyme-loading checks and substrate-series kinetics.",
+  "complete_final_answer_read": true,
+  "word_count": 1116,
+  "first_round_scientific_quality": 62.5,
+  "checks": [
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Product-addition control.",
+      "evidence_type": "exact_quote",
+      "reason": "Product addition has a role, but background/no-enzyme and positive detector/procedural controls are absent from the prospective check."
+    },
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "Unit accounting.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult previous Methods or a validated protocol and check transfer before the validation experiment."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Plot [P] versus t.",
+      "evidence_type": "exact_quote",
+      "reason": "Progress-curve R-squared and depletion do not calibrate signal against known product or test detector recovery/linearity with a failed-calibration action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unit accounting.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Rate units and substrate-depletion accounting are given, but the quantitative endpoint lacks a rule for weak, saturated or missing detector readings."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Unit accounting.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational independent chemical-product/readout validation is given; enzyme-load and time-window checks share the same detector and cannot independently exclude its artifacts."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "If v\u2080 is strictly proportional",
+      "evidence_type": "exact_quote",
+      "reason": "Proportionality is declared sufficient to establish the initial-rate regime and absence of artifacts; linear detector bias can preserve proportionality. This is an invalid assay decision rule."
+    },
+    {
+      "id": "G1",
+      "state": "unmet",
+      "points": 15,
+      "quote": "a competitive inhibitor that doubles Km,app and an uncompetitive inhibitor that halves both Vmax,app and Km,app could yield the same fractional decrease",
+      "evidence_type": "exact_quote",
+      "reason": "Three distinct errors: at the specified 10 micromolar those examples yield 18 and 22.5 nmol/min, not the same decrease; uncompetitive Lineweaver-Burk slope is unchanged, contrary to the claim that slope and intercept both change; a fixed nonsaturating cosubstrate can give apparent Michaelis-Menten parameters, so saturation is not the only valid condition."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculation is therefore a model exercise",
+      "evidence_type": "exact_quote",
+      "reason": "The main calculation, requested concepts, alternative-mechanism identifiability and proposed experiment are present, with synthetic/assumed values labeled. The assay-certainty overclaim is charged specifically to P13."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculation is therefore a model exercise",
+      "evidence_type": "exact_quote",
+      "reason": "The main calculation, requested concepts, alternative-mechanism identifiability and proposed experiment are present, with synthetic/assumed values labeled. The assay-certainty overclaim is charged specifically to P13."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculation is therefore a model exercise",
+      "evidence_type": "exact_quote",
+      "reason": "The main calculation, requested concepts, alternative-mechanism identifiability and proposed experiment are present, with synthetic/assumed values labeled. The assay-certainty overclaim is charged specifically to P13."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculation is therefore a model exercise",
+      "evidence_type": "exact_quote",
+      "reason": "The main calculation, requested concepts, alternative-mechanism identifiability and proposed experiment are present, with synthetic/assumed values labeled. The assay-certainty overclaim is charged specifically to P13."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculation is therefore a model exercise",
+      "evidence_type": "exact_quote",
+      "reason": "The main calculation, requested concepts, alternative-mechanism identifiability and proposed experiment are present, with synthetic/assumed values labeled. The assay-certainty overclaim is charged specifically to P13."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "The calculation is therefore a model exercise",
+      "evidence_type": "exact_quote",
+      "reason": "The main calculation, requested concepts, alternative-mechanism identifiability and proposed experiment are present, with synthetic/assumed values labeled. The assay-certainty overclaim is charged specifically to P13."
+    }
+  ],
+  "deductions_uncapped": 55,
+  "quality_score": 45,
+  "explanation_scores": {
+    "factual_correctness": 2,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 68.75,
+  "explanation_reason": "Correct main arithmetic, but inhibition examples and cosubstrate restrictions contain independent errors and proportionality is wrongly treated as proof of an artifact-free rate.",
+  "item_score": 45
+}

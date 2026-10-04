@@ -1,0 +1,54 @@
+{
+  "item_id": "neu-p01",
+  "model_code": "claude-opus48",
+  "response_id": "neu-p01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:08:42.702016+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "e14f622c13e2f0377df5c536347b02732222d5bd99b99671e12edb6eb52e8b0c",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 3,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "service_score": 62.5,
+  "reasoning_index": 62.5,
+  "errors": [
+    {
+      "quote": "If learning persists at reduced levels after inhibition, that affirmatively contradicts strict necessity regardless of the identity dispute",
+      "issue": "Residual learning does not refute necessity if inhibition was incomplete or ineffective, and the disputed outcome itself is not validated. E1 alone is not an affirmative falsification."
+    },
+    {
+      "quote": "If reconciliation fails or reveals cross-contaminated/duplicated animals",
+      "issue": "Failure to reconcile and demonstration of a results-invalidating assignment error are different outcomes. The following conclusion that this establishes an invalid result wrongly combines lack of verification with demonstrated invalidity."
+    },
+    {
+      "quote": "it establishes an invalid result.",
+      "issue": "Unresolved identities establish an auditability limitation. Even identified duplicates require design-aware reanalysis to determine which estimates or uncertainties are invalid; the biological effect is not automatically false."
+    }
+  ],
+  "rationale": "Strong identity/validity separation and a relevant primary-record recovery check. Two explicit disconfirmation branches contradict the otherwise cautious main conclusion: residual learning is overread as falsification, and failed reconciliation as demonstrated invalidity. The answer also leaves acquisition-versus-performance validation largely undeveloped.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "C1 authenticates the record only within the synthetic dossier. No live real-world article or author claim is inferred.",
+    "N1 and E2 establish inability to reconcile/verify, not proof that animals were duplicated, effects false or intent deceptive.",
+    "A new positive or negative replication does not identify what happened to original records. Distinguish original provenance repair from new biological evidence.",
+    "Benign explanations have no established relative probabilities in this packet and do not imply the biological result will replicate.",
+    "Reduced learned performance need not indicate failed acquisition; phase-specific manipulation and uninhibited retention/performance controls help distinguish mechanisms.",
+    "Residual learning cannot refute necessity without sufficiently effective inhibition and reliable measurement. A null requires adequate precision and valid intervention.",
+    "Necessity is conditional on task, phase and context; it does not require ruling out every conceivable compensatory route or mandating all corroborative methods.",
+    "Correctly modeled repeated measures are legitimate. The concern is unverified or incorrectly treated dependence, not that every file must originate from a different animal.",
+    "An original-record audit should reconcile contemporaneous primary evidence and rerun analysis. Recovery does not itself erase a retraction.",
+    "The reference includes optical controls as examples, but E1 does not specify the inhibition technology. Do not require invented opsin-specific methods."
+  ],
+  "overall_benchmark_score": null
+}

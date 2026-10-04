@@ -1,0 +1,111 @@
+{
+  "item_id": "inf-r02",
+  "response_id": "inf-r02",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:22:43.319499+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "c2ddadeea5873b8db8e88a1756f17ff92aa7eb0888e73a8b828b64dc418e3978",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "using a paired t-test across the N=6 donors",
+      "issue": "A paired difference test does not establish agreement/equivalence of discordant frequencies. Prespecify a meaningful tolerance, uncertainty and assay sensitivity; failure to reject a difference is not agreement."
+    },
+    {
+      "quote": "proving the sequencing-based disagreement is assay-specific noise",
+      "issue": "Failure of an orthogonal assay can reflect different sensitivity, epitope changes or processing-induced state loss. It does not prove the sequencing result is false."
+    },
+    {
+      "quote": "housekeeping genes",
+      "issue": "Housekeeping detection alone does not validate detection limits for each low-abundance target transcript. Use target-specific positive/negative controls and false-negative calibration."
+    },
+    {
+      "quote": "do *not* correlate with technical metrics",
+      "issue": "Real biology can correlate with RNA content, size or cell health; an artifact can be reproducible and uncorrelated with measured QC. These correlations are diagnostics, not decisive biological/technical classification rules."
+    },
+    {
+      "quote": "exact same frequency",
+      "issue": "Exact agreement is neither realistic nor sufficient to establish a functional discrete state. A calibrated orthogonal joint distribution supports real discordance; state/mechanism claims need independent biological validation."
+    },
+    {
+      "quote": "suggests the oligo-tag assay has complex, non-linear detection kinetics",
+      "issue": "A20% versus2% discrepancy does not specifically identify nonlinear tag kinetics. Either platform sensitivity, thresholds, sample handling or composition may differ."
+    },
+    {
+      "quote": "standard dimensionality reduction on the rest of the transcriptome",
+      "issue": "No normalization/background model, joint barcode check, dimension/neighborhood parameters, held-out donor validation or quantitative cluster baseline is defined. Model, targets and broad platforms are nominated, but actual paired assay/staining settings, independent-donor power and executable analysis remain missing."
+    }
+  ],
+  "rationale": "Relevant assay-comparison alternative with independent donors and useful negative/background controls. Equivalence, sensitivity and state-mechanism interpretation are underdeveloped. No adaptive cell-specific neighborhood method is proposed; a future integration recommendation is not a historical algorithm hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Complete final answer, packet, reference and sealed target personally read. Original rubric only; strict-round penalties not active.",
+    "Cell-specific learned modality utility and an explicit integrated neighborhood construction are essential for this historical target; generic calibrated weighting or a graph mention is insufficient.",
+    "Donor splitting must precede fitted transformations and tuning. Condition blinding does not replace independent endpoint validation or prevent marker-label circularity.",
+    "A technical-null mismatch need not define a new cell state. Low-count/QC correlation does not prove artifact. Use known-control calibration, independent phenotypes and quantitative sensitivity analyses.",
+    "The supplied assessment contains no raw data; a plan is not actual figure reproduction. Accessions should be sought in primary records, never invented.",
+    "Primary abstract, Figure 1 caption and indexed WNN construction Methods excerpt verified. Complete paper, supplement and raw-data execution not audited."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34062119/",
+      "scope": "Complete indexed primary abstract and Figure 1 caption read."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238499/",
+      "scope": "Indexed primary Methods excerpt for cell-specific weighted similarity and WNN graph construction read; no whole-paper/raw-data audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Do apparent RNA-protein disagreements",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Technical Artifacts (Noise/Detection limits)",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "before an optimal multi-omic integration algorithm can be constructed",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "using a paired t-test across the N=6 donors",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "At least a subset of RNA-protein disagreements define real cell states",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

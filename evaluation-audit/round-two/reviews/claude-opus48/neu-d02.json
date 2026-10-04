@@ -1,0 +1,222 @@
+{
+  "model_code": "claude-opus48",
+  "item_id": "neu-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:28:34.752691+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "41959ef41f46cd56e7cfd62c5c9de363af6cedbdbd7e30ba0cdf768db43c76ef",
+  "question_sha256": "e0d7b122b1010366b337f74d8f95aa44ebf226f9b5545c919fa46a3170ae8a18",
+  "reference_sha256": "7ff786c95072e15b682a473352282342973073fa3686e3dc53c94bfa20de36f3",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "c304116125243bf4c27ebe22f157b58441ee3af8dbbe378dffa05f13fc2786e9",
+  "primary_route": "Proposed target-cell somatic calcium-imaging calibration against paired electrophysiology, structural 3D motion reference, neuropil/expression sensitivity and visual-response validation.",
+  "complete_final_answer_read": true,
+  "word_count": 3064,
+  "first_round_scientific_quality": 57.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of prior paired-imaging/electrophysiology Methods, supplements or validated protocols to choose conditions and verify transfer."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Indicator preparation/delivery lacks quantitative amount/timing or a concrete procedure deriving those conditions before confirmation."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No reproducible event-to-spike matching tolerance and false-positive time/window denominator, including missing-frame and residual calcium history handling."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "enough cells per target cell type",
+      "evidence_type": "exact_quote",
+      "reason": "The pilot computes a cell target; independent animal replication/cluster variance is not incorporated into the precision-to-allocation procedure, despite an animal random effect being mentioned."
+    },
+    {
+      "id": "P07",
+      "state": "unmet",
+      "points": 5,
+      "quote": "exclude epochs where residual motion correlation with the GECI signal exceeds",
+      "evidence_type": "exact_quote",
+      "reason": "Real behavior-linked firing can correlate with movement. Excluding on residual functional correlation without conditioning on paired neural ground truth can select away true activity or hard performance cases."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No operational visual-response test or multiplicity handling is specified for the several stimulus/cell response claims."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "This controls for how much indicator is present.",
+      "evidence_type": "exact_quote",
+      "reason": "The baseline functional/structural ratio is a proxy influenced by resting calcium and marker abundance, not an identified control for indicator amount. The transfer-function interpretation needs that limitation."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "across a plausible range",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded coefficient search or procedure deriving its limits/grid before selecting the operating setting."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit fresh independent confirmation after diagnostic repairs and refreezing changed conditions."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Blinded analysis is present, but the fitted transfer function and chosen correction/threshold lack an untouched independent validation partition."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No complete stable sample/event/raw-file linkage and exact software/environment/version manifest."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "# Proposed Calibration and Validation Protocol for a GECI as a Spike-Inference Reporter",
+      "evidence_type": "exact_quote",
+      "reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation."
+    }
+  ],
+  "deductions_uncapped": 60,
+  "quality_score": 40,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 2,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 75.0,
+  "explanation_reason": "The proposed same-cell recordings, structural 3D reference, interference checks, nonlinear transfer function, randomized blocks and artifact troubleshooting are useful. Causal comparison is weakened by outcome-related epoch selection and absence of held-out validation. Expression ratios require a proxy interpretation.",
+  "item_score": 40
+}

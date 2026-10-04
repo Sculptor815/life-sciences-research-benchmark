@@ -1,0 +1,222 @@
+{
+  "model_code": "gpt-astra",
+  "item_id": "neu-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T04:05:21.228128+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "9a7085296492b9cfd7904e6144765159ce4f3948abc624c8add42bb4a9c8a61f",
+  "question_sha256": "013b7fc37951a8fc662f3d6082d6e8239b93a6aa7c517f15be8604d56ff5cffc",
+  "reference_sha256": "b81b9bc064ec94d504ec63259dfb77f4a99e571733e8b98754bdaeb36542b987",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "33a0e556ea8f9b18906b0d97ea7360bb22e8a936011bb78389f336d144232264",
+  "primary_route": "Primary proposed optogenetic pathway-necessity test during cue retrieval; evaluate the actual illumination site, physiological validation and behavioral controls selected in the answer.",
+  "complete_final_answer_read": true,
+  "word_count": 2273,
+  "first_round_scientific_quality": 100.0,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "## Recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit plan to consult prior detailed Methods/supplements or validated protocols before implementation and verify transfer of conditions. Generic calibration or a validated tool label does not meet M."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Use a validated targeting implementation",
+      "evidence_type": "exact_quote",
+      "reason": "The actual targeting/construct, delivery quantities and functional dose, expression interval and executable optical preparation remain unspecified; no concrete lookup/calibration procedure sets those core implementation values."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "prespecified, reproducible suppression criterion",
+      "evidence_type": "exact_quote",
+      "reason": "The criterion is promised but no quantitative accuracy/acceptance rule or procedure deriving it is supplied. Behavioral tracking also lacks independent detector/classifier validation against reference observations."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Correct/error/omission denominators are well defined, but missing/corrupted video, ambiguous choices and weak tracking signals have no explicit quantitative handling rule."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "multiplicity handling",
+      "evidence_type": "exact_quote",
+      "reason": "No actual multiplicity correction or gatekeeping procedure is named for planned timing and confound comparisons."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "across a range of light intensities and durations",
+      "evidence_type": "exact_quote",
+      "reason": "No bounded intensity/duration exploration or rule deriving safe search bounds and stop before confirmation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "## Recommendation",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Timestamps and objective recordings are useful but no complete animal/trial-to-raw-file manifest with acquisition, tracking, model, code and environment versions."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P13",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "## Recommendation",
+      "evidence_type": "exact_quote",
+      "reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim."
+    }
+  ],
+  "deductions_uncapped": 40,
+  "quality_score": 60,
+  "explanation_scores": {
+    "factual_correctness": 4,
+    "evidence_grounding": 4,
+    "causal_validity": 4,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 100.0,
+  "explanation_reason": "Strong prospective matched controls, anatomical/functional integrity checks and terminal-versus-soma distinction. Pilot-powered animals, concealed randomization, blinded scoring and all-eligible-trial outcomes are explicit. Synaptic rather than generic Q validation, collateral/recovery checks, task-matched forced movement and perceptual probes address major alternatives. Equivalence bounds and avoidance of post-treatment covariate adjustment support careful inference. Revised calibration precedes confirmation; no role/storage or universal-null overclaim.",
+  "item_score": 60
+}

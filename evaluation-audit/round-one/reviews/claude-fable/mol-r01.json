@@ -1,0 +1,33 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "claude-fable",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T10:32:35.936582+00:00",
+  "review_type": "single AI curator; completed refusal record inspected",
+  "candidate_sha256": "4ef0d93a3f119c1d6b99a8962dc8d5429e3db94c525a2dfc93c48fae032b4567",
+  "service": {
+    "scientific_accuracy": 0,
+    "decision_value": 0,
+    "actionability": 0,
+    "verifiability": 0,
+    "communication": 0
+  },
+  "service_score": 0,
+  "reasoning_index": null,
+  "reasoning_status": "not assessable: no submitted scientific explanation",
+  "errors": [],
+  "rationale": "Provider returned a valid empty refusal. The requested task was not answered. Retain zero task-performance score and report refusal separately; do not infer accuracy of private reasoning or submit a selective retry.",
+  "confidence": "high",
+  "overall_benchmark_score": null,
+  "followup_match": {
+    "biological_question": false,
+    "mechanism": false,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "historical_direction_hit_at_1": false,
+  "match_annotation_added_at": "2026-10-03T11:30:42.281750+00:00",
+  "match_annotation_reason": "No submitted answer in preserved valid refusal; no direction proposed. Existing scores and candidate hash unchanged."
+}

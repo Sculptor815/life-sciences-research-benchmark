@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-04T07:23:32.901359+00:00",
+  "before_sha256": "18b6f1f9f5542547a5c21131ede4df43647b4b76a031076fa7a09d6d3ccdcbbf",
+  "after_sha256": "5233c438536173241a8e32af1847169c69cfa4a711f68d0853543d4fab7cb4cd",
+  "change": "P14 unmet5 -> met0; Q2 25 -> 30; item10 ->12; v1/candidate unchanged"
+}

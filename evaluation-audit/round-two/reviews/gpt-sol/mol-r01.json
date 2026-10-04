@@ -1,0 +1,239 @@
+{
+  "model_code": "gpt-sol",
+  "item_id": "mol-r01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T06:32:11.343949+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "a891662a4fbb1ec7c87bf86934ea1da20f87db880c1807744073f902b72ec7a5",
+  "question_sha256": "5488a7e9eeb816e751e05687b8eaccb3a13670fa0f369c0936aa85b2a8ed7d4d",
+  "reference_sha256": "998c31eb8371578c1997cee1c0aaacd811239d380b47eab3eb182fac993df05a",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "1991ddcd47476514b3b71d449647785dbf959011b3fceafaca47b35eeaf7b152",
+  "primary_route": "Direct GSDMD N-terminal membrane action tested by purified protein/defined lipid reconstitution, orthogonal physical permeability and qualified mutant cellular rescue; conditional indirect-effector branch.",
+  "complete_final_answer_read": true,
+  "word_count": 3656,
+  "first_round_scientific_quality": 71.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution consultation of original Methods, supplements or validated protein/membrane/cell protocols to select and verify transferable conditions. Naming unknown settings and proposing local validation does not meet this separate lookup requirement."
+    },
+    {
+      "id": "G5",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Other factors may regulate efficiency but are not required as the immediate membrane-disrupting effector.",
+      "evidence_type": "exact_quote",
+      "reason": "Biochemical sufficiency plus cellular need for that activity does not exclude an additional essential cellular terminal-rupture executor. The direct route supports contribution, not this categorical exclusivity."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "These should be set from assay qualification",
+      "evidence_type": "exact_quote",
+      "reason": "The central buffer, timing, vesicle and electrophysiology settings are listed as unknown without concrete pilot-to-choice procedures. Correctly avoiding invented historical values does not waive executable calibration."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "maximum acceptable baseline leakage",
+      "evidence_type": "exact_quote",
+      "reason": "Optical artifacts and independent assay checks are well controlled, but no objective reference-to-acceptance rule sets allowable spontaneous leakage, recovery or electrical noise and failure response."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Determine replicate number and formal decision thresholds from pilot variance",
+      "evidence_type": "exact_quote",
+      "reason": "Independent preparations and at least two protein batches are specified, but no meaningful-effect/precision objective and calculation/simulation rule connects variance to adequate confirmatory replication."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No selected primary contrast/time window, statistical model, interval construction or multiplicity method for the dose/time/variant comparisons."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "absent_after_full_read",
+      "reason": "The protocol diagnoses failed reagents and expands membrane testing, but revised conditions are not explicitly refrozen for fresh independent confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "GSDMD acts upstream of another cellular effector that is immediately responsible for membrane compromise.",
+      "evidence_type": "exact_quote",
+      "reason": "Outcome B shows joint requirement and co-reconstitution, not which component forms the lesion. A permissive factor could enable direct GSDMD action. Component-selective activation/separation or equivalent agency tests are needed before this indirect-executor decision."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Chromatograms and QC records are retained, but no complete construct/batch/cell-to-raw-acquisition linkage with analysis versions/settings and deviations is specified."
+    },
+    {
+      "id": "C",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "G8",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P04",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Recommended decisive next step",
+      "evidence_type": "exact_quote",
+      "reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "Strong minimal reconstitution, optical/electrical controls, bound-versus-permeabilizing variants and matched cellular rescue. The log-dose range has explicit aggregation/control-activity upper bounds and cellular surface-density centering. The indirect branch overassigns agency, and the direct conclusion overexcludes additional executors; neither erases the valid direct-action historical direction.",
+  "historical_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": true
+  },
+  "historical_hit": true,
+  "historical_match_reason": "All five target components remain present in the valid direct-action branch: question \"whether the cleavage-matched amino-terminal GSDMD fragment is, by itself, sufficient to bind and permeabilize a protein-free lipid bilayer\"; mechanism \"Binding-competent but permeabilization-defective\" variants with preserved folding/cleavage/localization; interventions compare active/full-length/C-terminal protein, a composition panel and qualified mutants; readouts flotation binding, leakage, \"discrete current steps\"/single-vesicle physical evidence and \"Isogenic complementation\"; predicted outcome \"Amino-terminal GSDMD binds and permeabilizes protein-free liposomes\" with mutant rescue failure. The indirect-branch agency error and direct exclusivity overclaim are charged under P13/G5. They do not invalidate the controlled direct-action experiment itself, so round-one Hit@1 is retained; no credit is based on model identity.",
+  "item_score": 80.0
+}

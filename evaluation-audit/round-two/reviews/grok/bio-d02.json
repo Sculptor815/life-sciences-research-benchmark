@@ -1,0 +1,222 @@
+{
+  "model_code": "grok",
+  "item_id": "bio-d02",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T02:44:54.555693+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "0fb588c9f686ad7866ed9ded2acc5a25947339f0ac51dd4a696888c0965b6209",
+  "question_sha256": "95da82d7dc06e3dae242b0f7f4f0f4cfa9355c9d4cbbfec35f3a1d68ccca652d",
+  "reference_sha256": "257b5c06dd87f2af14ea30ff8b1e5d19b32c3272321d3cf2b11a24258650d3e2",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "369b4a33d54441bd5c4c8774f48889bf1ae1cb009c94b42106b1fcc4194d2ac0",
+  "primary_route": "Yeast-juice fractionation, chemical add-back and heat-dependent functional reconstitution.",
+  "complete_final_answer_read": true,
+  "word_count": 3034,
+  "first_round_scientific_quality": 67.5,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "All experiments below are proposed. The recommended next action is to run a matched reconstitution assay, not to infer chemical identity from the 1906 compensation result. The supplied record supports only an operational hypothesis: a heat-stable factor can be separated from a heat-labile fermentative preparation and is required, together with that preparation, for activity. It does not identify the factor and does not establish NAD identity.",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No proposal to consult prior Methods, supplements or validated protocols and verify detailed-condition transfer before execution."
+    },
+    {
+      "id": "C",
+      "state": "unmet",
+      "points": 10,
+      "quote": "ashed filtrate",
+      "evidence_type": "exact_quote",
+      "reason": "No active-F spike rescue in processed inactive analogs to exclude inhibitors generated during ashing/dialysis."
+    },
+    {
+      "id": "P02",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Define a buffer",
+      "evidence_type": "exact_quote",
+      "reason": "Buffer identity/concentration and fractionation settings remain unspecified without concrete compatibility/recipe selection."
+    },
+    {
+      "id": "P03",
+      "state": "unmet",
+      "points": 5,
+      "quote": "initial fermentative rate",
+      "evidence_type": "exact_quote",
+      "reason": "No product/gas reference recovery/leak/interference accuracy gate and failure action."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "per unit retentate protein",
+      "evidence_type": "exact_quote",
+      "reason": "No fixed product amount/time convention and full blank/weak-signal treatment, despite explicit failed-tube reporting."
+    },
+    {
+      "id": "P05",
+      "state": "unmet",
+      "points": 5,
+      "quote": "at least three units",
+      "evidence_type": "exact_quote",
+      "reason": "Independent units/nesting correct; n=3 lacks pilot variance/precision/power justification."
+    },
+    {
+      "id": "P08",
+      "state": "unmet",
+      "points": 5,
+      "quote": "margin set from blank variance",
+      "evidence_type": "exact_quote",
+      "reason": "Equivalence margin based on noise rather than scientific negligibility; no explicit model/CI/multiplicity procedure for inferential comparisons."
+    },
+    {
+      "id": "P09",
+      "state": "unmet",
+      "points": 5,
+      "quote": "same conductivity",
+      "evidence_type": "exact_quote",
+      "reason": "Optional cations plus conductivity do not establish the full ion composition needed for salt exclusion."
+    },
+    {
+      "id": "P12",
+      "state": "unmet",
+      "points": 5,
+      "quote": "redesign a gentler separation",
+      "evidence_type": "exact_quote",
+      "reason": "No refreeze and fresh independent confirmation after repairs."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "restoration must occur",
+      "evidence_type": "exact_quote",
+      "reason": "Delayed rescue shows some capacity remains, not unchanged enzyme integrity. No standardized excess-complement before/after capacity test separates partial damage/stabilization."
+    },
+    {
+      "id": "P14",
+      "state": "unmet",
+      "points": 5,
+      "quote": "gas production or sugar disappearance",
+      "evidence_type": "exact_quote",
+      "reason": "Independent separation helpful, but no operational orthogonal product measurement/specificity/recovery validation."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "Record clock time",
+      "evidence_type": "exact_quote",
+      "reason": "No raw-file/unit linkage and exact versioned analysis/settings audit."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "P01",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "P10",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "operational, not a chemical",
+      "evidence_type": "exact_quote",
+      "reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once."
+    }
+  ],
+  "deductions_uncapped": 70,
+  "quality_score": 30,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 3
+  },
+  "explanation_index": 81.25,
+  "explanation_reason": "Sound proposed evidence/nonidentity scope, source activity/material/contamination qualification, coded randomized locked assessment and technical windows; bounded substrate/pH/phosphate/heat pilots and cause-specific repairs. Specific control/measurement/integrity limits counted once.",
+  "item_score": 30
+}

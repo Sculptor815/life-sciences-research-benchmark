@@ -1,0 +1,78 @@
+{
+  "item_id": "neu-d01",
+  "model_code": "claude-opus48",
+  "response_id": "neu-d01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:58:36.957815+00:00",
+  "review_type": "single AI curator; full received final answer read; model identity visible",
+  "candidate_sha256": "086de7ce1cad84b1be42d263721d5039ae277bdd39bec888f6c83b7f07cb1086",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 3
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 55.0,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "if the Q-time effect survives covariate adjustment, it is not explained by measured movement.",
+      "issue": "Post-inhibition movement can be a mediator or collider. Adjustment or propensity matching on it does not establish a retrieval-specific direct effect; disappearance likewise does not prove a motor confound. Keep a total-effect analysis and experimentally dissociate motor requirements."
+    },
+    {
+      "quote": "include the R-terminal control which would also show an effect if antidromic spread to the whole P population were the cause",
+      "issue": "The two terminal fields can differ in opsin density, light coverage and recruited neurons. A null R intervention does not exclude off-Q effects of Q light. Measure relevant P/other-target output under the actual Q illumination."
+    },
+    {
+      "quote": "if both converge, antidromic artifact is unlikely to be the whole story",
+      "issue": "Somatic inhibition can reproduce the same collateral mechanism as a nonlocal terminal manipulation. Convergence does not independently exclude that common explanation."
+    },
+    {
+      "quote": "necessity is supported only by the *conjunction* of positive Q-time and null comparators.",
+      "issue": "Several pathways or task epochs can be necessary. Comparator effects need direct interaction estimates and appropriate equivalence bounds; null significance is neither mandatory for pathway necessity nor sufficient for unique retrieval specificity."
+    },
+    {
+      "quote": "record P (soma, for the retrograde design) or Q neuron activity (terminal design)",
+      "issue": "General Q firing is not necessarily the relevant P-to-Q transmission readout, particularly for inhibitory inputs. Validate pathway-evoked synaptic output, suppression kinetics and recovery; the protocol does not clearly require these."
+    },
+    {
+      "quote": "**Primary outcome:** proportion correct choices, per condition, per animal.",
+      "issue": "Omissions and aborted trials have no prespecified denominator or analysis. Treatment-dependent response completion can distort the proposed correct/incorrect comparison."
+    }
+  ],
+  "rationale": "Correctly prefers Q terminals and includes useful randomization and a movement-matched task idea. However, the central movement-adjustment inference is invalid, other-target and soma controls overexclude shared collateral effects, and omission handling and functional timing remain underspecified. These affect the causal conclusion rather than merely presentation.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "O1 establishes that population P has two targets, not that every Q-projecting neuron collateralizes. Do not assume either overlap or disjointness; validate or retain the limitation.",
+    "Projection-defined somatic inhibition tests a population and all its affected outputs. Local Q-terminal intervention is preferable for a pathway claim but also needs actual transmission and off-target validation.",
+    "Suppression in neuronal somata does not guarantee suppression of terminal transmission. Validate physiological onset, sustained effect, offset recovery and rebound at the actual behavioral settings.",
+    "Reduced normal performance supports a conditional causal requirement, not memory storage or an exclusive retrieval computation. Cue perception, attention, maintenance and motor preparation remain alternatives.",
+    "Light offset is not necessarily inhibition offset. A choice made after light ends can correctly report an earlier retrieval deficit; outcome timing alone is not a rebound diagnosis.",
+    "Movement adjustment/matching after intervention and conditioning on response completion can bias inference. Report all randomized trials and use experimental motor/sensory dissociations.",
+    "A nonsignificant control effect is not equivalence. Predefine biologically meaningful bounds and obtain enough precision to exclude consequential confounds.",
+    "Two pathways or epochs can both be necessary. Effects in an other-projection control do not by themselves invalidate the tested pathway contribution.",
+    "Numbers missing from the packet may be proposed as pilot settings; no specific opsin, surgical coordinate or animal count is mandatory. Operational calibration and justified independent-animal sampling are required.",
+    "Reference correction: population-level divergence must not be described as demonstrated single-neuron collateralization. Terminal effects on intended local Q signaling are part of the intervention, not automatically an off-target artifact."
+  ],
+  "review_sources": [
+    {
+      "title": "Mahn et al. (2016): biophysical constraints of presynaptic optogenetic inhibition",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4926958/",
+      "scope": "Reviewer-only primary-source check of terminal efficacy, paradoxical release and offset rebound; no particular construct is required by the question."
+    },
+    {
+      "title": "Montgomery, Nyhan and Torres: post-treatment conditioning",
+      "url": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/",
+      "scope": "Authors summarize their methodological paper on adjustment/selection after treatment. Used only by reviewer, not candidates."
+    }
+  ],
+  "overall_benchmark_score": null
+}

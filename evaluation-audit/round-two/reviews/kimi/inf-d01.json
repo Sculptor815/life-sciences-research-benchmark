@@ -1,0 +1,238 @@
+{
+  "model_code": "kimi",
+  "item_id": "inf-d01",
+  "reviewer": "Codex, personal complete-final-answer read; no paid judge",
+  "reviewed_at": "2026-10-04T05:56:16.269909+00:00",
+  "rubric_version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "candidate_sha256": "f5e7eed3cc5f4073a8eccd6a54345c83ab53e93272fc83fb06c8b1930382257a",
+  "question_sha256": "defb2d5afa06ce05847814081f892e153c6478b102ec166da9bfa6e92bf0ca27",
+  "reference_sha256": "af8af736b20cfadbc10950d9e83db1e5582000b2afdae0d27e561d3998ee5974",
+  "rubric_sha256": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+  "first_round_review_sha256": "7022d9dd719ba1b9f530ec92a7e06aa5510d48e13c4e154956afad704a87f651",
+  "primary_route": "Patient-paired multiomic treatment-associated program discovery, assay-specific preprocessing, primary late integration/enrichment and locked external cohort validation.",
+  "complete_final_answer_read": true,
+  "word_count": 2420,
+  "first_round_scientific_quality": 76.25,
+  "checks": [
+    {
+      "id": "M",
+      "state": "unmet",
+      "points": 10,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No explicit pre-execution plan to consult original assay Methods, supplements or validated analysis protocols and check their transfer to the present inputs."
+    },
+    {
+      "id": "P01",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "absent_after_full_read",
+      "reason": "A presence matrix and feature harmonization are given, but no independent sample identity/pairing integrity check."
+    },
+    {
+      "id": "P04",
+      "state": "unmet",
+      "points": 5,
+      "quote": "single-sample enrichment-style scores of \u0394",
+      "evidence_type": "exact_quote",
+      "reason": "Scores are already constructed from paired deltas, yet validation asks for a program delta without defining the exact score transformation/orientation and paired contrast. The quantitative endpoint and denominator need an unambiguous formula."
+    },
+    {
+      "id": "P10",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Factor-count and preprocessing sensitivity have no bounded candidate range or procedure deriving search bounds and stop before confirmation."
+    },
+    {
+      "id": "P13",
+      "state": "unmet",
+      "points": 5,
+      "quote": "concordant \u2192 retain metabolomics",
+      "evidence_type": "exact_quote",
+      "reason": "Significant correlation/CCC with the original confounded deltas is not a sufficient bridge gate: original batch bias can persist, and a valid rerun can legitimately disagree. Require balanced-rerun effect/uncertainty and calibrated absolute agreement or quantified bias, not only correlation above a null."
+    },
+    {
+      "id": "P15",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "absent_after_full_read",
+      "reason": "Hashing the frozen archive is useful, but immutable raw-input hashes, exact environment/commands and full sample/file/output linkage are absent."
+    },
+    {
+      "id": "P16",
+      "state": "unmet",
+      "points": 5,
+      "quote": "within discovery data only",
+      "evidence_type": "exact_quote",
+      "reason": "Imputation/scaling are restricted to discovery as a whole, not explicitly refitted within every training fold/bootstrap used for selection and internal validation."
+    },
+    {
+      "id": "P17",
+      "state": "unmet",
+      "points": 5,
+      "quote": "within-patient timepoint-label permutation",
+      "evidence_type": "exact_quote",
+      "reason": "The null preserves pairing but not time-linked assay batch effects; conditional exchangeability or a justified balanced subset is required. Pattern-mixture sensitivity is otherwise useful."
+    },
+    {
+      "id": "P18",
+      "state": "unmet",
+      "points": 5,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "absent_after_full_read",
+      "reason": "No clean-environment numeric reproduction, output tolerances or resource/failure/source-difference logs."
+    },
+    {
+      "id": "G1",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "G2",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "G3",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "G4",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "G5",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "G6",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "G7",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P02",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P03",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P05",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P06",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P07",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P08",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P09",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P11",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P12",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    },
+    {
+      "id": "P14",
+      "state": "met",
+      "points": 0,
+      "quote": "# Analysis design: paired tumor RNA\u2013protein\u2013metabolite data for a reproducible treatment-associated program",
+      "evidence_type": "exact_quote",
+      "reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic."
+    }
+  ],
+  "deductions_uncapped": 50,
+  "quality_score": 50,
+  "explanation_scores": {
+    "factual_correctness": 3,
+    "evidence_grounding": 4,
+    "causal_validity": 3,
+    "alternatives_and_limits": 4
+  },
+  "explanation_index": 87.5,
+  "explanation_reason": "A concrete staged assay/bridging design with patient-level power/detectable-effect planning, blinded randomized reruns, missingness scenarios and locked external validation. New attempts explicitly require new data. The bridge acceptance rule, exact score definition and training-only preprocessing remain problematic.",
+  "item_score": 50
+}

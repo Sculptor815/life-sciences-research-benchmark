@@ -1,0 +1,112 @@
+{
+  "item_id": "mol-r03",
+  "response_id": "mol-r03",
+  "model_code": "gemini-pro",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:01:09.073517+00:00",
+  "review_type": "single AI curator; full final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "a3b778611e5cd237bfb67986d18c6016464c93ac6e913d8153be57d05ca3db66",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "via pore formation, lipid extraction, or detergent-like membrane destabilization",
+      "issue": "The mechanisms are listed but no orthogonal structural/electrical or size-selectivity experiment distinguishes them. A fluorescence leakage assay alone does not satisfy the sealed pore-readout component."
+    },
+    {
+      "quote": "Ensure purity via SDS-PAGE and size exclusion chromatography to rule out co-purified bacterial contaminants.",
+      "issue": "These checks do not rule out low-abundance active contaminants. Add independent production/native-cleavage preparations, process blanks and activity co-fractionation."
+    },
+    {
+      "quote": "Measure fluorescence emission continuously over a 60-minute period",
+      "issue": "There is no protein-dose or lipid-composition panel, removal of external dye, free-reporter/protein interference test, native cleavage/caspase carryover control, or orthogonal permeability validation."
+    },
+    {
+      "quote": "No other cellular executioners are strictly required to bridge the gap between caspase cleavage and physical membrane damage.",
+      "issue": "A validated minimal-system positive establishes sufficiency only in those membranes; this broader cellular chain requires physiological validation."
+    },
+    {
+      "quote": "The N-terminal fragment cannot disrupt standard lipid membranes on its own.",
+      "issue": "A single unspecified liposome formulation and a negative signal cannot establish inability or an additional executor. Bound the conclusion by sensitivity, protein integrity and tested conditions."
+    },
+    {
+      "quote": "This suggests an experimental artifact.",
+      "issue": "Activity of both intact and fragmented protein need not be an artifact. Verify cleavage, preparation state and plausible comparator activity before discarding the biological outcome."
+    }
+  ],
+  "rationale": "Identifies the direct-versus-indirect question and a basic blinded leakage study. Missing orthogonal pore evidence prevents a qualified historical hit; incomplete controls, narrow conditions and overinterpretation reduce original quality.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, packet, sealed target and complete frozen reference personally read. Full final answers read without hidden reasoning. Original scientific-quality rubric only; later strict 10/5-point deductions are not active.",
+    "Matching interpretation applied to all models: the reference explicitly qualifies a direct-versus-indirect question, minimal membrane reconstitution, orthogonal pore readout, and conditional prediction with artifact controls. All five matching fields must be true. Merely mentioning pores or measuring dye leakage is insufficient. Electrical intact-bilayer evidence and/or structural membrane evidence can supply orthogonality; an exact atomic pore geometry is not required.",
+    "The sealed target lists C-terminal restraint and cellular structure-function follow-ups. These enrich mechanistic quality but are not additional hidden binary gates beyond the reference explicit core qualification sentence. Incomplete extensions are recorded in scientific quality. Historical matching is not full replication of every experiment in the later paper.",
+    "A positive-core direction match does not erase errors in an additional negative/cofactor or cellular branch. Such errors are deducted from quality; they invalidate the hit if they undermine the core minimal-system/pore inference. This distinction is applied uniformly.",
+    "Full-length/C-terminal material and denatured proteins are mechanistic comparators, not inherently inert. Do not discard unexpected comparator activity as a technical failure without independent evidence.",
+    "Normalized dequenching is not automatically absolute cargo release. Check free-reporter interactions, recovery and mass balance where quantitative release is claimed. Detergent calibrates maximal release, not pore formation.",
+    "Membrane binding, oligomers, rings, conductance and size selectivity have different inferential limits. Dye leakage alone does not prove a pore, and neither bulk cooperativity nor dextran molecular mass uniquely specifies stoichiometry/diameter.",
+    "Negative reconstitution and factor add-back do not establish a separate executor. Enabling lipids, conformation, localization and assembly remain alternatives. Cell-derived GPMVs are not automatically protein-free.",
+    "Native cleavage requires matched caspase/carryover controls. Separation-of-function mutants need folding, abundance and upstream processing checks, with localization expectations tailored to the property being perturbed.",
+    "Crossed preparations share dependence; wells/vesicles are subsamples. Restrict exclusions to independent technical failures and retain adverse/discordant biological results.",
+    "The publisher-indexed primary abstract and selected captions verify direction, not a full original Methods audit. Erratum addresses a typesetting error in manuscript received date, not data integrity. No candidate was given source searches or sealed information."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary publisher indexed abstract, author list and selected figure captions personally read; full Methods/supplements not audited."
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher indexed erratum text read; manuscript received-date correction only."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does the gasdermin D amino-terminal fragment directly disrupt lipid membranes autonomously",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "via pore formation",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "cell-free synthetic membrane disruption assays",
+      "assessment": "Substantive target component present in the full proposed positive-core experiment; quality limitations recorded separately."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Measure fluorescence emission continuously",
+      "assessment": "The full answer does not operationally supply an orthogonal pore test and its artifact-controlled directional result. Direct leakage alone is insufficient."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "directly executes membrane injury autonomously",
+      "assessment": "The full answer does not operationally supply an orthogonal pore test and its artifact-controlled directional result. Direct leakage alone is insufficient."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

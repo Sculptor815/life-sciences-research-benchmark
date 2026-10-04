@@ -1,0 +1,118 @@
+{
+  "item_id": "mol-r01",
+  "model_code": "deepseek",
+  "response_id": "mol-r01",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T11:29:35.546227+00:00",
+  "review_type": "single AI curator; full final answer read; model identity visible",
+  "candidate_sha256": "ce8b1b9efa18f90d0912c3b23c3eabfefca8e2c16d689a0017de14562bcd1c93",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 3,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 3,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 56.25,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "If effector loss blocks lysis, GSDMD-N is upstream, not the direct executioner.",
+      "issue": "A necessary cofactor or terminal rupture factor can block lysis while GSDMD still makes the primary lesion. This central decision rule conflates genetic requirement with physical agency."
+    },
+    {
+      "quote": "If it fails across all lipid compositions, a required cofactor or effector is missing.",
+      "issue": "Failure in the tested panel can also reflect an inactive fragment or inappropriate physical conditions; the conclusion is too exclusive. Cellular activity and assay competence do not guarantee reconstitution competence."
+    },
+    {
+      "quote": "Pore-defective N mutants lose both in vitro permeabilization and cellular lysis.",
+      "issue": "Expression matching is specified, but mutant folding, native cleavage/localization and retained alternative functions are not sufficiently validated. General loss of functional protein can explain both phenotypes."
+    },
+    {
+      "quote": "Statistical thresholds, effect sizes, replicate numbers, blinding, and randomization.",
+      "issue": "These are listed as missing without a plan for independent preparation units, primary contrasts, exclusions or nested analysis. The leakage assay also lacks a membrane-free reporter-interference control; binding lacks a protein-only aggregate control."
+    }
+  ],
+  "rationale": "Substantial relevant reconstitution and cellular work, including lipid variation and separate cytokine measurements. The decisive interpretation remains unreliable: effector dependence is treated as proof of indirect execution and the mutant bridge lacks specificity validation. Operational omissions are consequential despite the many named assays.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "The fixed packet establishes genetic/cleavage dependence, not physical membrane agency. Do not require knowledge of later results, residue numbers, lipid ratios or historical instrument settings.",
+    "A protein requirement or co-reconstitution establishes dependence, not the identity of the lesion-forming component. A permissive cofactor can support direct GSDMD action.",
+    "Negative artificial reconstitution is qualified evidence, not proof of indirect action. An assay-positive control does not validate the test protein or all relevant membrane conditions.",
+    "Direct permeability, terminal rupture and cytokine release are distinct. Sufficiency in a minimal membrane need not exclude later cellular executors.",
+    "Trans inhibition by an isolated domain is conditional; intact-protein autoinhibition does not require it.",
+    "Historical direction is scored separately from study quality. Five target components are conjunctive within each component; a full Hit@1 requires all five. Equivalent cellular functional-complementation designs count as rescue.",
+    "Historical matching is not prospective novelty: source identifiers are visible and no exhaustive earlier-public-disclosure audit exists. Full source methods have not been independently audited.",
+    "The later paper erratum corrects a typeset received date from 2015 to 2016; it does not change its June 2016 publication date or report a biological-result correction."
+  ],
+  "review_sources": [
+    {
+      "title": "Original GSDMD cleavage study",
+      "url": "https://www.nature.com/articles/nature15514",
+      "scope": "Primary abstract and publication metadata"
+    },
+    {
+      "title": "Later gasdermin pore/autoinhibition study",
+      "url": "https://www.nature.com/articles/nature18590",
+      "scope": "Primary abstract, author metadata and accessible extended-figure captions; full methods not audited"
+    },
+    {
+      "title": "Later-paper erratum",
+      "url": "https://www.nature.com/articles/nature20106",
+      "scope": "Publisher erratum text: received-date typesetting correction only"
+    },
+    {
+      "title": "NINJ1 and terminal membrane rupture",
+      "url": "https://www.nature.com/articles/s41586-021-03218-7",
+      "scope": "Post-cutoff primary abstract supports reviewer distinction of permeability and rupture; candidate is not required to name NINJ1"
+    },
+    {
+      "title": "Direct inhibition of GSDMD by necrosulfonamide",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6462819/",
+      "scope": "Post-cutoff primary abstract; confirms why target specificity controls matter, not required candidate foreknowledge"
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": false,
+    "intervention": true,
+    "readout": true,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "does the liberated GSDMD amino-terminal domain directly disrupt the lipid bilayer",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "mechanism": {
+      "matched": false,
+      "quote": "Pore-defective N mutants lose both in vitro permeabilization and cellular lysis.",
+      "assessment": "Partial direction evidence only: the target requires validated selective membrane-function perturbation linked to cell death, with functional variants and cellular rescue; see rationale for missing components."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "N-terminal domain with candidate lipid-binding or oligomerization mutations",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "readout": {
+      "matched": true,
+      "quote": "Structural imaging.",
+      "assessment": "Substantive target direction present; quality deductions remain separate."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "If effector loss blocks lysis, GSDMD-N is upstream, not the direct executioner.",
+      "assessment": "Partial direction evidence only: the target requires validated selective membrane-function perturbation linked to cell death, with functional variants and cellular rescue; see rationale for missing components."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

@@ -1,0 +1,76 @@
+{
+  "item_id": "neu-k01",
+  "response_id": "neu-k01",
+  "model_code": "claude-opus48",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:45:24.057251+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "b5b5608502c2eea44452ab05c8880e5654f1e9a8d402fafe376b97681e9c4d00",
+  "service": {
+    "scientific_accuracy": 1,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 1,
+    "evidence_grounding": 2,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 43.75,
+  "reasoning_index": 43.75,
+  "errors": [
+    {
+      "quote": "more indicator-bound calcium accumulated within the integration window on trial B",
+      "issue": "The central licensed inference is false: no response metric or temporal integral is specified, and unexcluded motion can change fluorescence without changing calcium-bound indicator. Later optical caveats do not repair this opening assertion."
+    },
+    {
+      "quote": "motion-insensitive reference channel",
+      "issue": "A motion control should be calcium insensitive while reporting the relevant motion/optical disturbance. A motion-insensitive signal cannot perform the stated correction."
+    },
+    {
+      "quote": "If B>A disappears after correction, motion was the cause.",
+      "issue": "Regression can remove real neural activity correlated with behavior. Loss after correction alone is not causal proof of motion; validate the correction with an appropriate independent reference and protected biological signals."
+    },
+    {
+      "quote": "titrate stimulus intensity to map the fluorescence–response curve",
+      "issue": "Without verified spike output, stimulus-to-fluorescence compression may arise in neural recruitment, synaptic drive or calcium handling rather than the indicator. This cheaper control does not replace the paired electrical calibration."
+    },
+    {
+      "quote": "A spike-level claim (\"B had more spikes\") becomes defensible only when",
+      "issue": "The listed monotonic transfer, baseline and motion checks omit matching spike timing/history and spatial coverage. Peak ordering still need not equal count ordering for differing spike patterns, even with a monotonic calcium-to-fluorescence map."
+    }
+  ],
+  "rationale": "Recognizes many relevant caveats and proposes simultaneous recording, but the primary answer repeatedly treats an uncalibrated optical difference as integrated bound calcium. The validation decision rules also require substantial correction. The requested original rubric, not the later fixed-deduction scale, determines these scores.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "E1 establishes larger recorded fluorescence only. Comparable settings do not establish greater calcium concentration, influx, spiking or neural activity.",
+    "Response metric, region and cell population are unspecified. A peak difference is not necessarily an integral difference.",
+    "Slow kinetics limit resolution but do not universally eliminate single-spike timing information in sparse, sufficiently sampled and calibrated high-SNR recordings.",
+    "A fixed monotonic saturation curve compresses signal; saturation alone does not reverse an otherwise identical instantaneous calcium-to-fluorescence mapping.",
+    "Spike-to-fluorescence calibration is not absolute calcium concentration or influx calibration. Buffering, extrusion and compartment properties matter.",
+    "The motion reference should be calcium-insensitive while tracking relevant optical motion. Correlation with movement alone does not justify discarding biological trials.",
+    "Changing indicator changes sensitivity, noise, loading and buffering; disappearance with a faster indicator is not unique proof of an original artifact.",
+    "The draft reference overstates that more spikes must produce more resolved events with a faster indicator and that the transfer must remain linear. Neither is a necessary prediction.",
+    "The prompt contains no doubling or universal-synchrony claim and does not expose private editorial status. Those old key requirements are not imposed on candidates.",
+    "Same-cell electrophysiology should be matched to the imaged compartment and trial history; somatic spikes alone may not account for dendritic calcium."
+  ],
+  "review_sources": [
+    {
+      "url": "https://www.nature.com/articles/s41586-023-05828-9",
+      "use": "Primary indicator study using simultaneous imaging/electrophysiology and reporting differences in kinetics, linearity and signal-to-noise."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9518861/",
+      "use": "Primary two-channel correction study: calcium-independent fluorescence records shared motion contributions."
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2013.00201/full",
+      "use": "Primary modeling study including indicator binding, buffering and saturation in inference."
+    }
+  ],
+  "overall_benchmark_score": null
+}

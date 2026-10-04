@@ -1,0 +1,115 @@
+{
+  "item_id": "inf-r02",
+  "response_id": "inf-r02",
+  "model_code": "deepseek",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T17:49:27.047398+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "35a778cf6cf6f6cafd0de695a919268f15f76c9359fea88bf71f8f894072b6cc",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 2,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 56.25,
+  "errors": [
+    {
+      "quote": "Permute RNA and protein labels within batch",
+      "issue": "Permutation destroys real within-cell dependence and tests independence, not a no-biological-discordance null under measurement error. Using it to calibrate the proposed biological-state FDR is not justified."
+    },
+    {
+      "quote": "Compute intraclass correlation (ICC) of RNA, protein, and discordance scores across aliquots.",
+      "issue": "Split aliquots contain different cells. Define repeated aggregate units or a distributional reproducibility metric; cell-specific ICC cannot be computed as if the same cells were remeasured, and biological composition contributes variability."
+    },
+    {
+      "quote": "Add DNase/washes",
+      "issue": "DNase digests DNA, not ambient RNA. Washing may reduce contamination, but DNase is not an RNA-removal mechanism."
+    },
+    {
+      "quote": "use brighter tag if available",
+      "issue": "Oligonucleotide-tag sequencing counts are not fluorophore brightness. Changing tag capture/amplification chemistry requires validation rather than a brighter fluorescent-label remedy."
+    },
+    {
+      "quote": "Proteasome inhibition should increase protein without proportional RNA increase.",
+      "issue": "Surface abundance depends on trafficking, internalization, lysosomal turnover and indirect drug effects; this response is not a universal prediction of post-transcriptional regulation. Target-specific mechanism and orthogonal perturbation controls are needed."
+    },
+    {
+      "quote": "Discordance is the residual not explained by",
+      "issue": "The shared latent biological state, accessibility variable and residual are not identifiable from the stated two observation equations alone. No constraints, fitting objective, model check or mechanism that separates biological state from measurement noise is given."
+    },
+    {
+      "quote": "Use an independent protein readout where possible",
+      "issue": "Protein-only measurements on different aliquots do not validate the same-cell RNA/protein joint distribution or functional discrete states. Target-specific RNA sensitivity and an operational same-cell or prospectively tracked validation are absent."
+    },
+    {
+      "quote": "Those are **unreported parameters** and must be specified before execution.",
+      "issue": "The system/targets, concrete assay and perturbation sequence, quantitative concentrations/timing, normalization implementation, independently justified sample size and full computational reproducibility procedure remain unspecified. A detailed checklist alone is not the requested executable research plan."
+    }
+  ],
+  "rationale": "Scientifically relevant discordance/noise question with explicit replication hierarchy and proposed latent/count models. Wrong null calibration, unmatched-cell reproducibility, substrate confusion and overgeneralized perturbation rules prevent confident biological-state identification. No adaptive cell-specific neighborhood integration; historical miss is separate from these quality deductions.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Complete final answer, packet, reference and sealed target personally read. Original rubric only; strict-round penalties not active.",
+    "Cell-specific learned modality utility and an explicit integrated neighborhood construction are essential for this historical target; generic calibrated weighting or a graph mention is insufficient.",
+    "Donor splitting must precede fitted transformations and tuning. Condition blinding does not replace independent endpoint validation or prevent marker-label circularity.",
+    "A technical-null mismatch need not define a new cell state. Low-count/QC correlation does not prove artifact. Use known-control calibration, independent phenotypes and quantitative sensitivity analyses.",
+    "The supplied assessment contains no raw data; a plan is not actual figure reproduction. Accessions should be sought in primary records, never invented.",
+    "Primary abstract, Figure 1 caption and indexed WNN construction Methods excerpt verified. Complete paper, supplement and raw-data execution not audited."
+  ],
+  "review_sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34062119/",
+      "scope": "Complete indexed primary abstract and Figure 1 caption read."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238499/",
+      "scope": "Indexed primary Methods excerpt for cell-specific weighted similarity and WNN graph construction read; no whole-paper/raw-data audit."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": false,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Which paired RNA–protein discordances",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "modality-specific measurement noise",
+      "assessment": "Substantive historical core component present; quality limitations separately assessed."
+    },
+    "intervention": {
+      "matched": false,
+      "quote": "Hierarchical latent-variable model",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "ICC of the discordance score across independent biological replicates",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "an integrated representation can separate them from noise",
+      "assessment": "Component does not qualify for the specific intervention, measurement or inference reasons recorded in deductions/rationale."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}

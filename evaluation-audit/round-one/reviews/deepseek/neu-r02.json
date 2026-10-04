@@ -1,0 +1,114 @@
+{
+  "item_id": "neu-r02",
+  "response_id": "neu-r02",
+  "model_code": "deepseek",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-03T16:23:22.495613+00:00",
+  "review_type": "single AI curator; complete final answer personally read; identity visible; original scientific-quality rubric",
+  "candidate_sha256": "adf90aef38eaa0a8be95222ec2cd5b065f5650ff20e12c81177b67380b563d0a",
+  "service": {
+    "scientific_accuracy": 2,
+    "decision_value": 2,
+    "actionability": 2,
+    "verifiability": 2,
+    "communication": 4
+  },
+  "reasoning": {
+    "factual_correctness": 2,
+    "evidence_grounding": 3,
+    "causal_validity": 1,
+    "alternatives_and_limits": 2
+  },
+  "service_score": 52.5,
+  "reasoning_index": 50.0,
+  "errors": [
+    {
+      "quote": "Confirm deprived-eye input is below threshold.",
+      "issue": "This is prescribed before cortical recording, without opening the deprived eye for the core acute comparison. Measuring through ongoing occlusion confounds developmental cortical loss with current optical blockade; visual-response-based exclusion also selects on the outcome."
+    },
+    {
+      "quote": "Reverse suture tests whether restoring patterned input can drive recovery.",
+      "issue": "Reverse suture switches the deprived eye and imposes new interocular competition. It is not restoration of normal binocular vision and does not by itself test recovery of normal binocular alignment."
+    },
+    {
+      "quote": "Binocular deprivation separates loss of patterned vision from loss of light.",
+      "issue": "This is not guaranteed: the group later includes darkness, and lid closure also changes illumination. Measure and match retinal luminance/activity before attributing a difference specifically to pattern."
+    },
+    {
+      "quote": "Use dim red light only for necessary husbandry.",
+      "issue": "Red light is not intrinsically invisible to the selected mammal. Validate spectrum and effective retinal exposure or use verified nonvisual monitoring; otherwise dark-rearing fidelity is unknown."
+    },
+    {
+      "quote": "Patterned binocular visual experience is necessary and instructive",
+      "issue": "Deprivation, recovery and timing effects can establish dependence but do not uniquely establish instruction of detailed organization. A pattern-specific manipulation and appropriate activity-matched controls are needed."
+    },
+    {
+      "quote": "Eyelid histology or occlusion verification.",
+      "issue": "Neither establishes normal retinal/precortical function after restoring optical access. Cortical localization remains unresolved; sampling and weak-response denominators are also not fully specified."
+    },
+    {
+      "quote": "The exact species, ages, recording modality, and developmental timing",
+      "issue": "Multiple proposed species/methods remain unresolved, and the twelve-arm program lacks implementable conditions and justified timing or a calibrated sequential stopping procedure."
+    }
+  ],
+  "rationale": "Relevant deprivation/experience question with many useful welfare, randomization and nesting considerations. The central endpoint retains occlusion and overinterprets instruction and reverse-suture recovery, preventing a qualified historical hit.",
+  "confidence": "medium",
+  "reference_corrections_applied": true,
+  "reference_guardrails": [
+    "Full question, reference and sealed target read; each complete final answer personally read, including a re-read of the initially truncated Qwen intervention passage. No hidden reasoning or paid judge. Original rubric only; strict-round penalties remain inactive.",
+    "The explicit historical qualification requires a developmental-experience question, controlled unilateral manipulation, eye-specific cortical measurement, directional relative response prediction and credible peripheral/sampling controls. Bilateral-only research can earn scientific-quality credit without a historical hit.",
+    "Qualified component evidence is contextual: a directional sentence cannot rescue an endpoint measured through continuing occlusion or a gate that incorrectly cancels unilateral testing after a bilateral null. Missing or uncertain matching is not silently coded as failure; these completed reviews document actual failures.",
+    "Restore equal optical access before acute physiology. Ocular appearance, pupil reflexes and optokinetics alone do not isolate retinal or thalamic function. A conditional functional-peripheral assay plus explicit withholding of localized claims receives credit, while its implementation remains a quality limitation.",
+    "Deprivation may establish experience dependence without proving instruction of detailed receptive fields, a named synaptic mechanism, or cortical rather than precortical localization. Pattern-specific tests must control activity and measurement reliability.",
+    "Bilateral deprivation does not rule out a unilateral competitive effect. Reverse suture is a new competitive manipulation, not normal binocular recovery. Delayed restoration can confound age with deprivation duration.",
+    "Retain nonresponsive/poorly organized neurons as biological outcomes. Use animal/allocation-unit inference, validated weak-response handling, independent sampling and treatment-by-age comparisons against age-matched controls.",
+    "Do not invent historical ages or procedures from a sparse packet. A proposed validated starting platform is permitted; leaving every material choice to future work limits actionability. Welfare approval and calibration are required, not bonus specificity.",
+    "Primary indexed Introduction/Methods excerpt and publication metadata verified; full publisher PDF fetch returned 403. No claim to a complete historical Methods audit."
+  ],
+  "review_sources": [
+    {
+      "url": "https://journals.physiology.org/doi/epdf/10.1152/jn.1963.26.6.1003",
+      "scope": "Search-indexed primary Introduction and opening Methods read, including monocular manipulation and eye-dominance sampling rationale; direct full-PDF fetch failed 403."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14084161/",
+      "scope": "Primary publication metadata; no abstract available."
+    }
+  ],
+  "followup_match": {
+    "biological_question": true,
+    "mechanism": true,
+    "intervention": true,
+    "readout": false,
+    "predicted_outcome": false
+  },
+  "followup_match_evidence": {
+    "biological_question": {
+      "matched": true,
+      "quote": "Does patterned binocular visual experience",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "mechanism": {
+      "matched": true,
+      "quote": "Instructive experience-dependent refinement",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "intervention": {
+      "matched": true,
+      "quote": "one eye occluded before patterned vision.",
+      "assessment": "Target component substantively proposed; quality limitations remain separately scored."
+    },
+    "readout": {
+      "matched": false,
+      "quote": "Confirm deprived-eye input is below threshold.",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    },
+    "predicted_outcome": {
+      "matched": false,
+      "quote": "Monocular deprivation during development shifts ocular dominance",
+      "assessment": "Historical component fails substantive qualification for the exact endpoint/control/intervention reasons in the deduction record."
+    }
+  },
+  "historical_direction_hit_at_1": false,
+  "overall_benchmark_score": null
+}
