@@ -92,7 +92,7 @@ Both rounds are fully inspectable: **720 reviews**, the **360 final answers** us
 
 [Read all 30 questions](benchmark-30/QUESTIONS.md) and follow each question's links to its original and revised reference answers. The [reference revision log](benchmark-30/v2/REFERENCE-CHANGES.md) records scientific corrections and added execution detail. The [first rubric](benchmark-30/v1/RUBRIC.md) remains available alongside the [final strict rubric](benchmark-30/v2/RUBRIC.md). New reference revisions await owner review; the confirmed human review applies to the original versions.
 
-[Detailed scoring workflow](docs/assets/scoring-workflow-v2.svg)
+[Scoring workflow](docs/assets/scoring-standard-overview.svg)
 
 ## Benchmark purpose
 
