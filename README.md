@@ -2,9 +2,46 @@
 
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
-**Current comparison:** the first round is complete: **12 models, 30 questions each, 360 reviewed responses**. I carefully reviewed all 30 questions and original reference answers. See the [complete first-round results](docs/first-round-20261003/SCORECARD.md) for category scores, historical-direction hits, costs, time and explanation quality. This is the archived original scoring version; the [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) will govern a separate rescore of the same answers and become the final scoring version. No second-round scores are included here. The [open 30-question set](benchmark-30/README.md) now includes all evaluated prompts, both reference-answer versions, the [final strict rubric](benchmark-30/v2/RUBRIC.md) and its applicability matrix. Personal regrading is in progress: **59/360 responses reviewed**; see [rescoring status](benchmark-30/STATUS.md). See [evaluation status and provenance](docs/CURRENT_EVALUATION.md). The public pilot described below is an earlier, separate configuration.
+**Current comparison:** the strict second round is complete: **12 models, 30 questions each, 360 reviewed responses**. I carefully reviewed all 30 questions and original reference answers. The [complete second-round results](docs/second-round-20261004/SCORECARD.md) are the final scoring version for this run; the [first-round results](docs/first-round-20261003/SCORECARD.md) remain archived. All answers were reused without new candidate or judge API calls. The [open question set](benchmark-30/README.md) includes both reference versions and the [final rubric](benchmark-30/v2/RUBRIC.md). Revised references await my review. See [status and provenance](docs/CURRENT_EVALUATION.md).
 
-## First-round results
+## Second-round results
+
+Scores use 20% essay, 30% experimental-design and 50% research-reasoning category means. Each research item combines 60% qualified historical-direction Hit@1 and 40% strict scientific quality. The rubric and direction weighting are post-hoc; scoring was performed by one unblinded Codex referee. A valid alternative research direction can receive quality credit without matching the selected historical continuation.
+
+| Model | Essay | Design | Research | Total /100 | Direction hits /10 |
+|---|---:|---:|---:|---:|---:|
+| GPT-6 Astra | 72.50 | 60.00 | 54.40 | **59.70** | 5 |
+| GPT-5.6 Sol | 70.00 | 59.00 | 57.40 | **60.40** | 6 |
+| GPT-5.6 Terra | 71.50 | 45.00 | 24.20 | **39.90** | 1 |
+| Claude Fable 5 | 50.00 | 12.50 | 13.00 | **20.25** | 1 |
+| Claude Opus 4.6 | 53.00 | 25.00 | 15.00 | **25.60** | 1 |
+| Claude Opus 4.8 | 60.00 | 34.50 | 22.20 | **33.45** | 2 |
+| Gemini 3.1 Pro Preview | 52.00 | 17.00 | 6.00 | **18.50** | 0 |
+| DeepSeek V4.1 Flash | 67.50 | 36.00 | 18.60 | **33.60** | 1 |
+| Qwen3.8 Max (0902) | 64.50 | 34.00 | 27.60 | **36.90** | 2 |
+| Kimi K3 | 67.50 | 52.50 | 31.80 | **45.15** | 2 |
+| GLM 5.3 FlashX | 60.00 | 28.00 | 23.60 | **32.20** | 2 |
+| Grok 4.7 | 66.50 | 50.00 | 23.00 | **39.80** | 1 |
+
+[Full results and original cost/time metrics](docs/second-round-20261004/SCORECARD.md) | [Model metrics CSV](docs/second-round-20261004/model-summary.csv) | [All 360 item scores](docs/second-round-20261004/item-scores.csv)
+
+Model order follows the frozen roster. All selected answer hashes, 7,560 checklist records and score calculations passed consistency checks; the first-round archive remains intact. Second-round API expense: **$0**. The new charts below summarize the complete second round. Earlier charts remain in the separately labeled first-round archive.
+
+## Second-round visual summary
+
+| Answer quality | Original API expense |
+|---|---|
+| ![Second-round answer quality](docs/second-round-20261004/answer-quality.png) | ![Original selected-answer expense](docs/second-round-20261004/api-expense.png) |
+| Response time | Scientific explanation quality |
+| ![Original request time](docs/second-round-20261004/response-time.png) | ![Second-round written explanation quality](docs/second-round-20261004/explanation-quality.png) |
+
+![Second-round scores for all 360 answers](docs/second-round-20261004/reviewed-item-scores.png)
+
+[Four-chart high-resolution overview](docs/second-round-20261004/four-metric-overview.png) | [Scalable overview](docs/second-round-20261004/four-metric-overview.svg) | [All figures as PDF](docs/second-round-20261004/second-round-figure-collection.pdf)
+
+PNG exports are 300 DPI; SVG and PDF versions preserve vector detail. Provider colors match the first round. R marks an empty refusal; P marks a partial answer. Other zero scores are rubric outcomes. Expense is from original selected answers, with unresolved bills excluded; rescoring added $0 in candidate/judge API charges.
+
+## Archived first-round results
 
 The four charts compare the same 30 questions for every model. Essay, design and research category means carry 20/30/50 weights. Research items combine 60% qualified historical-direction hit and 40% scientific quality, under the documented post-hoc amendment. Provider colors are green for OpenAI, copper for Anthropic and slate blue for other providers; colors do not affect scoring.
 
@@ -32,7 +69,7 @@ The opened 30-question comparison is separate from the older pilot below. Its pu
 
 ## Benchmark purpose
 
-The primary outcome is whether an answer helps a researcher make a sound decision and advance the work. Scientific accuracy, decision value, actionability, verifiability and clear communication determine the user-service score. Keywords, logic, protocol detail and historical follow-up hits are reported as supporting diagnostics; long answers and author imitation do not establish usefulness.
+The purpose is to measure whether an answer helps a researcher make sound decisions and advance the work. The current strict rubric assesses scientific correctness, controls, executable procedures, quantitative analysis, failure diagnosis and verifiability. Research scores explicitly prioritize the selected historical continuation at 60%; that preference is not a claim that alternative research directions lack value. Long answers alone do not establish usefulness.
 
 **Status: development benchmark, version 0.3.0.** The runnable public pilot has 20 open-response drafts. Private revised reference answers contain 421–636 words for essays, 949–1,082 for design, and 1,279–1,341 for reasoning. Ten additional disputed-paper essays have separate 500-plus-word private answers. The earlier private discovery-review collection contains 46 research/controversy cases and 178 candidate questions with draft reference answers, source-reading records and review tools. The older 178 candidates are an archived discovery collection; they have not all been upgraded to the current answer-depth contract. Candidates are not a formal question bank. No expert approvals or real model leaderboard are claimed.
 

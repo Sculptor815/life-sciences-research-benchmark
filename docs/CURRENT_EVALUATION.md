@@ -1,6 +1,10 @@
 # Latest publication and rescoring status
 
-The complete [open 30-question set](../benchmark-30/README.md), original and revised references, and final strict rubric are now available. As of 4 October 2026, **59/360** selected answers have completed personal second-round review. No second-round aggregate ranking is available. The first-round figures remain the archived first scoring version.
+The strict second round is complete: **360/360 answers, 12 models, 30 questions each**. The [complete final score tables](second-round-20261004/SCORECARD.md) apply category weights 20/30/50 and research direction/quality weights 60/40. Original answers and first-round reviews are preserved; all candidate hashes, applicable checks and calculations passed validation. No new candidate or paid-judge API calls were made.
+
+The [open question set](../benchmark-30/README.md) contains all 30 questions, both reference versions and the frozen final rubric. Original versions were carefully reviewed by the owner; v2 revisions await owner review. Candidate scoring is a single unblinded Codex assessment under a post-hoc rubric.
+
+The owner requested final figures after grading was complete. The new second-round figures cover all 360 answers; the older first-round and local 164-review checkpoint charts remain separate snapshots. The original cost/time metrics in the new score tables reflect currently available saved billing receipts, with unresolved charges shown separately; they are not new rescoring expense.
 
 [Current status](../benchmark-30/STATUS.md) | [All questions](../benchmark-30/QUESTIONS.md) | [Final rubric](../benchmark-30/v2/RUBRIC.md) | [Reference changes](../benchmark-30/v2/REFERENCE-CHANGES.md)
 

@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-04T09:00:57.820449+00:00",
+  "status": "passed",
+  "reviews": 360,
+  "check_records": 7560,
+  "candidate_hashes_verified": 360,
+  "first_round_hashes_verified": 360,
+  "archived_files_verified": 763,
+  "exact_quote_and_applicability_checks": true,
+  "score_arithmetic": true,
+  "frozen_inputs_verified": true,
+  "empty_refusals": 11
+}

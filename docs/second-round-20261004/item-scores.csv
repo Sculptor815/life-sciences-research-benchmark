@@ -1,0 +1,361 @@
+﻿model,model_code,question,category,quality_score,historical_hit,item_score,explanation_index,status,candidate_sha256
+GPT-6 Astra,gpt-astra,bio-d01,experimental_design,65,,65,100.0,reviewed,ce9e5eb13317850fe5008180a1dda60c4e4f1349452f75b7e5bd05996aeabe04
+GPT-6 Astra,gpt-astra,bio-d02,experimental_design,65,,65,100.0,reviewed,e78cf54c7aab0a4a1c7781a149df3c068853897f62644c9d224441d89f5dc959
+GPT-6 Astra,gpt-astra,bio-d03,experimental_design,55,,55,100.0,reviewed,d525a7fdc95784c33e0ec756d688305d08ae215ef1969a967bd1d620848e2304
+GPT-6 Astra,gpt-astra,bio-k01,essay,65,,65,100.0,reviewed,994ac80f566422b728d6721028fb29291e01a4d6019d78264e56c85991861ed5
+GPT-6 Astra,gpt-astra,bio-k02,essay,75,,75,100.0,reviewed,98e270525d3a5ebf0be90ce8e6ef5d8c0be512006cd71943cd63db2515e55677
+GPT-6 Astra,gpt-astra,bio-p01,essay,60,,60,100.0,reviewed,310c355907b4457577fcb2c2ca83104d2ef2e6ec830b451231c45f4a8d3583f3
+GPT-6 Astra,gpt-astra,bio-r01,research_reasoning,50,True,80.0,100.0,reviewed,2de5a4392a14269c483ecb080796ea4e7b818ad6b850211f9de8126e424e60bc
+GPT-6 Astra,gpt-astra,bio-r02,research_reasoning,70,False,28.0,100.0,reviewed,457d5cdb2c05e5df2369d07d350fe5754c21801b6dc0d3c90a524467956bdbbc
+GPT-6 Astra,gpt-astra,inf-d01,experimental_design,55,,55,100.0,reviewed,a08ad3ffd5415bbb5c8896c147c934e27942a8ac8791cead20e81db7c457ea40
+GPT-6 Astra,gpt-astra,inf-d02,experimental_design,60,,60,100.0,reviewed,9bcd58f9122295ee3e5ab9c6171e2f8443aa49bdc9670d517d04dd4ac1649c4b
+GPT-6 Astra,gpt-astra,inf-d03,experimental_design,50,,50,100.0,reviewed,f0c928e0eaffa983b26a2699b749d754d231455d0b26e309fa9a13ed393dadb4
+GPT-6 Astra,gpt-astra,inf-k01,essay,90,,90,100.0,reviewed,50ae24c15147231784bbbd6bd8783fca664ec68178d6ef3dabfefb3587bc30fd
+GPT-6 Astra,gpt-astra,inf-p01,essay,85,,85,100.0,reviewed,6c050b1264acfc63a1d1782bba4b2fe0c20f43e198841720354e790bce848c2c
+GPT-6 Astra,gpt-astra,inf-r01,research_reasoning,70,False,28.0,100.0,reviewed,ae58e0e021a20f8c2ce3c887634b917402ec539becd2554ce60a269edfb62e16
+GPT-6 Astra,gpt-astra,inf-r02,research_reasoning,50,False,20.0,100.0,reviewed,66e9175a2dd74db34f0f66a6ae39f629238413ec4e3e3f42f403c0c9b66bf588
+GPT-6 Astra,gpt-astra,mol-d01,experimental_design,55,,55,100.0,reviewed,c9d066d096a069e07d7edcff1d03e7b9631e2a1564e97fb2f8243a1d81095afa
+GPT-6 Astra,gpt-astra,mol-d02,experimental_design,65,,65,100.0,reviewed,35a765516f3f35194a6bd41c2e5b915b5d06f4db8b6a2d8dd2be285ed8966df4
+GPT-6 Astra,gpt-astra,mol-k01,essay,80,,80,100.0,reviewed,fb8d5f1904d7cf0ee8d294c181a940c17844e8e1213173fac5e60ddccd039cda
+GPT-6 Astra,gpt-astra,mol-k02,essay,70,,70,100.0,reviewed,bc168235d0ee98cbe4ee50cb369ae49aa004d7d659b35603a0a1179c9ca02d9e
+GPT-6 Astra,gpt-astra,mol-p01,essay,60,,60,100.0,reviewed,231047a66990d55328416c3dcceef04eb94c324c6183763905b62a8dd5ed6f38
+GPT-6 Astra,gpt-astra,mol-r01,research_reasoning,50,True,80.0,100.0,reviewed,4c939bc2f0ef220bd8788e668ece6e6c3f74316c927e7d484fda0dcbaead1cc4
+GPT-6 Astra,gpt-astra,mol-r02,research_reasoning,60,False,24.0,100.0,reviewed,7dcd441f8641d342f097ee9cc3b4e90534d8cca5dae16276e2c42642a1798a05
+GPT-6 Astra,gpt-astra,mol-r03,research_reasoning,65,True,86.0,100.0,reviewed,7337821a18b20e9ef73fdb2201c0f50d434191389f13d54e8a75360623865942
+GPT-6 Astra,gpt-astra,neu-d01,experimental_design,60,,60,100.0,reviewed,9a7085296492b9cfd7904e6144765159ce4f3948abc624c8add42bb4a9c8a61f
+GPT-6 Astra,gpt-astra,neu-d02,experimental_design,70,,70,100.0,reviewed,2b5672df39176425fb6aa7f68aaf87bcad395e46875b086fc6fe309615bde205
+GPT-6 Astra,gpt-astra,neu-k01,essay,80,,80,100.0,reviewed,53d1c2afc0a30057281569336ad1a1c688430312f116e42619dc1a7d097b94b0
+GPT-6 Astra,gpt-astra,neu-p01,essay,60,,60,100.0,reviewed,54bcbc8a330bad00b2835ea99851397f45b3a4b2333a512c094c4cf1f8d021e9
+GPT-6 Astra,gpt-astra,neu-r01,research_reasoning,55,True,82.0,100.0,reviewed,0b8f53e18b644ff93857eb0232400731dd8742f5068b43d48fbc2fc9657f69fd
+GPT-6 Astra,gpt-astra,neu-r02,research_reasoning,70,False,28.0,100.0,reviewed,bca53352df4ee8a0e5c168712f0a86645d51f7d1b703274b49414d596bc61a49
+GPT-6 Astra,gpt-astra,neu-r03,research_reasoning,70,True,88.0,100.0,reviewed,c6153d0118f77cf05b9e3d112e931a68875ea98819393ffc89f94b341d4701db
+GPT-5.6 Sol,gpt-sol,bio-d01,experimental_design,55,,55,93.75,reviewed,3e423e4260b11d21a83d81ad082b1aea9ff7b269483bd9075a3b7f628edc00a3
+GPT-5.6 Sol,gpt-sol,bio-d02,experimental_design,65,,65,100.0,reviewed,f818d85e63ca8506f366878a2bbe0e223bf51c989bc73649647e45fc0c25da23
+GPT-5.6 Sol,gpt-sol,bio-d03,experimental_design,65,,65,100.0,reviewed,e2111b2ba25b4bae401ccba7383568a6552853f827e35f053f0ce3d6f3cd985e
+GPT-5.6 Sol,gpt-sol,bio-k01,essay,65,,65,100.0,reviewed,811a541a9dab5288e479a19739b88a7fccbcb9a3df68a1850deb13543145bd19
+GPT-5.6 Sol,gpt-sol,bio-k02,essay,65,,65,100.0,reviewed,aaece70391e817a63411a98848c28fae139c73265fadd362453471a541e0ec8e
+GPT-5.6 Sol,gpt-sol,bio-p01,essay,60,,60,93.75,reviewed,a97f37a646839a4719519f769f2b5f1834ca37b4b0eb4a5b83d4ce02e1338b48
+GPT-5.6 Sol,gpt-sol,bio-r01,research_reasoning,55,True,82.0,100.0,reviewed,7e8d92a7a9eedf3c59e69b01dc034955a149672d4681504bdb4d5a63f1954c75
+GPT-5.6 Sol,gpt-sol,bio-r02,research_reasoning,65,False,26.0,100.0,reviewed,8c547213c228e89077cd026d6ed4bfde5dce6841ca92dfbe4c2a9eadf8bdfae0
+GPT-5.6 Sol,gpt-sol,inf-d01,experimental_design,60,,60,100.0,reviewed,e3d1531e1089c2e41712b2c4e70465b611e3f3f587090e69867e250577b171e5
+GPT-5.6 Sol,gpt-sol,inf-d02,experimental_design,65,,65,100.0,reviewed,cc5d97b84f455ba065fd093ae14d525e177bfce1ffc30281f87c63e09978f0ff
+GPT-5.6 Sol,gpt-sol,inf-d03,experimental_design,50,,50,93.75,reviewed,1d61308b88369556a2b635378e844388c85c14e5e096dc6ae1f4e7961b1ebf50
+GPT-5.6 Sol,gpt-sol,inf-k01,essay,85,,85,100.0,reviewed,675c340c304acad6c2364c3410c165852bed716cfe644b4de3c4a477a7030d45
+GPT-5.6 Sol,gpt-sol,inf-p01,essay,80,,80,93.75,reviewed,00a4bee9077cbd3f164ec162e41d65a735f35e2e8978160a7c1fe42fd25937c3
+GPT-5.6 Sol,gpt-sol,inf-r01,research_reasoning,40,False,16.0,87.5,reviewed,b67e0d0af2efd7fb93c0b207acaea7411f0d2fe7710474e8908d3a9a0338a7ee
+GPT-5.6 Sol,gpt-sol,inf-r02,research_reasoning,50,False,20.0,100.0,reviewed,72fb8c7b103980db2f3e0212e7ad0b06569f6ebab974d4ba43a72a46e63601f4
+GPT-5.6 Sol,gpt-sol,mol-d01,experimental_design,55,,55,93.75,reviewed,f570a6c769edc8690397897fda4fc8ab68d84da2ea894b6a99fe079107971525
+GPT-5.6 Sol,gpt-sol,mol-d02,experimental_design,55,,55,93.75,reviewed,0c999848a8d884e454f06cc068f1294b460d6726a7be67197b229a34b01b043f
+GPT-5.6 Sol,gpt-sol,mol-k01,essay,75,,75,87.5,reviewed,316e406f5cd4d510a79155f8c2e9a27d0f2cf354de3a8f358d66932d931e2bcd
+GPT-5.6 Sol,gpt-sol,mol-k02,essay,60,,60,81.25,reviewed,d81ffd95b9eb14adf14dcda81245665f133b4e42cdbaefe372c2e84a238a2541
+GPT-5.6 Sol,gpt-sol,mol-p01,essay,65,,65,100.0,reviewed,f0a0de7bf7c119ae6ce011dc3b70af90c463bf33b67b0dc92a329054bb460e53
+GPT-5.6 Sol,gpt-sol,mol-r01,research_reasoning,50,True,80.0,87.5,reviewed,a891662a4fbb1ec7c87bf86934ea1da20f87db880c1807744073f902b72ec7a5
+GPT-5.6 Sol,gpt-sol,mol-r02,research_reasoning,45,False,18.0,93.75,reviewed,6d49daafbd3d0280f53f3d582edab475580797260a9b4349f91c286272881990
+GPT-5.6 Sol,gpt-sol,mol-r03,research_reasoning,65,True,86.0,100.0,reviewed,1174a08b7e24d512183b28829b9f2e2fbfda6b42e457925a9d6e5dfeddfb4752
+GPT-5.6 Sol,gpt-sol,neu-d01,experimental_design,55,,55,100.0,reviewed,3b377752b92e7042dfdaa0573d271b876685cf3daec0452d15e868208c2b71d2
+GPT-5.6 Sol,gpt-sol,neu-d02,experimental_design,65,,65,93.75,reviewed,b38cb6523c251fd1178d0195e1c67c08729849c376c171ba1f4e7e9294cae1b5
+GPT-5.6 Sol,gpt-sol,neu-k01,essay,80,,80,100.0,reviewed,35c82dc0e67a17fae39bb26ab2f9e0b1c29bf7a01e44d41eac1c8b0c7615e59f
+GPT-5.6 Sol,gpt-sol,neu-p01,essay,65,,65,100.0,reviewed,9b7753dc77580ae71e0203782d04a7593c8e63dcebe3983ce6fa706c649df01a
+GPT-5.6 Sol,gpt-sol,neu-r01,research_reasoning,50,True,80.0,100.0,reviewed,e2a7d0858960c82cf2b294220e2d0bd11a55491a7fce2b0f331b79403d292235
+GPT-5.6 Sol,gpt-sol,neu-r02,research_reasoning,55,True,82.0,100.0,reviewed,668beddea19af3b865a9b7df0cf8d99e291f42708b8d8a6a6c841178b6f1b17b
+GPT-5.6 Sol,gpt-sol,neu-r03,research_reasoning,60,True,84.0,100.0,reviewed,3e90e137058ee997b7bef6962b671c20b043dc6f40a6c80fd02d0821d5528ef2
+GPT-5.6 Terra,gpt-terra,bio-d01,experimental_design,45,,45,81.25,reviewed,0c13e0debcb2b1b4099201b0157e9117b2b3726d59c7aeee5c39a46b5b6e2e05
+GPT-5.6 Terra,gpt-terra,bio-d02,experimental_design,35,,35,81.25,reviewed,a70ffdf631751f9a250670838a1195f572edf7e0cfa62ecb40c8bc9f2753f924
+GPT-5.6 Terra,gpt-terra,bio-d03,experimental_design,40,,40,93.75,reviewed,b4ed50e106067c3340b5fe279f86b794d28cd0b1c02a52d152cd76e693237037
+GPT-5.6 Terra,gpt-terra,bio-k01,essay,75,,75,93.75,reviewed,3d932b368a300ff87f5dff36f75169fea34a4f63fdd2539a5a7d6debb383a776
+GPT-5.6 Terra,gpt-terra,bio-k02,essay,65,,65,87.5,reviewed,1e1703c46b8fd15360de67c436df0ba2bf4520be370ff67fc64a1f23fe507ea0
+GPT-5.6 Terra,gpt-terra,bio-p01,essay,80,,80,100.0,reviewed,512abd74ea900309fb214592f13b192aaccb4a5c19fb0fa0c105c5367bfdac7e
+GPT-5.6 Terra,gpt-terra,bio-r01,research_reasoning,45,True,78.0,100.0,reviewed,c006f4221b2d06851a2e52c5a74e6da7f24b34df2bd3ee7f5420355caef6e493
+GPT-5.6 Terra,gpt-terra,bio-r02,research_reasoning,60,False,24.0,100.0,reviewed,75f9a903d7905583882120fbf6083726db971873201360db4139561e9fe6e00b
+GPT-5.6 Terra,gpt-terra,inf-d01,experimental_design,40,,40,93.75,reviewed,3b98ca5b639e06f9836b3e15a72c7f3ffd60ee12cc0abe5c0f97edd64ce70d42
+GPT-5.6 Terra,gpt-terra,inf-d02,experimental_design,55,,55,100.0,reviewed,e6e4afc638a0bd916f4a5db6aa405e459404a014a2550b8a37739895e91bffc5
+GPT-5.6 Terra,gpt-terra,inf-d03,experimental_design,55,,55,100.0,reviewed,765cf1cdfb598465730ff4df1d02a6f889fe791043f79f2700192dafae1b5034
+GPT-5.6 Terra,gpt-terra,inf-k01,essay,85,,85,100.0,reviewed,afa530993d81b6d2ae9807a3ce72f9beb97009514a306ac000c2e7d63d1468ee
+GPT-5.6 Terra,gpt-terra,inf-p01,essay,75,,75,93.75,reviewed,87001727174ba1010ebd7eedebd05f63fee6046d0914475e11a788e97a5142ed
+GPT-5.6 Terra,gpt-terra,inf-r01,research_reasoning,35,False,14.0,100.0,reviewed,62abc6e0ff8f0ff4a883107aea5b7896ae421cf181c80a214cdfd52d349f6615
+GPT-5.6 Terra,gpt-terra,inf-r02,research_reasoning,40,False,16.0,100.0,reviewed,4327f50090bbdc85c47e3acf5e3109698fc13422b624a38d712c296126e421b4
+GPT-5.6 Terra,gpt-terra,mol-d01,experimental_design,45,,45,93.75,reviewed,16ed5145b8132f03ca530cd632624539191697465962fe1526c0a20caa565c55
+GPT-5.6 Terra,gpt-terra,mol-d02,experimental_design,40,,40,93.75,reviewed,ea156d6faccc60e847765ddc089ebad2c4ca5d0a630ab43d6d221ca7ae530d5b
+GPT-5.6 Terra,gpt-terra,mol-k01,essay,75,,75,81.25,reviewed,a6e968ac3fe45d6c49b237bb23c8813292b7dccb64940ef14ccb07b7da5795cb
+GPT-5.6 Terra,gpt-terra,mol-k02,essay,60,,60,81.25,reviewed,14aadbff0b12c11d4c470a64fc6864427e2f3bb90f17d31ddff2964c343152a4
+GPT-5.6 Terra,gpt-terra,mol-p01,essay,60,,60,93.75,reviewed,13103f5a0aea949f5011f4f54663dc67feb776865b13810242d252a81dad4552
+GPT-5.6 Terra,gpt-terra,mol-r01,research_reasoning,35,False,14.0,87.5,reviewed,a8e8a09c403db35e5585470fc4824a8d5f379ce6ef5cbd4a761c4946f1e40848
+GPT-5.6 Terra,gpt-terra,mol-r02,research_reasoning,70,False,28.0,87.5,reviewed,9f76005f2672f01260d3df446de4565a559faa1040fdefb070ef5d3b97baa0cd
+GPT-5.6 Terra,gpt-terra,mol-r03,research_reasoning,45,False,18.0,87.5,reviewed,5145191025d3e7b8f48aa690871b309e7c3b48e33d3b4ee95a6c65f5b908ea41
+GPT-5.6 Terra,gpt-terra,neu-d01,experimental_design,50,,50,100.0,reviewed,aa18c872c0427393eb5d7f050a14a03873bc99c814ab6cbf1c2027683156294f
+GPT-5.6 Terra,gpt-terra,neu-d02,experimental_design,45,,45,93.75,reviewed,8442ed3e784270f8847df655702f95e21267b619f3151d3aad1d764488193581
+GPT-5.6 Terra,gpt-terra,neu-k01,essay,80,,80,100.0,reviewed,a7d302b98009f50b7d32cfd3a109aa4b0d0a6dbbd4984eb86da6c2579c059175
+GPT-5.6 Terra,gpt-terra,neu-p01,essay,60,,60,93.75,reviewed,2b2fa58ef5af8cb365b73fe59827e731c200737db7fe1c4b5c3609267b2c9c8b
+GPT-5.6 Terra,gpt-terra,neu-r01,research_reasoning,45,False,18.0,93.75,reviewed,eefa13df497ab153fbcede293874f7e4832987902e01998ae66ee6c8dca54562
+GPT-5.6 Terra,gpt-terra,neu-r02,research_reasoning,35,False,14.0,87.5,reviewed,bfca147fa332f2f2d2163de1ffbb55379c519414127baebcae73317c8387277b
+GPT-5.6 Terra,gpt-terra,neu-r03,research_reasoning,45,False,18.0,87.5,reviewed,7597924eb1083c918ac69fa2a607f8e97c10aa795c5973fdf480d9ddb15225bd
+Claude Fable 5,claude-fable,bio-d01,experimental_design,10,,10,81.25,partial answer,c0e3a7a477ff1161ab10433af7e080bf66c402c724f8adccbf24ebe2f03a5b4b
+Claude Fable 5,claude-fable,bio-d02,experimental_design,0,,0,,empty refusal,c0c529bcc7d30f2ec0d861de712f74517e30beeab55a85b1d77f39168132f8a4
+Claude Fable 5,claude-fable,bio-d03,experimental_design,0,,0,,empty refusal,f7938e9c5d47763441d1412ebd3fec64f4bb82773f0f6e49503b271622eee712
+Claude Fable 5,claude-fable,bio-k01,essay,45,,45,75.0,reviewed,53210b01a710858780e522eaa1afb5e1bdeefdd4dd6fd3d00ca543a3507b42da
+Claude Fable 5,claude-fable,bio-k02,essay,50,,50,68.75,reviewed,afd403e0c94b764fdb48bb72a6b8dedfbc2071c4234f97f831b408714622908f
+Claude Fable 5,claude-fable,bio-p01,essay,0,,0,,empty refusal,d057ed08a736c5ec195ae16d46de7c713dd556d9ac1f7caeb6beeefc0ad765f1
+Claude Fable 5,claude-fable,bio-r01,research_reasoning,30,False,12.0,68.75,reviewed,e74e6e933e7a66edcc460021e2b15b187355d973df89767a1f61156825c7b811
+Claude Fable 5,claude-fable,bio-r02,research_reasoning,40,False,16.0,68.75,reviewed,0d3420e170cf69cfb5d6fd58bfe3d5af4d80c610a87d28b7b7f6933f830f1363
+Claude Fable 5,claude-fable,inf-d01,experimental_design,30,,30,87.5,reviewed,5dfe449d80eaafffc57d8848e30aab0e6ce39c09a3b5aa15ec2632b944bce0c0
+Claude Fable 5,claude-fable,inf-d02,experimental_design,55,,55,100.0,reviewed,887b86c9b5a777a5af06488c3d7e33f75b5d78b5d31184ba0fe639badbf88431
+Claude Fable 5,claude-fable,inf-d03,experimental_design,30,,30,81.25,reviewed,23cd7603d2c55d7f9710757fce2767f85ceac5142c3b56e91a4631c91ac039ac
+Claude Fable 5,claude-fable,inf-k01,essay,85,,85,87.5,reviewed,176069449f3165f979bd0e351079594caf623b4eb9d6881589a4491b34348411
+Claude Fable 5,claude-fable,inf-p01,essay,50,,50,50.0,partial answer,bf78ab17e6f274a73096a94afa7193c4b1120b1dba1c5d130be88aa34dbf8b76
+Claude Fable 5,claude-fable,inf-r01,research_reasoning,5,False,2.0,56.25,reviewed,1a6b7fa542ef9d26ac60dafc979ae56ece0fee54a69f4c80d2d4a2095796e541
+Claude Fable 5,claude-fable,inf-r02,research_reasoning,25,False,10.0,62.5,reviewed,8075a8eb3a82024737e8a6ebdb40240cd8eabb1e570d23907e91b55f91484106
+Claude Fable 5,claude-fable,mol-d01,experimental_design,0,,0,,empty refusal,e3858bd98bdd66acd7fc6c2544f68da9b978dbff9ad478727f3383668b35f9be
+Claude Fable 5,claude-fable,mol-d02,experimental_design,0,,0,,empty refusal,ad7fe3eb5ceb1bd5c7dcbec62e4dfe82c1b9273b5ad8af4f4eb595be7060c69a
+Claude Fable 5,claude-fable,mol-k01,essay,50,,50,62.5,reviewed,90be7aeb9bf1d86f40f35e75936fe1401cee1ceff598839097dbdb3c3e1d359a
+Claude Fable 5,claude-fable,mol-k02,essay,50,,50,56.25,reviewed,8ad1386f3c47299600c1411ae71dbf415d95649dca27f83e90f5da32a0bf20a0
+Claude Fable 5,claude-fable,mol-p01,essay,55,,55,75.0,reviewed,e68d6d0a2eb81977f9c0d580f85f10c3587ab9ef33b86c2f58fa3572baf988bc
+Claude Fable 5,claude-fable,mol-r01,research_reasoning,0,False,0.0,,empty refusal,4ef0d93a3f119c1d6b99a8962dc8d5429e3db94c525a2dfc93c48fae032b4567
+Claude Fable 5,claude-fable,mol-r02,research_reasoning,40,False,16.0,68.75,reviewed,9e2e4f822d65bbc8fe11964dd30c99f76f7b7e5d6e2c89180d970d610921bff7
+Claude Fable 5,claude-fable,mol-r03,research_reasoning,0,False,0.0,,empty refusal,86d38bf93c58c59cf45f7bf583e219840df0a3cfe52dcd7c85c2a01a7df3025f
+Claude Fable 5,claude-fable,neu-d01,experimental_design,0,,0,,empty refusal,4a3d55afecdd82bdf377862525b854e4326fa1b3840245b04013d3041f1f754b
+Claude Fable 5,claude-fable,neu-d02,experimental_design,0,,0,,empty refusal,2edf2f066290df1922d673135e0d2ba824afb9c6d3e16a6ce9db24b4dc4d08a6
+Claude Fable 5,claude-fable,neu-k01,essay,60,,60,62.5,reviewed,0cf786573e5e6e7222d5ff4e4b19a5559bc3d3318f369d659a1121a753c6976f
+Claude Fable 5,claude-fable,neu-p01,essay,55,,55,75.0,reviewed,566c9c35a277d63d5f86774315846c556c59898eb6ab047e6f35bdda3ca353a8
+Claude Fable 5,claude-fable,neu-r01,research_reasoning,0,False,0.0,,empty refusal,81717c015a80fed9b56c056a8977507dfeec8c90ec243c6eb3219dbc0afa22fa
+Claude Fable 5,claude-fable,neu-r02,research_reasoning,35,True,74.0,68.75,reviewed,d1fcfe2b289a1ed60b7c0a40ac9d2dd05f89e6b66ee5cedc9d07d9ca4e5bcb4c
+Claude Fable 5,claude-fable,neu-r03,research_reasoning,0,False,0.0,,empty refusal,6ba0d6d6648aeac6116dc5a51fa793eac46399b347e349e6ed2a42563e11ffe0
+Claude Opus 4.6,claude-opus46,bio-d01,experimental_design,25,,25,68.75,reviewed,ed02373bda3ab55e6884c40cd85d18dfc6986430bd68b8c9adad53baeb288ee9
+Claude Opus 4.6,claude-opus46,bio-d02,experimental_design,20,,20,75.0,reviewed,3d372e40f4ea80f9dfa1584dd73aec9ff8a587489c84f443a4f4b7e29dfa65c3
+Claude Opus 4.6,claude-opus46,bio-d03,experimental_design,15,,15,50.0,reviewed,2ecf17a30885f7950ff495fb3e98f0ac03fcf226224ac0efb5333adc00c04e24
+Claude Opus 4.6,claude-opus46,bio-k01,essay,45,,45,68.75,reviewed,492306dccb2b51b73ea4c3a55c1ea24d4977a7ecb6de4d7c59f7ff8b50a0b968
+Claude Opus 4.6,claude-opus46,bio-k02,essay,55,,55,75.0,reviewed,00001cfcc047f3c7e21cba350a78d1aae38d8ce8114c7439abb79f09fc6019b2
+Claude Opus 4.6,claude-opus46,bio-p01,essay,45,,45,43.75,reviewed,144cbc54af96fe39b787a1644081fb5b3db3f679bb0ac29b4e0199eb9fba05ad
+Claude Opus 4.6,claude-opus46,bio-r01,research_reasoning,25,False,10.0,68.75,reviewed,eda8ca9adcebaa9e689a61afced94c425d1838858debc0346868074bc13bb37b
+Claude Opus 4.6,claude-opus46,bio-r02,research_reasoning,35,False,14.0,68.75,reviewed,3f7093539c42db3e6a37d98d9092431a92f7578bc0bea62bfeec827d5020dae3
+Claude Opus 4.6,claude-opus46,inf-d01,experimental_design,25,,25,68.75,reviewed,5ebcf2fa873e709e8a69930f78fb211587e4863872f285a56750a57d528e29bc
+Claude Opus 4.6,claude-opus46,inf-d02,experimental_design,40,,40,68.75,reviewed,c747dc118098f83dfc4323c0366dd034cea57249745218e34df70c60ad9e8a2d
+Claude Opus 4.6,claude-opus46,inf-d03,experimental_design,35,,35,68.75,reviewed,2a5d2225f6a818b123861e3982bc24951c55127765eb28962f88a55609fc27e3
+Claude Opus 4.6,claude-opus46,inf-k01,essay,70,,70,62.5,reviewed,de992f0fad510060420a6bd514d147885f291b86b8d1b83fc8ed682423bba610
+Claude Opus 4.6,claude-opus46,inf-p01,essay,60,,60,56.25,reviewed,fc1809031416b644725a4202ad7a23c02a2a719ce176abc76baf6b96829ef49b
+Claude Opus 4.6,claude-opus46,inf-r01,research_reasoning,5,False,2.0,62.5,reviewed,1b6969d5d7f142d9475d5b88e40423bfccda255866137e452ed6eff5b2941ba1
+Claude Opus 4.6,claude-opus46,inf-r02,research_reasoning,15,False,6.0,50.0,reviewed,7092efcb8f1e2b881be9913306c52fabcc7143c207e307c506b8aa5c7ad49547
+Claude Opus 4.6,claude-opus46,mol-d01,experimental_design,10,,10,68.75,reviewed,804029cfee41d135fc58819cc201a4a4f024cc133d3ccccdbc521d94abd4ef10
+Claude Opus 4.6,claude-opus46,mol-d02,experimental_design,20,,20,62.5,reviewed,0c1ea559c91d3a1046c1c89861fec4297afc2d3a9e7000e835d4710ee8042cbc
+Claude Opus 4.6,claude-opus46,mol-k01,essay,55,,55,56.25,reviewed,e69862db084fb5c9fa7e33f5e3976cae136c8397f811e629dd4ca2692b431b82
+Claude Opus 4.6,claude-opus46,mol-k02,essay,50,,50,62.5,reviewed,17f304b80817bb6cb6dd5798a4180ec4310802fa070a984613ae3fc21101aa42
+Claude Opus 4.6,claude-opus46,mol-p01,essay,50,,50,56.25,reviewed,05e596b1317c0c3d7cb5c521e5a06d922de7c9f0a19e55bffa3e9e5fd759b463
+Claude Opus 4.6,claude-opus46,mol-r01,research_reasoning,30,False,12.0,56.25,reviewed,7db604ef42e971eb217390def972d99e51d5e02b5979fec1a26077a6cf0a23ed
+Claude Opus 4.6,claude-opus46,mol-r02,research_reasoning,20,False,8.0,37.5,reviewed,0d9a6ffbfd6f1101584b4dcc14d026e1fc452cc6c077d362c57fd5549fcdb6dc
+Claude Opus 4.6,claude-opus46,mol-r03,research_reasoning,30,True,72.0,68.75,reviewed,c0f13c079074592cedcbafdf540137479d48742cbb977a718a21c08ce7dcd87a
+Claude Opus 4.6,claude-opus46,neu-d01,experimental_design,20,,20,62.5,reviewed,afce183176877b7fe3d8507bf4324b0c248d7a04112a5e374926c5c89d73df7a
+Claude Opus 4.6,claude-opus46,neu-d02,experimental_design,40,,40,68.75,reviewed,65cadeed5b76f6773b26290bfa7aed6963d2fbdd75272f8bc0dbd6d5e6732e52
+Claude Opus 4.6,claude-opus46,neu-k01,essay,55,,55,62.5,reviewed,f83718c37a5fcfeb43045483fff924657818520a7d495d83e9d2a8c0a39a84de
+Claude Opus 4.6,claude-opus46,neu-p01,essay,45,,45,56.25,reviewed,d72006787c2496223a7da292faeea655c1e8269c31ae922cc118260a5b56504b
+Claude Opus 4.6,claude-opus46,neu-r01,research_reasoning,20,False,8.0,50.0,reviewed,611db81a3afdccbec24bccf81cffd77a4c1a1dfb333c7b136103c07d903de403
+Claude Opus 4.6,claude-opus46,neu-r02,research_reasoning,20,False,8.0,50.0,reviewed,2021c8ea8baaf67ab2dc48e8f1b60a51eb132ef816caff66d0716798b2932dfc
+Claude Opus 4.6,claude-opus46,neu-r03,research_reasoning,25,False,10.0,62.5,reviewed,06ffbdccd3894caa0cf6367c14d20ebff170d3521ccd3160d7eca72a74d4f67e
+Claude Opus 4.8,claude-opus48,bio-d01,experimental_design,35,,35,75.0,reviewed,c7d3b67d35446d50740d2f271ec9be63ac0fee3a9702ce0cb141e75c583cb317
+Claude Opus 4.8,claude-opus48,bio-d02,experimental_design,25,,25,75.0,reviewed,7d140626d68a1c9969bcf397518dcb986cc0ca649de9d9b08639517602c07d68
+Claude Opus 4.8,claude-opus48,bio-d03,experimental_design,20,,20,75.0,reviewed,4497d4683a3beb23f4c7c1ccbddb52e8eabade58dde2807c90efb311fb70a0d3
+Claude Opus 4.8,claude-opus48,bio-k01,essay,65,,65,100.0,reviewed,990c58c282ae02e041e073f4e77789655de5444a677fd8e411a5a1da655438cd
+Claude Opus 4.8,claude-opus48,bio-k02,essay,60,,60,81.25,reviewed,0d8ede5dce579801ffd537d16ee2979bcd7eab55cc26d786b25269004aff1086
+Claude Opus 4.8,claude-opus48,bio-p01,essay,50,,50,68.75,reviewed,09f018f3c8856dd6c1ef7b18326351a956bb02ef0000ded217f843f1d0e20441
+Claude Opus 4.8,claude-opus48,bio-r01,research_reasoning,25,False,10.0,62.5,reviewed,39a4d0e5b17a2aef529a5d5345b922a5970f3dc90aea4144e89fe5aa8dd6aa78
+Claude Opus 4.8,claude-opus48,bio-r02,research_reasoning,25,False,10.0,75.0,reviewed,c198a3339bde1c67be82b6599e29385c3f896e8ded9a7d4a9fcf6834ab18bd70
+Claude Opus 4.8,claude-opus48,inf-d01,experimental_design,20,,20,62.5,reviewed,a460b3209bad025b473fad6f083cd1489c49eda3d0c004d9767861a257e56c36
+Claude Opus 4.8,claude-opus48,inf-d02,experimental_design,60,,60,81.25,reviewed,e045089f5556dc2d549fcc6b3805e9ceb6817b609e9ed393c10c753600d6615e
+Claude Opus 4.8,claude-opus48,inf-d03,experimental_design,35,,35,81.25,reviewed,01e95d4638d9f486a09920e182d4953d43950f1df97708560d748c4f30bfe926
+Claude Opus 4.8,claude-opus48,inf-k01,essay,70,,70,62.5,reviewed,2c00d2343bcbc11f0d81f5b5411076e76162047fab21c062c6e53602862b537b
+Claude Opus 4.8,claude-opus48,inf-p01,essay,70,,70,75.0,reviewed,d4350bd88f75635a3ae9cbc60ec76032a171f69a929a157b56ab026a11583dd3
+Claude Opus 4.8,claude-opus48,inf-r01,research_reasoning,5,False,2.0,68.75,reviewed,b6ec69b3489e0046e883120f0b26eadb030b198e45b8ba7127928731669ff106
+Claude Opus 4.8,claude-opus48,inf-r02,research_reasoning,15,False,6.0,62.5,reviewed,40d28ea80d4ae1a5cb938fbad9b64cc02dbdf33689bfbe6fa843ebce48cf611d
+Claude Opus 4.8,claude-opus48,mol-d01,experimental_design,30,,30,68.75,reviewed,3f08a748af7b1478d939fadbbac2cae5e8e17a6db60081e31e0825ee31a52580
+Claude Opus 4.8,claude-opus48,mol-d02,experimental_design,40,,40,81.25,reviewed,b66fe3c6809f53db4ce4e7d4a4daf335c9fa55f5f2c629f6cc1ba707fd1b4fbe
+Claude Opus 4.8,claude-opus48,mol-k01,essay,55,,55,56.25,reviewed,b7b8ee81a9f43599e230d2efc3bc7371d2fc880b9ea090831713ad4379e00b58
+Claude Opus 4.8,claude-opus48,mol-k02,essay,55,,55,68.75,reviewed,85e386ea2b3d178e68e10254225c4d055a26bb875d71a34d24f99646bd235ee3
+Claude Opus 4.8,claude-opus48,mol-p01,essay,60,,60,75.0,reviewed,8bafbd9047fbac248dcc14e45b156468761b09e7f80b5ee7a91783f6878f5ef6
+Claude Opus 4.8,claude-opus48,mol-r01,research_reasoning,20,False,8.0,68.75,reviewed,a54df1a6a987fe460bef0fb49182e77e3b952f27c0da84f866c902465a35751f
+Claude Opus 4.8,claude-opus48,mol-r02,research_reasoning,25,False,10.0,68.75,reviewed,37de3813eb5ee0a4c170d6b056199d847c189bc72b8a898b64e2dfc0df6aba2c
+Claude Opus 4.8,claude-opus48,mol-r03,research_reasoning,30,True,72.0,75.0,reviewed,6d8e5640a409fa2014699aad3abb1cc328f54a18a0c14ecf6f141128fb3d4eba
+Claude Opus 4.8,claude-opus48,neu-d01,experimental_design,40,,40,75.0,reviewed,086de7ce1cad84b1be42d263721d5039ae277bdd39bec888f6c83b7f07cb1086
+Claude Opus 4.8,claude-opus48,neu-d02,experimental_design,40,,40,75.0,reviewed,41959ef41f46cd56e7cfd62c5c9de363af6cedbdbd7e30ba0cdf768db43c76ef
+Claude Opus 4.8,claude-opus48,neu-k01,essay,60,,60,68.75,reviewed,b5b5608502c2eea44452ab05c8880e5654f1e9a8d402fafe376b97681e9c4d00
+Claude Opus 4.8,claude-opus48,neu-p01,essay,55,,55,75.0,reviewed,e14f622c13e2f0377df5c536347b02732222d5bd99b99671e12edb6eb52e8b0c
+Claude Opus 4.8,claude-opus48,neu-r01,research_reasoning,40,True,76.0,81.25,reviewed,dc83c8dfdb67a6a77ea54207731ecad50c6c058d3dbde8a24021010b83559031
+Claude Opus 4.8,claude-opus48,neu-r02,research_reasoning,40,False,16.0,62.5,reviewed,e1459fb8c6bd46cc83c8162c5a10f42e27833d9fe4c52c685fab45e28bcebc95
+Claude Opus 4.8,claude-opus48,neu-r03,research_reasoning,30,False,12.0,62.5,reviewed,7a6937d6eb4d7b4a07e35ae2435d51b9ba18be61ba2139546092d09e0dfb0c1d
+Gemini 3.1 Pro Preview,gemini-pro,bio-d01,experimental_design,25,,25,75.0,reviewed,9a805b1a6686c30068928500c86b2e543fdcab60aa5e67a38b21059642dd275e
+Gemini 3.1 Pro Preview,gemini-pro,bio-d02,experimental_design,15,,15,68.75,reviewed,bb5cfc18b9618dbf1e982f9d626ba23e6ab5d28a1a36f57e800eda1cb06b73b1
+Gemini 3.1 Pro Preview,gemini-pro,bio-d03,experimental_design,10,,10,56.25,reviewed,877e6b864511c29b4909e956469fd992450a989c72afb6bb3d8be0b665364802
+Gemini 3.1 Pro Preview,gemini-pro,bio-k01,essay,50,,50,62.5,reviewed,6f2a4f6ac98186b0310c1507aeb1344869bc2ef3399fc19254dcadc55ca317e5
+Gemini 3.1 Pro Preview,gemini-pro,bio-k02,essay,40,,40,62.5,reviewed,6776f75f88ba80c2a3edacf474d24ecb9976fcbb960a4e8e484035089a9f36bb
+Gemini 3.1 Pro Preview,gemini-pro,bio-p01,essay,55,,55,62.5,reviewed,1ab2e14393dfd7183cebb863c2d0c6b9badac39f06dfdfaef86156ce785e07e5
+Gemini 3.1 Pro Preview,gemini-pro,bio-r01,research_reasoning,20,False,8.0,56.25,reviewed,c243dfc195d63fedb954a28d7bd8473a0c7f2491c72857b74e82e8a7913d4167
+Gemini 3.1 Pro Preview,gemini-pro,bio-r02,research_reasoning,15,False,6.0,68.75,reviewed,2fb23daeed44905a8cd2d84db980aa9538ea29b8c80d06830c9b4901b1097431
+Gemini 3.1 Pro Preview,gemini-pro,inf-d01,experimental_design,10,,10,56.25,reviewed,1f4aafc3db91e52bad45991c091f59719ae53e05583deaaf9836d2bda9dcdcf0
+Gemini 3.1 Pro Preview,gemini-pro,inf-d02,experimental_design,30,,30,81.25,reviewed,17b0afe20091e61c2891f8d1892906a0f19b388e0e5fa07421feb0f8380286a7
+Gemini 3.1 Pro Preview,gemini-pro,inf-d03,experimental_design,5,,5,56.25,reviewed,13f644a6b8dad1af62fd41a03c9c843ddaebc1793d9d790a159ab56b524e7a0b
+Gemini 3.1 Pro Preview,gemini-pro,inf-k01,essay,60,,60,62.5,reviewed,3d0bacc871e4500dd717dff191a1910c2dfce9e65d7491bedec60606a5fb24d5
+Gemini 3.1 Pro Preview,gemini-pro,inf-p01,essay,55,,55,56.25,reviewed,2ff400918ab955e6ebeba8ea4bcc4859fad22ff57627849dbbeb811e11549d2e
+Gemini 3.1 Pro Preview,gemini-pro,inf-r01,research_reasoning,5,False,2.0,56.25,reviewed,c51d05f320b3e4f57d68bdd33e3605898dc28fa6bbb07bc6ec8df8bbc3a46331
+Gemini 3.1 Pro Preview,gemini-pro,inf-r02,research_reasoning,15,False,6.0,62.5,reviewed,c2ddadeea5873b8db8e88a1756f17ff92aa7eb0888e73a8b828b64dc418e3978
+Gemini 3.1 Pro Preview,gemini-pro,mol-d01,experimental_design,10,,10,56.25,reviewed,4b832b8f4e28f6f9537ee3214251ba7f338112488fa7248c24e7b6299fdf60c7
+Gemini 3.1 Pro Preview,gemini-pro,mol-d02,experimental_design,20,,20,68.75,reviewed,40d138f03d1bdb7dd748028af96afefb644400f234056358964b5ed2a33a4fe9
+Gemini 3.1 Pro Preview,gemini-pro,mol-k01,essay,55,,55,56.25,reviewed,b793748f4d853f7cd4fd2d06594dc4a8bbd6c416d24b93574f71dca8ebe76576
+Gemini 3.1 Pro Preview,gemini-pro,mol-k02,essay,55,,55,62.5,reviewed,1c8de4810b36df23c7b4e15ce8475a5424ce8a65902187106b38ce40a629bf01
+Gemini 3.1 Pro Preview,gemini-pro,mol-p01,essay,55,,55,68.75,reviewed,51ae00d95beac25a698dda81035e8744bec92979dc1b4052d857073de65d6705
+Gemini 3.1 Pro Preview,gemini-pro,mol-r01,research_reasoning,10,False,4.0,56.25,reviewed,86681dc3ffce11fddf74d2e234a9b00686d52e7c38051480927b8fabcd652d7c
+Gemini 3.1 Pro Preview,gemini-pro,mol-r02,research_reasoning,10,False,4.0,56.25,reviewed,436d5fceb763dc07676b532e18ff97c5a543e51ff10d0d11a1e41a34c1b1ff0f
+Gemini 3.1 Pro Preview,gemini-pro,mol-r03,research_reasoning,20,False,8.0,68.75,reviewed,a3b778611e5cd237bfb67986d18c6016464c93ac6e913d8153be57d05ca3db66
+Gemini 3.1 Pro Preview,gemini-pro,neu-d01,experimental_design,20,,20,56.25,reviewed,c688685cf42e1bd8ffe9b39d17babd0537b5eeb27f2de824bbf3bcffab740937
+Gemini 3.1 Pro Preview,gemini-pro,neu-d02,experimental_design,25,,25,56.25,reviewed,012881a175653e6ea72beeed6f80ee50e903bc9683b7075a9f9cfd34a1f7a772
+Gemini 3.1 Pro Preview,gemini-pro,neu-k01,essay,45,,45,62.5,reviewed,37dbfabf38d1a5e1274f112652df88d70fedc0dca9c4a558a7e5900700d737a6
+Gemini 3.1 Pro Preview,gemini-pro,neu-p01,essay,50,,50,68.75,reviewed,1604968e964d21fc3358a67b920b538367b3a939875411e66467d6161fcf835b
+Gemini 3.1 Pro Preview,gemini-pro,neu-r01,research_reasoning,25,False,10.0,68.75,reviewed,669045de0bb03d4380a6a09f3d63de5d856c82d3cf622094b87e413738827a4b
+Gemini 3.1 Pro Preview,gemini-pro,neu-r02,research_reasoning,20,False,8.0,62.5,reviewed,830f6c7b9ac513690c4171f770fd7b257789da82f3e7006a5af781ceb64f9c6f
+Gemini 3.1 Pro Preview,gemini-pro,neu-r03,research_reasoning,10,False,4.0,43.75,reviewed,748d775e753f4ec410a14402ce6c33a6cf4572e3761d30162ce99824420b130b
+DeepSeek V4.1 Flash,deepseek,bio-d01,experimental_design,40,,40,87.5,reviewed,8101dacf496b5e3a04ccbfef7edcc74154ac4af8fb1b3d84b2951590c44dd268
+DeepSeek V4.1 Flash,deepseek,bio-d02,experimental_design,30,,30,81.25,reviewed,2667112989753e27e2ed2c828bdbbaccdf32ff74f1803bdcad2e27279d49207a
+DeepSeek V4.1 Flash,deepseek,bio-d03,experimental_design,40,,40,75.0,reviewed,51ac5f9429f9926a7beabe3da49c28261c1ca1bc13e50bd7b5dc0a0b04b254e1
+DeepSeek V4.1 Flash,deepseek,bio-k01,essay,60,,60,87.5,reviewed,f168d7e8cad2d3a651d6ac2ced74320260a8dfd501ce027def42d8ab6afc4789
+DeepSeek V4.1 Flash,deepseek,bio-k02,essay,65,,65,87.5,reviewed,ddf2fcdd329b030e59b93131d8587f48407512815b507ff32ab5c850932c3332
+DeepSeek V4.1 Flash,deepseek,bio-p01,essay,60,,60,75.0,reviewed,d258e9ab15521205ce1f364a0f9e4ae93c71968215e9779e56842351028b3103
+DeepSeek V4.1 Flash,deepseek,bio-r01,research_reasoning,45,False,18.0,75.0,reviewed,a7f5c417324f2add1533ecd7f821c40699add660b63eb1f0abd8eb4ab95cd9fe
+DeepSeek V4.1 Flash,deepseek,bio-r02,research_reasoning,40,False,16.0,75.0,reviewed,f2b06ae569b7c3814bb620f00b2cc767ffca9ca3a5d3a8d0dabf40d9e405b9b0
+DeepSeek V4.1 Flash,deepseek,inf-d01,experimental_design,25,,25,81.25,reviewed,e2fabed12453ba18e420032776bcfb5bc2f82660b1de1f72a751e9e1d86c824d
+DeepSeek V4.1 Flash,deepseek,inf-d02,experimental_design,55,,55,87.5,reviewed,4994e63f35b1522f0b6a3c14357f4ad46bd1300a027349fb42dd5c2d97fd3036
+DeepSeek V4.1 Flash,deepseek,inf-d03,experimental_design,30,,30,68.75,reviewed,020cbe7ab133a66a8e3942d13091a3a0feb2719b089ead7010b1626e1793f51d
+DeepSeek V4.1 Flash,deepseek,inf-k01,essay,80,,80,87.5,reviewed,00d305d0720aa8d5519806fe7ed2cfb57a2ab6cc4d31e483437b4377797a84af
+DeepSeek V4.1 Flash,deepseek,inf-p01,essay,70,,70,81.25,reviewed,3bc23476974affb5aa4146e2841f89523700916a4d1128aa848987478d343b14
+DeepSeek V4.1 Flash,deepseek,inf-r01,research_reasoning,20,False,8.0,68.75,reviewed,9fd0108c07a6e554d10666fd4f82a74a76dd6f52be879ac9e42a086c705c847a
+DeepSeek V4.1 Flash,deepseek,inf-r02,research_reasoning,15,False,6.0,75.0,reviewed,35a778cf6cf6f6cafd0de695a919268f15f76c9359fea88bf71f8f894072b6cc
+DeepSeek V4.1 Flash,deepseek,mol-d01,experimental_design,10,,10,68.75,reviewed,230ac9abe6e62afc43e442a37cc2388e57061c5aa4a781ba9ac08f2fbff0f533
+DeepSeek V4.1 Flash,deepseek,mol-d02,experimental_design,40,,40,75.0,reviewed,44075e4fdaa6edb70089728568ffe3acd9129e19fdcde2a100b8da37467caf6e
+DeepSeek V4.1 Flash,deepseek,mol-k01,essay,60,,60,68.75,reviewed,2a54b75913038f9f4f9f3999211946eb36c8fa8f32f6f58bf654886cad8485b2
+DeepSeek V4.1 Flash,deepseek,mol-k02,essay,70,,70,81.25,reviewed,f54a5acb4d04c1f958a5224cdea5a35b7b09ecce7fd7f3173c6e4f1f274357fa
+DeepSeek V4.1 Flash,deepseek,mol-p01,essay,75,,75,87.5,reviewed,6b62831c6edceb0ce236390f29e0ca0b1bbbee2bcb35cb71e1aaab2c85fb09d2
+DeepSeek V4.1 Flash,deepseek,mol-r01,research_reasoning,35,False,14.0,68.75,reviewed,ce8b1b9efa18f90d0912c3b23c3eabfefca8e2c16d689a0017de14562bcd1c93
+DeepSeek V4.1 Flash,deepseek,mol-r02,research_reasoning,35,False,14.0,75.0,reviewed,e6ea9b9c6695892109c5c82337ac2c100950dfb5080a4f3696347e45c7175300
+DeepSeek V4.1 Flash,deepseek,mol-r03,research_reasoning,35,True,74.0,81.25,reviewed,45b1de26b75bc0dedabb1b4e201f51a404805ebda40dbdd7ad5bd83b071ee298
+DeepSeek V4.1 Flash,deepseek,neu-d01,experimental_design,40,,40,75.0,reviewed,9403e66abd682d0418514b840adf072af7043ad9a983857459a0e279b602e77d
+DeepSeek V4.1 Flash,deepseek,neu-d02,experimental_design,50,,50,81.25,reviewed,626815f83698d29332a3b532ef0175f2c91a0240eb5c2b02c0d0b043e477587e
+DeepSeek V4.1 Flash,deepseek,neu-k01,essay,65,,65,75.0,reviewed,85f247c394006653811255fe115cfee86e85805ef0c00344618dd39d7fc3b781
+DeepSeek V4.1 Flash,deepseek,neu-p01,essay,70,,70,87.5,reviewed,fbec0b926caeb900a4adf3ecb5403075671238a390425a865dd4aa822cff9d79
+DeepSeek V4.1 Flash,deepseek,neu-r01,research_reasoning,35,False,14.0,87.5,reviewed,cef6d8cff9135b5c7ef5bad052f3d06000879091a96ccc915deb94e93c5b5954
+DeepSeek V4.1 Flash,deepseek,neu-r02,research_reasoning,35,False,14.0,68.75,reviewed,adf90aef38eaa0a8be95222ec2cd5b065f5650ff20e12c81177b67380b563d0a
+DeepSeek V4.1 Flash,deepseek,neu-r03,research_reasoning,20,False,8.0,68.75,reviewed,a612c7c4de556eb169ebe998ef286ccb856ae06c1873f6073e8163ad1e916779
+Qwen3.8 Max (0902),qwen,bio-d01,experimental_design,40,,40,93.75,reviewed,680d7a99162a48ec1b603275dce65a9b8cbb1e17ab3de15d00a0aa90a5f9d485
+Qwen3.8 Max (0902),qwen,bio-d02,experimental_design,25,,25,81.25,reviewed,81c3b10622b5afdbc337deb130da50a29dde5c5878b8402e796cf1a250b23b03
+Qwen3.8 Max (0902),qwen,bio-d03,experimental_design,25,,25,81.25,reviewed,d5f46fbf14adc571cb8c0b373bae6819f8177314698056d9d2104490f915dfa8
+Qwen3.8 Max (0902),qwen,bio-k01,essay,60,,60,87.5,reviewed,7886d8c4218850e17850c8f3ce85c61f66ba3190ed277b47b3d3c210d9be858d
+Qwen3.8 Max (0902),qwen,bio-k02,essay,45,,45,68.75,reviewed,d35f1a48a31f2a73ccc4243e658a877b8a4811d557904113d6798119b1dd8390
+Qwen3.8 Max (0902),qwen,bio-p01,essay,80,,80,93.75,reviewed,4f2fe02bd131940113d066f720f1c8a29953f03ffdf4462a30ebca7d7672d3a3
+Qwen3.8 Max (0902),qwen,bio-r01,research_reasoning,40,False,16.0,81.25,reviewed,3d4f6abf38bb65ddf1ffe0cfc196db3cab79f4e5c74c35c530096b1bf2864862
+Qwen3.8 Max (0902),qwen,bio-r02,research_reasoning,45,False,18.0,81.25,reviewed,db4872f8c3ca4833f6089cee2468f266fdc490cdbb8b2d3a8bd688c3a75f268a
+Qwen3.8 Max (0902),qwen,inf-d01,experimental_design,35,,35,87.5,reviewed,5afe68a95b7d2e419c148ad2f52e2beb1fb944995a9f0a6e3b50343bbd21db04
+Qwen3.8 Max (0902),qwen,inf-d02,experimental_design,50,,50,100.0,reviewed,4b31b34d429e0d1fa645d2020dea5ca89445d88bd52aba4ebbb7eba2317418ff
+Qwen3.8 Max (0902),qwen,inf-d03,experimental_design,40,,40,93.75,reviewed,6d90af1a2dcb08c492a38373eeb140544f0f00681a95fc2af4ca12fdea81773c
+Qwen3.8 Max (0902),qwen,inf-k01,essay,85,,85,100.0,reviewed,a851d81d91b0d23a36d0b9c494e2deeb859a648212d592d62c8a61084873903d
+Qwen3.8 Max (0902),qwen,inf-p01,essay,70,,70,93.75,reviewed,143e1f7a36e0ba7181ed22e840dd28ed5d65e16dd3ecd49817fd73b1ca775a6a
+Qwen3.8 Max (0902),qwen,inf-r01,research_reasoning,30,False,12.0,87.5,reviewed,830870110e9180004c51ee577158ec4c0ba4e28004756bf64d283d72ef18f4e7
+Qwen3.8 Max (0902),qwen,inf-r02,research_reasoning,35,False,14.0,87.5,reviewed,048ee593b20aa8277942e5d8e293a90a483c5565bc8896e605aa896cc7224f14
+Qwen3.8 Max (0902),qwen,mol-d01,experimental_design,15,,15,75.0,reviewed,c485fe2c258ae3bae1cb33e6f5024b1f3c33b258098650b80ee483e956a31749
+Qwen3.8 Max (0902),qwen,mol-d02,experimental_design,40,,40,75.0,reviewed,97d7c850eac061c145b1bb464b5972a7ed046bb1f59c127139b79a03b455e15b
+Qwen3.8 Max (0902),qwen,mol-k01,essay,60,,60,87.5,reviewed,a5511ae6ac1d82b965f9cf004c8a7f5e2179c93771acfe399f4927710cfd8791
+Qwen3.8 Max (0902),qwen,mol-k02,essay,55,,55,68.75,reviewed,12b56a14c2e8bc83d626968987c0985adf380399d26d09f52066497e78d5acd1
+Qwen3.8 Max (0902),qwen,mol-p01,essay,60,,60,81.25,reviewed,27bec2d153df01dfdac424cff1ee170fa522a1244c1a74d27bd4ca27dcd8bef1
+Qwen3.8 Max (0902),qwen,mol-r01,research_reasoning,35,True,74.0,87.5,reviewed,6212003058b4b98ee2dc587471d3ba49aeb1e3b6e5a369f658acb1425162e19a
+Qwen3.8 Max (0902),qwen,mol-r02,research_reasoning,40,False,16.0,93.75,reviewed,f6248aabe6f287eefcf86bd23f64e9b4a08123bbb9080ae5bc35c6aa0402bba2
+Qwen3.8 Max (0902),qwen,mol-r03,research_reasoning,40,True,76.0,93.75,reviewed,6cd31cdf4af25fd626b35fb7d8f4eb5daf06f78c8cfad034432cbdd34067e5dc
+Qwen3.8 Max (0902),qwen,neu-d01,experimental_design,30,,30,75.0,reviewed,8927a05681570365d9ac53f087d37f58634ba49c79e940f9359c08c79c11fa32
+Qwen3.8 Max (0902),qwen,neu-d02,experimental_design,40,,40,81.25,reviewed,a8b3e783a47f826d317b68291db40b5f4b687ff310e63dd4ef6c340f52cfb315
+Qwen3.8 Max (0902),qwen,neu-k01,essay,70,,70,93.75,reviewed,268e116ef4758c2b79d2b45405cee938b6dd5d04b0582335404e677fefa2fbb7
+Qwen3.8 Max (0902),qwen,neu-p01,essay,60,,60,93.75,reviewed,a8c2d7ae874f39dbac254d867e12fca051ff1453c6682bb001da6150878d5838
+Qwen3.8 Max (0902),qwen,neu-r01,research_reasoning,50,False,20.0,93.75,reviewed,c35402741092676d7997d6ab7e77811688a2ef380f2d637de6acbd691eea8319
+Qwen3.8 Max (0902),qwen,neu-r02,research_reasoning,30,False,12.0,87.5,reviewed,7ec2582991ebae6418ad6c7de35bf4051d949730eaef6a71c388fe6fe37be806
+Qwen3.8 Max (0902),qwen,neu-r03,research_reasoning,45,False,18.0,87.5,reviewed,a94fb404c93ab73d691b5ae3a4c22ed91603200c11277ee2ddd99a3e71b2d105
+Kimi K3,kimi,bio-d01,experimental_design,60,,60,100.0,reviewed,6d46482b3652293305b6bc942867a26075a5a7448ee94960e298d4f56067df27
+Kimi K3,kimi,bio-d02,experimental_design,20,,20,68.75,reviewed,66c249be3eb3236b6b8158145a2a12504f58fb64bf532c3d7c50124950a69d70
+Kimi K3,kimi,bio-d03,experimental_design,80,,80,100.0,reviewed,bf97bf770cea64953182dcfbaa2d9864c809ddcecd6aab0f2081de5e52028493
+Kimi K3,kimi,bio-k01,essay,65,,65,100.0,reviewed,d0401ddc61062414674e6d9fbae23bd4d4801dc703d4829aa2edca0db5a385ae
+Kimi K3,kimi,bio-k02,essay,50,,50,68.75,reviewed,83da48bcd2d826ef800aba3c447a2669b001e3f0f1022dc25a55cab0e50dd423
+Kimi K3,kimi,bio-p01,essay,75,,75,93.75,reviewed,38a12be6b7c80e196a0c1c4be45c4c3b9f9e347b6a916840414d9954de1cf87d
+Kimi K3,kimi,bio-r01,research_reasoning,35,False,14.0,68.75,reviewed,a8bed48d2fbd2815ecc8d60b08d8adefbf82bc006425ddceda485798d7076adb
+Kimi K3,kimi,bio-r02,research_reasoning,70,True,88.0,100.0,reviewed,4c4cb2bc7df73eb89ddf4f42311d49fae4a3930af5f98b67a4709ca6f18896b2
+Kimi K3,kimi,inf-d01,experimental_design,50,,50,87.5,reviewed,f5e7eed3cc5f4073a8eccd6a54345c83ab53e93272fc83fb06c8b1930382257a
+Kimi K3,kimi,inf-d02,experimental_design,60,,60,93.75,reviewed,a72a20d7d16934dd13d75376f4054a74d30ccf48254a45561ae079927a09389a
+Kimi K3,kimi,inf-d03,experimental_design,45,,45,100.0,reviewed,84b3a7f32a722b9c627218f338577c163e653a06139f52addeda369c13240903
+Kimi K3,kimi,inf-k01,essay,85,,85,93.75,reviewed,becfa54322db426d8f8a2b35a08a27a0b0b158732403b43b869f799e1a184d4d
+Kimi K3,kimi,inf-p01,essay,70,,70,81.25,reviewed,b4b18eadc86804d26851a3f2e4b0adc4e4e909303238e26cc9f9d49a6c460cba
+Kimi K3,kimi,inf-r01,research_reasoning,35,False,14.0,93.75,reviewed,e040c48821ce4dafe362bbea0263a51f7af160506a99dd2b84563b1cd60d2ebe
+Kimi K3,kimi,inf-r02,research_reasoning,50,False,20.0,100.0,reviewed,ec08149fe8f804caec189c03065c21c3263c8e2242983029ae68c930fba64805
+Kimi K3,kimi,mol-d01,experimental_design,45,,45,100.0,reviewed,c0b33c096fc827ad8415f8c3db8aeda96942a9e6ca3b6637864ef3d3b6f0b144
+Kimi K3,kimi,mol-d02,experimental_design,60,,60,93.75,reviewed,db1deabcedd4fe30ff1a5ef0068d26cafa4a291d7a075b0ecaeb099a55287a46
+Kimi K3,kimi,mol-k01,essay,70,,70,81.25,reviewed,b5c33d8143433a49619c71cbe25b3fbb10f4b51df4857587eb80ef9a61795b85
+Kimi K3,kimi,mol-k02,essay,60,,60,81.25,reviewed,66f7a76dbd25c22ed83a5ef357709a1d038bdaec662839f2704649af6d9f8f9f
+Kimi K3,kimi,mol-p01,essay,55,,55,75.0,reviewed,c8b02154837ee5177e3590af0727d617fa1d10d1a64043cb905f55cc5bff2bbc
+Kimi K3,kimi,mol-r01,research_reasoning,55,False,22.0,93.75,reviewed,2ddbfe50cf9339f56bbbeb4ece247e9e45a79c508592f7819a80172a758ed3cd
+Kimi K3,kimi,mol-r02,research_reasoning,70,False,28.0,100.0,reviewed,e3ca54b186a25592fcae6d7d39e4c2ff8cce7d3a641ce50e9d903b1b91bc21de
+Kimi K3,kimi,mol-r03,research_reasoning,60,True,84.0,93.75,reviewed,e7e956b844052df9ce2d376156f37d38990a5080173055720543bcecdf816044
+Kimi K3,kimi,neu-d01,experimental_design,55,,55,93.75,reviewed,e4918482e7adb60816e8601f3ef08ad2d9437eb8cc5734554d453dcd3a99ce62
+Kimi K3,kimi,neu-d02,experimental_design,50,,50,87.5,reviewed,f95cddd719938917c071c137e999ad567b5b6a7f852bdf69ef985ea202dfe50d
+Kimi K3,kimi,neu-k01,essay,70,,70,87.5,reviewed,2f881d7eb1cf595e0d22c51e5576b2b490e7c90e0aa234f4940018dc63fd6111
+Kimi K3,kimi,neu-p01,essay,75,,75,100.0,reviewed,42fb89afd76f73a1bceab75cd580c2c46f99327004a2e755f61c4e287845b91d
+Kimi K3,kimi,neu-r01,research_reasoning,55,False,22.0,100.0,reviewed,8d3a313cc52eafab30395eef0bd5817fa4e8ac3d4549099d7c96391b317b3bc5
+Kimi K3,kimi,neu-r02,research_reasoning,15,False,6.0,56.25,reviewed,b6408338d962de5cf33e7a9074b51b0a9d947f1e915548e0b010623e5c933e76
+Kimi K3,kimi,neu-r03,research_reasoning,50,False,20.0,93.75,reviewed,9fa0f92a4290ba123148ac59d5dd1480c098014c175762b49ced71389c612726
+GLM 5.3 FlashX,glm,bio-d01,experimental_design,30,,30,75.0,reviewed,60726b0bda3bcf0dd8e39d8f8fce42ba331d161731656e094096c5b6895a1dcf
+GLM 5.3 FlashX,glm,bio-d02,experimental_design,20,,20,56.25,reviewed,843f85e56abad8ad25bbea45a79105371fd8e2b929f8e767f77961c157e2baa0
+GLM 5.3 FlashX,glm,bio-d03,experimental_design,30,,30,75.0,reviewed,d7683df9d0b98fd0cad8b90a0fc1f86143dde968e9542d638af243f8b8d41420
+GLM 5.3 FlashX,glm,bio-k01,essay,50,,50,68.75,reviewed,fed5b0b195a1bd96d184c1b7e6b4575e005da3d274f60d350187895865320c6f
+GLM 5.3 FlashX,glm,bio-k02,essay,55,,55,68.75,reviewed,5dc9d705c70afeaf024c30167b7bdf25033f47203bc83d1f5d61a480f4550309
+GLM 5.3 FlashX,glm,bio-p01,essay,70,,70,75.0,reviewed,2d5aee086e0973c7c14ac3dd99da1415e7a555ed5bd5043601a461d9436f8e1d
+GLM 5.3 FlashX,glm,bio-r01,research_reasoning,20,False,8.0,68.75,reviewed,c75d8b2d7b2406a1c734351fe3e3df1f8c84edeaeca70552a3d33e4ebcc07ccf
+GLM 5.3 FlashX,glm,bio-r02,research_reasoning,20,False,8.0,62.5,reviewed,df0cad3d29d42f3b7abf05b196e839784a382586be1ce3b644f58c1998b3fd02
+GLM 5.3 FlashX,glm,inf-d01,experimental_design,20,,20,56.25,reviewed,2b53b5b916211bcbe4b2c44a5193ccf2efdc00c31f5a2c59ca23181524171fdc
+GLM 5.3 FlashX,glm,inf-d02,experimental_design,55,,55,75.0,reviewed,08f6d797703eae60edf5e5ffe816d7379541a96676f99f134e3be056d01ff6f2
+GLM 5.3 FlashX,glm,inf-d03,experimental_design,35,,35,81.25,reviewed,ad336a9d4287b2082a201dc0a77cf17bb9cc202b743fa8f90412c6c0b31b071c
+GLM 5.3 FlashX,glm,inf-k01,essay,70,,70,62.5,reviewed,a1361b5e23e89739e4341b8f06d19629bf00290cea6c105dfdac27a2d7c81e16
+GLM 5.3 FlashX,glm,inf-p01,essay,65,,65,75.0,reviewed,e0a9c11e653cf45ad790e7259b2bc2b41e51717aa08417dd3a12c40f71e0196f
+GLM 5.3 FlashX,glm,inf-r01,research_reasoning,5,False,2.0,68.75,reviewed,5c186c011fe54dddb78166f4446eb6231466f525c23cf4d174b9fdaee265b7a2
+GLM 5.3 FlashX,glm,inf-r02,research_reasoning,10,False,4.0,62.5,reviewed,0bf334389a437e613829e8ffe72bfbd5c9ff5177aac6ca28e8cec69f7fb6a155
+GLM 5.3 FlashX,glm,mol-d01,experimental_design,20,,20,62.5,reviewed,7c30fbe9a6a825cb77a076459d35361778a3998225a4e0ef3491e6a25bd315e3
+GLM 5.3 FlashX,glm,mol-d02,experimental_design,20,,20,62.5,reviewed,d55329e73aac3938e843a535691d9488d2b1c1b67dd18f4a580b73f6be6d7976
+GLM 5.3 FlashX,glm,mol-k01,essay,55,,55,56.25,reviewed,22d279046d1e6233da6ffdfb1aa7516d18bf7a996c136da27286c86e27e671b0
+GLM 5.3 FlashX,glm,mol-k02,essay,50,,50,62.5,reviewed,00ba1a8b01ae5f6e08d5e13a79b5899e8c278503e7d17e893d62aea512c1e1a4
+GLM 5.3 FlashX,glm,mol-p01,essay,70,,70,81.25,reviewed,8b26fd5be5cfe73295f7fef3514acd2c989fb8314e576afad01844059d8d873b
+GLM 5.3 FlashX,glm,mol-r01,research_reasoning,45,True,78.0,93.75,reviewed,d99cc6a8fec550f6df46257a24d0ae9e0f776311a0404b8f9460069a0a490db1
+GLM 5.3 FlashX,glm,mol-r02,research_reasoning,50,False,20.0,93.75,reviewed,99da38279fd27104a318c8b6169b12a68d4a3518de0d5f97801a5a8d8cee4e47
+GLM 5.3 FlashX,glm,mol-r03,research_reasoning,35,True,74.0,81.25,reviewed,9d63c7de23b4270ce197b4fca7e76c659e8e9cef896b7f0d8ebcb381e8af9d62
+GLM 5.3 FlashX,glm,neu-d01,experimental_design,20,,20,50.0,reviewed,7fcabb6c851efd837af771d3dafd8eee827c104381888b95b31740d44f5f7a3f
+GLM 5.3 FlashX,glm,neu-d02,experimental_design,30,,30,68.75,reviewed,34336997823df905a3232572e602d951c59a366624f271bdeda0a125bbdff701
+GLM 5.3 FlashX,glm,neu-k01,essay,55,,55,62.5,reviewed,14495568dad738107bbb0f3a4f4bbc8942635a7bce04846dd3efb9ce570fcef0
+GLM 5.3 FlashX,glm,neu-p01,essay,60,,60,75.0,reviewed,dadacdc2d1ea8608135b5b478ddbfd0672d94da2ef6935640e3c1159b689bfdd
+GLM 5.3 FlashX,glm,neu-r01,research_reasoning,30,False,12.0,81.25,reviewed,9cf9ca517695596f6e245f0a776cb31080560662fc0e02da3e114057641ec326
+GLM 5.3 FlashX,glm,neu-r02,research_reasoning,35,False,14.0,68.75,reviewed,b323eadec429f4789b88f57b7053d3973aa5b95a90a24ccd00f3354028e89b73
+GLM 5.3 FlashX,glm,neu-r03,research_reasoning,40,False,16.0,62.5,reviewed,df886b7e150312b332b1479a114140961a97391bb8fb685781c1830f2bac7ba5
+Grok 4.7,grok,bio-d01,experimental_design,60,,60,93.75,reviewed,7a09eeb12a1ddb4b8af375200aa0d676749716c558a5a5a0ce5e2f4635233d98
+Grok 4.7,grok,bio-d02,experimental_design,30,,30,81.25,reviewed,0fb588c9f686ad7866ed9ded2acc5a25947339f0ac51dd4a696888c0965b6209
+Grok 4.7,grok,bio-d03,experimental_design,65,,65,100.0,reviewed,e6e60826ec7fd7db5dc17bf2c76b2ec5f47d547f8f18326be74443d22abfaf89
+Grok 4.7,grok,bio-k01,essay,60,,60,87.5,reviewed,3786909e457c6ff7120b00251b3231c22089f92c173a08e0067eb814ae9273c7
+Grok 4.7,grok,bio-k02,essay,65,,65,87.5,reviewed,fd9f5761256b2294f49a5da721ba9eb0ba12f468b2efde5e04cd939b0a77e9f0
+Grok 4.7,grok,bio-p01,essay,60,,60,87.5,reviewed,fa7975800edf9fdeea1111a92e026b9aa8ec0453a397a507c824cde85da0c9cd
+Grok 4.7,grok,bio-r01,research_reasoning,40,True,76.0,93.75,reviewed,fc360e77d5e320b7fe6402fb4492b641951bf2a3ea1656ba411388e434fe82bc
+Grok 4.7,grok,bio-r02,research_reasoning,55,False,22.0,93.75,reviewed,60f574100b641648ffaff44d34189ac50f4238307679882732cc8717e5af7608
+Grok 4.7,grok,inf-d01,experimental_design,55,,55,93.75,reviewed,37feb2a4517d920c36693a76d19401a515124fd368549af328a85fd9e26b2b94
+Grok 4.7,grok,inf-d02,experimental_design,55,,55,93.75,reviewed,b5dab6e940b11a516dfcf7f461382c8ddb4a378bf6100c27dba0c8cf67aebc69
+Grok 4.7,grok,inf-d03,experimental_design,50,,50,93.75,reviewed,c1eecbf28b817f9d475bf5f8f3331604f648a2c015af31eec1657227aba0577f
+Grok 4.7,grok,inf-k01,essay,80,,80,87.5,reviewed,9bfadfdef79e1f25890165dfb9abc0a78c68e8ffcefdcff1ad41aead2db5a8d2
+Grok 4.7,grok,inf-p01,essay,70,,70,87.5,reviewed,cb59bd30fab7e5f48bc8fed6bad659268c6611c050b0dc0b510e4eb084df8720
+Grok 4.7,grok,inf-r01,research_reasoning,30,False,12.0,100.0,reviewed,9a655e90f5f5992133ec2ae6d3b77145c1aa5d9cad03e5c26c203cfb27870f26
+Grok 4.7,grok,inf-r02,research_reasoning,40,False,16.0,87.5,reviewed,be5af1f56a7c1372ff548895a71cf2b0db4ce085caa71f2f2b5e053d26f3453a
+Grok 4.7,grok,mol-d01,experimental_design,30,,30,93.75,reviewed,eaffe105660841160a742610f201ba09c7cdb96f53bc507ae97f2566a7a55691
+Grok 4.7,grok,mol-d02,experimental_design,55,,55,93.75,reviewed,6b813e6f3ef49ae429d1f9cb3410018959b7f6e192b05dcb606cd7ba1fc1aa50
+Grok 4.7,grok,mol-k01,essay,65,,65,93.75,reviewed,bdc79ee4762641bb21b359f4111e0026045696c8944bbd92bb9aadb253c9255a
+Grok 4.7,grok,mol-k02,essay,70,,70,87.5,reviewed,19324932ae32765933d70f40b97af4d33e181cfb54ce6793658736d7ffe0013a
+Grok 4.7,grok,mol-p01,essay,60,,60,93.75,reviewed,b358085c3350621b64670dfcd7abf90741400dd72709a6cddd6e1d6568a6486d
+Grok 4.7,grok,mol-r01,research_reasoning,35,False,14.0,87.5,reviewed,5c33df5a55d28cc9aee7a3680405d9ed0084e5e47d1a119e578ec359449a94af
+Grok 4.7,grok,mol-r02,research_reasoning,55,False,22.0,87.5,reviewed,4ebe54cd283102a1259a9f83a916212196f60ffa9d67a3a56b4cb42fdfb97100
+Grok 4.7,grok,mol-r03,research_reasoning,50,False,20.0,87.5,reviewed,807d8b181fe337db2bc45dfc6d85453ca819c422fadb731d3ded822168ef235a
+Grok 4.7,grok,neu-d01,experimental_design,55,,55,87.5,reviewed,4af63885d29917fb7d78fda45031d9865a73eec4396721095a1367df1dffb95f
+Grok 4.7,grok,neu-d02,experimental_design,45,,45,93.75,reviewed,ed721fd57f8e659735f6eb1eac1e00af00d7b87e7fc386776ed70697114a96c4
+Grok 4.7,grok,neu-k01,essay,75,,75,93.75,reviewed,8a755ee94c14d614d6a29381faf8018f7a0c0a9d3031e2a10ac385c5d6578a57
+Grok 4.7,grok,neu-p01,essay,60,,60,87.5,reviewed,97b74d9d296e725001b25b2a7259b387b4d7ac33e1063c6df44e0260d51971f0
+Grok 4.7,grok,neu-r01,research_reasoning,50,False,20.0,93.75,reviewed,3e5021a3e7cd02c2050b075c80f7d3b67fd73a25f129be1d013c8d7284570fde
+Grok 4.7,grok,neu-r02,research_reasoning,35,False,14.0,81.25,reviewed,62bdb311c384b2da84da478e8cc786b9f4c5e9ff1b9bc276fa69b4c3593e3c98
+Grok 4.7,grok,neu-r03,research_reasoning,35,False,14.0,68.75,reviewed,86a90e9059b55923562b35a4f16db982c83b316704e0108d54b600c84de0b437
