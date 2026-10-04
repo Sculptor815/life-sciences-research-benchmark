@@ -1,10 +1,16 @@
-# Implementation status — 2026-10-03
+# Implementation status - 2026-10-04
 
 ## Current comparison
 
-The ongoing private evaluation uses 12 models and 30 questions, with one answer per question and category weights of 20/30/50. The project owner confirmed careful human review of all 30 questions and their reference answers. Codex is scoring candidate answers under the existing rubric first; a stricter second round will follow without replacing those results. [Current evaluation](CURRENT_EVALUATION.md) records the review provenance and requested additions. The implementation details below describe the earlier public pilot, whose settings are separate.
+The broader bank contains 128 questions, as reported by the project owner. Thirty questions have been refined for the completed evaluation; API costs limited testing to that subset, and more questions are in preparation.
 
-Version 0.3 is a development benchmark. No completed expert-validated bank, paid-model leaderboard, laboratory-validated protocol or full-paper raw-data reproduction is claimed.
+Both scoring rounds are complete: 12 models answered 30 questions each, once per question. Category means carry weights of 20/30/50. Round two reuses the same 360 responses and is the final scoring version. The [README](../README.md) displays both rounds; [all 720 reviews and the verification script](../evaluation-audit/README.md) are public.
+
+The owner reviewed all original questions and references. Revised second-round references await owner review. Candidate answers were scored by one Codex referee; the stricter rubric and research-direction weighting are post-hoc. See [current evaluation and provenance](CURRENT_EVALUATION.md).
+
+## Archived implementation notes
+
+The notes below describe the earlier software and question-development stage. Their question counts, five-attempt settings, publication restrictions and outstanding evaluation tasks are historical; current comparison status is recorded above.
 
 ## Current implementation
 
