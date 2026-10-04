@@ -1,0 +1,16 @@
+{
+  "version": "strict-v2.1-public",
+  "reference_version": "reference-v2.1",
+  "frozen_at": "2026-10-03T18:41:48.625625+00:00",
+  "post_hoc": true,
+  "scope": 30,
+  "selected_answers": 360,
+  "criteria_unchanged_from": "strict-v2.0",
+  "human_review": "Original version owner-reviewed; revisions awaiting owner review.",
+  "files": {
+    "v2/RUBRIC.md": "44449f4607ed5fb01244f0de004c3abb13aa91864db1362615ad3c347e907d0c",
+    "v2/applicability.json": "18d76357c47abf28631e5f2b0771777831b7d8d44c605b43268440cdfcdfc500",
+    "v2/reference-bank.json": "58787a786c34637380bbce65bfef3185d29090de2cfd00c84a2586f88a249162",
+    "v1/questions.json": "492dce69e1594274f0a09a35d85ad6f57cc7002b7bc507eb2b2130d04ee8afb0"
+  }
+}

@@ -1,3 +1,13 @@
+# Latest publication and rescoring status
+
+The complete [open 30-question set](../benchmark-30/README.md), original and revised references, and final strict rubric are now available. As of 4 October 2026, **59/360** selected answers have completed personal second-round review. No second-round aggregate ranking is available. The first-round figures remain the archived first scoring version.
+
+[Current status](../benchmark-30/STATUS.md) | [All questions](../benchmark-30/QUESTIONS.md) | [Final rubric](../benchmark-30/v2/RUBRIC.md) | [Reference changes](../benchmark-30/v2/REFERENCE-CHANGES.md)
+
+The following entries preserve the evaluation's earlier status and provenance.
+
+---
+
 # Current 30-question evaluation
 
 The current comparison uses 12 models and 30 questions: ten essays, ten experimental designs and ten research-reasoning questions. Each question receives exactly one independently generated answer. Category means receive weights of 20%, 30% and 50%, respectively. Model browsing and tools are disabled. This configuration is separate from the older 20-question public pilot and its five-attempt research setting.

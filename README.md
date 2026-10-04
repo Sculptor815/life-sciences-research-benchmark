@@ -2,7 +2,7 @@
 
 Evaluate how models answer biological questions, design experiments, reason about competing explanations, and assess papers from fixed evidence.
 
-**Current comparison:** the first round is complete: **12 models, 30 questions each, 360 reviewed responses. I carefully reviewed all 30 questions and reference answers. See the [complete first-round results](docs/first-round-20261003/SCORECARD.md) for category scores, historical-direction hits, costs, time and explanation quality. This is the archived original scoring version; the [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) will govern a separate rescore of the same answers and become the final scoring version. No second-round scores are included here. See [evaluation status and provenance](docs/CURRENT_EVALUATION.md). The public pilot described below is an earlier, separate configuration.
+**Current comparison:** the first round is complete: **12 models, 30 questions each, 360 reviewed responses**. I carefully reviewed all 30 questions and original reference answers. See the [complete first-round results](docs/first-round-20261003/SCORECARD.md) for category scores, historical-direction hits, costs, time and explanation quality. This is the archived original scoring version; the [strict second-round rubric and workflow](docs/STRICT_SCORING_V2.md) will govern a separate rescore of the same answers and become the final scoring version. No second-round scores are included here. The [open 30-question set](benchmark-30/README.md) now includes all evaluated prompts, both reference-answer versions, the [final strict rubric](benchmark-30/v2/RUBRIC.md) and its applicability matrix. Personal regrading is in progress: **59/360 responses reviewed**; see [rescoring status](benchmark-30/STATUS.md). See [evaluation status and provenance](docs/CURRENT_EVALUATION.md). The public pilot described below is an earlier, separate configuration.
 
 ## First-round results
 
@@ -21,6 +21,14 @@ The four charts compare the same 30 questions for every model. Essay, design and
 [Four-chart high-resolution overview](docs/first-round-20261003/four-metric-overview.png) · [Scalable overview](docs/first-round-20261003/four-metric-overview.svg) · [Scalable heatmap](docs/first-round-20261003/reviewed-item-scores.svg) · [Metrics CSV](docs/first-round-20261003/model-summary.csv)
 
 Confirmed run charges are **$35.6704**, with **16 unresolved bills** excluded. Means include provider/network waiting; they are not wall-clock completion times. Explanation scores concern visible scientific arguments, not hidden reasoning; Fable's mean uses 19 assessable answers out of 30. These are exploratory results from one unblinded Codex referee, not an independently validated leaderboard.
+
+## Open questions, references and scoring
+
+[Read all 30 questions](benchmark-30/QUESTIONS.md) and follow each question's links to its original and revised reference answers. The [reference revision log](benchmark-30/v2/REFERENCE-CHANGES.md) records scientific corrections and added execution detail. The [first rubric](benchmark-30/v1/RUBRIC.md) remains available alongside the [final strict rubric](benchmark-30/v2/RUBRIC.md). New reference revisions await owner review; the confirmed human review applies to the original versions.
+
+![Strict scoring workflow](docs/assets/scoring-workflow-v2.svg)
+
+The opened 30-question comparison is separate from the older pilot below. Its published answers and historical targets make it an exposed evaluation set, not a secret held-out test. Credentials and original provider response records are excluded from this release.
 
 ## Benchmark purpose
 
