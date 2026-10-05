@@ -8,9 +8,14 @@ The diagram describes the strict second-round rubric. First-round scoring uses t
 
 Evaluate whether AI models can help life-science researchers ask valuable biological questions, design rigorous experiments and develop sound research directions from data.
 
-**Current comparison:** the strict second round is complete: **12 models, 30 questions each, 360 reviewed responses**. The project owner carefully reviewed all 30 questions and their original reference answers. The [complete second-round results](docs/second-round-20261004/SCORECARD.md) are the final scoring version for this run; the [first-round results](docs/first-round-20261003/SCORECARD.md) remain archived. All answers were reused without new candidate or judge API calls. The [open question set](benchmark-30/README.md) includes both reference versions and the [final rubric](benchmark-30/v2/RUBRIC.md). Revised references await owner review. See [status and provenance](docs/CURRENT_EVALUATION.md).
+**Current comparison:** **12 models, 30 questions each, 360 responses**, assessed in two scoring rounds using the same saved answers. Each round reports results under its own scientific-quality rubric:
 
-## First-round results (archived)
+- **Round 1 - weighted quality assessment:** scientific accuracy (35%), decision value (25%), actionability (20%), verifiability (15%) and communication (5%). Each dimension is rated from 0 to 4. [Scoring criteria](benchmark-30/v1/RUBRIC.md) | [Round 1 results](docs/first-round-20261003/SCORECARD.md).
+- **Round 2 - detailed experimental and reasoning assessment:** scientific quality starts at 100, with 10-point deductions for unmet control-design and prior-Methods requirements, and 5-point deductions for distinct applicable failures in scientific content, reasoning, quantitative procedures, analysis and troubleshooting. Applicability, caps and non-duplication rules are specified in the rubric. [Scoring criteria](benchmark-30/v2/RUBRIC.md) | [Round 2 results](docs/second-round-20261004/SCORECARD.md).
+
+Both rounds use the same category weights: 20% knowledge, 30% experimental design and 50% research reasoning. Research-question scores combine 60% qualified historical-direction matching with 40% scientific quality under the respective rubric. Both sets of results are retained for comparison; the [open question set](benchmark-30/README.md) includes the questions and both reference-answer versions.
+
+## First-round results
 
 | Model | Essay | Design | Research | Total /100 |
 |---|---:|---:|---:|---:|
@@ -68,7 +73,7 @@ Scores use 20% essay, 30% experimental-design and 50% research-reasoning categor
 
 [Full results and original cost/time metrics](docs/second-round-20261004/SCORECARD.md) | [Model metrics CSV](docs/second-round-20261004/model-summary.csv) | [All 360 item scores](docs/second-round-20261004/item-scores.csv)
 
-Model order follows the frozen roster. All selected answer hashes, 7,560 checklist records and score calculations passed consistency checks; the first-round archive remains intact. Second-round API expense: **$0**. The new charts below summarize the complete second round. Earlier charts remain in the separately labeled first-round archive.
+Model order follows the frozen roster. All selected answer hashes, 7,560 checklist records and score calculations passed consistency checks. Second-round API expense: **$0**. The charts below show the second-round results; the first-round results and charts are presented above.
 
 ## Second-round visual summary
 
@@ -90,7 +95,7 @@ Both rounds are fully inspectable: **720 reviews**, the **360 final answers** us
 
 ## Open questions, references and scoring
 
-[Read all 30 questions](benchmark-30/QUESTIONS.md) and follow each question's links to its original and revised reference answers. The [reference revision log](benchmark-30/v2/REFERENCE-CHANGES.md) records scientific corrections and added execution detail. The [first rubric](benchmark-30/v1/RUBRIC.md) remains available alongside the [final strict rubric](benchmark-30/v2/RUBRIC.md). New reference revisions await owner review; the confirmed human review applies to the original versions.
+[Read all 30 questions](benchmark-30/QUESTIONS.md) and follow each question's links to its original and revised reference answers. The [reference revision log](benchmark-30/v2/REFERENCE-CHANGES.md) records scientific corrections and added execution detail. The [first rubric](benchmark-30/v1/RUBRIC.md) remains available alongside the [second-round rubric](benchmark-30/v2/RUBRIC.md). New reference revisions await owner review; the confirmed human review applies to the original versions.
 
 [Scoring workflow](docs/assets/scoring-standard-readable-v2.svg)
 
@@ -125,7 +130,7 @@ The questions span **knowledge essays, experimental design and research reasonin
 The broader question bank currently contains **128 questions**. **30 questions have been refined for the completed comparison**; API costs limited testing to this subset. More questions are in preparation.
 
 - **Completed evaluation:** 12 models, 30 questions per model and one answer per question, producing 360 responses.
-- **Two scoring rounds:** the original round is preserved; the stricter second round is the final scoring version. Both use the same responses.
+- **Two scoring rounds:** both sets of results are available, showing how the same responses perform under the original weighted rubric and the stricter checklist rubric.
 - **Open materials:** all 30 evaluated questions, both reference-answer versions, both rubrics, 720 reviews and the score-verification script are published.
 - **Review status:** the owner reviewed the original questions and reference answers. Revised second-round references await owner review.
 
